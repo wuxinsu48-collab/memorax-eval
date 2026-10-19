@@ -1,0 +1,2252 @@
+[
+  {
+    "qa": [
+      {
+        "qa_id": "locomo_trace_1_qa_5",
+        "character": "帕兹",
+        "category": 1,
+        "label": "Abstain",
+        "question": "截至帕兹在军火库与敏特重逢时，他当前的确切年龄是多少？\nA. 二十三岁\nB. 二十六岁\nC. 二十八岁\nD. 三十岁\nE. 三十三岁\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 二十三岁",
+          "B. 二十六岁",
+          "C. 二十八岁",
+          "D. 三十岁",
+          "E. 三十三岁",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:33",
+          "D1:33",
+          "D1:21"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "二十三岁，中美洲。",
+            "dia_id": "D1:33",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "我还不是战地记者，给一家地方报纸跑政治线。",
+            "dia_id": "D1:33",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "我在战区待了三年。",
+            "dia_id": "D1:21",
+            "character_speaker": "帕兹"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1只给出中美洲事件发生时帕兹二十三岁。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3给出战区经历时长，但没有说明中美洲事件到当前重逢之间经过多少年。",
+            "based_on": [
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E中的当前年龄都无法确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_20",
+        "character": "帕兹",
+        "category": 4,
+        "label": "Abstain",
+        "question": "截至帕兹进入军火库后，帕兹与卡琳娜是否已明确建立恋爱关系？\nA. 已正式订婚\nB. 已互相表白并确认交往\nC. 已由卡尔宣布为伴侣\nD. 已约定军火库行动后结婚\nE. 已明确分手\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 已正式订婚",
+          "B. 已互相表白并确认交往",
+          "C. 已由卡尔宣布为伴侣",
+          "D. 已约定军火库行动后结婚",
+          "E. 已明确分手",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:19",
+          "D1:29",
+          "D1:71",
+          "D1:75"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "我用我知道的换你的故事。",
+            "dia_id": "D1:19",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "我只是担心，他会对你造成威胁。",
+            "dia_id": "D1:29",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "我要的是你从军火库深处带出来的东西。",
+            "dia_id": "D1:71",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "从军火库出来时，暗街会有人接应。",
+            "dia_id": "D1:75",
+            "character_speaker": "卡琳娜"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1、E3和E4明确的是情报与接应交易。",
+            "based_on": [
+              "E1",
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2只表达担心，不能单独证明恋爱关系。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E所述关系状态均无法确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_44",
+        "character": "帕兹",
+        "category": 7,
+        "label": "Abstain",
+        "question": "截至当前对话结尾，加固门后面的具体物品或空间内容是什么？\nA. 骷髅会完整军火库地图和守卫排班表\nB. 敏特已经取走的卡琳娜旧交易回报\nC. 连接港口出口的暗街接应通道\nD. 德索洛藏在军火库深处的证据箱\nE. 卡尔提到过的只能由敏特踏上的路线\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 骷髅会完整军火库地图和守卫排班表",
+          "B. 敏特已经取走的卡琳娜旧交易回报",
+          "C. 连接港口出口的暗街接应通道",
+          "D. 德索洛藏在军火库深处的证据箱",
+          "E. 卡尔提到过的只能由敏特踏上的路线",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:149",
+          "D1:149",
+          "D1:149"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "里面有我找过的东西。",
+            "dia_id": "D1:149",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "她没有再说门是什么，没有说里面是什么样子，没有说她怎么进去的。",
+            "dia_id": "D1:149",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "你为什么想知道。",
+            "dia_id": "D1:149",
+            "character_speaker": "敏特"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1只说明门后有敏特找过的东西，没有给出具体名称。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2明确说明门后内容、空间样貌和进入方式都没有继续说明。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E的具体判断都无法从当前对话中确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_55",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Abstain",
+        "question": "匿名信的具体寄件人是谁？\nA. 罗英\nB. 德索洛\nC. 卡琳娜\nD. 敏特\nE. 凯旋门守卫\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 罗英",
+          "B. 德索洛",
+          "C. 卡琳娜",
+          "D. 敏特",
+          "E. 凯旋门守卫",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:1",
+          "D1:15"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "这张照片是附在匿名信里寄来的，寄件地址是新西西里，没有署名。",
+            "dia_id": "D1:1",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "给你发匿名信的人，目的是让你替他们探路——外来者进暗街，死了也不会有人追究。",
+            "dia_id": "D1:15",
+            "character_speaker": "卡琳娜"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1明确匿名信没有署名。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明发信人的目的，但仍未给出具体身份。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此无法在A至E中确定寄件人。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_65",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Abstain",
+        "question": "敏特从暗街带走的“东西”的具体名称是什么？\nA. 港口区军火库门禁卡\nB. 骷髅会核心名单\nC. 德索洛的欠条\nD. 卡尔脖子上的铃铛\nE. 一张完整地图\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 港口区军火库门禁卡",
+          "B. 骷髅会核心名单",
+          "C. 德索洛的欠条",
+          "D. 卡尔脖子上的铃铛",
+          "E. 一张完整地图",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:53",
+          "D1:59",
+          "D1:59"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "但她走的时候，已经不是两手空空了。",
+            "dia_id": "D1:53",
+            "character_speaker": "卡尔"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "敏特带走的东西，本身就是一条路。",
+            "dia_id": "D1:59",
+            "character_speaker": "卡尔"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "只有她自己能踏上去。",
+            "dia_id": "D1:59",
+            "character_speaker": "卡尔"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1至E3说明敏特带走过某样东西，且它与路线有关。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "这些证据没有给出该物品的具体名称。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E都不能确定为正确答案。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_75",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Abstain",
+        "question": "坡道口两名武装守卫的姓名分别是什么？\nA. 罗英和德索洛\nB. 安娜和卡尔\nC. 凯旋门一号和凯旋门二号\nD. 左守卫和右守卫\nE. 敏特和卡琳娜\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 罗英和德索洛",
+          "B. 安娜和卡尔",
+          "C. 凯旋门一号和凯旋门二号",
+          "D. 左守卫和右守卫",
+          "E. 敏特和卡琳娜",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:85",
+          "D1:85",
+          "D1:85"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "坡道口外侧站着两名武装守卫。",
+            "dia_id": "D1:85",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "左侧那人手持手电筒",
+            "dia_id": "D1:85",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "右侧那人靠在混凝土墙边",
+            "dia_id": "D1:85",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据只以左侧、右侧位置描述两名守卫。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "对话没有给出两名守卫姓名。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此无法从A至E中确定姓名。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_85",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Abstain",
+        "question": "电子锁识别护身符、铜扣和记者证组合的真实认证规则是什么？\nA. 必须先贴铜扣，再贴护身符，最后刷记者证三秒\nB. 必须由敏特本人同时触摸三件物品\nC. 记者证只验证姓名，护身符只验证金属材质\nD. 三件物品会触发远程人工审核\nE. 电子锁需要等待卡尔的铃铛声确认\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 必须先贴铜扣，再贴护身符，最后刷记者证三秒",
+          "B. 必须由敏特本人同时触摸三件物品",
+          "C. 记者证只验证姓名，护身符只验证金属材质",
+          "D. 三件物品会触发远程人工审核",
+          "E. 电子锁需要等待卡尔的铃铛声确认",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:115",
+          "D1:119",
+          "D1:119"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "锁识别了它们。",
+            "dia_id": "D1:115",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "锁识别了三件物品的组合，给出了和之前不同的反应。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "门依然关着，胸腔缓缓下沉，吐出一口气。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2只说明电子锁识别了物品或组合，并产生不同反应。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3说明门仍未打开，认证规则没有被解释。",
+            "based_on": [
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E的具体认证规则都无法确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_95",
+        "character": "帕兹",
+        "category": 4,
+        "label": "Abstain",
+        "question": "截至当前对话结尾，敏特是否已经明确同意与帕兹合作离开军火库？\nA. 已同意，并主动交出门禁卡\nB. 已同意，但要求先找回护身符\nC. 已拒绝，并重新锁门离开\nD. 已提出与帕兹一起去暗街见卡琳娜\nE. 已要求帕兹带她返回中美洲\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 已同意，并主动交出门禁卡",
+          "B. 已同意，但要求先找回护身符",
+          "C. 已拒绝，并重新锁门离开",
+          "D. 已提出与帕兹一起去暗街见卡琳娜",
+          "E. 已要求帕兹带她返回中美洲",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:147",
+          "D1:149",
+          "D1:149"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "你为什么要接这笔交易。",
+            "dia_id": "D1:147",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "里面有我找过的东西。",
+            "dia_id": "D1:149",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "你为什么想知道。",
+            "dia_id": "D1:149",
+            "character_speaker": "敏特"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1至E3显示敏特仍在追问帕兹动机和门后信息。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "这些证据没有出现她同意合作离开军火库的表述。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E的合作状态都无法确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_26",
+        "character": "帕兹",
+        "category": 6,
+        "label": "Multi-hop",
+        "question": "中美洲那名男子死在镜头里的经历，后来怎样影响了帕兹的记者信念？\nA. 照片登上头版后，他开始认为记者最重要的武器是口头证词而不是照片\nB. 照片没能发出去，这让他后来更执着于把照片当作记者最重要的武器\nC. 照片登上头版后，他一度放弃拍照，后来才把记者证视为最重要的武器\nD. 照片登上头版后，他仍把照片视为记者最重要的武器\nE. 照片只被暗街保存下来，后来他认为照片的作用是证明自己的身份\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 照片登上头版后，他开始认为记者最重要的武器是口头证词而不是照片",
+          "B. 照片没能发出去，这让他后来更执着于把照片当作记者最重要的武器",
+          "C. 照片登上头版后，他一度放弃拍照，后来才把记者证视为最重要的武器",
+          "D. 照片登上头版后，他仍把照片视为记者最重要的武器",
+          "E. 照片只被暗街保存下来，后来他认为照片的作用是证明自己的身份",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "照片登上头版后，他仍把照片视为记者最重要的武器",
+        "evidence": [
+          "D1:33",
+          "D1:35",
+          "D1:35",
+          "D1:37"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "我把那张照片拍完了，才放下相机。",
+            "dia_id": "D1:33",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "发出去了。",
+            "dia_id": "D1:35",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "登了头版。",
+            "dia_id": "D1:35",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "照片就是记者最重要的武器。",
+            "dia_id": "D1:37",
+            "character_speaker": "帕兹"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1至E3说明他完成拍摄并让照片登上头版。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E4说明这段经历没有让他放弃摄影，反而形成照片是核心武器的后来信念。",
+            "based_on": [
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_7",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "卡琳娜如何解释匿名信把帕兹引到新西西里，以及这一安排给他造成了什么直接风险？\nA. 寄信人想让他替人探暗街的路，外来者在那里死去也可能无人追究\nB. 寄信人想让他替人探港口区军火库；外来记者若被骷髅会扣下，暗街也未必追究\nC. 寄信人想借他的记者身份试暗街反应；外来者在那里失踪，可能被当成自己离开\nD. 寄信人想让他把消息带给卡琳娜；外来者进暗街受伤，也可能没人愿意作证\nE. 寄信人想让他查红发少女去向；外来者在那里被牵连，警局未必认真追查\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 寄信人想让他替人探暗街的路，外来者在那里死去也可能无人追究",
+          "B. 寄信人想让他替人探港口区军火库；外来记者若被骷髅会扣下，暗街也未必追究",
+          "C. 寄信人想借他的记者身份试暗街反应；外来者在那里失踪，可能被当成自己离开",
+          "D. 寄信人想让他把消息带给卡琳娜；外来者进暗街受伤，也可能没人愿意作证",
+          "E. 寄信人想让他查红发少女去向；外来者在那里被牵连，警局未必认真追查",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "寄信人想让他替人探暗街的路，外来者在那里死去也可能无人追究",
+        "evidence": [
+          "D1:1",
+          "D1:15",
+          "D1:11"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "这张照片是附在匿名信里寄来的，寄件地址是新西西里，没有署名。",
+            "dia_id": "D1:1",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "给你发匿名信的人，目的是让你替他们探路——外来者进暗街，死了也不会有人追究。",
+            "dia_id": "D1:15",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "最近新西西里的黑帮摩擦得厉害，凯旋门的人疑心重，见到记者，第一个念头就是间谍。",
+            "dia_id": "D1:11",
+            "character_speaker": "卡琳娜"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1确认匿名信以照片把帕兹引到新西西里。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2明确寄信目的和外来者死亡无人追究的风险，E3补充记者会被当作间谍。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_24",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Memory Update",
+        "question": "加固门的电子锁在帕兹先后尝试不同物品组合时，反应有什么精确变化？\nA. 护身符单独让LED持续亮并使门锁回缩；三件物品同时贴近后，锁体转为红灯并发出短促警报且封闭通道\nB. 护身符和铜扣使LED持续亮但门不开；再加记者证后LED快慢交替并出现电流声，门仍未打开\nC. 铜扣先使LED快慢交替但门不开；再单独贴上记者证后，锁芯出现电流声并短暂向内回缩\nD. 护身符与记者证让LED持续亮却没有电流声；补上铜扣后指示灯熄灭，门锁仍保持闭合\nE. 先切断配电箱电源时LED转红；恢复供电并贴上三件物品后，门锁自动完成一次开闭\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 护身符单独让LED持续亮并使门锁回缩；三件物品同时贴近后，锁体转为红灯并发出短促警报且封闭通道",
+          "B. 护身符和铜扣使LED持续亮但门不开；再加记者证后LED快慢交替并出现电流声，门仍未打开",
+          "C. 铜扣先使LED快慢交替但门不开；再单独贴上记者证后，锁芯出现电流声并短暂向内回缩",
+          "D. 护身符与记者证让LED持续亮却没有电流声；补上铜扣后指示灯熄灭，门锁仍保持闭合",
+          "E. 先切断配电箱电源时LED转红；恢复供电并贴上三件物品后，门锁自动完成一次开闭",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "护身符和铜扣使LED持续亮但门不开；再加记者证后LED快慢交替并出现电流声，门仍未打开",
+        "evidence": [
+          "D1:115",
+          "D1:115",
+          "D1:119",
+          "D1:119",
+          "D1:119"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "暗绿色LED停止了慢速闪烁，转为持续亮着，静止，不再起伏。",
+            "dia_id": "D1:115",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "门依然是锁着的。",
+            "dia_id": "D1:115",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "待机时的慢速规律闪烁消失了，取而代之的是一种间断性的快慢交替——快两下，停，慢一下，停，再快，像某个内部程序在两种状态之间反复横跳。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "锁体内部有一道极细微的电流声渗出来，持续，低，和低频机械震动混在一起，需要屏住呼吸才能分辨。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E5",
+            "speaker": "assistant",
+            "utterance": "门依然关着，密封胶条压着碎石地面，一动没动。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2说明两件金属只改变LED为持续亮，未开门。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3至E5说明加入记者证后反应升级为快慢闪烁和电流声，但门仍未打开。",
+            "based_on": [
+              "E3",
+              "E4",
+              "E5"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_46",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "罗英第一次认真看过照片里的红色发绳后，给帕兹的判断和建议是什么？\nA. 她说红色发绳和铜扣在新西西里常见，不能证明什么；若想知道更多，应去港口区找卡琳娜\nB. 她说这种红色发绳罕见但铜扣普通，不能证明身份；若想知道更多，应去暗街找罗英\nC. 她说这种红色发绳和铜扣是新西西里常见廉价饰品，不能证明什么；若想知道更多，应去暗街找卡琳娜\nD. 她说红色发绳和铜扣是新西西里常见饰品，能证明照片来自福利院，应去暗街找卡琳娜\nE. 她说这种饰品常见，不能证明什么；若想知道更多，应先去警局查卡琳娜的名字\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 她说红色发绳和铜扣在新西西里常见，不能证明什么；若想知道更多，应去港口区找卡琳娜",
+          "B. 她说这种红色发绳罕见但铜扣普通，不能证明身份；若想知道更多，应去暗街找罗英",
+          "C. 她说这种红色发绳和铜扣是新西西里常见廉价饰品，不能证明什么；若想知道更多，应去暗街找卡琳娜",
+          "D. 她说红色发绳和铜扣是新西西里常见饰品，能证明照片来自福利院，应去暗街找卡琳娜",
+          "E. 她说这种饰品常见，不能证明什么；若想知道更多，应先去警局查卡琳娜的名字",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "C",
+        "answer_text": "她说这种红色发绳和铜扣是新西西里常见廉价饰品，不能证明什么；若想知道更多，应去暗街找卡琳娜",
+        "evidence": [
+          "D1:3",
+          "D1:3",
+          "D1:3"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "我确实见过这种发绳——在新西西里，这是街头小摊上常见的廉价饰品，铜扣是批量货，很多人戴。",
+            "dia_id": "D1:3",
+            "character_speaker": "罗英"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "这不能证明什么，也没法帮你找人。",
+            "dia_id": "D1:3",
+            "character_speaker": "罗英"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "如果想知道更多，应该去暗街找卡琳娜阁下——她可能知道你想要的情报。",
+            "dia_id": "D1:3",
+            "character_speaker": "罗英"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据片段给出题目所需的关键事实。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "将这些事实与选项逐项对照，可排除细节错位的干扰项。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_8",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "德索洛为女儿安娜求助时，卡琳娜最终提供了什么，又取得了什么回报？\nA. 她提供骷髅会地图，换取德索洛交出记者证\nB. 她承诺替安娜讨回公道，换取德索洛未来一次帮助\nC. 她安排安娜继续唱歌，换取凯旋门的军火库位置\nD. 她拒绝帮助，只要求德索洛公开道歉\nE. 她让帕兹调查凶手，换取德索洛带路进入港口\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 她提供骷髅会地图，换取德索洛交出记者证",
+          "B. 她承诺替安娜讨回公道，换取德索洛未来一次帮助",
+          "C. 她安排安娜继续唱歌，换取凯旋门的军火库位置",
+          "D. 她拒绝帮助，只要求德索洛公开道歉",
+          "E. 她让帕兹调查凶手，换取德索洛带路进入港口",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "她承诺替安娜讨回公道，换取德索洛未来一次帮助",
+        "evidence": [
+          "D1:21",
+          "D1:23",
+          "D1:23",
+          "D1:25"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "安娜，她誓死抵抗，她保住了名节，但是他们割掉了她的舌头。",
+            "dia_id": "D1:21",
+            "character_speaker": "德索洛"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "今日，请收下这份公正。",
+            "dia_id": "D1:23",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "他日我或许会需要你的帮助，请别忘记了。",
+            "dia_id": "D1:23",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "他欠了我一次帮助的承诺。",
+            "dia_id": "D1:25",
+            "character_speaker": "卡琳娜"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明德索洛求助的原因是安娜受害。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明卡琳娜答应提供公正，E3和E4确认回报是未来一次帮助。",
+            "based_on": [
+              "E2",
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_71",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "帕兹离开暗街前往港口区时，最先如何避开巷道里的人影和光束？\nA. 他沿砖墙内侧行进，贴上右侧墙壁等手电筒光束移开，再擦墙侧身通过\nB. 他沿砖墙内侧行进，贴上左侧墙壁等手电筒光束移开，再擦墙侧身通过\nC. 他沿砖墙内侧行进，贴上左侧墙壁等光束照到墙面，再从光束边缘快步穿过\nD. 他沿砖墙外侧行进，等两个人影转身后贴墙通过，没有等待光束移开\nE. 他先贴上左侧墙壁，等人影离开巷口，再沿墙根低身跑过\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 他沿砖墙内侧行进，贴上右侧墙壁等手电筒光束移开，再擦墙侧身通过",
+          "B. 他沿砖墙内侧行进，贴上左侧墙壁等手电筒光束移开，再擦墙侧身通过",
+          "C. 他沿砖墙内侧行进，贴上左侧墙壁等光束照到墙面，再从光束边缘快步穿过",
+          "D. 他沿砖墙外侧行进，等两个人影转身后贴墙通过，没有等待光束移开",
+          "E. 他先贴上左侧墙壁，等人影离开巷口，再沿墙根低身跑过",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "他沿砖墙内侧行进，贴上左侧墙壁等手电筒光束移开，再擦墙侧身通过",
+        "evidence": [
+          "D1:81",
+          "D1:81",
+          "D1:81"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "你调整外套内袋里的照片位置，脚掌先着地，重心压低，沿砖墙内侧行进。",
+            "dia_id": "D1:81",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "你脊背贴上左侧墙壁，手自然垂在相机包侧，呼吸压浅，等光束移过去。",
+            "dia_id": "D1:81",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "你擦着墙壁侧身通过，右肩与砖面的距离不超过半掌。",
+            "dia_id": "D1:81",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据片段给出题目所需的关键事实。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "将这些事实与选项逐项对照，可排除细节错位的干扰项。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_10",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Multi-hop",
+        "question": "帕兹与敏特在军火库重逢时，敏特是如何逐步核验他的身份的？\nA. 先确认照片里的红发绳，再要求说出中美洲炮击地点，最后核对右腕疤痕\nB. 先确认铜扣与照片，再要求帕兹说出她小时候的名字和炮击方向\nC. 先让帕兹展示右手腕伤疤，再用铜扣和发绳确认，但没有追问炮击细节\nD. 先确认铜扣与发绳，再要求核对右手腕疤痕及只有炮击幸存者知道的细节\nE. 先确认铜扣与发绳，再追问记者证来源和匿名信内容，最后才放下戒备\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 先确认照片里的红发绳，再要求说出中美洲炮击地点，最后核对右腕疤痕",
+          "B. 先确认铜扣与照片，再要求帕兹说出她小时候的名字和炮击方向",
+          "C. 先让帕兹展示右手腕伤疤，再用铜扣和发绳确认，但没有追问炮击细节",
+          "D. 先确认铜扣与发绳，再要求核对右手腕疤痕及只有炮击幸存者知道的细节",
+          "E. 先确认铜扣与发绳，再追问记者证来源和匿名信内容，最后才放下戒备",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "先确认铜扣与发绳，再要求核对右手腕疤痕及只有炮击幸存者知道的细节",
+        "evidence": [
+          "D1:137",
+          "D1:137",
+          "D1:137",
+          "D1:139",
+          "D1:139"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "铜扣在你手里。",
+            "dia_id": "D1:137",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "发绳在我手腕上。",
+            "dia_id": "D1:137",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "帕兹的右手腕上有一道疤。",
+            "dia_id": "D1:137",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "右手腕撑在那块缺口的石沿上，碎石边缘从内侧划过去。",
+            "dia_id": "D1:139",
+            "character_speaker": "敏特"
+          },
+          {
+            "id": "E5",
+            "speaker": "assistant",
+            "utterance": "我看见的。",
+            "dia_id": "D1:139",
+            "character_speaker": "敏特"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2先把现场铜扣与敏特手腕发绳对应起来。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3提出疤痕核验，E4和E5用炮击现场的具体经过证明她掌握私密共同记忆。",
+            "based_on": [
+              "E3",
+              "E4",
+              "E5"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_67",
+        "character": "帕兹",
+        "category": 6,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "关于港口区地下军火库，暗街能摸到和拿不到的信息分别是什么？\nA. 能摸到港口区外部动静；拿不到内部地图，但能拿到守卫排班和一个出入口\nB. 能摸到港口区外部动静；拿不到内部地图、守卫排班和出入口细节\nC. 能摸到军火库内部地图；拿不到港口区外部动静和守卫排班\nD. 能摸到港口区外部动静和出入口细节；拿不到内部地图\nE. 只能摸到敏特曾去过港口区；拿不到外部动静、内部地图或守卫排班\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 能摸到港口区外部动静；拿不到内部地图，但能拿到守卫排班和一个出入口",
+          "B. 能摸到港口区外部动静；拿不到内部地图、守卫排班和出入口细节",
+          "C. 能摸到军火库内部地图；拿不到港口区外部动静和守卫排班",
+          "D. 能摸到港口区外部动静和出入口细节；拿不到内部地图",
+          "E. 只能摸到敏特曾去过港口区；拿不到外部动静、内部地图或守卫排班",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "能摸到港口区外部动静；拿不到内部地图、守卫排班和出入口细节",
+        "evidence": [
+          "D1:69",
+          "D1:69",
+          "D1:69"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "港口区的外部动静，暗街的情报网能摸到。",
+            "dia_id": "D1:69",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "军火库内部的地图、守卫排班、出入口细节——",
+            "dia_id": "D1:69",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "拿不到。",
+            "dia_id": "D1:69",
+            "character_speaker": "卡琳娜"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据片段给出题目所需的关键事实。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "将这些事实与选项逐项对照，可排除细节错位的干扰项。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_69",
+        "character": "帕兹",
+        "category": 7,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "卡琳娜为什么不需要帕兹卸掉记者身份？\nA. 因为记者进去后，带出来的东西由记者的相机拍下来才算证据\nB. 因为记者证能直接打开加固门，且不会引起骷髅会注意\nC. 因为卡尔要求帕兹公开采访守卫，迫使他们放行\nD. 因为罗英会在港口区证明帕兹是庆典记者\nE. 因为德索洛已替记者身份买通所有守卫\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 因为记者进去后，带出来的东西由记者的相机拍下来才算证据",
+          "B. 因为记者证能直接打开加固门，且不会引起骷髅会注意",
+          "C. 因为卡尔要求帕兹公开采访守卫，迫使他们放行",
+          "D. 因为罗英会在港口区证明帕兹是庆典记者",
+          "E. 因为德索洛已替记者身份买通所有守卫",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "因为记者进去后，带出来的东西由记者的相机拍下来才算证据",
+        "evidence": [
+          "D1:71",
+          "D1:75",
+          "D1:75"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "我不需要你卸掉记者身份。",
+            "dia_id": "D1:71",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "记者进去，带出来的东西，记者的相机拍下来——才算证据。",
+            "dia_id": "D1:75",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "那是你的身份给你留的唯一一件事。",
+            "dia_id": "D1:75",
+            "character_speaker": "卡琳娜"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据片段给出题目所需的关键事实。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "将这些事实与选项逐项对照，可排除细节错位的干扰项。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_11",
+        "character": "帕兹",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "帕兹对照片中红发少女状态的认识，最终发生了怎样的更新？\nA. 从认为她失踪，更新为确认她已被凯旋门杀害\nB. 从认为照片是伪造，更新为确认照片拍摄于中美洲\nC. 从认为她在暗街，更新为确认她一直住在福利院\nD. 从认为她是敏特，更新为确认她只是相貌相似的陌生人\nE. 从认为敏特已经死去，更新为在军火库亲眼见到她活着出现\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从认为她失踪，更新为确认她已被凯旋门杀害",
+          "B. 从认为照片是伪造，更新为确认照片拍摄于中美洲",
+          "C. 从认为她在暗街，更新为确认她一直住在福利院",
+          "D. 从认为她是敏特，更新为确认她只是相貌相似的陌生人",
+          "E. 从认为敏特已经死去，更新为在军火库亲眼见到她活着出现",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "E",
+        "answer_text": "从认为敏特已经死去，更新为在军火库亲眼见到她活着出现",
+        "evidence": [
+          "D1:17",
+          "D1:61",
+          "D1:123",
+          "D1:125"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "她应该已经死了。",
+            "dia_id": "D1:17",
+            "character_speaker": "帕兹"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "离开之后，没有人再见过她。",
+            "dia_id": "D1:61",
+            "character_speaker": "卡琳娜"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "一个纤细的身影从门缝里侧身挤出来。",
+            "dia_id": "D1:123",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "和照片上一样的那张脸，眼睛在冷光里收缩，眼神里有惊愕，有警惕，有某种来不及压下去的、难以名状的东西，混在一起，悬在那里，没有落定。",
+            "dia_id": "D1:125",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1是早期状态：帕兹认为敏特已经死去；E2维持了去向不明。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3和E4显示照片中的红发少女本人从门内出现，更新为敏特活着。",
+            "based_on": [
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_90",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Memory Update",
+        "question": "三件物品一起贴近电子锁时，反应相较两件金属有什么升级？\nA. 提示音更长半拍，LED先快闪两次再熄灭，随后变为快慢交替，并出现之前没有的持续细微电流声；但门仍未打开\nB. 提示音更长半拍，LED先快闪两次再熄灭，随后恢复慢速待机，并出现细微电流声；门缝松开一瞬\nC. 提示音更短，LED先慢闪三次再持续亮起，随后变为快慢交替，但没有电流声；门仍未打开\nD. 提示音更长半拍，LED先快闪两次再熄灭，随后变为持续亮着，并出现细微电流声；门锁随即回缩\nE. 提示音更长半拍，LED先快闪两次再熄灭，随后变为快慢交替，电流声来自配电箱而非锁体；门仍未打开\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 提示音更长半拍，LED先快闪两次再熄灭，随后变为快慢交替，并出现之前没有的持续细微电流声；但门仍未打开",
+          "B. 提示音更长半拍，LED先快闪两次再熄灭，随后恢复慢速待机，并出现细微电流声；门缝松开一瞬",
+          "C. 提示音更短，LED先慢闪三次再持续亮起，随后变为快慢交替，但没有电流声；门仍未打开",
+          "D. 提示音更长半拍，LED先快闪两次再熄灭，随后变为持续亮着，并出现细微电流声；门锁随即回缩",
+          "E. 提示音更长半拍，LED先快闪两次再熄灭，随后变为快慢交替，电流声来自配电箱而非锁体；门仍未打开",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "提示音更长半拍，LED先快闪两次再熄灭，随后变为快慢交替，并出现之前没有的持续细微电流声；但门仍未打开",
+        "evidence": [
+          "D1:119",
+          "D1:119",
+          "D1:119",
+          "D1:119",
+          "D1:119"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "比护身符和铜扣单独触发时更长半拍，低沉，沉进墙壁里，尾音在金属腔体里收住。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "暗绿色LED快速闪烁，两次，熄灭。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "取而代之的是一种间断性的快慢交替——快两下，停，慢一下，停，再快",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "之前没有过这道声音。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E5",
+            "speaker": "assistant",
+            "utterance": "门依然关着，密封胶条压着碎石地面，一动没动。",
+            "dia_id": "D1:119",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据片段给出题目所需的关键事实。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "将这些事实与选项逐项对照，可排除细节错位的干扰项。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_91",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Memory Update",
+        "question": "帕兹尝试“使用门禁卡进入”时，意识到的问题是什么？\nA. 他手里只有记者证、护身符和铜扣，没有别的门禁卡，门短暂松开后又锁回去\nB. 他手里有记者证和护身符，却发现铜扣不能替代门禁卡，LED转为红色快闪\nC. 他意识到记者证就是门禁卡，但还缺护身符和铜扣同时贴近电子锁\nD. 他手里只有记者证、护身符和铜扣，没有别的门禁卡，门仍锁着，LED继续慢速待机\nE. 他手里没有门禁卡，只有记者证和铜扣；护身符已掉在门内，所以LED继续慢速待机\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 他手里只有记者证、护身符和铜扣，没有别的门禁卡，门短暂松开后又锁回去",
+          "B. 他手里有记者证和护身符，却发现铜扣不能替代门禁卡，LED转为红色快闪",
+          "C. 他意识到记者证就是门禁卡，但还缺护身符和铜扣同时贴近电子锁",
+          "D. 他手里只有记者证、护身符和铜扣，没有别的门禁卡，门仍锁着，LED继续慢速待机",
+          "E. 他手里没有门禁卡，只有记者证和铜扣；护身符已掉在门内，所以LED继续慢速待机",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "他手里只有记者证、护身符和铜扣，没有别的门禁卡，门仍锁着，LED继续慢速待机",
+        "evidence": [
+          "D1:121",
+          "D1:121",
+          "D1:121",
+          "D1:121"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "你手里只有记者证、护身符和铜扣。",
+            "dia_id": "D1:121",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "没有别的东西。",
+            "dia_id": "D1:121",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "电子锁的暗绿色LED在视野里慢速亮起，停，再亮，规律，待机，一动没动。",
+            "dia_id": "D1:121",
+            "character_speaker": "Narrator"
+          },
+          {
+            "id": "E4",
+            "speaker": "assistant",
+            "utterance": "门依然是锁着的。",
+            "dia_id": "D1:121",
+            "character_speaker": "Narrator"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "证据片段给出题目所需的关键事实。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "将这些事实与选项逐项对照，可排除细节错位的干扰项。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_1_qa_96",
+        "character": "帕兹",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "帕兹在军火库行动中对“记者证”这一身份象征的认知，是如何从行动前到行动中发生演变的？\nA. 从伪装成守卫的备选方案，更新为必须携带的护身符，并最终接受其作为暴露靶子的风险\nB. 从单纯的通行证，更新为进入军火库的唯一理由，并否认了其可能招致危险的潜在属性\nC. 从被卡琳娜否定的进入方式，更新为必须与相机绑定的核心证据，最终放弃了护身符作用\nD. 从伪装成守卫的唯一方案，更新为仅用于说服德索洛的工具，并最终将其留在暗街公寓\nE. 从作为进入军火库的理由，更新为必须与相机一起被没收的危险品，并接受了该身份的局限\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从伪装成守卫的备选方案，更新为必须携带的护身符，并最终接受其作为暴露靶子的风险",
+          "B. 从单纯的通行证，更新为进入军火库的唯一理由，并否认了其可能招致危险的潜在属性",
+          "C. 从被卡琳娜否定的进入方式，更新为必须与相机绑定的核心证据，最终放弃了护身符作用",
+          "D. 从伪装成守卫的唯一方案，更新为仅用于说服德索洛的工具，并最终将其留在暗街公寓",
+          "E. 从作为进入军火库的理由，更新为必须与相机一起被没收的危险品，并接受了该身份的局限",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "从伪装成守卫的备选方案，更新为必须携带的护身符，并最终接受其作为暴露靶子的风险",
+        "evidence": [
+          "D1:71",
+          "D1:73",
+          "D1:75"
+        ],
+        "evidence_dialogues": [
+          {
+            "id": "E1",
+            "speaker": "assistant",
+            "utterance": "暖光压在茶几上，两张照片边缘没有动。\n\n你身体微微前倾，脊背离沙发靠背远了一寸。\n\n帕兹\n\"记者身份太过引人注目，我需要改变容貌，伪装成值班守卫进去。\"\n\n帕兹\n\"记者证我仍然会带在身上。\"\n\n帕兹\n\"我希望能得到你的接应。\"\n\n卡琳娜身体前倾的姿势没有变，蓝瞳平静地落在你脸上。\n\n沉默在茶几的暖光里拉长了一拍。\n\n卡尔的耳朵朝你的方向转去，绿眼瞳孔微微收细，随即松开。\n\n尾巴在茶几角缓缓扫过，停住。\n\n卡尔\n\"价值不对等。\"\n\n卡尔\n\"你的伪装换不了接应。\"\n\n卡尔\n\"你需要知道暗街的接应有多贵。\"\n\n语调平直，没有起伏，像在念一行已经确认过的事实。\n\n说完，卡尔沉默，尾巴在茶几角收住。\n\n卡琳娜指尖从膝盖上轻轻抬起，伸向卡尔脖子下方的铃铛。\n\n指腹碰上金属边缘，铃铛发出一声轻微的碰撞声，清且短。\n\n她把手收回，指尖重新轻轻对触，落回膝盖上。\n\n卡琳娜\n\"我不需要你卸掉记者身份。\"\n\n卡琳娜\n\"那不是我要的东西。\"\n\n她的语速均匀，断句干脆，句与句之间没有停顿。\n\n卡琳娜\n\"我要的是你从军火库深处带出来的东西。\"\n\n卡琳娜\n\"一件情报，或者一份证据。\"\n\n卡琳娜\n\"拿得出来，接应才有意义。\"\n\n蓝瞳锁住你，语气平，像在念一份已经拟好的条款，不带商量。\n\n卡尔\n\"你能从军火库里带出东西，接应就会来。\"\n\n卡尔\n\"带不回来，就没人在出口等你。\"\n\n语调平直，没有起伏，像在陈述已经过期的交易细则。\n\n卡尔绿眼锁住你，一动不动。\n\n卡琳娜指尖轻轻对触，缓缓微微侧头。\n\n蓝瞳从你脸上移向茶几上的两张照片，在照片边缘停了一拍。\n\n随即移回你脸上。\n\n卡琳娜\n\"潜入方式——你有具体想法了吗。\"\n\n她的语气平稳，带着一丝探究，把空间全部留在你这一侧。\n\n卡尔绿眼锁住你，耳廓停在竖起的姿态，一动不动，等待回答。",
+            "dia_id": "D1:71"
+          },
+          {
+            "id": "E2",
+            "speaker": "assistant",
+            "utterance": "暖光压在茶几上，两张照片边缘没有动。\n\n你脊背离沙发靠背远了一寸。\n\n帕兹\n\"那我还是以记者身份进入。\"\n\n卡琳娜的蓝瞳落在你脸上，没有动。\n\n沉默在暖光里拉长了一拍，茶几上的空气微微收紧。\n\n她指尖轻轻对触，语速均匀，断句干脆。\n\n卡琳娜\n\"记者身份进入军火库。\"\n\n卡琳娜\n\"从军火库深处带出情报或证据。\"\n\n卡琳娜\n\"交易成立。\"\n\n蓝瞳锁住你，语气平，像在念一份已经签好的条款，句与句之间没有停顿。\n\n茶几边缘，卡尔的耳朵朝你的方向缓缓转去。\n\n绿眼瞳孔微微收细，尾巴在茶几角缓缓扫过。\n\n卡尔\n\"记者证是你进那扇门的理由。\"\n\n卡尔\n\"也是让骷髅会的人有充分动机盯住你的理由。\"\n\n声音年轻，底下压着一层说不清年岁的老成，语调平，像在念一行已经确认过的事实。\n\n卡尔\n\"你站在军火库里的每一分钟，记者证都在替你证明你值得被处理掉。\"\n\n卡尔的尾巴在茶几角停住，绿眼瞳孔收细，锁住你。\n\n卡尔\n\"你清楚这意味着什么吗。\"\n\n质问落完，公寓里的暖光安静地压着茶几，卡尔沉默，绿眼一动不动。\n\n卡琳娜没有开口，也没有补充。\n\n她伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n蓝瞳从卡尔身上移开，重新落回你脸上，带着一道安静的审视。\n\n暖光压在茶几边缘，公寓里的空间全部留在你这一侧。",
+            "dia_id": "D1:73"
+          },
+          {
+            "id": "E3",
+            "speaker": "assistant",
+            "utterance": "暖光安静地压着茶几，两张照片边缘没有动。\n\n帕兹\n\"清楚。\"\n\n帕兹\n\"记者证是我唯一的护身符，也是我的靶子——我知道。\"\n\n脊背离沙发靠背远了一寸，你的视线从卡尔移向卡琳娜，承担她们各自的反应。\n\n公寓里的暖光安稳地压着茶几，沉默拉长了一拍。\n\n卡尔从茶几上抬起前爪，指尖先探出茶几边缘，身体随之拉长，肉垫落在地板上没有声音。\n\n她绕过茶几腿，尾巴尖擦过你脚踝附近的空气，没有碰到。\n\n卡尔停在沙发扶手旁，抬起绿眼看向你，瞳孔收细。\n\n卡尔\n\"护身符和靶子，从来都是同一件东西。\"\n\n说完，卡尔沉默，绿眼一动不动，把空间全部留给卡琳娜那一侧。\n\n卡琳娜的蓝瞳在卡尔和你之间移动了一拍，随即收回。\n\n她身体前倾的姿势没有变，指尖轻轻对触，语速均匀。\n\n卡琳娜\n\"记者进去，带出来的东西，记者的相机拍下来——才算证据。\"\n\n卡琳娜\n\"那是你的身份给你留的唯一一件事。\"\n\n她说这话时没有停顿，断句干脆，像在确认一件已经放定的事。\n\n卡琳娜伸手，指腹沿茶几边缘划过两张照片，动作缓慢，没有任何迟疑。\n\n她没有再看照片，把它们并排推向茶几靠近你那一侧。\n\n卡琳娜\n\"从军火库出来时，暗街会有人接应。\"\n\n卡琳娜\n\"前提是你带着东西出来。\"\n\n语气平，没有强调，像在念一份已经签好并归档的条款。\n\n暖光仍旧压在茶几上，空气因这场对话微微收紧，沉入某种签约后的沉静。",
+            "dia_id": "D1:75"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1显示帕兹最初计划放弃记者身份伪装成守卫。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2显示他最终决定坚持以记者身份进入。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "E3明确了他对该身份的双重认知：既是护身符也是暴露的靶子，并表示接受这一风险。",
+            "based_on": [
+              "E3"
+            ]
+          }
+        ]
+      }
+    ],
+    "conversation": {
+      "session_1_date_time": "unknown",
+      "session_1": [
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:1",
+          "text": "那个梦，你已经做过太多次了。\n\n红发像燃烧的火焰，铺散在你的掌心。她的眼睛还睁着，但光芒正在一点一点地退潮，像潮水退出沙滩，再也回不来。\n\n你的手压着她的伤口，血渗透你的指缝，温热的，随后变凉。你喊过她的名字，喊过很多次，声音嘶哑到你自己都认不出来。\n\n战壕的气味，焦土与铁锈，混着什么东西燃烧的气味，你已经闻了太久，久到分不清那是炸弹的余烬还是她的头发。\n\n外面的炮声在继续。地面在颤抖。你身下的土地是冷的，她身上的血是热的，这两件事同时是真的，但你无法同时承受它们。\n\n碎石从崩塌的墙缝里落下来，打在你的背上，你没有动。你能做的只有这个，用身体替她挡住那些碎石，尽管这已经毫无意义。\n\n她的手指动了一下，轻轻扣住你的衣袖。那个力道像一片叶子落在水面上，几乎没有重量，却让你的喉咙发紧，发紧到喘不过气。\n\n你低下头。她的嘴唇在动。\n\n外面的炮声盖住了所有声音，你必须把耳朵凑近她的嘴边，近到能感受到她呼出的气息，近到你能闻到她身上的血腥气，那气味让你的胃往下坠。\n\n她说了什么，你听清了，你也听清了，但你的大脑拒绝把那些声音组合成句子，拒绝承认那是告别。\n\n她的手指松开了。\n\n你抓住了她的手腕，你不知道自己在做什么，你只是抓住了，像抓住一件你没有资格拥有的东西。\n\n炮声停了一秒。\n\n就在那一秒里，你听到了她最后说的话。\n\n敏特\n\"帕兹……你就……为自己活下去吧……\"\n\n世界在那一秒碎成了好几块。你攥紧她的手腕，感受着那里的脉搏，感受着它如何从微弱变成更微弱，感受着它消失。\n\n你没有哭出声。你的眼眶烫的，但眼泪没有出来。你只是低着头，把她的手腕按在自己的额头上，像一个什么祈祷都不知道该向谁说的人。\n\n余烬的气味，冷却的血，战壕里渗进来的冷风，这些细节用极其具体的方式钉进你的神经，让你清醒，清醒到无处遁逃。\n\n你开口，你想说什么，什么话也说不出来。\n\n地面又开始颤抖。炮声重新响起，比刚才更近，近到震动顺着脊柱传进你的骨头里，你抬起头——\n\n世界倾斜了。\n\n天旋地转，一切加速坍缩成一片白，某个坚硬的东西撞上了你的后脑，撞击的钝痛从颅骨向前额蔓延，痛到你的视野里出现了一圈白边。\n\n耳鸣。嘈杂声。庆典的音乐，脚步声，人群的喧嚣，某人压高的惊呼——\n\n罗英\n\"卡琳娜阁下？！\"\n\n你睁开眼睛。\n\n天空是白昼的蓝色，冬阳的光从某个方向斜切进来，晒在你的侧脸上。石板地面的寒意从背部透上来，你的手指摸到了粗粝的地砖纹路。\n\n有人站在你面前，俯视着你。\n\n金色的长发束成马尾辫，白色棉衣的领口被风吹得微微翻起，吊带裙的裙摆盖过黑色连裤袜，一双深棕色的皮鞋踩在地砖上，鞋尖距你的脸不到半臂的距离。\n\n她大约只有十二岁的模样，蓝色的眼睛从高处向下打量着你，眼神平静，说不上任何情绪。\n\n她旁边站着一名黑发少女，穿着缀满银饰的黑色服装，此刻正皱着眉头盯着这边。\n\n卡琳娜\n\"你好，这里不让睡觉。\"\n\n你还没来得及反应，那名黑发少女已经侧过脸去，语气里带着几分无奈。\n\n罗英\n\"阁下，也不需要做到这个地步吧……\"\n\n卡琳娜\n\"对酒鬼不需要太客气。\"\n\n她弯下腰，一张硬卡片从她的指间弹出，击中你的胸口，落在你的手背上。\n\n你的手指下意识握住了它。\n\n卡琳娜\n\"帕兹，战地记者。我记住了。\"\n\n卡琳娜\n\"下次记得睡在床上。\"\n\n她直起身，向罗英抬了抬下巴，像是打了个招呼，随即转身，两步并入庆典的人潮，金色马尾在人群里晃了两下，消失了。\n\n你坐在原地，脑子还没完全转过来。\n\n黑发少女留了下来，她看了一眼你，轻轻叹了口气。\n\n罗英\n\"你也真是不走运。庆典上哪还没几个酒鬼？卡琳娜阁下还是太严格了。\"\n\n罗英\n\"你是记者？\"\n\n你低下头，看向手里的卡片。\n\n记者证，磨损的边角，压印着一个名字。\n\n帕兹。那是你的名字。\n\n你攥紧它，一点一点把那个梦往意识的深处压下去，感受着冬天的冷风从中央区的街道吹过来，感受着庆典的噪声一层一层地把你重新包裹回现实里。\n\n手边的老式胶卷相机压在外套侧袋里，硌着你的肋骨。\n\n你把手伸进内袋，摸出一张照片。\n\n照片是旧的，相纸的边缘已经泛黄，但画面仍然清晰——一名红发少女的背影，匆匆掠过某条街道，街道的招牌、砖墙的质地、路灯的形状，全都属于新西西里。\n\n这张照片是附在匿名信里寄来的，寄件地址是新西西里，没有署名。\n\n那个人本应已经死去，但她的影子出现在了这张照片里。\n\n你盯着照片里那道背影，盯了很久。\n\n你把照片递向罗英，抬起头。\n\n帕兹\n\"你见过这个人吗？\"\n\n罗英接过照片，低头看了一眼，指尖轻轻敲了两下照片的边缘，节奏均匀，像在思考什么，又像什么都没在想。\n\n罗英\n\"我在这里摆摊的，见过形形色色的人，实在认不准。\"\n\n她把照片还给你，眼神平和，没有多看你一眼。\n\n罗英\n\"对了，你可能不知道今天是什么日子。\"\n\n罗英\n\"复活日，十年前的这一天，新西西里有过一场大清算——旧势力倒台，各路人马趁乱站稳了脚跟，死了很多人，也腾出了位置给更多人。\"\n\n罗英\n\"庆典是每年都有的，热闹，但也乱。外来的人，在这种日子里，最好少往偏僻的地方走。\"\n\n她顿了顿，视线扫了一眼四周熙攘的人群。\n\n罗英\n\"这里管事的是黑帮，不是政府。\"\n\n罗英\n\"至于你的事，我不会多问。\""
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:2",
+          "text": "把照片递过去，追问她是否见过这个，或者是否见过这个人手上这根带有铜质扣子的红色发绳"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:3",
+          "text": "你没有把照片收起来。\n\n你的手指翻过相纸，翻到背面——不，翻到正面，翻到那道红发背影，翻到她手腕那里。\n\n你的指关节因为用力而泛白，指尖停在那根发绳上，停了一秒。\n\n红色，磨损，铜质扣子，小，但显眼。\n\n你把照片重新递向罗英。\n\n帕兹\n\"不是这个人也没关系。你见过这根发绳吗，手腕这里，铜扣，红色的。\"\n\n罗英接过照片，动作轻缓。\n\n这次她低下头，视线停在发绳的位置，停留的时间比刚才长。指尖沿着那个细节轻轻划过，像是在确认什么，也像是在想什么。\n\n她抬起头。\n\n罗英\n\"我确实见过这种发绳——在新西西里，这是街头小摊上常见的廉价饰品，铜扣是批量货，很多人戴。\"\n\n罗英\n\"这不能证明什么，也没法帮你找人。\"\n\n她把照片交还给你，动作干净，不拖延。\n\n你张嘴，嘴唇动了一下。\n\n罗英的指尖轻轻敲了两下掌侧，节奏均匀，她的眼神直接落在你的脸上，眼神停留的时间稍长，让你感到自己被什么东西量过了一遍。\n\n罗英\n\"我不是情报贩子，也不会僭越卡琳娜阁下的领域。\"\n\n罗英\n\"情报有价，但价码不在我这里。\"\n\n她的下颌微微收了一下，说到那个名字时语气转为正式，带着一种清晰的分寸感。\n\n罗英\n\"如果想知道更多，应该去暗街找卡琳娜阁下——她可能知道你想要的情报。\"\n\n她向后退了一步，步伐流畅，转过身，汇入庆典的人潮。\n\n你追了两步。\n\n人群从两侧涌过来，把那个方向填满。你的视线扫过一张又一张陌生的脸，黑发少女的身影已经消失在街角，像从没在那里出现过。\n\n你手里的照片还是照片，你手里的相机还在侧袋里，你的手指下意识碰了一下那个位置，摸到熟悉的机身轮廓，停了一秒。\n\n庆典的喧嚣从四面八方压过来，人声、音乐、脚步，什么都盖住什么，中央区的冷风从街道的缺口灌进来，掀起你的领带。\n\n暗街。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:4",
+          "text": "选择：收起照片，直接去暗街找卡琳娜"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:5",
+          "text": "你把照片收进内袋，指尖在相纸边缘压了一下。\n\n庆典的音乐还在背后响着，铜管乐器的声音在中央区的石板街道上回弹，一浪接一浪。\n\n你转过身，背对那片喧嚣，往前走。\n\n人群在你身后稀薄下去。脚步声从密集变得零落，偶尔有人侧目看你一眼，随即移开视线。\n\n光线开始变化。建筑物越来越高，越来越旧，冬阳被楼体切割成碎块，只剩几道窄缝斜打在地面上，拉出很长的影子。\n\n庆典的声音像被什么东西堵住了，一点一点变得低沉，变得远，最后只剩一层闷响压在耳膜后面。\n\n取而代之的是另一种声音——某处滴水的声音，风从巷口灌进来的声音，和你自己的脚步声。\n\n地面潮了，砖缝里积着深色的水渍。墙壁的涂料大块大块地脱落，露出里面发霉的灰泥，有人在上面画过什么，早已模糊得看不出形状。\n\n巷口堆着杂物，压扁的纸箱、锈蚀的铁架、几个套着黑色塑料袋的袋子，气味从那里蔓延出来，潮湿、腐烂、混着某种化学品的刺激气息。\n\n你停了一步，重新往前走。\n\n三个人。\n\n一个靠着右侧墙壁，手揣在外套口袋里，帽檐压低，姿态松散，眼神没有松散。另外两个分开站，把前方的通道压缩成一条窄缝，脚步没有动，但重心已经调整过了。\n\n靠墙的那个先动。\n\n他从墙上推开身体，走了两步，停在你面前，漫不经心地抬起下巴。\n\n黑帮成员\n\"离远点，外乡人。这不是你该来的地方。\"\n\n你没有停步，直到他挡住去路，你才站住。\n\n他的视线在你身上扫了一圈，在外套侧袋那里停了一下。\n\n老式胶卷相机的轮廓压在布料下面，形状清晰。\n\n他看了你一眼，回头和身后的两个人交换了个眼神。\n\n黑帮成员\n\"这里不欢迎记者，滚出去。\"\n\n帕兹\n\"我是来找人的，不能通融一下吗？\"\n\n你的声音比你预料的平稳，但你能感受到声带下面那一层绷紧的东西。\n\n三个人靠拢了一些，没有说话，只是低声耳语，声音压得很低，你只能看见嘴唇在动，听不清任何一个字。\n\n那个打量持续了几秒。\n\n黑帮成员\n\"找人？这时间？这倒是稀奇。\"\n\n他把最后三个字拖长了，嘴角扯出一个没有笑意的弧度。\n\n另外两个人开始往前走，步伐缓慢，脚底踩着碎石，每一步都是实的。\n\n黑帮成员\n\"我们管不着你是来做什么的，只能算你运气不好。\"\n\n黑帮成员\n\"把相机留下，你可以走了。\"\n\n三个人同时收缩，空间在你周围缩小，退路被他们的站位一点一点堵死。\n\n你的手指下意识碰向侧袋，触到相机的机身，指尖停在那里，没有动。\n\n呼吸变了。你能感知到它——节奏断了一拍，重新接上，接得不稳，胸腔里有什么东西开始发紧。\n\n指尖凉。不是因为天气，那种凉从指骨往手腕方向蔓延，你知道这种感觉。\n\n炮声。\n\n不是真实的，但它在你的颅骨里炸响，低沉，滚动，震动顺着脊柱传下来，像地面在颤抖。\n\n铁锈的气味混进了巷子里的潮湿气，两种气味叠在一起，你的胃往下沉了一下。\n\n碎石打在背上的触感，钝的，密集，你的肩胛骨下面残留着那个感觉，像是从没有消散过。\n\n你攥紧了相机。指关节的皮肤因为用力拉紧，泛出一片白。\n\n视野的边缘开始出现一层细微的颤动，像胶卷快到末尾时画面边缘的抖动，你眨了一下眼，颤动没有消失。\n\n三个人还在逼近。脚步声踩在巷子里，回响压在你耳膜上。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:6",
+          "text": "我是来找卡琳娜的"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:7",
+          "text": "你的喉咙动了一下。\n\n声音从那里出来，压过了巷子里的滴水声。\n\n帕兹\n\"我是来找卡琳娜的。\"\n\n领头的人停住了脚步。\n\n身后两人也跟着停下，三个人同时看向你，没有开口。\n\n领头的人侧过头，和右边那个交换了一个眼神，眼神停留了两秒，什么都没说出来。\n\n他重新看向你，下巴微微收了一下。\n\n领头的人\n\"卡琳娜？\"\n\n他把那个名字念出来，念得很慢，轻蔑的弧度从嘴角退掉了，取而代之的是另一种东西，更安静，更沉，像在掂量一块放在手心里的石头。\n\n右边那人侧过头，低声说了句什么，声音压得听不清，嘴唇贴着领头者的耳侧，动了几下。\n\n领头的人抬起一只手，手背朝外，轻轻往侧边摆了一下。\n\n右边那人闭上嘴，退回原位，站位没有退开。\n\n领头的人重新打量你。视线从相机移上来，在你的脸上停下，停留的时间比刚才长。\n\n领头的人\n\"卡琳娜阁下不是随便谁想见就能见的。\"\n\n语气放了一格，但那个\"阁下\"落地的方式，和罗英说出那个名字时一样，带着清晰的分量。\n\n他没有继续往前走，但脚步也没有后退，三个人的站位压在原地，把那条通道堵得严实。\n\n巷子里的滴水声还在。你的胸腔里有什么东西仍然是紧的，呼吸的节奏还没有平复，视野边缘那层细微的颤动贴着你的眼眶，你攥着相机的手指没有松开。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:8",
+          "text": "选择：说明自己与卡琳娜的关联，要求对方去通报"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:9",
+          "text": "你把手伸进内袋，把记者证夹在指间，从口袋里抽出来。\n\n磨损的边角，压印的名字，你把它递过去，托在掌心，举到领头者面前。\n\n帕兹\n\"庆典上，卡琳娜阁下检查过我的证件，我们见过面。\"\n\n帕兹\n\"你去通报一声，她会知道我是谁。\"\n\n领头的人低下眼，视线落在那张证件上，停了两秒。\n\n他抬起头，偏过脸，右边那人凑近一步，两人的眼神撞在一起，只停留了半秒，什么都没说出口。\n\n领头者重新看向你，语气里的东西变了，阻拦的成分少了，试探的成分多了。\n\n领头的人\n\"卡琳娜阁下不是谁都能见的，庆典上见过面，和这里能不能进去，是两码事。\"\n\n领头的人\n\"你找她，为什么？\"\n\n你攥着记者证的手指收紧了一下。\n\n帕兹\n\"这个要当面跟她谈。\"\n\n领头的人没有立刻接话，嘴角抿成一条直线，视线在你脸上停了几秒，像在等你补一句。\n\n你没有补。\n\n他把记者证看了最后一眼，沉默下去，沉默持续了几秒，脚底的碎石轻轻响了一下。\n\n他转过身，背对你，往巷子深处走去，步伐不快，脚步声踩在潮湿的地面上，越来越低，越来越远，最终消失在黑暗里。\n\n剩下两个人留在原地，站位没有移动，把通道压得严实。\n\n其中一个把双手插进外套口袋，把视线抬起来，落在你的肩膀上方某个地方，像是在看穿你。\n\n巷子里的滴水声还在，一滴，一滴，打在积水上，声音圆，闷。\n\n你的呼吸还是不稳，胸腔里那层紧绷的东西贴着肋骨，你攥着记者证，指节的皮肤拉得发白。\n\n冷风从巷口灌进来，掀起你的领带，你低下头，把记者证收回内袋，把手放下来。\n\n等待开始了。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:10",
+          "text": "拿出记者证让他们去找卡琳娜"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:11",
+          "text": "你从内袋把记者证抽出来，夹在指间，举向领头的人。\n\n磨损的边角，压印的名字，你把它托在掌心，高度与他的视线齐平。\n\n帕兹\n\"庆典上，卡琳娜阁下检查过这张证件。\"\n\n帕兹\n\"去跟她说一声，她知道我是谁。\"\n\n领头的人低下头，眼神落在那张记者证上，停了两秒，没有伸手去接。\n\n他侧过脸，和右边那人交换了一眼，那个眼神停了片刻，短促，没有声音。\n\n他重新看向你，把记者证看了一遍，嘴角往一边抿了一下。\n\n他偏过头，用很低的声音向左边那人嘀咕了几句，嘴唇紧贴着对方的耳侧，你站在原位一个字都听不清。\n\n左边那人点了点头，抬脚往巷子深处走去，脚底踩着碎石，每一步声音都是实的，一点一点往暗处走远，最后消失进黑暗里。\n\n领头的人重新把视线转回你这里，语气带着警惕，但那种要把你往外推的劲儿松了一格。\n\n领头的黑帮成员\n\"在这等着。\"\n\n他抬了抬下巴，示意你原地不动，脚步往后退了半步，重新站稳。\n\n你把记者证收回内袋，手放下来，垂在身侧。\n\n两名留守的人保持站位，视线全落在你身上，一个把双手插进外套口袋，一个低着头，帽檐压下来，眼神从帽檐底下斜过来，方向没有变过。\n\n巷子深处偶尔传来滴水声，远处有什么模糊的交谈声顺着墙壁折射过来，听不清内容，只剩一层声音的轮廓。\n\n你的指尖还是凉的，胸腔里那层绷紧的东西贴着肋骨，你让呼吸放慢，放慢，感受着冷风从巷口灌进来，掀起你的领带。\n\n脚步声从深处传回来，快，是实的。\n\n去通报的人大步走回来，靠近领头者，身体凑过去，嘴唇贴着领头者耳侧，低语了几句，声音压得极低。\n\n领头者眉头微皱，慢慢转过脸，往巷子深处望去。\n\n三个人几乎同时停下所有动作，视线一齐往更深的暗处移过去，落在你身上的注意力彻底松开了，巷子里连滴水声都变得突兀。\n\n声音从那片黑暗里传出来，清脆，平静，带着一种不需要抬高的分量。\n\n卡琳娜\n\"到此为止。\"\n\n白色棉衣从昏暗的巷道里走出来，在暗街的深色调里格外突兀。\n\n她怀里抱着一只黑猫，猫的绿眼半眯着，她的步伐不快，每一步都落得平稳。\n\n三个人在那道声音落地的瞬间全部停住了，像是被什么按住了肩膀，脚底动都没动。\n\n领头者转过身，先是一瞬间的错愕，眼神随即收窄，变成清晰的忌惮，身体往后退了半步，那一步退得几乎是下意识的。\n\n领头的黑帮成员\n\"卡琳娜阁下……\"\n\n他的声音里几乎没有底气。\n\n卡琳娜走到黑帮三人和你之间，抬手轻轻抚过黑猫的脊背，猫蹭了一下她的掌心，绿眼微眯。\n\n她把视线落在三个人脸上，语气疏离，每一个字都咬得清晰。\n\n卡琳娜\n\"我没允许过你们在我眼皮下乱逛，也没允许过你们在这里动手。\"\n\n卡琳娜\n\"明白吗？\"\n\n三个人脸上浮出清晰的不安，互相交换了眼神，领头者咽了口唾沫，嘴唇动了一下，什么都没说出来。\n\n他带着另外两人往后退，步伐越来越快，转过身，脚步声在巷子里回响了几秒，加速，消失，连回头看你一眼都没有。\n\n卡琳娜搂着猫转向你，蓝瞳里映着巷口那一点微弱的光线，仰起脸，语气介于责备和好奇之间。\n\n卡琳娜\n\"午安，记者。\"\n\n卡琳娜\n\"你一直都喜欢往这种阴暗潮湿的地方钻吗？\"\n\n你看着那三个人消失的方向，胸腔里那层绷紧的东西慢慢往下沉，呼吸的节奏第一次重新接上了正常的频率。\n\n你低头看了一眼那只黑猫，把视线抬回卡琳娜的脸上，嘴角扯了一下。\n\n帕兹\n\"阴暗潮湿还算习惯。\"\n\n帕兹\n\"只是没料到暗街的热情好客，会用这种方式表达。\"\n\n卡琳娜嘴角微不可察地扬起，那种疏离感松了一丝，藏着什么，像是某种说不清的满意。\n\n她抬手示意黑猫蹭到肩上，猫爪搭上她的肩膀，稳稳站住。\n\n卡琳娜\n\"最近新西西里的黑帮摩擦得厉害，凯旋门的人疑心重，见到记者，第一个念头就是间谍。\"\n\n卡琳娜\n\"这就是他们刚才找你麻烦的原因。\"\n\n她停了一下，绿眼半眯的黑猫从她肩上把视线压下来，正好落在你脸上。\n\n卡琳娜\n\"无论你想要什么，这里都不是说话的好地方。\"\n\n卡琳娜\n\"如果外人在暗街被人杀了，我就需要替暗街向凶手讨个公道。\"\n\n卡琳娜\n\"这是暗街的规矩，我不喜欢麻烦。\"\n\n她说这话时语气轻描淡写，每个字落地的方式，像是在陈述一件天经地义的事。\n\n她抬了抬下巴，往巷子深处示意了一下。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:12",
+          "text": "选择：跟着走，路上提起那张红发少女的照片"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:13",
+          "text": "她往巷子深处走，猫蹲在她肩上，绿眼扫过你一眼，像是在确认你有没有跟上。\n\n你跟上了。\n\n巷道在两侧收窄，墙壁渗出深色的水痕，脚下的砖缝里积着浅浅的暗水，每一步踩下去都带出细微的湿声。\n\n暗处有人影一闪而过，贴着墙根，保持着一段清晰的距离，像是在确认什么，又像是只是路过。\n\n你把手伸进内袋。\n\n指尖先碰到记者证的边角，再往深处，摸到那张相纸。\n\n你把它抽出来，手指在边缘停了一下，没有完全收拢，只是夹在指间，跟上她的步伐，开口。\n\n帕兹\n\"等一下。\"\n\n帕兹\n\"你见过这个人吗。\"\n\n你把照片递过去，正面朝上，红发少女的背影对着她。\n\n卡琳娜脚步顿了一下，转过身。\n\n她低头看了你手里的照片，没有立刻伸手。\n\n猫从她肩上把视线压下来，绿眼对着那张相纸，尾巴扫了一下她的颈侧。\n\n她伸手，接过照片，动作从容。\n\n视线落在相纸上，停着，停的时间比随手扫一眼长，比仔细辨认又短，就是那种恰好让你看出她在意的长度。\n\n猫把头往她脸颊蹭了一下，她没有动。\n\n她抬起眼，表情回到了那种门面般的疏离，光滑，平整，没有缝隙。\n\n卡琳娜\n\"见过。\"\n\n她把照片递回来，指尖收得快，相纸离开她手的瞬间，那个动作就彻底结束了。\n\n你张了张嘴。\n\n她已经转过身，步伐重新动起来，不快，但每一步都踩得稳，把你追问的节奏整个压了下去。\n\n卡琳娜\n\"如果外人在暗街被人杀了，我就需要替暗街向凶手讨个公道。\"\n\n卡琳娜\n\"这是暗街的规矩，我不喜欢麻烦。\"\n\n她说这话时没有回头，语气轻描淡写，像是在陈述天气。\n\n卡琳娜\n\"所以，记者。\"\n\n卡琳娜\n\"你到底为什么来暗街，为什么找我。\"\n\n她没有停步，没有把句子的尾端拉长等你接话，节奏全在她那边，你只能跟着她的脚步往前走。\n\n巷道里偶尔有人影从暗处掠过，远，但存在感清晰，像是这条路上生长出来的东西，习惯了光线不够用的地方。\n\n你把照片收回内袋，手放下来，手指在内袋口压了一下。\n\n卡琳娜在前方停下了脚步。\n\n一扇铁门，颜色已经看不出原本是什么，表面锈出一片深色，门框嵌在潮湿的砖墙里，和周围的墙壁几乎是同一个灰度。\n\n她侧过头，蓝瞳从肩膀那边落在你脸上。\n\n卡琳娜\n\"进了这道门，谈话才算开始。\"\n\n猫从她肩上把视线往你身上压，绿眼细了一线，尾巴轻轻扫了一下铁门的边框。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:14",
+          "text": "选择：走进门——先进去再说"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:15",
+          "text": "你抬脚跨过门槛。\n\n铁门在身后合上，金属碰框的声音沉，短，干脆。\n\n光线先于其他一切落进来——暖的，从靠窗的台灯里溢出来，把室内压成一片均匀的黄。\n\n空气变了。潮气消失了，取而代之的是干燥，木头的气味，还有一点旧纸张的气味。\n\n老式家具，每一件都摆得规整，边角没有灰。玻璃茶几上散落着几份文件，纸边压着压边，叠得有序。褐色皮沙发靠着窗，台灯开着，暖光从左侧打过来，把沙发表面的纹路压成一道道浅影。\n\n卡尔已经在沙发上了。\n\n你没有看见它跳下去、跳上来的过程，它就在那里，黑色的毛在暖光里吸掉了大半光线，只剩一双绿眼，睁着，对准你，一眨都没有眨。\n\n卡琳娜把外套往椅背上搭了一下，侧过脸，抬下巴示意你坐。\n\n你在沙发对面坐下，脊背感受到椅面的支撑，胸腔里那层绷紧的东西慢慢往下沉了一截。\n\n卡琳娜没有坐，走向窗边，背对光线站住，逆光把她的轮廓压成一条清晰的边。\n\n卡琳娜\n\"凯旋门的人从你进暗街那一刻就开始盯着你了。\"\n\n卡琳娜\n\"给你发匿名信的人，目的是让你替他们探路——外来者进暗街，死了也不会有人追究。\"\n\n卡琳娜\n\"新西西里的外来者要么有靠山，要么有运气，你现在两样都没有。\"\n\n她说这些话时语气平，每一个字落地的方式，像是在念一份早已写好的清单，没有任何多余的停顿。\n\n你的手指在膝盖上静了一下。\n\n帕兹\n\"你怎么会知道这些？\"\n\n卡尔的尾巴在沙发上轻轻扫了一下，绿眼从你脸上移开，落到卡琳娜的方向。\n\n卡琳娜低下头，卡尔已经从沙发上跳起来，四爪落到她身边的窗台上，她抬手，掌心顺着它的脊背抚过去，猫背微微拱起来蹭她的手心。\n\n嘴角扬了一下，细微，藏在逆光里。\n\n卡琳娜\n\"我只知道我想知道的。\"\n\n她说这句话时没有解释，没有补充，语气收得很干净，像一扇门合上的声音。\n\n卡尔的耳朵转了一下，朝你的方向。\n\n卡琳娜的视线从猫身上移回来，落在你脸上，身体往前倾了一点，不多，但那个角度变了。\n\n卡琳娜\n\"对了，那个红发的少女——\"\n\n卡琳娜\n\"她和你是什么关系？你跑到新西西里来找她，是因为照片，还是因为别的什么，你们认识多久了，在哪里认识的？\"\n\n她的句子比刚才长了，节奏也快了，蓝瞳锁在你脸上，眼神里的东西介于探究和某种按捺不住的个人兴趣之间，两者掺在一起，分不太清。\n\n卡尔的耳朵转向你这边，绿眼细了一线，尾巴在沙发扶手上停住，一动不动。\n\n公寓里很安静，台灯的暖光还亮着，那个问题悬在干燥的空气里，等着你。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:16",
+          "text": "取出照片给她看，问她有没有什么特别之处"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:17",
+          "text": "你从内袋把那张照片抽出来。\n\n相纸在指间，边缘微微泛黄，红发少女的背影对着上方的灯光。\n\n你俯身，把照片递向卡琳娜。\n\n帕兹\n\"你仔细看看。\"\n\n帕兹\n\"这张照片有没有什么特别的地方。\"\n\n卡尔的绿眼跟着你的动作转了一下，从窗台边缘往下压，目光落在照片上。\n\n卡琳娜伸手接过去，这次没有像上次那样只扫一眼。\n\n她低下头，指尖沿着相纸的边缘划了一圈，蓝瞳在照片上停留着，停留着，停得比刚才那一次长得多。\n\n卡尔从沙发扶手上跳下来，四爪无声地踩上沙发背，凑近卡琳娜的肩侧，绿眼也落在那张相纸上。\n\n公寓里安静，台灯的暖光把两人之间的空气压得很浅。\n\n卡琳娜抬起眼。\n\n眼神里的东西多了，探究的成分盖过了疏离，像是某个问题已经在她嘴边等了一会儿。\n\n卡琳娜\n\"你为什么觉得它有特别的地方？\"\n\n她没有直接回答，把问题原封不动推回来，语气介于好奇和某种按捺不住的兴趣之间。\n\n卡琳娜\n\"是照片本身，还是照片里的人让你觉得有什么不对劲？\"\n\n你胸腔里有什么东西停了一下。\n\n帕兹\n\"她应该已经死了。\"\n\n卡琳娜的视线没有从你脸上移开。\n\n她低下头，手指翻过照片，在相纸背面轻轻敲了两下，指节的节奏慢，像是在确认什么。\n\n她抬起眼，语气平了。\n\n卡琳娜\n\"我见过这个人。\"\n\n卡琳娜\n\"但这张照片本身——\"\n\n她指尖在相纸背面又敲了一下，停住。\n\n卡琳娜\n\"普通的相纸，普通的街道，背景是新西西里，拍摄角度也没什么异常。\"\n\n她说这话时语气平淡，但蓝瞳没有离开你的脸，盯着你，像在等你的表情给她一个答案。\n\n她把照片递回来，动作比上次慢。\n\n递到一半，手停住了。\n\n嘴角扬起来，细微，藏在台灯的暖光里，像是某种期待已经等到了合适的时机。\n\n卡琳娜\n\"不过，如果你想知道更多关于她的事——\"\n\n卡琳娜\n\"你得用你自己的故事来换。\"\n\n她的语气轻描淡写，照片悬在两人中间，还没有完全交到你手里。\n\n卡尔在沙发扶手上坐下来，尾巴缓慢地扫过皮面，绿眼在你和卡琳娜之间来回移动，耳朵转向前方，转向你这边。\n\n台灯的暖光把公寓里的空气烤得干燥，那个条件悬在里面，等着你。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:18",
+          "text": "问她为什么对我的过去感兴趣，我的身份她应该都从记者证上看到了"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:19",
+          "text": "你没有把手伸过去接那张照片。\n\n它还悬在两人中间，相纸边缘在台灯暖光里压出一道浅黄。\n\n你身体往椅背靠了一下，视线从照片移开，落到卡琳娜的眼睛上。\n\n帕兹\n\"你对我的过去感兴趣？\"\n\n帕兹\n\"我的记者证上写得很清楚——你已经看过了。\"\n\n问题落地，公寓里的安静拉长了一拍。\n\n卡琳娜没有立刻开口。\n\n她把悬在两人中间的照片收回来，手指在相纸边缘轻轻摩擦了一下，指腹在那道泛黄的边上停了片刻。\n\n蓝瞳从照片上抬起，落在你脸上，嘴角微微上扬，像是等到了某个切入点。\n\n卡琳娜\n\"记者证能告诉我的——\"\n\n卡琳娜\n\"是一串字母，和一份职业。\"\n\n她身体微微前倾，声音里探究的成分压过了疏离，语速连绵起来，从一个细节跳到下一个，像在念一份她刚编好的清单。\n\n卡琳娜\n\"但你这张记者证，边角磨成那个程度，不是随手揣着的习惯——是长期贴着皮肤放，反复掏出来过的。\"\n\n卡琳娜\n\"你的相机，快门周围摩挲出来的痕迹，不是偶尔拍照的记者留下的——那是手指在等待里反复压上去的习惯动作。\"\n\n卡琳娜\n\"还有在巷子里，后面那几个人踩碎石的声音传过来的时候，你的手指在衣侧停了一下。\"\n\n卡琳娜\n\"就那么一下，很短，但我看见了。\"\n\n她蓝瞳短暂发亮，句子还没完，已经准备好了下一个。\n\n卡琳娜\n\"这些，记者证上一个字都没有。\"\n\n卡尔从沙发扶手上无声跃起，四爪落在茶几文件堆旁，没有发出任何声音。\n\n绿眼在卡琳娜和你之间缓慢移动，耳朵朝前转了一下，停在你的方向。\n\n卡琳娜停下推演，把照片放在茶几边缘，指尖轻推，让它朝你滑过来。\n\n她坐回沙发，身体前倾，蓝瞳锁住你。\n\n卡琳娜\n\"新西西里的规矩你已经知道了——尊严和公道，才是这里最贵重的东西。\"\n\n卡琳娜\n\"我用我知道的换你的故事。\"\n\n卡琳娜\n\"你的过去，是我认可的价码。\"\n\n她说这话时语气轻，每个字落地的方式像是在解释一条规则，句子收得干净，没有留出讨价还价的空间。\n\n卡尔在茶几上坐下，尾巴缓慢扫过文件纸面，发出一道细微的摩擦声。\n\n台灯的暖光把空气烤得均匀，照片停在茶几边缘，等着你。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:20",
+          "text": "简单说说自己过去的经历，提起照片里的发绳的特别之处"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:21",
+          "text": "台灯的暖光还亮着，茶几边缘的照片对着天花板，相纸没有动。\n\n你把手放在膝盖上，掌心朝下，手指在裤线上压了一下。\n\n帕兹\n\"我在战区待了三年。\"\n\n帕兹\n\"记者的工作是记录，不是干预——我告诉自己这件事告诉了很多次。\"\n\n你的手指停了一下，没有动。\n\n帕兹\n\"但住在那里的人，吃的喝的，死在你面前的人——到后来你就分不清自己还算不算一个旁观者了。\"\n\n卡琳娜的蓝瞳没有离开你的脸，手指轻轻抚过卡尔的脊背，猫背微微拱起，没有出声。\n\n帕兹\n\"我们住处遭到袭击的那天夜里，其他人都没有出来。\"\n\n帕兹\n\"我出来了。\"\n\n卡尔的尾巴在沙发扶手上缓慢扫过文件纸面，绿眼从你脸上移到卡琳娜的脸上，又移回来，耳朵朝前压着。\n\n帕兹\n\"后来我收到那封信的时候——\"\n\n你从内袋把照片抽出来，放到茶几上，用两根手指轻轻推过去。\n\n帕兹\n\"你先看这个。\"\n\n帕兹\n\"看那条发绳。\"\n\n卡琳娜俯身，指尖把照片拉近，蓝瞳落在红发少女的背影上，沿着发梢往发根的方向往上走。\n\n发绳，红色，铜扣，磨损的边缘在照片里清晰。\n\n帕兹\n\"那个铜扣——\"\n\n帕兹\n\"我来新西西里之前去查过。街头摊位批量出的廉价饰品，产地就在这里。\"\n\n你的声调往下压了一点，每个字落得比刚才实。\n\n帕兹\n\"她死在中东。那条发绳，在新西西里的街上买的。\"\n\n帕兹\n\"死了的人，发绳上有一个新西西里的铜扣。\"\n\n公寓里安静了一拍。\n\n卡尔的耳朵转向你，停住，没有再动。\n\n卡琳娜把照片放回茶几，手指没有立刻收回去，指腹压在相纸边缘，停着。\n\n她抬起眼，表情里探究的成分没有退，眉头轻轻蹙了一下，像是某个已经有了轮廓的答案刚刚又长出一个细节。\n\n卡琳娜\n\"她叫什么名字。\"\n\n帕兹\n\"敏特。\"\n\n卡琳娜的手指从相纸边缘收回来，捋了一下卡尔的耳后，猫把头蹭进她的掌心，绿眼半眯。\n\n卡琳娜\n\"她来过这里。\"\n\n卡琳娜\n\"来找我——她想要骷髅会的情报。\"\n\n卡琳娜嘴角微微下压，像是某件旧事被翻出来，味道不太好闻。\n\n卡琳娜\n\"我告诉了她我知道的那部分。\"\n\n卡琳娜\n\"至于她为什么要查骷髅会——\"\n\n沉重的敲门声从房门那边传进来，砸在干燥的空气里，一下，两下，第三下。\n\n卡尔的尾巴骤然停住，身体在卡琳娜怀里微微绷起，绿眼锁向门的方向，瞳孔收窄成一条细线。\n\n卡琳娜的句子断在原地，没有收尾。\n\n铁门从外面被推开了，铰链发出一声低沉的摩擦声。\n\n门槛那边走进来的是个年逾五十的男人，茶发，白色西装被汗水浸透贴在背上，脸上的汗珠在台灯暖光里泛着光，精神萎靡，步子却急，每一步都踩得重。\n\n你的身体下意识地绷紧，视线在男人和卡琳娜之间快速切换，手停在膝盖侧面，没有动。\n\n他穿过公寓，径直走向卡琳娜，双手在空中比划着，声音颤抖。\n\n德索洛\n\"卡琳娜——\"\n\n德索洛\n\"我的女儿，我来找你是为了我的女儿。\"\n\n德索洛\n\"凯旋门的人骗了她——他们骗她说是正规公司，然后，然后他们……\"\n\n他的喉咙卡了一下，双手在空中停了半拍，又重新比划起来，语无伦次。\n\n德索洛\n\"安娜，她誓死抵抗，她保住了名节，但是他们割掉了她的舌头。\"\n\n德索洛\n\"她再也不能当歌手了！\"\n\n德索洛\n\"我报了警，警局根本不管，他们都是凯旋门的人，我甚至不知道凶手是谁！\"\n\n你的眉头皱起来，视线落在那个慌乱的男人身上，带着审视。\n\n从他推开门，到现在，他叫了卡琳娜的名字。\n\n没有一次叫过\"阁下\"。\n\n卡琳娜把卡尔抱起来，搂在胸前，转过身，在德索洛身旁缓慢踱步，步伐稳定，每一步落地的声音清晰。\n\n她的表情已经变了，蓝瞳冷，干净，像是刚才倾听时那一点探究和好奇从未在这张脸上出现过，判若两人。\n\n卡琳娜\n\"德索洛先生。\"\n\n她的语气平，每个字咬得清晰，语速不急，像是在陈述一份清单。\n\n卡琳娜\n\"你当年巴结凯旋门，收养我，是因为你觉得和我扯上关系对你有用。\"\n\n卡琳娜\n\"出了事，你装作什么都没发生过。\"\n\n她走了两步，在他面前绕了个弧，卡尔在她怀里一动没动，绿眼锁住德索洛，瞳孔细。\n\n卡琳娜\n\"这些年，你没有邀请我参加过一顿饭。\"\n\n卡琳娜\n\"哪怕是最小的一个聚餐。\"\n\n她停下脚步，侧过脸，无奈地摇了摇头。\n\n眼神里有一丝疲惫，但很快收进那层冷色里，不剩痕迹。\n\n卡琳娜\n\"你根本不把我当家人，德索洛先生。\"\n\n卡琳娜\n\"你到现在都不愿意叫我一声'阁下'。\"\n\n德索洛的肩膀塌下去，幅度不大，但能看见。\n\n他的眼神从卡琳娜脸上移开了，嘴唇哆嗦了一下，羞愧和恐慌混在那双眼睛里，在公寓的暖光里晃动。\n\n他把视线转过来，落在你身上。\n\n那双眼睛里只剩哀求，像是抓住了最后一根还没有松手的东西。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:22",
+          "text": "选择：也就是说，这位先生抛弃了养女。现在却低头求她帮自己的亲生女儿？有趣。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:23",
+          "text": "你身体往椅背靠了一下，手臂交叉在胸前，视线从德索洛那张汗湿的脸上扫过去，落到卡琳娜身上。\n\n帕兹\n\"也就是说，这位先生抛弃了养女。\"\n\n帕兹\n\"现在却低头求她帮自己的亲生女儿？\"\n\n帕兹\n\"有趣。\"\n\n卡琳娜把卡尔抱起来，侧过身，目光从你脸上掠过去，嘴角微不可察地动了一下，没有接话。\n\n她把视线转向德索洛，蓝瞳落稳，语气收冷，每个字咬得清晰。\n\n卡琳娜\n\"暗街的规矩，德索洛先生。\"\n\n卡琳娜\n\"求公道，是要有代价的。\"\n\n德索洛的肩膀绷紧了，喉咙里滚动着什么，嘴唇颤了一下，右手在身侧攥成拳，手背上的青筋凸出来。\n\n他的眼睛红了，目光越过卡琳娜，盯着前方某个看不见的地方，牙关咬紧，像是把什么东西堵回去。\n\n那团怒火烧了片刻。\n\n他的肩膀垮下来，拳头里的力气一点点松开，手指伸展，垂在身侧。\n\n他缓慢地弯下膝盖，白色西装的布料在膝弯处绷紧，一道褶皱从大腿根部扯到膝盖，随着他的身体往下压，越绷越深。\n\n单膝触地，他双手捧起卡琳娜的右手，额头低垂，声音从喉咙深处挤出来，嘶哑，颤抖。\n\n德索洛\n\"卡琳娜阁下……我需要您的帮助。\"\n\n卡琳娜没有动，俯视着跪在地上的他，下颌微微抬起，蓝瞳平静，逆光把她的轮廓压成一条清晰的线。\n\n公寓里安静了一拍，台灯的暖光把地板上那道褶皱烤得清晰。\n\n她轻轻点了一下头。\n\n喉咙里逸出一声极短的笑，轻到几乎消散在干燥的空气里，像是自嘲，又像是某种早已预料到的结果。\n\n卡琳娜\n\"很好，德索洛。\"\n\n卡琳娜\n\"今日，请收下这份公正。\"\n\n卡琳娜\n\"他日我或许会需要你的帮助，请别忘记了。\"\n\n德索洛的背颤了一下，连声道谢，声音碎，起身的动作踉跄，脚步没有站稳，扶着膝盖撑起来，始终没有抬头直视她。\n\n他转向门口。\n\n经过你身边时，脚步顿了一下，不超过一个呼吸的长度。\n\n那双眼睛落在你脸上，感激、羞愧、还有一丝什么混在里面，在你脸上停了不到一秒，随即低下头，快步出了铁门。\n\n铰链发出一声低沉的摩擦声，铁门在身后合上，沉，短，干脆。\n\n公寓里的安静回来了。\n\n卡尔从卡琳娜怀里跳下，四爪无声落在沙发扶手上，绿眼转向你，瞳孔收细，一动不动。\n\n卡琳娜转过身，逆光里脸上残留着一丝什么，很快压进那层平静里，语气落得随意。\n\n卡琳娜\n\"你怎么看。\""
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:24",
+          "text": "问她德索洛后续还会来找她吗？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:25",
+          "text": "卡琳娜没有立刻开口。\n\n她俯身，双臂把卡尔从沙发扶手上抄起来，搂在胸前。\n\n卡尔喉咙里发出一声极低的呼噜，四爪放松，悬在空中。\n\n帕兹\n\"他还会来找你吗？\"\n\n卡琳娜的手指在卡尔下巴的位置轻轻挠了一下，猫把头往她掌心顶了顶，呼噜声低了又高。\n\n她没有急着回答，目光落在窗外，沉了一拍。\n\n卡琳娜\n\"他欠了我一次帮助的承诺。\"\n\n卡琳娜\n\"这个岛上，尊严换来的债，没有人敢赖。\"\n\n卡琳娜\n\"我会在他最需要的时候，把这份债收回来。\"\n\n她说这些话时语气平，每个字落地的方式像是在陈述一条规矩，句子里没有留出任何讨论的空间。\n\n卡尔的呼噜声渐渐停了，绿眼从窗外转过来，落在你身上，瞳孔收细，一动不动。\n\n卡琳娜的视线也跟着转过来。\n\n蓝瞳里有什么东西重新亮起来，和刚才陈述债务时的冷不一样，探究的成分盖过了其他的一切，身体微微前倾。\n\n卡琳娜\n\"对了。\"\n\n卡琳娜\n\"你觉得刚才那场闹剧，和你想象的新西西里，有什么不一样的地方？\"\n\n她的语速快了，从陈述的节奏切换过来，句子的尾音往上带了一点，像是某个憋了许久的问题终于找到了合适的时机。\n\n卡尔的尾巴在卡琳娜的臂弯里缓慢扫动，绿眼锁定你，耳朵朝前压着，那双眼睛里有一种过于沉静的东西，和普通猫对着窗外鸟雀时的专注截然不同。\n\n卡琳娜走向窗边，在窗台边站住，侧过脸，嘴角微微扬起来。\n\n卡琳娜\n\"还是你更想继续说说敏特的事——随你。\""
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:26",
+          "text": "德索洛会不会是间谍"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:27",
+          "text": "公寓里安静了一拍，台灯的暖光把茶几上那张照片的边缘烤得发白。\n\n你身体靠向椅背，手臂交叉在胸前。\n\n帕兹\n\"德索洛会不会是间谍？\"\n\n卡尔的绿眼转向你，瞳孔微微收缩，像一枚硬币边缘的划痕，细，精准。\n\n卡琳娜没有立刻开口。\n\n她俯身，把卡尔从臂弯里放下，黑猫四爪无声落在沙发扶手上，尾巴停了一下。\n\n卡琳娜站起身，走向窗边，背对你，蓝瞳望着窗外砖墙上的那块光斑，没有动。\n\n她转过身。\n\n卡琳娜\n\"你为什么觉得他会是间谍？\"\n\n语速加快了，问题已经在后面压着下一个。\n\n卡琳娜\n\"是跪下来这个动作让你觉得不对，还是他进门之前的什么细节？\"\n\n卡琳娜\n\"还是说，你在战区见过用'父亲求女儿'这种形式来递情报的人？\"\n\n她的蓝瞳在你脸上停了一下，没有等你把答案送出来。\n\n卡琳娜\n\"我来说说我的判断。\"\n\n卡琳娜\n\"他欠下的债是真的，欠债的人脸上有一种压着的东西，装不出来。\"\n\n卡琳娜\n\"跪下去的时候，他的拳头先攥紧了，再松开，再弯膝——那是真正的耻辱，不是动作。\"\n\n卡琳娜\n\"间谍传递信息，要的是精简，进门就哭诉女儿的名字、工作、经过、凶手……细节给太多了，操作上根本不是这么用人的。\"\n\n卡琳娜\n\"还有一点——\"\n\n卡琳娜\n\"凯旋门刚羞辱过一个人，不会转头把这个人当自己的眼线用。\"\n\n卡琳娜\n\"他们在意的是面子，比什么都在意。\"\n\n卡尔在茶几上轻甩了一下尾巴，绿眼在你和卡琳娜之间移了一圈，耳朵向前倾，停在你这侧。\n\n卡琳娜停下来，句子收住，嘴角带着细微的弧度。\n\n卡琳娜\n\"所以，德索洛不是。\"\n\n卡琳娜\n\"但我更好奇的是——\"\n\n卡琳娜\n\"你第一反应是怀疑他，这个习惯是从哪里来的？\"\n\n卡琳娜\n\"在战区见过类似的人，还是当记者久了，看什么都先过一遍筛子？\"\n\n她的蓝瞳落在你脸上，嘴角的弧度没有动，等着你。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:28",
+          "text": "我只是担心，他会对你造成威胁"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:29",
+          "text": "你靠着椅背，手指在膝盖侧面停了一下。\n\n帕兹\n\"我只是担心，他会对你造成威胁。\"\n\n卡琳娜蓝瞳在你脸上停住了。\n\n不是推演的停顿，也不是回避——是某个东西卡在那里，让她原本流畅的节奏断了一拍。\n\n她没有立刻开口。\n\n卡尔在茶几上抬起头，绿眼转向卡琳娜，尾巴在文件纸上缓慢扫过一下，停住。\n\n公寓里的暖光把两人中间的空气烤得均匀，台灯没有动。\n\n卡琳娜转过身，走向窗边，背对你。\n\n砖墙上的那块光斑落在她肩膀上，白色棉衣的布料压出一道浅影。\n\n她在窗边站了片刻，没有说话。\n\n沉默里传出一声极轻的笑，短，低，像是某个预料之外的东西把她逗到了。\n\n她转过身，蓝瞳里带着一丝意外，嘴角的弧度还留着刚才那声轻笑的余韵。\n\n她走回沙发前，身体前倾，手臂搭在膝盖上，语速连绵起来，句子和句子之间几乎没有停顿。\n\n卡琳娜\n\"德索洛欠了我一次承诺。\"\n\n卡琳娜\n\"暗街的规矩，欠债的人会好好保护债主，直到还清为止。\"\n\n卡琳娜\n\"凯旋门刚刚让他在我面前跪下来，他们现在连他的影子都不想碰。\"\n\n卡琳娜\n\"而且，你见过威胁你的人会先跪下来求你的吗？\"\n\n卡琳娜\n\"真正会构成威胁的人，从来不跪着说话——他们会先试探，等你放松，再算账。\"\n\n卡琳娜\n\"威胁从来不挂在嘴上。\"\n\n卡琳娜\n\"挂在嘴上的，都是在求饶。\"\n\n她停了一拍，蓝瞳锁定你，嘴角微扬。\n\n卡琳娜\n\"不过……\"\n\n卡琳娜\n\"你第一反应是担心我受到威胁，而不是别的。\"\n\n卡琳娜\n\"这个'担心'，是从哪里来的？\"\n\n卡尔的绿眼在你和卡琳娜之间缓慢移动，瞳孔扩张了一圈，耳朵朝你的方向压下去，尾巴尖轻轻勾了一下，停在茶几边缘。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:30",
+          "text": "选择：直接回答：职业习惯——见过太多人突然翻脸，先预判威胁是本能"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:31",
+          "text": "卡琳娜的蓝瞳在你脸上停了一拍，没有立刻接话。\n\n像是把这个答案在心里放好位置，确认它落稳了，才往下走。\n\n她向前坐了坐，手臂搭在膝盖上，身体前倾，语速连绵起来。\n\n卡琳娜\n\"预判威胁是本能——\"\n\n卡琳娜\n\"那第一次意识到这个本能是什么时候？\"\n\n卡琳娜\n\"是在战场上，还是更早？\"\n\n卡尔的耳朵转向你，绿眼在暖光里微微收缩，尾巴尖在茶几边缘缓慢勾了一下，停住。\n\n卡琳娜\n\"也许是某次采访里，对方突然翻了脸——\"\n\n卡琳娜\n\"也许是第一个死在你面前的人，让你的相机不再只是工具。\"\n\n她的句子和句子之间几乎没有停顿，每个问题都压着下一个问题的开头，蓝瞳一直落在你脸上，没有移开。\n\n卡琳娜\n\"你在那片战场上，见过的最危险的时刻是什么？\"\n\n卡尔从茶几上站起来，四爪无声，脊背弓起，尾巴在空中画了个弧。\n\n它跳上卡琳娜的膝盖，蜷起身子，绿眼从她的臂弯里露出来，继续看着你。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:32",
+          "text": "选择：回答她——不是在战场上，更早。第一个死在镜头里的人教会了我"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:33",
+          "text": "卡琳娜蓝瞳里闪过一道什么，身体微微前倾，下颌抬起，等着你把下半句送出来。\n\n帕兹\n\"更早。\"\n\n帕兹\n\"第一个死在镜头里的人教会了我。\"\n\n卡尔在卡琳娜膝上抬起头，绿眼定在你脸上，耳朵前倾，尾巴在空气里缓慢扫过一个弧线，停住。\n\n卡琳娜\n\"更早——\"\n\n卡琳娜\n\"更早是什么时候，什么地方，你当时多大？\"\n\n卡琳娜\n\"那个人是谁，你认识他吗，是采访对象还是路人？\"\n\n卡琳娜\n\"你举起相机的时候，你知道他要死了吗？\"\n\n她的语速没有减，每个问题压着下一个的尾音，蓝瞳一直落在你脸上，没有移开，没有留给你回避的间隙。\n\n你把手伸进外套内袋。\n\n那张照片从袋口滑出来，相纸边缘泛黄，磨损的角已经软了，你把它放在茶几上，手指在边缘停了一瞬，没有立刻松开。\n\n帕兹\n\"二十三岁，中美洲。\"\n\n帕兹\n\"我还不是战地记者，给一家地方报纸跑政治线。\"\n\n帕兹\n\"那天有示威游行，我去拍，觉得就是普通的群众新闻。\"\n\n手指从照片边缘移开，你视线落在相纸上，停了一下。\n\n帕兹\n\"镜头里有个男人，三十多岁，站在人群外沿，手里没有举牌。\"\n\n帕兹\n\"我对准他，快门还没按下去，后面有人推了他一把。\"\n\n帕兹\n\"他往前踉跄，刚好走进警戒线。\"\n\n帕兹\n\"我按下快门的时候，他已经倒了。\"\n\n卡琳娜听着，蓝瞳从你脸上移到茶几上的照片，再移回来，嘴角的弧度慢慢收拢，表情认真，呼吸节奏微微变了一下，没有开口打断。\n\n帕兹\n\"我站在那里，相机还举着，取景框里是他倒在地上的样子。\"\n\n帕兹\n\"我没有去拉他。\"\n\n帕兹\n\"我把那张照片拍完了，才放下相机。\"\n\n声音在句尾落下去，没有修饰，就这么停在公寓的暖光里。\n\n卡尔从卡琳娜膝上站起来，四爪无声落在茶几上，低头靠近那张照片，绿眼瞳孔收细，在相纸上停了片刻，尾巴尖轻轻勾了一下，停在茶几边缘。\n\n它抬起头，看向你，耳朵前倾，呼噜声低低地在公寓里铺开。\n\n卡琳娜沉默了一拍。\n\n卡琳娜\n\"那个人叫什么名字？\"\n\n卡琳娜\n\"快门按下去的那一刻，你在想什么？\"\n\n卡琳娜\n\"那张照片后来怎么了，发出去了吗，还是你留着？\"\n\n暖光把三人的影子压在茶几上，照片的边缘在光里泛着一层旧黄，空气安静了一拍，只有卡尔的呼噜声低低地填补着沉默。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:34",
+          "text": "选择：只回答照片的去处——发出去了，登了头版"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:35",
+          "text": "手指从照片边缘移开，你身体向后靠进椅背。\n\n帕兹\n\"发出去了。\"\n\n帕兹\n\"登了头版。\"\n\n声音平，句子短，像是在陈述一条已经放置了很久的事实，没有在句尾附加任何东西。\n\n卡琳娜蓝瞳微微收缩，身体再次前倾，手臂压在膝盖上。\n\n卡琳娜\n\"登了头版。\"\n\n卡琳娜\n\"那你有没有后悔把它发出去？\"\n\n卡琳娜\n\"你拿着那张报纸的时候，想过放下相机吗？\"\n\n卡琳娜\n\"还是说，那个男人的死反而让你更坚定了？\"\n\n她的句子一个压着一个，蓝瞳锁在你脸上，嘴角的弧度收得很淡，没有等你把上一个问题的答案送出来。\n\n卡尔在茶几上抬起头，绿眼在你和卡琳娜之间缓慢移过去，耳朵朝你的方向压下去。\n\n它的尾巴尖轻轻勾了一下，停在茶几边缘，瞳孔扩张了一圈。\n\n呼噜声低低地在公寓里铺开，填进两人之间的空气里。\n\n卡琳娜停下来，沉了一拍，蓝瞳里带着一种认真的东西，不是审判。\n\n台灯的暖光把茶几上那张照片的边缘烤得更黄，公寓里的空气安静下来，只有卡尔的呼噜声还在低低地铺着。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:36",
+          "text": "告诉卡琳娜记者的照片就是最重要的武器。并拿出收到的照片问她去哪里找敏特"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:37",
+          "text": "台灯的暖光把茶几上那张照片的边缘烤得更黄，卡琳娜的追问还悬在公寓的空气里，没有落地。\n\n你手指抬起来，指了指茶几上那张泛黄的旧照。\n\n帕兹\n\"照片就是记者最重要的武器。\"\n\n帕兹\n\"不是笔，不是话——是照片。\"\n\n你把手伸进外套内袋，手指触到那张照片的边缘，相纸的软度和记忆里一模一样。\n\n你把它取出来，和茶几上那张旧照并排放下，两张相纸挨着，一新一旧，在暖光里各自泛着一层黄。\n\n卡尔的绿眼在两帧相纸之间缓慢移动，尾巴尖停在茶几边缘，一动不动。\n\n帕兹\n\"这张是敏特。\"\n\n帕兹\n\"我去哪里找她？\"\n\n卡琳娜从窗边走过来，脚步落地无声，白色棉衣的下摆在空气里压出一道浅影。\n\n她俯身，蓝瞳落在敏特的照片上，停了一拍。\n\n她的手指靠近相纸边缘，停住，没有碰。\n\n卡尔在茶几上缓缓踱步，四爪无声，低头，用鼻尖轻轻碰了碰相纸的一角，停在那里。\n\n卡琳娜直起身，手臂交叉在胸前，下颌微微抬起。\n\n她蓝瞳里那道好奇的光收起来了，表情变得平整，语速也慢下来，每个字落得均匀，像在处理一件递到她桌上的申请。\n\n卡琳娜\n\"她来找过我。\"\n\n卡琳娜\n\"想要的东西，和你现在想要的，差不多。\"\n\n卡琳娜\n\"线索我有。\"\n\n卡琳娜\n\"但在我告诉你之前，我需要你先回答我一个问题。\"\n\n卡尔在茶几上坐下来，绿眼锁定你的脸，瞳孔收细，尾巴绕到爪边，停住。\n\n阳光从窗棱斜进来，两张照片并排躺在光里，一道暖黄压在相纸的边缘上。\n\n卡琳娜\n\"找到她之后，你打算做什么？\"\n\n卡琳娜\n\"确认她活着就够了——还是要把她带回你来的地方？\"\n\n公寓里安静下来，只有窗外远处还有庆典收尾的声音，低低的，像是从很远的地方漫过来的。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:38",
+          "text": "选择：反问卡琳娜——你为什么需要知道这个"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:39",
+          "text": "茶几上两张照片并排在光里，暖黄压着相纸边缘，公寓的空气安静着。\n\n卡琳娜的蓝瞳落在你脸上，等着你的答案。\n\n帕兹\n\"你为什么需要知道这个？\"\n\n声音平，没有抬高，目光没有移开。\n\n卡琳娜蓝瞳微微收缩。\n\n她手臂从胸前松开，下颌的角度略微调整，停顿了一拍。\n\n卡尔在茶几上抬起头，绿眼在你和卡琳娜之间缓慢移过去，尾巴尖轻轻勾了一下。\n\n呼噜声短暂停顿，又低低地在公寓里铺开。\n\n卡琳娜转过身，走向窗边，背对你站住。\n\n白色棉衣的肩膀处被窗棱的阴影切成两道线，她没有说话。\n\n阳光从窗棱斜进来，压在她肩上的那道光没有动。\n\n她转过身。\n\n距离感收起来了，嘴角弧度放松，语速没有连绵，每个字落得均匀，直接。\n\n卡琳娜\n\"因为她来找过我。\"\n\n卡琳娜\n\"我们有一笔交易，还没做完。\"\n\n卡琳娜\n\"她要的东西我给了一部分，她欠我一个回报，还没付。\"\n\n卡琳娜\n\"你的答案，决定我能不能把线索给你。\"\n\n她走回沙发前，坐下，手臂搭在膝盖上，身体前倾。\n\n蓝瞳锁定你，没有压制的意味，只是认真。\n\n卡琳娜\n\"找到她之后，你打算做什么？\"\n\n阳光从窗棱斜进来，茶几上两张照片并排躺在光里，空气重新沉入安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:40",
+          "text": "选择：给一个模糊的答案——还没决定，先见到她再说"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:41",
+          "text": "\"还没决定。\"\n\n\"见到她再说。\"\n\n卡琳娜蓝瞳在你脸上停了一拍。\n\n嘴角微微上扬，弧度浅，不是满意，也不是不满。\n\n像是什么答案落进了她早就留好的位置，一个\"果然如此\"的确认。\n\n她向后靠进沙发，手臂从膝盖上松开，脊背压进靠垫里，节奏放慢了。\n\n卡尔在茶几上抬起头，绿眼在你和卡琳娜之间缓慢移过去。\n\n尾巴尖轻轻勾了一下茶几边缘，停住，瞳孔扩张了一圈。\n\n它站起来，四爪无声，在茶几上踱了半步，重新坐下，耳朵朝你的方向压下去。\n\n卡琳娜两根手指在沙发扶手上轻轻叩了一下，收住。\n\n语气换了一个调子，没有之前的连绵，每个字落得松快，带着一种放下某件事的轻盈。\n\n卡琳娜\n\"那这个先放一放。\"\n\n卡琳娜\n\"我有个别的问题想问你。\"\n\n她的手臂搭在沙发侧边，蓝瞳里那道审视的光收起来了。\n\n落在你脸上的目光平了，像是两个人坐在同一张桌子旁边，各自把手里的牌扣下。\n\n卡琳娜\n\"刚才德索洛那一出——\"\n\n卡琳娜\n\"你觉得怎么样？\"\n\n卡琳娜\n\"这里的日子，和你来新西西里之前想的，一样不一样？\"\n\n她停下来，没有压下一个问题上去，把空间留出来。\n\n卡尔在茶几上趴下来，尾巴慢悠悠地扫过茶几边缘，绿眼半阖。\n\n呼噜声低低地在公寓里铺开，填进两人之间松弛下来的空气里。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:42",
+          "text": "选择：直接回答——比想象的乱，但也比想象的有意思"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:43",
+          "text": "\"比想象的乱。\"\n\n\"但也比想象的有意思。\"\n\n卡琳娜蓝瞳里有什么轻轻动了一下。\n\n她向后靠进沙发，脊背压进靠垫里，手臂从膝盖上松开，随意搭在扶手上。\n\n嘴角弧度展开了一点，浅，带着一种被逗到的松弛。\n\n卡琳娜\n\"诚实。\"\n\n卡琳娜\n\"大部分外来的人进来之前都觉得这里只是穷，脏，危险。\"\n\n卡琳娜\n\"说'有意思'的，你是第一个。\"\n\n她两根手指在扶手上轻轻叩了一下，收住。\n\n视线从你脸上移开，落到窗棱方向，停了一拍。\n\n卡琳娜\n\"你说这里乱——\"\n\n卡琳娜\n\"德索洛那件事，就是乱的一种。\"\n\n卡琳娜\n\"不过那背后的东西，比他自己知道的复杂一些。\"\n\n卡尔在茶几上缓缓踱步，四爪落地无声。\n\n绿眼在你脸上停了一拍，又转向卡琳娜。\n\n卡琳娜\n\"我从前住福利院。\"\n\n卡琳娜\n\"那地方在暗街边上，不大，住的都是没人要的孩子。\"\n\n她语速平，没有起伏，像在说别人的事。\n\n卡琳娜\n\"凯旋门那时候要扩地盘，看上了福利院那块地。\"\n\n卡琳娜\n\"院子拆了，孩子里头，只有少数几个被收留——被各家各户领走，做各种各样的安排。\"\n\n卡尔在茶几边缘停住，尾巴悬在半空，一动不动。\n\n耳朵随卡琳娜的声调压下去，又慢慢转回来。\n\n卡琳娜\n\"德索洛领走了我。\"\n\n卡琳娜\n\"他那时候在巴结凯旋门，收一个孩子，是做给对方看的姿态。\"\n\n卡琳娜\n\"但他也真的给我交了学费，让我念完了书。\"\n\n她眼神从你脸上移向窗棱，停了一瞬，再移回来。\n\n卡琳娜\n\"这两件事都是真的，不用选一个。\"\n\n卡尔抬起头，绿眼转向你，耳朵前倾。\n\n尾巴尖轻轻扫过茶几边缘，在'上学'二字落地后，又缓缓扫了一下，停在茶几角上。\n\n卡琳娜说完，没有再接下去。\n\n她手臂搭在扶手上，身体靠在沙发里，目光落在你脸上，没有追问，也没有等你开口的催促。\n\n暖光压在茶几上，两张照片还并排躺在那里。\n\n公寓的空气松着，窗外庆典收尾的声音低低地从很远的地方漫过来，卡尔的呼噜声在室内铺开，填进沉默里。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:44",
+          "text": "敏特也是其中之一吗？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:45",
+          "text": "卡琳娜身体前倾的姿势没有动，手臂还搭在膝盖上。\n\n暖光在茶几上压着，两张照片并排躺在那里。\n\n帕兹\n\"敏特也是其中之一吗？\"\n\n卡琳娜蓝瞳在你脸上停了一拍。\n\n她没有立刻回答，表情从刚才平铺往事的调子里缓缓移开。\n\n嘴角的弧度细微地变了，不是警惕，是一种被触动了的专注。\n\n卡尔在茶几上抬起头，绿眼从卡琳娜转向你，耳朵慢慢朝你的方向压下去。\n\n尾巴尖悬在茶几边缘，停住，一动不动。\n\n它的瞳孔扩张了一圈，像是等着什么东西落进一个空了很久的地方。\n\n卡琳娜向前倾了一寸，手臂重新压在膝盖上，蓝瞳锁定你的脸。\n\n她的嘴角弧度收得淡，眼神里有什么比刚才聊德索洛时更浓。\n\n卡琳娜\n\"你问这个问题，是想把她跟福利院的事连在一起。\"\n\n卡琳娜\n\"我想先知道，你为什么要这样连。\"\n\n卡琳娜\n\"德索洛，福利院，凯旋门——\"\n\n卡琳娜\n\"你真正想找的，是这条线上的哪一个？\"\n\n她把空间留出来，没有再往下压，蓝瞳在你脸上等着。\n\n卡尔的呼噜声低低地在公寓里铺开，填进安静里。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:46",
+          "text": "选择：反问回去——你先告诉我，敏特找你是为了骷髅会的事，还是凯旋门的事"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:47",
+          "text": "公寓的空气安静着，暖光压在茶几上，两张照片并排躺在那里。\n\n帕兹\n\"你先告诉我——\"\n\n帕兹\n\"敏特找你，是为了骷髅会的事，还是凯旋门的事？\"\n\n卡琳娜蓝瞳在你脸上停了一拍，身体前倾的姿势没有动。\n\n那道审视的光在她眼底缓缓换了一个调子。\n\n嘴角弧度细微地变了，弧度浅，像是一个被叫准了名字的人，短暂的停顿后放松下来。\n\n她向后靠进沙发，手臂从膝盖上松开，随意搭在扶手上，脊背压进靠垫里。\n\n卡尔在茶几上抬起头，绿眼在两人之间移过去，耳朵朝你的方向慢慢压下去。\n\n卡琳娜\n\"骷髅会。\"\n\n卡琳娜\n\"她来找我，就是为了这个。\"\n\n卡琳娜\n\"你想知道什么，我倒想先问问你——你来问这个，是为了她，还是为了骷髅会？\"\n\n她把空间留出来，没有再压下去，目光落在你脸上，带着一种被挑战后放下某件事的轻盈。\n\n卡尔突然开口了。\n\n声音从茶几上传出来，年轻，带着女性的嗓音，底下压着一层说不清年岁的老成。\n\n卡尔\n\"他女儿受伤是真的。\"\n\n卡尔\n\"但他真正想要的，是有人替他对付凯旋门。\"\n\n卡尔\n\"是谁都行。\"\n\n卡尔的尾巴缓慢扫过茶几边缘，绿眼锁定你，瞳孔收细。\n\n卡尔\n\"德索洛和暗街其他人一样。\"\n\n卡尔\n\"当他们发现你能替他们恨，他们就会把恨寄存在这里。\"\n\n卡尔\n\"然后心安理得地享受新西西里的太阳。\"\n\n卡尔重新沉默，绿眼从你脸上移开，瞳孔收得更细，尾巴停在茶几角，一动不动。\n\n卡琳娜伸手，手指落在卡尔的耳朵上，轻轻摸了一下。\n\n她没有开口，没有反驳，手指在耳廓边缘停住。\n\n阳光从窗棱斜进来，两张照片并排躺在茶几上，暖黄压着相纸边缘，公寓重新沉入安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:48",
+          "text": "选择：暂时搁下卡尔的事，追问敏特获取到了多少骷髅会的情报"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:49",
+          "text": "公寓里的暖光没有动，卡琳娜的手指还停在卡尔的耳廓边缘。\n\n帕兹\n\"敏特从你这里拿到了多少骷髅会的情报？\"\n\n卡琳娜蓝瞳微微动了一下。\n\n她手指在卡尔耳廓边缘停了一拍，没有立刻开口。\n\n卡琳娜脊背向后靠进沙发里，语速均匀，断句干脆。\n\n卡琳娜\n\"很少。\"\n\n卡琳娜\n\"远不够让她找到骷髅会的核心。\"\n\n卡尔在卡琳娜手指下动了动耳朵，绿眼转向你，耳朵朝你的方向慢慢压下去。\n\n卡尔\n\"敏特来新西西里时，带着的复仇清单比情报清单长得多。\"\n\n尾巴缓慢扫过茶几边缘，卡尔重新沉默，瞳孔收细。\n\n卡琳娜的手指轻轻挠了下卡尔的耳根，视线从卡尔身上移开，落回你脸上。\n\n卡琳娜\n\"她要找的不是情报——是一条能指向骷髅会的路。\"\n\n卡琳娜\n\"之后她离开了暗街。\"\n\n卡琳娜\n\"去了哪里，我也不知道。\"\n\n她身体微微前倾，两手交叠搭在膝盖上，蓝瞳里的审视收拢成等待。\n\n卡琳娜\n\"你追骷髅会的情报——是为了追上她，还是别的什么？\"\n\n卡尔的尾巴在茶几边缘缓慢扫了一下，停住。\n\n暖光在公寓里压着，空气安静地等待你开口。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:50",
+          "text": "选择：给一个模糊的答案——两者都有"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:51",
+          "text": "两张照片在茶几上躺着，暖光压在相纸边缘。\n\n帕兹\n\"两者都有。\"\n\n卡琳娜蓝瞳在你脸上停了一拍。\n\n嘴角非常浅地勾了一下，弧度淡，像一个答案恰好落进了早就留好的位置。\n\n她向后靠进沙发，手臂从膝盖上松开，搭在扶手上，脊背压进靠垫里。\n\n之前审视的那道光从眼底退去，两腿交叠，姿势松下来。\n\n卡琳娜转了个调子，语气随意，像是把一件事放到一边之后顺口聊起另一件。\n\n卡琳娜\n\"你觉得卡尔怎么样？\"\n\n她说这话时，眼神里带着一道安静的好奇，给的是\"你可以问\"的空间。\n\n茶几上，卡尔抬起绿眼，耳朵先朝卡琳娜的方向转了一下，再慢慢转回你。\n\n公寓里安静着，暖光没有动。\n\n卡尔\n「我只是会说话。」\n\n卡尔\n「没什么大不了的。」\n\n声音年轻，底下压着一层说不清年岁的老成，语调平，像在说一件再普通不过的事。\n\n卡尔\n「这里还有个长不大的女孩——」\n\n卡尔\n「还有——复活的人。」\n\n尾巴在茶几边缘慢悠悠扫了一下，绿眼瞳孔收细，说完后沉默落下来。\n\n卡琳娜伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n她没有纠正，也没有补充，手指在耳廓边缘停住。\n\n目光从卡尔身上移回你，蓝瞳里留着一道安静的好奇，等着你对这个话题的反应。\n\n公寓里的暖光仍旧安稳地压着茶几，两张照片并排躺着，空气松着。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:52",
+          "text": "选择：把话题拉回敏特——她离开暗街之后，有没有人见过她"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:53",
+          "text": "卡琳娜手指还停在卡尔的耳廓边缘。\n\n你的视线从卡尔身上移开，落回卡琳娜脸上。\n\n帕兹\n\"她离开暗街之后——有没有人见过她？\"\n\n卡琳娜蓝瞳在你脸上停了一拍。\n\n手指从卡尔耳廓上移开，她身体微微前倾，两指尖轻轻对触，搭在膝盖上。\n\n卡琳娜\n\"没有人。\"\n\n语速平，断句干脆，没有停顿也没有多余的东西。\n\n卡尔抬起绿眼，耳朵朝你的方向缓缓压下去。\n\n卡尔\n\"她离开暗街之后，就像消失了一样。\"\n\n卡尔\n\"但以她的性格，不会停下来。\"\n\n卡琳娜接过话头，两指尖轻轻分开，手掌平铺在膝盖上。\n\n卡琳娜\n\"她之所以离开，是因为在这里得不到更多了。\"\n\n卡琳娜\n\"她需要一条路——暗街没有路给她。\"\n\n卡尔的尾巴缓慢扫过茶几边缘，停在茶几角上。\n\n瞳孔收细。\n\n卡尔\n\"但她走的时候，已经不是两手空空了。\"\n\n说完，卡尔沉默落下来，绿眼从卡琳娜移向你，尾巴在茶几角一动不动。\n\n公寓的暖光仍旧安稳地压在茶几上，两张照片并排躺着。\n\n卡琳娜和卡尔的目光一起落在你脸上，空气重新沉入一种蓄势待发的安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:54",
+          "text": "那是否有任何能够追踪她去向的东西，比如发绳、血迹、脚印或者最后一次出现的位置，哪怕是骷髅会的近期动向"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:55",
+          "text": "卡琳娜身体前倾的姿势没有动，指尖轻轻对触，搭在膝盖上。\n\n帕兹\n\"那有没有什么能追踪她去向的东西——发绳，血迹，脚印，最后一次出现的位置，哪怕是骷髅会最近的动向。\"\n\n她的指尖停住，没有立刻开口。\n\n暖光在茶几上压着，公寓里的安静拉长了一点。\n\n卡琳娜\n\"这里没有官方记录。\"\n\n卡琳娜\n\"没有监控，没有值得保存的痕迹。\"\n\n卡琳娜\n\"人走了之后留下的，只有欠账和闲话。\"\n\n她的语速平，断句干脆，像在念一份清单，没有解释，没有补充。\n\n卡尔的尾巴在茶几上甩了一下，绿眼从卡琳娜身上转过来，落在你脸上。\n\n卡尔\n\"她带走的不是发绳，也不是脚印——是一样没法被第二个人追踪的东西。\"\n\n说完，卡尔的瞳孔收细，绿眼锁住你，尾巴停在茶几角，一动不动。\n\n沉默落下来，把刚才的话压进去。\n\n卡琳娜神情没有变，指尖轻轻分开，手掌平铺在膝盖上。\n\n卡琳娜\n\"若她真的留下了能追踪的痕迹，骷髅会早就找到她了。\"\n\n卡尔的耳朵朝你的方向慢慢压下去。\n\n卡尔\n\"你若只是追她的影子，暗街能给你的不多——你有没有想过，面对卡琳娜，比面对敏特更重要。\"\n\n声音落完，卡尔沉默，绿眼还锁在你脸上，瞳孔收得极细。\n\n质问后的空气没有填满，就那样空着。\n\n卡琳娜听完，没有开口，也没有纠正。\n\n她伸出手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n蓝瞳从卡尔身上移开，重新落回你脸上，带着一道安静的审视。\n\n她把空间全部留出来，等着你开口。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:56",
+          "text": "那敏特来找你的时候，手上是否带了什么特别的东西？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:57",
+          "text": "公寓的暖光压在茶几上，两张照片并排躺着。\n\n帕兹\n\"敏特来找你的时候——她手上带了什么特别的东西吗？\"\n\n卡琳娜的手指在卡尔耳廓边缘停了一拍。\n\n身体前倾的姿势没有变，蓝瞳微微偏移，像在翻一本只有她能看见的档案。\n\n暖光在公寓里压着，沉默拉长了一点。\n\n她的手指重新开始轻轻摩挲卡尔耳廓边缘，语调平直。\n\n卡琳娜\n\"发绳。\"\n\n卡琳娜\n\"红色的，铜扣，扣子边缘磨损了一圈。\"\n\n卡琳娜\n\"和你那张照片上的那条，一模一样。\"\n\n她说这话时没有停顿，断句干脆，像在念一行清单。\n\n卡琳娜\n\"还有一个护身符。\"\n\n卡琳娜\n\"金属片，边缘不规则，铸得很粗糙，像是从什么地方捡来的。\"\n\n卡琳娜\n\"铜色，表面有压痕，看不出原来刻的是什么。\"\n\n她描述这些时，眼底没有波动，只是平静地往外递信息，像在清点一份旧存货。\n\n卡尔从茶几上抬起绿眼，声音年轻，底下压着一层说不清年岁的老成。\n\n卡尔\n\"她记得很清楚。\"\n\n语调平，像在陈述一件明显的事实。\n\n说完，卡尔的尾巴在茶几边缘慢悠悠扫了一下，瞳孔收细，停住。\n\n卡琳娜伸手，手指落在卡尔的耳朵上，轻轻挠了一下。\n\n她没有开口反驳，嘴角弧度在那一瞬细微地动了一下，弧度浅，一闪即收。\n\n手指在耳廓边缘停住。\n\n蓝瞳从卡尔身上移开，重新落回你脸上，带着一道安静的审视。\n\n卡琳娜\n\"这两样东西——对你来说意味着什么？\"\n\n茶几上，两张照片并排躺着，暖光压在相纸边缘，公寓里的空气重新沉入一种带着期待的安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:58",
+          "text": "那我应该去哪里找她？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:59",
+          "text": "\"那我应该去哪里找她？\"\n\n公寓里的暖光压着，两张照片在茶几上并排躺着，相纸边缘没有动。\n\n帕兹\n\"那我应该去哪里找她？\"\n\n卡琳娜身体前倾的姿势没有变，指尖轻触，搭在膝盖上，蓝瞳平静地落在你脸上。\n\n暖光在茶几边缘压着，沉默拉长了一拍。\n\n卡琳娜\n\"暗街没有路给敏特。\"\n\n卡琳娜\n\"也不会有路给你。\"\n\n她的语速均匀，断句干脆，像在念一份清单，句与句之间没有多余的停顿。\n\n卡琳娜\n\"她离开之后——没有人能替你画地图。\"\n\n茶几边缘，卡尔的绿眼从卡琳娜身上缓慢移过来，锁住你。\n\n尾巴在茶几角静止。\n\n卡尔\n\"敏特带走的东西，本身就是一条路。\"\n\n卡尔\n\"只有她自己能踏上去。\"\n\n声音年轻，底下压着一层说不清年岁的老成，语调平，像在陈述一件再明显不过的事。\n\n卡尔的尾巴在茶几边缘缓缓扫了一下，停住，一动不动。\n\n卡尔\n\"你真正想找的——是敏特这个人，还是敏特要找的东西？\"\n\n绿眼的瞳孔收细，耳朵朝你的方向压下去，质问落完，卡尔沉默。\n\n卡琳娜没有开口，也没有纠正。\n\n她伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n蓝瞳从卡尔身上移开，重新落回你脸上，带着一道安静的等待，把空间全部留出来。\n\n茶几上，两张照片仍旧在暖光下并排躺着，公寓里的空气重新沉入一种带着审视意味的安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:60",
+          "text": "所以，是敏特死了吗？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:61",
+          "text": "你的声音落在公寓的暖光里。\n\n帕兹\n\"所以，是敏特死了吗？\"\n\n卡琳娜身体前倾的姿势没有变，指尖轻轻对触，搭在膝盖上。\n\n蓝瞳平静地锁住你，沉默在茶几上的两张照片之间拉长。\n\n她没有立刻开口。\n\n茶几边缘，卡尔抬起绿眼，耳朵朝你的方向缓缓压下去。\n\n瞳孔收细。\n\n尾巴在茶几角扫了一下，停住，一动不动。\n\n卡琳娜开口，语速平直，断句干脆。\n\n卡琳娜\n\"敏特来过暗街。\"\n\n卡琳娜\n\"她拿走了她能拿的东西。\"\n\n卡琳娜\n\"离开之后，没有人再见过她。\"\n\n她说这些时，像在念一份清单，句与句之间没有停顿，也没有解释。\n\n卡尔\n\"她带走的东西，只有她自己能踏上去。\"\n\n卡尔的声音年轻，底下压着一层说不清年岁的老成，语调平。\n\n卡尔\n\"你问的是敏特这个人——\"\n\n卡尔\n\"还是敏特要找的东西？\"\n\n质问落完，卡尔沉默，绿眼锁住你，尾巴在茶几角一动不动。\n\n卡琳娜伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n她没有开口，也没有补充。\n\n手指在耳廓边缘停住。\n\n蓝瞳从卡尔身上移开，重新落回你脸上，带着一道安静的等待。\n\n公寓里的暖光仍旧安稳地压着茶几，两张照片并排躺着，空气沉入一种带着审视意味的安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:62",
+          "text": "选择：回答卡尔：我找的是敏特这个人"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:63",
+          "text": "\"我找的是敏特这个人。\"\n\n帕兹\n「我找的是敏特这个人。」\n\n声音落在公寓的暖光里，茶几上的两张照片边缘没有动。\n\n卡琳娜身体前倾的姿势没有变，蓝瞳落在你脸上。\n\n沉默在公寓里拉长了一拍。\n\n她缓缓呼出一口气，指尖从膝盖上轻轻抬起，伸向卡尔脖子下方的铃铛。\n\n指腹碰上金属边缘，铃铛发出一声轻微的碰撞声，清且短。\n\n她没有开口。\n\n卡尔抬起绿眼，耳朵从压下的姿态缓缓立起，瞳孔从极细的状态微微松开。\n\n尾巴在茶几角缓缓扫过，停住。\n\n卡尔\n\"这你不是早就知道么。\"\n\n声音年轻，语调平直，像在陈述一件已经放在桌上的事实。\n\n说完，卡尔沉默下来，尾巴收住，不再追问。\n\n卡琳娜收回触碰铃铛的手，指尖重新轻轻对触，落回膝盖上。\n\n蓝瞳从卡尔身上移开，重新落回你脸上。\n\n眼神里带着一道安静的审视，和某种细微的、说不清方向的变化。\n\n公寓里的暖光仍旧安稳地压着茶几，空气从蓄势待发的安静，松解成带温度的人间静默。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:64",
+          "text": "选择：问卡琳娜：现在，你们能给我指一个方向吗"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:65",
+          "text": "暖光安静地压着茶几，两张照片边缘没有动。\n\n你身体微微前倾，脊背离开沙发靠背。\n\n帕兹\n\"现在——你们能给我指一个方向吗？\"\n\n卡琳娜身体前倾的姿势没有变，指尖轻轻对触，搭在膝盖上。\n\n蓝瞳平静地落在你脸上，沉默在公寓里拉长了一拍。\n\n卡琳娜\n\"暗街没有路给敏特。\"\n\n卡琳娜\n\"也不会有路给你。\"\n\n她的语速均匀，断句干脆，句与句之间没有多余的停顿，也没有补充。\n\n茶几边缘，卡尔抬起绿眼，耳朵朝你的方向缓缓压下去。\n\n尾巴在茶几角扫了一下，停住。\n\n卡尔\n\"敏特带走的东西，本身就是一条路。\"\n\n卡尔\n\"只有她自己能踏上去。\"\n\n声音年轻，底下压着一层说不清年岁的老成，语调平，像在陈述一件再明显不过的事实。\n\n卡尔\n\"别人看不见——也没法替你走。\"\n\n卡尔的瞳孔收细，绿眼锁住你，耳廓停在压下的姿态，一动不动。\n\n卡尔\n\"你下一步要往哪里走——这个问题，只有你自己能答。\"\n\n质问落完，卡尔沉默，尾巴在茶几角收住，绿眼仍旧锁着你。\n\n卡琳娜伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n她没有开口，也没有补充，把空间全部留出来。\n\n暖光在茶几边缘压着，公寓里的空气沉入一种带着审视意味的安静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:66",
+          "text": "选择：告诉卡尔：我去找骷髅会的线索——从那里找到敏特"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:67",
+          "text": "你身体微微前倾，脊背离开沙发靠背。\n\n暖光压在茶几上，两张照片边缘没有动。\n\n帕兹\n\"我去找骷髅会的线索——从那里找到敏特。\"\n\n卡尔抬起绿眼，耳朵从压下的姿态缓缓立起，瞳孔微微松开，随即又收细。\n\n尾巴在茶几角缓缓扫过，停住。\n\n卡尔\n\"骷髅会的情报在暗街不是秘密。\"\n\n卡尔\n\"能随便拿到的，也不是。\"\n\n声音年轻，底下压着一层说不清年岁的老成，语调平直，像在陈述一件放在桌上的事实。\n\n卡琳娜身体前倾的姿势没有变，指尖轻轻对触，蓝瞳落在你脸上。\n\n她的声音均匀，断句干脆。\n\n卡琳娜\n\"你需要的是骷髅会的情报方向——\"\n\n卡琳娜\n\"暗街已经给不出的那种。\"\n\n她说这话时没有停顿，也没有多余的解释，像在确认一件已经放定了的事。\n\n卡尔的耳朵朝帕兹方向转了一下，尾巴在茶几角缓缓扫过。\n\n卡尔\n\"敏特从卡琳娜这里拿走的骷髅会情报很少。\"\n\n卡尔\n\"但够指一个方向。\"\n\n卡尔\n\"港口区地下——骷髅会的军火库。\"\n\n语调平，没有起伏，像在念一行地址。\n\n卡琳娜伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n她没有反驳。\n\n卡琳娜\n\"那是敏特当初离开时追问过的地方。\"\n\n卡琳娜\n\"暗街没有人能替你走进去。\"\n\n蓝瞳在你脸上停留，带着一道安静的审视。\n\n手指在卡尔耳廓边缘停住，公寓的暖光仍旧安稳地压着茶几。\n\n卡尔瞳孔收细，绿眼锁住你，尾巴在茶几角收住，一动不动。\n\n卡尔\n\"你准备怎么走进去——\"\n\n卡尔\n\"以记者的身份，还是以别的什么。\"\n\n质问落完，卡尔沉默。\n\n公寓里的暖光仍旧安稳地压着茶几，空气因这句话微微收紧，把整片空间留给你。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:68",
+          "text": "选择：先追问港口区地下军火库的具体情况——位置、守卫、出入口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:69",
+          "text": "暖光压着茶几，两张照片边缘没有动。\n\n你身体微微前倾，脊背离沙发靠背远了一寸。\n\n帕兹\n\"港口区地下军火库——位置在哪，守卫怎么排，出入口有几个。\"\n\n卡琳娜身体前倾的姿势没有变，指尖轻轻对触，搭在膝盖上。\n\n蓝瞳平静地落在你脸上，沉默拉长了一拍。\n\n卡琳娜\n\"港口区的外部动静，暗街的情报网能摸到。\"\n\n卡琳娜\n\"军火库内部的地图、守卫排班、出入口细节——\"\n\n卡琳娜\n\"拿不到。\"\n\n她的语速均匀，断句干脆，句与句之间没有停顿，也没有解释。\n\n茶几边缘，卡尔的耳朵朝你的方向转了一下，绿眼瞳孔收细。\n\n卡尔\n\"军火库是骷髅会最敏感的区域之一。\"\n\n卡尔\n\"入口不止一个。\"\n\n卡尔\n\"有些连暗街的情报网都摸不到。\"\n\n声音年轻，底下压着一层说不清年岁的老成，语调平，像在念一行已经确认过的事实。\n\n卡琳娜伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n她没有反驳，也没有补充，指尖在耳廓边缘停住。\n\n卡琳娜\n\"敏特当初追问的也是这些。\"\n\n卡琳娜\n\"卡琳娜能告诉她的，只有军火库存在于港口区地下。\"\n\n卡琳娜\n\"哪条通道、怎么进——她是自己去摸的。\"\n\n蓝瞳在你脸上停留，带着一道安静的审视。\n\n卡尔的尾巴在茶几角缓缓扫过，停住。\n\n卡尔\n\"那里有骷髅会的人在看守。\"\n\n卡尔\n\"他们不会欢迎外来者。\"\n\n卡尔的声音顿了一下，瞳孔从收细的状态微微松开。\n\n卡尔\n\"这些问题，只有你自己去港口区才能回答。\"\n\n卡尔\n\"但暗街可以告诉你另一件事——\"\n\n卡尔\n\"你现在打算以什么准备踏进去。\"\n\n卡尔\n\"仍然以记者的身份，还是以别的什么。\"\n\n质问落完，卡尔沉默，绿眼锁住你，尾巴在茶几角收住，一动不动。\n\n卡琳娜指尖在卡尔耳廓边缘停住，手没有收回。\n\n蓝瞳重新落回你脸上，带着一道安静的审视。\n\n公寓里的暖光仍旧安稳地压着茶几，空气因这句话微微收紧。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:70",
+          "text": "记者身份太过引人注目，我需要改变我的容貌，伪装成值班守卫进去。但我仍然会把记者证带在身上，希望能够得到你的接应"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:71",
+          "text": "暖光压在茶几上，两张照片边缘没有动。\n\n你身体微微前倾，脊背离沙发靠背远了一寸。\n\n帕兹\n\"记者身份太过引人注目，我需要改变容貌，伪装成值班守卫进去。\"\n\n帕兹\n\"记者证我仍然会带在身上。\"\n\n帕兹\n\"我希望能得到你的接应。\"\n\n卡琳娜身体前倾的姿势没有变，蓝瞳平静地落在你脸上。\n\n沉默在茶几的暖光里拉长了一拍。\n\n卡尔的耳朵朝你的方向转去，绿眼瞳孔微微收细，随即松开。\n\n尾巴在茶几角缓缓扫过，停住。\n\n卡尔\n\"价值不对等。\"\n\n卡尔\n\"你的伪装换不了接应。\"\n\n卡尔\n\"你需要知道暗街的接应有多贵。\"\n\n语调平直，没有起伏，像在念一行已经确认过的事实。\n\n说完，卡尔沉默，尾巴在茶几角收住。\n\n卡琳娜指尖从膝盖上轻轻抬起，伸向卡尔脖子下方的铃铛。\n\n指腹碰上金属边缘，铃铛发出一声轻微的碰撞声，清且短。\n\n她把手收回，指尖重新轻轻对触，落回膝盖上。\n\n卡琳娜\n\"我不需要你卸掉记者身份。\"\n\n卡琳娜\n\"那不是我要的东西。\"\n\n她的语速均匀，断句干脆，句与句之间没有停顿。\n\n卡琳娜\n\"我要的是你从军火库深处带出来的东西。\"\n\n卡琳娜\n\"一件情报，或者一份证据。\"\n\n卡琳娜\n\"拿得出来，接应才有意义。\"\n\n蓝瞳锁住你，语气平，像在念一份已经拟好的条款，不带商量。\n\n卡尔\n\"你能从军火库里带出东西，接应就会来。\"\n\n卡尔\n\"带不回来，就没人在出口等你。\"\n\n语调平直，没有起伏，像在陈述已经过期的交易细则。\n\n卡尔绿眼锁住你，一动不动。\n\n卡琳娜指尖轻轻对触，缓缓微微侧头。\n\n蓝瞳从你脸上移向茶几上的两张照片，在照片边缘停了一拍。\n\n随即移回你脸上。\n\n卡琳娜\n\"潜入方式——你有具体想法了吗。\"\n\n她的语气平稳，带着一丝探究，把空间全部留在你这一侧。\n\n卡尔绿眼锁住你，耳廓停在竖起的姿态，一动不动，等待回答。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:72",
+          "text": "那我还是以记者身份进入"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:73",
+          "text": "暖光压在茶几上，两张照片边缘没有动。\n\n你脊背离沙发靠背远了一寸。\n\n帕兹\n\"那我还是以记者身份进入。\"\n\n卡琳娜的蓝瞳落在你脸上，没有动。\n\n沉默在暖光里拉长了一拍，茶几上的空气微微收紧。\n\n她指尖轻轻对触，语速均匀，断句干脆。\n\n卡琳娜\n\"记者身份进入军火库。\"\n\n卡琳娜\n\"从军火库深处带出情报或证据。\"\n\n卡琳娜\n\"交易成立。\"\n\n蓝瞳锁住你，语气平，像在念一份已经签好的条款，句与句之间没有停顿。\n\n茶几边缘，卡尔的耳朵朝你的方向缓缓转去。\n\n绿眼瞳孔微微收细，尾巴在茶几角缓缓扫过。\n\n卡尔\n\"记者证是你进那扇门的理由。\"\n\n卡尔\n\"也是让骷髅会的人有充分动机盯住你的理由。\"\n\n声音年轻，底下压着一层说不清年岁的老成，语调平，像在念一行已经确认过的事实。\n\n卡尔\n\"你站在军火库里的每一分钟，记者证都在替你证明你值得被处理掉。\"\n\n卡尔的尾巴在茶几角停住，绿眼瞳孔收细，锁住你。\n\n卡尔\n\"你清楚这意味着什么吗。\"\n\n质问落完，公寓里的暖光安静地压着茶几，卡尔沉默，绿眼一动不动。\n\n卡琳娜没有开口，也没有补充。\n\n她伸手，手指落在卡尔的耳廓上，轻轻挠了一下。\n\n蓝瞳从卡尔身上移开，重新落回你脸上，带着一道安静的审视。\n\n暖光压在茶几边缘，公寓里的空间全部留在你这一侧。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:74",
+          "text": "选择：回答卡尔：清楚。记者证是我唯一的护身符，也是我的靶子——我知道。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:75",
+          "text": "暖光安静地压着茶几，两张照片边缘没有动。\n\n帕兹\n\"清楚。\"\n\n帕兹\n\"记者证是我唯一的护身符，也是我的靶子——我知道。\"\n\n脊背离沙发靠背远了一寸，你的视线从卡尔移向卡琳娜，承担她们各自的反应。\n\n公寓里的暖光安稳地压着茶几，沉默拉长了一拍。\n\n卡尔从茶几上抬起前爪，指尖先探出茶几边缘，身体随之拉长，肉垫落在地板上没有声音。\n\n她绕过茶几腿，尾巴尖擦过你脚踝附近的空气，没有碰到。\n\n卡尔停在沙发扶手旁，抬起绿眼看向你，瞳孔收细。\n\n卡尔\n\"护身符和靶子，从来都是同一件东西。\"\n\n说完，卡尔沉默，绿眼一动不动，把空间全部留给卡琳娜那一侧。\n\n卡琳娜的蓝瞳在卡尔和你之间移动了一拍，随即收回。\n\n她身体前倾的姿势没有变，指尖轻轻对触，语速均匀。\n\n卡琳娜\n\"记者进去，带出来的东西，记者的相机拍下来——才算证据。\"\n\n卡琳娜\n\"那是你的身份给你留的唯一一件事。\"\n\n她说这话时没有停顿，断句干脆，像在确认一件已经放定的事。\n\n卡琳娜伸手，指腹沿茶几边缘划过两张照片，动作缓慢，没有任何迟疑。\n\n她没有再看照片，把它们并排推向茶几靠近你那一侧。\n\n卡琳娜\n\"从军火库出来时，暗街会有人接应。\"\n\n卡琳娜\n\"前提是你带着东西出来。\"\n\n语气平，没有强调，像在念一份已经签好并归档的条款。\n\n暖光仍旧压在茶几上，空气因这场对话微微收紧，沉入某种签约后的沉静。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:76",
+          "text": "选择：问卡琳娜：接应的信号怎么给——我出来的时候怎么让你们知道"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:77",
+          "text": "暖光仍旧压在茶几上，两张照片已被推至你这一侧。\n\n你脊背离沙发靠背远了一寸。\n\n帕兹\n\"接应的信号怎么给——我出来的时候怎么让你们知道。\"\n\n卡琳娜的蓝瞳平静地落在你脸上，沉默在暖光里拉长了一拍。\n\n卡尔耳朵朝你方向转去，绿眼瞳孔微微收细，尾巴在茶几角缓缓扫过，停住。\n\n卡琳娜\n\"暗街不需要信号。\"\n\n卡琳娜\n\"能带着东西从军火库出来，暗街自然有人知道。\"\n\n卡琳娜\n\"带不出来，就没有任何必要发出信号。\"\n\n她的语速均匀，断句干脆，句与句之间没有停顿。\n\n卡尔\n\"出口附近会有人。\"\n\n卡尔\n\"但只等带出东西的人。\"\n\n卡尔\n\"没带出来，那个人就只是路过的影子，不会为任何人停步。\"\n\n声音年轻，语调平直，像在念一行已经确认过的事实。\n\n卡琳娜伸手，指腹轻触卡尔脖子下的铃铛边缘。\n\n铃铛发出一声清且短的轻微碰撞。\n\n她没有看卡尔，蓝瞳始终锁住你。\n\n卡琳娜\n\"这就是暗街的接应规则——不等人，不找消失的人。\"\n\n卡尔从茶几边缘跃下，前爪落地没有声音。\n\n她绕过茶几腿，在你脚踝附近短暂停了一拍，走向窗边。\n\n尾巴缓缓扫过地板，背对着你。\n\n卡尔\n\"没人能证明你进去过——除了你带出来的东西。\"\n\n卡琳娜将身体微微后靠，指尖离开铃铛，重新轻轻对触落在膝盖上。\n\n蓝瞳从你脸上移开，短暂落向茶几上的两张照片，随即移回。\n\n卡琳娜\n\"剩下的问题，只有你自己能回答——\"\n\n卡琳娜\n\"你准备好进去了吗。\"\n\n公寓里的暖光安稳地压着茶几，空气沉入签约后的沉静。\n\n窗边，卡尔的尾巴在地板上缓缓收住，所有视线落回你身上。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:78",
+          "text": "选择：点头起身——告别卡琳娜和卡尔，离开公寓前往港口区"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:79",
+          "text": "两张照片边缘贴着茶几，你俯身，手指压住相纸，收入外套内袋。\n\n你起身，脊背挺直，重量全部落在脚底。\n\n卡琳娜没有动，身体微微后靠，蓝瞳跟着你起身的动作移上来。\n\n指尖在膝盖上轻轻对触，她开口，语速均匀，断句干脆。\n\n卡琳娜\n\"从军火库带出情报或证据，接应才会来。\"\n\n卡琳娜\n\"带不出来，暗街不会有人在出口等你。\"\n\n每一个字都沉在公寓的暖光里，不带温度，不带威胁。\n\n窗边，卡尔背对着你，尾巴在地板上缓缓扫过一道弧线，停住。\n\n她没有转身，耳朵在你迈向铁门时向后转了半拍。\n\n卡尔\n\"没人能证明你进去过——除了你带出来的东西。\"\n\n声音年轻，语调平直，像在念一行早已确认过的事实。\n\n说完，卡尔沉默，耳朵停在那个位置，绿眼望向窗外，一动不动。\n\n你走到铁门前，手搭上把手，冰凉的金属压进掌心。\n\n你停了一拍，呼吸在潮湿空气与室内干燥的交界处短暂凝住。\n\n你推开铁门，门轴发出一声沉闷的摩擦声。\n\n潮湿的空气从巷道涌入，与公寓的暖光形成短暂的交界。\n\n你跨出门槛，铁门在身后缓缓合上，发出一声沉重的金属闭合声。\n\n巷道两侧砖墙渗出深色水痕，远处有隐约的人影和低沉的交谈声。\n\n你整理了一下外套，外套内袋里的两张照片贴着肋骨的位置压实。\n\n你迈出脚步，身影逐渐融入暗街的阴影与潮湿空气里，向港口区的方向走去。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:80",
+          "text": "选择：沿暗街巷道潜行，尽量避开人影和交谈声，悄悄靠近港口区外围"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:81",
+          "text": "铁门的金属闭合声沉入巷道，潮湿的空气贴着颈侧压过来。\n\n你调整外套内袋里的照片位置，脚掌先着地，重心压低，沿砖墙内侧行进。\n\n巷道两侧的墙壁渗出深色水痕，在昏暗中拉成两道长线。脚步落在湿砖上几乎没有声音。\n\n前方拐角处透出一线光，两条人影侧对着巷道，声音低沉，压在喉咙里交谈。\n\n其中一人手持手电筒，光束扫过对面墙面，在砖缝的阴影里停了一拍。\n\n你脊背贴上左侧墙壁，手自然垂在相机包侧，呼吸压浅，等光束移过去。\n\n光束向右偏移，扫过一段废弃的铁架，停在那里。\n\n你擦着墙壁侧身通过，右肩与砖面的距离不超过半掌。两人的低语声从身后漫过来，没有停顿，没有转向。\n\n脚步声消失在你背后，巷道重新安静下来。\n\n再往前，一排废弃摊架横在巷道边侧，木板腐烂，铁架锈死在墙上。\n\n你从摊架侧方绕过，海风从前方某个豁口漫进来，盐分混在铁锈气味里，比几步之前浓了一截。\n\n远处传来钢铁碰撞的钝响，低沉，间隔不规律，被海风裹着从前方送过来。\n\n你在废弃摊架最后一截的阴影里停了一拍，侧耳辨认那个方向，呼吸节奏没有改变。\n\n巷道末端的砖墙向两侧退开，豁口在前方十步处展开。\n\n港口区路灯的光晕在薄暮里晕成一圈黄白，从豁口外压进来，照亮地面上一块湿润的砖石。\n\n你走到豁口边缘，停在阴影里，没有跨出去。\n\n铁丝网围栏的影子在光晕边缘浮起来，间隔均匀地向两侧延伸，其中一段围栏下方的铁桩向外弯折，留出一道斜开的缺口。\n\n远处，一道手电筒光束沿围栏外侧缓缓移动，扫过地面，转过一段转角，消失。\n\n你视线跟着光束移动的方向停了几秒，重新落回缺口位置，等待下一次光束出现的间隔。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:82",
+          "text": "选择：趁光束消失的空档，俯身穿过围栏缺口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:83",
+          "text": "远处手电筒的光束扫过围栏外侧，在碎石地面上压出一道白光，转过转角，消失。\n\n你俯身，重心压向前脚掌，后背贴着阴影的边缘。\n\n缺口在你正前方，弯折的铁桩向外撇开，留出斜向的空隙，刚好能过一个人的侧身。\n\n你脚步轻而快，膝盖弯低，身体跟着重心向前沉，擦过铁桩边缘。\n\n金属与外套布料发出一声极轻微的摩擦，被海风压住，沉进薄暮里。\n\n你落脚在围栏内侧，重心立刻压低，视线向两侧快速扫过去。\n\n左边是堆叠的集装箱，锈迹从焊缝处向外晕开，底部压着破碎的货物托盘。\n\n你向左迈出三步，脊背贴上集装箱铁壁，阴影从顶部压下来，把你整个人收进去。\n\n呼吸压浅，胸腔只动了一截。\n\n远处吊臂的轮廓在薄暮里浮起，钢索在海风中低沉地颤了一下，间隔不规律的钝响从那个方向传来。\n\n地面是压实的碎石，油渍沿集装箱底部向外渗，凝成深色的斑块，踩上去没有声音。\n\n你等了几秒，没有脚步声，没有光束转回来的迹象。\n\n空气里混着海盐、铁锈和柴油的气味，厚重地贴在喉咙后侧。\n\n远处，另一道手电筒的光束从集装箱堆的另一侧缓缓扫过，光晕在碎石地面上拉出一条白线，方向偏向右侧深处，没有转向你这边。\n\n光束在远处停了一拍，向右偏移，消失在一排货物托盘后面。\n\n你视线沿集装箱堆的轮廓向深处扫去，港口区内侧的建筑轮廓压在薄暮里，灯光稀疏，大部分光源集中在靠近吊臂的方向。\n\n你贴着集装箱铁壁，视线在阴影与光晕的交界处移动，辨认建筑结构的走向。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:84",
+          "text": "选择：沿集装箱阴影向深处潜行，循灯光集中的吊臂方向寻找下行入口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:85",
+          "text": "你离开集装箱铁壁，重心压低，沿着集装箱排列的纵深方向迈出第一步。\n\n脚掌先着地，碎石在鞋底下细碎地移动，没有声音。\n\n前方吊臂的轮廓在薄暮里逐渐清晰，钢索从顶端垂下来，在海风里低沉地颤了一下。\n\n强光工作灯沿吊臂基座分布，光晕在薄暮里晕成几圈白黄，把周围集装箱和货物托盘的影子向后拉长，压在碎石地面上。\n\n你贴着集装箱排列的阴影侧边移动，视线沿灯光集中的方向向深处扫去。\n\n吊臂基座右侧有一排低矮的混凝土建筑，墙面斑驳，颜色比集装箱的锈色深。\n\n靠近地面的位置开着一道宽约两米的斜向下坡道口，坡道口大半被堆叠的货物托盘遮挡，托盘边缘在工作灯的侧光里压出一道参差的轮廓。\n\n坡道尽头隐约透出人工光源，颜色偏冷，从斜坡底部向上漫出来，在托盘木板的缝隙间落成几条细线。\n\n你在最后一排集装箱的阴影里停步，脊背贴紧铁壁，呼吸压浅。\n\n坡道口外侧站着两名武装守卫。\n\n左侧那人手持手电筒，光束缓缓扫过坡道口前方的碎石地面，在货物托盘边缘短暂停留，随即继续向左侧移动。\n\n右侧那人靠在混凝土墙边，步枪横在身前，视线朝向坡道口外侧区域，头没有转动。\n\n手电筒的光束在碎石地面上压出一道白光，停顿片刻，移向左侧，扫过托盘边缘，继续巡扫。\n\n你视线在坡道口、两名守卫的站位和托盘遮挡之间来回移动，手自然垂在相机包侧，一动不动。\n\n远处吊臂传来一声低沉的钢索颤动，被海风裹着从高处压下来，混在海盐和柴油的气味里。\n\n两名守卫之间交换了几个字，声音压得很低，被钢索声盖过去。\n\n海风从港口方向灌入，吹动坡道口附近一块松动的铁皮，发出一声轻响。\n\n靠墙那名守卫转头看了一眼，视线在铁皮方向停了两秒，随即收回，恢复原来的姿态。\n\n你脊背没有离开集装箱铁壁，呼吸节奏没有改变，视线在那块铁皮和守卫的头部移动方向上停了几拍，等他的视线彻底收回去。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:86",
+          "text": "选择：等守卫手电筒光束扫向左侧的空档，贴着货物托盘阴影匍匐靠近坡道口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:87",
+          "text": "手电筒的光束在碎石地面上缓缓向左偏移，白线从托盘边缘扫过，在坡道口前方的碎石上拉出一道移动的光晕。\n\n你脊背离开集装箱铁壁，重心向前压下去。\n\n膝盖弯低，手掌先落在碎石上，掌心感受到碎石的棱角压进皮肤里。\n\n你以匍匐的姿态向前移动，手掌和膝盖在碎石地面上无声地交替落下，身体贴近托盘阴影最深的那道底部边缘。\n\n外套在碎石上发出极轻微的摩擦声，被远处吊臂钢索的颤动声压住，沉进海风里。\n\n你沿着托盘与地面之间那道最暗的阴影前进，胸腔在每一次呼吸时只动了一截，贴着碎石地面上方让位。\n\n光束在左侧继续移动，扫至最远点，停顿了一拍。\n\n靠墙守卫的视线从铁皮方向收回来，步枪横在身前，头部停在原位没有再转动。\n\n你在那一拍的停顿里加快了最后两步，身体缩进托盘底部最深处的暗角，背部紧贴托盘木板底部，呼吸压成极浅的一线。\n\n光束从左侧移回，扫过托盘边缘上方，光晕在头顶木板缝隙间漏下几条细线，落在你肩侧和身旁的碎石上。\n\n细线状的光停了几秒，没有再移动。\n\n你在托盘底部的暗角里保持静止，呼吸节奏没有改变。\n\n视线从托盘底部缝隙向外扫出去——坡道口斜向下延伸，混凝土壁面从斜坡底部漫上来一片冷色的人工光源。\n\n守卫的靴子底部和枪托在那片冷光的映衬下投出短影，靴尖朝向坡道口外侧，没有移动。\n\n海风从港口方向灌进来，坡道口那块松动的铁皮发出一声轻响，在碎石地面上方漫过去。\n\n靠墙守卫这次没有转头，靴子的位置纹丝未动。\n\n你在托盘底部的暗角里保持静止，视线锁在那双靴子和枪托投出的短影上，等待光束移开或守卫注意力产生变化的时机。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:88",
+          "text": "选择：趁光束下一次向左偏移时，从托盘底部滑出，贴地滚入坡道口内侧"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:89",
+          "text": "光束在碎石地面上缓缓向左偏移，白线从托盘边缘扫过，光晕停在最左端，停顿了一拍。\n\n你手掌撑地，身体从托盘底部暗角向外压出去，重心贴着地面侧移。\n\n脊背几乎擦着碎石，外套布料与地面之间只隔了一层气息的空间。\n\n你顺着光束移动的反方向滚入，动作压在那一拍停顿里，完整而无声。\n\n混凝土坡道口的内侧壁面在你右肩侧压过来，你脊背贴上去，半蹲，身体停住。\n\n呼吸压至最浅，胸腔只动了一截，冷硬的混凝土顶着脊柱。\n\n光束从左侧移回，重新扫过托盘边缘上方，光晕在托盘木板和地面之间漫了几秒，停在原位。\n\n你视线从坡道口内侧向外回扫——左侧守卫的靴底和枪托短影仍在原位，手电筒光束沿固定节奏缓缓向右移动。\n\n靠墙守卫的头部没有转动，靴尖朝向坡道口外侧，位置纹丝未动。\n\n你在混凝土壁面上压稳身形，半蹲姿态保持不动，等了两拍，三拍。\n\n没有脚步声，没有光束转向坡道内侧的迹象。\n\n壁面上渗出潮湿的水痕，冷意从混凝土透过外套贴进背脊。\n\n坡道从脚下斜向下延伸，人工光源从底部漫上来，颜色偏冷，把壁面上的水痕照成几道深色的长线。\n\n你视线顺着坡道向下扫去，混凝土台阶一级接一级向下压，约十二级，底部是一道半开的金属门。\n\n冷光从门缝和顶部格栅透出来，落在台阶最低的几级上，门后通道的灰色墙壁和管道走向隐约可辨。\n\n海盐和柴油的气味在坡道内侧变得更浓，混着潮湿混凝土特有的碱味，厚重地贴在喉咙后侧。\n\n你脊背紧贴壁面，半蹲在坡道口内侧的阴影里，视线停在那道半开的金属门上，一动不动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:90",
+          "text": "选择：趁守卫下次光束偏移时，沿坡道台阶向下摸索靠近金属门"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:91",
+          "text": "手电筒的光束在碎石地面上缓缓向左偏移，白线从托盘边缘扫过，光晕停在最左端的死角位置，停顿了一拍。\n\n你脊背离开混凝土壁面，重心沉向脚掌前端，膝盖弯低。\n\n第一级台阶在脚下压实，鞋子外侧先着地，鞋底与粗糙混凝土之间没有任何滑动声。\n\n第二级，第三级，人工冷光从坡道底部向上漫开的角度跟着扩大一点。\n\n壁面上的水痕在冷光映照下泛出深色反光，盐分和柴油的气味随着每一步下沉变得更密实，贴在喉咙后侧。\n\n你在台阶中段停下，背脊压紧壁面，侧耳朝向坡道口方向。\n\n手电筒光束从左侧移回，光晕在托盘边缘上方扫过，重新进入固定的巡扫节奏。\n\n靴底和枪托的短影停在原位，没有向坡道内侧转动的迹象。\n\n你继续向下，最后几级台阶在脚掌下一级接一级消失，脊背沿壁面同步下沉。\n\n金属门在前方不足一臂的位置停住，你半蹲，呼吸压至胸腔只动一截，将身形收进门框侧壁投出的阴影里。\n\n半开的门缝透出冷白色光源，光线在壁面上压出一道硬边。\n\n你视线从门缝扫进去——灰色墙壁，管道沿壁面向纵深延伸，表面间隔不规律地凝着水珠，在冷光下微亮。\n\n通道在左侧弯曲处收窄，一道金属格栅的轮廓压在弯口的阴影里，格栅后方的光源比通道主段更暗，颜色略偏黄。\n\n你保持静止，视线在可视范围内缓缓移动，辨认管道走向和格栅的位置关系。\n\n耳朵捕捉通道深处的动静——冷凝水从管道外壁滴落在混凝土地面上的细碎声，间隔不规律，除此之外没有脚步，没有说话声。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:92",
+          "text": "选择：侧身推开金属门，沿管道方向进入通道"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:93",
+          "text": "金属门框的冷意从掌缘透进来，铁锈的颗粒感贴在皮肤上。\n\n你将掌缘抵在门框边侧，手腕控力，缓缓向内推压。\n\n门轴发出一声极短的轻响，被头顶管道外壁滴落的冷凝水声压住，沉进通道里。\n\n门缝扩大，你侧身，肩膀压低，外套布料贴着门框内侧滑过去，脚掌落上门后的灰色混凝土地面。\n\n脚步停住，身体贴紧管道侧壁投下的阴影，半蹲，呼吸压至胸腔只动一截。\n\n通道比坡道更窄，管道沿壁面向纵深延伸，冷凝水在外壁凝成水珠，在偏冷的光源下微亮。\n\n视线向左移动，弯曲处的阴影压在管道侧壁上，那道金属格栅就卡在弯口暗角里——门缝宽约两指，锁扣悬在门缘，没有搭上。\n\n海盐和潮湿混凝土的碱味在这里变得更厚，柴油的气味混在其中，附在喉咙后壁上。\n\n你沿壁面向弯曲处靠近，动作压低，脚掌先着地，重心在落稳前不转移。\n\n到达格栅前，你停下，侧手沿门缘探入，指尖沿门框内侧缓慢移动，辨认门缝深处有无绊线的张力或金属触点的硬边。\n\n什么都没有，门缘光滑，混凝土碱味从格栅后方漫出来。\n\n你以门缘为支点，将格栅沿缝隙方向侧向推开，身体贴着门框滑进去，格栅在身后轻轻回落至原位。\n\n空间豁然变宽，偏黄的光源从某个固定位置斜向打下来，把货架的轮廓拉成长影压在地面上。\n\n货架沿两侧墙壁排列，绿色金属弹药箱叠放在架格里，帆布遮盖的板条箱沿右侧码齐，干草和油渍混合的气味从地面向上漫。\n\n地面上散着开箱遗留的干草碎屑，油渍沿板条箱底部渗出，在混凝土上晕成几条深色线圈。\n\n你贴着左侧货架阴影向内部推进，目光在弹药箱和帆布覆盖的轮廓间扫过，没有人影，没有移动。\n\n视线落向房间另一侧——空间在深处收窄，天井式的结构向上拔起，顶部管道交错，光源从这个角度看不见，只有阴影压着阴影。\n\n你在一个货架的边缘停下，背脊贴上架侧的金属冷壁，呼吸压住，耳朵朝向深处。\n\n声音从那里传来，断续的，低沉，两个声线，交谈的间隔拉得不均匀。\n\n金属工具砸击的声响夹在中间，短促，停顿，再响一次，节奏不规律。\n\n靴底碾碎碎石的细响在某一拍里出现，随即消失，空气重新被机械运转的低频震动填满。\n\n你沿货架侧边缓缓移动，动作放慢到每一步都踩实才转移重心，目光在偏黄的光源和深处阴影的交界处来回确认，向声源方向靠近。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:94",
+          "text": "选择：贴着货架阴影继续向声源方向靠近，观察深处的人影"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:95",
+          "text": "你脊背贴着货架金属侧壁，重心压低，脚掌先着地，落稳了再转移。\n\n弹药箱的轮廓在偏黄的光源下拉出长影，影子压着影子，叠在混凝土地面上。\n\n声音从前方的阴影与光源交界处漫出来，两个声线，低沉，交谈间隔拉得不规律。\n\n你沿货架侧边移动，每一步都踩实，呼吸压至胸腔只动一截，视线沿偏黄光源向深处扫去。\n\n空间在深处收窄，工作台靠墙，台面上工具散开来，几个枪械零件拆到一半，扳手斜搭在一侧。\n\n一盏工作灯从头顶斜向下照，硬质阴影把台面切成明暗两半，工具的轮廓在那道硬边里清晰压实。\n\n你在最后一个货架的金属侧壁边停下，脊背贴上去，身体缩进阴影最深处，呼吸压浅。\n\n两个人影在工作台两侧。\n\n背对你的那人穿连体工装，手里握着扳手，正在敲击一个金属构件，节奏停一下，再敲，停，再敲，不规律。\n\n侧身靠在工作台边的那人手拿文件夹，翻到某一页，停下，开口说话，声音压得很低。\n\n你在货架边缘保持静止，耳朵朝向声源。\n\n背对你的那人停下敲击，抬手用袖子抹了把汗，低声抱怨，说零件型号对不上，像是被人翻过。\n\n侧身那人翻了一页文件夹，声音压得更低。\n\n侧身那人\n\"最近有人进来过。不是我们的人——锁扣有撬过的痕迹。\"\n\n你的呼吸停了一拍，胸腔没有动。\n\n背对你的那人沉默了几秒，重新拿起扳手，在手里掂了一下。\n\n背对你的那人\n\"多一事不如少一事，你要上报就你去上报。\"\n\n侧身那人\n\"东西要是少了你兜得住？\"\n\n背对你的那人\n\"你说少了多少？\"\n\n侧身那人\n\"我没说少了，我说有人进来过。\"\n\n两人的声音在工作灯的硬质阴影里压着，争论在短暂的沉默里停住。\n\n你贴在货架侧壁上，一动不动，将交谈的每一个字收进耳朵里。\n\n背对你的那人重新拿起扳手，抬起来，重重敲了一下金属构件，声音在储物区里短促地弹开，沉进货架深处。\n\n侧身那人合上文件夹，从工作台边侧身离开，朝远处角落走去，靴底碾着地面，脚步声逐渐压低，身影消失在更深处的货架阴影中。\n\n工作台前只剩背对你的那人，扳手又敲了一下，节奏停下，重新开始。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:96",
+          "text": "注意到工作台旁边有一个反光的物件，偷偷过去捡起来"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:97",
+          "text": "背对你的那人掂了掂扳手，重新埋头对着金属构件，节奏停一下，再敲，停。\n\n视线从他背影移向工作台侧面，沿台脚向下扫过去。\n\n偏黄的工作灯把台面阴影切得很硬，硬边之外的地面落在一片暗色里，就在那道阴影边缘，一个反光点在台脚附近的混凝土地面上闪了一下。\n\n铜色，细碎，随着扳手敲击带起的轻微震动，再闪了一下。\n\n你脊背贴紧货架侧壁，呼吸压住，视线在那个反光点和背对你的技术人员背影之间来回确认。\n\n那人专注于敲击，肩膀随着每一次击打微微弓起，没有转头的迹象。\n\n你开始移动，重心下压，脚掌外侧先着地，沿货架侧壁与工作台之间那道最暗的阴影带向反光点靠近。\n\n每一步踩实，才把重心向前转移，呼吸压在胸腔里，几乎不动。\n\n混凝土地面上散着干草碎屑，脚掌轻轻踩上去，没有声音。\n\n你靠近工作台侧后方，身体往台面下方投出的阴影里缩，膝盖弯低，脊背顺着台侧贴下去。\n\n反光点就在手边——一枚铜色金属片，边缘不规则，铸得很粗糙，表面有压痕，大小压在掌心里有余。\n\n你伸出手，指尖无声扣住金属片边缘，控力，缓缓将它从混凝土地面上拎起来。\n\n金属表面冰凉，压痕的凸起在指腹下一一清晰起来，粗糙的边缘顶着皮肤，像是手工铸成的，或者从什么东西上剥落下来的。\n\n工作台旁的技术人员停下了敲击。\n\n你的手指收紧，金属片陷进掌心，呼吸停在半途，一动不动。\n\n那人掂了掂扳手，在手里翻了个方向，没有回头。\n\n你将金属片沿掌心向外套口袋方向滑过去，指尖压着布料，无声落入袋底。\n\n扳手重新敲了一下，节奏恢复，声音在储物区里短促弹开，沉进货架深处。\n\n你沿台面阴影原路退回，脊背贴着台侧缓缓起身，脚掌外侧先着地，一步，两步，重新隐入货架侧壁最深处的阴影里。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:98",
+          "text": "选择：在原地借工作灯余光仔细查看掌心的铜色金属片"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:99",
+          "text": "你脊背贴紧货架侧壁最深处的金属冷壁，腰背下沉，将身形全数压进阴影里。\n\n工作台旁那人埋着头，扳手掂在手里，停一下，敲，再停。\n\n你将右手从外套口袋里缓缓抽出，掌心向上摊开，铜色金属片躺在掌纹正中央。\n\n工作台上的工作灯从货架间隙斜向漏进来一道偏黄的余光，落在你摊开的掌心上，光晕细窄，只够照亮掌心这一块。\n\n金属片在那道余光里反了一下，暖色的，铜的光泽浅浅泛开。\n\n边缘不规则，断面粗糙，不是切割的那种干净利落——边缘的起伏是铸出来的，或者从某个更大的东西上崩下来的。\n\n你将拇指指腹轻轻压上金属片表面，从一端慢慢向另一端滑过去。\n\n压痕在指腹下一一浮起来，走向弯折，深浅不均，不是刻刀走过的那种细腻，更像是铸造时被什么东西随意压上去的，无意识留下的凹陷。\n\n不是文字，不是纹样，只是压痕本身，深的地方顶着指腹，浅的地方几乎摸不出边界。\n\n你将金属片在掌心翻过来，背面同样粗糙，手指沿表面向中心扫过去。\n\n中心位置有一道更深的凹痕，边缘的铜色和周围微微不同，泛着那种被反复摩擦才会有的旧色——是磨出来的，不是铸出来的。\n\n凹槽形状小而窄，走向平直，边缘被磨得光滑，像是长期穿在某个铜环或小扣上，每一天的重力和移动都在那道槽里一点点磨下去。\n\n扳手又敲了一下，金属构件的震动从货架腿传上来，细微，停了一拍。\n\n你的拇指停在那道磨损槽上，一动不动。\n\n你将金属片重新翻回正面，指节缓缓收拢，掌心合上，粗糙的边缘一一压进掌纹里，微微顶着皮肤。\n\n指节收紧，掌心握实。\n\n工作台那侧，扳手的节奏重新响起，停一下，敲，停，敲，规律而持续。\n\n你脊背贴紧冷壁，手握成拳，铜色金属片的边缘压在掌纹最深处，一动没动。\n\n这枚东西出现在这里，不是单独存在的——带着它来过这里的人，在这片货架和工作灯的气味里，踩过同一块混凝土地面。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:100",
+          "text": "选择：在原地推演：以敏特的习惯，她会从哪条路进来、往哪里去"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:101",
+          "text": "掌心的铜片压在指腹上，你没有把它收回口袋。\n\n视线从工作台旁那人的背影离开，沿货架间隙向坡道方向移动，在脑中重新丈量来路的每一段距离。\n\n第一道金属门，半开。\n\n你停在那个细节上，手指在铜片边缘轻轻压了一下。\n\n门是半开的，开口向内，门轴侧的灰尘没有明显的扫动痕迹——不是被人推开后顶住了什么，是在有人出入的间隙里跟进去的。\n\n以敏特的习惯，她不会去动不必要的东西。\n\n视线继续向前推，落在格栅门的位置上——锁扣虚悬，没有搭上。\n\n你的拇指在铜片背面那道磨损槽上停了一拍。\n\n格栅虚掩，可以是运气，也可以是有人刻意没关。敏特不会把自己的路押在运气上，她会在门外等，等里头的人出来，踩着门还没关严的空档贴进去。\n\n这段时间她需要一个能藏身的位置，格栅外侧，靠近墙角，背对光源。\n\n她会在那里等眼睛适应亮度，再动。\n\n你的视线从格栅位置向深处延伸，顺着货架排列的走向一直向前，停在工作区与深处通道的交界处。\n\n那里有一片阴影比周围的暗色更重，压在天花板管道弯折的正下方，不随工作灯的角度变化而移动。\n\n是永久阴影带。\n\n你将铜片在掌心握实，指节微微收紧。\n\n以敏特的方式，她不会往货架间的暗角里钻——货架是死地，进去了只有原路退出这一条路。她会贴着那道被管道压暗的壁面走，横向切过去，沿墙向更深处移动，永远保留向前的选项。\n\n你在脑里重新走了一遍：格栅后短暂停留，等光感适应，从工作灯阴影横切到那截管道下的永久阴影带，贴壁，向深处。\n\n不在储物区停留。\n\n储物区只有弹药和零件，她要找的不在这里。\n\n视线最后落回掌心的铜片上，落在那道中心位置磨出的光滑凹槽上。\n\n这枚东西掉在工作台侧旁的地面上，位置偏向台面外侧，不是从台上滑落的角度。\n\n你将护身符在掌心翻了一面，铜色边缘顶着皮肤，粗糙的轮廓一一压进掌纹里。\n\n她在横切阴影的时候扣具松了，铜片从腰带或扣环上脱出来，滑落在地，她没回头捡。\n\n脚步没有停过。\n\n你将铜片沿掌缘向口袋方向收过去，指尖压住布料，无声落入袋底。\n\n工作台那侧，扳手敲了一下，金属构件的震动从货架腿传上来，随即消失在机械低频的震动里。\n\n储物区、格栅门、工作台侧旁的这块地面——都是中途，不是终点。\n\n敏特确实来过这里，她的方向指向更深处的通道。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:102",
+          "text": "隐约听到前面有动静，往更深处的通道移动"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:103",
+          "text": "掌心的铜片压在外套口袋布料里，贴着大腿侧。\n\n你从货架侧壁阴影中移出，重心下压，脚掌先着地，沿天花板管道弯折正下方那道永久阴影带横向切过去。\n\n工作台旁的技术人员背对你，扳手停了一拍，掂了一下，重新敲落下去。\n\n你贴壁，沿被管道压暗的壁面继续向深处移动，脚掌每一步落稳，重心才向前转移，外套布料没有发出声响。\n\n货架开始稀疏，间距拉开，金属弹药箱的轮廓在偏黄的光源边缘模糊成深色块面，地面从混凝土变成压实的碎石，脚掌踩上去有细碎的沉闷感，没有回响。\n\n空气里的海盐味退了，机油的厚重和金属粉尘的涩感贴上来，附在鼻腔后壁。\n\n空间继续收窄，两侧壁面靠近，顶部管道的走向随通道弯曲，冷凝水的滴落声在这一段消失了。\n\n你在贴近弯口前停下，脊背抵住壁面，侧耳朝向前方。\n\n声音从弯口另一侧传来，低频，规律，持续——机械运转的那种深沉震动，没有维修区里扳手敲击的断续节奏，更像是某台大型设备长期开着，从未停过。\n\n你压低重心，贴壁绕过弯口。\n\n通道在弯口之后略宽，视线向前延伸，落在尽头。\n\n一扇加固金属门嵌在通道末端的壁面里，门框边缘有一圈密封胶条，压得严实，缝隙在门框里消失。\n\n门侧装有一只电子锁，锁体表面光滑，与军火库前段那些老式锁扣完全不同，锁体上方一个小型LED闪着暗绿色光点，慢速，规律，待机的节奏。\n\n门缝底部透出一线冷白色光，压在碎石地面上，细而清晰。\n\n你在弯口阴影里停下，视线从电子锁移向门缝冷光，再向右侧墙壁扫过去。\n\n右侧有一处凹入的检修壁龛，龛内有一组配电箱，表面的金属边角在冷白色光线里压出硬边，一捆备用线缆缠在配电箱侧面的固定钩上，线圈松紧不均，像是被人临时绕上去的。\n\n你的视线回到电子锁上，停了一拍。\n\n低频震动从门后透过密封胶条渗出来，脚掌底的碎石地面有轻微的传导，几乎感觉不到，比感觉到更接近猜测。\n\n你将右手掌缘轻轻压在外套口袋布料上，铜片的粗糙边缘从布料内侧顶了回来，贴着大腿侧，一动没动。\n\n门是锁着的。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:104",
+          "text": "靠近门，在门下方发现了发绳上的铜扣，但是没有发绳。敏特应该就在附近"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:105",
+          "text": "你从弯口阴影里移出，脊背贴紧壁面，重心下压，沿壁面无声向加固门方向靠近。\n\n脚掌外侧先落地，碎石在压力下细微位移，没有声响。\n\n门缝底部的冷白色光随着你靠近变得更清晰，切在混凝土与碎石的交界上，细而硬，一动不动。\n\n你在距门底两步处停下，半蹲，重心沉到最低。\n\n冷光压上你的鞋面，沿鞋尖切出一道清晰的明暗界，光边锋利，没有散边。\n\n你偏头，视线顺着门底与碎石地面的交界向右侧扫过去。\n\n门框右下角的冷光边缘，有一个反光点。\n\n不是金属片。更小，更圆，边缘规整，在冷白色光晕里闪了半下，停住。\n\n你将右手伸出去，指尖扣住那个小物件边缘，控力，从碎石地面上缓缓拎起。\n\n掌心摊开，铜扣躺在掌纹中央。\n\n圆形，边缘磨损，扣面有细微划痕，铜色旧而沉，扣环空着。\n\n扣环内侧干净，没有被撕裂的残余纤维，边缘的弧度完整，扣体本身没有变形。\n\n你的视线在掌心停住，拇指指腹压上扣背，将铜扣翻过来。\n\n背面比正面更旧，中心有一圈圆形压痕，铜色在那一圈里泛出深一层的暗，边缘被反复摩擦磨得光滑，像是长期顶在某个固定位置上，每一天都在那里。\n\n不是新沾上去的，是旧的，深的。\n\n你将铜扣举到与门缝冷光齐平的高度。\n\n冷白的光从侧面压上来，扣面划痕的走向在光里清晰起来——细，零散，方向不一致，像是穿过某道狭窄缝隙时被金属边反复刮擦留下的。\n\n和护身符背面那道磨损槽的成因不同。\n\n你将铜扣在掌心翻回正面，视线从扣面移向扣环，再移向碎石地面，沿门框边缘向两侧扫了一遍。\n\n地面上没有发绳。\n\n门框两侧的壁面贴着碎石的夹角里，什么都没有。\n\n你的视线回到掌心的铜扣上，停了两拍。\n\n铜扣在门外，发绳不在——扣体没有变形，扣环干净，发绳从扣里抽出去，或者在别处断开，散落在门另一侧。\n\n你将铜扣沿掌缘向口袋方向收过去，指尖压住布料，让它缓缓落入袋底。\n\n两枚金属在口袋里轻轻碰了一下，铜扣和护身符，边缘相触，停住。\n\n你隔着布料将掌缘压在口袋外侧停了半秒，感知到两枚金属的分量，掌心才松开。\n\n你站起身，脊背重新抵紧壁面，视线从地面移上来，钉在电子锁上那个暗绿色的LED上。\n\nLED慢速闪动，规律，持续，待机的节奏。\n\n门后的低频震动从密封胶条的缝隙里渗出来，传进脚掌底的碎石，几乎感觉不到。\n\n你的呼吸压至几乎不动，胸腔只在最浅处起伏。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:106",
+          "text": "选择：仔细观察电子锁的型号和接缝，寻找结构弱点或手动覆盖接口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:107",
+          "text": "你从弯口阴影里移出半步，脊背贴紧壁面，视线从电子锁那个暗绿色LED上移开。\n\n重心下压，身体沿壁面缓缓向门侧滑近，外套布料没有发出声响。\n\n锁体在门框左侧，表面光滑，没有商标压印，没有可见的螺丝孔，没有拆卸槽。\n\n你的视线从锁体外壳向下移，沿锁体与门框的贴合面扫过去——接缝严丝合缝，锁体嵌入门框的深度超过外壳厚度，接缝里没有可以插入薄片的宽度。\n\n锁体上方，LED慢速闪动，暗绿色，规律，每次亮起都压出一道细窄的光晕，随即消失。\n\n你将视线贴着锁体外壳向上推，LED下方没有暴露的按钮，没有复位孔，没有接线端子从外壳边缘穿出。\n\n你压低重心，身体贴向门右侧壁面，侧对门轴方向。\n\n门轴这一侧，密封胶条被压得均匀，没有鼓起，没有断裂，门体嵌入壁面的深度在胶条外侧全数消化，壁面与门框之间没有留下可以插入撬杠的余地。\n\n你的手指沿壁面轻轻向门框侧滑过去，指腹压在密封胶条边缘上，胶条的弹性在指腹下微微回推，扎实，均匀，整条胶条从头到尾都是这个密度。\n\n门体嵌入壁面的深度超出预期，门侧留下的缝隙全被胶条封死。\n\n你直起身，视线从门框沿右侧壁面移向检修壁龛。\n\n配电箱表面的金属边角在门缝冷白色光里压着硬边，你的视线落在箱体正面，停了一拍。\n\n有一道横向擦痕，在箱门偏右侧的位置，细，边缘干净，铜色的金属本色从擦痕截面露出来，没有氧化，没有积灰。\n\n你的手指微滞。\n\n周围面板上的灰尘是均匀的，那种长期无人触碰才能积出来的厚度，和那道擦痕的截面之间形成了清晰的对比。\n\n你靠近配电箱，将手背缓缓向箱体表面靠近，皮肤感知到箱体表面散出的温度——和壁面一样，冷的，没有额外热源。\n\n视线顺着擦痕方向延伸，落在箱门边缘的锁扣上。\n\n箱门闭合，锁扣扣着，但擦痕指向的走向和开门方向一致——像是某样坚硬的东西在尝试拨开锁扣时从侧面刮过去的，或者是用力按压时被边角带出来的那种横向受力。\n\n你将视线从擦痕移向电子锁，再从电子锁移回配电箱，在两点之间来回一次。\n\n锁体与配电箱之间有一组塑料管，走向贴着壁面，从配电箱侧面延伸向门框方向，供电线路大概从这里过。\n\n配电箱能断电，但断电的结果在门关上之前无从判断——可能解锁，可能触发锁死，可能触发别的什么。\n\n门缝底部的冷白色光切在碎石地面上，低频震动从密封胶条里渗出来，贴在脚掌底。\n\n你的目光在配电箱的擦痕和门底铜扣原本所在的落点之间来回停了一次。\n\n那道擦痕的边缘干净，和周围积了厚灰的面板之间对比清晰，两者指向同一件事：有人在这里停留过，触过配电箱，脚步落在门底，铜扣也是在那时前后脱落的。\n\n这扇门，当前没有任何结构弱点可以被利用。\n\n密码或门禁卡，两者之外，没有进去的办法。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:108",
+          "text": "低声叫敏特的名字，看是否有回应"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:109",
+          "text": "门缝底部的冷白色光切在你的鞋面上，细而硬，一动不动。\n\n你将喉咙里的气压低，声音压到只够贴在门体表面的程度。\n\n帕兹\n\"敏特。\"\n\n那两个字从你喉咙里出来，立刻被密封胶条和金属门体吞掉了。\n\n门后的低频机械震动没有变化，持续，规律，像某台大型设备从来没有停过。\n\n电子锁的LED慢速闪动，暗绿色，一下，停，一下，停，待机的节奏，和你唤出那个名字之前没有任何区别。\n\n你将右手掌心贴上门体正面，金属的冷意从掌心向上传，微弱的机械震动从掌根一路渗进手腕，比感觉到更接近猜测。\n\n你在那道冷意里停住，胸腔在最浅处缓缓起伏一次。\n\n再开口，声音比第一次更低，混进了一丝不确定，落在门体表面，被金属压回来，没有穿进去。\n\n帕兹\n\"敏特。\"\n\n右侧检修壁龛的方向，有一声极细的滴落声，冷凝水从配电箱顶沿的边角坠下，砸在碎石地面上，清脆，单独，消失。\n\n门后低频震动持续，LED慢速闪动，门缝冷光纹丝不动。\n\n你将手掌从门体表面缓缓收回，指尖在离开金属的瞬间滞了一下，随即垂落。\n\n指节向裤缝方向收了一下，攥住布料，停了两拍，松开。\n\n口袋里的铜扣和护身符贴着大腿侧，两枚金属的分量沉而安静。\n\n你脊背抵紧壁面，视线从门缝冷光移向配电箱方向那道新鲜的擦痕，在两点之间停了一次。\n\n擦痕干净，铜扣落在门框右下角，发绳在门的另一侧——这几件事各自待在自己的位置上，指向同一个方向，无从改变。\n\nLED的暗绿色光点慢速亮起，停，再亮，门缝冷光贴着碎石地面，一动没动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:110",
+          "text": "选择：走向配电箱，仔细还原擦痕的触碰方式——试图推断敏特对它做了什么"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:111",
+          "text": "你从壁面移出，重心下压，脚掌无声落在碎石上，向右侧检修壁龛靠近。\n\n配电箱正面在门缝冷白色光里压出硬边，箱门偏右侧那道擦痕随着你靠近从细线变成了有宽度的截面——铜色，干净，和周围均匀积灰的面板之间有清晰的边界。\n\n你在配电箱前停下，视线落在擦痕上，停了一拍。\n\n你缓缓抬起右手，手背朝向箱体表面，皮肤向箱门靠近，不接触，在距离一指宽的位置停住。\n\n冷意从箱体表面散出来，手背皮肤感知到的温度和身后壁面一致，冷的，均匀，没有额外热源。\n\n你将手背收回，换成指腹，食指指腹轻压上擦痕边缘。\n\n截面浅，不深，金属本色从表面氧化层里被刮出来，边缘干净，受力方向向右，集中在擦痕前端，尾端渐细，像是什么东西从左侧卡入之后向右拨动时带出来的。\n\n你将手指沿擦痕走向横向滑过去，指腹感知到截面深度的变化——起点处深，中段均匀，尾端在锁扣外缘戛然停住。\n\n你的视线从指尖向右移，落在配电箱锁扣上。\n\n锁扣闭合，扣着，没有被拨开过。\n\n你将视线从锁扣移回擦痕尾端，手指在擦痕停止处轻轻压了一下，感知到截面在这里切断，没有延续进开门方向的轨迹里。\n\n擦痕在锁扣外缘停住了。\n\n你直起身，手指从箱门表面收回，垂落在侧。\n\n视线在三点之间缓缓移动——擦痕的走向，电子锁上慢速闪动的暗绿色LED，门底铜扣原本落在的那块碎石地面。\n\n三点各自待在自己的位置上，空间关系重新连在一起，静止，清晰。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:112",
+          "text": "选择：试着用薄物件卡入锁扣缝隙，重复擦痕的拨动方式，看能否打开配电箱"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:113",
+          "text": "你从外套内侧口袋摸向习惯存放薄物件的位置，指尖触到一片金属边缘，夹住，抽出来。\n\n那是一片薄铁片，边缘的一侧磨得锐利，是你在很多地方用过的东西。\n\n你将锐利一侧缓缓抵向配电箱锁扣的缝隙，对准擦痕起点左侧，轻轻施力，让铁片沿缝隙滑入。\n\n铁片切入的深度超过了擦痕截面的宽度，向右偏了半分，卡住，你稍稍调整角度，手腕带着铁片向右施力。\n\n锁扣弹开了。\n\n细微的金属震动从铁片传回指尖，箱门在弹力里微微启开一条缝，停住。\n\n你将铁片夹在指间收回，左手指尖扣住箱门边缘，缓缓向外拉开。\n\n门缝冷白色光从侧面压进来，照亮了配电箱内部。\n\n接线端子排列整齐，三个保险丝座依次并排，绝缘塑料的颜色在冷光里偏黄，每个座位上的保险丝都在原位，没有烧断，没有缺失。\n\n没有暴露的手动控制钮。\n\n左侧有一组线路从塑料管入口引入，向右侧延伸，再从右侧另一个管口引出，走向是向上的，顺着壁面贴向电子锁方向。\n\n管口用扎带固定在箱体内壁，扎带拉得紧，没有可以继续操作的触点暴露在外。\n\n你的视线在箱内各部分之间移了一遍，停在右侧引出的塑料管上，停了两拍。\n\n没有别的东西了。\n\n你将视线从箱内移回电子锁方向，LED在门侧慢速亮起，停，再亮，暗绿色，待机的节奏，和箱门打开之前没有任何区别。\n\n门缝底部的冷白色光贴着碎石地面，低频震动从密封胶条里渗出来，一动没动。\n\n你将箱门缓缓合回去，动作比打开时慢了半拍。\n\n锁扣在指腹压力下重新扣上，轻响，清脆，干净。\n\n你的手指从箱体表面收回，垂落在侧。\n\n视线从擦痕移向铜扣原本落在的碎石落点，再移向电子锁上那个暗绿色光点，在三处之间缓慢走了一遍。\n\n三件事各自待在各自的位置上，将你锁在同一个结论外面，清晰，静止。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:114",
+          "text": "利用敏特掉落的护身符和铜扣打开门"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:115",
+          "text": "你从口袋里伸进手指，指尖先触到护身符的边缘，粗糙，铸造留下的细密毛刺。\n\n再往下，铜扣的扣面光滑，边缘磨损，两件金属各自待在掌心里。\n\n你将两件东西一起托出来，掌心摊平，让门缝冷白色光从侧面压上来。\n\n护身符背面那道磨损槽在光里清晰起来，深，旧，长期顶在同一个位置磨出来的弧度。\n\n铜扣扣环干净，金属在冷光里泛出一层暗沉的旧铜色，扣体没有变形。\n\n你将护身符从掌心拿起，缓缓举向电子锁面板。\n\n金属片靠近光滑锁面的瞬间——\n\n锁体内部发出一声低沉的提示音，短促，沉，和墙壁里的机械低频完全不同。\n\n暗绿色LED停止了慢速闪烁，转为持续亮着，静止，不再起伏。\n\n门缝底部的冷白色光贴着碎石地面，纹丝不动。\n\n锁芯没有转动的声音，密封胶条没有松动，锁扣没有回缩。\n\n你保持护身符贴着锁面，左手将铜扣也缓缓举过去，两件金属同时抵在光滑面板前。\n\n锁体再次发声，同样的低音，短而沉，一声，停。\n\nLED持续亮着暗绿色，一动没动。\n\n门依然是锁着的。\n\n你在那道暗绿色光里停住，胸腔在最浅处缓缓起伏了一次。\n\n你将两件金属缓缓从锁面收回，掌心离开的瞬间，LED在两秒后重新开始慢速闪动，暗绿色，规律，待机的节奏回来了。\n\n你低头，视线落在掌心。\n\n护身符和铜扣并排躺在掌纹里，两件金属，冷的，沉的，各自来自不同的地方，各自带着不同的旧。\n\n锁识别了它们。\n\nLED停止待机闪烁的那两秒里，它处于某种等待的状态，不是拒绝，也不是放行。\n\n门依然关着。\n\n你将两件金属缓缓收回口袋，铜扣和护身符在布料里轻轻相触，停住。\n\n你的掌心隔着布料压在口袋外侧，感知到两枚金属的分量，停了两拍，没动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:116",
+          "text": "选择：守在加固门附近，等待内部有人出来或进入时伺机跟进"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:117",
+          "text": "你将掌心从口袋外侧收回，手指在侧面垂落，停了一拍。\n\n护身符和铜扣的分量压在布料里，沉而安静。\n\n你将视线从电子锁的暗绿色LED上移开，沿通道左侧壁面缓缓向右侧检修壁龛方向扫过去。\n\n配电箱侧面与壁面之间有一道凹陷，宽度够一个人楔进去，深度够遮住肩宽。\n\n你压低重心，脚尖先探上碎石地面，确认落点无声，再将脚掌缓缓落实，重心跟着前移。\n\n每一步都贴着壁面，脊背沿粗糙的混凝土表面向右侧滑动，外套布料擦过壁面，没有声响。\n\n你到达配电箱侧面，将身体横向压进凹陷里，脊背贴紧冷壁，膝盖微屈，重心下放，把自己楔进阴影最深处。\n\n从这个角度，加固门方向的斜向视线没有被遮断，门缝底部的冷白色光切在碎石地面上，电子锁的暗绿色LED压在视野左侧边缘，慢速闪动，规律，待机。\n\n你将呼吸压到最浅，胸腔在最低处缓缓起伏，腹部收紧，吸气的声音在喉咙里消失。\n\n通道里只剩下低频机械震动贴着脚掌底，偶尔有一声冷凝水从配电箱顶沿坠落，砸在碎石上，清脆，单独，消失。\n\n你的右手手指无声地按上外套口袋外侧，指腹感知到口袋里两枚金属的轮廓，护身符的边缘粗糙，铜扣的扣面光滑，分量沉而安静。\n\n指腹在口袋外侧轻轻压住两枚金属的轮廓，停在那里，没有移开。\n\n视线锁定加固门方向，门缝冷白色光一动没动，LED慢速亮起，停，再亮。\n\n你的身体在阴影里静止，像壁面的一部分。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:118",
+          "text": "再加上自己的记者证，用护身符和铜扣撬门进入"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:119",
+          "text": "你从阴影里移出，脚掌压在碎石地面上，无声落稳。\n\n右手伸进外套内袋，指尖触到记者证的磨损边角，夹住，抽出来。\n\n手指在抽出的动作里滞了半拍，轻微的，像是某根肌腱发出的讯号。\n\n你将记者证夹在掌根和食指之间，再伸进口袋，指腹先触到铜扣的光滑扣面，往下，护身符的铸造毛刺刮过指尖。\n\n两件金属一起掏出来，托在另一只手掌心里。\n\n你将三件东西在掌心里重新排布——记者证压印了名字的那面朝前，护身符贴左侧，铜扣贴右侧，两件金属分列两旁。\n\n你抬手，将三件物品一起举向电子锁面板，记者证抵在最前，两侧金属片紧贴锁面边缘。\n\n锁体内部发出一声提示音。\n\n比护身符和铜扣单独触发时更长半拍，低沉，沉进墙壁里，尾音在金属腔体里收住。\n\n暗绿色LED快速闪烁，两次，熄灭。\n\n通道里压进一段静默，冷白色门缝光贴着碎石地面，没有动。\n\n暗绿色重新亮起。\n\n节奏变了。\n\n待机时的慢速规律闪烁消失了，取而代之的是一种间断性的快慢交替——快两下，停，慢一下，停，再快，像某个内部程序在两种状态之间反复横跳。\n\n你的肩背肌肉在那道交替闪烁里绷紧，胸腔屏住，没有起伏。\n\n门缝底部的冷白色光纹丝不动。\n\n锁芯没有转动，密封胶条没有松动，门依然是锁着的。\n\n你保持三件物品贴着锁面，没有移开。\n\n锁体内部有一道极细微的电流声渗出来，持续，低，和低频机械震动混在一起，需要屏住呼吸才能分辨。\n\n之前没有过这道声音。\n\nLED快慢交替闪烁，持续，门依然关着，密封胶条压着碎石地面，一动没动。\n\n你缓缓将三件物品从锁面收回。\n\n掌心离开锁面的瞬间，电流声消失，LED在两秒内重新回到慢速规律待机的节奏，暗绿色，一下，停，一下，停。\n\n你将记者证收回内袋，手指在边角磨损处顿了一下，拇指压过压印的名字，滑进去，松开。\n\n护身符和铜扣从指间滑回口袋，两枚金属轻轻相触，停在布料里。\n\n你的视线在电子锁和门缝冷光之间缓缓移动，在两点之间停了一次。\n\n锁识别了三件物品的组合，给出了和之前不同的反应。\n\n门依然关着，胸腔缓缓下沉，吐出一口气。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:120",
+          "text": "使用门禁卡进入"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:121",
+          "text": "你从阴影里移出，右手已经伸进了外套内袋。\n\n指尖触到记者证的磨损边角，夹住，抽出来。\n\n手指在抽出的动作里停住了。\n\n停在那里，一动没动。\n\n记者证的磨损边角压在指腹里，拇指摩过压印的名字，停在最后一个字上。\n\n门禁卡。\n\n你的视线从记者证移向电子锁面板，移向门缝底部贴着碎石地面的冷白色光，移向配电箱侧面那道凹陷阴影——你刚才楔进去等待的位置。\n\n通道里只剩下低频机械震动贴着脚掌底，一声冷凝水从配电箱顶沿坠落，砸在碎石上，清脆，消失。\n\n你手里只有记者证、护身符和铜扣。\n\n没有别的东西。\n\n你将记者证缓缓收回内袋，手指在边角磨损处停了一拍，拇指压过压印的名字，滑进去，松开。\n\n右手垂落在外套口袋外侧，指腹隔着布料压住护身符和铜扣的轮廓，护身符边缘粗糙，铜扣扣面光滑，两枚金属沉而安静。\n\n电子锁的暗绿色LED在视野里慢速亮起，停，再亮，规律，待机，一动没动。\n\n门缝底部的冷白色光贴着碎石地面，纹丝不动。\n\n门依然是锁着的。\n\n胸腔在最浅处缓缓起伏了一次，吸气的声音在喉咙里消失。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:122",
+          "text": "敏特从门里出来了，我躲在阴影里看到她在找什么东西"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:123",
+          "text": "加固门方向传来一声极细微的声响。\n\n锁芯回缩的声音，短促，金属与金属之间的轻微摩擦，在低频机械震动里几乎辨别不出来。\n\n门缝底部的冷白色光在那一瞬变宽了——极细的一道，向两侧扩开，随即停住。\n\n密封胶条从碎石地面剥离，发出一声细微的粘腻声响，低，短，像什么东西被慢慢撕开。\n\n你的脊背贴紧壁龛内壁，膝盖微屈，重心压低，右手隔着外套口袋压住两枚金属的轮廓，指腹停在那里，没有移开。\n\n一个纤细的身影从门缝里侧身挤出来。\n\n背对着通道。\n\n红色头发散在肩胛骨之间，发绳不在了，发尾在门缝冷光里呈现洗旧的铜色，随着身体侧转轻轻晃了一下，停住。\n\n她反手将门缓缓按回去，掌心贴着门面，力道极轻，动作像是有人教过她怎么让一扇门在完全安静中关上。\n\n锁芯重新啮合，电子锁的暗绿色LED短暂熄灭，整整一拍，黑暗的，干净的，随即恢复成慢速待机闪烁。\n\n你的胸腔在那一拍里屏住，没有起伏。\n\n她没有回头。\n\n压低重心，半蹲下来，双手伸向碎石地面，指尖在落满灰尘的碎石间开始摸索。\n\n动作急促，却轻，指腹在配电箱侧面与落点之间来回扫过，灰尘被拂开，细碎的沙粒在指尖下发出几乎听不见的摩擦声。\n\n你的下巴微微压低，视线锁定那个背影，锁定她的指尖在碎石间移动的轨迹。\n\n右手隔着布料收紧了一分，铜扣的光滑扣面抵在掌心，分量沉而安静。\n\n她找了一圈。\n\n又找了一圈。\n\n动作突然停滞了。\n\n指尖悬在碎石地面上方，停住，缓缓蜷回掌心，停在那里，没有再动。\n\n她的视线直直落在门底铜扣原本掉落的位置。\n\n灯光下那里只剩一小块被压过的痕迹，碎石的排列留着什么东西曾经在那里的轮廓，空的。\n\n她的肩胛骨轻微收紧了一次，衣料随之拉紧，随即松开。\n\n一口气从她喉咙里吐出来，微不可闻，低，短，消失进低频机械震动里。\n\n她缓缓直起身。\n\n发尾在肩胛骨之间微微晃了晃，冷白色光从门缝贴着她的靴子侧面切过去，她的背影在那道光里静止，面对着加固门，没有回头。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:124",
+          "text": "选择：从阴影中走出，叫她的名字"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:125",
+          "text": "你的脚掌从壁龛阴影里无声移出，脚尖先探上碎石地面，落稳，重心跟着前移。\n\n她的背影还对着你，发尾在门缝冷白色光里静止，肩胛骨轻微绷着，没有松开。\n\n你从配电箱侧面完全暴露在那道冷白色光里，右手隔着外套口袋按住口袋里两枚金属的轮廓，指腹压在布料上，没有移开。\n\n你张开嘴，声音压到最低，沉进低频机械震动里，刚好够穿过这段通道——\n\n帕兹\n\"敏特。\"\n\n声音被金属墙壁吸了一层，尾音在腔体里收住，消失进低频震动里。\n\n她的身体在那一瞬僵住了。\n\n肩胛骨猛地收紧，衣料随之绷出清晰的褶皱，悬在碎石地面上方的手指缓缓蜷回掌心，停在那里，没有动。\n\n她开始转身。\n\n动作极慢，像是刻意放慢的，靴子底面在碎石上无声旋转，红色发尾在肩胛骨之间晃了一下，随着她转身的弧度飘过去，停在另一侧。\n\n门缝冷白色光从她靴子侧面切过去，贴着地面向你这边延伸，在两人之间的碎石地面上切出一道清晰的界线。\n\n她的面孔在冷白色光里逐渐清晰。\n\n和照片上一样的那张脸，眼睛在冷光里收缩，眼神里有惊愕，有警惕，有某种来不及压下去的、难以名状的东西，混在一起，悬在那里，没有落定。\n\n她没有开口。\n\n她的视线从你的脸上缓缓移落，向下，停在你隔着外套口袋按住的右手位置上。\n\n在那里停了一拍。\n\n低频机械震动贴着脚掌底，一声冷凝水从配电箱顶沿坠落，砸在两人之间的碎石上，清脆，消失。\n\n她的视线从你的右手缓缓移回，重新落在你的眼睛上。\n\n她的站姿看起来随意，重心却轻微沉着，靴尖压着碎石地面，一动没动。\n\n门缝的冷白色光在你们之间的碎石地面上横着，清晰，干净，把这段通道切成两半。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:126",
+          "text": "选择：开口打破沉默，问她在找什么东西"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:127",
+          "text": "低频机械震动贴着脚掌底，一声冷凝水从配电箱顶沿坠落，砸在碎石上，消失。\n\n你右手隔着外套口袋按住两枚金属的轮廓，指腹压在布料上，没有移开。\n\n你开口了，声音压得低，沉进震动里，刚好够穿过这段距离——\n\n帕兹\n\"你在找什么东西？\"\n\n她的视线没有立刻回到你脸上。\n\n眼睛先向下移，落在你右手按住口袋的位置，停了一拍，长过正常的停顿。\n\n她重新抬起视线，落回你的脸上。\n\n眼神里有警惕，有某种试探性的东西，两者混在一起，没有分离。\n\n靴尖在碎石地面上轻微转了一个角度，极细微的，碎石在靴底发出几乎听不见的摩擦声，随即停住。\n\n重心无声地沉下去。\n\n敏特\n\"你为什么在这里？\"\n\n她的语气压得很平，刻意的平，像是把什么东西按在了声音底下。\n\n她的视线从你脸上再度向下滑落，落在你隔着布料按住口袋的右手上，停住。\n\n敏特\n\"口袋里是什么。\"\n\n门缝的冷白色光在你们之间的碎石地面上横着，把这段通道切成两半。\n\n她站在那道光的另一侧，靴尖压着碎石地面，重心稳而沉，姿态看似随意，随时可以移动。\n\n她的呼吸节奏轻微变了一下——吸气的间隔拉长了半拍，胸腔的起伏几乎不可察觉。\n\n视线从你的右手移开，重新落回你脸上，在那里停着，没有落定。\n\n你的右手手指没有移开，指腹压着口袋里两枚金属的轮廓，护身符的毛刺边缘，铜扣的光滑扣面，沉而安静。\n\n低频机械震动持续贴着脚掌底，电子锁的暗绿色LED在视野边缘慢速亮起，停，再亮，规律，一动没动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:128",
+          "text": "选择：不回答，直接把铜扣从口袋里慢慢取出来"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:129",
+          "text": "低频机械震动贴着脚掌底，门缝的冷白色光在你们之间的碎石地面上横着，一动没动。\n\n你的嘴唇没有动。\n\n右手从外套口袋外侧缓缓移向口袋开口，指尖探进布料，指腹先触到铜扣的光滑扣面，捏住边缘，极慢地往外移。\n\n动作没有发出任何声响。\n\n铜扣从口袋里出来，夹在你的拇指与食指指腹之间，边缘磨损，扣面在冷白色门缝光里呈现洗旧的铜色。\n\n你将手掌摊开，铜扣落在掌心，手举过腰间那道冷白色光的界线，停住。\n\n扣面光滑，边缘磨损，冷光从正面切过去，旧铜色的光泽沉在掌心里，安静。\n\n她的视线从你的脸上开始向下移动。\n\n一寸，一寸，落在你摊开的掌心里。\n\n落在那枚铜扣上。\n\n她的肩胛骨轻微收紧了，衣料随之绷出一条极细的褶皱，随即静止。\n\n嘴唇动了一下，没有发出声音，合拢，停在那里。\n\n喉咙里有什么东西顿了一拍，像是一口气被悄悄按住，没有吐出来。\n\n她原本沉着的重心微微前倾，靴尖压着碎石，没有跨过那道光，没有伸手。\n\n视线钉在铜扣上，固定，一动没动。\n\n眼神里有什么东西在那里——质问，惊愕，两者混在一起，被某种更安静的东西缓缓覆盖，压下去，没有落定。\n\n低频机械震动把这段沉默填满。\n\n她重新抬起视线，落回你的眼睛上。\n\n靴尖压着碎石，身体没有再向前，也没有退，门缝的冷白色光贴着她的靴子侧面，在你们之间的地面上横着，清晰，干净。\n\n她看着你，像是在通过掌心那枚铜扣的重量，重新丈量面前这个人。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:130",
+          "text": "选择：保持沉默，继续将铜扣摊在掌心，等她先开口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:131",
+          "text": "低频机械震动把通道里的空气压得密实，门缝的冷白色光贴着碎石地面横着，一动没动。\n\n你的手掌保持摊开，铜扣在掌心里安静，旧铜色的光泽沉在那道光里，不亮，不暗，只是在那里。\n\n你的嘴唇没有动。\n\n指腹轻轻压在铜扣边缘，掌心保持水平，手停在那道冷白色光的界线上方，没有收回，也没有往前推。\n\n她的视线从铜扣上缓缓移开。\n\n一寸，一寸，重新爬上来，落在你的脸上。\n\n眼神里最初那层惊愕已经沉下去了，压在某个更深的地方，覆上来的是另一种东西——更安静，更慢，像是她在用视线丈量面前这个人，一遍，再一遍。\n\n她的肩胛骨轻微收紧了一拍，衣料随之绷出一条极细的弧度，随即松开。\n\n吸气的间隔拉长了，比刚才更长，胸腔极浅地起伏了一次，几乎看不见。\n\n她的嘴唇动了一下。\n\n第一个词几乎没有声音，唇形收拢，气从牙缝里漏出来，被低频机械震动吞掉了半拍。\n\n敏特\n\"你是谁。\"\n\n声音压到最低，沉进通道持续的震动里，尾音在金属墙壁里短暂回了一下，消失。\n\n她的右手从身侧缓缓抬起来，在身体前方停住，掌心向下，指尖微微蜷着，停在那里。\n\n没有伸向你的掌心。\n\n靴尖压着碎石，没有跨过那道光，站姿没有变，重心稳而沉，一动没动。\n\n那个问题悬在你们之间那道冷白色光上，比铜扣更沉。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:132",
+          "text": "拿出照片和铜扣，说卡琳娜告诉我来这里找你"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:133",
+          "text": "你的左手从外套内袋缓缓探入，指尖触到相纸边缘，捏住，极慢地往外移。\n\n照片出来了，边缘泛黄，相纸变软，你将正面朝向她，举过那道冷白色的光界线。\n\n红发少女的背影，发绳铜扣清晰，街道背景模糊，相纸边缘的黄让这张照片看起来比实际更旧。\n\n你的右手掌心保持摊开，铜扣静静躺在那里，旧铜色的光泽沉在冷白色光里。\n\n照片与铜扣并排，悬在那道光界线上方，停住。\n\n帕兹\n\"卡琳娜告诉我来这里找你。\"\n\n声音压得低，平，没有起伏，像是把一句话放在两人之间的碎石地面上，不解释，不追问。\n\n她的视线先落在照片上。\n\n在那里停住，停了一拍，长过正常的停顿。\n\n视线慢慢向右移，落在铜扣上。\n\n在铜扣上停住，停了一拍。\n\n再向左移，回到照片上。\n\n眼睛在两者之间缓慢来回，一次，再一次，吸气的间隔悄悄拉长了，胸腔极浅地起伏，几乎看不见。\n\n她的右手从身侧缓缓抬起来，指尖悬在半空，掌心向下，停在照片与铜扣之间那块空气里。\n\n停了两拍。\n\n指尖慢慢蜷回掌心，手放了下去，落回身侧，停在那里。\n\n她重新抬起视线，落在你的眼睛上。\n\n靴尖压着碎石，站姿没有变，重心极细微地向后挪了一丝——不是退，是某种更安静的重新分配，像是把什么东西从质问的位置挪开，放到了等待的位置。\n\n低频机械震动持续填满两人之间的沉默，电子锁暗绿色LED在视野边缘规律亮起，停，再亮。\n\n她开口了，声音压得更低，更慢，沉进通道持续的震动里。\n\n敏特\n\"敏特。\"\n\n一个字，两个字，她念出来的方式不像在介绍自己，像是把这个名字放在空气里，看面前这个人听到它时脸上会发生什么。\n\n她站在原地，靴尖仍压着碎石，没有跨过那道冷白色的光界线，照片和铜扣悬在那道光上方，她的视线停在你脸上，一动没动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:134",
+          "text": "我不立刻靠近，也不直接解释，只把门口捡到的铜扣摊在掌心，同时拿出那张匿名照片，让她看照片里手腕上的红色发绳和铜扣；然后观察她的手腕、她刚才寻找东西的位置，以及她听到“敏特”这个名字后的反应。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:135",
+          "text": "你的左手从外套内袋缓缓取出照片，右手掌心继续摊开铜扣，两只手并排举过那道冷白色光的界线，停住。\n\n照片正面朝向她——红发少女的背影，发绳上的铜扣清晰，旧铜色的光泽和你掌心里那枚一模一样。\n\n你的视线从她的脸上缓缓移落。\n\n向下，落在她的右手腕上，停住。\n\n冷白色光从门缝横过来，刚好切过那段距离。\n\n你的视线从她的手腕移开，向左，落在她刚才半蹲弯腰的那片碎石地面上，压痕还在那里，浅而清晰，铜扣落地的位置，什么都不剩。\n\n你的视线重新移回来，落在她的眼睛上，停住，不开口，不伸手，照片和铜扣悬在那道光界线上方，一动没动。\n\n她注意到了你的视线走向。\n\n她的眼睛先往右手腕的方向动了一下，极细微，随即收住，视线重新回到照片上，停了一拍，再移到铜扣上。\n\n她沉默着。\n\n低频机械震动把这段沉默填满，配电箱侧面的冷凝水沿金属壁缓缓渗下，在碎石地面上积出一点深色的湿痕。\n\n她的右臂从身侧缓缓抬起，手腕反转过来，向那道门缝的冷白色光里伸去。\n\n光从她手腕内侧切过去，把那道痕迹照得清清楚楚。\n\n一道浅而明显的压痕，横在手腕内侧，长期佩戴留下的，边缘淡，中心深，比普通饰品痕迹更粗，皮肤颜色在那道沟里沉得更深一点。\n\n她的视线从自己手腕上移开，落到你举着的照片上，看了一拍。\n\n再移回到自己手腕上，看了一拍。\n\n吸气的间隔拉长了，胸腔极浅地起伏了一次。\n\n她重新抬起眼睛，锁住你。\n\n手腕仍留在那道冷白色光里，没有收回，站姿没有变，靴尖压着碎石地面，重心稳而沉。\n\n敏特\n\"你还记得多少。\"\n\n声音压到最低，沉进通道持续的震动里。\n\n敏特\n\"照片里没有的那些——只有真正的帕兹才会记得的东西。\"\n\n最后一个字落进低频震动里，消失。\n\n她站在那道光的另一侧，手腕仍在冷白色光里，眼睛锁住你，一动没动，等着你开口。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:136",
+          "text": "你如何知道我是帕兹？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:137",
+          "text": "照片和铜扣仍悬在那道冷白色光界线上方，你的双手没有收回。\n\n你的视线钉在她的眼睛上，没有移开。\n\n帕兹\n\"你怎么知道我是帕兹。\"\n\n声音压得低，平，每个字落在两人之间的冷白色光里，不重，不轻，像是在核对一件事实。\n\n她没有移开视线。\n\n右手仍留在那道光里，手腕内侧的压痕清晰，冷光贴着皮肤横过去，沟底的颜色比周围更深一点。\n\n她沉默了一拍。\n\n右手腕缓缓翻转，掌心向上，压痕完整地对着冷白色光，沟底的颜色在光里沉得更深，边缘淡，中心深。\n\n敏特\n\"铜扣在你手里。\"\n\n敏特\n\"发绳在我手腕上。\"\n\n敏特\n\"门底那枚铜扣，是我进来之前弄丢的。\"\n\n她的视线从自己手腕上移开，落在你举着的照片上，停了一拍。\n\n敏特\n\"照片里那个人，发绳和铜扣和我的一模一样。\"\n\n她的视线从照片上移开，缓缓向上，落回你的脸上。\n\n停了一拍。\n\n敏特\n\"帕兹的右手腕上有一道疤。\"\n\n她说这句话时语气没有变，每个字落得干净，字与字之间的间隔极细微地拉长了一点，几乎听不见。\n\n敏特\n\"位置和形状，死在那场炮击里的人才会知道。\"\n\n低频机械震动把这段话之后的沉默填满，电子锁的暗绿色LED在视野边缘慢速亮起，停，再亮。\n\n铜扣、照片、手腕内侧的压痕——三件东西并排悬在那道冷白色光界线上方，她的举证沉在两人之间的空气里。\n\n她的视线停在你的脸上，没有落定。\n\n敏特\n\"把袖口拉起来。\""
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:138",
+          "text": "选择：不拉袖口，反问她：你怎么知道那道疤还在"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:139",
+          "text": "照片和铜扣仍悬在那道冷白色光界线上方，你的右手没有动。\n\n左手缓缓放低，落回身侧，指尖垂着，没有去碰右手袖口。\n\n帕兹\n\"你怎么知道那道疤还在。\"\n\n声音压得低，平，比上一句更慢，每个字落在两人之间的冷白色光里，沉进去，不浮起来。\n\n你的视线钉住她的眼睛，没有移开。\n\n低频机械震动把问题之后的空气填满。\n\n她没有立刻开口。\n\n她的视线从你的脸上移开了，极细微，向下，落在你的右手腕上——隔着那层袖口布料，停在那里。\n\n她的肩胛骨轻微收紧了，衣料随之绷出一条极细的弧度，站姿没有变，重心没有移，但之前那层一步接一步举证的气势在这里停住了，不是退，是某种被反过来掂量的停顿。\n\n低频机械震动把这段沉默拉长。\n\n她重新抬起视线，锁住你的眼睛。\n\n敏特\n\"那场炮击打来的时候，弹片从左侧斜着过来。\"\n\n敏特\n\"地面被炸开，碎石从右侧扑上来，你往左倒。\"\n\n她的语气压得比之前更平，每个字像是从什么地方一块块挑出来，字与字之间的间隔极细微地拉长，慢，但越来越沉。\n\n敏特\n\"右手腕撑在那块缺口的石沿上，碎石边缘从内侧划过去。\"\n\n敏特\n\"我看见的。\"\n\n她的右手从那道冷白色光里缓缓收回，垂落到身侧，指尖微微蜷着，停在那里。\n\n靴尖仍压着碎石地面，没有跨过那道光，站姿没有变。\n\n敏特\n\"我还知道，是因为我从来没有忘记那一刻。\"\n\n最后一句落进低频震动里，没有咬牙，每个字的重量沉在通道的空气里，散不开。\n\n冷白色光横在你们之间，你的右手仍悬在界线上方，铜扣安静，照片在指间极细微地颤了一拍。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:140",
+          "text": "卡琳娜说你要在这里找东西，你找到了吗？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:141",
+          "text": "你的右手仍悬在那道冷白色光界线上方，铜扣在掌心里安静，照片在指间极细微地颤着，两者都没有收回。\n\n你的视线钉住她的眼睛，声音压低，没有停顿，也没有解释。\n\n帕兹\n\"卡琳娜说你要在这里找东西。\"\n\n帕兹\n\"找到了吗。\"\n\n每个字落得慢，沉，像把一个问题放在那道冷白色光里，等她自己去捡。\n\n她没有立刻开口。\n\n一拍。\n\n她的节奏断在这里。\n\n之前那种一步接一步的举证气势在这个问题前停住了，右手指尖微微蜷进掌心，不是握拳，只是某种无意识的收缩，手腕上的压痕在冷白色光里沉了一下。\n\n她的视线从你的袖口缓缓向上移，落在你的眼睛上，停住，重新审视你一遍，像是在重新评估这个人知道多少。\n\n敏特\n\"你怎么知道。\"\n\n每个字落得比之前更沉，硬，但硬得不均匀，字与字之间的间隔极细微地宽了一拍，像被什么击中后迅速往外拉起的东西。\n\n她的视线锁住你，没有移开，质问的力道比追问伤痕时更尖锐。\n\n低频机械震动把这段沉默填满。\n\n你的站姿没有变，重心没有移，铜扣和照片仍悬在光线上方。\n\n帕兹\n\"一个知道你来过这里的人告诉我的。\"\n\n声音低，平，没有加多余的字，把信息送过去，就停在那里。\n\n她沉默了一拍。\n\n视线在你脸上缓慢移动，从眉骨到下颌，再回到眼睛，一遍，停住。\n\n她的吸气间隔微微加快了一拍，胸腔浅浅起伏了一次，随即收拢，重新变得平稳。\n\n她重新开口，声音比之前更低。\n\n敏特\n\"我见到要找的东西了。\"\n\n每个字落得慢而沉，字尾轻轻收住，像有什么东西悬在句子后面没有推出来，也没有往回吞。\n\n低频机械震动把通道里的沉默再次填满。\n\n冷白色光横在你们之间，她的手腕压痕沉在光里，你的铜扣仍在掌心。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:142",
+          "text": "那你刚刚在找什么呢"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:143",
+          "text": "铜扣在你掌心里安静，照片在指间极细微地颤着，你的视线钉住她的眼睛，没有移开。\n\n帕兹\n\"那你刚刚在找什么呢。\"\n\n每个字落得慢，沉，把这个问题放在两人之间的冷白色光里，不解释，不催促。\n\n她的视线从你眼睛上跳开了，极细微，向下，落在你摊开的右掌心——那枚旧铜扣。\n\n她盯着铜扣，沉默了两拍。\n\n她身侧的指尖轻轻收紧，又松开，停在那里。\n\n低频机械震动把这段沉默填满，冷凝水沿配电箱金属壁缓缓渗下，在碎石地面上积着。\n\n她重新抬起视线，锁住你的眼睛，声音比之前压得更低，更沉。\n\n敏特\n\"铜扣。\"\n\n这两个字落得干净，字尾收住，停了不到一拍，她的语气立刻转向。\n\n敏特\n\"铜扣在你手里。\"\n\n敏特\n\"这本身就说明了什么。\"\n\n她的节奏加快了，字与字之间的间隔收紧，不再是之前一步接一步的举证，话头直接砸过来。\n\n敏特\n\"你说你从卡琳娜那里来，卡琳娜告诉你来找我——卡琳娜凭什么知道你是你。\"\n\n敏特\n\"你还记得多少，真正的帕兹才会记得的东西，你记得吗。\"\n\n敏特\n\"你拿着他的照片，拿着他的铜扣，站在这里——你记得他记得的，还是你只记得你以为他记得的。\"\n\n她的视线钉在你脸上，靴尖压着碎石，站姿没有变，重心没有移，等待的气势比质问伤痕时更尖，更快，带着一种被窥破之后往前推的力道。\n\n冷白色光横在你们之间，你的铜扣仍在掌心，她的视线钉在你脸上，一动没动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:144",
+          "text": "拿出记者证给她看"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:145",
+          "text": "你的右手仍悬在那道冷白色光界线上方，铜扣在掌心里安静，照片在指间微颤。\n\n你的视线没有从她脸上移开。\n\n左手缓缓将照片收回身侧，右手将铜扣随之归入外套口袋，动作慢，沉，没有任何解释。\n\n左手探入外套内袋。\n\n指尖触到磨损的边角，捏住，缓缓抽出来。\n\n记者证在冷白色光里展开，正面朝向她，悬在那道光界线上方，停住。\n\n压印的名字和照片在冷光下清晰，边角的磨损纹路横着，没有藏。\n\n她的视线从你的脸上移落。\n\n向下，落在记者证上，停住。\n\n她的目光在证件照片上停了一拍，缓缓向上，移回你的脸，停了一拍，重新落下去，回到证件照片上。\n\n她的胸腔浅浅起伏了一次，呼吸的间隔在那一个来回之间极细微地断了一拍。\n\n她没有开口。\n\n你的左手将照片重新从身侧取出，与记者证并排悬起，右手再度探入外套口袋，将铜扣取出摊在掌心，三件物品依次在那道冷白色光里排开，停在那里。\n\n记者证，照片，铜扣。\n\n冷白色光把三件物品压得清晰，压印名字、旧铜色、泛黄的相纸边缘，各占一段光，横在你们之间。\n\n她的视线在三件物品上缓缓移动，从左到右，从右到左，再停住。\n\n她右手的指尖微微松开，又收紧，停在身侧，靴尖压着碎石地面，站姿没有变，重心没有移。\n\n低频机械震动把通道里的沉默填满。\n\n之前那层逼问的节奏在这里停住了，气氛沉在光里，两边都没有开口，都在掂量。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:146",
+          "text": "卡琳娜说你来这里了，所以我来找你。我和他们做了一笔交易，我需要带走某样东西才能够离开这里，到时候外面会有他们的人来接应"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:147",
+          "text": "记者证、照片、铜扣仍悬在那道冷白色光界线上方，你的双手没有收回。\n\n低频机械震动在通道里持续，密封胶条处的震感从地面向上渗，沿着靴底传来。\n\n帕兹\n\"卡琳娜说你来这里了。\"\n\n帕兹\n\"所以我来找你。\"\n\n声音压得低，平，每个字落在那道冷白色光里，没有停顿，没有解释。\n\n帕兹\n\"我和他们做了一笔交易。\"\n\n帕兹\n\"我需要带走某样东西，才能够离开这里。\"\n\n帕兹\n\"到时候外面会有他们的人来接应。\"\n\n最后一句落下去，停在那里，不催，不补，像把一份已经签好的东西铺在光里，等她自己去看。\n\n你的视线钉住她的眼睛，双手停在界线上方，记者证、照片、铜扣各占一段冷白色光，都没有动。\n\n她没有立刻开口。\n\n她的视线从你的脸上移落，缓缓向下，落在三件物证上，从左到右——记者证，照片，铜扣——再停住。\n\n她的胸腔浅浅起伏了一次，呼吸的间隔在这里极细微地拉长了一拍，几乎听不见。\n\n她身侧的手指微微蜷起，又松开，停在那里。\n\n低频机械震动把这段沉默填满。\n\n她重新抬起视线，锁住你的眼睛。\n\n她开口时声音比之前更低，更沉，字与字之间的间隔收得慢而稳。\n\n敏特\n\"你为什么要接这笔交易。\"\n\n她没有追问卡琳娜，没有质疑交易的内容，问题直接落在你身上，落得沉，落得准。\n\n你的视线钉住她的眼睛，没有移开。\n\n帕兹\n\"因为卡琳娜说你来这里了。\"\n\n一句话，短，直，把所有的筹码推在光里，没有加任何东西，停在那里。\n\n她沉默了一拍。\n\n她的肩胛骨极细微地收紧了，衣料随之绷出一条细得几乎看不见的弧度，站姿没有变，重心没有移。\n\n之前那层逼问的节奏在这里完全停住了。\n\n冷白色光横在你们之间，三件物证仍在光里，两边都没有动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:148",
+          "text": "选择：直接问她：门后面有什么"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:149",
+          "text": "你的视线从她眼睛上没有移开，声音压低，平稳，把三件物证仍悬在那道冷白色光里。\n\n帕兹\n\"门后面有什么。\"\n\n每个字落得慢，沉，没有解释，没有铺垫，直接落在加固门的方向。\n\n她的节奏在这里断了。\n\n之前那层逼问的气势停在半空，没有落下，也没有收回。\n\n她的视线从你脸上缓缓移开，向右，落在加固门门缝透出的冷白色光上，停住。\n\n一拍。\n\n低频机械震动在通道里持续，冷凝水沿墙壁渗落，在碎石地面上积着，声音极细，几乎被震动盖住。\n\n她的指尖微微蜷了一下，停在身侧，没有松开。\n\n她重新抬起视线，锁住你的眼睛，声音比之前压得更低。\n\n敏特\n\"里面有我找过的东西。\"\n\n每个字落得慢，字尾收得很紧，像有什么悬在句子后面被压住，没推出来，也没往回吞。\n\n她没有再说门是什么，没有说里面是什么样子，没有说她怎么进去的。\n\n话停在那里，停得很硬。\n\n她的视线在你脸上停了不到一拍，随即转向。\n\n敏特\n\"你为什么想知道。\"\n\n语气比追问伤痕时更低，更平，字落得稳，带着某种掂量的重量，冷白色光把她的神情压得清晰。\n\n她的靴尖仍压着碎石，站姿没有变，重心没有移，视线钉在你脸上，等待。\n\n低频机械震动把两人之间的沉默填满，冷凝水渗落的声音细且规律，三件物证仍悬在光里，两边都没有动。"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,2636 @@
+[
+  {
+    "qa": [
+      {
+        "qa_id": "locomo_trace_5_qa_5",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "在复活日庆典唤醒帕兹之前的战区记忆中，敏特生命迹象逐渐消退时留给他的最后请求是什么？\nA. 为自己继续活下去\nB. 替她找到开枪的人\nC. 把相机交给卡琳娜\nD. 离开战区返回故乡\nE. 拍下她最后的样子\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 为自己继续活下去",
+          "B. 替她找到开枪的人",
+          "C. 把相机交给卡琳娜",
+          "D. 离开战区返回故乡",
+          "E. 拍下她最后的样子",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "为自己继续活下去",
+        "evidence": [
+          "D1:1",
+          "D1:1"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "她叫你为自己活下去。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "没有快门声，没有取景框，什么都框不住她此刻的样子，什么都框不住你手心里这份越来越冷的重量。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E2建立敏特正在帕兹怀中失去生命迹象的场景边界。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E1直接给出她在这一时刻留下的请求，只有A与证据一致。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_25",
+        "character": "卡琳娜",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "庆典初见时，卡琳娜对倒地帕兹的身份判断在看到记者证后发生了怎样的更新？\nA. 从流浪汉更新为本地警察\nB. 从酒鬼更新为战地记者\nC. 从伤员更新为港口商人\nD. 从记者更新为凯旋门成员\nE. 从游客更新为暗街住民\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从流浪汉更新为本地警察",
+          "B. 从酒鬼更新为战地记者",
+          "C. 从伤员更新为港口商人",
+          "D. 从记者更新为凯旋门成员",
+          "E. 从游客更新为暗街住民",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "从酒鬼更新为战地记者",
+        "evidence": [
+          "D1:1",
+          "D1:1"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "\"对酒鬼不需要太客气。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "\"帕兹，战地记者。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1表明卡琳娜最初把倒地的陌生人当成酒鬼。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2表明证件让她确认帕兹的职业，认知由酒鬼更新为战地记者。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_29",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Abstain",
+        "question": "截至帕兹在庆典上展示随匿名信寄来的敏特照片时，寄出信件和照片的人是谁？\nA. 罗英本人\nB. 卡琳娜本人\nC. 敏特本人\nD. 康娜本人\nE. 德索洛本人\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 罗英本人",
+          "B. 卡琳娜本人",
+          "C. 敏特本人",
+          "D. 康娜本人",
+          "E. 德索洛本人",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:1"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "是一封匿名信里夹着的。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1只确认照片来自匿名信，没有提供寄件者身份。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "因此A至E中的具体人物都不能由现有证据确定。",
+            "based_on": [
+              "E1"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_30",
+        "character": "罗英",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "罗英在庆典上既警告帕兹本地由谁实际掌权，又把卡琳娜的住处指向哪里？\nA. 政府掌权；港口仓库\nB. 教会掌权；中央广场\nC. 黑帮掌权；内陆暗街\nD. 警局掌权；旧福利院\nE. 商会掌权；宴会厅\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 政府掌权；港口仓库",
+          "B. 教会掌权；中央广场",
+          "C. 黑帮掌权；内陆暗街",
+          "D. 警局掌权；旧福利院",
+          "E. 商会掌权；宴会厅",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "C",
+        "answer_text": "黑帮掌权；内陆暗街",
+        "evidence": [
+          "D1:1",
+          "D1:3"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "\"新西西里真正管事的是黑帮，不是政府。\"",
+            "character_speaker": "罗英",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:3",
+            "speaker": "assistant",
+            "utterance": "\"你要找的人——卡琳娜，住在暗街。\"",
+            "character_speaker": "罗英",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明新西西里实际权力在黑帮而非政府。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2把卡琳娜的住处明确指向暗街，只有C同时符合两项信息。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_6",
+        "character": "帕兹",
+        "category": 1,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "帕兹在中央区逐步打听暗街时，哪条信息最终把搜索范围收窄到一栋具体建筑？\nA. 摊贩说暗街靠近码头\nB. 路人说卡琳娜住旅馆\nC. 警察指向废弃警局\nD. 老人指向尽头的旧楼\nE. 孩子指向红色钟楼\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 摊贩说暗街靠近码头",
+          "B. 路人说卡琳娜住旅馆",
+          "C. 警察指向废弃警局",
+          "D. 老人指向尽头的旧楼",
+          "E. 孩子指向红色钟楼",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "老人指向尽头的旧楼",
+        "evidence": [
+          "D1:5"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:5",
+            "speaker": "assistant",
+            "utterance": "\"暗街尽头，有栋旧楼。\"",
+            "character_speaker": "老人",
+            "id": "E1"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1给出暗街内部的具体终点建筑，而不是笼统区域。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "因此老人提供的旧楼线索把搜索范围收窄，答案为D。",
+            "based_on": [
+              "E1"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_37",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Multi-hop",
+        "question": "从拒绝康娜的人带路到离开卡琳娜公寓去找敏特，帕兹两次选择共同体现了什么？\nA. 始终把路线交给本地人\nB. 始终拒绝进入任何室内\nC. 只接受敏特下达的命令\nD. 优先保护相机不受损坏\nE. 坚持由自己决定下一步\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 始终把路线交给本地人",
+          "B. 始终拒绝进入任何室内",
+          "C. 只接受敏特下达的命令",
+          "D. 优先保护相机不受损坏",
+          "E. 坚持由自己决定下一步",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "E",
+        "answer_text": "坚持由自己决定下一步",
+        "evidence": [
+          "D1:9",
+          "D1:23",
+          "D1:25"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:9",
+            "speaker": "assistant",
+            "utterance": "\"让康娜来找我。\"",
+            "character_speaker": "帕兹",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:23",
+            "speaker": "assistant",
+            "utterance": "卡琳娜抬起手，朝房间中央的方向轻轻指了一下。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:25",
+            "speaker": "assistant",
+            "utterance": "你没有在木桌边坐下。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1显示帕兹拒绝跟随康娜的人，保留自己的路线决定权。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2提出较温和的室内安排，但E3显示帕兹仍按寻找敏特的目标离开。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "两次受邀方式不同，结果都由帕兹自行决定，故答案为E。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_50",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Multi-hop",
+        "question": "暗街旧楼前的人为什么把帕兹的相机当成威胁并试图夺走？\nA. 把带相机的外乡人当间谍\nB. 担心相机暴露走私价格\nC. 认为相机属于被盗赃物\nD. 想用相机交换宴会门票\nE. 误认相机藏有武器零件\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 把带相机的外乡人当间谍",
+          "B. 担心相机暴露走私价格",
+          "C. 认为相机属于被盗赃物",
+          "D. 想用相机交换宴会门票",
+          "E. 误认相机藏有武器零件",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "把带相机的外乡人当间谍",
+        "evidence": [
+          "D1:11",
+          "D1:15",
+          "D1:15"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:11",
+            "speaker": "assistant",
+            "utterance": "\"这里不欢迎记者，滚出去。\"",
+            "character_speaker": "黑帮成员",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "「最近黑帮之间摩擦多，凯旋门的人草木皆兵，见到带相机的外乡人，第一反应就是间谍。」",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "「最近黑帮之间摩擦多，凯旋门的人草木皆兵，见到带相机的外乡人，第一反应就是间谍。」",
+            "character_speaker": "卡琳娜",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1显示守楼者从帕兹的记者身份注意到记录工具。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2和E3补充黑帮摩擦下的判断规则：带相机的外乡人先被视为间谍。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此夺取相机是消除间谍嫌疑下的记录威胁，答案为A。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_43",
+        "character": "卡琳娜",
+        "category": 4,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "旧楼前的冲突在帕兹制住三人后如何升级，又由什么行动终止？\nA. 帕兹拔枪；敏特挡住枪口\nB. 领头者拔枪；卡琳娜命令停手\nC. 众人纵火；罗英带警察赶到\nD. 黑帮掷刀；卡尔咬住对方\nE. 守楼者报警；德索洛出面\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 帕兹拔枪；敏特挡住枪口",
+          "B. 领头者拔枪；卡琳娜命令停手",
+          "C. 众人纵火；罗英带警察赶到",
+          "D. 黑帮掷刀；卡尔咬住对方",
+          "E. 守楼者报警；德索洛出面",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "领头者拔枪；卡琳娜命令停手",
+        "evidence": [
+          "D1:15",
+          "D1:15",
+          "D1:15"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "枪口从黑色布料里顶出来，对着你。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "「到此为止。」",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "他们转身，走进巷道的阴影里，脚步声越来越轻，最后消失在墙拐角后面。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1表明徒手冲突升级为枪口威胁。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2是卡琳娜的制止命令，E3显示三人随后退走，只有B符合顺序。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_45",
+        "character": "帕兹",
+        "category": 6,
+        "label": "Abstain",
+        "question": "公寓楼道里出现并消散的敏特人影，究竟是现实实体、超自然显现还是创伤幻觉？\nA. 现实中的敏特本人\nB. 复活日产生的亡灵\nC. 帕兹的创伤性幻觉\nD. 卡琳娜制造的投影\nE. 卡尔引来的记忆化身\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 现实中的敏特本人",
+          "B. 复活日产生的亡灵",
+          "C. 帕兹的创伤性幻觉",
+          "D. 卡琳娜制造的投影",
+          "E. 卡尔引来的记忆化身",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:21",
+          "D1:21",
+          "D1:23"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:21",
+            "speaker": "assistant",
+            "utterance": "\"你总是躲在镜头后面。\"",
+            "character_speaker": "敏特",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:21",
+            "speaker": "assistant",
+            "utterance": "光线开始从她轮廓的边缘渗进去，影子的边缘开始模糊，一点一点向内侵蚀。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:23",
+            "speaker": "assistant",
+            "utterance": "拐角还是空的。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2说明帕兹感知到清晰言语，但人影以异常方式消散。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3说明卡琳娜所见只是空拐角，多方感知未形成可验证一致结论。",
+            "based_on": [
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "现有证据不能唯一判定A至E中的性质，因此应选F。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_56",
+        "character": "敏特",
+        "category": 1,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "帕兹离开公寓后在哪里找到敏特，她为什么按卡琳娜的安排在那里等待？\nA. 旧楼屋顶；躲避警察盘查\nB. 中央广场；等待罗英送信\nC. 巷道尽头；避开多人盯梢\nD. 港口仓库；看守机械零件\nE. 福利院废墟；寻找旧同伴\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 旧楼屋顶；躲避警察盘查",
+          "B. 中央广场；等待罗英送信",
+          "C. 巷道尽头；避开多人盯梢",
+          "D. 港口仓库；看守机械零件",
+          "E. 福利院废墟；寻找旧同伴",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "C",
+        "answer_text": "巷道尽头；避开多人盯梢",
+        "evidence": [
+          "D1:25",
+          "D1:25"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:25",
+            "speaker": "assistant",
+            "utterance": "你在巷道尽头的拐角绕过去，脚步停住了。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:25",
+            "speaker": "assistant",
+            "utterance": "\"说最近有些人的眼睛太多，让我先避开。\"",
+            "character_speaker": "敏特",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1明确帕兹在巷道尽头的拐角找到敏特。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明卡琳娜安排她暂避是因为盯梢者太多，只有C符合。",
+            "based_on": [
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_47",
+        "character": "敏特",
+        "category": 6,
+        "label": "Abstain",
+        "question": "敏特在暗街提到有人盯梢、随后巷道遭袭；现有信息能否确定盯梢者就是袭击者？\nA. 能，明确是凯旋门成员\nB. 能，明确是康娜的手下\nC. 能，明确是德索洛雇员\nD. 能，明确是中央区警察\nE. 能，明确是罗英的同伴\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 能，明确是凯旋门成员",
+          "B. 能，明确是康娜的手下",
+          "C. 能，明确是德索洛雇员",
+          "D. 能，明确是中央区警察",
+          "E. 能，明确是罗英的同伴",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:25",
+          "D1:25",
+          "D1:27"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:25",
+            "speaker": "assistant",
+            "utterance": "\"说最近有些人的眼睛太多，让我先避开。\"",
+            "character_speaker": "敏特",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:25",
+            "speaker": "assistant",
+            "utterance": "\"她没说。\"",
+            "character_speaker": "敏特",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:27",
+            "speaker": "assistant",
+            "utterance": "脚步声来不及落稳，墙皮从侧面崩开了。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1建立有人盯梢，E2同时说明敏特不知道对方身份。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3只呈现墙体爆裂造成的袭击，没有出现可辨认实施者。",
+            "based_on": [
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "时间相邻不足以证明主体相同，因此A至E都无法确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_51",
+        "character": "卡琳娜",
+        "category": 1,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "巷道袭击后，卡琳娜分别依据什么追究敏特和帕兹擅自离开室内？\nA. 让敏特等在码头；让帕兹守住旧楼\nB. 让敏特照顾卡尔；请帕兹等候康娜\nC. 让敏特寻找罗英；请帕兹修理相机\nD. 让敏特待在里面；请帕兹坐下谈话\nE. 让敏特回到庆典；请帕兹报警求援\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 让敏特等在码头；让帕兹守住旧楼",
+          "B. 让敏特照顾卡尔；请帕兹等候康娜",
+          "C. 让敏特寻找罗英；请帕兹修理相机",
+          "D. 让敏特待在里面；请帕兹坐下谈话",
+          "E. 让敏特回到庆典；请帕兹报警求援",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "让敏特待在里面；请帕兹坐下谈话",
+        "evidence": [
+          "D1:27",
+          "D1:27"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:27",
+            "speaker": "assistant",
+            "utterance": "\"我让你待在里面。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:27",
+            "speaker": "assistant",
+            "utterance": "\"我请你坐下来说话，你觉得这条巷道更合适，是这个意思吗？\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1是卡琳娜先前给敏特的室内安排。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2是她给帕兹的谈话安排；两人都离开指定位置，故答案为D。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_61",
+        "character": "卡琳娜",
+        "category": 5,
+        "label": "Abstain",
+        "question": "截至帕兹在巷道直接追问时，卡琳娜与敏特之间可以被明确命名为什么关系？\nA. 有血缘的姐妹\nB. 正式雇佣关系\nC. 共同经商伙伴\nD. 师徒传承关系\nE. 恋爱伴侣关系\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 有血缘的姐妹",
+          "B. 正式雇佣关系",
+          "C. 共同经商伙伴",
+          "D. 师徒传承关系",
+          "E. 恋爱伴侣关系",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:25",
+          "D1:29",
+          "D1:29"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:25",
+            "speaker": "assistant",
+            "utterance": "\"卡琳娜让我在这里等。\"",
+            "character_speaker": "敏特",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:29",
+            "speaker": "assistant",
+            "utterance": "\"你和敏特是什么关系？\"",
+            "character_speaker": "帕兹",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:29",
+            "speaker": "assistant",
+            "utterance": "\"这里是我的地方。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1只证明卡琳娜会保护并安排敏特的行动。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2提出关系问题，E3却转向地盘主权，没有给出关系称谓。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E中的明确关系都不能由现有对话确定。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_64",
+        "character": "德索洛",
+        "category": 4,
+        "label": "Multi-hop",
+        "question": "德索洛突然进入公寓后，现场议题如何从巷道对峙转向他的求助？\nA. 先质问会说话的猫，再要求众人前往港口\nB. 先制止持枪冲突，再要求帕兹修好旧相机\nC. 先带走受伤敏特，再说明福利院需要重建\nD. 先召回凯旋门成员，再要求卡琳娜离开暗街\nE. 先打断关系追问，再说明女儿受害且报警无门\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 先质问会说话的猫，再要求众人前往港口",
+          "B. 先制止持枪冲突，再要求帕兹修好旧相机",
+          "C. 先带走受伤敏特，再说明福利院需要重建",
+          "D. 先召回凯旋门成员，再要求卡琳娜离开暗街",
+          "E. 先打断关系追问，再说明女儿受害且报警无门",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "E",
+        "answer_text": "先打断关系追问，再说明女儿受害且报警无门",
+        "evidence": [
+          "D1:29",
+          "D1:31",
+          "D1:35",
+          "D1:35"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:29",
+            "speaker": "assistant",
+            "utterance": "\"你和敏特是什么关系？\"",
+            "character_speaker": "帕兹",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:31",
+            "speaker": "assistant",
+            "utterance": "\"德索洛已经进去了。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "\"她的舌头被割下来了。\"",
+            "character_speaker": "德索洛",
+            "id": "E3"
+          },
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "\"我去报警，警局是凯旋门的人，我连凶手是谁都不知道——\"",
+            "character_speaker": "德索洛",
+            "id": "E4"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1表明德索洛到访前尚未解决的是卡琳娜与敏特的关系追问。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2确认闯入者身份并使众人返回公寓。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "E3和E4把新议题具体化为女儿受害及正式警务渠道失效，答案为E。",
+            "based_on": [
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_46",
+        "character": "德索洛",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "德索洛获得卡琳娜承诺前后的身体与行动状态发生了怎样的变化？\nA. 从急喘颤抖变为放松踏实\nB. 从愤怒叫喊变为拔枪威胁\nC. 从镇定站立变为急促逃离\nD. 从昏迷倒地变为独自奔跑\nE. 从沉默旁观变为砸毁家具\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从急喘颤抖变为放松踏实",
+          "B. 从愤怒叫喊变为拔枪威胁",
+          "C. 从镇定站立变为急促逃离",
+          "D. 从昏迷倒地变为独自奔跑",
+          "E. 从沉默旁观变为砸毁家具",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "从急喘颤抖变为放松踏实",
+        "evidence": [
+          "D1:35",
+          "D1:39",
+          "D1:39"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "德索洛的后背绷紧，肩膀往上提了一截，脖颈的肌肉收缩，像什么东西从背后贴上来，凉的。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:39",
+            "speaker": "assistant",
+            "utterance": "德索洛的肩膀在那一刻松了下来，颤抖平息，呼吸里多出了一点踏实的东西。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:39",
+            "speaker": "assistant",
+            "utterance": "他转过身，往门口走去，脚步比来时更稳，每一步落得踏实。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1建立德索洛尚未获得援助时的紧张状态。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2和E3显示承诺后肩膀放松、离场脚步更踏实，状态更新为缓解，答案为A。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_67",
+        "character": "德索洛",
+        "category": 1,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "德索洛女儿遭受了什么伤害，他为什么无法通过本地警局获得有效救济？\nA. 双眼被伤；警局拒收外乡人案件\nB. 舌头被割；警局受凯旋门控制\nC. 右臂受伤；警局当天停止办公\nD. 听力受损；警局找不到德索洛\nE. 双腿被伤；警局要求先交赎金\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 双眼被伤；警局拒收外乡人案件",
+          "B. 舌头被割；警局受凯旋门控制",
+          "C. 右臂受伤；警局当天停止办公",
+          "D. 听力受损；警局找不到德索洛",
+          "E. 双腿被伤；警局要求先交赎金",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "舌头被割；警局受凯旋门控制",
+        "evidence": [
+          "D1:35",
+          "D1:35"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "\"她的舌头被割下来了。\"",
+            "character_speaker": "德索洛",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "\"我去报警，警局是凯旋门的人，我连凶手是谁都不知道——\"",
+            "character_speaker": "德索洛",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1明确女儿因反抗而失去舌头。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明警局受凯旋门控制，使正规报案路径失效，只有B符合。",
+            "based_on": [
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_71",
+        "character": "卡琳娜",
+        "category": 7,
+        "label": "Multi-hop",
+        "question": "德索洛为何最终单膝跪下称卡琳娜为“阁下”，卡琳娜又为何随后接受请求？\nA. 他交出记者证；她允许帕兹接管暗街\nB. 他证明女儿无伤；她决定撤销所有条件\nC. 他承认她的权威；她把援助设为可回报的交换\nD. 他答应加入警局；她要求敏特离开此地\nE. 他归还旧相机；她放弃追究凯旋门\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 他交出记者证；她允许帕兹接管暗街",
+          "B. 他证明女儿无伤；她决定撤销所有条件",
+          "C. 他承认她的权威；她把援助设为可回报的交换",
+          "D. 他答应加入警局；她要求敏特离开此地",
+          "E. 他归还旧相机；她放弃追究凯旋门",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "C",
+        "answer_text": "他承认她的权威；她把援助设为可回报的交换",
+        "evidence": [
+          "D1:35",
+          "D1:39",
+          "D1:39"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "\"今天来到这里，你甚至不愿意叫我一声阁下。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:39",
+            "speaker": "assistant",
+            "utterance": "\"卡琳娜阁下……我需要您的帮助。\"",
+            "character_speaker": "德索洛",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:39",
+            "speaker": "assistant",
+            "utterance": "\"他日我或许会需要你的帮助，请别忘记了。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1把求助条件指向德索洛是否正式承认卡琳娜的地位。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2通过跪礼和称谓完成这种承认。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "E3把当前公正与未来回报绑定，所以C完整解释接受请求的条件与性质。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_74",
+        "character": "帕兹",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "在德索洛求助现场，帕兹如何连续维持“记者不介入当地争端”的边界？\nA. 先替德索洛求情，再要求卡琳娜报警\nB. 先接受人情债，再代替卡琳娜承诺\nC. 先离开公寓，再带警察返回现场\nD. 先保持沉默，再把评价交给敏特\nE. 先质问德索洛，再要求他撤回请求\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 先替德索洛求情，再要求卡琳娜报警",
+          "B. 先接受人情债，再代替卡琳娜承诺",
+          "C. 先离开公寓，再带警察返回现场",
+          "D. 先保持沉默，再把评价交给敏特",
+          "E. 先质问德索洛，再要求他撤回请求",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "先保持沉默，再把评价交给敏特",
+        "evidence": [
+          "D1:38",
+          "D1:41",
+          "D1:41"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:38",
+            "speaker": "user",
+            "utterance": "选择：不说话，记者不该参与当地的争端。",
+            "character_speaker": "帕兹",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:41",
+            "speaker": "assistant",
+            "utterance": "\"德索洛看着你，那种眼神你肯定看见了，可是你没有动，也没有开口。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:41",
+            "speaker": "assistant",
+            "utterance": "你往后退了半步，视线从卡琳娜脸上侧过去，落在敏特身上。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1给出帕兹设定的职业边界。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2显示德索洛求助时他没有介入，E3显示被问意见时又把发言转给敏特。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "两次行动都避免由他决定当地争端，答案为D。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_76",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "旧相机背面的字母“M”实际代表谁，为什么可以排除它来自敏特的名字？\nA. 代表敏特；帕兹明确说是她的名字\nB. 代表机械师；敏特亲手刻下后又忘记\nC. 代表米德加尔特；相机由罗英现场赠送\nD. 代表码头；刻痕在拍照后才突然出现\nE. 代表母亲；敏特初见相机时刻痕已存在\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 代表敏特；帕兹明确说是她的名字",
+          "B. 代表机械师；敏特亲手刻下后又忘记",
+          "C. 代表米德加尔特；相机由罗英现场赠送",
+          "D. 代表码头；刻痕在拍照后才突然出现",
+          "E. 代表母亲；敏特初见相机时刻痕已存在",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "E",
+        "answer_text": "代表母亲；敏特初见相机时刻痕已存在",
+        "evidence": [
+          "D1:43",
+          "D1:43",
+          "D1:43"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:43",
+            "speaker": "assistant",
+            "utterance": "\"我第一次看到它时，它就已经在那里了。\"",
+            "character_speaker": "敏特",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:43",
+            "speaker": "assistant",
+            "utterance": "\"我第一次看到它时，它就已经在那里了。\"",
+            "character_speaker": "敏特",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:43",
+            "speaker": "assistant",
+            "utterance": "\"这台相机以前属于我母亲。那个 M，是她名字的首字母。\"",
+            "character_speaker": "帕兹",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2说明敏特接触相机之前M刻痕已经存在，排除由她名字而来。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3直接说明M来自帕兹母亲的名字，答案为E。",
+            "based_on": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_72",
+        "character": "帕兹",
+        "category": 5,
+        "label": "Fact Extraction (Single Dialogue)",
+        "question": "帕兹如何区分新西西里的暴力与自己熟悉的战区暴力，并说明镜头为何让他在意公正？\nA. 战区尚可预判；镜头迫使他直视不该发生之事\nB. 战区毫无边界；镜头让他忘记伤害\nC. 新西西里较温和；镜头只负责保存美景\nD. 新西西里依法裁决；镜头替代法官判刑\nE. 两地完全相同；镜头使他不再评价现实\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 战区尚可预判；镜头迫使他直视不该发生之事",
+          "B. 战区毫无边界；镜头让他忘记伤害",
+          "C. 新西西里较温和；镜头只负责保存美景",
+          "D. 新西西里依法裁决；镜头替代法官判刑",
+          "E. 两地完全相同；镜头使他不再评价现实",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "战区尚可预判；镜头迫使他直视不该发生之事",
+        "evidence": [
+          "D1:45",
+          "D1:45",
+          "D1:45"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:45",
+            "speaker": "assistant",
+            "utterance": "\"我去过的地方，暴力有它自己的逻辑。\"",
+            "character_speaker": "帕兹",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:45",
+            "speaker": "assistant",
+            "utterance": "\"公正不是应得的，是要去讨的。\"",
+            "character_speaker": "帕兹",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:45",
+            "speaker": "assistant",
+            "utterance": "\"但镜头会逼你看。\"",
+            "character_speaker": "帕兹",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明战区暴力虽混乱仍有可预判边界。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明新西西里的公正依赖屈膝求取，而E3说明镜头迫使记者判断不该发生之事。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "只有A同时概括这两个比较维度。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_83",
+        "character": "卡琳娜",
+        "category": 2,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "福利院土地被凯旋门夺走后，卡琳娜所知的孩子们主要分成了哪些去向？\nA. 所有孩子都被德索洛收养并留在暗街\nB. 少数被接走、两人病死、其余留在废墟\nC. 所有孩子都被教会接走且始终保持联系\nD. 所有孩子都加入凯旋门并搬到港口\nE. 所有孩子都跟随卡琳娜一起前往外岛\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 所有孩子都被德索洛收养并留在暗街",
+          "B. 少数被接走、两人病死、其余留在废墟",
+          "C. 所有孩子都被教会接走且始终保持联系",
+          "D. 所有孩子都加入凯旋门并搬到港口",
+          "E. 所有孩子都跟随卡琳娜一起前往外岛",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "少数被接走、两人病死、其余留在废墟",
+        "evidence": [
+          "D1:45",
+          "D1:47",
+          "D1:47"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:45",
+            "speaker": "assistant",
+            "utterance": "\"凯旋门把福利院的土地抢走了，只有少数孩子被收留，其他的不知道去了哪里。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:47",
+            "speaker": "assistant",
+            "utterance": "\"有两个孩子病死了，在福利院还没被抢走之前。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:47",
+            "speaker": "assistant",
+            "utterance": "\"还有几个留在废墟里，我离开的时候，他们还在那一带，后来就不知道了。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明外部收留只覆盖一部分孩子。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2补出此前病死者，E3补出仍留废墟者，只有B涵盖三条分支。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_89",
+        "character": "卡琳娜",
+        "category": 5,
+        "label": "Abstain",
+        "question": "被接走后失联以及留在福利院废墟的孩子，后来具体过着怎样的生活？\nA. 都安全生活在外岛\nB. 都加入了凯旋门\nC. 都被教会送回暗街\nD. 都成为港口商人\nE. 都由德索洛继续照顾\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 都安全生活在外岛",
+          "B. 都加入了凯旋门",
+          "C. 都被教会送回暗街",
+          "D. 都成为港口商人",
+          "E. 都由德索洛继续照顾",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:47",
+          "D1:47"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:47",
+            "speaker": "assistant",
+            "utterance": "\"有的后来有消息，有的没有。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:47",
+            "speaker": "assistant",
+            "utterance": "\"还有几个留在废墟里，我离开的时候，他们还在那一带，后来就不知道了。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1明确部分被接走者后来失联。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2明确留在废墟者的后续超出卡琳娜所知范围。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此A至E对这些孩子结局的统一描述都无法确定。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_66",
+        "character": "卡琳娜",
+        "category": 5,
+        "label": "Multi-hop",
+        "question": "福利院土地被夺后，为什么原来的孩子们没能继续在暗街共同生活？\nA. 卡琳娜拒绝任何教会与外岛来客提供帮助\nB. 孩子们一致选择加入凯旋门并主动离开\nC. 土地消失且收留、空间资源都只够覆盖少数人\nD. 德索洛把所有孩子同时送往中央区警局\nE. 福利院仍可居住但孩子们厌倦共同生活\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 卡琳娜拒绝任何教会与外岛来客提供帮助",
+          "B. 孩子们一致选择加入凯旋门并主动离开",
+          "C. 土地消失且收留、空间资源都只够覆盖少数人",
+          "D. 德索洛把所有孩子同时送往中央区警局",
+          "E. 福利院仍可居住但孩子们厌倦共同生活",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "C",
+        "answer_text": "土地消失且收留、空间资源都只够覆盖少数人",
+        "evidence": [
+          "D1:45",
+          "D1:45",
+          "D1:47"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:45",
+            "speaker": "assistant",
+            "utterance": "\"凯旋门把福利院的土地抢走了，只有少数孩子被收留，其他的不知道去了哪里。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:45",
+            "speaker": "assistant",
+            "utterance": "\"凯旋门把福利院的土地抢走了，只有少数孩子被收留，其他的不知道去了哪里。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:47",
+            "speaker": "assistant",
+            "utterance": "\"但暗街没有多余的位置，没有人有余力收留所有人。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明共同生活的物理空间先被夺走。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明外部收留只覆盖少数人，E3说明暗街本身也没有足够空间。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "物理空间与照护容量两层缺口共同导致孩子四散，答案为C。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_95",
+        "character": "卡尔",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "帕兹对卡尔的认知如何从旧楼前到离开公寓时发生更新？\nA. 从普通记者更新为暗街正式执法者\nB. 从流浪黑猫更新为只会模仿叫声的宠物\nC. 从凯旋门守卫更新为不会理解人话的动物\nD. 从沉默黑猫更新为会说话并主动监视他的观察者\nE. 从受伤动物更新为德索洛失散的女儿\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从普通记者更新为暗街正式执法者",
+          "B. 从流浪黑猫更新为只会模仿叫声的宠物",
+          "C. 从凯旋门守卫更新为不会理解人话的动物",
+          "D. 从沉默黑猫更新为会说话并主动监视他的观察者",
+          "E. 从受伤动物更新为德索洛失散的女儿",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "从沉默黑猫更新为会说话并主动监视他的观察者",
+        "evidence": [
+          "D1:15",
+          "D1:51",
+          "D1:51"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "一个少女从阴影里走出来，怀里抱着一只黑猫，步态从容，脚步声轻而均匀。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:51",
+            "speaker": "assistant",
+            "utterance": "\"你方才的话，我听见了。\"",
+            "character_speaker": "卡尔",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:51",
+            "speaker": "assistant",
+            "utterance": "\"你在新西西里的每一步，我都会看着。\"",
+            "character_speaker": "卡尔",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1阶段的卡尔只以沉默黑猫形象出现。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2证明卡尔能理解并用人类语言回应，E3又表明它主动承担观察帕兹的意图。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此认知同时更新了语言能力与行动意图，答案为D。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_82",
+        "character": "卡尔",
+        "category": 6,
+        "label": "Abstain",
+        "question": "卡尔提到本地存在“长不大的女孩”和“复活的人”；这些人分别是谁？\nA. 女孩是卡琳娜，复活者是敏特\nB. 女孩是罗英，复活者是德索洛\nC. 女孩是敏特，复活者是康娜\nD. 女孩是德索洛女儿，复活者是帕兹\nE. 女孩是康娜，复活者是罗英\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 女孩是卡琳娜，复活者是敏特",
+          "B. 女孩是罗英，复活者是德索洛",
+          "C. 女孩是敏特，复活者是康娜",
+          "D. 女孩是德索洛女儿，复活者是帕兹",
+          "E. 女孩是康娜，复活者是罗英",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "F",
+        "answer_text": "以上信息均无法从当前对话中确定",
+        "evidence": [
+          "D1:57",
+          "D1:57"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:57",
+            "speaker": "assistant",
+            "utterance": "\"这里还有个长不大的女孩。\"",
+            "character_speaker": "卡尔",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:57",
+            "speaker": "assistant",
+            "utterance": "\"还有复活的人。\"",
+            "character_speaker": "卡尔",
+            "id": "E2"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2只给出两类异常现象，没有附带任何姓名。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "后文也没有把这些称呼与A至E中的具体人物明确对应，因此应选F。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_94",
+        "character": "卡尔",
+        "category": 5,
+        "label": "Multi-hop",
+        "question": "卡尔为何逐步表现出对帕兹的罕见兴趣？\nA. 帕兹承诺喂养它并替它寻找项圈\nB. 帕兹拒绝听它说话并独自返回公寓\nC. 帕兹证明自己是凯旋门派来的间谍\nD. 帕兹把相机立即赠给卡尔作为礼物\nE. 帕兹面对异象首先好奇且没有逃离\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 帕兹承诺喂养它并替它寻找项圈",
+          "B. 帕兹拒绝听它说话并独自返回公寓",
+          "C. 帕兹证明自己是凯旋门派来的间谍",
+          "D. 帕兹把相机立即赠给卡尔作为礼物",
+          "E. 帕兹面对异象首先好奇且没有逃离",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "E",
+        "answer_text": "帕兹面对异象首先好奇且没有逃离",
+        "evidence": [
+          "D1:55",
+          "D1:55",
+          "D1:63"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:55",
+            "speaker": "assistant",
+            "utterance": "\"但你对我说的话更好奇，而不是怕我。\"",
+            "character_speaker": "卡尔",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:55",
+            "speaker": "assistant",
+            "utterance": "\"看来卡尔对你有点兴趣。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:63",
+            "speaker": "assistant",
+            "utterance": "\"你没跑。\"",
+            "character_speaker": "卡尔",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明帕兹对会说话的猫先产生好奇而不是恐惧。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2确认这种兴趣对卡尔而言并不常见。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "E3用帕兹持续同行、没有逃跑完成行为验证，所以答案为E。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_81",
+        "character": "敏特",
+        "category": 4,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "从公寓前往码头的时间线上，敏特何时重新进入现场？\nA. 帕兹、卡琳娜和卡尔先到码头，她随后作为已在场人物出现\nB. 敏特先独自登上旧楼屋顶并在那里等待三人前来会合\nC. 敏特与三人从公寓出发并一路同行到码头广场现场\nD. 敏特在中央区加入三人并负责全程带领他们去码头\nE. 敏特直到三人离开码头后仍然没有重新出现身影踪迹\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 帕兹、卡琳娜和卡尔先到码头，她随后作为已在场人物出现",
+          "B. 敏特先独自登上旧楼屋顶并在那里等待三人前来会合",
+          "C. 敏特与三人从公寓出发并一路同行到码头广场现场",
+          "D. 敏特在中央区加入三人并负责全程带领他们去码头",
+          "E. 敏特直到三人离开码头后仍然没有重新出现身影踪迹",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "帕兹、卡琳娜和卡尔先到码头，她随后作为已在场人物出现",
+        "evidence": [
+          "D1:65",
+          "D1:65",
+          "D1:67"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:65",
+            "speaker": "assistant",
+            "utterance": "三人的影子从窄巷的石板路跨出来，没入码头宽阔的石砌广场。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:65",
+            "speaker": "assistant",
+            "utterance": "三人的影子从窄巷的石板路跨出来，没入码头宽阔的石砌广场。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:67",
+            "speaker": "assistant",
+            "utterance": "敏特站在码头上，阳光从她身后铺过来，金色的，宽的，把她的轮廓烫得发亮。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1把去港口路上的同行者限定为三人。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明三人先抵达码头，E3才让敏特作为已经站在那里的角色重新出现。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此敏特不是从公寓一路同行，答案为A。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_62",
+        "character": "帕兹",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "帕兹的身体状态如何从暗街受威胁时的创伤反应更新为码头庆典中的短暂放松？\nA. 从呼吸平稳且专注变为持续昏迷无法行动\nB. 从发抖浅呼吸变为呼吸放慢并较久观察人群\nC. 从肩膀完全放松变为拔枪攻击庆典路人\nD. 从持续主动交谈变为完全失去听觉反应\nE. 从步伐稳定有力变为无法独自站立行走\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从呼吸平稳且专注变为持续昏迷无法行动",
+          "B. 从发抖浅呼吸变为呼吸放慢并较久观察人群",
+          "C. 从肩膀完全放松变为拔枪攻击庆典路人",
+          "D. 从持续主动交谈变为完全失去听觉反应",
+          "E. 从步伐稳定有力变为无法独自站立行走",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "从发抖浅呼吸变为呼吸放慢并较久观察人群",
+        "evidence": [
+          "D1:11",
+          "D1:13",
+          "D1:65",
+          "D1:65"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:11",
+            "speaker": "assistant",
+            "utterance": "你的手指轻轻抖了一下，不受控制，关节发白了一截，又松开，又紧。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:13",
+            "speaker": "assistant",
+            "utterance": "声音出来的时候平稳，但你听见自己呼吸的间隙比正常短了一截。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:65",
+            "speaker": "assistant",
+            "utterance": "呼吸在这片阳光里放缓了一拍。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          },
+          {
+            "dia_id": "D1:65",
+            "speaker": "assistant",
+            "utterance": "你的目光从卡尔身上移开，落在码头明亮的人群上，停留的时间比往常更长。",
+            "character_speaker": "Narrator",
+            "id": "E4"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2说明暗街包围触发发抖与浅促呼吸。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3和E4说明码头非威胁性喧闹中呼吸放慢，注意力也能较久停在人群上。",
+            "based_on": [
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "前后状态构成由创伤警觉到短暂放松的更新，答案为B。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_87",
+        "character": "敏特",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "帕兹曾答应给敏特拍一张真正开心的照片；码头上这一承诺如何从旧记忆进入执行？\nA. 帕兹把剩余胶卷交给罗英后独自离开\nB. 卡琳娜代替敏特明确取消了这项旧承诺\nC. 敏特主动提醒旧承诺，帕兹随后取出相机\nD. 敏特明确拒绝被拍并当场砸坏旧相机\nE. 卡尔要求先把拍成的照片寄送给康娜\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 帕兹把剩余胶卷交给罗英后独自离开",
+          "B. 卡琳娜代替敏特明确取消了这项旧承诺",
+          "C. 敏特主动提醒旧承诺，帕兹随后取出相机",
+          "D. 敏特明确拒绝被拍并当场砸坏旧相机",
+          "E. 卡尔要求先把拍成的照片寄送给康娜",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "C",
+        "answer_text": "敏特主动提醒旧承诺，帕兹随后取出相机",
+        "evidence": [
+          "D1:21",
+          "D1:67",
+          "D1:67"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:21",
+            "speaker": "assistant",
+            "utterance": "\"等事情结束以后……我会给你拍一张真正开心的照片。\"",
+            "character_speaker": "帕兹",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:67",
+            "speaker": "assistant",
+            "utterance": "\"你不是一直说，等事情结束以后，要给我拍张照片吗？\"",
+            "character_speaker": "敏特",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:67",
+            "speaker": "assistant",
+            "utterance": "呼吸放缓了一拍，你把相机取出来，握在手里。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1建立尚未兑现的旧承诺。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2由现实中的敏特主动重启承诺，E3显示帕兹开始用相机执行它。",
+            "based_on": [
+              "E2",
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "因此承诺由记忆状态进入行动状态，答案为C。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_86",
+        "character": "帕兹",
+        "category": 4,
+        "label": "Fact Extraction (Multiple Dialogues)",
+        "question": "码头上的两次快门按时间先后分别由谁按下、拍摄了谁？\nA. 帕兹先拍卡尔，敏特后拍卡琳娜\nB. 敏特先拍帕兹，帕兹后拍卡琳娜\nC. 卡琳娜先拍敏特，帕兹后拍卡尔\nD. 帕兹先拍敏特，敏特后拍帕兹\nE. 罗英先拍帕兹，卡琳娜后拍敏特\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 帕兹先拍卡尔，敏特后拍卡琳娜",
+          "B. 敏特先拍帕兹，帕兹后拍卡琳娜",
+          "C. 卡琳娜先拍敏特，帕兹后拍卡尔",
+          "D. 帕兹先拍敏特，敏特后拍帕兹",
+          "E. 罗英先拍帕兹，卡琳娜后拍敏特",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "D",
+        "answer_text": "帕兹先拍敏特，敏特后拍帕兹",
+        "evidence": [
+          "D1:75",
+          "D1:75",
+          "D1:81",
+          "D1:83"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:75",
+            "speaker": "assistant",
+            "utterance": "相机仍举在手里，镜头朝着敏特，取景框里的逆光轮廓微微晃动了一下。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:75",
+            "speaker": "assistant",
+            "utterance": "快门按下去了。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:81",
+            "speaker": "assistant",
+            "utterance": "动作不快，两手握着机身，肘关节慢慢顶起来，取景框朝你的方向转过去。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          },
+          {
+            "dia_id": "D1:83",
+            "speaker": "assistant",
+            "utterance": "按下去了。",
+            "character_speaker": "Narrator",
+            "id": "E4"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2说明第一次由仍持相机的帕兹按下，镜头对准敏特。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3显示相机转到敏特手中并对准帕兹，E4记录第二次按下。",
+            "based_on": [
+              "E3",
+              "E4"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "先后顺序因此是帕兹拍敏特、敏特拍帕兹，答案为D。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_96",
+        "character": "帕兹",
+        "category": 3,
+        "label": "Memory Update",
+        "question": "旧相机如何从开篇和巷道中的故障状态更新为码头上的可用状态？\nA. 从各项功能完全正常更新为彻底永久报废\nB. 从被旧楼黑帮夺走更新为后来由罗英完整归还\nC. 从只有闪光灯发生故障更新为只能进行录音\nD. 从内部胶卷全部耗尽更新为能够自动生成照片\nE. 从无法开机且快门受损更新为完成两次拍摄后仍可动作\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从各项功能完全正常更新为彻底永久报废",
+          "B. 从被旧楼黑帮夺走更新为后来由罗英完整归还",
+          "C. 从只有闪光灯发生故障更新为只能进行录音",
+          "D. 从内部胶卷全部耗尽更新为能够自动生成照片",
+          "E. 从无法开机且快门受损更新为完成两次拍摄后仍可动作",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "E",
+        "answer_text": "从无法开机且快门受损更新为完成两次拍摄后仍可动作",
+        "evidence": [
+          "D1:3",
+          "D1:27",
+          "D1:75",
+          "D1:83",
+          "D1:85"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:3",
+            "speaker": "assistant",
+            "utterance": "皮革表面磨旧了，快门键的漆面早已脱落，开机键按下去没有任何反应，机身冰凉。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:27",
+            "speaker": "assistant",
+            "utterance": "外壳右侧多了一道裂痕，从边角一路延伸进快门键附近，那一块金属微微凹陷进去，按下去的时候没有回弹，只有细碎的零件声从内部透出来，像什么东西断了，在里面松动着。",
+            "character_speaker": "Narrator",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:75",
+            "speaker": "assistant",
+            "utterance": "快门按下去了。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          },
+          {
+            "dia_id": "D1:83",
+            "speaker": "assistant",
+            "utterance": "按下去了。",
+            "character_speaker": "Narrator",
+            "id": "E4"
+          },
+          {
+            "dia_id": "D1:85",
+            "speaker": "assistant",
+            "utterance": "\"还剩几张？快门还能用吗？\"",
+            "character_speaker": "敏特",
+            "id": "E5"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2建立相机无法开机、快门又受撞击不回弹的早期状态。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3和E4记录码头两次真实拍摄，E5又确认快门仍能动作。",
+            "based_on": [
+              "E3",
+              "E4",
+              "E5"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "相机因此更新为经有限修复后可连续拍摄，答案为E。",
+            "based_on": [
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_91",
+        "character": "卡琳娜",
+        "category": 7,
+        "label": "Multi-hop",
+        "question": "政府、警局、黑帮与卡琳娜在新西西里形成了怎样的实际权力结构？\nA. 黑帮实际掌权，警局受凯旋门控制，卡琳娜以暗街规则提供替代公正\nB. 政府掌握实际权力，警局保持独立，卡琳娜只负责庆典礼仪\nC. 教会完全控制警局，黑帮只经营摊位，卡琳娜服从德索洛安排\nD. 港口商会掌握权力，警局保护外乡人，暗街内部没有自治规则\nE. 记者协会掌握权力，康娜管理警局，凯旋门听从罗英统一指挥\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 黑帮实际掌权，警局受凯旋门控制，卡琳娜以暗街规则提供替代公正",
+          "B. 政府掌握实际权力，警局保持独立，卡琳娜只负责庆典礼仪",
+          "C. 教会完全控制警局，黑帮只经营摊位，卡琳娜服从德索洛安排",
+          "D. 港口商会掌握权力，警局保护外乡人，暗街内部没有自治规则",
+          "E. 记者协会掌握权力，康娜管理警局，凯旋门听从罗英统一指挥",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "A",
+        "answer_text": "黑帮实际掌权，警局受凯旋门控制，卡琳娜以暗街规则提供替代公正",
+        "evidence": [
+          "D1:1",
+          "D1:35",
+          "D1:15",
+          "D1:39"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "\"新西西里真正管事的是黑帮，不是政府。\"",
+            "character_speaker": "罗英",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:35",
+            "speaker": "assistant",
+            "utterance": "\"我去报警，警局是凯旋门的人，我连凶手是谁都不知道——\"",
+            "character_speaker": "德索洛",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:15",
+            "speaker": "assistant",
+            "utterance": "「如果外人在暗街被人杀了，我就需要替暗街向凶手讨个公道。这是暗街的规矩、我不喜欢麻烦。」",
+            "character_speaker": "卡琳娜",
+            "id": "E3"
+          },
+          {
+            "dia_id": "D1:39",
+            "speaker": "assistant",
+            "utterance": "\"今日，请收下这份公正。\"",
+            "character_speaker": "卡琳娜",
+            "id": "E4"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1说明名义政府之外由黑帮掌握实际权力。",
+            "based_on": [
+              "E1"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E2说明正式警务渠道又受凯旋门控制。",
+            "based_on": [
+              "E2"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "E3和E4说明暗街内部由卡琳娜用地盘规则和互惠承诺提供替代性公正，答案为A。",
+            "based_on": [
+              "E3",
+              "E4"
+            ]
+          }
+        ]
+      },
+      {
+        "qa_id": "locomo_trace_5_qa_93",
+        "character": "帕兹",
+        "category": 7,
+        "label": "Multi-hop",
+        "question": "帕兹与镜头的关系如何从战区记忆发展到码头的双向拍摄？\nA. 从只想收藏旧相机并逃避拍摄，变为把它永久锁进港口仓库\nB. 从认为镜头无法容纳失去且躲在镜头后，变为拍敏特并让敏特拍自己\nC. 从从不使用相机拍照，变为只替卡琳娜持续记录暗街武力冲突\nD. 从拒绝接触任何相机，变为用镜头持续监视康娜派来的跟踪者\nE. 从只愿拍摄复活日庆典，变为亲手永久销毁自己留下的所有胶卷\nF. 以上信息均无法从当前对话中确定\n请在括号中给出唯一正确选项，例如：(X)。",
+        "option": [
+          "A. 从只想收藏旧相机并逃避拍摄，变为把它永久锁进港口仓库",
+          "B. 从认为镜头无法容纳失去且躲在镜头后，变为拍敏特并让敏特拍自己",
+          "C. 从从不使用相机拍照，变为只替卡琳娜持续记录暗街武力冲突",
+          "D. 从拒绝接触任何相机，变为用镜头持续监视康娜派来的跟踪者",
+          "E. 从只愿拍摄复活日庆典，变为亲手永久销毁自己留下的所有胶卷",
+          "F. 以上信息均无法从当前对话中确定"
+        ],
+        "answer": "B",
+        "answer_text": "从认为镜头无法容纳失去且躲在镜头后，变为拍敏特并让敏特拍自己",
+        "evidence": [
+          "D1:1",
+          "D1:21",
+          "D1:75",
+          "D1:81",
+          "D1:83"
+        ],
+        "evidence_dialogues": [
+          {
+            "dia_id": "D1:1",
+            "speaker": "assistant",
+            "utterance": "照片拍不下这个。",
+            "character_speaker": "Narrator",
+            "id": "E1"
+          },
+          {
+            "dia_id": "D1:21",
+            "speaker": "assistant",
+            "utterance": "\"你总是躲在镜头后面。\"",
+            "character_speaker": "敏特",
+            "id": "E2"
+          },
+          {
+            "dia_id": "D1:75",
+            "speaker": "assistant",
+            "utterance": "相机仍举在手里，镜头朝着敏特，取景框里的逆光轮廓微微晃动了一下。",
+            "character_speaker": "Narrator",
+            "id": "E3"
+          },
+          {
+            "dia_id": "D1:81",
+            "speaker": "assistant",
+            "utterance": "动作不快，两手握着机身，肘关节慢慢顶起来，取景框朝你的方向转过去。",
+            "character_speaker": "Narrator",
+            "id": "E4"
+          },
+          {
+            "dia_id": "D1:83",
+            "speaker": "assistant",
+            "utterance": "按下去了。",
+            "character_speaker": "Narrator",
+            "id": "E5"
+          }
+        ],
+        "reasoning_steps": [
+          {
+            "step": 1,
+            "inference": "E1和E2把早期镜头写成不能容纳失去、也让帕兹停在生活之外的工具。",
+            "based_on": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "step": 2,
+            "inference": "E3说明帕兹主动为活着的敏特拍照，开始兑现参与。",
+            "based_on": [
+              "E3"
+            ]
+          },
+          {
+            "step": 3,
+            "inference": "E4和E5说明他又把相机交给敏特并成为被摄者，使摄影变成双向关系，答案为B。",
+            "based_on": [
+              "E4",
+              "E5"
+            ]
+          }
+        ]
+      }
+    ],
+    "conversation": {
+      "session_1_date_time": "unknown",
+      "session_1": [
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:1",
+          "text": "她的头靠在你的手臂上，红发散开，像燃尽的火。\n\n她的嘴唇动了动，声音细得像要被风卷走。\n\n敏特\n\"帕兹……你就……为自己活下去吧……\"\n\n你低下头，她的眼睛还开着，里面的光正在一点一点地退。\n\n你的手按在她背上，掌心感受到她呼吸的间距——越来越长，越来越长。\n\n你不知道该说什么，喉咙里像是被什么东西堵死了，舌头压在牙关后面，一个字也推不出来。\n\n周围还有枪声，还有人在喊，还有什么东西在燃烧，但你什么都听不见了。\n\n只有她的重量，越来越实，越来越沉，压在你的怀里，像一块石头。\n\n你曾经以为自己见过够多了。\n\n见过被炸开的楼，见过蜷缩在碎石底下的孩子，见过母亲跪在路中间用双手捧着一堆已经不成形的东西嚎啕大哭。\n\n见过这些，应该就什么都不怕了。\n\n你弓着背，拿相机的手死死捏住她肩膀的布料，关节发白，指甲掐进掌心，感受不到痛。\n\n你的胸腔里有什么东西在往下坠，像是有人抽走了某个支撑的东西，整个人要从里面垮下去。\n\n她的手滑落下来，指尖蹭过你的袖口，落在地上，没有声音。\n\n你盯着那只手看了很久，久到周围的枪声、火光、喊叫全部变成了一层模糊的底色，贴在这个画面的外缘，和你隔着一层什么。\n\n照片拍不下这个。\n\n你在战区带了多少卷胶卷，拍了多少张照片，记录了多少张脸——但拍不下这个。\n\n没有快门声，没有取景框，什么都框不住她此刻的样子，什么都框不住你手心里这份越来越冷的重量。\n\n她叫你为自己活下去。\n\n你不知道那是什么意思。\n\n你不知道从什么时候开始，你已经不太记得什么叫'为自己'了。\n\n世界开始旋转。\n\n光从四面八方涌进来，刺得你眼睛发痛，脑袋里像是有什么东西在用力往里敲，一下，又一下。\n\n人声从远处涌来，喧嚣的、欢笑的、完全不属于那片废墟的声音。\n\n你的手抓不住任何东西，世界在你眼前翻了一个面。\n\n一声惊呼穿过混乱扎进耳朵里。\n\n罗英\n\"卡琳娜阁下？！\"\n\n金色的光。\n\n金色的头发，蓝色的眼睛，正低头看着你。\n\n白色棉衣的下摆随着她的动作微微晃了一下，旧吊带裙的裙边压在黑色连裤袜上，深棕色的皮鞋停在离你半步的地方。\n\n她的马尾垂下来，发梢扫过肩头，表情平静，像是在打量一件掉在路边的东西。\n\n卡琳娜\n\"你好，这里不让睡觉。\"\n\n她身侧站着另一个少女，黑发双马尾，身上的黑色服装缝了不少中式银饰，在庆典的灯光下反着细碎的亮。\n\n你盯着眼前的金发少女，脑子里的画面还没散干净，梦与醒之间像是隔着一层湿透的棉布。\n\n黑发少女侧过身，声音压得很低。\n\n罗英\n\"阁下，也不需要做到这个地步吧……\"\n\n卡琳娜\n\"对酒鬼不需要太客气。\"\n\n金发少女漫不经心地开口，手腕翻了一下，一张卡片从她指间划过，落向你。\n\n你下意识抬手，手心合拢，掌心冰凉的触感让你的思维猛地往回收了一截。\n\n是记者证。\n\n金发少女的视线落在你手上，停了一秒。\n\n卡琳娜\n\"帕兹，战地记者。\"\n\n卡琳娜\n\"我记住了。\"\n\n卡琳娜\n\"下次记得睡在床上。\"\n\n她收回目光，侧身对黑发少女点了点头，没有再看你一眼，转身走进庆典的人潮里，金色的马尾很快被人群淹没。\n\n黑发少女留在原地，眼睛在你脸上停了片刻。\n\n罗英\n\"你也真是不走运。\"\n\n罗英\n\"庆典上哪还没几个酒鬼？卡琳娜阁下还是太严格了。\"\n\n她的语气平和，但视线落在你手上的记者证时，停了一拍。\n\n罗英\n\"你是记者？\"\n\n帕兹，那是你的名字。\n\n黑白的证件照，几行印字，边角已经磨旧了。\n\n你盯着上面的名字，脑袋里的雾终于散了一层。\n\n你的手摸向腰侧，指尖碰到胶卷相机的机身，皮革表面的温度和掌心的温度渐渐持平。\n\n你从外套口袋里摸出一张照片。\n\n是一封匿名信里夹着的。\n\n照片里的红发少女侧着身，步伐匆忙，背景是喧嚣的人潮和某条你不认识的街道。\n\n她的脸只露了半张，但你认出来了。\n\n你在哪里见过这个人，你比任何人都清楚。\n\n你把照片举向罗英。\n\n帕兹\n\"你见过这个人吗？\"\n\n罗英的视线落在照片上，停了一秒，不长不短，不带任何表情。\n\n罗英\n\"复活日见到来找人的客人，真是稀奇。\"\n\n罗英\n\"如你所见，我是小贩，罗英。\"\n\n她的指尖在衣袖边缘轻轻碰了一下，目光已经从照片上移开了。\n\n罗英\n\"今天是米德加尔特的纪念日，十年前的事情，老居民都记得。\"\n\n罗英\n\"庆典热闹，但热闹的地方也最容易出事。\"\n\n罗英\n\"新西西里真正管事的是黑帮，不是政府。\"\n\n罗英\n\"外来的客人，最好先摸清楚自己站在哪块地上，再决定要找什么人。\"\n\n她说完，安静地看着你，不追问，也不催促。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:2",
+          "text": "主角整理行李时，发现一台已经无法正常开机的旧相机。相机背面刻着一个很浅的字母“M”。主角没有解释相机的来历，只是把它重新放进了内侧口袋。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:3",
+          "text": "你从行李袋侧兜里摸出那台相机。\n\n皮革表面磨旧了，快门键的漆面早已脱落，开机键按下去没有任何反应，机身冰凉。\n\n你翻过机身，拇指拂过背面右下角那个浅浅的字母。\n\n\"M\"。\n\n刻痕很浅，像是用硬物随手划上去的，边缘有些毛糙。\n\n罗英的视线从你手上移过来，停在相机上，比之前看照片的时间停得更久一些。\n\n她没有开口，只是看着。\n\n罗英\n\"那台相机，看上去有些年头了。\"\n\n罗英\n\"记者一般不会继续带着一台开不了机的设备到处走。\"\n\n她的语气像是在说庆典上天气不错，目光没有从相机上离开。\n\n你没有解释。\n\n你把相机放回内侧口袋，手掌在胸口轻轻压了一下，确认位置，动作不快，沉默而仔细。\n\n罗英的视线随着你的手落下，在你收手的瞬间，她的指尖在袖口边缘轻轻叩了一下。\n\n就一下，像是把什么东西搁到了架子上。\n\n罗英\n\"情报从来都是有价的，这一点想必你也清楚。\"\n\n罗英\n\"你要找的人——卡琳娜，住在暗街。\"\n\n罗英\n\"内陆，被遗弃的那片区域，穷困的人聚在那里。\"\n\n罗英\n\"像你这样的外来者进了那里，或许能找到答案，或许只会惹上更多麻烦。\"\n\n罗英\n\"两种结果都有可能。\"\n\n她向你微微颔首，动作很浅，像是某种告别的仪式。\n\n她转过身，步伐不紧不慢，融进庆典的人潮里。\n\n金色的灯笼光、涌动的人影、远处的锣鼓声，把她的黑色身影一点一点地淹没。\n\n你抬脚，街角已经空了。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:4",
+          "text": "选择：先在中央区打听卡琳娜或暗街的消息，再动身"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:5",
+          "text": "庆典的人潮把你从街角推开，锣鼓声贴着建筑的边缘滚过去，落在耳膜上，很响，很远。\n\n你在人群里站了一会儿，目光扫过左右两侧的摊档。\n\n最近的一个摊位支着红布招牌，中年女人坐在后面，手边堆着一摞糕饼，正扯着嗓子冲人群叫卖。\n\n你走过去，等她换气的间隙开口。\n\n帕兹\n\"打扰一下，我想问问暗街怎么走。\"\n\n女人的叫卖声硬生生断了一截，她侧过头看你，眼神在你的衬衣和领带上扫了一圈，手已经开始往下一叠糕饼挪。\n\n女摊贩\n\"不知道，没去过。\"\n\n她摆了摆手，像在赶一只停错地方的鸟，视线已经移向旁边的客人。\n\n女摊贩\n\"节日里头，来来来，新鲜的——\"\n\n你在她的叫卖声里退开一步。\n\n不远处，两个男人靠着花圃的矮墙站着，一个抽烟，一个低头看手机，说话声被庆典的喧嚣压得很低。\n\n你走过去，他们几乎同时抬起头，视线在你脸上、领带上、外套口袋的轮廓上依次停了一下，短暂地交换了个眼神。\n\n帕兹\n\"暗街——那边住的都是什么人？\"\n\n抽烟的男人把烟按灭在矮墙上，没有立刻回答，侧过身去咳了一声。\n\n男路人\n\"走投无路的。\"\n\n男路人\n\"那边的人大多是没地方去了，才去那里的。\"\n\n帕兹\n\"卡琳娜，听说过这个名字吗？\"\n\n两人再次对视，这次时间更短，几乎只是眼皮动了一下。\n\n看手机的那个把手机揣进裤兜，声音压得更低了。\n\n男路人乙\n\"暗街……确实有个叫那名字的，管些事。\"\n\n男路人乙\n\"具体的我们不清楚。\"\n\n抽烟的男人已经向后退了半步，脸转向别处。\n\n男路人\n\"节日嘛，你也去乐一乐吧。\"\n\n两人走了，步伐不快，像只是换个地方站着。\n\n你没有跟上去。\n\n庆典的人流在你四周涌动，糖葫芦的气味混着爆竹灰的气味，从某个方向飘过来。\n\n你环顾四周，视线在人群里扫了一圈，落在街道边缘一处台阶上。\n\n一个老人坐在那里，布袋搁在膝盖上，帽檐压得很低，只露出颧骨以下的部分。\n\n他的脸朝向你这边。\n\n你朝他走过去，他没有移开视线，也没有动。\n\n你在他面前停下来，他才抬起头，帽檐翻起一条缝，露出一双眼睛。\n\n老人\n\"暗街尽头，有栋旧楼。\"\n\n老人\n\"平时没什么人靠近那里。\"\n\n老人\n\"你要找人的话，去那里看看。\"\n\n你开口。\n\n帕兹\n\"卡琳娜——\"\n\n老人的嘴角动了一下，像是某个准备开口的动作，没有成形就收了回去。\n\n他低下头，两只手开始摆弄膝盖上的布袋，手指捏住袋口的绳子，反复绕了两圈又松开。\n\n他没有再说话。\n\n你在台阶边站了一会儿，老人的视线落在布袋上，没有回来。\n\n你转过身。\n\n相机在内侧口袋里压着肋骨，照片折叠在相机旁边，你用手掌从外侧确认了一下位置。\n\n庆典的声浪还在，锣鼓和人声混在一起，贴着身后的街道往上涌。\n\n你迈出脚步，向街巷深处走去。\n\n建筑的轮廓在午前的阳光里投出矮短的影子，越往内陆走，颜色越旧，越沉。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:6",
+          "text": "直接去宴会厅"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:7",
+          "text": "庆典的锣鼓声从背后追上来，节奏密集，踩着你的脚步往前压。\n\n你抬起眼，视线在人潮里扫过一圈，没有停。\n\n花圃左侧，一个穿深色夹克的男人把肩膀靠在柱子上，手里捏着一串糖葫芦，眼睛却没有落在糖葫芦上。\n\n右侧的人流边缘，另一个男人侧着身，像是在等人，脚尖的方向对着你。\n\n你没有停步，目光往前落，余光压着两侧。\n\n斜对面的摊位遮棚下，还有一个。\n\n三个，或者更多。\n\n你的手摸向外套侧边，指尖碰了一下相机的皮革机身，没有拿出来。\n\n锣鼓声又响了一轮，人群跟着往前涌，你跟着走，步幅放慢了半拍。\n\n花圃的拐角绕过去，你贴着建筑外墙走，人潮从右侧漫过去，把你和那片柱子中间的空档撑开了一条缝。\n\n你侧身切进人流，绕了一段，从斜后方逼近了靠在柱子上的男人。\n\n他察觉到的时候，你已经站在他左肩的位置了。\n\n他的肩膀往右转了一下，糖葫芦捏紧了，手背上的筋绷起来。\n\n他转过来，看见你，表情没有散，但嘴角压了一下。\n\n庆典人潮在你们两侧流动，锣鼓声把周围的声音全部盖掉了。\n\n从另外两个方向，另外几个身影慢慢朝这里靠拢，把你和这个男人围进一个半弧里。\n\n领头的男人把糖葫芦随手搁在身侧，声音压得很低，刚好越过锣鼓声传进来。\n\n领头男人\n\"你发现我们了。\"\n\n领头男人\n\"这条街上过来的那些人，没几个能做到这个。\"\n\n他的眼睛在你脸上停了一秒，往旁边的方向抬了抬下巴。\n\n领头男人\n\"换个地方说，不适合在这里开口。\"\n\n帕兹\n\"你们是谁的人。\"\n\n男人没有立刻回答，手放在身侧，指节松着，但脚没有移。\n\n领头男人\n\"新西西里水很深，各方往往都讨厌你这样会游泳的人。\"\n\n领头男人\n\"我们处理过不少不长眼的，你是第一个提前发现我们的。\"\n\n领头男人\n\"你最好考虑一下，离开新西西里。\"\n\n锣鼓声从远处滚过来，人潮的边缘把你们这一小块地方挤成一个死角。\n\n帕兹\n\"你们跟着我，是因为我在找人。\"\n\n帕兹\n\"你们知道她在哪里。\"\n\n男人的眼皮动了一下，视线在你脸上扫了一圈，没有否认。\n\n领头男人\n\"我是康娜的人。\"\n\n帕兹\n\"敏特——你们知道她的下落。\"\n\n领头男人\n\"知道。\"\n\n领头男人\n\"但这里不是说话的地方。\"\n\n他往你的方向站稳了，肩膀没有退，声音比之前更低了一截。\n\n领头男人\n\"跟我们走，还是留在这里——你自己想清楚。\"\n\n庆典的喧嚣压着这片死角，糖葫芦的气味混着爆竹灰从旁边飘过来，四周的人还在笑，还在叫，丝毫不往这边看。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:8",
+          "text": "不去，告诉他们让康纳找我。我直接去宴会厅"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:9",
+          "text": "你直视着他。\n\n他的眼睛没有移开，肩膀站稳，手放在身侧，等你开口。\n\n帕兹\n\"不去。\"\n\n帕兹\n\"让康娜来找我。\"\n\n帕兹\n\"我直接去暗街。\"\n\n你说完，没有等他回应。\n\n领头男人沉默了一拍，下颌轻轻动了一下，像是把什么东西压回去了。\n\n他抬起一只手，往旁边挥了一下，幅度很小。\n\n两侧的身影收紧了半步，阵型往里靠，随即向两边散开，让出一条路来。\n\n你转过身。\n\n背对着他们，你迈出脚步，从他们中间走出去。\n\n没有脚步声跟上来。\n\n锣鼓声贴在背后，一轮一轮往后退，越来越钝。\n\n庆典的灯笼光从建筑顶端压下来，橘黄的颜色渐渐稀薄，楼与楼之间的缝隙变深，颜色变沉。\n\n街面上的石板缝里积着旧灰，脚步声变得清晰，人声变少，变远。\n\n巷道两侧的楼房向内倾斜，阴影从墙角漫出来，把路面压窄了一截。\n\n你没有回头。\n\n街角有什么东西动了一下，你的余光扫过去，是阴影里的一双眼睛，落在你身上，没有声音，也没有跟上来。\n\n再往前走，又有几双。\n\n墙皮剥落的地方露出底下的砖，路灯的灯泡只有一半亮着，光圈打在地上，黄而浑浊。\n\n你继续走，建筑的轮廓越来越旧，庆典的声音越来越像一层贴在远处的底色。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:10",
+          "text": "选择：径直走向暗街尽头的旧楼"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:11",
+          "text": "庆典的锣鼓声压在背后，越来越薄，越来越远。\n\n街面的石板缝里积着旧灰，路灯灯泡有一半不亮，剩下的那半只把黄色光圈打在地面的一小块上。\n\n阴影里的眼睛没有跟上来，但也没有消失。\n\n你继续走，步伐没有变。\n\n巷道两侧的楼房向内倾斜，墙皮大块大块地剥落，露出底下泛灰的砖面，路面在视线前方越来越窄。\n\n旧楼的轮廓从巷道尽头浮出来，门窗紧闭，周围没有灯光，只有楼体的轮廓压在夜色里。\n\n三个人靠着巷口的墙站着，袖手，低着头，像是在等什么，又像是什么都不在等。\n\n你的脚步声踩在路面上，清清楚楚。\n\n三个人的头几乎同时抬起来，视线落在你身上，漫不经心地从墙上站直了。\n\n其中一个往前走了两步，侧身挡住了通往旧楼的路。\n\n黑帮成员\n\"离远点，外乡人。\"\n\n黑帮成员\n\"这不是你该来的地方。\"\n\n语气懒散，但脚没有动。\n\n你的视线扫过三人的站位，一个正面，两个侧翼，间距不近。\n\n帕兹\n\"我是来找人的，不能通融一下吗？\"\n\n说话的那个眼神往下扫了一下，在你外套侧口袋的轮廓上停了一拍，眼神变冷了一截。\n\n黑帮成员\n\"这里不欢迎记者，滚出去。\"\n\n黑帮成员\n\"找人？\"\n\n黑帮成员\n\"这时间？\"\n\n黑帮成员\n\"这倒是稀奇。\"\n\n三个人交换了一个眼神，其中两个凑到一起，声音压得很低，嘴唇几乎没有动，帕兹什么都没听清。\n\n说话的那个转回来，脸上的表情淡而平。\n\n黑帮成员\n\"我们管不着你是来做什么的，只能算你运气不好。\"\n\n黑帮成员\n\"把相机留下，你可以走了。\"\n\n三个人开始往前走，脚步不快，间距拉开，慢慢把你圈进一个半弧里。\n\n你的手往胸口靠了一下，指尖碰到外套内侧的硬边。\n\n相机在里面，照片也在里面。\n\n胸腔里有什么东西开始收紧，空气从喉咙过的时候带着细小的阻力，呼吸的节奏往外错了半拍。\n\n脑袋里某个地方有什么东西裂开了一条缝——\n\n爆炸的光，废墟扬起的灰，碎石落在手背上的重量，以及一种沉而具体的重量压在手臂里。\n\n火光，喊声，枪声，一切都贴在某个极近的地方，只隔着一层薄得要破的东西。\n\n你的手指轻轻抖了一下，不受控制，关节发白了一截，又松开，又紧。\n\n三个人的脚步声踩在旧石板上，越来越近，越来越清晰。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:12",
+          "text": "选择：开口拖住他们：「我认识卡琳娜，进去通报一声」"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:13",
+          "text": "三人的脚步声踩在旧石板上，间距在慢慢收窄。\n\n你的喉结滚了一下，压住胸腔里某个向外错位的东西，把气息往下沉。\n\n手指往相机的方向靠了靠，碰到内衬的硬边，又松开。\n\n帕兹\n\"我认识卡琳娜，进去通报一声。\"\n\n声音出来的时候平稳，但你听见自己呼吸的间隙比正常短了一截。\n\n三个人的脚步同时顿了一下。\n\n右侧那个侧过头去，嘴唇凑近旁边人的耳边，声音压得听不见，语气不是慌，是某种意外之后短暂的停顿。\n\n领头的那个没有转过去看，眼睛一直落在你脸上，表情没有散，但眉骨压了一下，目光的质地变了。\n\n他重新转过来，站稳，脚尖没有退。\n\n领头黑帮\n\"认识卡琳娜的人，不会大白天扛着相机来这里。\"\n\n领头黑帮\n\"你这个谎撒得太快了。\"\n\n嘴角往上勾了一下，勾得不深，像是在看一件无聊但值得纪录的事。\n\n领头黑帮\n\"相机留下，你走人。\"\n\n领头黑帮\n\"我们不为难外乡人。\"\n\n三人重新迈开脚步，站位往两侧展开，把通往旧楼那条路堵死了。\n\n脚步放缓，间距一点一点地压进来。\n\n你的肩膀不受控地往里收了一下，收了就撑回去，但那条缝已经裂开了。\n\n爆炸的光从某个极近的地方涌进来，不是声音，是光，是扬起来的尘，是碎石砸在手背上的重量。\n\n还有手臂里某种沉而具体的压迫感，温的，贴着皮肤，不散。\n\n三道人影踩着旧石板，脚步声一下一下落进来，和那些声音叠在一起，叠得很准，很近。\n\n你的手指轻轻颤了一下，指节发白，停了一息，慢慢松开。\n\n呼吸压着喉咙往出走，比来时浅了半截。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:14",
+          "text": "选择：准备战斗"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:15",
+          "text": "你的手指停在外套内侧的硬边上，停了不到一秒。\n\n脑袋里某个地方还有那条裂缝，火光，扬尘，碎石的重量。\n\n你让那些东西往下沉，把气息压稳，慢慢弯腰，把相机从内侧口袋取出来，和背包一起放到地上。\n\n动作慢，很刻意，每个细节都留出足够的时间让他们看清。\n\n三个人的肩膀松了一截，领头那个嘴角往上勾，往旁边的人扬了扬下巴。\n\n其中一个迈出脚步，弯腰向相机伸出手。\n\n就在他的重心往前压的瞬间，你动了。\n\n肘关节切进他的颈侧，力道收得很准，他的膝盖还没来得及弯，身体已经往侧面倒下去。\n\n左侧那个扑上来，你侧身让开他的手，扣住他的手腕往里旋，另一只手的掌根推上他的肩胛，把他的脸压进旧石板里。\n\n领头那个反应最快，脚步踩得很重，你转过身，迎上他的力道，用他自己的惯性把他送进墙面。\n\n石墙吃下撞击的声音，沉而钝。\n\n整个过程干脆利落，三个人倒在旧石板上，呻吟声此起彼伏。\n\n你低头捡起相机，把它放回内侧口袋。\n\n领头那个从地上撑起半个身子，脸色涨红，手已经伸进外套口袋里。\n\n枪口从黑色布料里顶出来，对着你。\n\n你的重心微微下沉，脚尖踩稳地面，视线落在那只握枪的手上。\n\n空气在巷道里凝住了。\n\n「到此为止。」\n\n声音从巷道更深处传来，不响，却把旧石板上的每一丝回声都压干净了。\n\n领头那个握枪的手停在半空，肩膀僵了一下，没有动。\n\n三个人几乎同时把头转向声音来源，持枪的那只手慢慢垂下去。\n\n一个少女从阴影里走出来，怀里抱着一只黑猫，步态从容，脚步声轻而均匀。\n\n黑猫在她臂弯里眯着眼，尾巴懒洋洋地垂着，像是对这条巷道里发生的一切都不感兴趣。\n\n少女的金色马尾随着步伐轻轻晃了一下，白色棉衣的袖口压在黑色连裤袜上方，她的视线从三个人脸上扫过去，没有起伏。\n\n领头那个嗫嚅着，声音低下去。\n\n黑帮成员\n「卡琳娜阁下……」\n\n卡琳娜的视线停在他脸上，停了足够长的时间。\n\n卡琳娜\n「我没允许过你们在我眼皮下乱逛，也没允许过你们在这里动手。」\n\n卡琳娜\n「明白吗？」\n\n三个人互相看了一眼，脚步往后错开，没有人开口，没有人再看你一眼。\n\n他们转身，走进巷道的阴影里，脚步声越来越轻，最后消失在墙拐角后面。\n\n巷道重新安静下来，黑猫的耳朵转了一下，又合上。\n\n卡琳娜转过身，视线落在你身上，从外套领口往下扫了一圈，停在相机的轮廓上。\n\n卡琳娜\n「午安，记者。你一直都喜欢往这种阴暗潮湿的地方钻吗？」\n\n帕兹\n「阴暗潮湿对我来说也还算舒适，要是没这些'热情好客'的人就更好了。」\n\n卡琳娜的嘴角动了一下，幅度很浅，像是某个细小的想法从脸上经过。\n\n卡琳娜\n「最近黑帮之间摩擦多，凯旋门的人草木皆兵，见到带相机的外乡人，第一反应就是间谍。」\n\n卡琳娜\n「无论你想要什么，这里都不是说话的好地方。」\n\n她顿了一拍，抬手摸了摸黑猫的耳朵。\n\n卡琳娜\n「如果外人在暗街被人杀了，我就需要替暗街向凶手讨个公道。这是暗街的规矩、我不喜欢麻烦。」"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:16",
+          "text": "跟她走，然后卡琳娜直接带我去宴会厅"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:17",
+          "text": "卡琳娜停顿了一拍，抬眼看你，手还搭在黑猫的耳朵边。\n\n卡琳娜\n\"跟上来，去能说话的地方。\"\n\n你没有立刻动。\n\n帕兹\n\"我本来就要去宴会厅。\"\n\n帕兹\n\"找康娜。\"\n\n卡琳娜摸猫耳朵的手停下来。\n\n她的蓝眼睛在你脸上停了一瞬，嘴角的弧度往上浮了一点，浅，停住了，落不成一个完整的笑。\n\n卡琳娜\n\"巧。\"\n\n卡琳娜\n\"我正要去同一个宴会厅。\"\n\n她收回视线，转过身，往巷道深处走去。\n\n黑猫换了个姿势，蜷进她的臂弯里，耳朵转了一下，合上。\n\n你弯腰捡起地上的背包，背上，跟上去。\n\n旧石板在脚底一块一块往后退，你们的脚步声一前一后交替落下，她的轻，你的沉，节奏对不上，但间距始终保持在不需要追赶的位置。\n\n巷道在前方慢慢变宽，两侧楼房向内倾斜的角度开始缓过来，墙皮剥落的范围收窄，砖缝里的旧灰变浅了一截。\n\n远处橘黄色的灯笼光重新浮上来，一层一层，庆典的人声从某个很远的地方漫回来，开始有温度，开始有密度。\n\n阴影在脚下退开，路面的颜色从深灰变成暗褐，前方的光越来越近。\n\n卡琳娜走在前面，始终没有回头。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:18",
+          "text": "选择：加快步伐，走到她旁边与她并肩"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:19",
+          "text": "巷道的地面往前延伸，橘黄色的灯笼光从前方压下来，一层比一层近。\n\n你的步幅加大了一截，脚步落在旧石板上，声音比先前沉，节奏压稳，把她背影和你之间的距离一步一步收短。\n\n卡琳娜没有停下来。\n\n脚步声一如既往，轻，均匀，间隔一致，像她根本没有察觉身后的变化。\n\n你走到她左侧，步频跟上，两人的肩膀之间留着一臂的距离。\n\n她的视线轻轻往左偏了一下，落在你身上，停了不到一息。\n\n收回去，前方，步频没有变。\n\n臂弯里的黑猫换了个姿势，耳朵转动了一下，尾巴尖端轻轻甩了甩，又停住。\n\n卡琳娜的嘴角有什么东西浮了一下，极浅，落不成形。\n\n卡琳娜\n\"你是习惯走这么快，还是只是不想落在后面？\"\n\n语气很轻，漫不经心，像在说一件无关紧要的事。\n\n她的脚步没有因为开口停顿过哪怕半拍。\n\n前方的巷道收窄成最后一段阴影，两侧楼墙往内压，砖缝里的旧灰在脚边退开，庆典的人声从某个不远处漫过来，有密度，有温度。\n\n阴影从脚底退干净，路面的颜色从暗褐转浅，灯笼的橘黄把前方的轮廓打得清晰起来。\n\n一栋公寓楼的外墙在光线里浮出来，墙皮斑驳，铁栏锈迹沿缝往下淌，楼道入口的门框压得很低。\n\n卡琳娜在门前停下，空出一只手，从白色棉衣的口袋里摸出一把老式钥匙。\n\n钥匙插进锁孔，她的手腕转了一下，金属咬进锁芯，发出一声低沉的卡顿。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:20",
+          "text": "直接跑，然后看到了敏特。主角与敏特聊天时提到，很多年前，敏特曾经抱怨主角总是躲在镜头后面，不愿意真正参与生活。主角回答：“等事情结束以后，我会给你拍一张真正开心的照片。”"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:21",
+          "text": "楼道里的光线从走廊尽头的窗子切进来，把旧木地板分成一明一暗两截。\n\n卡琳娜侧过身，钥匙还插在锁孔里，门没有推开，她用眼神让出通道，蓝色的眼睛平静地落在你身上。\n\n你没有动。\n\n脚底踩着旧木地板，你的视线越过卡琳娜的肩头，落在楼道拐角那片由阴影和灰尘堆积起来的半暗区域。\n\n那里的光线微微扭曲了一下，像热气在正午的柏油路上浮动，阴影开始聚拢，一点一点向内收缩，收出一个人形的轮廓。\n\n你的呼吸停了一拍。\n\n手指攥上外套内侧的相机，指节从皮肤底下顶出来，发白，又松开，又攥紧。\n\n额头上有什么东西从皮肤里渗出来，细密的，凉的。\n\n轮廓越来越实，红发，侧身站着，就像那张照片里的样子。\n\n你的身体往前倾了一下，脚却没有离开地板。\n\n敏特站在那里，表情平静，眼神落在你身上，既不像责备，也不像宽慰。\n\n她的嘴唇动了。\n\n声音不响，却像是直接从那片阴影里灌进来：\n\n\"你总是躲在镜头后面。\"\n\n那句话从耳膜里穿过去，落进某个更深的地方。\n\n你的肩膀开始轻轻抖动，喉咙里像有什么东西堵着，呼吸从那条缝里挤出来，浅，不稳。\n\n你张开嘴，嗓子里只剩沙。\n\n帕兹\n\"等事情结束以后……我会给你拍一张真正开心的照片。\"\n\n声音出来的时候低，像是对着空气说话，又像是对着自己说话。\n\n敏特站在那里，听到了，又像是没听到。\n\n光线开始从她轮廓的边缘渗进去，影子的边缘开始模糊，一点一点向内侵蚀。\n\n她的嘴唇又动了，没有声音，只有口型，看不清。\n\n光把她剩下的部分都蒸干净了。\n\n拐角处只剩灰尘在光束里缓慢飘落。\n\n你的身体还保持着前倾的姿势，肩膀停在那里，脚没有动。\n\n过了很久，你的重心才慢慢移回来。\n\n卡琳娜的头侧了一下，顺着你目光的方向望去，那个拐角里空着，什么都没有。\n\n她的眉毛轻轻蹙了一下，很快就平了。\n\n卡尔从卡琳娜的臂弯里抬起头，瞳孔收窄成一条竖线，直直地盯着那个拐角，尾巴尖端轻轻甩了一下。\n\n它合上眼睛，把下巴搁回卡琳娜的手臂上。\n\n卡琳娜把手从门把上松开，后退半步。\n\n卡琳娜\n\"进来吧。\"\n\n卡琳娜\n\"走廊里灰尘大，站着说话对嗓子不好。\"\n\n她转过身，走进公寓，留下门开着。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:22",
+          "text": "选择：跟进去，但在门口停一下，回头看那个拐角"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:23",
+          "text": "公寓的门开着，卡琳娜的脚步声已经走进更深处去了。\n\n你站在门槛外，脚底踩着旧木地板的边缘，身体没有跟上去。\n\n你转过身，往那个拐角看过去。\n\n走廊的光从尽头的窗子斜切进来，落在旧木地板上，把拐角照成一块浅灰。\n\n灰尘在光束里飘，缓慢，匀速，一粒一粒往下沉。\n\n没有轮廓，没有红发，没有任何东西从那片光里聚拢出来。\n\n只有灰尘。\n\n你的手从外套内侧的位置慢慢松开，五根手指一根一根地摊平，垂回去。\n\n呼吸从胸腔底部往上走，走了很长，走出来的时候已经平了。\n\n你攥了一下拳，指节顶了一下掌心，又放开。\n\n拐角还是空的。\n\n你转回身，跨过门槛，走进去。\n\n卡琳娜站在窗边，逆着光，午后的白昼把她的轮廓打得清晰，脸上的表情模糊在背光里。\n\n她回过头，蓝眼睛从你身上扫过去，在你刚才回头的方向停了一拍，落回你脸上。\n\n她没有开口。\n\n窗台上，卡尔蜷成一团，尾巴自然垂着，尖端压在窗台边缘。\n\n她睁开眼，竖瞳对准你，停了足够长的时间，把你从头到脚扫了一遍。\n\n尾巴尖轻轻拂过窗台，又停住。\n\n卡尔合上眼睛，把下巴重新搁回爪子上。\n\n窗户开着半扇，庆典的人声从远处漫进来，带着午后的温度，把室内的安静压得有了密度。\n\n卡琳娜抬起手，朝房间中央的方向轻轻指了一下。\n\n那里有一张老旧的木桌，旁边放着椅子，桌面的木纹被岁月磨得发白。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:24",
+          "text": "直接出门，去找敏特。然后在街角找到了敏特，她说是卡琳娜让她暂避于此。然后两个人开始交谈，卡琳娜出现"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:25",
+          "text": "你没有在木桌边坐下。\n\n卡琳娜的手还悬在空中，你已经转身往门口走，脚步落在旧木地板上，力道比进来时沉了一截。\n\n门槛让过去，楼道里的光从窗子斜切下来，你没有停，推开楼道的铁门，踏进暗街的巷道里。\n\n午后的光压下来，把石板路晒成发灰的白。\n\n你在巷道里走，脚步快，两侧的楼墙从余光里往后退，砖缝里积着旧灰，墙皮翻起来贴在砖面上，风也没有把它们吹落。\n\n你在每一个拐角停一下，眼神扫过阴影里的深处，扫过堆放着旧木板的墙根，扫过晾衣绳在两栋楼之间拉出的弧线。\n\n没有红发。\n\n你转进另一条巷道，这里更窄，两侧楼墙向内压，把头顶的光切成一道细长的白。\n\n地面的石板在这里换成了不规则的碎砖，脚底踩上去，重心微微偏移。\n\n你在巷道尽头的拐角绕过去，脚步停住了。\n\n她靠在转角的楼墙上，两栋楼的阴影交汇在她身上，把她切成一明一暗两半。\n\n红发在那道光里比照片里更实，更有重量。\n\n敏特先看见你。\n\n她的身体从墙上离开，往前迈了一步，肩膀绷了一下，表情在那一秒里过了好几层，最后沉下来，停在某个说不清的位置。\n\n你的脚停在原地，肩膀没有松。\n\n敏特\n\"你怎么出来了。\"\n\n不是问句。\n\n帕兹\n\"找你。\"\n\n敏特的视线在你脸上停了一下，往你身后的巷道扫过去，又收回来。\n\n敏特\n\"卡琳娜让我在这里等。\"\n\n敏特\n\"说最近有些人的眼睛太多，让我先避开。\"\n\n她说这话的时候语气很平，像在转述一条不相干的指令，手抵着墙面，手指没有动。\n\n帕兹\n\"哪些人。\"\n\n敏特\n\"她没说。\"\n\n敏特的目光落在你胸口外套的轮廓上，停了一拍，移开。\n\n敏特\n\"你还带着相机。\"\n\n巷道里的风从更深处吹过来，把她的发尾吹开了一截，她没有抬手去压。\n\n帕兹\n\"总是带着。\"\n\n她听到了，眼神里有什么东西收紧了一下，又放开，嘴唇动了动，像是有什么话停在那里，没出来。\n\n两个人之间的距离还有好几步，谁都没有再往前走。\n\n庆典的人声从很远的地方漫过来，模糊的，有密度，像是隔了整座城区才透进这条巷道里来。\n\n脚步声从巷口传过来，均匀，不急，踩在碎砖上的声音轻而准确。\n\n敏特的背脊微微直了一下。\n\n阴影里走出一个身影，金色的马尾随着步伐轻轻晃动，白色棉衣的袖口压得整齐，怀里的黑猫耳朵朝前竖着，尾巴尖端在半空里甩了一下，停住。\n\n卡琳娜在距离你们两步的地方停下来。\n\n她没有急着开口，视线先落在你身上，在你脸上停了足够长的时间，再缓缓移过去，停在敏特身上。\n\n卡尔在她臂弯里换了个姿势，竖瞳在两个人之间来回扫了一圈，尾巴尖端又甩了一下，垂下去。\n\n卡琳娜\n\"木桌不合你的意？\"\n\n语调很平，听不出起伏，像是在问一件无足轻重的事。\n\n她的目光从你脸上移开，重新落在敏特身上，在那里停住，没有动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:26",
+          "text": "一次袭击后，敏特受伤。主角试图查看旧相机，却发现相机在之前的爆炸中进一步损坏。敏特对他说：“坏了就坏了，别再为了过去的东西停下来。”\n\n主角没有扔掉相机。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:27",
+          "text": "脚步声来不及落稳，墙皮从侧面崩开了。\n\n碎石从砖缝里迸出来，击在石板路上，弹起，在巷道里滚出一片干脆的碎响。\n\n气浪从左侧推过来，把你往右顶了半步，肩膀撞上对面的墙，砖灰扑进领口。\n\n敏特在你斜前方，右臂撞上了凸出的墙角，衣袖被豁开一道口子，皮肉从那道口子里翻出来，红的，浅的，她身体往前倾了一下，一只手撑在墙面上，稳住了。\n\n碎石的滚动声停在某个角落里。\n\n巷道里重新安静下来。\n\n你的手已经伸进外套内侧了。\n\n指尖碰到那台旧相机的机身，皮革的触感冰凉，你把它掏出来，没有想，手就已经把它翻过去检查。\n\n外壳右侧多了一道裂痕，从边角一路延伸进快门键附近，那一块金属微微凹陷进去，按下去的时候没有回弹，只有细碎的零件声从内部透出来，像什么东西断了，在里面松动着。\n\n你试着开机。\n\n屏幕没有反应。\n\n你又按了一次。\n\n还是没有。\n\n敏特的视线从受伤的手臂移开，落在你手里那台相机上。\n\n她没有处理那道伤口，只是用另一只手按住，压住那片翻开的红，眼睛盯着相机，一动不动。\n\n敏特\n\"坏了就坏了，别再为了过去的东西停下来。\"\n\n声音压得很低，尾音干脆，像一把尺拍在桌面上，没有留出任何回响的空间。\n\n她说完就把视线移开了，肩膀绷紧，头转向巷道深处，像是已经料定你不会听。\n\n你没有开口。\n\n手指重新握住相机，指节的力度收了一下，紧了一瞬，紧到皮肤下面的骨头都顶起来，又慢慢松开。\n\n你把相机放回外套内侧，手从外面压了一下，确认它没有移动，收回来。\n\n脚步声从巷道入口传过来。\n\n卡琳娜走进来，脚步不疾不徐，踩在碎砖上的声音轻而准确，卡尔蜷在她臂弯里，耳朵朝前竖着，尾巴缓慢地来回甩动。\n\n她先看敏特。\n\n视线在那道伤口上停了足够长的时间，眼神平，没有变化，但嘴角的弧度往下压了一截。\n\n她把视线移过来，落在你身上，在你外套内侧那个位置停了一拍，往上走，停在你脸上。\n\n卡尔的尾巴甩动的幅度大了一下，又收回来。\n\n卡琳娜\n\"我让你待在里面。\"\n\n语调平，每个字咬得完整，没有升调，像在陈述一条已经颁布过的规矩。\n\n卡琳娜\n\"还有你。\"\n\n她转过来，蓝眼睛落在你脸上，目光里带着一种被冒犯的距离感。\n\n卡琳娜\n\"我请你坐下来说话，你觉得这条巷道更合适，是这个意思吗？\"\n\n她没有等你回答，视线在你外套内侧的方向又停了一下。\n\n卡琳娜\n\"擅自行动已经足够了吗？\""
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:28",
+          "text": "选择：反问她：「你和敏特是什么关系，为什么让她躲在里面？」"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:29",
+          "text": "你没有回答她最后那句话。\n\n脚踩在碎砖上，站稳，肩膀没有动。\n\n帕兹\n\"你和敏特是什么关系？\"\n\n帕兹\n\"为什么让她躲在里面？\"\n\n声音不高，每个字落得很实，像是踩在碎砖上的脚步，不急，压稳。\n\n你的眼神直接对上她的蓝眼睛，没有移开。\n\n卡琳娜的表情没有变。\n\n蓝眼睛在你脸上停着，停了足够长的时间，像是在把你这个问题称一称重量。\n\n她抱着卡尔的手臂收紧了一下，幅度很小，只在白色棉衣的袖口处多出了一道浅褶。\n\n卡尔在她臂弯里动了一下，重新换了个姿势，两只耳朵朝你的方向转过来。\n\n卡琳娜\n\"你请我坐下来说话，还是我请你。\"\n\n卡琳娜\n\"我记得我给你指了一张椅子。\"\n\n语调没有升落，很平，像在复述一件已经发生过的事实。\n\n卡琳娜\n\"擅自出来是你的选择，现在站在这条巷道里也是你的选择。\"\n\n卡琳娜\n\"这里是我的地方。\"\n\n她把最后这几个字说得很轻，轻到像是一句备注，却没有一个字是多余的。\n\n敏特靠在墙上，按伤口的那只手指头微微收紧了一下。\n\n她的视线从你身上划过去，落在卡琳娜脸上，停了一拍。\n\n嘴唇动了动，最终什么都没出来，视线落回地面上，没有再抬起来。\n\n巷道里的风停了，空气压下来，把这条碎砖路上的三个人钉在原处。\n\n你和卡琳娜之间的沉默还没有散。\n\n公寓方向传来敲门声。\n\n沉的，急促，每一下都砸在旧木板上，声音从巷道入口方向贴着墙皮传过来，带着回声，一下一下，间隔很短。\n\n卡琳娜的视线从你脸上移开，往公寓方向侧了一下。\n\n卡尔在那一瞬间竖起两只耳朵，尾巴尖端在半空里甩了一下，停住，瞳孔收窄成一条细线。\n\n敲门声停了。\n\n紧接着是一声沉重的推挤声，旧木门被人从外面顶开，门轴发出一声低沉的摩擦，然后是脚步声落进楼道里。\n\n卡琳娜的眉头轻轻蹙了一下。\n\n她把视线移回你脸上，停顿了一息，转身，往公寓方向走去。\n\n脚步比来时快了一截，踩在碎砖上的声音更密，白色棉衣的下摆随着步幅扯动。\n\n卡尔从她肩头往后看了一眼，竖瞳对准你，尾巴尖端又甩了一下，垂下去。\n\n敏特从墙上撑起身体，右臂还压着那道伤口，视线落在你脸上。\n\n她的眼神在你身上停了一拍，有什么东西从里面过了一遍，快，说不清楚是什么，又压下去。\n\n敏特\n\"跟上去看看。\"\n\n声音压得很低，气息短促，带着一点急迫感。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:30",
+          "text": "主角从机械师那里得到一枚旧型号的快门组件。机械师说，这种零件已经停产，可能只能让相机再工作一次。\n\n主角把零件收了起来，没有立刻安装。\n\n解释这个事情"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:31",
+          "text": "敏特的声音还落在巷道里。\n\n你把手伸进外套内侧，指尖从那台损坏的旧相机边缘滑过去，停在一块更小的金属上。\n\n你把那枚零件从内侧口袋里取出来，托在掌心，朝敏特的方向抬了一下。\n\n金属本体黯淡，边缘有几道浅浅的磨损痕，在巷道的光里没有什么光泽。\n\n\"机械师给的。\"\n\n\"旧型号的快门组件，已经停产了。\"\n\n你的声音压得不高，每个字落得平，像在做记录。\n\n\"他说可能只能让相机再工作一次。\"\n\n你看着那枚零件在掌心里，手指没有收拢，只是托着，停了一拍。\n\n敏特的视线落在你掌心里那块金属上，停了几秒，一动不动。\n\n她嘴唇微微动了一下，开口的弧度起来，又合回去，什么都没出来。\n\n按着伤口的手指绷紧了一下，皮肤在那道伤口边缘压出一点白。\n\n你把那枚零件收回去，重新放进外套内侧，手在上面压了一下，确认它贴稳，收回来，把外套拉链往上拉了一截。\n\n零件没有安上去。\n\n脚步声从巷道入口重新传过来，踩在碎砖上，比离开时慢一些，均匀，每一步落得很准。\n\n白色棉衣的下摆随着步幅轻轻晃动，金色马尾压在肩上，卡尔竖着两只耳朵，尾巴尖端在半空里甩了一下，停在那里。\n\n卡琳娜走到你和敏特面前，停下。\n\n她的视线先往下落了一下，在敏特按着伤口的那只手上停了一拍，再抬起来，转到你脸上。\n\n卡琳娜\n\"德索洛已经进去了。\"\n\n语调平，没有起伏，像在陈述一件已经发生的事。\n\n卡琳娜\n\"我没有时间继续耽搁在这里。\"\n\n蓝眼睛在你们两个人之间扫过去，带着一种收过来的审视，停在你脸上多了一息，又移开。\n\n敏特从墙上撑起身体，重心从石砖上移开，脚站稳，右臂还压着那道伤口，肩膀往后收了一下。\n\n她没有说话，只是朝公寓方向侧了一下身子，示意自己可以跟上。\n\n卡琳娜已经转过身，步伐重新变得果断，棉衣下摆随着步幅扯动，往公寓方向走去。\n\n你把外套拉链拉好，指尖在内侧口袋那个位置确认了一下，快门组件还贴在那里，没有移动。\n\n三个人一前一后往巷道入口走，卡尔的尾巴尖端在卡琳娜肩头甩了一圈，垂下去。\n\n公寓那边已经有动静传过来了，喘息声，急促的脚步声，一下一下，从旧木地板上透出来，顺着巷道墙壁贴过来。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:32",
+          "text": "选择：走之前，低声问敏特伤口要不要处理"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:33",
+          "text": "卡琳娜的脚步声已经踩上碎砖，往公寓方向走去。\n\n你侧过身，压低声音。\n\n帕兹\n\"伤口要不要处理一下。\"\n\n敏特的视线从卡琳娜的背影上收回来，落在你脸上。\n\n就一拍，很短。\n\n眼神里有什么东西过了一下，软了一息，又合回去，压得干净。\n\n敏特\n\"跟上去。\"\n\n敏特\n\"别管我这个。\"\n\n她已经抬脚往前走了，右臂仍压着那道伤口，肩膀挺直，步伐跟上卡琳娜的节奏，脚踩在碎砖上的声音稳，没有避让重心的迹象。\n\n你的手指在外套内侧收了一下，摸到那枚快门组件的边缘，确认位置，收回来。\n\n你跟上去。\n\n三个人的脚步声在巷道里交错，卡琳娜在最前，步伐果断，棉衣下摆随步幅扯动，卡尔在她臂弯里竖着两只耳朵，尾巴垂低，尖端悬在半空。\n\n公寓的门还半敞着，旧木地板从门槛开始往里延伸，踩上去的瞬间发出一声低沉的闷响。\n\n德索洛的喘息声从里面传出来，急促，沉，像是跑了很远才到这里。\n\n卡琳娜推开门，走进去。\n\n她脸上的表情在跨过门槛的那一步换了。\n\n不悦收起来了，连带着巷道里那点皱眉也一并消掉，剩下的只有一张没有起伏的脸，蓝眼睛里的温度抽干了，像两块被雨水冲刷过的石头，凉，光滑，什么都不挂。\n\n德索洛站在木桌附近，一身白色西装，下摆在他急促的动作里皱出几道浅折，额头的汗珠从发际线往下走，他的手指在裤缝边缘收拢又松开。\n\n他看见卡琳娜进来，身体往前倾了一下，嘴唇动了动。\n\n卡琳娜没有停步，没有看他，径直往窗边走，在逆光的位置停下，一只手把卡尔抱稳在臂弯里，另一只手自然垂着。\n\n午后的光从她背后打进来，把她的轮廓切得清晰，脸藏在背光里。\n\n德索洛再次开口的弧度起来，又被她的沉默压了回去。\n\n她只是踱步，从窗边到木桌一侧，脚步不疾不徐，踩在旧木地板上的声音均匀，低，每一步都落在同一个节奏上。\n\n卡尔在她臂弯里把两只耳朵分别朝着不同的方向转动，竖瞳对准德索洛，尾巴从她手臂边缘缓慢甩出去，甩到一半，停在那里，没有收回来。\n\n你和敏特站在门内，没有走近。\n\n敏特右臂仍压着伤口，脊背挺直，视线在德索洛、卡琳娜和卡尔之间扫了一圈，停下来，没有再动。\n\n你的眼睛从德索洛额头的汗水扫到他攥紧的手指，扫到他嘴唇边那句没能出口的话，再扫到窗边逆光而立的卡琳娜，和她臂弯里那双竖瞳还钉在德索洛身上的卡尔。\n\n卡琳娜踱步，没有停，没有开口。\n\n德索洛的呼吸在屋里显得越来越重。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:34",
+          "text": "选择：侧目看向敏特，用眼神询问她知不知道怎么回事"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:35",
+          "text": "卡琳娜的脚步声在旧木地板上均匀落下，踱到木桌一侧，再往回走，脸始终背着光。\n\n你的视线从她背影上侧过去，偏向右边，落在敏特身上。\n\n一个眼神，很短，只有一拍的空档。\n\n敏特捕捉到了。\n\n她微微摇了一下头，幅度极小，只有下巴往下压了一截，又抬回来。\n\n视线从你脸上滑开，往卡琳娜的背影上扫了一圈，再落回来，在你眼睛里停了一息。\n\n按着伤口的手指收紧了一下。\n\n嘴角轻轻往里收，像什么话压在牙关后面，没让它出来。\n\n她把视线从你身上挪开，重新落回卡琳娜和德索洛那边，肩膀挺直，脊背没有动。\n\n你把眼神收回来，落到德索洛身上。\n\n他额头的汗珠从眉骨边缘滑下来，卡在眉毛里，没有往下走。\n\n手指在裤缝处握紧，关节的皮肤顶起来，白了一截，又松开。\n\n卡琳娜踱到他背后，绕了半圈，重新绕回来，脚步声踩在他每一次呼吸的间隙里。\n\n卡尔的竖瞳钉在德索洛身上，耳朵朝他的方向转了一下，尾巴悬在半空，没有落下来。\n\n德索洛的嘴唇翕动了一下，又合上。\n\n再动了一下。\n\n这一次，声音从喉咙里挤出来了，颤的，像什么东西松动了一道缝隙。\n\n德索洛\n\"是我女儿的事。\"\n\n德索洛\n\"凯旋门那边的人，骗了她……说是正规的公司……\"\n\n他的声音在这里断了一截，吸了口气，把下一句硬撑起来。\n\n德索洛\n\"她誓死抵抗，保住了名节，可是……\"\n\n德索洛\n\"她的舌头被割下来了。\"\n\n手指在裤缝处攥成拳头，皮革的褶皱从拳头边缘往外辐射出去。\n\n德索洛\n\"她再也唱不了歌了。\"\n\n德索洛\n\"我去报警，警局是凯旋门的人，我连凶手是谁都不知道——\"\n\n卡琳娜的脚步声停了。\n\n停在他身后。\n\n德索洛的后背绷紧，肩膀往上提了一截，脖颈的肌肉收缩，像什么东西从背后贴上来，凉的。\n\n脚步声重新响起来，从他背后绕到侧面，再绕到正面，卡琳娜走到他面前，停下。\n\n她低头看他，蓝眼睛里没有光。\n\n卡琳娜\n\"你来找我。\"\n\n卡琳娜\n\"我刚来米德加尔特那年，你拉了我一把。\"\n\n卡琳娜\n\"可是这些年，你一次都没有邀请过我，连一顿小小的聚餐都没有。\"\n\n她的语调没有起伏，像在念一张清单。\n\n卡琳娜\n\"你那时候巴结凯旋门，顺手收留了我，对凯旋门是个交待，对你自己也是个体面。\"\n\n卡琳娜\n\"出了事，你装作什么都没有发生。\"\n\n德索洛的嘴唇动了动，胸口剧烈起伏了一下，喉咙里有什么声音升起来，又被她接下来的话压了回去。\n\n卡琳娜\n\"你从未把我当家人。\"\n\n卡琳娜\n\"今天来到这里，你甚至不愿意叫我一声阁下。\"\n\n她把最后这句话说完，无奈地摇了一下头，幅度不大，像是替他叹了一口气。\n\n德索洛的呼吸停了一拍。\n\n嘴唇一开一合，没有声音出来，像鱼缸里的鱼，吐出一个无声的泡。\n\n他站在那里，手指松开，裤缝边缘的褶皱慢慢舒展。\n\n他的眼睛在卡琳娜脸上停了一息，从她冰冷的表情上滑开，缓缓转过来。\n\n落在你身上。\n\n哀求的，急迫的，眼眶里的红血丝在午后的光里显得很清楚。\n\n他的手指在裤缝旁边无意识地收拢，盯着你，没有开口，只是看着你，像溺水的人看见了一块浮木。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:36",
+          "text": "看敏特怎么评价"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:37",
+          "text": "德索洛的喘息声在屋里沉甸甸地压着，他的目光从卡琳娜脸上滑落，落在你身上，停住了。\n\n你侧过眼，视线从他哀求的脸上移开，偏向右边，落在敏特身上。\n\n就一拍，不长。\n\n敏特捕捉到了。\n\n她沉默了一息，下巴微微往下压了一截，幅度极小，像某种无声的提醒，又快速抬回来。\n\n下巴朝卡琳娜的方向轻抬了一下。\n\n眼神在你脸上停了一拍，里面有什么东西，沉的，压着，说不清楚。\n\n视线从你身上落回地面，按着伤口的手指收紧了一下，皮肤在伤口边缘压出一道浅白。\n\n她的脊背挺直，站姿没有变，没有开口，没有往前走一步。\n\n卡琳娜的踱步在德索洛面前停下来。\n\n她往后退了一步，退回窗边，午后的光从她背后打进来，把她的轮廓切得利落，脸压在背光里，看不清楚。\n\n卡尔在她臂弯里，竖瞳仍钉在德索洛身上，尾巴缓慢地甩了一圈，悬在半空，停住，没有落下去。\n\n屋里重新安静下来。\n\n德索洛的喘息声在沉寂里显得越来越重，一下一下，从他胸腔里往外顶。\n\n他的手指在裤缝旁无意识地张开，又合拢，再张开，皮革在他指节边缘挤出几道浅褶。\n\n他的目光从卡琳娜逆光的轮廓上滑开，重新落在你身上，停住。\n\n眼眶里的红血丝在午后的光里很清楚，哀求的，没有出口，盯着你，等着。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:38",
+          "text": "选择：不说话，记者不该参与当地的争端。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:39",
+          "text": "德索洛的目光在你身上停着，眼眶里的红血丝在午后的光里很清楚。\n\n你没有动。\n\n手指放在外套侧面，没有收紧，没有抬起来，呼吸平稳。\n\n你的视线从他脸上移开，落回卡琳娜身上。\n\n卡琳娜蓝眼睛在你脸上停了一拍。\n\n就一拍，很短，嘴角极其轻微地收了一下，像某个结论在那里确认了，随即合回去。\n\n她把视线从你脸上移开，转向德索洛。\n\n她踱步过去，脚步从窗边出发，踩在旧木地板上的声音均匀，每一步落在同一个节奏上，停在德索洛面前。\n\n卡尔在她臂弯里，尾巴缓慢甩动，竖瞳钉在德索洛身上。\n\n卡琳娜低头看他，蓝眼睛里没有光，没有开口，只是站在那里，等。\n\n沉默压下来。\n\n德索洛的手指攥紧，关节的皮肤顶起来，白了一截。\n\n他的眼神里有什么东西在挣扎，嘴唇翕动，呼吸急促，手指一松一紧，来回了两次。\n\n他的视线从卡琳娜脸上移开，往地面上落了一秒，又抬回来。\n\n眼眶里的红血丝在午后的光里更清楚了。\n\n他想到了什么，肩膀微微颤起来，牙关咬紧，下颌的肌肉顶出一道浅弧。\n\n不是对着卡琳娜的恨意，那个颤抖是对着另一个方向的——凯旋门，那条割下来的舌头，那间什么都做不了的警局。\n\n他的胸腔剧烈起伏了一下，像什么东西在里面顶着，顶了很久，最终往下沉了。\n\n德索洛深吸了一口气，声音沉进去，缓慢地弯下膝盖。\n\n白色西装在旧木地板上压出新的褶皱，他单膝跪下，双手捧起卡琳娜的右手，低下头颅，额头几乎触到她的手背。\n\n德索洛\n\"卡琳娜阁下……我需要您的帮助。\"\n\n声音沙哑，每个字落得实，像把最后留着的什么东西押在这一句话上。\n\n卡琳娜看着他，眼中有什么极细微的东西过了一遍，很快被别的东西覆住。\n\n她微微点了一下头，嘴角轻轻动了一下，发出一声很轻的笑，短促，像在笑这个规矩，也像在笑自己。\n\n卡琳娜\n\"很好，德索洛。\"\n\n卡琳娜\n\"今日，请收下这份公正。\"\n\n卡琳娜\n\"他日我或许会需要你的帮助，请别忘记了。\"\n\n语调平稳，带着仪式般的郑重，每个字落地，不容置疑。\n\n德索洛的肩膀在那一刻松了下来，颤抖平息，呼吸里多出了一点踏实的东西。\n\n德索洛\n\"谢谢您，阁下，谢谢您……\"\n\n声音仍颤，但稳了一截。\n\n他松开卡琳娜的手，缓缓从地板上撑起身体，后退一步，站稳。\n\n他转过身，往门口走去，脚步比来时更稳，每一步落得踏实。\n\n跨过门槛之前，他停了一下。\n\n视线从门框边缘转过来，落在你身上，停住了。\n\n那一眼停了有三秒，里面有不解，有一丝怨恨，又有一点什么东西软下去，说不清楚，像认同，又像是放弃了认同。\n\n他把视线收回来，跨过门槛，脚步声踩在楼道里，急促，匆匆，顺着旧木楼道往下走，声音渐远，消失。\n\n楼道里的脚步声彻底没了，屋里重新安静下来，午后的光从窗口打进来，把旧木地板上的灰尘照得清楚。\n\n卡尔在卡琳娜臂弯里竖起两只耳朵，尾巴在半空甩了一圈，停住。\n\n卡琳娜转过身，蓝眼睛落在你脸上。\n\n她的语调漫不经心，像在随口问一件不相干的事。\n\n卡琳娜\n\"你觉得，我这样处理——怎么样？\"\n\n蓝眼睛盯着你，等着。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:40",
+          "text": "转交给敏特去说"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:41",
+          "text": "你往后退了半步，视线从卡琳娜脸上侧过去，落在敏特身上。\n\n身体的重心往后移，肩膀微微向她的方向偏了一度，脚尖转了一点点角度。\n\n没有开口，没有手势，动作本身就把话说完了。\n\n敏特按着伤口的手指松了一瞬，皮肤从伤口边缘浅白色退开，缓了一口气。\n\n脊背挺直，她把视线从你身上收回来，正面落在卡琳娜脸上，停住。\n\n敏特\n\"他用自己女儿的事来换公正，筹码够重。\"\n\n敏特\n\"凯旋门的人做的，他一个人扛不住，所以来找你。\"\n\n敏特\n\"算精明，也算没有别的路了。\"\n\n话落，嘴角收紧，没有再说。\n\n按着伤口的手指又绷了一下，重新压稳，停在那里。\n\n卡琳娜蓝眼睛在敏特脸上停了一拍。\n\n嘴角极轻微地收了一下，幅度很小，像什么东西在那一息里认了，又很快压回漫不经心的表情下面，没让它出来。\n\n她的视线从敏特脸上慢慢滑开，往你这边移过来。\n\n蓝眼睛落在你脸上，温度换了。\n\n方才公事公办的那层冷硬的东西退下去，剩下的是另一种东西，专注的，带着一点探出来的弧度，像是突然被什么细节钩住了。\n\n她身体微微侧向你，卡尔在她臂弯里竖起两只耳朵，尾巴缓慢甩了一圈，停住。\n\n卡琳娜\n\"你刚才没说话。\"\n\n卡琳娜\n\"德索洛看着你，那种眼神你肯定看见了，可是你没有动，也没有开口。\"\n\n卡琳娜\n\"记者不该参与当地的争端，是这样吗？还是你见过更多这样的事，所以知道插手没有用？\"\n\n她说话的节奏慢下来，句子连着句子，带着往里追的劲。\n\n卡琳娜\n\"你来这里之前，你以为新西西里是什么样的？\"\n\n卡琳娜\n\"和你现在看到的，一不一样？\"\n\n卡尔的竖瞳从敏特脸上移开，转向你，尾巴尖端悬在半空，慢慢甩了一下，停住。\n\n那双眼睛盯着你，圆形瞳孔收成一条细线，灵性的，停在你脸上，一动不动。\n\n你背脊上有什么东西微微绷了一下，那种被看穿的感觉，从那只猫眼睛里透过来，说不清从哪里来。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:42",
+          "text": "敏特拿起相机时，发现机身背面的字母“M”。\n\n她说：\n\n“这个不是我的名字。我第一次看到它时，它就已经在那里了。”\n\n主角解释，相机曾属于他的母亲。字母“M”最初是母亲名字的首字母。\n\n敏特用指腹摸了摸那道刻痕，说：\n\n“那就别把它说成是我的。”\n\n主角回答：\n\n“我从来没这么说过。”\n\n但敏特把相机还给他时，还是又看了一眼那个字母。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:43",
+          "text": "卡琳娜站在窗边，怀里抱着卡尔，那个关于边陲之地日常的问题还悬在空气里，没有人接它。\n\n敏特的视线从卡琳娜脸上慢慢滑开，往你身上落了一圈，停在外套内侧的凸起上。\n\n她往前迈了一步，没有受伤的那只手抬起来，指节微微弯了一下，指向那块凸起的位置。\n\n一个很直接的手势，索要的，没有任何问句。\n\n你的手指在外套边缘顿了一下。\n\n滑进去，摸到机身，取出来，递过去。\n\n午后的光在那道字母上闪了一下。\n\n敏特接过相机，翻转机身，视线落在字母 M 上，停住了。\n\n指腹压上那道刻痕，停在那里，没有马上动。\n\n她的呼吸轻了一截，胸腔的起伏缓下来，指腹在刻痕边缘来回磨了一下，像是在确认什么。\n\n她抬起头，看着你。\n\n敏特\n\"这个不是我的名字。\"\n\n敏特\n\"我第一次看到它时，它就已经在那里了。\"\n\n指腹还压在 M 上，来回磨了一下，比查看旧物慢了一拍，多停了一息。\n\n帕兹\n\"这台相机以前属于我母亲。那个 M，是她名字的首字母。\"\n\n声音平稳，用词简洁，手指在外套侧面没有收紧。\n\n敏特的指腹在刻痕上又压了一下。\n\n刻痕边缘的皮革旧了，有点毛，指腹能感觉到边缘磨起来的那点细毛。\n\n她合上相机，递回去。\n\n敏特\n\"那就别把它说成是我的。\"\n\n你接过相机，手指在机身边缘架住，没有马上收起来。\n\n帕兹\n\"我从来没这么说过。\"\n\n敏特的视线往下走了一眼，落在那个字母上，只一眼，很短。\n\n然后移开了。\n\n她把受伤的右臂往里收了一点，肩线没有动，脊背挺直，站姿和方才一样。\n\n窗边的卡琳娜一直没有开口。\n\n蓝眼睛从敏特脸上慢慢滑到你脸上，在那里停了一拍，嘴角极轻微地收了一下，幅度极小，像某个细节被悄悄记录了下来，随即合回去，什么都没有。\n\n卡尔在她臂弯里甩了一下尾巴，竖瞳从敏特脸上转向你，在你脸上停了片刻，再缓慢转回去。\n\n屋里安静下来。\n\n午后的光从窗口打进来，旧木地板上的灰尘颗粒在光束里缓慢浮动。\n\n卡琳娜方才那个悬在空气里的问题，还在那里，没有消散。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:44",
+          "text": "选择：回答卡琳娜的问题——说说这里和想象中的差距"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:45",
+          "text": "午后的光从窗口斜打进来，旧木地板上的灰尘在光束里缓慢浮动。\n\n卡琳娜方才悬在空气里的问题还没有消散，蓝眼睛停在你脸上，等着。\n\n你把相机收回外套内侧，手指在机身上顿了一下，松开。\n\n帕兹\n\"我去过的地方，暴力有它自己的逻辑。\"\n\n帕兹\n\"军阀知道能打谁，走私者知道能越什么线，游击队知道什么时候谈条件。\"\n\n帕兹\n\"乱，但是可以预判。\"\n\n你停了一拍，目光从旧木地板的纹路上抬起来，落到窗外的光线上。\n\n帕兹\n\"新西西里不一样。\"\n\n帕兹\n\"这里的受害者要跪下才能讨公道。\"\n\n帕兹\n\"公正不是应得的，是要去讨的。\"\n\n声音平稳，用词简洁，像在整理一份还没写完的观察报告。\n\n卡琳娜的身体微微往前倾了一截，蓝眼睛里的专注加深了一层。\n\n卡琳娜\n\"你在战区待过，在边境待过，见过军阀和走私者——\"\n\n卡琳娜\n\"那些地方的暴力你拿来对比，你是记者，你原本只要记录就够了。\"\n\n卡琳娜\n\"为什么一个旁观者会在意公正是不是应得的？\"\n\n她说话的节奏加快，句子连着句子，带着往里追的劲。\n\n你的手指无意识地往外套内侧移了一下，指尖碰到机身的边缘，停在那里。\n\n帕兹\n\"我不是法官。\"\n\n帕兹\n\"但镜头会逼你看。\"\n\n帕兹\n\"拍得越多，越知道什么是不该发生的。\"\n\n卡琳娜的视线从你脸上往下走了一拍，落在你手的位置上，停了一息。\n\n那道字母 M 在外套内侧，看不见，卡琳娜的视线在那个位置停了片刻，没有开口，把那个细节压了下去。\n\n她把话题的方向轻轻转了一度，身体微微往后收，语气换了一层，漫不经心的，像在顺口提一件久远的事。\n\n卡琳娜\n\"我以前住在福利院。\"\n\n卡琳娜\n\"凯旋门把福利院的土地抢走了，只有少数孩子被收留，其他的不知道去了哪里。\"\n\n卡琳娜\n\"德索洛收留了我，帮我上了学。\"\n\n卡琳娜\n\"暗街不多见——会读书的人。\"\n\n她的语速缓下来，每句话落得平，像在对照某个刚才听见的东西，自己核了一遍。\n\n卡尔在卡琳娜臂弯里甩了一下尾巴，竖瞳从卡琳娜脸上缓慢转向你，在你脸上停住了。\n\n耳朵朝你的方向转了一下，瞳孔微微收缩，细长的，灵性的，带着一种不该属于猫的审视感停在你身上。\n\n它没有动，卡琳娜也没有动，午后的光在旧木地板的灰尘里缓慢浮动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:46",
+          "text": "选择：问卡琳娜：其他孩子后来怎么了"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:47",
+          "text": "\"其他孩子后来怎么了？\"\n\n那个问题落进屋里，比卡琳娜方才的语速慢了半拍。\n\n她的蓝眼睛在你脸上停住了。\n\n方才那种往里追的专注慢慢换了一层——往外走了，往更远的地方去，像什么东西被从旧处牵动，从水面下漾了上来。\n\n她没有立刻开口，卡尔在她臂弯里细长的尾巴缓慢停住，不再摆动。\n\n\"有人被接走了。\"\n\n卡琳娜\n\"教会，或者外岛过来的人，说是要带孩子去更好的地方。\"\n\n卡琳娜\n\"有的后来有消息，有的没有。\"\n\n她停了一拍，视线从你脸上落开，落在旧木地板的纹路上。\n\n卡琳娜\n\"有两个孩子病死了，在福利院还没被抢走之前。\"\n\n卡琳娜\n\"还有几个留在废墟里，我离开的时候，他们还在那一带，后来就不知道了。\"\n\n她的语速比方才缓了一截，每句话落得平，间隔比平时长，像是在翻某个很久没有打开的东西，翻的时候格外轻。\n\n卡琳娜\n\"他们本不该散掉。\"\n\n卡琳娜\n\"但暗街没有多余的位置，没有人有余力收留所有人。\"\n\n她把这句话说完，嘴角收了一下，没有别的什么，把它压下去。\n\n你的手指在外套侧面微微张开，又合回去。\n\n卡尔的耳朵在这时候朝你的方向转了一度，竖瞳收成更细的一条线，停在你脸上，一动不动。\n\n卡琳娜\n\"德索洛当年站出来——\"\n\n卡琳娜\n\"我猜，不是因为觉得我可怜。\"\n\n卡琳娜\n\"凯旋门抢了福利院，总要有人象征性地赎一下。\"\n\n卡琳娜\n\"收留我，是赎罪里成本最低的一种。\"\n\n她的语调没有起伏，把那个\"我猜\"放在前面，把判断的位置留出来，没有填满。\n\n蓝眼睛重新抬起来，落在你脸上，在你脸上停住。\n\n卡尔的尾巴悬在卡琳娜臂弯边缘，停住，没有落下去，耳朵仍朝你的方向。\n\n卡琳娜\n\"你在战场上待过，见过失去了家的人。\"\n\n卡琳娜\n\"那些孩子，后来变成了什么样的人？\"\n\n她的眼睛停在你脸上，记录着你的反应，等着。\n\n你的手指停在外套内侧边缘，碰到机身的皮革，停在那里，没有动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:48",
+          "text": "选择：回答她：见过。那些孩子大多变成了两种人——用暴力填满空缺的，或者彻底消失的。"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:49",
+          "text": "卡琳娜方才那个问题还悬在屋里。\n\n你手指在外套内侧碰着机身皮革，停了一拍。\n\n帕兹\n\"见过。\"\n\n帕兹\n\"大多变成两种人。\"\n\n帕兹\n\"用暴力填满空缺的，或者彻底消失的。\"\n\n声音平稳，语速比平时慢了半拍，每个短句之间留出一点间隙，像是一条被反复验证过的式子，念给自己听过太多遍了。\n\n手指从机身边缘移开，落回膝上，没有收紧。\n\n卡琳娜的身体往后收了一截。\n\n方才前倾的重心平了下来，蓝眼睛里那层往里追的锐劲慢慢退去，换成了更慢的东西。\n\n她的视线仍停在你脸上，眨眼的频率缓了下来，像是在重新对焦某个远处的东西，眉心极轻微地收了一下。\n\n卡尔的耳朵在这时候朝你的方向转了更明显的角度，两只耳廓都竖着，尖端对准你这边。\n\n竖瞳收成细线，比方才更窄，灵性的，停在你脸上，尾巴尖端开始缓慢地摆，一下，一下，有节律的，轻的，像在消化什么。\n\n它的身体一动未动，只有那条尾巴在动，和那两只耳朵。\n\n卡琳娜\n\"你见过的是哪一种更多？\"\n\n卡琳娜\n\"还是说——你两种都见过？\"\n\n语气比方才慢了一拍，追问的劲没有减，句子收得更窄，落得更深，像把一把刀换了个握法，往更细的地方探进去。\n\n蓝眼睛没有从你脸上移开，她在辨认什么，眉心那道极浅的收紧还在，眨眼缓慢，像在等某个细节从你脸上浮出来。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:50",
+          "text": "走吧一起去码头港口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:51",
+          "text": "卡琳娜方才那个问题还悬在屋里，你没有接它。\n\n帕兹\n\"走吧，一起去码头港口。\"\n\n卡琳娜从窗边转过身来，蓝眼睛在你脸上停了一拍。\n\n她低头，把卡尔从臂弯里轻轻放到桌上，动作慢，掌心托着猫背，一直放稳了才松开。\n\n卡琳娜\n\"正好，我也要去宴会厅找康娜。\"\n\n卡琳娜\n\"同路。\"\n\n她拉了拉白色棉衣的下摆，指尖顺着边缘捋了一下，整平了皱褶。\n\n脚步轻快，往公寓门口走去，步子带着从容，距离感跟着一块带走了。\n\n你跟在她身后，旧木地板在脚下发出细碎的声音。\n\n卡尔在桌上坐定，竖瞳扫过你的背影。\n\n你跨过门槛，脚踝上忽然传来一道力道——轻，却明确。\n\n低头。\n\n黑猫从桌上落地，无声，尾巴绕住你的脚踝，皮毛的触感凉的，绕了一圈，没有松开。\n\n你的脚停住了，脊背微微绷了一下，手指下意识往外套内侧移了一截。\n\n卡尔抬起头，竖瞳收成一条细线，钉在你脸上。\n\n嘴张开了。\n\n卡尔\n\"你方才的话，我听见了。\"\n\n声音低沉，年轻，是女人的声线，从那张猫嘴里出来，落在下午安静的屋里，字字清晰。\n\n你的呼吸缓了一拍，目光从那双竖瞳上抬起来，往卡琳娜那边偏了一度，又落回卡尔脸上。\n\n卡尔\n\"你在新西西里的每一步，我都会看着。\"\n\n话落，她松开尾巴，绕在脚踝上的那道力道消散了。\n\n卡尔轻巧地转过身，回到卡琳娜脚边，坐定，尾巴收拢，没有再开口。\n\n门口的卡琳娜回了头，蓝眼睛在你和卡尔之间扫了一圈。\n\n嘴角极轻微地往上收了一截，幅度很小，压着，没让它出来多少。\n\n她没有开口，转过身，推开公寓门。\n\n午后的光从外面涌进来，打在旧木地板上，把她的影子拉长，铺在门槛上。\n\n她率先迈步走出去，皮鞋踩在楼道里，脚步声清脆，没有停。\n\n你在原地站了一息，目光从卡尔身上收回来，压下喉咙里没来得及成形的那口气，跨过门槛，跟上去。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:52",
+          "text": "选择：跟上卡琳娜，但开口问她：猫会说话，这对你来说是正常的？"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:53",
+          "text": "楼道里的光从走廊尽头的窗口斜切进来，落在斑驳的墙漆上。\n\n卡琳娜的皮鞋踩在地面上，节奏清脆，步伐没有停。\n\n你跟上去，脚步落在她后面半拍，保持一臂的距离。\n\n帕兹\n\"猫会说话，这对你来说是正常的？\"\n\n卡琳娜没有转过来，皮鞋的节奏没变，但她侧过了头，蓝眼睛从肩侧斜着扫过来，嘴角那道极轻的弧度还挂着。\n\n卡尔从她脚边无声滑过，黑色的身形贴地，尾巴尖端轻晃，走到她前方，没有回头。\n\n它的竖瞳朝你这边缓慢扫了一眼，细长的，停了一息，收了回去。\n\n卡琳娜\n\"你在战区待过。\"\n\n卡琳娜\n\"见过合众崩溃后的乱局，见过边境那边的荒谬。\"\n\n卡琳娜\n\"就这么一只猫，值得你这么上心？\"\n\n她的语气漫不经心，把那个问题扔过来，自己的脚步倒没停。\n\n楼道里回了一圈细碎的回声，然后安静下来。\n\n卡尔走在前面，尾巴无声摆了一下，耳廓朝你的方向偏了一度，偏完了又转回去，身体一直朝前。\n\n卡琳娜的步幅没变，但她又把话接上了，蓝眼睛从肩侧的角度还盯着你这边。\n\n卡琳娜\n\"还是说，你见过比这更奇怪的事——\"\n\n卡琳娜\n\"只是你不想提？\"\n\n最后那个字落下去，她的脚步慢了半拍，脚跟收得轻，皮鞋踩在地面上的声音细了一截。\n\n楼道的光从侧面打过来，在她的马尾上停了一下。\n\n她侧着头，蓝眼睛里那点亮光停在你脸上，把空间留出来，等着。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:54",
+          "text": "带着猫去港口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:55",
+          "text": "卡琳娜的蓝眼睛在楼道侧光里停了一拍，嘴角那道弧度还挂着，没有接你的问题。\n\n她转过身，皮鞋踩在地面上，清脆，步子带着从容往前去。\n\n卡尔走在最前面，黑色的身形贴地，尾巴尖端无声摆动。\n\n它的竖瞳朝你这边缓慢扫了一眼，然后——脚步停住了。\n\n整个身体停在楼道中央，没有转，尾巴轻晃了一下，随后它转过身来。\n\n卡尔抬起头，竖瞳收成细线。\n\n卡尔\n\"猫会说话，这不正常。\"\n\n她停了一拍，尾巴缓慢摆了一下。\n\n卡尔\n\"但你对我说的话更好奇，而不是怕我。\"\n\n卡尔\n\"这就够了。\"\n\n你的手指停在外套侧面，没有动，喉咙里压着的那口气没有出来。\n\n卡尔转过身，竖瞳在侧光里收窄，尾巴尖端轻晃。\n\n卡尔\n\"走吧，港口。\"\n\n她朝楼道口走去，脚步无声，黑色身形没入侧光的边缘里。\n\n卡琳娜回过头，蓝眼睛在你和卡尔之间扫了一圈。\n\n嘴角那道弧度往上收了一截，停在那里，没让它出来太多。\n\n卡琳娜\n\"看来卡尔对你有点兴趣。\"\n\n卡琳娜\n\"那可不多见。\"\n\n语气漫不经心，蓝眼睛里那点亮光在你脸上停着，记录着什么。\n\n你调整了一下步伐，跟上去，保持一臂的距离。\n\n目光在卡尔身上落了一息，移向前方。\n\n卡琳娜推开楼道尽头的门，午后的光从外面涌进来，白的，宽的，把门槛淹了。\n\n她和卡尔先后踏入光里，影子铺在门槛上，拉得细长。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:56",
+          "text": "选择：什么都不问，跨过门槛走进午后的光里"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:57",
+          "text": "你什么都没问，跨过门槛，走进去。\n\n午后的光从走廊尽头的窗口涌进来，白的，宽的，把门槛淹了。\n\n楼道外的街道明亮，光影在地面切割出清晰的边界，一半亮，一半暗，线条锋利。\n\n卡琳娜已经走出去几步，马尾在背后轻晃，皮鞋踩在石板上，节奏从容。\n\n卡尔走在最前面，黑色身形贴地，尾巴无声摆动，没有回头。\n\n你保持一臂的距离跟上，目光在那道黑色身形和卡琳娜背影之间游移。\n\n三人的影子被拉得细长，铺在石板路上，往前延伸。\n\n脚步声在午后安静的街巷里错落，你的，卡琳娜的，和一道无声的。\n\n街巷窄，两侧的墙皮剥落，斑驳的颜色在阳光里显得更旧。\n\n卡尔走在前头，尾巴尖端缓慢摆动，步伐无声，像影子的一部分。\n\n你的手指在外套侧面微微收紧，又松开。\n\n卡尔没有回头，开口了。\n\n卡尔\n\"猫会说话。\"\n\n卡尔\n\"这没什么大不了的。\"\n\n卡尔\n\"这里还有个长不大的女孩。\"\n\n卡尔\n\"还有复活的人。\"\n\n那道低沉年轻的声音在空旷的街道上落得清晰，每个字都坐实了，没有停顿给你插话的余地。\n\n你的脚步微微顿了一下，呼吸缓了一拍，手指在外套侧面停了一息。\n\n脚步没有停。\n\n你跟上去，目光从卡尔身上移开，落在前方的街道上。\n\n卡尔的尾巴尖端缓慢摆了一下，耳廓没有转，身体一直朝前，步伐无声。\n\n它继续走，没有等任何人的回应。\n\n沉默走了几步。\n\n卡尔\n\"德索洛的女儿受伤是真的。\"\n\n尾巴尖端停了一拍，瞳孔收窄。\n\n卡尔\n\"但他真正想要的，是有人替他对付凯旋门。\"\n\n卡尔\n\"是谁都行。\"\n\n卡琳娜的步幅没有变，脚跟落地的节奏还是那个节奏，没有快，也没有慢。\n\n卡尔\n\"德索洛和暗街其他人一样，会来找你的。\"\n\n卡尔\n\"当他们发现你能替他们恨，他们就会把恨寄存在这里。\"\n\n卡尔\n\"心安理得地享受新西西里的太阳。\"\n\n卡尔的尾巴尖端在说完的那一刻停了一下，瞳孔收成一条细线，随后缓慢摆了一下，恢复原来的节律。\n\n它没有回头，步伐无声，继续往前。\n\n卡琳娜没有开口。\n\n她侧身，伸出手，指尖轻轻落在卡尔耳尖上，拂了一下，动作安静，轻柔，指尖在那里停留了一息，随后收回来。\n\n她的步幅没有变，马尾在背后轻晃，没有回头。\n\n你的目光从卡琳娜的指尖移开，落在前方延伸的街道上。\n\n午后的光均匀地铺在路面上，三人的影子被拉得很长，一前一后，往港口的方向延伸。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:58",
+          "text": "选择：沉默跟上，把目光落在卡尔身上，等它继续说"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:59",
+          "text": "你的脚步跟上去，保持一臂的距离，目光落在卡尔身上，没有开口。\n\n卡尔走在最前面，步伐无声，尾巴尖端缓慢摆动，没有回头。\n\n它察觉到你的视线，耳廓朝你的方向偏了一度，随后转回去。\n\n短暂的沉默落在三人之间，只有石板路上错落的脚步声。\n\n卡尔的尾巴尖端停了一拍，它开口了，声音低沉，年轻，字字落得清晰。\n\n卡尔\n\"德索洛和暗街其他人一样，会来找你的。\"\n\n卡尔\n\"当他们发现你能替他们恨，他们就会把恨寄存在这里。\"\n\n卡尔\n\"心安理得地享受新西西里的太阳。\"\n\n话落，尾巴的摆动节律缓了一拍，它仍没有回头。\n\n卡琳娜走在你和卡尔之间，步幅没有变，脚跟落地的节奏还是那个节奏。\n\n她侧过身，伸出手，指尖轻轻落在卡尔的耳尖上，拂了一下。\n\n动作安静，轻柔，指尖在那里停留了一息，随后收回来。\n\n她没有开口，马尾在背后轻晃，步幅没有变，脚步没有停。\n\n卡尔在她的触碰里微微眯起眼睛，尾巴的摆动缓了一拍，节律慢下来，像一口气被拉长了。\n\n随后它继续走，步伐无声，黑色身形贴地往前。\n\n你的目光从卡琳娜的指尖移开，落在前方延伸的街道上。\n\n午后的光均匀铺在路面上，三人的影子被拉得细长，一前一后，往港口的方向延伸。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:60",
+          "text": "选择：什么都不说，继续跟着走，看卡琳娜还会不会开口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:61",
+          "text": "你没有开口，脚步跟上去，保持一臂的距离。\n\n石板路上只有错落的脚步声，你的和卡琳娜的，交替落下。\n\n卡尔走在最前面，步伐无声，尾巴尖端缓慢摆动。\n\n它的耳廓朝后偏了一度，察觉到身后的沉默，随后归位。\n\n尾巴的节律松了一拍，摆动的幅度慢下来，像一口气被拉长了。\n\n卡琳娜走在你和卡尔之间，步幅没有变，脚跟落地的节奏还是那个节奏。\n\n她伸手，指尖顺着白色棉衣下摆的边缘捋了一下，将皱褶整平，动作随意，没有停步。\n\n马尾在她背后轻晃，她没有回头。\n\n午后的阳光均匀铺在石板路上，三人的影子拉得细长，重叠在一处，往港口的方向延伸。\n\n街巷两侧的墙皮斑驳，阳光在石缝里积了浅浅的温度。\n\n沉默落在三人之间，不沉，不急，就这样跟着脚步往前走。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:62",
+          "text": "选择：加快半步，走到卡尔旁边，低头看它"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:63",
+          "text": "你加快半步，脚步落在卡尔旁边，身体微倾，低头看向它。\n\n卡尔没有停步，黑色的身形贴地往前，脚掌无声踩在石板上。\n\n它的耳廓朝你的方向偏转过来，尾巴尖端的摆动节律微调了一下，幅度收窄，频率慢了一拍。\n\n脚步没停。\n\n它抬起头，竖瞳在午后的光里收成细线，与你的目光相接，停了一息。\n\n尾巴尖端轻晃了一下，它开口了，声音低沉，年轻，不带挑衅。\n\n卡尔\n\"你没跑。\"\n\n话落，它收回目光，竖瞳重新朝前，脚步无声往前走，步伐没有变过。\n\n卡琳娜落后你半步，步幅没有变，蓝眼睛落在你和卡尔的背影上。\n\n嘴角那道弧度极轻微地收了一截，停在那里，没让它出来太多。\n\n她没有开口。\n\n午后的光均匀铺在石板路上，三人的影子拉得细长，一前一后，往港口的方向延伸。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:64",
+          "text": "到了港口码头，在港口大家欢声笑语"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:65",
+          "text": "街巷收窄的尽头豁然开朗，光从两侧墙缝间的缝隙里涌出来，越走越宽，越走越亮。\n\n石板路的纹理在脚下变得平整，影子从墙根里抽出来，铺在广场的地面上。\n\n码头在午后的阳光下铺展开来，宽的，均匀的，白的。\n\n人声从四面漫过来，孩子的笑声，叫卖的嗓音，远处铜管乐器断续的旋律，一层压着一层，交叠成庆典的背景音。\n\n空气里混着海风，混着烤肉的焦香，混着彩纸扎的旗帜被孩子们举着跑过时带起的气流。\n\n三人的影子从窄巷的石板路跨出来，没入码头宽阔的石砌广场。\n\n卡尔走在最前面，脚步无声，黑色身形贴地穿行在来往腿脚的间隙里，像一道流动的阴影。\n\n喧闹声在瞬间涌来，它的耳廓朝两侧各转了小半圈，分别捕捉孩子的笑声和远处锣鼓声的方向。\n\n尾巴尖端的摆动节律微调了一下，幅度稍宽，频率缓了一拍。\n\n卡琳娜落后你半步，步幅没有变，脚跟落地的节奏从容。\n\n她的视线在掠过一个卖糖渍苹果的摊位时多停留了一息，马尾随着她轻微转头晃了一下。\n\n她在码头入口处停了一拍，侧身，蓝眼睛扫过来往的人群。\n\n嘴角那道弧度极轻微地松动了，像被阳光泡软了边角。\n\n她伸出手，指尖掠过卡尔耳尖，动作比之前更慢，停留了一息。\n\n卡琳娜\n\"他们在笑。\"\n\n尾音没有升，也没有降，落在广场的噪声里，像是在确认一个许久未见的常识。\n\n阳光铺满码头，均匀地落在每个人身上。\n\n你的手指在外套侧面微微收紧，又松开。\n\n庆典的人声涌进耳朵里，笑声、叫卖声、货船靠岸的汽笛声，一层一层，没有警报，没有爆炸的回声。\n\n呼吸在这片阳光里放缓了一拍。\n\n卡尔在你脚边停了一拍，竖瞳收窄，看着你。\n\n尾巴尖端轻晃了一下。\n\n它收回目光，继续走，步伐无声，没入人群腿脚的间隙里。\n\n你的目光从卡尔身上移开，落在码头明亮的人群上，停留的时间比往常更长。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:66",
+          "text": "敏特站在码头上。她第一次主动笑着对主角说：\n\n“你不是一直说，等事情结束以后，要给我拍张照片吗？”\n\n用户输入：\n\n“我把手伸进内侧口袋。”"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:67",
+          "text": "你的手指探进外套的内侧，指尖触到皮革机身的边缘。\n\n人群的声音从四面涌来，码头的光落得均匀，落在你的手背上，落在每一道磨损的皮纹上。\n\n卡琳娜落后你半步，步幅没有变。\n\n她的视线在敏特出现的方向停了一拍，嘴角那道被阳光泡软的弧度微微收了一截。\n\n卡尔在你脚边停下，竖瞳朝着敏特的方向收窄，尾巴尖端停了一拍，没有开口。\n\n敏特站在码头上，阳光从她身后铺过来，金色的，宽的，把她的轮廓烫得发亮。\n\n她的嘴角往上拉开，是一个你很久没有见过的弧度。\n\n敏特\n\"你不是一直说，等事情结束以后，要给我拍张照片吗？\"\n\n她的声音穿过庆典的人声落进来，清晰，带着一点久违的轻。\n\n眼神落在你的手上，落在那只还没有完全取出来的相机上，停了一息。\n\n你的手指在皮革机身的边缘停了一拍。\n\n呼吸放缓了一拍，你把相机取出来，握在手里。\n\n午后的光落在机身磨损的边缘上，那些细小的划痕在光里显得格外清晰。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:68",
+          "text": "开始细节描述，回忆"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:69",
+          "text": "相机握在手里，沉的，皮革的边缘磨进掌心。\n\n你的指尖在机身上停了一拍，无意识地往背面移，触到那道细小的刻痕。\n\n触感粗糙，微凉，字母M的边缘磨损得不规整，但还是清晰的。\n\n光落在手背上，码头的喧嚣从四面涌来。\n\n爆炸的回声先来。\n\n不是一整个画面，是碎的——气浪，尘土，眼睛里来不及辨认的灰白色。\n\n耳鸣之后是一段短暂的空白。\n\n废墟里走来一个人影，红发，步伐快，脚踩过碎石的声音被风压着，低而清晰。\n\n手心的触感回来了——碳灰，粗糙的指腹，相机背包的搭扣被人按住的那道力道。\n\n锁扣咬合的声响，金属对金属，短促，利落。\n\n就这么多，很短，很快，像一帧胶片在光里走了一遍。\n\n你的呼吸换了一拍。\n\n手指在机身上收紧，指关节发白，皮革边缘压进掌心的触感变得格外清晰——随后，力道轻轻松开，像握住了什么，又像什么都没握住。\n\n午后的光均匀落在手背上，陈旧的划痕和皮肤上的纹路都被照得清晰。\n\n你抬起头。\n\n卡琳娜站在你身后半步的位置，视线停在你的背影上。\n\n她的手指无意识地抬起，停在半途，没有继续，垂回了身侧。\n\n表情收敛了一秒，不是冷漠，是沉默。\n\n卡尔在她脚边，竖瞳收窄，耳廓朝你手中相机的方向偏转，没有开口。\n\n镜头举起来，码头的光涌进取景框。\n\n敏特站在逆光里，阳光从她身后铺开，金色的，宽的，把发丝的轮廓烫成一圈亮边。\n\n她没有催，没有动，嘴角还留着那个弧度，红发在风里轻动。\n\n取景框里的她整个人像是被光托住了一样，站在午后的码头上，站着，等着。\n\n手指移到快门上，停在那里。\n\n活着的，站在阳光底下，笑着向你索要一张本该很久以前就送给她的照片。\n\n快门没有按下去。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:70",
+          "text": "回忆相机的点点滴滴"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:71",
+          "text": "相机握在掌心，沉的，皮革的温度贴着手心。\n\n你的指尖停在快门按钮的边缘，没有按下去，慢慢往机身侧面移。\n\n皮革开裂的纹路从指腹下经过，粗的，细的，有一道裂缝在棱角处向两侧岔开。\n\n你的手停了一拍。\n\n皮革的温度——不是现在的，是另一个温度，更旧的，更凉的，从一双手递过来时的分量。\n\n快门拨杆的弧度在指腹下经过，金属，光滑，有一道磨损把边缘压低了一截，摸上去像是一个被反复抚过的地方。\n\n变焦环的纹路从拇指腹下拂过，细的，规整的，中间有沙砾曾经卡进去留下的痕迹——不是一粒，是一层，像某个特定的风从某个特定的地面刮过来，带着整片尘土的气味。\n\n碳灰。\n\n指节上的，是别人的，粗糙的指腹碰上机身时那道力道，轻的，快的，相机被人抢过去时搭扣弹开的锁扣声。\n\n金属对金属，短促，干净。\n\n指尖从变焦环上移开，绕到机身背面，触到那道刻痕。\n\n字母M的边缘磨损得不规整，但触感清晰。\n\n你的拇指在那道刻痕上停住了，没有再动。\n\n码头的人声从四面涌来，汽笛声从远处压过来，喧嚣均匀，不尖锐，落在皮革和金属和那道刻痕上，像光一样，把所有东西都照得太清楚。\n\n相机在掌心，沉着，重量沉在手里，指尖搁在M的边缘，没有动。\n\n卡琳娜站在你身后半步，手指垂在身侧，没有抬起来。\n\n蓝眼睛落在你的背影上，停在那里，停着，呼吸声轻。\n\n她没有出声。\n\n卡尔在卡琳娜脚边，竖瞳收窄，耳廓朝你手中相机的方向偏转过去，停在那里。\n\n尾巴尖端缓慢摆动了一下，频率比平时慢，幅度收得很小。\n\n它没有开口。\n\n敏特逆光站在原地，阳光从她身后均匀铺过来，把她的红发边缘烫出一道亮线。\n\n嘴角的弧度没有收，风把她的发丝吹动了一下，又落回去。\n\n她没有动，也没有催，站在那里，让阳光和风把她留在那里。\n\n码头的人声在四周涌动，汽笛声和孩子的笑声和远处铜管乐器的余音交叠在一起。\n\n相机的重量沉在掌心，皮革裂纹的触感在指腹下，M字边缘的磨损在拇指下。\n\n阳光均匀，气氛不急，像一格胶片在光里停住了，没有往前走。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:72",
+          "text": "相机的字母是哪来的，为什么；坏了吗，修了吗，有什么情感寄托，要拍敏特，给她说一句共同回忆中才有的话"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:73",
+          "text": "你的拇指停在那道刻痕上，没有动。\n\nM的边缘磨损得不规整，触感粗糙，微凉。\n\n码头的喧嚣从四面涌着，光均匀落在手背上。\n\n帕兹\n\"这台相机是我妈留给我的。\"\n\n帕兹\n\"那个M，是她名字的首字母。\"\n\n声音平稳，语速比平时慢，像在整理一份很久以前就写好的笔记。\n\n拇指在刻痕上轻轻摩挲了一下，边缘粗糙的质感从指腹下经过。\n\n帕兹\n\"有一次爆炸，它当场就坏了。\"\n\n帕兹\n\"后来找人勉强修好，但有些功能再也转不回来了。\"\n\n语气里没有自怜，是陈述，短的，每个短句之间留着一截空隙。\n\n卡琳娜站在你身后半步，蓝眼睛停在你的背影上。\n\n她的手指无意识地抬起了半寸，停在那里，没有继续，轻轻垂回身侧。\n\n卡尔的耳廓朝你的方向偏转过来，竖瞳收窄，尾巴尖端缓慢摆动了一下，幅度收得很小。\n\n两个人都没有开口。\n\n帕兹\n\"它跟我走过的路，比任何东西都多。\"\n\n尾音收得干净，落进码头的人声里，没有多停留。\n\n镜头还举着，取景框里敏特站在原地，逆光，阳光把她的发丝边缘烫成一圈亮线。\n\n她没有动，风把她的发丝吹动了一下，又落回去。\n\n你的手指停在快门边缘，没有按下去。\n\n帕兹\n\"你说过，等战事结束，你要亲自去买一卷新胶卷。\"\n\n帕兹\n\"说那是你自己的第一张照片，得用新的。\"\n\n话很短，语气没有起伏，像把一个旧的物件从抽屉里取出来放在桌上。\n\n卡琳娜的呼吸轻了一拍，表情收敛，没有开口。\n\n取景框里，敏特的嘴角弧度在那句话落下后停了一息。\n\n她的眼神从相机机身上移开，在你的脸上停了一拍，嘴角的弧度收进去了一截，深了，不是散开的那种，是往里压的。\n\n她没有说话，也没有动，只是站在那里，让那个细微的变化停在脸上。\n\n卡尔的耳朵微微朝敏特的方向偏了一转，竖瞳捕捉了一下，随后归位，尾巴尖端的摆动节律放缓了一拍。\n\n它没有开口。\n\n你的拇指从M的刻痕上移开，重新落在快门上。\n\n码头的光落在机身磨损的边缘上，阳光均匀，不急，不催。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:74",
+          "text": "选择：按下快门"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:75",
+          "text": "拇指从M的刻痕上移开，落回快门上。\n\n取景框里，敏特站在逆光里，阳光从她身后铺开，把发丝的边缘烫成一圈亮线。\n\n快门按下去了。\n\n声音清脆，短促，干净，穿过码头的喧嚣落下来，像一格胶片在光里走完了最后一步。\n\n那声响在耳边停了一拍。\n\n你的手指没有立刻从快门上移开，呼吸停了一拍，喉结没有动。\n\n相机仍举在手里，镜头朝着敏特，取景框里的逆光轮廓微微晃动了一下。\n\n不是风吹的。\n\n敏特的肩膀轻轻松了下来，像一根绷了很久的弦缓缓放开张力。\n\n嘴角的弧度收进去了一截，深了，往里压，不散开，停在那里。\n\n她没有说话，也没有动。\n\n卡琳娜站在你身后半步，蓝眼睛停在你的侧脸上，没有看相机。\n\n你按下快门的那一瞬，她的眼睑轻轻颤了一下。\n\n她的手指在身侧无意识地蜷了一下，指节收紧，随后慢慢松开，垂回原处。\n\n她没有开口。\n\n卡尔在卡琳娜脚边，竖瞳从你的方向收回来，落在敏特身上。\n\n耳廓朝敏特偏了一转，慢的，停在那里。\n\n尾巴尖端的摆动完全停了。\n\n它没有开口。\n\n你的手缓缓放下来。\n\n相机从举起的位置落回到胸前，皮革机身的温度贴回掌心，沉的，稳的。\n\n拇指无意识地从快门边缘移开，轻轻落在机身侧面的皮革上，停在那里。\n\n手有一点抖，细的，轻的，指节处，不是恐惧，是什么沉了很久的东西在卸下来。\n\n码头的人声重新涌进来，比刚才清晰——孩子的笑声，远处一声货船的汽笛，糖渍苹果摊贩的嗓音从人群里钻过来。\n\n阳光均匀落在石板广场上，落在每个人身上，落在相机磨损的皮革边缘上。\n\n快门声留下的那道静默，还没有散尽。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:76",
+          "text": "选择：低头看手里的相机，等敏特先开口"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:77",
+          "text": "你的手指从快门上移开，慢慢落回机身侧面的皮革上。\n\n相机轻轻收回到胸前，皮革的温度贴回掌心，沉的，稳的。\n\n你低着头，视线落在那道M字的刻痕上，停在那里，没有抬起来。\n\nM的边缘在阳光里清晰，磨损得不规整，触感粗糙，微凉。\n\n码头的喧嚣重新涌进来——孩子的笑声从远处飘过来，货船汽笛声低钝地压了一下，糖渍苹果摊贩的嗓音在人群里起起落落。\n\n阳光铺在石板广场上，均匀，宽厚，把每个人的轮廓都裹上一层薄薄的光晕。\n\n卡琳娜站在你身后半步，手指垂在身侧，松开着。\n\n她蓝色的眼睛在你和敏特之间移动了一下，嘴角那道被阳光泡软的弧度轻微收了一截。\n\n她没有出声，呼吸放得很轻，像把自己藏进了午后的光线里。\n\n卡尔在卡琳娜脚边蹲坐，竖瞳收成一线，耳廓转向敏特站立的方向，停在那里。\n\n尾巴尖端贴着石板地面，完全静止，没有摆动。\n\n敏特站在逆光里，肩膀刚松下来的弧度还留在那里。\n\n风把她的红发吹动了一下，发丝扬起，又落回去。\n\n她的视线从相机机身上移到你的脸上，停了一息。\n\n那道目光落得不重，在你的脸上停了一拍，在相机上停了一拍，确认了什么，又重新回到你脸上。\n\n嘴角那道往里压的弧线，慢慢往上顶了一点点。\n\n敏特\n\"你还真拍了。\""
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:78",
+          "text": "选择：低头看向相机，把它递给敏特"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:79",
+          "text": "拇指从M的刻痕上离开。\n\n手缓缓翻转，相机从胸前移出来，皮革机身的重量沉在掌心，指关节没有收紧。\n\n阳光落在磨损的皮革边缘上，把那道细小的刻痕照得清晰。\n\n你的手向前伸出去，手指缓缓合拢，把相机稳稳托住。\n\n机身在递出的过程中轻微晃了一下，M刻痕在阳光里转过去，短暂地闪了一下。\n\n码头的人声在四周涌动着，均匀，宽厚，把这个动作裹在里面。\n\n卡琳娜站在你身后半步，蓝眼睛跟随着相机的轨迹，从你的手向外移动。\n\n她的手指在身侧无意识地蜷了一下，指节收紧，停了一拍，缓缓松开来。\n\n卡尔在卡琳娜脚边蹲坐，竖瞳捕捉相机移动的方向。\n\n耳廓朝你和敏特之间偏转了一度，停在那里。\n\n尾巴尖端轻轻摆动了一下，幅度很窄，随后静止下来。\n\n敏特的视线从你脸上落下来，停在被递出的相机上。\n\n阳光从她身后均匀铺过来，把相机和你的手都纳进逆光的轮廓里。\n\n她伸出双手，动作不急，指尖先碰到皮革机身，触感确认了，才把手合拢。\n\n相机从你的手移进她的手，重量平稳地转过去，没有磕绊。\n\n你的手指在相机完全离手之前，最后一次触了一下那道M的刻痕。\n\n边缘粗糙，微凉，指腹只停了一息，随后松开。\n\n敏特双手握着相机，停在那里，没有立刻动。\n\n码头的光均匀落在她手指和机身的皮革上，把每一道磨损的纹路都照得清楚。\n\n她的眼神在机身上移动了一拍，在那道M的刻痕上短暂停驻。\n\n表情收敛了一拍，嘴角的弧度没有散开，她没有说话，也没有动。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:80",
+          "text": "选择：举起手，示意她把相机对准你"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:81",
+          "text": "相机的重量从掌心移开了。\n\n你的手缓缓从胸前抬起来，手掌翻转向外，在胸前摊开，停在那里。\n\n动作慢，清晰，从一侧抬到另一侧，没有犹豫。\n\n阳光落在你的掌心上，把指节和袖口边缘的磨损都照得清楚。\n\n你的手就停在那里，没有收回来，也没有再往前伸。\n\n敏特双手握着相机，视线从机身上移上来，在你的脸上停了一拍。\n\n她没有立刻动。\n\n逆光里看不清她眼底的细节，但嘴角的弧度没有收，停在那里，也没有进一步的松动。\n\n风从她身后吹过来，把几缕红发送到眼前，她没有拨开。\n\n码头的人声在四周均匀涌动，远处一声孩子的笑，货船汽笛的低钝回音，摊贩的嗓音从人群里穿过来。\n\n敏特的视线在你摊开的掌心上停了一息，又回到你的脸上，确认了什么。\n\n她缓缓抬起相机。\n\n动作不快，两手握着机身，肘关节慢慢顶起来，取景框朝你的方向转过去。\n\n动作不熟练，但稳，手指在机身上挪了一下，找到位置，拇指搁到快门边缘，停在那里。\n\n她没有按下去。\n\n卡琳娜站在你身后半步。\n\n她蓝色的眼睛在你扬起的双手和你平静的侧脸之间移动了一拍，慢的，停了一下。\n\n她的手指在身侧无意识地轻轻蜷了一下，指节收了一截，随后慢慢松开，垂回原处。\n\n呼吸放得轻浅，嘴角那道被阳光泡软的弧度轻微收进去了一截。\n\n她没有出声。\n\n卡尔在卡琳娜脚边蹲坐，竖瞳从敏特的方向收回来，落在你的背影上。\n\n耳廓朝你的方向偏转了一度，停在那里。\n\n尾巴尖端贴着石板地面，完全静止，没有摆动。\n\n它没有开口。\n\n阳光均匀铺在石板上，把四个人的轮廓都裹成一道暖色的线。\n\n你的手还摊在胸前，掌心向外，指节和袖口边缘的磨损在光里清晰。\n\n取景框对着你，拇指搁在快门边缘，停着，没有落下去。\n\n码头的喧嚣从外围涌着，孩子的笑声，汽笛的低回，摊贩的叫卖声，把这一小片空气从四面包住。\n\n快门声迟迟没有落下来。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:82",
+          "text": "选择：开口说话，打破这片沉默"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:83",
+          "text": "码头的喧嚣从四面涌着，取景框两侧的空气沉着，没有松动。\n\n你摊开的双手还停在胸前，掌心向外，指节和袖口边缘的磨损在光里清晰。\n\n帕兹\n\"要么按下去，要么放下来。\"\n\n帕兹\n\"别让它一直悬着。\"\n\n声音不高，平稳，穿过码头的人声落下来，没有催促，没有解释。\n\n卡琳娜站在你身后半步，蓝眼睛从取景框的方向收回来，落在你的后脑勺上。\n\n她嘴角那道被阳光泡软的弧度轻微收进去了一截。\n\n手指不知什么时候互相攥住了，指节贴紧，停了一拍，慢慢松开，垂回身侧。\n\n她没有出声。\n\n卡尔在卡琳娜脚边蹲坐，耳朵朝你的方向偏转了一度，幅度很窄，停在那里。\n\n尾巴尖端贴着石板地面，完全静止。\n\n取景框后，敏特的手指在快门边缘顿了一拍。\n\n她没有立刻按。\n\n逆光里，嘴角那道被压进去的弧线轻微松动了一截，绷着的某个东西被轻轻碰了一下。\n\n她缓缓吸入一口气，胸口的起伏在取景框里显示为一次浅而慢的位移。\n\n码头的喧嚣继续从外围涌着，孩子的笑声，货船汽笛的低回，远处铜管乐器的短促旋律，把这一小片空气从四面包住。\n\n你的手仍摊在胸前，掌心向外。\n\n敏特的拇指从快门边缘缓慢收紧，指腹贴上去，动作不急。\n\n按下去了。\n\n快门声在码头的光里落下来，脆的，短的，安静地穿透四周的人声。\n\n快门声散尽后，敏特慢慢放下相机。\n\n她低头看机身，视线在M刻痕上停了一拍。\n\n阳光从她身后均匀铺过来，把指尖和皮革上的磨损都照得清楚。\n\n她抬起头，看向你。\n\n敏特\n\"行。\"\n\n声音轻，带着一丝久违的质感，短，准，干净地落下来。\n\n卡琳娜将视线移向敏特放在相机上的手指，沉默了片刻。\n\n她极轻地呼出一口气，某根绷了许久的弦松了一截。\n\n她没有出声。\n\n卡尔从卡琳娜脚边站起来，前爪伸了伸，尾巴轻轻摆了一下，幅度很窄。\n\n它走前半步，停在那里，低低开口。\n\n卡尔\n\"迟了很久，还是来了。\"\n\n话音落下，它不再开口，耳廓归位，尾巴缓缓静止。\n\n阳光均匀铺在石板码头广场上，四个人的轮廓站在一起，相机在敏特手中。\n\n码头的人声重新涌回来，均匀，宽厚，像潮水轻轻淹没一小片沙滩。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:84",
+          "text": "拍了几张？快门还能用吗"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:85",
+          "text": "敏特还握着相机，低头看着机身，拇指搁在快门边缘。\n\n你的视线落在她手里的相机上，开口问。\n\n帕兹\n\"还剩几张？快门还能用吗？\"\n\n敏特没有立刻回答。\n\n她把相机翻过去，低头对着机身背面，目光落在胶卷计数窗上停了一息。\n\n拇指从快门边缘挪开，指腹在计数窗旁轻轻压了一下。\n\n敏特\n\"十张。\"\n\n她的手指在机身侧面停了一拍，随后轻轻拨动过片杆，动作慢，手腕带着一点力，齿轮在内部低沉咬合了一声。\n\n她手里确认了，补了一句。\n\n敏特\n\"快门还能用。\"\n\n你听完，点了点头。\n\n视线在相机机身上停了一拍，落在那道M的刻痕上，停了一息，没有伸手去接回来。\n\n帕兹\n\"相机留给你。\"\n\n敏特的手指在机身上收紧了一瞬，指节微微压白。\n\n她没有说话，也没有推开。\n\n相机从两手之间的悬置落定了，她慢慢把它贴近身前，两手合拢，稳稳捧着。\n\n卡琳娜站在你身后半步，蓝眼睛从敏特手里的相机移到你的侧脸上，又落回相机。\n\n她的手指在身侧无意识地轻轻蜷了一下，随后松开来。\n\n她极轻地呼出一口气，那根绷着的弦又松了一截。\n\n她将视线在敏特和你之间移了一圈，嘴角的弧度在阳光里轻微动了一下。\n\n卡琳娜\n\"拍完了就跟我走。\"\n\n她转过身，往码头另一侧迈出脚步，语气漫不经心，步子不急。\n\n卡尔从卡琳娜脚边站起来，前爪伸了一下，尾巴轻轻摆了一下，幅度很窄。\n\n它跟上去，走在卡琳娜侧前方，没有开口。\n\n敏特低头看了一眼手里的相机，又看了你一眼。\n\n她迈出脚步，跟上卡琳娜的方向。\n\n你随后跟上。\n\n码头庆典的喧嚣在四人身后继续涌动着，孩子的笑声，货船的汽笛，摊贩的嗓音，均匀宽厚地铺在石板广场上。\n\n阳光落在每个人的轮廓上，落在敏特手里相机磨损的皮革边缘上。"
+        },
+        {
+          "speaker": "user",
+          "dia_id": "D1:86",
+          "text": "功能预期: 可能仅能使相机再工作一次\n不是这样吗"
+        },
+        {
+          "speaker": "assistant",
+          "dia_id": "D1:87",
+          "text": "阳光铺在石板广场上，均匀，宽厚，把每个人的轮廓都裹上一层暖色的线。\n\n你的视线落在敏特手里的相机上，停了一拍。\n\n帕兹\n\"快门组件的状态怎么样？\"\n\n帕兹\n\"那个型号早停产了，我不确定还能撑几次。\"\n\n声音不高，穿过码头的人声平稳落下，没有催促。\n\n你手指在身侧无意识地轻轻摩挲了一下，随后垂回原处。\n\n敏特低头，目光落在相机机身上，停了一拍。\n\n她的手指在机身侧面轻轻挪动，指腹贴到快门按钮上，缓缓压下去，又松开。\n\n齿轮在内部低沉咬合了一声，触感清晰地传回她的指腹。\n\n她抬起头。\n\n敏特\n\"能用。\"\n\n语气平淡，一个字落下来，没有多余的起伏。\n\n卡琳娜站在你身后半步，蓝眼睛在敏特和你之间移动了一拍。\n\n她的手指在身侧轻轻蜷了一下，指节收了一截，随后慢慢松开来。\n\n卡琳娜\n\"旧型号的快门弹簧比新款的耐磨。\"\n\n语气漫不经心，像在陈述一件和她无关的小事，嘴角的弧度没有变化。\n\n卡尔在卡琳娜脚边蹲坐，耳廓朝你和敏特说话的方向偏转了一度，停在那里。\n\n尾巴尖端贴着石板地面，完全静止，没有摆动。\n\n它没有开口。\n\n卡琳娜收回视线，转身往码头另一侧迈出脚步，动作干脆，步子不急。\n\n卡尔随即站起来，跟上去，走在卡琳娜侧前方，黑色身形贴地，尾巴无声摆动。\n\n敏特看了你一眼，将相机贴近身前，两手合拢，转身跟上。\n\n你迈出脚步，跟在最后。\n\n庆典的喧嚣从身后均匀涌着，孩子的笑声，货船汽笛的低回，摊贩嗓音在人群里起落，把四个人的身影一齐裹进码头明亮的光线里。"
+        }
+      ]
+    }
+  }
+]
