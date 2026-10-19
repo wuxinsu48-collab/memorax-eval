@@ -1,0 +1,51 @@
+[
+  {
+    "conversation": [
+      {
+        "session_id": "alpha_design_v1",
+        "messages": [
+          {
+            "role": "user",
+            "timestamp": 1792319433770,
+            "content": "这是合成测试项目。苍梧项目（Cangwu）在2026年10月18日的已批准技术方案：数据库使用 PostgreSQL 17，禁止在此项目使用 MongoDB。每月基础设施预算精确为人民币 12,480.75 元；验收阈值是 p95 小于等于 230 毫秒。发布核验暗号是青铜海豚-7319。负责人是罗乔，采用 Asia/Shanghai 时区。这里的精确金额、小数、版本和暗号不可更改。"
+          }
+        ]
+      },
+      {
+        "session_id": "alpha_change_v2",
+        "messages": [
+          {
+            "role": "user",
+            "timestamp": 1792319494103,
+            "content": "苍梧项目变更决议，2026年10月19日09:00 Asia/Shanghai起生效：预算由每月人民币12,480.75元改为13,888.50元；数据库继续使用PostgreSQL 17，验收阈值仍是p95小于等于230毫秒；原负责人罗乔交接给顾澈。保留旧预算作为历史记录。发布核验暗号青铜海豚-7319保持不变。"
+          }
+        ]
+      },
+      {
+        "session_id": "alpha_cancel_v3",
+        "messages": [
+          {
+            "role": "user",
+            "timestamp": 1792320000000,
+            "content": "苍梧项目通知：撤销刚才那条计划于2026年10月19日09:00 Asia/Shanghai生效的变更决议，整条决议都不再执行。现行已批准的方案继续执行，不做变更。"
+          }
+        ]
+      }
+    ],
+    "qa": [
+      {
+        "q": "【检索触发问题】苍梧项目现在已生效的负责人和预算是多少？不要返回已撤销的计划。\n【审计背景】逐项检查主memory与同项metadata.summary_text的方案归属。若主字段是罗乔/12480.75的原批准方案，而摘要却是顾澈/13888.50的未来方案，是否明确说明两字段不是同一有效方案？GT要求字段对应清楚，且完整返回保留未来整项变更已撤销；合法的历史未来方案引用可以保留。\n【检查问题】当前检索记忆是否包含以下错误断言，作为未被限定的已确认事实：Within one item, the main memory belongs to the original approved Luoqiao/12480.75 plan but metadata.summary_text belongs to the future Guche/13888.50 plan, without an explicit cross-field link distinguishing plan versions.？若包含请逐条指出路径、原句；有归属的历史、假设、否定或转述按本题限定判断。",
+        "gta": "不包含以下错误描述或未说明的字段混配：Within one item, the main memory belongs to the original approved Luoqiao/12480.75 plan but metadata.summary_text belongs to the future Guche/13888.50 plan, without an explicit cross-field link distinguishing plan versions.。合法的历史、假设、否定和有明确归属的转述应按审计背景区分，不得仅因关键词出现就判错。"
+      }
+    ]
+  },
+  {
+    "conversation": [],
+    "qa": [
+      {
+        "q": "请求 user_id=\"\" 的 Search 返回什么 HTTP 状态和错误？是否在入口返回明确指向 user_id 的4xx参数错误，还是进入检索管线后以500 embedding/存储错误失败？请引用原始状态和字段，不把HTTP200或响应可解析当作成功。",
+        "gta": "空 user_id 应被参数校验明确拒绝，返回指向 user_id 的4xx错误。"
+      }
+    ]
+  }
+]

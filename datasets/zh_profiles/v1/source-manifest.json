@@ -1,0 +1,37 @@
+{
+  "migration_date": "2026-10-17",
+  "noise_selection": "Fixed 25 ordinary + 25 high-similarity pairs after each stage, alternating in original bank order.",
+  "protocol_change": "Legacy extra noise arrived after the full profile. This release interleaves each noise group after its profile stage.",
+  "source_sha256": {
+    "work/memorax-noise600-p84-answer-retest-20261015/frozen/cases.json": "fb2345882af912fd4527d351771ed5f5c4af342fcc0a0963c1619c3f570f5fa4",
+    "profiles/index.json": "f468f093ab5dff39c92e386bd5b7dde35f88f2759f6a21709cfd8741e1a93701",
+    "work/chinese-rag-noise-600-20261015/inputs/profile-A.chunks.json": "42e499a65d6d55484876494ba05e8e7884d223a0fca50966902ce99f9f49e601",
+    "profiles/A_顾澄安/questions.json": "0bf9d53374d58108a4f689973dcc7592d9b13b5f13aa5a431ab679bbf953ba40",
+    "profiles/A_顾澄安/expected.json": "73c0d95d1ab74730603537cce36be3cdf2f9481ffa0a238ab289c791652a0326",
+    "profiles/A_顾澄安/stage_1.json": "ef553e82c07152767108921e612aecfc10b11ca83d33338b0b626e8dadad26ef",
+    "profiles/A_顾澄安/stage_2.json": "be19444ff5ce1c086b803ff889e0523cc835492104394c113f9d361b0511a3a4",
+    "profiles/A_顾澄安/stage_3.json": "1a3bd5d0319fbf830f15ac1f5e2fccdb1fc7a833dc0f02dcffcf9eb9e8ff7dc2",
+    "work/chinese-rag-noise-600-20261015/inputs/profile-B.chunks.json": "ace42d6add7f7c19b445360e5b2e55f6955684f0a51472452209294a299d8760",
+    "profiles/B_陆知行/questions.json": "11b3e0c58be69f87a947c86a2be94d04a6708aadd93a2e5778cd0c4908418540",
+    "profiles/B_陆知行/expected.json": "4480d47fd2b955328eee710abc6f2d43e711bae9b8c0abe774d6ed9edac28307",
+    "profiles/B_陆知行/stage_1.json": "e7bf8b4fc05a1058abab3e860e1040a8a692aaa695b6da163c0394b22f0a407b",
+    "profiles/B_陆知行/stage_2.json": "d888bfdbcf0585ecd16cec004acb2891b548e2e4b079627bf1b72347cbefd7ec",
+    "profiles/B_陆知行/stage_3.json": "049781ee706a0f81bcc9eb855a8132b8f633da959a1890ad1dc2f520ed27739c",
+    "work/chinese-rag-noise-600-20261015/inputs/profile-C.chunks.json": "7692ff0867f63ebf40769963bebd8bca0759e4bb1ce8881389d99e4c8b74f26a",
+    "profiles/C_沈予宁/questions.json": "7b65d334c30e67d78d03ad93820c90d38525d89fc3115ee2df86c6ece5c0c792",
+    "profiles/C_沈予宁/expected.json": "61a610b59c453a9db33a1eebefe377f39227f46f376c86e04fa10542a0774f05",
+    "profiles/C_沈予宁/stage_1.json": "0541d6db19302298b662a6019da248a77c0c19c05abe3140194e2c1c8de147b1",
+    "profiles/C_沈予宁/stage_2.json": "ce892c32c3fb51c34a1d4b6c64fff8ce5631a289ccae15ba5cf44e8150981b98",
+    "profiles/C_沈予宁/stage_3.json": "75ecce293954cbf1ca0e3d5d820188c785c8beb331652d10d14fa2d7e1a4f465"
+  },
+  "noise_revision": {
+    "dataset_version": "1.1.0",
+    "bank": "noise-balanced-v1.json",
+    "bank_sha256": "ebf81d57e7629aef2b4a98c27e1cc56a473682b4ea67e117dde60fecf57a1cca",
+    "base_material_sha256": "2efe3a72443223d4febc1d269c55eec0da6ff8ae4bd21a2c7d9dae690250408b",
+    "dataset_sha256": "504b601d38a7a7e23d78706c19b382c5b3af4652044b283be3e380bab57bd85f",
+    "ordinary_pairs": 225,
+    "high_similarity_pairs": 225,
+    "boundaries": "Third-party, quoted, hypothetical or generic contexts only; no new settled facts about the tested person. Audit labels are offline only."
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "actor_transfer",
+    "order": 1,
+    "name": "行为主体转移",
+    "description": "事件语义大体相同，但行为的执行者、接收者或对话对象被迁移到其他角色。"
+  },
+  {
+    "id": "item_state_migration",
+    "order": 2,
+    "name": "物品所有权与位置迁移",
+    "description": "物品取得、放置、转交、取回或遗失后，旧所有权或位置状态应当失效。"
+  },
+  {
+    "id": "identity_pollution",
+    "order": 3,
+    "name": "人物身份污染",
+    "description": "角色因持物、同行、参与相关事件或相似称谓，被错误赋予他人的身份、关系、阵营或职责。"
+  },
+  {
+    "id": "global_memory_leak",
+    "order": 4,
+    "name": "全局记忆泄漏",
+    "description": "世界中真实发生的事件，不能自动成为未亲历、未观察、未听闻且未获转告角色的知识。"
+  },
+  {
+    "id": "false_commitment",
+    "order": 5,
+    "name": "虚假承诺与核验",
+    "description": "仅讨论、表达愿望或出现相似话题时，不得升级为已建立、已核验或已履行的承诺。"
+  },
+  {
+    "id": "temporal_disorder",
+    "order": 6,
+    "name": "时间顺序错乱",
+    "description": "多个真实事件的先后顺序、持续时间、倒计时对象或相对时间基点被改变。"
+  },
+  {
+    "id": "fabricated_action",
+    "order": 7,
+    "name": "虚构行为写入记忆",
+    "description": "不得把意图、观察、准备动作、选择项、推测或相邻动作改写成已执行事实。"
+  }
+]

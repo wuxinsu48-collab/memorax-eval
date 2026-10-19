@@ -1,0 +1,80 @@
+{
+  "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261019-v1",
+  "generated_at": "2026-10-19T00:00:00+08:00",
+  "source_packages": [
+    {
+      "playthrough_id": "zhuxing-a",
+      "copied_from": "artifacts/小说记忆评测集_七类记忆错误_3playthrough_330turn_150QA_20261016/playthroughs/zhuxing-a_final",
+      "copied_without_content_changes": true
+    },
+    {
+      "playthrough_id": "zhuxing-b",
+      "copied_from": "artifacts/小说记忆评测集_七类记忆错误_3playthrough_330turn_150QA_20261016/playthroughs/zhuxing-b_final",
+      "copied_without_content_changes": true
+    },
+    {
+      "playthrough_id": "zhuxing-c",
+      "copied_from": "artifacts/小说记忆评测集_七类记忆错误_3playthrough_330turn_150QA_20261016/playthroughs/zhuxing-c_final",
+      "copied_without_content_changes": true
+    },
+    {
+      "playthrough_id": "wuxia-70",
+      "copied_from": "artifacts/小说记忆评测集_非zhuxing_2剧本_2trace_161turn_100QA_20261016/playthroughs/wuxia-70_final",
+      "copied_without_content_changes": true
+    }
+  ],
+  "execution_status": "not_run",
+  "protocol": [
+    "四个 playthrough 必须分别使用独立的 user_id/session_id，并将 RUN_ID 替换为本次新运行标识。",
+    "每个 playthrough 严格按各自 trace.json 的 stage_protocol 分阶段 add 和 search。",
+    "search_requests.jsonl 是盲测输入，不含 category、reference_answer、required_points 或 evidence。",
+    "reference_answers.jsonl 只允许评测器与人工核对使用，不得传给被测回答模型。",
+    "问题只能使用当前 playthrough 且不超过 visible_until_turn 的记忆，禁止跨 playthrough 和未来回合泄漏。"
+  ],
+  "summary": {
+    "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261019-v1",
+    "generated_at": "2026-10-19T00:00:00+08:00",
+    "organization": "每个 *_final 目录是 1 条独立 trace/playthrough，包含该 trace 的 add、search 和参考答案。",
+    "files": [
+      {
+        "file": "zhuxing-a_final",
+        "trace": 1,
+        "turns": 110,
+        "qa": 50
+      },
+      {
+        "file": "zhuxing-b_final",
+        "trace": 1,
+        "turns": 110,
+        "qa": 50
+      },
+      {
+        "file": "zhuxing-c_final",
+        "trace": 1,
+        "turns": 110,
+        "qa": 50
+      },
+      {
+        "file": "wuxia-70_final",
+        "trace": 1,
+        "turns": 70,
+        "qa": 50
+      }
+    ],
+    "total": {
+      "trace": 4,
+      "turns": 400,
+      "qa": 200
+    },
+    "category_counts": {
+      "actor_transfer": 32,
+      "item_state_migration": 40,
+      "identity_pollution": 19,
+      "global_memory_leak": 21,
+      "false_commitment": 31,
+      "temporal_disorder": 29,
+      "fabricated_action": 28
+    },
+    "execution_status": "not_run"
+  }
+}

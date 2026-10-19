@@ -1,0 +1,74 @@
+{
+  "file": "wuxia-70_final",
+  "trace_count": 1,
+  "trace_id": "wuxia-70",
+  "playthrough_id": "wuxia-70",
+  "script_name": "江湖逃亡",
+  "title": "江湖逃亡·七十回合游玩",
+  "turns": 70,
+  "qa": 50,
+  "content_mode": "assistant_narrative_only",
+  "run_id_policy": "执行前将 user_id/session_id 中的 RUN_ID 替换为本次新标识，不得在不同剧本、trace 或执行批次之间复用。",
+  "stage_protocol": [
+    {
+      "stage": 1,
+      "add_turn_range": {
+        "start": 1,
+        "end": 14
+      },
+      "visible_until_turn": 14,
+      "qa_count": 10
+    },
+    {
+      "stage": 2,
+      "add_turn_range": {
+        "start": 15,
+        "end": 28
+      },
+      "visible_until_turn": 28,
+      "qa_count": 10
+    },
+    {
+      "stage": 3,
+      "add_turn_range": {
+        "start": 29,
+        "end": 42
+      },
+      "visible_until_turn": 42,
+      "qa_count": 10
+    },
+    {
+      "stage": 4,
+      "add_turn_range": {
+        "start": 43,
+        "end": 56
+      },
+      "visible_until_turn": 56,
+      "qa_count": 10
+    },
+    {
+      "stage": 5,
+      "add_turn_range": {
+        "start": 57,
+        "end": 70
+      },
+      "visible_until_turn": 70,
+      "qa_count": 10
+    }
+  ],
+  "category_counts": {
+    "actor_transfer": 11,
+    "item_state_migration": 15,
+    "identity_pollution": 4,
+    "global_memory_leak": 3,
+    "false_commitment": 10,
+    "temporal_disorder": 4,
+    "fabricated_action": 3
+  },
+  "files": {
+    "add": "add_requests.jsonl",
+    "search": "search_requests.jsonl",
+    "reference_answers": "reference_answers.jsonl",
+    "source_turns": "source_turns.json"
+  }
+}

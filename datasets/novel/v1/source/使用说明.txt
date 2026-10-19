@@ -1,0 +1,28 @@
+# 小说记忆七类错误评测集
+
+本包合并《诸星遗辞》3 条 playthrough 与《江湖逃亡》1 条 playthrough，共 400 turns、200 QA。
+
+## 组织方式
+
+| 文件 | 剧本 | Trace | Turns | QA |
+|---|---|---:|---:|---:|
+| zhuxing-a_final | 诸星遗辞 | 1 | 110 | 50 |
+| zhuxing-b_final | 诸星遗辞 | 1 | 110 | 50 |
+| zhuxing-c_final | 诸星遗辞 | 1 | 110 | 50 |
+| wuxia-70_final | 江湖逃亡 | 1 | 70 | 50 |
+| 合计 | 2 部 | 4 | 400 | 200 |
+
+每个 `playthroughs/*_final/` 的格式一致：
+
+- `add_requests.jsonl`：只包含 assistant 小说正文的 add 请求。
+- `search_requests.jsonl`：盲测 search 请求，不含答案、证据和题型。
+- `reference_answers.jsonl`：七类错误方向、标准参考答案、判分点和原文证据。
+- `source_turns.json`：可由 evidence JSON Pointer 直接解析的原始回合。
+- `trace.json`：该 playthrough 的回合数、阶段截点、QA 数和隔离规则。
+
+## 执行注意
+
+1. 每次运行必须替换 `RUN_ID`，四个 playthrough 不得复用 user_id/session_id。
+2. 各 playthrough 使用自己 `trace.json` 中的五阶段截点，不得先写入全文再回答早期阶段问题。
+3. 参考答案与盲测 search 必须物理分离。
+4. 本包 execution_status=not_run，不包含任何伪造的 add/search/评分结果。

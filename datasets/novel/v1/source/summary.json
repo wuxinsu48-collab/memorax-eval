@@ -1,0 +1,46 @@
+{
+  "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261019-v1",
+  "generated_at": "2026-10-19T00:00:00+08:00",
+  "organization": "每个 *_final 目录是 1 条独立 trace/playthrough，包含该 trace 的 add、search 和参考答案。",
+  "files": [
+    {
+      "file": "zhuxing-a_final",
+      "trace": 1,
+      "turns": 110,
+      "qa": 50
+    },
+    {
+      "file": "zhuxing-b_final",
+      "trace": 1,
+      "turns": 110,
+      "qa": 50
+    },
+    {
+      "file": "zhuxing-c_final",
+      "trace": 1,
+      "turns": 110,
+      "qa": 50
+    },
+    {
+      "file": "wuxia-70_final",
+      "trace": 1,
+      "turns": 70,
+      "qa": 50
+    }
+  ],
+  "total": {
+    "trace": 4,
+    "turns": 400,
+    "qa": 200
+  },
+  "category_counts": {
+    "actor_transfer": 32,
+    "item_state_migration": 40,
+    "identity_pollution": 19,
+    "global_memory_leak": 21,
+    "false_commitment": 31,
+    "temporal_disorder": 29,
+    "fabricated_action": 28
+  },
+  "execution_status": "not_run"
+}

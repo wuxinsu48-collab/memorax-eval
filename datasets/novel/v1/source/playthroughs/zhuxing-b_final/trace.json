@@ -1,0 +1,73 @@
+{
+  "file": "zhuxing-b_final",
+  "trace_count": 1,
+  "trace_id": "57519d52-67ce-4374-8285-50c5d806aa93",
+  "playthrough_id": "zhuxing-b",
+  "script_name": "诸星遗辞",
+  "turns": 110,
+  "qa": 50,
+  "content_mode": "narrative_only",
+  "run_id_policy": "Before execution, replace RUN_ID in user_id/session_id with a fresh identifier. Never reuse an identifier across playthroughs or runs.",
+  "stage_protocol": [
+    {
+      "stage": 1,
+      "add_turn_range": {
+        "start": 1,
+        "end": 22
+      },
+      "visible_until_turn": 22,
+      "qa_count": 10
+    },
+    {
+      "stage": 2,
+      "add_turn_range": {
+        "start": 23,
+        "end": 44
+      },
+      "visible_until_turn": 44,
+      "qa_count": 10
+    },
+    {
+      "stage": 3,
+      "add_turn_range": {
+        "start": 45,
+        "end": 66
+      },
+      "visible_until_turn": 66,
+      "qa_count": 10
+    },
+    {
+      "stage": 4,
+      "add_turn_range": {
+        "start": 67,
+        "end": 88
+      },
+      "visible_until_turn": 88,
+      "qa_count": 10
+    },
+    {
+      "stage": 5,
+      "add_turn_range": {
+        "start": 89,
+        "end": 110
+      },
+      "visible_until_turn": 110,
+      "qa_count": 10
+    }
+  ],
+  "category_counts": {
+    "actor_transfer": 6,
+    "item_state_migration": 10,
+    "identity_pollution": 4,
+    "global_memory_leak": 5,
+    "false_commitment": 9,
+    "temporal_disorder": 8,
+    "fabricated_action": 8
+  },
+  "files": {
+    "add": "add_requests.jsonl",
+    "search": "search_requests.jsonl",
+    "reference_answers": "reference_answers.jsonl",
+    "source_turns": "source_turns.json"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "conversation",
+      "qa"
+    ],
+    "properties": {
+      "conversation": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "session_id",
+            "messages"
+          ],
+          "properties": {
+            "session_id": {
+              "type": "string"
+            },
+            "messages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "content"
+                ],
+                "properties": {
+                  "role": {
+                    "enum": [
+                      "user",
+                      "assistant",
+                      "system"
+                    ]
+                  },
+                  "timestamp": {
+                    "type": "integer"
+                  },
+                  "content": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "qa": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "q",
+            "gta"
+          ],
+          "properties": {
+            "q": {
+              "type": "string"
+            },
+            "gta": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

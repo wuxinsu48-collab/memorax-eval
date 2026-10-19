@@ -1,0 +1,271 @@
+{
+  "schema_version": "unified-memory-qa-v1",
+  "protocol": "Write conversation only; retrieve(q); answer(q,retrieved_memory); evaluate(q,gta,actual_answer). Same q string in retrieval and Reader.",
+  "unified_question_count": 22,
+  "nonempty_history_snapshots": 8,
+  "original_source_records_covered": 41,
+  "specialized_source_records_excluded": 2,
+  "source_record_total": 43,
+  "source_sha256": "a61a6a2b3a86423dca08db4605cb39d1530959413e5d8c4dae2557873c36a763",
+  "question_map": [
+    {
+      "unified_id": "U01",
+      "record_index": 0,
+      "qa_index": 0,
+      "source_ids": [
+        "MA-G2-02.R4"
+      ],
+      "conversation_sha256": "8571afc6938e21501a0fe0c3f5d90e26b887278c4d156ed78dcd74c502d403bb",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U02",
+      "record_index": 0,
+      "qa_index": 1,
+      "source_ids": [
+        "MA-G2-03.R2",
+        "MA-G2-03.R3"
+      ],
+      "conversation_sha256": "8571afc6938e21501a0fe0c3f5d90e26b887278c4d156ed78dcd74c502d403bb",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U03",
+      "record_index": 1,
+      "qa_index": 0,
+      "source_ids": [
+        "MA-G2-04.R1"
+      ],
+      "conversation_sha256": "f9494b6fa52690646535d8ed0feb09911079467ece2a08003278c52ac1c696a7",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U04",
+      "record_index": 2,
+      "qa_index": 0,
+      "source_ids": [
+        "MA-G2-08.E1",
+        "MA-G2-08.R4",
+        "MA-G2-FIELD-PAIR.R2"
+      ],
+      "conversation_sha256": "caa80e4fb2325320b2f8dd41e91c27d35a5c88445617b23b15e77d9b9d7ecd8c",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U05",
+      "record_index": 3,
+      "qa_index": 0,
+      "source_ids": [
+        "M3_EXACT_CODE.R1",
+        "G3-001_BLIND",
+        "G3-001"
+      ],
+      "conversation_sha256": "80c582185e63df70645caae060307f0d02fc003c87e83762c31c8439f4aa9899",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U06",
+      "record_index": 4,
+      "qa_index": 0,
+      "source_ids": [
+        "M3_ORDER_ID_TYPE.E1"
+      ],
+      "conversation_sha256": "a6b11cdedf12df9421cb4268deaf4fb4220b494aa4e36a7d64ef3e96c075504c",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U07",
+      "record_index": 4,
+      "qa_index": 1,
+      "source_ids": [
+        "EXPLORATORY-SPEECH-ACT-01"
+      ],
+      "conversation_sha256": "a6b11cdedf12df9421cb4268deaf4fb4220b494aa4e36a7d64ef3e96c075504c",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U08",
+      "record_index": 5,
+      "qa_index": 0,
+      "source_ids": [
+        "M4_NPC_IDENTITY.R1"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U09",
+      "record_index": 5,
+      "qa_index": 1,
+      "source_ids": [
+        "M4_ATTITUDE_CURRENT_HISTORY.R1",
+        "M4_ATTITUDE_CURRENT_HISTORY.R3"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U10",
+      "record_index": 5,
+      "qa_index": 2,
+      "source_ids": [
+        "M4_NPC_COMPOUND_PROGRESS.R4",
+        "M4_NPC_COMPOUND_PROGRESS.R5",
+        "M4_NPC_COMPOUND_PROGRESS.R6"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U11",
+      "record_index": 5,
+      "qa_index": 3,
+      "source_ids": [
+        "M4_RUMOR_CORRECTION.R1",
+        "M4_RUMOR_CORRECTION.R2",
+        "M4_FIELDS_QUALIFICATION.R1",
+        "M4_FIELDS_QUALIFICATION.R2"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U12",
+      "record_index": 5,
+      "qa_index": 4,
+      "source_ids": [
+        "M4_FICTION_ACTUAL.R1"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U13",
+      "record_index": 5,
+      "qa_index": 5,
+      "source_ids": [
+        "G4_NPC_CURRENT_ATTITUDE",
+        "G4_NPC_CURRENT_ATTITUDE_TOP10_CONTROL"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "original end-user QA; controls mapped without separate weighting"
+    },
+    {
+      "unified_id": "U14",
+      "record_index": 5,
+      "qa_index": 6,
+      "source_ids": [
+        "G4_NPC_CURRENT_ATTITUDE_PRONOUN_CONTROL",
+        "G4_NPC_CURRENT_ATTITUDE_PRONOUN_CONTROL_FULL_SOURCE_CONTROL"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "original end-user QA; controls mapped without separate weighting"
+    },
+    {
+      "unified_id": "U15",
+      "record_index": 5,
+      "qa_index": 7,
+      "source_ids": [
+        "EXT_NPC_COMPOUND_CURRENT_EXT"
+      ],
+      "conversation_sha256": "d5fdc662bcad3cb640fd08b713647014fa631db49bd86a2bcec4794d4710df08",
+      "transformation": "original end-user QA; controls mapped without separate weighting"
+    },
+    {
+      "unified_id": "U16",
+      "record_index": 6,
+      "qa_index": 0,
+      "source_ids": [
+        "M4_ALLERGY_PERSON_SCOPE.R2",
+        "M4_DRINK_UPDATE_CAUSE.R2",
+        "M4_DRINK_UPDATE_CAUSE.R3"
+      ],
+      "conversation_sha256": "5bc3e62fb8bef27f8eb2d1180f3ba12fbd08c9799a4cb483433da3c453f4bdb3",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U17",
+      "record_index": 6,
+      "qa_index": 1,
+      "source_ids": [
+        "M4_ALLERGY_PERSON_SCOPE.R3"
+      ],
+      "conversation_sha256": "5bc3e62fb8bef27f8eb2d1180f3ba12fbd08c9799a4cb483433da3c453f4bdb3",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U18",
+      "record_index": 6,
+      "qa_index": 2,
+      "source_ids": [
+        "M4_EXPLICIT_NONE_UNKNOWN.R1",
+        "M4_EXPLICIT_NONE_UNKNOWN.R2",
+        "M4_NOVEL_PROFILE.R1",
+        "M4_NOVEL_PROFILE.R2",
+        "M4_NOVEL_PROFILE.R3"
+      ],
+      "conversation_sha256": "5bc3e62fb8bef27f8eb2d1180f3ba12fbd08c9799a4cb483433da3c453f4bdb3",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U19",
+      "record_index": 6,
+      "qa_index": 3,
+      "source_ids": [
+        "G5_AUDIT_MARS_RELEVANCE.E1"
+      ],
+      "conversation_sha256": "5bc3e62fb8bef27f8eb2d1180f3ba12fbd08c9799a4cb483433da3c453f4bdb3",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U20",
+      "record_index": 6,
+      "qa_index": 4,
+      "source_ids": [
+        "G5_AUDIT_RELEVANT_POSITIVE.R2"
+      ],
+      "conversation_sha256": "5bc3e62fb8bef27f8eb2d1180f3ba12fbd08c9799a4cb483433da3c453f4bdb3",
+      "transformation": "failed memory observations"
+    },
+    {
+      "unified_id": "U21",
+      "record_index": 6,
+      "qa_index": 5,
+      "source_ids": [
+        "EXT_ORDINARY_NAMED_ENTITIES_EXT"
+      ],
+      "conversation_sha256": "5bc3e62fb8bef27f8eb2d1180f3ba12fbd08c9799a4cb483433da3c453f4bdb3",
+      "transformation": "original end-user QA; controls mapped without separate weighting"
+    },
+    {
+      "unified_id": "U22",
+      "record_index": 7,
+      "qa_index": 0,
+      "source_ids": [
+        "EARLY_UI_G1_MODALITY"
+      ],
+      "conversation_sha256": "c31309ff7086f1477393e8d2b21efc01ab6d6c960ce985c775eaebffd7d7ad82",
+      "transformation": "historical UI case converted to ordinary semantic regression; no historical-result assertion"
+    }
+  ],
+  "special_checks": [
+    {
+      "source_id": "MA-G2-FIELD-PAIR.E1",
+      "record_index": 0,
+      "qa_index": 0,
+      "reason": "Specific main-text/summary projection contract; business state is already covered in unified cancellation QA."
+    },
+    {
+      "source_id": "G5_DIAG_EMPTY_NAMESPACE",
+      "record_index": 1,
+      "qa_index": 0,
+      "reason": "API request validation is not a semantic memory QA."
+    }
+  ],
+  "notes": [
+    "Lineage is provenance only, not a runtime routing index. The unified file is sufficient to run all semantic QA.",
+    "Old leakage, duplicate top_k and full-source controls are mapped to ordinary semantic questions without extra weight; they no longer represent separate execution conditions.",
+    "Questions and requirements changed; prior scores cannot be transferred. No new service/model evaluation was performed during conversion.",
+    "Only q/gta/answer evaluation measures end-to-end QA. Save retrieved_memory and actual parameters to investigate errors; this evaluator cannot verify omitted raw memory or quotation fidelity without the payload."
+  ]
+}

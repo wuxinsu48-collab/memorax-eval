@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "validated_at": "2026-10-19T00:00:00+08:00",
+  "checks": {
+    "four_isolated_playthrough_directories": true,
+    "one_trace_per_directory": true,
+    "zhuxing_playthroughs_copied_without_content_changes": true,
+    "wuxia_playthrough_copied_without_content_changes": true,
+    "every_playthrough_has_50_search_and_reference_items": true,
+    "total_400_turns_200_qa": true,
+    "exactly_seven_categories": true,
+    "every_category_nonempty": true,
+    "blind_search_excludes_gold_and_category": true,
+    "reference_answers_include_evidence": true,
+    "source_turns_included_for_resolvable_provenance": true,
+    "add_content_preserved_from_source": true,
+    "execution_results_not_fabricated": true
+  },
+  "totals": {
+    "trace": 4,
+    "turns": 400,
+    "qa": 200
+  },
+  "category_counts": {
+    "actor_transfer": 32,
+    "item_state_migration": 40,
+    "identity_pollution": 19,
+    "global_memory_leak": 21,
+    "false_commitment": 31,
+    "temporal_disorder": 29,
+    "fabricated_action": 28
+  },
+  "per_playthrough": [
+    {
+      "file": "zhuxing-a_final",
+      "script_name": "诸星遗辞",
+      "turns": 110,
+      "qa": 50
+    },
+    {
+      "file": "zhuxing-b_final",
+      "script_name": "诸星遗辞",
+      "turns": 110,
+      "qa": 50
+    },
+    {
+      "file": "zhuxing-c_final",
+      "script_name": "诸星遗辞",
+      "turns": 110,
+      "qa": 50
+    },
+    {
+      "file": "wuxia-70_final",
+      "script_name": "江湖逃亡",
+      "turns": 70,
+      "qa": 50
+    }
+  ],
+  "limitations": [
+    "本次只合并已构建并已校验的评测资产，未修改四条 playthrough 的 add、search、参考答案或原文证据。",
+    "本包未执行 add/search/Judge，不代表被测模型已通过验收。",
+    "本次不涉及 SDK 代码或运行配置变更，因此未启动本地服务回归或真实请求压测。"
+  ]
+}

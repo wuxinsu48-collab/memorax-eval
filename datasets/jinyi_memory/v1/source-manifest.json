@@ -1,0 +1,28 @@
+{
+  "source_archive": "memorax-preview-investigation-handoff-20261018.zip",
+  "archive_sha256": "867a8ba1c339a8af063ac63250bd12bd0f79377f5de4e892d124424fe0f696c6",
+  "source_date": "2026-10-18",
+  "import_transform": "Add a final LF only where absent; JSON values and prompt bytes unchanged.",
+  "files_sha256": {
+    "conversation-qa-unified.json": "a75bf4c017babdf95ac31a563b3b7df89c6207b5dc476d58585b83401bf8150c",
+    "reader-prompt.txt": "2cac056b8ebe2494f77e242b210fb67ac4dfcf5429d4f50327a4c6a79ea7bee0",
+    "judge-prompt.txt": "ade49c7712f614747ca97a6426a61073e234bfa7f6915f2e9a2d4fbe07439960",
+    "schema.json": "23cfba50b1e0c890f872a18811c1c9c8335a807b912be5345cba0ed270ab9265",
+    "source-lineage.json": "fa6e6b5287f2db078c33ab731905d7da135dd10d98496050a4c0a5f12a8a3cc3",
+    "special-interface-checks.json": "7b0bd8deafdd1539994f238efb11febc1bb506fdb9370696c451c9cc5ab1b3ac"
+  },
+  "original_files_sha256": {
+    "conversation-qa-unified.json": "ff11fb13c8d6a96364a7ff637e429c200b9198c7bcdb6b134a940fff7a4ac989",
+    "reader-prompt.txt": "2cac056b8ebe2494f77e242b210fb67ac4dfcf5429d4f50327a4c6a79ea7bee0",
+    "judge-prompt.txt": "ade49c7712f614747ca97a6426a61073e234bfa7f6915f2e9a2d4fbe07439960",
+    "schema.json": "3bcb89f15fe9135959bfeb92b297002f4ad5e965c4213f590158f4b30efe6270",
+    "source-lineage.json": "49d526a85bf6485de883dd2f373f198c3c47f2600d2d5c478009dd0b2dfb9a81",
+    "special-interface-checks.json": "f1c927d665068af571207c0693884b72e947ef278f61b55beb68d20f068b00c8"
+  },
+  "records": 8,
+  "questions": 22,
+  "session_instances": 21,
+  "message_instances": 27,
+  "unique_sessions": 18,
+  "unique_messages": 24
+}

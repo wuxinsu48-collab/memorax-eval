@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/datanxt/FinRank",
+  "commit": "916dc27e77b90e294ea1b3a2cc5b0abcf07392d1",
+  "license": "CC BY-NC 4.0",
+  "files_sha256": {
+    "FinRank.jsonl": "e9295f680bd6085362486c90c170bce243be7f85ed18074d6ba21cb75141ac78",
+    "LICENSE": "f25d6c0a113a59e82aa92797f15538a6e174ab5efd18742263cbdbadad443402",
+    "run_baselines.py": "94a84ba736b40ed80bd4e0a1ba25ab8fd29f6bbfd7ab3e285bd825bb24263665"
+  },
+  "records": 1185,
+  "unique_passages": 5230,
+  "corpus_recipe": "Exact nonempty text deduplication over passages then hard_negatives in record order; canonical IDs FRP000001 onward.",
+  "protocol": "finrank-random30-isolated-pack-v1",
+  "sampling": {
+    "sample_size": 30,
+    "unique_question_ids": 1180,
+    "policy": "Uniform without replacement; first record per upstream question_id; seed and selected IDs frozen per run."
+  },
+  "changes": "Upstream files unmodified. Global text catalog only assigns stable passage IDs offline. Each run writes 30 isolated, shuffled question-specific supporting-plus-hard-negative packs, one Add per question. No QA or relevance labels enter Add; Search uses the original question without gold answers or query_rewrite.",
+  "metrics": "Recall@1/5/10/20, MRR, nDCG@10 on independently verified original passage matches within each isolated question world. Unmapped evidence retains rank positions. This is not the native full-ranking baseline, global-corpus retrieval or full-filing retrieval."
+}
