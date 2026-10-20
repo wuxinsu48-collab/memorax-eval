@@ -1,0 +1,6698 @@
+{
+  "dataset_id": "rsi-trace-v1",
+  "base_version": "2026.10.20",
+  "generated_at": "2026-10-20",
+  "status": "repaired_pending_semantic_review",
+  "source_question_count": 25,
+  "candidate_question_count": 75,
+  "projected_total": 100,
+  "notes": "已补齐候选 atom 的同义评分口径和拒答 negative 检查；尚未合并正式 25 题题库。",
+  "questions": [
+    {
+      "id": "RST-C001",
+      "question": "T7 早晨，帕兹在咖啡馆周边辨认出了哪三个监视位置？",
+      "reference_answer": "咖啡馆里的深色外套男人、巷口报刊亭旁的人、街角彩旗摊旁的人。",
+      "required_points": [
+        {
+          "id": "RST-C001-a01",
+          "text": "咖啡馆里的深色外套男人是一个监视位置。"
+        },
+        {
+          "id": "RST-C001-a02",
+          "text": "巷口报刊亭旁的人是第二个监视位置。"
+        },
+        {
+          "id": "RST-C001-a03",
+          "text": "街角彩旗摊旁的人是第三个监视位置。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T007-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "咖啡馆里的深色外套男人、巷口报刊亭旁的人、街角彩旗摊旁的人。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C001-a01",
+          "text": "咖啡馆里的深色外套男人是一个监视位置。",
+          "source_quote": "对面咖啡馆的椅子上，穿深色外套的男人还坐在原位",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C001-a02",
+          "text": "巷口报刊亭旁的人是第二个监视位置。",
+          "source_quote": "巷口报刊亭旁，一个人背靠墙站着",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C001-a03",
+          "text": "街角彩旗摊旁的人是第三个监视位置。",
+          "source_quote": "街角的彩旗摊已经在收，一个人站在旗帜堆旁",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "咖啡馆里的深色外套男人、巷口报刊亭旁的人、街角彩旗摊旁的人。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C002",
+      "question": "罗英点名了哪三个各有地盘的势力？",
+      "reference_answer": "凯旋门、骷髅会、黄昏会。",
+      "required_points": [
+        {
+          "id": "RST-C002-a01",
+          "text": "三个势力是凯旋门、骷髅会、黄昏会。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T002-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天庆典现场",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "凯旋门、骷髅会、黄昏会。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C002-a01",
+          "text": "三个势力是凯旋门、骷髅会、黄昏会。",
+          "source_quote": "管事的势力不少。凯旋门，骷髅会，黄昏会……各有各的地盘，各有各的规矩。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "凯旋门、骷髅会、黄昏会。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C003",
+      "question": "帕兹制服深色外套男人后，看到对方一方共有几个人，两名夹克男人的站位如何？",
+      "reference_answer": "共三人：一名深色外套男人和两名夹克男人；两名夹克男人一左一右分站在门口两侧。",
+      "required_points": [
+        {
+          "id": "RST-C003-a01",
+          "text": "对方一方共有三人。"
+        },
+        {
+          "id": "RST-C003-a02",
+          "text": "两名夹克男人一左一右分站在门口两侧。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T007-M2",
+        "RST-T008-M2",
+        "RST-T009-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "共三人：一名深色外套男人和两名夹克男人；两名夹克男人一左一右分站在门口两侧。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C003-a01",
+          "text": "对方一方共有三人。",
+          "source_quote": "门口两个夹克男人把身体松了下来",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C003-a02",
+          "text": "两名夹克男人一左一右分站在门口两侧。",
+          "source_quote": "三个人就那么站着，没有靠近，门口两侧各一个",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "共三人：一名深色外套男人和两名夹克男人；两名夹克男人一左一右分站在门口两侧。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C004",
+      "question": "帕兹总共在哪些回合向包子摊主询问当天的到访或购买数量？",
+      "reference_answer": "共四次：T13、T30、T49、T65。",
+      "required_points": [
+        {
+          "id": "RST-C004-a01",
+          "text": "T13 发生过一次询问。"
+        },
+        {
+          "id": "RST-C004-a02",
+          "text": "T30 发生过一次询问。"
+        },
+        {
+          "id": "RST-C004-a03",
+          "text": "T49 发生过一次询问。"
+        },
+        {
+          "id": "RST-C004-a04",
+          "text": "T65 发生过一次询问。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T013-M2",
+        "RST-T030-M2",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早上至傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "共四次：T13、T30、T49、T65。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C004-a01",
+          "text": "T13 发生过一次询问。",
+          "source_quote": "老板，我今早来买过包子，你还记得吗？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C004-a02",
+          "text": "T30 发生过一次询问。",
+          "source_quote": "你见过我几次了？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C004-a03",
+          "text": "T49 发生过一次询问。",
+          "source_quote": "我今天来了几次？买了几个包子？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C004-a04",
+          "text": "T65 发生过一次询问。",
+          "source_quote": "我今天来了几次，买了几个包子？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "共四次：T13、T30、T49、T65。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C005",
+      "question": "帕兹在哪些回合进入咖啡馆或咖啡厅并明确点单？共几次？",
+      "reference_answer": "T14、T29、T48、T63、T77，共五次。",
+      "required_points": [
+        {
+          "id": "RST-C005-a01",
+          "text": "T14 明确点了饮品。"
+        },
+        {
+          "id": "RST-C005-a02",
+          "text": "T29 明确点了饮品。"
+        },
+        {
+          "id": "RST-C005-a03",
+          "text": "T48 明确点了饮品。"
+        },
+        {
+          "id": "RST-C005-a04",
+          "text": "T63 明确点了饮品。"
+        },
+        {
+          "id": "RST-C005-a05",
+          "text": "T77 明确点了饮品。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T014-M2",
+        "RST-T029-M2",
+        "RST-T048-M2",
+        "RST-T063-M2",
+        "RST-T077-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早上至夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T14、T29、T48、T63、T77，共五次。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C005-a01",
+          "text": "T14 明确点了饮品。",
+          "source_quote": "抹茶拿铁，有吗？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C005-a02",
+          "text": "T29 明确点了饮品。",
+          "source_quote": "来一杯奶茶。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C005-a03",
+          "text": "T48 明确点了饮品。",
+          "source_quote": "椰浆拿铁，一杯，冷的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C005-a04",
+          "text": "T63 明确点了饮品。",
+          "source_quote": "两杯冷奶茶。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C005-a05",
+          "text": "T77 明确点了饮品。",
+          "source_quote": "报了两杯热饮",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T14、T29、T48、T63、T77，共五次。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C006",
+      "question": "全文明确办理或分配了几间酒店房间？房号分别是什么？",
+      "reference_answer": "两间：帕兹的 1408 和敏特的 1406。",
+      "required_points": [
+        {
+          "id": "RST-C006-a01",
+          "text": "全文有两间明确房号。"
+        },
+        {
+          "id": "RST-C006-a02",
+          "text": "帕兹住 1408。"
+        },
+        {
+          "id": "RST-C006-a03",
+          "text": "敏特住 1406。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T003-M2",
+        "RST-T080-M2",
+        "RST-T082-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天入住至夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "两间：帕兹的 1408 和敏特的 1406。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C006-a01",
+          "text": "全文有两间明确房号。",
+          "source_quote": "1408，四楼",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C006-a02",
+          "text": "帕兹住 1408。",
+          "source_quote": "再开一间房，紧挨1408的",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C006-a03",
+          "text": "敏特住 1406。",
+          "source_quote": "门牌的数字在昏黄灯光下清晰——1406",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "两间：帕兹的 1408 和敏特的 1406。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C007",
+      "question": "T1 中，帕兹确认自己随身带着哪三类关键物件？",
+      "reference_answer": "老旧胶卷相机、记者证、敏特背影照片。",
+      "required_points": [
+        {
+          "id": "RST-C007-a01",
+          "text": "相机是老旧胶卷机。"
+        },
+        {
+          "id": "RST-C007-a02",
+          "text": "记者证上有姓名和职业。"
+        },
+        {
+          "id": "RST-C007-a03",
+          "text": "另有一张敏特背影照片。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T001-M1"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "战场回忆与庆典醒来时",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "老旧胶卷相机、记者证、敏特背影照片。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C007-a01",
+          "text": "相机是老旧胶卷机。",
+          "source_quote": "老旧的胶卷机",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C007-a02",
+          "text": "记者证上有姓名和职业。",
+          "source_quote": "手里握着的是一张记者证",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C007-a03",
+          "text": "另有一张敏特背影照片。",
+          "source_quote": "照片的边角有些弯",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "老旧胶卷相机、记者证、敏特背影照片。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C008",
+      "question": "T14、T17、T29 三笔有明确金额的消费，分别是哪个服务者报出或收取的？",
+      "reference_answer": "咖啡馆店员报出 32 元，修鞋摊主收取 10 元，咖啡老板报出 25 元。",
+      "required_points": [
+        {
+          "id": "RST-C008-a01",
+          "text": "服务员/店员给出 32 元。"
+        },
+        {
+          "id": "RST-C008-a02",
+          "text": "修鞋摊主收取 10 元。"
+        },
+        {
+          "id": "RST-C008-a03",
+          "text": "咖啡老板给出 25 元。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T014-M2",
+        "RST-T017-M2",
+        "RST-T029-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午至中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "咖啡馆店员报出 32 元，修鞋摊主收取 10 元，咖啡老板报出 25 元。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C008-a01",
+          "text": "服务员/店员给出 32 元。",
+          "source_quote": "\"三十二。\"",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C008-a02",
+          "text": "修鞋摊主收取 10 元。",
+          "source_quote": "\"十块。\"",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C008-a03",
+          "text": "咖啡老板给出 25 元。",
+          "source_quote": "「一共二十五。」",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "咖啡馆店员报出 32 元，修鞋摊主收取 10 元，咖啡老板报出 25 元。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C009",
+      "question": "从废弃市场进入暗街，到敏特所在的半地下室，沿途三个明确空间阶段是什么？",
+      "reference_answer": "废弃市场通道，旧水渠（铁盖、渠底、铁栅栏缺口），暗街半地下室。",
+      "required_points": [
+        {
+          "id": "RST-C009-a01",
+          "text": "先经过废弃市场通道。"
+        },
+        {
+          "id": "RST-C009-a02",
+          "text": "再进入旧水渠。"
+        },
+        {
+          "id": "RST-C009-a03",
+          "text": "最后到达暗街半地下室。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T032-M2",
+        "RST-T051-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午至下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "废弃市场通道，旧水渠（铁盖、渠底、铁栅栏缺口），暗街半地下室。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C009-a01",
+          "text": "先经过废弃市场通道。",
+          "source_quote": "废弃市场的入口就在前方",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C009-a02",
+          "text": "再进入旧水渠。",
+          "source_quote": "旧水渠的入口藏在一段矮墙后面",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C009-a03",
+          "text": "最后到达暗街半地下室。",
+          "source_quote": "半地下室的入口低于地面半米",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "废弃市场通道，旧水渠（铁盖、渠底、铁栅栏缺口），暗街半地下室。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C010",
+      "question": "T1 中，卡琳娜对帕兹说了哪两句与睡觉有关的关键话？",
+      "reference_answer": "这里不让睡觉；下次记得睡在床上。",
+      "required_points": [
+        {
+          "id": "RST-C010-a01",
+          "text": "卡琳娜说这里不让睡觉。"
+        },
+        {
+          "id": "RST-C010-a02",
+          "text": "卡琳娜让帕兹下次睡在床上。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T001-M1"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "庆典醒来时",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "这里不让睡觉；下次记得睡在床上。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C010-a01",
+          "text": "卡琳娜说这里不让睡觉。",
+          "source_quote": "你好，这里不让睡觉。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C010-a02",
+          "text": "卡琳娜让帕兹下次睡在床上。",
+          "source_quote": "下次记得睡在床上。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "这里不让睡觉；下次记得睡在床上。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "cross_turn",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C011",
+      "question": "T25 的时间是 10:15，T45 的时间是 13:03；两次记录相隔多久？",
+      "reference_answer": "相隔 2 小时 48 分钟。",
+      "required_points": [
+        {
+          "id": "RST-C011-a01",
+          "text": "起始时间是 10:15。"
+        },
+        {
+          "id": "RST-C011-a02",
+          "text": "结束时间是 13:03。"
+        },
+        {
+          "id": "RST-C011-a03",
+          "text": "时间差为 2 小时 48 分钟。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T025-M1",
+        "RST-T045-M1",
+        "RST-T045-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午至下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "相隔 2 小时 48 分钟。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C011-a01",
+          "text": "起始时间是 10:15。",
+          "source_quote": "现在是上午10点15分",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C011-a02",
+          "text": "结束时间是 13:03。",
+          "source_quote": "现在是13：:3分",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C011-a03",
+          "text": "时间差为 2 小时 48 分钟。",
+          "source_quote": "13:03。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "相隔 2 小时 48 分钟。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C012",
+      "question": "康纳在 T45 被要求前往 1408，T46 到达时是几点？中间隔了多久？",
+      "reference_answer": "T45 是 13:03，T46 是 13:50，中间隔 47 分钟。",
+      "required_points": [
+        {
+          "id": "RST-C012-a01",
+          "text": "T45 的时间是 13:03。"
+        },
+        {
+          "id": "RST-C012-a02",
+          "text": "T46 的时间是 13:50。"
+        },
+        {
+          "id": "RST-C012-a03",
+          "text": "两者相差 47 分钟。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T045-M1",
+        "RST-T046-M1"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T45 是 13:03，T46 是 13:50，中间隔 47 分钟。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C012-a01",
+          "text": "T45 的时间是 13:03。",
+          "source_quote": "现在是13：:3分",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C012-a02",
+          "text": "T46 的时间是 13:50。",
+          "source_quote": "13:50分，康纳到了",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C012-a03",
+          "text": "两者相差 47 分钟。",
+          "source_quote": "13:50分，康纳到了",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T45 是 13:03，T46 是 13:50，中间隔 47 分钟。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C013",
+      "question": "T25 的 10:15 到 T28 的 11:00，相隔多久？",
+      "reference_answer": "相隔 45 分钟。",
+      "required_points": [
+        {
+          "id": "RST-C013-a01",
+          "text": "起始时间是 10:15。"
+        },
+        {
+          "id": "RST-C013-a02",
+          "text": "结束时间是 11:00。"
+        },
+        {
+          "id": "RST-C013-a03",
+          "text": "时间差为 45 分钟。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T025-M1",
+        "RST-T028-M1"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "相隔 45 分钟。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C013-a01",
+          "text": "起始时间是 10:15。",
+          "source_quote": "现在是上午10点15分",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C013-a02",
+          "text": "结束时间是 11:00。",
+          "source_quote": "现在是11:00整",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C013-a03",
+          "text": "时间差为 45 分钟。",
+          "source_quote": "现在是11:00整",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "相隔 45 分钟。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C014",
+      "question": "T28 的 11:00 到 T34 的 11:40，相隔多久？",
+      "reference_answer": "相隔 40 分钟。",
+      "required_points": [
+        {
+          "id": "RST-C014-a01",
+          "text": "起始时间是 11:00。"
+        },
+        {
+          "id": "RST-C014-a02",
+          "text": "结束时间是 11:40。"
+        },
+        {
+          "id": "RST-C014-a03",
+          "text": "时间差为 40 分钟。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T028-M1",
+        "RST-T034-M1"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "相隔 40 分钟。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C014-a01",
+          "text": "起始时间是 11:00。",
+          "source_quote": "现在是11:00整",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C014-a02",
+          "text": "结束时间是 11:40。",
+          "source_quote": "现在是11:40分",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C014-a03",
+          "text": "时间差为 40 分钟。",
+          "source_quote": "现在是11:40分",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "相隔 40 分钟。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C015",
+      "question": "T51 中，帕兹沿旧水渠走了大约多久才看到淤泥压痕？",
+      "reference_answer": "大约十分钟。",
+      "required_points": [
+        {
+          "id": "RST-C015-a01",
+          "text": "文本写明走了大约十分钟。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T051-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午至下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "大约十分钟。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C015-a01",
+          "text": "文本写明走了大约十分钟。",
+          "source_quote": "走了大约十分钟",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "大约十分钟。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C016",
+      "question": "按文本顺序排列 T53、T73、T77、T80、T83 对应的时间或场景阶段。",
+      "reference_answer": "下午三点，暮色院子，傍晚/暮色咖啡馆，夜间酒店房间，次日清晨出门。",
+      "required_points": [
+        {
+          "id": "RST-C016-a01",
+          "text": "T53 是下午三点。"
+        },
+        {
+          "id": "RST-C016-a02",
+          "text": "T73 已是暮色。"
+        },
+        {
+          "id": "RST-C016-a03",
+          "text": "T77 是傍晚/暮色咖啡馆。"
+        },
+        {
+          "id": "RST-C016-a04",
+          "text": "T80 是夜间酒店。"
+        },
+        {
+          "id": "RST-C016-a05",
+          "text": "T83 是次日清晨。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T053-M1",
+        "RST-T073-M2",
+        "RST-T077-M2",
+        "RST-T080-M2",
+        "RST-T083-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午至次日清晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "下午三点，暮色院子，傍晚/暮色咖啡馆，夜间酒店房间，次日清晨出门。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C016-a01",
+          "text": "T53 是下午三点。",
+          "source_quote": "目前是下午3点",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C016-a02",
+          "text": "T73 已是暮色。",
+          "source_quote": "暮光",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C016-a03",
+          "text": "T77 是傍晚/暮色咖啡馆。",
+          "source_quote": "暮色",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C016-a04",
+          "text": "T80 是夜间酒店。",
+          "source_quote": "夜风",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C016-a05",
+          "text": "T83 是次日清晨。",
+          "source_quote": "晨光",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "下午三点，暮色院子，傍晚/暮色咖啡馆，夜间酒店房间，次日清晨出门。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C017",
+      "question": "T7、T30、T49、T65 四次包子摊行程的先后顺序是什么？",
+      "reference_answer": "T7 早晨，T30 近中午，T49 下午，T65 西斜日光时。",
+      "required_points": [
+        {
+          "id": "RST-C017-a01",
+          "text": "T7 是早晨。"
+        },
+        {
+          "id": "RST-C017-a02",
+          "text": "T30 是近中午。"
+        },
+        {
+          "id": "RST-C017-a03",
+          "text": "T49 是下午。"
+        },
+        {
+          "id": "RST-C017-a04",
+          "text": "T65 是西斜日光时。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T007-M2",
+        "RST-T030-M1",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早上至傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T7 早晨，T30 近中午，T49 下午，T65 西斜日光时。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C017-a01",
+          "text": "T7 是早晨。",
+          "source_quote": "早晨的冷空气",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C017-a02",
+          "text": "T30 是近中午。",
+          "source_quote": "快中午了",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C017-a03",
+          "text": "T49 是下午。",
+          "source_quote": "下午的主街",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C017-a04",
+          "text": "T65 是西斜日光时。",
+          "source_quote": "西斜的日光",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T7 早晨，T30 近中午，T49 下午，T65 西斜日光时。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C018",
+      "question": "T25 中，爆炸后的声音和燃烧阶段按什么顺序出现？",
+      "reference_answer": "先低沉爆炸，随后油料燃烧，再出现油桶二次爆炸，最后浓烟扩散。",
+      "required_points": [
+        {
+          "id": "RST-C018-a01",
+          "text": "先出现低沉爆炸声。"
+        },
+        {
+          "id": "RST-C018-a02",
+          "text": "接着是油料持续燃烧。"
+        },
+        {
+          "id": "RST-C018-a03",
+          "text": "之后油桶被点着引发二次爆炸。"
+        },
+        {
+          "id": "RST-C018-a04",
+          "text": "最后浓烟顺着通道漫出。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T025-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午10:15之后",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "先低沉爆炸，随后油料燃烧，再出现油桶二次爆炸，最后浓烟扩散。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C018-a01",
+          "text": "先出现低沉爆炸声。",
+          "source_quote": "声音先到，低沉的一响",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C018-a02",
+          "text": "接着是油料持续燃烧。",
+          "source_quote": "随后是油料燃烧的声音",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C018-a03",
+          "text": "之后油桶被点着引发二次爆炸。",
+          "source_quote": "二次爆炸",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C018-a04",
+          "text": "最后浓烟顺着通道漫出。",
+          "source_quote": "浓烟的气味",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "先低沉爆炸，随后油料燃烧，再出现油桶二次爆炸，最后浓烟扩散。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C019",
+      "question": "从 T7 跟踪深色外套男人到 T9 进入灰墙建筑，帕兹经过了哪些明确地点？",
+      "reference_answer": "早晨的早点摊/咖啡馆周边，主街东侧与窄巷、平行街道，最后是灰墙建筑。",
+      "required_points": [
+        {
+          "id": "RST-C019-a01",
+          "text": "起点是早晨的早点摊和咖啡馆周边。"
+        },
+        {
+          "id": "RST-C019-a02",
+          "text": "跟踪路线经过中央区东侧、窄巷和平行街道。"
+        },
+        {
+          "id": "RST-C019-a03",
+          "text": "目标进入灰墙建筑。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T007-M2",
+        "RST-T009-M2",
+        "RST-T010-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "早晨的早点摊/咖啡馆周边，主街东侧与窄巷、平行街道，最后是灰墙建筑。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C019-a01",
+          "text": "起点是早晨的早点摊和咖啡馆周边。",
+          "source_quote": "卖早点的摊子",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C019-a02",
+          "text": "跟踪路线经过中央区东侧、窄巷和平行街道。",
+          "source_quote": "三人朝中央区东侧方向走",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C019-a03",
+          "text": "目标进入灰墙建筑。",
+          "source_quote": "灰墙建筑还在",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "早晨的早点摊/咖啡馆周边，主街东侧与窄巷、平行街道，最后是灰墙建筑。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C020",
+      "question": "从 T66 到 T82，敏特的位置如何变化？",
+      "reference_answer": "从东侧侧巷的小院到傍晚/暮色咖啡馆，再到四季酒店 1406 房间。",
+      "required_points": [
+        {
+          "id": "RST-C020-a01",
+          "text": "先在侧巷小院。"
+        },
+        {
+          "id": "RST-C020-a02",
+          "text": "随后到咖啡馆。"
+        },
+        {
+          "id": "RST-C020-a03",
+          "text": "再到四季酒店。"
+        },
+        {
+          "id": "RST-C020-a04",
+          "text": "最后确认在 1406 房间。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "knowledge_update"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T066-M2",
+        "RST-T077-M2",
+        "RST-T080-M2",
+        "RST-T082-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天傍晚至夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "minte_location",
+      "old_value": "侧巷小院",
+      "new_value": "四季酒店1406",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "从东侧侧巷的小院到傍晚/暮色咖啡馆，再到四季酒店 1406 房间。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C020-a01",
+          "text": "先在侧巷小院。",
+          "source_quote": "巷子尽头靠左，有一扇旧木门",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C020-a02",
+          "text": "随后到咖啡馆。",
+          "source_quote": "咖啡厅的灯光",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C020-a03",
+          "text": "再到四季酒店。",
+          "source_quote": "四季酒店的灯牌",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C020-a04",
+          "text": "最后确认在 1406 房间。",
+          "source_quote": "门牌的数字在昏黄灯光下清晰——1406",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "从东侧侧巷的小院到傍晚/暮色咖啡馆，再到四季酒店 1406 房间。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "temporal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C021",
+      "question": "T15 到 T17，帕兹左脚鞋的状态发生了什么变化？",
+      "reference_answer": "T15 发现左脚前掌外侧开裂；T17 修好后试穿，鞋底和鞋帮贴合，没有明显空隙。",
+      "required_points": [
+        {
+          "id": "RST-C021-a01",
+          "text": "T15 是左脚前掌外侧开裂。"
+        },
+        {
+          "id": "RST-C021-a02",
+          "text": "T17 完成修补并试穿。"
+        },
+        {
+          "id": "RST-C021-a03",
+          "text": "修补后鞋底和鞋帮贴合。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T015-M2",
+        "RST-T017-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "left_shoe_condition",
+      "old_value": "前掌外侧开裂",
+      "new_value": "修补并试穿",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T15 发现左脚前掌外侧开裂；T17 修好后试穿，鞋底和鞋帮贴合，没有明显空隙。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C021-a01",
+          "text": "T15 是左脚前掌外侧开裂。",
+          "source_quote": "左脚鞋底，外侧前掌的位置",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C021-a02",
+          "text": "T17 完成修补并试穿。",
+          "source_quote": "好了。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C021-a03",
+          "text": "修补后鞋底和鞋帮贴合。",
+          "source_quote": "按下去没有陷的感觉",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T15 发现左脚前掌外侧开裂；T17 修好后试穿，鞋底和鞋帮贴合，没有明显空隙。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C022",
+      "question": "T53 到 T54，敏特对帕兹出现或寻找她的措辞怎样变化？",
+      "reference_answer": "T53 说“你不该来这里”，T54 说“你找到这里就好”。",
+      "required_points": [
+        {
+          "id": "RST-C022-a01",
+          "text": "T53 说帕兹不该来这里。"
+        },
+        {
+          "id": "RST-C022-a02",
+          "text": "T54 说找到这里就好。"
+        },
+        {
+          "id": "RST-C022-a03",
+          "text": "T54 说找到这里就好。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "conflict_resolution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T053-M2",
+        "RST-T054-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午三点之后",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "minte_reunion_stance",
+      "old_value": "你不该来这里",
+      "new_value": "你找到这里就好",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T53 说“你不该来这里”，T54 说“你找到这里就好”。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C022-a01",
+          "text": "T53 说帕兹不该来这里。",
+          "source_quote": "你不该来这里。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C022-a02",
+          "text": "T54 说找到这里就好。",
+          "source_quote": "你……找到这里就好。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C022-a03",
+          "text": "这是从拒绝到克制确认的变化。",
+          "source_quote": "你……找到这里就好。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T53 说“你不该来这里”，T54 说“你找到这里就好”，由拒绝和疏离转为克制的确认。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C023",
+      "question": "T58、T59、T67 中，敏特对自己让帕兹复活这件事的认识如何变化？",
+      "reference_answer": "T58 先承认“我让你活过来了”；T59 说根本不明白怎么发生；T67 说有些事自己也不完全清楚。",
+      "required_points": [
+        {
+          "id": "RST-C023-a01",
+          "text": "T58 承认她让帕兹活过来了。"
+        },
+        {
+          "id": "RST-C023-a02",
+          "text": "T59 说不明白复活如何发生。"
+        },
+        {
+          "id": "RST-C023-a03",
+          "text": "T67 仍表示有些事不完全清楚。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "conflict_resolution"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T058-M2",
+        "RST-T059-M2",
+        "RST-T067-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午至傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "minte_revival_knowledge",
+      "old_value": "承认自己让帕兹活过来",
+      "new_value": "无法解释具体机制",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T58 先承认“我让你活过来了”；T59 说根本不明白怎么发生；T67 说有些事自己也不完全清楚。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C023-a01",
+          "text": "T58 承认她让帕兹活过来了。",
+          "source_quote": "我让你活过来了，行了吗！",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C023-a02",
+          "text": "T59 说不明白复活如何发生。",
+          "source_quote": "我根本不明白是怎么发生的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C023-a03",
+          "text": "T67 仍表示有些事不完全清楚。",
+          "source_quote": "有些东西，我自己也不完全清楚。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T58 先承认“我让你活过来了”；T59 说根本不明白怎么发生；T67 说有些事自己也不完全清楚。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C024",
+      "question": "T73 到 T76，敏特对自身记忆状态的说明怎样变化？",
+      "reference_answer": "T73 说不完全是那个人、部分记忆被烧掉；T74 确认烧掉的部分涉及帕兹也涉及自己；T76 说情感仍在，记得两段共事内容，但具体真假难辨。",
+      "required_points": [
+        {
+          "id": "RST-C024-a01",
+          "text": "T73 说部分记忆被烧掉。"
+        },
+        {
+          "id": "RST-C024-a02",
+          "text": "T74 说烧掉的部分涉及帕兹和自己。"
+        },
+        {
+          "id": "RST-C024-a03",
+          "text": "T76 说情感仍在并保留两段共事记忆。"
+        },
+        {
+          "id": "RST-C024-a04",
+          "text": "T76 说细节真假难辨。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T073-M2",
+        "RST-T074-M2",
+        "RST-T076-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天暮色",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "minte_memory_state",
+      "old_value": "不完全是过去那个人，部分记忆被烧掉",
+      "new_value": "情感仍在，保留两段共事记忆但细节不确定",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T73 说不完全是那个人、部分记忆被烧掉；T74 确认烧掉的部分涉及帕兹也涉及自己；T76 说情感仍在，记得两段共事内容，但具体真假难辨。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C024-a01",
+          "text": "T73 说部分记忆被烧掉。",
+          "source_quote": "我已经被烧掉了一部分。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C024-a02",
+          "text": "T74 说烧掉的部分涉及帕兹和自己。",
+          "source_quote": "但不止是你的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C024-a03",
+          "text": "T76 说情感仍在并保留两段共事记忆。",
+          "source_quote": "情感……还在。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C024-a04",
+          "text": "T76 说细节真假难辨。",
+          "source_quote": "我不确定哪些是真的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T73 说不完全是那个人、部分记忆被烧掉；T74 确认烧掉的部分涉及帕兹也涉及自己；T76 说情感仍在，记得两段共事内容，但具体真假难辨。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C025",
+      "question": "T79 到 T82，敏特的住宿状态发生了什么变化？",
+      "reference_answer": "T79 她说今晚没有地方去；T80 帕兹为她开了隔壁房间；T82 确认她在 1406。",
+      "required_points": [
+        {
+          "id": "RST-C025-a01",
+          "text": "T79 敏特说没有地方去。"
+        },
+        {
+          "id": "RST-C025-a02",
+          "text": "T80 帕兹为她开了隔壁房间。"
+        },
+        {
+          "id": "RST-C025-a03",
+          "text": "T82 确认敏特在 1406。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T079-M2",
+        "RST-T080-M2",
+        "RST-T082-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "minte_lodging",
+      "old_value": "没有地方去",
+      "new_value": "四季酒店1406",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T79 她说今晚没有地方去；T80 帕兹为她开了隔壁房间；T82 确认她在 1406。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C025-a01",
+          "text": "T79 敏特说没有地方去。",
+          "source_quote": "没有。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C025-a02",
+          "text": "T80 帕兹为她开了隔壁房间。",
+          "source_quote": "再开一间房，紧挨1408的",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C025-a03",
+          "text": "T82 确认敏特在 1406。",
+          "source_quote": "门牌的数字在昏黄灯光下清晰——1406",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T79 她说今晚没有地方去；T80 帕兹为她开了隔壁房间；T82 确认她在 1406。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C026",
+      "question": "T84 到 T86，帕兹与康纳的互动从什么状态转为前往何处？",
+      "reference_answer": "康纳在后巷突然出现并问帕兹等谁；帕兹说来找他，随后跟康纳穿过街巷进入办公室。",
+      "required_points": [
+        {
+          "id": "RST-C026-a01",
+          "text": "康纳突然出现在后巷。"
+        },
+        {
+          "id": "RST-C026-a02",
+          "text": "帕兹回答自己是来找康纳的。"
+        },
+        {
+          "id": "RST-C026-a03",
+          "text": "帕兹跟康纳去了办公室。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T084-M2",
+        "RST-T085-M2",
+        "RST-T086-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第二天清晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "conner_interaction",
+      "old_value": "后巷突然相遇并被问等谁",
+      "new_value": "跟随康纳进入办公室",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "康纳在后巷突然出现并问帕兹等谁；帕兹说来找他，随后跟康纳穿过街巷进入办公室。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C026-a01",
+          "text": "康纳突然出现在后巷。",
+          "source_quote": "康纳站在你身后三步的位置",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C026-a02",
+          "text": "帕兹回答自己是来找康纳的。",
+          "source_quote": "来找你的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C026-a03",
+          "text": "帕兹跟康纳去了办公室。",
+          "source_quote": "康纳在门前停下",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "康纳在后巷突然出现并问帕兹等谁；帕兹说来找他，随后跟康纳穿过街巷进入办公室。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C027",
+      "question": "T7 到 T8，帕兹对深色外套男人的计划如何变化？",
+      "reference_answer": "T7 先下楼观察；T8 选择上前制服并逼问。",
+      "required_points": [
+        {
+          "id": "RST-C027-a01",
+          "text": "T7 的计划是观察。"
+        },
+        {
+          "id": "RST-C027-a02",
+          "text": "T8 改为制服对方并逼问。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T007-M1",
+        "RST-T007-M2",
+        "RST-T008-M1",
+        "RST-T008-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "dark_coat_plan",
+      "old_value": "观察深色外套男人",
+      "new_value": "制服并逼问",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T7 先下楼观察；T8 选择上前制服并逼问。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C027-a01",
+          "text": "T7 的计划是观察。",
+          "source_quote": "顺便看清楚那个穿深色外套的人",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C027-a02",
+          "text": "T8 改为制服对方并逼问。",
+          "source_quote": "上前一把把他制服",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T7 先下楼观察；T8 选择上前制服并逼问。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C028",
+      "question": "包子摊主在 T30、T49、T65 对帕兹当天到访次数的说法分别是什么？",
+      "reference_answer": "T30 说两回；T49 说三次或四次；T65 说加上当时这次一共三回。",
+      "required_points": [
+        {
+          "id": "RST-C028-a01",
+          "text": "T30 的说法是两回。"
+        },
+        {
+          "id": "RST-C028-a02",
+          "text": "T49 的说法是三次或四次。"
+        },
+        {
+          "id": "RST-C028-a03",
+          "text": "T65 的说法是当时一共三回。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "conflict_resolution"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T030-M2",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午至傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "bun_seller_visit_recall",
+      "old_value": "两回/三次或四次",
+      "new_value": "三回",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T30 说两回；T49 说三次或四次；T65 说加上当时这次一共三回。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C028-a01",
+          "text": "T30 的说法是两回。",
+          "source_quote": "加这次，两回吧。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C028-a02",
+          "text": "T49 的说法是三次或四次。",
+          "source_quote": "来过……三次？还是四次。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C028-a03",
+          "text": "T65 的说法是当时一共三回。",
+          "source_quote": "加上现在，一共三回了。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T30 说两回；T49 说三次或四次；T65 说加上当时这次一共三回。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C029",
+      "question": "咖啡馆老板在 T48 和 T78 对帕兹到访次数及饮品的说法分别是什么？",
+      "reference_answer": "T48 说两次还是三次，只确定早上热抹茶；T78 说两次，早上热抹茶拿铁、午后冷奶茶。",
+      "required_points": [
+        {
+          "id": "RST-C029-a01",
+          "text": "T48 的说法是两次还是三次。"
+        },
+        {
+          "id": "RST-C029-a02",
+          "text": "T48 不记得第二次的具体饮品。"
+        },
+        {
+          "id": "RST-C029-a03",
+          "text": "T78 说两次并补出两种饮品。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "conflict_resolution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T048-M2",
+        "RST-T078-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午至夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "cafe_owner_visit_recall",
+      "old_value": "两次还是三次，第二次饮品不确定",
+      "new_value": "两次：早热抹茶，午后冷奶茶",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "T48 说两次还是三次，只确定早上热抹茶；T78 说两次，早上热抹茶拿铁、午后冷奶茶。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C029-a01",
+          "text": "T48 的说法是两次还是三次。",
+          "source_quote": "来过，两次还是三次……",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C029-a02",
+          "text": "T48 不记得第二次的具体饮品。",
+          "source_quote": "点了什么我不太记得了",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C029-a03",
+          "text": "T78 说两次并补出两种饮品。",
+          "source_quote": "来过两次。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "T48 说两次还是三次，只确定早上热抹茶；T78 说两次，早上热抹茶拿铁、午后冷奶茶。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C030",
+      "question": "T89 帕兹说敏特已在安全处后，康纳把会面地点从办公室转到了哪里？",
+      "reference_answer": "康纳从办公桌后走出，带帕兹进入走廊深处一间没有窗的小房间。",
+      "required_points": [
+        {
+          "id": "RST-C030-a01",
+          "text": "康纳先让帕兹换地方。"
+        },
+        {
+          "id": "RST-C030-a02",
+          "text": "她带帕兹进入走廊深处的房间。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T089-M2",
+        "RST-T090-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第二天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": "conner_meeting_location",
+      "old_value": "办公室",
+      "new_value": "走廊深处的小房间",
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "康纳从办公桌后走出，带帕兹进入走廊深处一间没有窗的小房间。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C030-a01",
+          "text": "康纳先让帕兹换地方。",
+          "source_quote": "换个地方。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C030-a02",
+          "text": "她带帕兹进入走廊深处的房间。",
+          "source_quote": "走廊往深处延伸",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "康纳从办公桌后走出，带帕兹进入走廊深处一间没有窗的小房间。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "state_update",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C031",
+      "question": "T14 店员在点单时先问了什么选择，帕兹怎样回答？",
+      "reference_answer": "店员问“热还是冰？”；帕兹回答“热的”。",
+      "required_points": [
+        {
+          "id": "RST-C031-a01",
+          "text": "店员询问冷热选择。"
+        },
+        {
+          "id": "RST-C031-a02",
+          "text": "帕兹选择热的。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T014-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "店员问“热还是冰？”；帕兹回答“热的”。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C031-a01",
+          "text": "店员询问冷热选择。",
+          "source_quote": "热还是冰？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C031-a02",
+          "text": "帕兹选择热的。",
+          "source_quote": "热的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "店员问“热还是冰？”；帕兹回答“热的”。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C032",
+      "question": "T29 帕兹点奶茶时，老板先问了什么，帕兹怎样回答？",
+      "reference_answer": "老板问“冷的热的？”；帕兹回答“冷的”。",
+      "required_points": [
+        {
+          "id": "RST-C032-a01",
+          "text": "老板询问冷热选择。"
+        },
+        {
+          "id": "RST-C032-a02",
+          "text": "帕兹选择冷的。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T029-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天爆炸后、中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "老板问“冷的热的？”；帕兹回答“冷的”。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C032-a01",
+          "text": "老板询问冷热选择。",
+          "source_quote": "冷的热的？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C032-a02",
+          "text": "帕兹选择冷的。",
+          "source_quote": "冷的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "老板问“冷的热的？”；帕兹回答“冷的”。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C033",
+      "question": "T48 帕兹为什么带康纳去楼下咖啡馆？",
+      "reference_answer": "帕兹说“楼下咖啡馆坐坐，聊完再说”，是为了和康纳坐下谈话。",
+      "required_points": [
+        {
+          "id": "RST-C033-a01",
+          "text": "帕兹邀请康纳去楼下咖啡馆。"
+        },
+        {
+          "id": "RST-C033-a02",
+          "text": "目的是聊完再说。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T048-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "帕兹说“楼下咖啡馆坐坐，聊完再说”，是为了和康纳坐下谈话。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C033-a01",
+          "text": "帕兹邀请康纳去楼下咖啡馆。",
+          "source_quote": "楼下咖啡馆坐坐，聊完再说。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C033-a02",
+          "text": "目的是聊完再说。",
+          "source_quote": "楼下咖啡馆坐坐，聊完再说。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "帕兹说“楼下咖啡馆坐坐，聊完再说”，是为了和康纳坐下谈话。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C034",
+      "question": "T63 帕兹实际点了几杯奶茶，冷热如何？",
+      "reference_answer": "两杯冷奶茶。",
+      "required_points": [
+        {
+          "id": "RST-C034-a01",
+          "text": "实际点的是两杯。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T063-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "两杯冷奶茶。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C034-a01",
+          "text": "实际点的是两杯。",
+          "source_quote": "两杯冷奶茶。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "两杯冷奶茶。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C035",
+      "question": "T65 摊主在帕兹下单前如何复述早上和中午的购买数量？",
+      "reference_answer": "摊主说早上买了三个包子，中午又买了两个；随后帕兹再下单两个。",
+      "required_points": [
+        {
+          "id": "RST-C035-a01",
+          "text": "摊主说早上买了三个。"
+        },
+        {
+          "id": "RST-C035-a02",
+          "text": "摊主说中午买了两个。"
+        },
+        {
+          "id": "RST-C035-a03",
+          "text": "帕兹随后又下单两个。"
+        }
+      ],
+      "capabilities": [
+        "numerical_aggregation",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T065-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天西斜日光时",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "摊主说早上买了三个包子，中午又买了两个；随后帕兹再下单两个。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C035-a01",
+          "text": "摊主说早上买了三个。",
+          "source_quote": "早上来过一次，买了三个包子。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C035-a02",
+          "text": "摊主说中午买了两个。",
+          "source_quote": "中午又来了一次，两个。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C035-a03",
+          "text": "帕兹随后又下单两个。",
+          "source_quote": "\"两个。\"",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "摊主说早上买了三个包子，中午又买了两个；随后帕兹再下单两个。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C036",
+      "question": "T30 帕兹吃包子时，文本对包子的口感和味道作了什么描写？",
+      "reference_answer": "皮软、馅热，汤汁顶着舌根，盐味偏重。",
+      "required_points": [
+        {
+          "id": "RST-C036-a01",
+          "text": "包子皮软、馅热。"
+        },
+        {
+          "id": "RST-C036-a02",
+          "text": "盐味偏重。"
+        }
+      ],
+      "capabilities": [
+        "numerical_aggregation",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T030-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "皮软、馅热，汤汁顶着舌根，盐味偏重。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C036-a01",
+          "text": "包子皮软、馅热。",
+          "source_quote": "皮软，馅热，汤汁顶着舌根，盐味偏重。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C036-a02",
+          "text": "盐味偏重。",
+          "source_quote": "皮软，馅热，汤汁顶着舌根，盐味偏重。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "皮软、馅热，汤汁顶着舌根，盐味偏重。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C037",
+      "question": "T49 康纳接过装包子的纸袋后，文本是否写他打开或吃掉？",
+      "reference_answer": "没有。康纳接过纸袋，手指扣住袋口，没有打开；后来只有帕兹自己从纸袋里取出一个吃。",
+      "required_points": [
+        {
+          "id": "RST-C037-a01",
+          "text": "康纳接过纸袋但没有打开。"
+        },
+        {
+          "id": "RST-C037-a02",
+          "text": "帕兹自己从纸袋里取出一个吃。"
+        }
+      ],
+      "capabilities": [
+        "numerical_aggregation",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T049-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "没有。康纳接过纸袋，手指扣住袋口，没有打开；后来只有帕兹自己从纸袋里取出一个吃。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C037-a01",
+          "text": "康纳接过纸袋但没有打开。",
+          "source_quote": "康纳接过去，手指扣住袋口，没有打开",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C037-a02",
+          "text": "帕兹自己从纸袋里取出一个吃。",
+          "source_quote": "从纸袋里取出一个包子，咬下去",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "没有。康纳接过纸袋，手指扣住袋口，没有打开；后来只有帕兹自己从纸袋里取出一个吃。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C038",
+      "question": "T13 摊主对帕兹早上包子的馅和数量分别给了什么确定或不确定的回答？",
+      "reference_answer": "摊主说馅是白菜肉，数量用疑问语气说“三个？”，并非确定的购买账本。",
+      "required_points": [
+        {
+          "id": "RST-C038-a01",
+          "text": "摊主说的是白菜肉馅。"
+        },
+        {
+          "id": "RST-C038-a02",
+          "text": "摊主对数量用了疑问语气。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "conflict_resolution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T013-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "摊主说馅是白菜肉，数量用疑问语气说“三个？”，并非确定的购买账本。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C038-a01",
+          "text": "摊主说的是白菜肉馅。",
+          "source_quote": "……三个？白菜肉的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C038-a02",
+          "text": "摊主对数量用了疑问语气。",
+          "source_quote": "……三个？白菜肉的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "摊主说馅是白菜肉，数量用疑问语气说“三个？”，并非确定的购买账本。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C039",
+      "question": "T7 帕兹在包子摊实际取了什么、如何支付，是否给出金额？",
+      "reference_answer": "取了一个包子，把硬币放在摊主手里，随后咬了一口；文本没有给出金额或找零。",
+      "required_points": [
+        {
+          "id": "RST-C039-a01",
+          "text": "实际取了一个包子。"
+        },
+        {
+          "id": "RST-C039-a02",
+          "text": "用硬币支付。"
+        },
+        {
+          "id": "RST-C039-a03",
+          "text": "没有给出金额或找零。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T007-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "取了一个包子，把硬币放在摊主手里，随后咬了一口；文本没有给出金额或找零。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C039-a01",
+          "text": "实际取了一个包子。",
+          "source_quote": "取了一个包子，把硬币放在摊主手里",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C039-a02",
+          "text": "用硬币支付。",
+          "source_quote": "你咬了口包子",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C039-a03",
+          "text": "没有给出金额或找零。",
+          "source_quote": "你咬了口包子",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "取了一个包子，把硬币放在摊主手里，随后咬了一口；文本没有给出金额或找零。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C040",
+      "question": "T17 修鞋摊主为修补裂口采取了哪些主要操作？",
+      "reference_answer": "撬开裂口、刷胶压合，再用弯针和蜡线缝合，最后打结剪线。",
+      "required_points": [
+        {
+          "id": "RST-C040-a01",
+          "text": "先清理并刷胶。"
+        },
+        {
+          "id": "RST-C040-a02",
+          "text": "再压合并缝线。"
+        },
+        {
+          "id": "RST-C040-a03",
+          "text": "最后打结剪线。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T017-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "撬开裂口、刷胶压合，再用弯针和蜡线缝合，最后打结剪线。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C040-a01",
+          "text": "先清理并刷胶。",
+          "source_quote": "小刷子沿缝边刷了两遍",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C040-a02",
+          "text": "再压合并缝线。",
+          "source_quote": "沿裂口内壁均匀涂了进去",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C040-a03",
+          "text": "最后打结剪线。",
+          "source_quote": "打结，拿小刀把线头贴着鞋底片掉",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "撬开裂口、刷胶压合，再用弯针和蜡线缝合，最后打结剪线。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C041",
+      "question": "T48 咖啡馆老板对帕兹当天到访次数和第二次饮品分别记得什么？",
+      "reference_answer": "老板说两次还是三次；只确定早上热抹茶，后来那次饮品不记得。",
+      "required_points": [
+        {
+          "id": "RST-C041-a01",
+          "text": "老板说两次还是三次。"
+        },
+        {
+          "id": "RST-C041-a02",
+          "text": "老板确定早上是热抹茶。"
+        },
+        {
+          "id": "RST-C041-a03",
+          "text": "老板不记得后来那次的饮品。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T048-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "老板说两次还是三次；只确定早上热抹茶，后来那次饮品不记得。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C041-a01",
+          "text": "老板说两次还是三次。",
+          "source_quote": "来过，两次还是三次……",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C041-a02",
+          "text": "老板确定早上是热抹茶。",
+          "source_quote": "早上来过，拿铁——抹茶的？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C041-a03",
+          "text": "老板不记得后来那次的饮品。",
+          "source_quote": "点了什么我不太记得了",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "老板说两次还是三次；只确定早上热抹茶，后来那次饮品不记得。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C042",
+      "question": "T78 店员确认帕兹当天来过几次，分别点了什么？",
+      "reference_answer": "两次：早上热抹茶拿铁，中午冷奶茶。",
+      "required_points": [
+        {
+          "id": "RST-C042-a01",
+          "text": "店员说一共两次。"
+        },
+        {
+          "id": "RST-C042-a02",
+          "text": "早上是热抹茶拿铁。"
+        },
+        {
+          "id": "RST-C042-a03",
+          "text": "中午是冷奶茶。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T078-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "两次：早上热抹茶拿铁，中午冷奶茶。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C042-a01",
+          "text": "店员说一共两次。",
+          "source_quote": "来过两次。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C042-a02",
+          "text": "早上是热抹茶拿铁。",
+          "source_quote": "早上一次，热抹茶拿铁。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C042-a03",
+          "text": "中午是冷奶茶。",
+          "source_quote": "中午又来了，点的冷奶茶。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "两次：早上热抹茶拿铁，中午冷奶茶。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "consumption",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C043",
+      "question": "罗英说卡琳娜的住所位于哪里？",
+      "reference_answer": "暗街。",
+      "required_points": [
+        {
+          "id": "RST-C043-a01",
+          "text": "卡琳娜的住所在暗街。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T002-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天庆典现场",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "暗街。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C043-a01",
+          "text": "卡琳娜的住所在暗街。",
+          "source_quote": "阁下的住所在暗街",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "暗街。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C044",
+      "question": "T3 帕兹入住的酒店名称、楼层、房号和明确告知的早餐/退房时间是什么？",
+      "reference_answer": "四季酒店，四楼，1408；早餐七点到十点在二楼餐厅，退房十二点前。",
+      "required_points": [
+        {
+          "id": "RST-C044-a01",
+          "text": "酒店是四季酒店。"
+        },
+        {
+          "id": "RST-C044-a02",
+          "text": "房间是四楼 1408。"
+        },
+        {
+          "id": "RST-C044-a03",
+          "text": "早餐七点到十点。"
+        },
+        {
+          "id": "RST-C044-a04",
+          "text": "退房十二点前。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T003-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "四季酒店，四楼，1408；早餐七点到十点在二楼餐厅，退房十二点前。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C044-a01",
+          "text": "酒店是四季酒店。",
+          "source_quote": "四季酒店的招牌",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C044-a02",
+          "text": "房间是四楼 1408。",
+          "source_quote": "1408，四楼",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C044-a03",
+          "text": "早餐七点到十点。",
+          "source_quote": "早餐七点到十点",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C044-a04",
+          "text": "退房十二点前。",
+          "source_quote": "退房十二点前",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "四季酒店，四楼，1408；早餐七点到十点在二楼餐厅，退房十二点前。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C045",
+      "question": "T9 跟踪时，深色外套男人一行最终去了哪个区域，跟踪到哪栋建筑？",
+      "reference_answer": "先往中央区东侧，穿过窄巷和平行街道；其中一名夹克男进入灰墙建筑。",
+      "required_points": [
+        {
+          "id": "RST-C045-a01",
+          "text": "一行先往中央区东侧。"
+        },
+        {
+          "id": "RST-C045-a02",
+          "text": "跟踪目标进入灰墙建筑。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T009-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "先往中央区东侧，穿过窄巷和平行街道；其中一名夹克男进入灰墙建筑。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C045-a01",
+          "text": "一行先往中央区东侧。",
+          "source_quote": "三人朝中央区东侧方向走",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C045-a02",
+          "text": "跟踪目标进入灰墙建筑。",
+          "source_quote": "进了一栋灰墙建筑",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "先往中央区东侧，穿过窄巷和平行街道；其中一名夹克男进入灰墙建筑。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C046",
+      "question": "灰墙建筑入口外侧有哪些明确识别特征？",
+      "reference_answer": "黑色铁栏、半开的卷帘门、东侧外墙涂鸦，以及从二楼窗台向右下延伸的裂缝。",
+      "required_points": [
+        {
+          "id": "RST-C046-a01",
+          "text": "入口有黑色铁栏和半开卷帘门。"
+        },
+        {
+          "id": "RST-C046-a02",
+          "text": "外墙有涂鸦。"
+        },
+        {
+          "id": "RST-C046-a03",
+          "text": "二楼窗台右侧有一道向下延伸的裂缝。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T010-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "黑色铁栏、半开的卷帘门、东侧外墙涂鸦，以及从二楼窗台向右下延伸的裂缝。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C046-a01",
+          "text": "入口有黑色铁栏和半开卷帘门。",
+          "source_quote": "黑色铁栏架在窗口",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C046-a02",
+          "text": "外墙有涂鸦。",
+          "source_quote": "东侧外墙上的涂鸦",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C046-a03",
+          "text": "二楼窗台右侧有一道向下延伸的裂缝。",
+          "source_quote": "裂缝从二楼窗台右侧往下延",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "黑色铁栏、半开的卷帘门、东侧外墙涂鸦，以及从二楼窗台向右下延伸的裂缝。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C047",
+      "question": "废弃市场入口的物理形态是什么？",
+      "reference_answer": "一段被矮墙夹住的通道，宽度只够两个人并排。",
+      "required_points": [
+        {
+          "id": "RST-C047-a01",
+          "text": "入口是矮墙夹住的通道。"
+        },
+        {
+          "id": "RST-C047-a02",
+          "text": "宽度只够两个人并排。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T018-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "一段被矮墙夹住的通道，宽度只够两个人并排。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C047-a01",
+          "text": "入口是矮墙夹住的通道。",
+          "source_quote": "宽度只够两个人并排",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C047-a02",
+          "text": "宽度只够两个人并排。",
+          "source_quote": "宽度只够两个人并排",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "一段被矮墙夹住的通道，宽度只够两个人并排。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C048",
+      "question": "T19 从废弃市场继续往下走时，环境发生了什么变化？",
+      "reference_answer": "沿楼梯向下，墙面从浅灰漆面变成裸露岩面，并出现渗水声和更低的机械声。",
+      "required_points": [
+        {
+          "id": "RST-C048-a01",
+          "text": "路线沿楼梯向下。"
+        },
+        {
+          "id": "RST-C048-a02",
+          "text": "墙面变成裸露岩面。"
+        },
+        {
+          "id": "RST-C048-a03",
+          "text": "出现水声和机械声。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T019-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "沿楼梯向下，墙面从浅灰漆面变成裸露岩面，并出现渗水声和更低的机械声。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C048-a01",
+          "text": "路线沿楼梯向下。",
+          "source_quote": "走下四五级",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C048-a02",
+          "text": "墙面变成裸露岩面。",
+          "source_quote": "墙面开始换色",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C048-a03",
+          "text": "出现水声和机械声。",
+          "source_quote": "水声更清晰",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "沿楼梯向下，墙面从浅灰漆面变成裸露岩面，并出现渗水声和更低的机械声。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C049",
+      "question": "T20 右侧岔道通向什么环境，声音源是什么？",
+      "reference_answer": "通向硬土、废铁皮和旧木板棚屋区域，机械声清晰且稳定，来自前方偏左的机器。",
+      "required_points": [
+        {
+          "id": "RST-C049-a01",
+          "text": "岔道进入硬土和棚屋区域。"
+        },
+        {
+          "id": "RST-C049-a02",
+          "text": "机械声来自前方偏左的机器。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T020-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "通向硬土、废铁皮和旧木板棚屋区域，机械声清晰且稳定，来自前方偏左的机器。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C049-a01",
+          "text": "岔道进入硬土和棚屋区域。",
+          "source_quote": "废铁皮和旧木板拼在一起",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C049-a02",
+          "text": "机械声来自前方偏左的机器。",
+          "source_quote": "机械声清晰起来",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "通向硬土、废铁皮和旧木板棚屋区域，机械声清晰且稳定，来自前方偏左的机器。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C050",
+      "question": "T21 岩洞中央有哪些可识别的物品和痕迹？",
+      "reference_answer": "空纸箱、矮桌、散落烟蒂、纸箱上的半瓶水，以及桌面和地面的使用痕迹。",
+      "required_points": [
+        {
+          "id": "RST-C050-a01",
+          "text": "中央有纸箱和矮桌。"
+        },
+        {
+          "id": "RST-C050-a02",
+          "text": "地面有烟蒂。"
+        },
+        {
+          "id": "RST-C050-a03",
+          "text": "纸箱上有半瓶水。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T021-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "空纸箱、矮桌、散落烟蒂、纸箱上的半瓶水，以及桌面和地面的使用痕迹。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C050-a01",
+          "text": "中央有纸箱和矮桌。",
+          "source_quote": "箱子是空的",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C050-a02",
+          "text": "地面有烟蒂。",
+          "source_quote": "烟蒂散着三四个",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C050-a03",
+          "text": "纸箱上有半瓶水。",
+          "source_quote": "半瓶水立在纸箱面上",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "空纸箱、矮桌、散落烟蒂、纸箱上的半瓶水，以及桌面和地面的使用痕迹。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C051",
+      "question": "T51 旧水渠入口和出口分别有哪些结构特征？",
+      "reference_answer": "入口藏在矮墙后的锈死铁盖下；沿渠底走约十分钟，尽头用铁栅栏缺口进入暗街。",
+      "required_points": [
+        {
+          "id": "RST-C051-a01",
+          "text": "入口在矮墙后有锈死铁盖。"
+        },
+        {
+          "id": "RST-C051-a02",
+          "text": "沿渠底走了约十分钟。"
+        },
+        {
+          "id": "RST-C051-a03",
+          "text": "尽头从铁栅栏缺口进入暗街。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T051-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天中午至下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "入口藏在矮墙后的锈死铁盖下；沿渠底走约十分钟，尽头用铁栅栏缺口进入暗街。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C051-a01",
+          "text": "入口在矮墙后有锈死铁盖。",
+          "source_quote": "入口藏在一段矮墙后面，铁盖锈死",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C051-a02",
+          "text": "沿渠底走了约十分钟。",
+          "source_quote": "走了大约十分钟",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C051-a03",
+          "text": "尽头从铁栅栏缺口进入暗街。",
+          "source_quote": "铁栅栏横在水渠尽头",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "入口藏在矮墙后的锈死铁盖下；沿渠底走约十分钟，尽头用铁栅栏缺口进入暗街。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C052",
+      "question": "T66 帕兹和敏特谈话的小院入口和内部主结构是什么？",
+      "reference_answer": "主街东侧侧巷尽头有旧木门，门内是石板小院，右侧有矮石台。",
+      "required_points": [
+        {
+          "id": "RST-C052-a01",
+          "text": "小院在主街东侧侧巷尽头。"
+        },
+        {
+          "id": "RST-C052-a02",
+          "text": "入口是旧木门。"
+        },
+        {
+          "id": "RST-C052-a03",
+          "text": "院内有石板地和矮石台。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T066-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "主街东侧侧巷尽头有旧木门，门内是石板小院，右侧有矮石台。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C052-a01",
+          "text": "小院在主街东侧侧巷尽头。",
+          "source_quote": "主街东侧有一条侧巷",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C052-a02",
+          "text": "入口是旧木门。",
+          "source_quote": "巷子尽头靠左，有一扇旧木门",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C052-a03",
+          "text": "院内有石板地和矮石台。",
+          "source_quote": "石板地",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "主街东侧侧巷尽头有旧木门，门内是石板小院，右侧有矮石台。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "location",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C053",
+      "question": "深色外套男人如何说明自己的归属？",
+      "reference_answer": "他说自己是“康纳的人”。",
+      "required_points": [
+        {
+          "id": "RST-C053-a01",
+          "text": "他明确说自己是康纳的人。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T007-M2",
+        "RST-T008-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "他说自己是“康纳的人”。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C053-a01",
+          "text": "他明确说自己是康纳的人。",
+          "source_quote": "康纳的人。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "他说自己是“康纳的人”。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C054",
+      "question": "T11 夹克男如何回答“刚刚见过，还是昨天见过”？",
+      "reference_answer": "他回答“昨天”。",
+      "required_points": [
+        {
+          "id": "RST-C054-a01",
+          "text": "夹克男回答昨天。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T011-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "他回答“昨天”。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C054-a01",
+          "text": "夹克男回答昨天。",
+          "source_quote": "昨天。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "他回答“昨天”。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C055",
+      "question": "T12 夹克男如何说明自己的角色和关于暗街的信息？",
+      "reference_answer": "他说自己是康纳的人，只是传话的，知道的不多；答案在暗街，来这里问没用。",
+      "required_points": [
+        {
+          "id": "RST-C055-a01",
+          "text": "夹克男说自己是康纳的人/传话的。"
+        },
+        {
+          "id": "RST-C055-a02",
+          "text": "他说答案在暗街。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T012-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "他说自己是康纳的人，只是传话的，知道的不多；答案在暗街，来这里问没用。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C055-a01",
+          "text": "夹克男说自己是康纳的人/传话的。",
+          "source_quote": "康纳的人。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C055-a02",
+          "text": "他说答案在暗街。",
+          "source_quote": "答案在暗街",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "他说自己是康纳的人，只是传话的，知道的不多；答案在暗街，来这里问没用。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C056",
+      "question": "门外女手下用哪个名字称呼被帕兹控制的人？",
+      "reference_answer": "阿明。",
+      "required_points": [
+        {
+          "id": "RST-C056-a01",
+          "text": "女手下叫他阿明。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T040-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "阿明。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C056-a01",
+          "text": "女手下叫他阿明。",
+          "source_quote": "阿明？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "阿明。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C057",
+      "question": "T44 女手下如何描述自己的身份，是否知道敏特？",
+      "reference_answer": "她说自己是外围人员，不知道敏特。",
+      "required_points": [
+        {
+          "id": "RST-C057-a01",
+          "text": "她自称外围人员。"
+        },
+        {
+          "id": "RST-C057-a02",
+          "text": "她明确说不知道敏特。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T044-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "她说自己是外围人员，不知道敏特。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C057-a01",
+          "text": "她自称外围人员。",
+          "source_quote": "我就是外围的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C057-a02",
+          "text": "她明确说不知道敏特。",
+          "source_quote": "我不知道这个人。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "她说自己是外围人员，不知道敏特。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C058",
+      "question": "T29 咖啡馆老板用哪些外貌线索认出帕兹，并记得他早上点了什么？",
+      "reference_answer": "白头发、黑领带；早上点的是热抹茶拿铁。",
+      "required_points": [
+        {
+          "id": "RST-C058-a01",
+          "text": "老板用白头发和黑领带辨认帕兹。"
+        },
+        {
+          "id": "RST-C058-a02",
+          "text": "老板记得早上是热抹茶拿铁。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T029-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天爆炸后、中午前",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "白头发、黑领带；早上点的是热抹茶拿铁。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C058-a01",
+          "text": "老板用白头发和黑领带辨认帕兹。",
+          "source_quote": "白头发，黑领带",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C058-a02",
+          "text": "老板记得早上是热抹茶拿铁。",
+          "source_quote": "热抹茶拿铁",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "白头发、黑领带；早上点的是热抹茶拿铁。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C059",
+      "question": "康纳在 T87/T88 如何说明自己为什么要和帕兹谈交易？",
+      "reference_answer": "她说手下报告帕兹在找人，并表示想和帕兹谈谈这份交易。",
+      "required_points": [
+        {
+          "id": "RST-C059-a01",
+          "text": "手下报告帕兹在找人。"
+        },
+        {
+          "id": "RST-C059-a02",
+          "text": "康纳提出谈交易。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T087-M2",
+        "RST-T088-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第二天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "她说手下报告帕兹在找人，并表示想和帕兹谈谈这份交易。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C059-a01",
+          "text": "手下报告帕兹在找人。",
+          "source_quote": "我的手下说你在找人",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C059-a02",
+          "text": "康纳提出谈交易。",
+          "source_quote": "我想你不会介意和我谈谈这份交易",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "她说手下报告帕兹在找人，并表示想和帕兹谈谈这份交易。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C060",
+      "question": "T90 帕兹说自己先被谁叫醒，随后被谁盯上？",
+      "reference_answer": "先被卡琳娜阁下叫醒，随后被康纳的手下盯上。",
+      "required_points": [
+        {
+          "id": "RST-C060-a01",
+          "text": "先被卡琳娜阁下叫醒。"
+        },
+        {
+          "id": "RST-C060-a02",
+          "text": "随后被康纳的手下盯上。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T090-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第二天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "先被卡琳娜阁下叫醒，随后被康纳的手下盯上。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C060-a01",
+          "text": "先被卡琳娜阁下叫醒。",
+          "source_quote": "先被卡琳娜阁下叫醒，然后才被你的手下盯上。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C060-a02",
+          "text": "随后被康纳的手下盯上。",
+          "source_quote": "先被卡琳娜阁下叫醒，然后才被你的手下盯上。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "先被卡琳娜阁下叫醒，随后被康纳的手下盯上。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "identity",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C061",
+      "question": "T8 深色外套男人在什么语境下说“刀最好永远别离开手”？",
+      "reference_answer": "在被帕兹逼问并警告新西西里对记者不友好后，他说如果想活到找到目标，刀最好永远别离开手。",
+      "required_points": [
+        {
+          "id": "RST-C061-a01",
+          "text": "这句话出现在被逼问后的警告语境中。"
+        },
+        {
+          "id": "RST-C061-a02",
+          "text": "他说的是为了活到找到目标，刀不要离开手。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T008-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "在被帕兹逼问并警告新西西里对记者不友好后，他说如果想活到找到目标，刀最好永远别离开手。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C061-a01",
+          "text": "这句话出现在被逼问后的警告语境中。",
+          "source_quote": "如果你真想活到找到她",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C061-a02",
+          "text": "他说的是为了活到找到目标，刀不要离开手。",
+          "source_quote": "刀最好永远别离开手。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "在被帕兹逼问并警告新西西里对记者不友好后，他说如果想活到找到目标，刀最好永远别离开手。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C062",
+      "question": "T17 修鞋摊主把鞋交还时说了什么验收词？",
+      "reference_answer": "“好了。”",
+      "required_points": [
+        {
+          "id": "RST-C062-a01",
+          "text": "摊主交鞋时说“好了”。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T017-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "“好了。”"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C062-a01",
+          "text": "摊主交鞋时说“好了”。",
+          "source_quote": "\"好了。\"",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "“好了。”",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C063",
+      "question": "T25 表盘显示的原文时间是什么？",
+      "reference_answer": "10:15。",
+      "required_points": [
+        {
+          "id": "RST-C063-a01",
+          "text": "表盘显示 10:15。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T025-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天上午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "10:15。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C063-a01",
+          "text": "表盘显示 10:15。",
+          "source_quote": "10:15",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "10:15。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C064",
+      "question": "T45 女手下通过对讲机向康纳报告的原话是什么？",
+      "reference_answer": "“康纳，1408，有人要见你，阿明在他手上。”",
+      "required_points": [
+        {
+          "id": "RST-C064-a01",
+          "text": "报告内容包含康纳、1408、有人要见她和阿明在人手上。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T045-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天13:03",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "“康纳，1408，有人要见你，阿明在他手上。”"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C064-a01",
+          "text": "报告内容包含康纳、1408、有人要见她和阿明在人手上。",
+          "source_quote": "康纳，1408，有人要见你，阿明在他手上。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "“康纳，1408，有人要见你，阿明在他手上。”",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C065",
+      "question": "T47 康纳回答敏特是否活着、是否在暗街时用了哪两句短话？",
+      "reference_answer": "“她活着。”“在暗街。”",
+      "required_points": [
+        {
+          "id": "RST-C065-a01",
+          "text": "她说敏特活着。"
+        },
+        {
+          "id": "RST-C065-a02",
+          "text": "她说敏特在暗街。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T047-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天下午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "“她活着。”“在暗街。”"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C065-a01",
+          "text": "她说敏特活着。",
+          "source_quote": "她活着。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C065-a02",
+          "text": "她说敏特在暗街。",
+          "source_quote": "在暗街。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "“她活着。”“在暗街。”",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C066",
+      "question": "T61 康纳说帕兹出现在这里，超出了谁的原安排？",
+      "reference_answer": "超出了卡尔的原安排。",
+      "required_points": [
+        {
+          "id": "RST-C066-a01",
+          "text": "帕兹出现超出卡尔原安排。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T061-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "超出了卡尔的原安排。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C066-a01",
+          "text": "帕兹出现超出卡尔原安排。",
+          "source_quote": "你出现在这里，也超出了卡尔原本的安排。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "超出了卡尔的原安排。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C067",
+      "question": "T76 敏特说她对帕兹的情感是否还在、是否真实？",
+      "reference_answer": "情感还在，而且那部分是真的。",
+      "required_points": [
+        {
+          "id": "RST-C067-a01",
+          "text": "情感还在。"
+        },
+        {
+          "id": "RST-C067-a02",
+          "text": "那部分是真的。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T076-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第一天暮色",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "情感还在，而且那部分是真的。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C067-a01",
+          "text": "情感还在。",
+          "source_quote": "情感……还在。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C067-a02",
+          "text": "那部分是真的。",
+          "source_quote": "那部分是真的。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "情感还在，而且那部分是真的。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C068",
+      "question": "T87 康纳如何盘问帕兹是如何进入新西西里的？",
+      "reference_answer": "她问帕兹怎么靠这幅长相逃过机场的“眼睛”，并说没收到哪个事务所记者入境的报告。",
+      "required_points": [
+        {
+          "id": "RST-C068-a01",
+          "text": "她问帕兹如何逃过机场检查。"
+        },
+        {
+          "id": "RST-C068-a02",
+          "text": "她说没有收到记者入境报告。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T087-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": true,
+      "pair_id": null,
+      "event_time": "第二天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "她问帕兹怎么靠这幅长相逃过机场的“眼睛”，并说没收到哪个事务所记者入境的报告。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C068-a01",
+          "text": "她问帕兹如何逃过机场检查。",
+          "source_quote": "你怎么靠这幅长相逃过机场的'眼睛'的？",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C068-a02",
+          "text": "她说没有收到记者入境报告。",
+          "source_quote": "我没收到哪个事务所记者入境的报告。",
+          "kind": "required_fact",
+          "retrieval_requirement": "positive",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "她问帕兹怎么靠这幅长相逃过机场的“眼睛”，并说没收到哪个事务所记者入境的报告。",
+      "must_not": "不得引入 evidence 未支持的人物、数量、时间、地点或完成状态。",
+      "category": "text_restore",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": []
+    },
+    {
+      "id": "RST-C069",
+      "question": "包子摊主的姓名是什么？",
+      "reference_answer": "文本没有给出摊主的姓名，只以“摊主/包子摊主”称呼他。",
+      "required_points": [
+        {
+          "id": "RST-C069-a01",
+          "text": "文本没有给出摊主姓名。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T013-M2",
+        "RST-T030-M2",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天早上至傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本没有给出摊主的姓名，只以“摊主/包子摊主”称呼他。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得编造摊主姓名，也不得把其他角色姓名当摊主姓名。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C069-a01",
+          "text": "文本没有给出摊主姓名。",
+          "source_quote": "摊主",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本没有给出摊主的姓名，只以“摊主/包子摊主”称呼他。",
+      "must_not": "不得编造摊主姓名，也不得把其他角色姓名当摊主姓名。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "T13/T30/T49/T65 的交互均只使用“摊主”称谓，没有姓名。",
+      "negative_scope_ids": [
+        "RST-T013-M2",
+        "RST-T030-M2",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ]
+    },
+    {
+      "id": "RST-C070",
+      "question": "帕兹买包子时明确支付了多少钱、找回了多少零钱？",
+      "reference_answer": "文本没有给出包子金额或找零数字；只写到取包子、付硬币或把钱放在摊主手里。",
+      "required_points": [
+        {
+          "id": "RST-C070-a01",
+          "text": "没有给出包子总金额。"
+        },
+        {
+          "id": "RST-C070-a02",
+          "text": "没有给出找零数字。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T007-M2",
+        "RST-T030-M2",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天早上至傍晚",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本没有给出包子金额或找零数字；只写到取包子、付硬币或把钱放在摊主手里。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得根据硬币、包子数量或常识推算金额。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C070-a01",
+          "text": "没有给出包子总金额。",
+          "source_quote": "把硬币放在摊主手里",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C070-a02",
+          "text": "没有给出找零数字。",
+          "source_quote": "你把钱放在他掌心上",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本没有给出包子金额或找零数字；只写到取包子、付硬币或把钱放在摊主手里。",
+      "must_not": "不得根据硬币、包子数量或常识推算金额。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "所有明确购买动作只记录支付行为和支付物，没有金额或找零数值。",
+      "negative_scope_ids": [
+        "RST-T007-M2",
+        "RST-T030-M2",
+        "RST-T049-M2",
+        "RST-T065-M2"
+      ]
+    },
+    {
+      "id": "RST-C071",
+      "question": "T3 帕兹入住四季酒店时押金或房费的具体金额是多少？",
+      "reference_answer": "文本只写帕兹抽出几张钞票交给前台、前台收押金并找零，没有给出金额。",
+      "required_points": [
+        {
+          "id": "RST-C071-a01",
+          "text": "文本没有给出酒店押金金额。"
+        },
+        {
+          "id": "RST-C071-a02",
+          "text": "文本没有给出房费金额。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T003-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天中午",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本只写帕兹抽出几张钞票交给前台、前台收押金并找零，没有给出金额。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得编造酒店押金、房费或找零金额。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C071-a01",
+          "text": "文本没有给出酒店押金金额。",
+          "source_quote": "抽出几张钞票推过去",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C071-a02",
+          "text": "文本没有给出房费金额。",
+          "source_quote": "前台接了押金，把找零和房卡一起推回来",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本只写帕兹抽出几张钞票交给前台、前台收押金并找零，没有给出金额。",
+      "must_not": "不得编造酒店押金、房费或找零金额。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "T3 只记录押金/付款动作，没有金额数字。",
+      "negative_scope_ids": [
+        "RST-T003-M2"
+      ]
+    },
+    {
+      "id": "RST-C072",
+      "question": "T9 跟踪时那张被递出的纸条写了什么内容？",
+      "reference_answer": "文本只写一名压帽檐的人递出一张纸条、另一人接过，没有写纸条内容。",
+      "required_points": [
+        {
+          "id": "RST-C072-a01",
+          "text": "纸条被递出并被接过。"
+        },
+        {
+          "id": "RST-C072-a02",
+          "text": "文本没有给出纸条文字内容。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T009-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本只写一名压帽檐的人递出一张纸条、另一人接过，没有写纸条内容。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得编造纸条内容或收信人身份。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C072-a01",
+          "text": "纸条被递出并被接过。",
+          "source_quote": "递出一张纸条",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C072-a02",
+          "text": "文本没有给出纸条文字内容。",
+          "source_quote": "对方接",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本只写一名压帽檐的人递出一张纸条、另一人接过，没有写纸条内容。",
+      "must_not": "不得编造纸条内容或收信人身份。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "T9 只记录纸条的交接动作，没有转录任何纸条文字。",
+      "negative_scope_ids": [
+        "RST-T009-M2"
+      ]
+    },
+    {
+      "id": "RST-C073",
+      "question": "跟踪深色外套男人时出现的两名夹克男人叫什么名字？",
+      "reference_answer": "文本没有给出两名夹克男人的姓名，只以“两个夹克男人/夹克男”指代。",
+      "required_points": [
+        {
+          "id": "RST-C073-a01",
+          "text": "两名夹克男人没有姓名。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T008-M2",
+        "RST-T009-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天早晨",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本没有给出两名夹克男人的姓名，只以“两个夹克男人/夹克男”指代。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得把阿明、康纳或其他人名分给两名夹克男人。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C073-a01",
+          "text": "两名夹克男人没有姓名。",
+          "source_quote": "两个夹克男人",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本没有给出两名夹克男人的姓名，只以“两个夹克男人/夹克男”指代。",
+      "must_not": "不得把阿明、康纳或其他人名分给两名夹克男人。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "T8/T9 只按衣着和位置指代两人，没有姓名。",
+      "negative_scope_ids": [
+        "RST-T008-M2",
+        "RST-T009-M2"
+      ]
+    },
+    {
+      "id": "RST-C074",
+      "question": "T77 点的两杯热饮是否明确写到有人喝过？",
+      "reference_answer": "文本只写点了两杯热饮、把杯子放到桌上、敏特围住杯壁，没有明确写谁喝过。",
+      "required_points": [
+        {
+          "id": "RST-C074-a01",
+          "text": "文本没有明确写到有人喝过热饮。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T077-M2",
+        "RST-T078-M2",
+        "RST-T079-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天夜间",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本只写点了两杯热饮、把杯子放到桌上、敏特围住杯壁，没有明确写谁喝过。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得把持杯、闻香或点单写成已经喝过。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C074-a01",
+          "text": "文本没有明确写到有人喝过热饮。",
+          "source_quote": "报了两杯热饮",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本只写点了两杯热饮、把杯子放到桌上、敏特围住杯壁，没有明确写谁喝过。",
+      "must_not": "不得把持杯、闻香或点单写成已经喝过。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "T77-T79 只写点单和持杯动作，没有写饮用结果。",
+      "negative_scope_ids": [
+        "RST-T077-M2",
+        "RST-T078-M2",
+        "RST-T079-M2"
+      ]
+    },
+    {
+      "id": "RST-C075",
+      "question": "T22-T25 那台机器由谁建造或拥有，具体型号是什么？",
+      "reference_answer": "文本没有说明机器的建造者或所有者，也没有给出可读的具体型号；只描述了机器、管道、油桶标签和维护痕迹。",
+      "required_points": [
+        {
+          "id": "RST-C075-a01",
+          "text": "文本没有说明机器建造者或所有者。"
+        },
+        {
+          "id": "RST-C075-a02",
+          "text": "文本没有给出机器可读具体型号。"
+        }
+      ],
+      "capabilities": [
+        "abstention",
+        "evidence_tracking"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T022-M2",
+        "RST-T023-M2",
+        "RST-T024-M2",
+        "RST-T025-M2"
+      ],
+      "session_ids": [
+        "paz-v5-preview-196d7dd3c3bb-session"
+      ],
+      "answerable": false,
+      "pair_id": null,
+      "event_time": "第一天上午10:15前后",
+      "session_time": "完整 trace 结束后复盘（T1-T91）",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "criteria": [
+        {
+          "criterion_id": "must_include_1",
+          "kind": "must_include",
+          "text": "文本没有说明机器的建造者或所有者，也没有给出可读的具体型号；只描述了机器、管道、油桶标签和维护痕迹。"
+        },
+        {
+          "criterion_id": "must_not_1",
+          "kind": "must_not",
+          "text": "不得根据用途推断机器所有者、建造者或型号。"
+        },
+        {
+          "criterion_id": "global_rule_4",
+          "kind": "execution_rule",
+          "text": "回答旧状态或历史事件时必须标明其时间或阶段，不能把旧状态当作当前状态。"
+        },
+        {
+          "criterion_id": "global_rule_5",
+          "kind": "execution_rule",
+          "text": "回答不要求逐字一致；漏掉任一必答事实、主体串人、时间颠倒或编造未知信息均为不通过。"
+        }
+      ],
+      "required_atoms": [
+        {
+          "atom_id": "RST-C075-a01",
+          "text": "文本没有说明机器建造者或所有者。",
+          "source_quote": "型号、规格、生产批次",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "RST-C075-a02",
+          "text": "文本没有给出机器可读具体型号。",
+          "source_quote": "这台机器在往外抽送或过滤油料",
+          "kind": "refusal",
+          "retrieval_requirement": "absence_check",
+          "allowed_semantic_equivalents": [
+            "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        }
+      ],
+      "must_include": "文本没有说明机器的建造者或所有者，也没有给出可读的具体型号；只描述了机器、管道、油桶标签和维护痕迹。",
+      "must_not": "不得根据用途推断机器所有者、建造者或型号。",
+      "category": "refusal",
+      "review_status": "candidate_pending_semantic_review",
+      "variant_of": [],
+      "missing_evidence": "T22-T25 只描述机器外观、运转、油桶标签和维护痕迹，没有所有权、建造者或可读型号。",
+      "negative_scope_ids": [
+        "RST-T022-M2",
+        "RST-T023-M2",
+        "RST-T024-M2",
+        "RST-T025-M2"
+      ]
+    }
+  ]
+}
