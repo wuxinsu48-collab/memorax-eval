@@ -129,7 +129,7 @@ test('failed questions show precise reasons and have independent question and au
   await page.getByText('重试历史 · 1 次', { exact: true }).click();
   await expect(page.getByText('Server disconnected without sending a response.', { exact: true })).toBeVisible();
   await page.keyboard.press('Escape');
-  await page.getByRole('button', { name: '重试失败诊断（1）', exact: true }).click();
+  await page.getByRole('button', { name: '仅重试诊断（1）', exact: true }).click();
   await page.getByRole('dialog', { name: '重试失败诊断', exact: true }).getByRole('button', { name: '确认重试', exact: true }).click();
   expect(retries[1]).toMatchObject({ target: 'quality', item_ids: ['Q-A-01'] });
   expect(retries).toHaveLength(2);

@@ -28,12 +28,12 @@ export const smokeScope: { protocol: string; max_movie_turns: number; datasets: 
 ] };
 
 export const smokeReport = { protocol: 'six-suite-smoke-v1', status: 'passed' as const,
-  datasets: smokeScope.datasets.map(d => ({ dataset_id: d.id, status: 'passed' as const, errors: [], missing: [],
+  datasets: smokeScope.datasets.map(d => ({ dataset_id: d.id, status: 'passed' as const, errors: [], diagnostic_errors: [], missing: [],
     adds_completed: d.kind === 'episode' ? 2 : d.add_count, adds_total: d.kind === 'episode' ? 2 : d.add_count, cases_completed: d.episode_count || d.question_count,
     cases_total: d.episode_count || d.question_count })) };
 
 export const defaults = {
-  memory: { base_url: 'http://localhost:8000', timeout_s: 60 },
+  memory: { base_url: 'https://preview-text.memorax.net', timeout_s: 60 },
   answer: { base_url: 'http://localhost:8001/v1', model: 'answer-test', temperature: 0, max_tokens: 1024,
     top_p: null, frequency_penalty: null, presence_penalty: null, seed: null },
   judge: { base_url: 'http://localhost:8002/v1', model: 'judge-test', temperature: 0, max_tokens: 1024,
@@ -61,8 +61,14 @@ export const run = {
   status: 'completed', phase: 'completed',
   progress: { add_completed: 36, add_total: 36, search_completed: 36, search_total: 36,
     answer_completed: 36, answer_total: 36, judge_completed: 2, judge_total: 36 },
-  metrics: { passed: 1, failed: 1, errors: 1, judged: 2, total: 36, accuracy: 0.5 },
+  metrics: { passed: 1, failed: 1, errors: 1, judged: 2, total: 36, accuracy: 0.5,
+    blocked: 0, evaluable_total: 36, evaluable_judged: 2, evaluable_passed: 1, evaluable_failed: 1,
+    evaluable_errors: 1, evaluable_accuracy: 0.5 },
   timing: { add_seconds: 48, total_seconds: 80 },
+  add_health: { static_completed: 36, static_total: 36, dynamic_completed: 0, dynamic_total: 0, errors: 0 },
+  health_summary: { formal_errors: 1, evaluable_errors: 1, formal_retryable: 1, formal_blocked: 0,
+    diagnostic_errors: 2, diagnostic_retryable: 2, diagnostic_blocked: 0,
+    model_calls: 24, prompt_tokens: 1200, completion_tokens: 300, total_tokens: 1500, eta_seconds: null },
   profiles: ['A', 'B', 'C'].map((id) => ({
     id, name: `画像 ${id}`, user_id: `run-test-${id}`, status: 'completed', stage: 3,
     adds_completed: 12, adds_total: 12, cases_total: 12,

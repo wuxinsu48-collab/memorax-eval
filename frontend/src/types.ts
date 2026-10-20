@@ -38,6 +38,7 @@ export type CreateRun = {
   run_mode?: 'full' | 'smoke';
   name: string;
   dataset_id: string;
+  dataset_ids?: string[];
   profile_ids: string[];
   memory: { base_url: string; api_key: string; timeout_s?: number };
   answer: ModelConfig;
@@ -102,11 +103,24 @@ export type RunSummary = {
   id: string; name: string; dataset_id: string; dataset_name: string;
   created_at: string; updated_at: string; status: RunStatus; phase: string;
   progress: Progress;
-  metrics: { passed: number; failed: number; errors: number; judged: number; total: number; accuracy: number | null; qa_total?: number; episode_total?: number; episode_completed?: number };
+  metrics: { passed: number; failed: number; errors: number; judged: number; total: number; accuracy: number | null;
+    qa_total?: number; episode_total?: number; episode_completed?: number;
+    blocked?: number; evaluable_total?: number; evaluable_judged?: number; evaluable_passed?: number;
+    evaluable_failed?: number; evaluable_errors?: number; evaluable_accuracy?: number | null };
   dataset_metrics?: { dataset_id: string; kind: string; total: number; completed: number; errors: number;
     accuracy: number | null; retrieval: Record<string, number> | null; mapping_coverage: number | null;
     ncp?: NcpMetrics | null; categories?: NovelBreakdown[]; stages?: NovelBreakdown[] }[];
   timing: { add_seconds: number; total_seconds: number };
+  add_health?: {
+    static_completed: number; static_total: number;
+    dynamic_completed: number; dynamic_total: number; errors: number;
+  };
+  health_summary?: {
+    formal_errors: number; evaluable_errors: number; formal_retryable: number; formal_blocked: number;
+    diagnostic_errors: number; diagnostic_retryable: number; diagnostic_blocked: number;
+    model_calls: number; prompt_tokens: number; completion_tokens: number; total_tokens: number;
+    eta_seconds: number | null;
+  };
   profiles: { id: string; name: string; user_id: string; status: string; stage: number;
     adds_completed: number; adds_total: number; cases_total: number; stages_total?: number }[];
   error: string | null;
@@ -146,16 +160,17 @@ export type QualityReport = {
   metrics: (QualityRate & { key: string; layer: string; name: string; lower_is_better: boolean; status: string })[];
   latency: Record<string, { count: number; mean_ms: number | null; p95_ms: number | null; max_ms: number | null;
     attempts?: number; errors?: number }>;
+  retrieval_recall?: QualityRate;
   retrieval_fact_coverage: QualityRate; answer_faithfulness: QualityRate;
   retrieval_ranking: ({ dataset_id: string; mapping_coverage: number | null } & Record<string, number | string | null>)[];
   search_health: { completed: number; empty: number; with_bucket: number; automatic_empty?: number; automatic_with_bucket?: number; self_supplemented?: number };
   audit: { enabled: boolean; write_samples: number; case_samples: number; errors: number };
   scope: string; embedding_latency: null;
-  datasets?: Record<string, Pick<QualityReport, 'metrics' | 'retrieval_fact_coverage' | 'answer_faithfulness' | 'search_health' | 'audit'> & { profile_ids?: string[] }>;
+  datasets?: Record<string, Pick<QualityReport, 'metrics' | 'retrieval_recall' | 'retrieval_fact_coverage' | 'answer_faithfulness' | 'search_health' | 'audit'> & { profile_ids?: string[] }>;
 };
 export type RunDetail = RunSummary & {
   retry_options?: { cases: string[]; quality: string[]; blocked: { id: string; target: 'cases' | 'quality'; reason: string }[] };
-  active_retry?: { id: string; target: 'cases' | 'quality'; item_ids: string[]; done_ids: string[]; status: string };
+  active_retry?: { id: string; target: 'cases' | 'quality' | 'all'; item_ids: string[]; done_ids: string[]; status: string };
   retry_batches?: { id: string; target: string; item_ids: string[]; done_ids: string[]; status: string; created_at: string; finished_at?: string }[];
   ncp_metrics?: NcpMetrics | null;
   quality_report?: QualityReport;
@@ -178,7 +193,7 @@ export type NovelBreakdown = { name: string; total: number; judged: number; pass
   accuracy: number | null; point_coverage: number | null };
 export type SmokeReport = { protocol: string; status: 'passed' | 'failed' | 'running' | 'incomplete';
   datasets: { dataset_id: string; status: 'passed' | 'failed' | 'running' | 'incomplete';
-    errors: string[]; missing: string[]; cases_completed: number; cases_total: number;
+    errors: string[]; diagnostic_errors: string[]; missing: string[]; cases_completed: number; cases_total: number;
     adds_completed: number; adds_total: number }[] };
 export type Prompt = { id: string; name: string; kind: 'answer' | 'judge'; content: string; sha256: string };
 export type Preview = { effective_yaml: string | null; sha256: string | null };

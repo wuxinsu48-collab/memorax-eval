@@ -132,12 +132,14 @@ select { padding-right: 27px; text-overflow: ellipsis; }
 .heading-count { display: flex; align-items: center; gap: 9px; }
 
 .metrics-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+.metrics-strip.report-metrics-five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .metric { padding: 23px 23px 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; position: relative; }
 .metric + .metric::before { content: ""; position: absolute; left: 0; top: 23px; bottom: 23px; width: 1px; background: var(--line); }
 .metric-label { color: #7d887b; font-size: 11px; }
 .metric strong { font-size: 27px; font-weight: 560; line-height: 1.25; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
 .metric.teal strong { color: var(--teal); }
 .metric.error strong { color: var(--red); }
+.metric.warning strong { color: var(--amber); }
 .metric-note { font-size: 10px; color: #929993; line-height: 1.5; }
 .section { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 24px; min-width: 0; }
 .section-title { display: flex; align-items: center; justify-content: space-between; padding: 17px 21px; gap: 14px; min-width: 0; }
@@ -509,6 +511,7 @@ textarea:focus { outline: 2px solid #cbdcc0; border-color: #9fb994; }
   .page-heading > .tag { display: none; }
   .eyebrow { font-size: 9px; }
   .metrics-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 23px; }
+  .metrics-strip.report-metrics-five { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .metric { padding: 18px; }
   .metric:nth-child(3), .metric:nth-child(4) { border-top: 1px solid var(--line); }
   .metric:nth-child(3)::before { display: none; }
