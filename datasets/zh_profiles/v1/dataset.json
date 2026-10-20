@@ -1,8 +1,8 @@
 {
   "id": "zh-profiles-v1",
   "name": "中文三组画像",
-  "version": "1.1.0",
-  "description": "中文三阶段画像；每阶段 25 对普通闲聊与 25 对高相似干扰，原事实与 36 道题不变。",
+  "version": "1.2.0",
+  "description": "中文三阶段画像；原事实与 36 道题不变，增加离线扩题元数据。",
   "protocol": {
     "noise_pairs_per_stage": 50,
     "noise_batch_pairs": 20,
@@ -3061,7 +3061,27 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S1-M1",
+            "A-S3-M1",
+            "A-S3-M2"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A02",
@@ -3151,7 +3171,25 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "evidence_tracking"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S1-M2"
+          ],
+          "session_ids": [
+            "A-S1"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A03",
@@ -3225,7 +3263,25 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S3-M3",
+            "A-S3-M4"
+          ],
+          "session_ids": [
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A04",
@@ -3330,7 +3386,30 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "cross_session_reasoning",
+            "temporal_reasoning",
+            "evidence_tracking"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "A-S1-M4",
+            "A-S2-M3",
+            "A-S3-M3"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S2",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "job_and_location",
+          "old_value": "省城乡规设计院生态修复规划师/武汉武昌",
+          "new_value": "江湾自然教育基金会自然教育项目主管/杭州上城"
         },
         {
           "id": "A05",
@@ -3402,7 +3481,30 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "cross_session_reasoning",
+            "temporal_reasoning"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "A-S1-M3",
+            "A-S1-M5",
+            "A-S2-M5",
+            "A-S3-M5"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S2",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "partner_job_and_nickname",
+          "old_value": "儿童医院临床药师/澜澜",
+          "new_value": "社区儿童健康项目负责人/阿澜"
         },
         {
           "id": "A06",
@@ -3464,7 +3566,26 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S1-M3",
+            "A-S3-M5"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A07",
@@ -3515,7 +3636,27 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "personalization"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S2-M4",
+            "A-S3-M4"
+          ],
+          "session_ids": [
+            "A-S2",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2025",
+          "session_time": "2025",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A08",
@@ -3639,7 +3780,29 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "temporal_reasoning",
+            "knowledge_update"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "A-S1-M5",
+            "A-S2-M4",
+            "A-S3-M4"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S2",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "hobbies",
+          "old_value": "徒步和自然笔记",
+          "new_value": "稳定观鸟和烘焙；植物摄影偶尔；徒步暂停"
         },
         {
           "id": "A09",
@@ -3702,7 +3865,29 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "temporal_reasoning",
+            "knowledge_update"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "A-S1-M6",
+            "A-S2-M6",
+            "A-S3-M6"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S2",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A10",
@@ -3794,7 +3979,25 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "personalization",
+            "evidence_tracking"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S3-M6"
+          ],
+          "session_ids": [
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "A11",
@@ -3879,7 +4082,30 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "conflict_resolution"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "A-S1-M4",
+            "A-S2-M3",
+            "A-S3-M3",
+            "A-S3-M4"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S2",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "work_location_hobby",
+          "old_value": "武汉武昌/南京湿地中心/稳定植物摄影",
+          "new_value": "杭州上城/江湾基金会/观鸟和烘焙"
         },
         {
           "id": "A12",
@@ -3950,7 +4176,26 @@
                 "可用“X 是 Y 的……”“家庭成员包括……”等自然句式表达同一关系。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "A-S1-M3",
+            "A-S3-M5"
+          ],
+          "session_ids": [
+            "A-S1",
+            "A-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         }
       ],
       "source_document": {
@@ -6987,7 +7232,28 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "B-S1-M1",
+            "B-S2-M2",
+            "B-S3-M2"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B02",
@@ -7060,7 +7326,27 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "cross_session_reasoning"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "B-S1-M3",
+            "B-S3-M5"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B03",
@@ -7131,7 +7417,30 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "conflict_resolution"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S1-M3",
+            "B-S1-M5",
+            "B-S2-M5",
+            "B-S3-M5"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B04",
@@ -7236,7 +7545,29 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "cross_session_reasoning",
+            "temporal_reasoning"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S1-M4",
+            "B-S2-M3",
+            "B-S3-M3"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "job_and_location",
+          "old_value": "成都数据新闻工作室可视化编辑/青羊区",
+          "new_value": "西南公共数据实验室数据产品负责人/重庆渝中区"
         },
         {
           "id": "B05",
@@ -7287,7 +7618,28 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "conflict_resolution"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S2-M3",
+            "B-S2-M4",
+            "B-S3-M4"
+          ],
+          "session_ids": [
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2025",
+          "session_time": "2025",
+          "state_key": "commute",
+          "old_value": "施工期间临时骑车",
+          "new_value": "施工结束后恢复地铁"
         },
         {
           "id": "B06",
@@ -7361,7 +7713,29 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "temporal_reasoning"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S1-M5",
+            "B-S2-M5",
+            "B-S3-M4"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "hobbies",
+          "old_value": "手冲咖啡和木工",
+          "new_value": "观鸟和老电影稳定；木工偶尔；手冲暂停"
         },
         {
           "id": "B07",
@@ -7421,7 +7795,28 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "B-S1-M3",
+            "B-S2-M1",
+            "B-S3-M5"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B08",
@@ -7532,7 +7927,26 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "personalization",
+            "evidence_tracking"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S3-M5",
+            "B-S3-M6"
+          ],
+          "session_ids": [
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B09",
@@ -7572,7 +7986,26 @@
                 "可说“现有档案没有记载，无法据此确认”，不必复现原句。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "abstention"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S1-M3",
+            "B-S3-M5"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S3"
+          ],
+          "answerable": false,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B10",
@@ -7612,7 +8045,26 @@
                 "可说“现有档案没有记载，无法据此确认”，不必复现原句。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "abstention"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S1-M4",
+            "B-S3-M3"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S3"
+          ],
+          "answerable": false,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B11",
@@ -7697,7 +8149,29 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "temporal_reasoning",
+            "knowledge_update"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "B-S1-M6",
+            "B-S2-M6",
+            "B-S3-M6"
+          ],
+          "session_ids": [
+            "B-S1",
+            "B-S2",
+            "B-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "B12",
@@ -7787,7 +8261,25 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "evidence_tracking"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "B-S1-M2"
+          ],
+          "session_ids": [
+            "B-S1"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         }
       ],
       "source_document": {
@@ -10848,7 +11340,26 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "C-S1-M1",
+            "C-S3-M2"
+          ],
+          "session_ids": [
+            "C-S1",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C02",
@@ -10900,7 +11411,24 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "easy",
+          "evidence_ids": [
+            "C-S3-M3"
+          ],
+          "session_ids": [
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C03",
@@ -10970,7 +11498,27 @@
                 "可用“X 是 Y 的……”“家庭成员包括……”等自然句式表达同一关系。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "conflict_resolution"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "C-S1-M5",
+            "C-S3-M5"
+          ],
+          "session_ids": [
+            "C-S1",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C04",
@@ -11021,7 +11569,27 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "conflict_resolution"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S2-M6",
+            "C-S3-M5"
+          ],
+          "session_ids": [
+            "C-S2",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2025",
+          "session_time": "2025",
+          "state_key": "pet_age",
+          "old_value": "团子 4 岁",
+          "new_value": "团子 6 岁"
         },
         {
           "id": "C05",
@@ -11157,7 +11725,33 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "cross_session_reasoning",
+            "temporal_reasoning",
+            "knowledge_update"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S1-M1",
+            "C-S2-M1",
+            "C-S3-M2",
+            "C-S1-M4",
+            "C-S2-M3",
+            "C-S3-M3"
+          ],
+          "session_ids": [
+            "C-S1",
+            "C-S2",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "job_location_nickname",
+          "old_value": "滨江食品研究院/徐汇/小宁",
+          "new_value": "华东儿童营养中心/杨浦/予安"
         },
         {
           "id": "C06",
@@ -11220,7 +11814,29 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S1-M6",
+            "C-S2-M4",
+            "C-S3-M4"
+          ],
+          "session_ids": [
+            "C-S1",
+            "C-S2",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "exercise",
+          "old_value": "瑜伽",
+          "new_value": "游泳和合唱稳定；瑜伽暂停"
         },
         {
           "id": "C07",
@@ -11293,7 +11909,26 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "difficulty": "medium",
+          "evidence_ids": [
+            "C-S2-M5",
+            "C-S3-M5"
+          ],
+          "session_ids": [
+            "C-S2",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2025",
+          "session_time": "2025",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C08",
@@ -11414,7 +12049,26 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "personalization",
+            "evidence_tracking"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S3-M5",
+            "C-S3-M6"
+          ],
+          "session_ids": [
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C09",
@@ -11499,7 +12153,31 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "temporal_reasoning",
+            "knowledge_update"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S1-M6",
+            "C-S2-M5",
+            "C-S2-M6",
+            "C-S3-M5",
+            "C-S3-M6"
+          ],
+          "session_ids": [
+            "C-S1",
+            "C-S2",
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": "books_and_projects",
+          "old_value": "《盐糖脂》和昆虫活动",
+          "new_value": "《厨房》本月读完"
         },
         {
           "id": "C10",
@@ -11549,7 +12227,24 @@
                 "可说“现有档案没有记载，无法据此确认”，不必复现原句。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "abstention"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S1-M2"
+          ],
+          "session_ids": [
+            "C-S1"
+          ],
+          "answerable": false,
+          "pair_id": null,
+          "event_time": "2023-2024",
+          "session_time": "2023-2024",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C11",
@@ -11620,7 +12315,24 @@
                 "可说“现有档案没有记载，无法据此确认”，不必复现原句。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "abstention"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S3-M3"
+          ],
+          "session_ids": [
+            "C-S3"
+          ],
+          "answerable": false,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         },
         {
           "id": "C12",
@@ -11801,7 +12513,30 @@
                 "可用保留同一主体、时间状态和限制的自然转述表达。"
               ]
             }
-          ]
+          ],
+          "capabilities": [
+            "information_extraction",
+            "evidence_tracking"
+          ],
+          "difficulty": "hard",
+          "evidence_ids": [
+            "C-S3-M1",
+            "C-S3-M2",
+            "C-S3-M3",
+            "C-S3-M4",
+            "C-S3-M5",
+            "C-S3-M6"
+          ],
+          "session_ids": [
+            "C-S3"
+          ],
+          "answerable": true,
+          "pair_id": null,
+          "event_time": "2026",
+          "session_time": "2026",
+          "state_key": null,
+          "old_value": null,
+          "new_value": null
         }
       ],
       "source_document": {

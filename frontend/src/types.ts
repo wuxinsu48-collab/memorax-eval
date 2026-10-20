@@ -109,7 +109,9 @@ export type RunSummary = {
     evaluable_failed?: number; evaluable_errors?: number; evaluable_accuracy?: number | null };
   dataset_metrics?: { dataset_id: string; kind: string; total: number; completed: number; errors: number;
     accuracy: number | null; retrieval: Record<string, number> | null; mapping_coverage: number | null;
-    ncp?: NcpMetrics | null; categories?: NovelBreakdown[]; stages?: NovelBreakdown[] }[];
+    ncp?: NcpMetrics | null; categories?: NovelBreakdown[]; stages?: NovelBreakdown[];
+    capabilities?: NovelBreakdown[];
+    answerability?: { total: number; judged: number; passed: number; abstention_total: number } }[];
   timing: { add_seconds: number; total_seconds: number };
   add_health?: {
     static_completed: number; static_total: number;
@@ -140,6 +142,10 @@ export type CaseResult = {
   retrieval?: { policy: string; self_bucket_status: string; automatic_contains_self: boolean; self_evidence_count: number; automatic_evidence_count: number };
   kind?: string; dataset_id?: string; options?: Record<string, string> | null;
   stage?: number; visible_until_turn?: number; category?: { id: string; name: string };
+  capabilities?: string[]; difficulty?: 'easy' | 'medium' | 'hard'; evidence_ids?: string[];
+  session_ids?: string[]; answerable?: boolean; pair_id?: string | null;
+  event_time?: string | null; session_time?: string | null; state_key?: string | null;
+  old_value?: string | null; new_value?: string | null;
   episode_turn?: number; episode_result?: { termination: string; turns: unknown[]; [key: string]: unknown };
   quality_audit?: QualityAudit;
   reader_output?: { answer: string; evidence: { quote: string; source?: string }[]; conflicts: string[]; missing: string[] };
