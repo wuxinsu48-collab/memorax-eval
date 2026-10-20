@@ -221,6 +221,13 @@ test('NCP movies and staged novel results remain distinct on desktop and mobile'
     metrics: { ...run.metrics, episode_total: 10, episode_completed: 1 },
     cases: [{ ...run.cases[0], id: 'NCP-movie01', profile_name: '50 First Dates', kind: 'episode', verdict: null,
       episode_result: { termination: 'all_resolved', turns: [{}] } },
+      { ...run.cases[2], id: 'NCP-movie02', profile_name: 'Raiders of the Lost Ark', kind: 'episode',
+        status: 'error', error: 'Add 返回失败或部分写入',
+        error_detail: { category: 'unknown', operation: 'ncp_episode', message: 'Add 返回失败或部分写入' } },
+      { ...run.cases[2], id: 'NCP-movie03', profile_name: 'Black Swan', kind: 'episode',
+        status: 'error', error: 'method_response_fact_extract failed after 3 attempts: response is not valid JSON',
+        error_detail: { category: 'unknown', operation: 'ncp_episode',
+          message: 'method_response_fact_extract failed after 3 attempts: response is not valid JSON' } },
       { ...run.cases[0], id: 'NV-q001', kind: 'novel_qa', stage: 1, visible_until_turn: 22,
         category: { id: 'actor_transfer', name: '行为主体转移' } }],
   };
@@ -228,6 +235,8 @@ test('NCP movies and staged novel results remain distinct on desktop and mobile'
   await page.goto('/#/runs/run-test');
   await expect(page.getByRole('heading', { name: 'NCP-Bench', exact: true })).toBeVisible();
   await expect(page.getByText('电影局 · 不并入问答通过率')).toBeVisible();
+  await expect(page.getByText('审计 JSON 未恢复（1 部）', { exact: false })).toBeVisible();
+  await expect(page.getByText('Add 部分写入（1 部）', { exact: false })).toBeVisible();
   await expect(page.getByRole('heading', { name: '小说剧情记忆', exact: true })).toBeVisible();
   await expect(page.getByText('行为主体转移', { exact: true })).toBeVisible();
   await assertNoPageOverflow(page);
