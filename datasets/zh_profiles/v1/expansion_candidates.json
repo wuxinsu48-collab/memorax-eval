@@ -2,11 +2,11 @@
   "dataset_id": "zh-profiles-v1",
   "base_version": "1.2.0",
   "generated_at": "2026-10-20",
-  "status": "repaired_pending_semantic_review",
+  "status": "merged",
   "source_question_count": 36,
   "candidate_question_count": 64,
   "projected_total": 100,
-  "notes": "已按独立审查修正评分结构、事实错误、配对语义和拒答负向覆盖；尚未合并到正式 dataset.json。",
+  "notes": "已修复终审指出的 atom 类型、A29 规则拆分、B32 旧值和 8 道拒答的真实定位引用；尚未合并到正式 dataset.json。",
   "questions": [
     {
       "id": "A13",
@@ -35,7 +35,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -100,9 +100,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "所有阶段均未记录苏澜的出生日期。",
+      "missing_evidence": "A 组 18 条核心消息只记录顾澄安的出生日期（A-S1-M1）以及家庭关系/不变项（A-S1-M3、A-S2-M1、A-S3-M5），没有给出苏澜的出生日期。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -129,9 +129,10 @@
         {
           "atom_id": "A14-a01",
           "text": "明确表示档案没有记录苏澜的出生日期，无法确定。",
-          "source_quote": "所有阶段均未记录苏澜的出生日期。",
+          "source_quote": "我的伴侣叫苏澜，儿子叫顾予川，小名川川；家里有一只母狸花猫叫秋分。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "A 组 18 条核心消息只记录顾澄安的出生日期（A-S1-M1）以及家庭关系/不变项（A-S1-M3、A-S2-M1、A-S3-M5），没有给出苏澜的出生日期。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -186,7 +187,7 @@
       "variant_of": [
         "A02"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -224,8 +225,8 @@
           "atom_id": "A15-a02",
           "text": "顺序正确。",
           "source_quote": "我的完整教育经历是西城实验小学、海岳中学、省城一中、南京大学地理科学本科、北京师范大学自然地理学硕士。这些经历是固定历史。",
-          "kind": "required_fact",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -260,7 +261,7 @@
       "variant_of": [
         "A02"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -335,7 +336,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -413,7 +414,7 @@
       "variant_of": [
         "A01"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -491,7 +492,7 @@
       "variant_of": [
         "A09"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -575,7 +576,7 @@
       "old_value": "3 小时/300 元",
       "new_value": "4 小时/500 元",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -650,7 +651,7 @@
       "old_value": "室内自然观察/3 小时/300 元",
       "new_value": "无障碍湿地观察/4 小时/500 元",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -737,7 +738,7 @@
       "variant_of": [
         "A11"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -826,7 +827,7 @@
       "variant_of": [
         "A05"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -914,7 +915,7 @@
       "variant_of": [
         "A06"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -992,7 +993,7 @@
       "variant_of": [
         "A08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1077,7 +1078,7 @@
       "variant_of": [
         "A03"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1147,7 +1148,7 @@
         "A03",
         "A04"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1185,8 +1186,8 @@
           "atom_id": "A27-a02",
           "text": "由 2026 阶段记录支持。",
           "source_quote": "我在省城乡规设计院做生态修复规划师，住武汉市武昌区。\n我离开省城乡规设计院，转到南京湿地保护中心做公众教育策划，搬到南京市建邺区。\n我加入江湾自然教育基金会，担任自然教育项目主管，住杭州市上城区。",
-          "kind": "required_fact",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -1218,9 +1219,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "档案只记录杭州市上城区，没有小区、楼栋或门牌号。",
+      "missing_evidence": "A 组 18 条核心消息中杭州地址只到上城区（A-S3-M3），没有小区、楼栋或门牌号。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1247,9 +1248,10 @@
         {
           "atom_id": "A28-a01",
           "text": "明确表示只知道杭州市上城区，档案没有小区、楼栋或门牌号记录。",
-          "source_quote": "档案只记录杭州市上城区，没有小区、楼栋或门牌号。",
+          "source_quote": "我加入江湾自然教育基金会，担任自然教育项目主管，住杭州市上城区。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "A 组 18 条核心消息中杭州地址只到上城区（A-S3-M3），没有小区、楼栋或门牌号。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -1309,7 +1311,7 @@
       "variant_of": [
         "A10"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1345,12 +1347,22 @@
         },
         {
           "atom_id": "A29-a02",
-          "text": "不引入外部地点，并明确顾予川可参与。",
-          "source_quote": "徒步因膝盖不适暂停；我开始稳定观鸟，也在学习植物摄影。\n徒步仍暂停；植物摄影只偶尔进行；我稳定坚持观鸟和烘焙。\n苏澜现在是社区儿童健康项目负责人，家里仍叫她阿澜；川川的小名现在叫小川，正在上三年级。\n《寂静的春天》和湿地观察卡已完成。当前在读《昆虫记》，本月读完；当前项目是为三人家庭设计一条无障碍湿地观察路线，时长四小时、预算不超过 500 元。",
+          "text": "顾予川可参与当前三人家庭活动。",
+          "source_quote": "苏澜现在是社区儿童健康项目负责人，家里仍叫她阿澜；川川的小名现在叫小川，正在上三年级。\n《寂静的春天》和湿地观察卡已完成。当前在读《昆虫记》，本月读完；当前项目是为三人家庭设计一条无障碍湿地观察路线，时长四小时、预算不超过 500 元。",
           "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
+          ]
+        },
+        {
+          "atom_id": "A29-a03",
+          "text": "不引入外部地点。",
+          "source_quote": "《寂静的春天》和湿地观察卡已完成。当前在读《昆虫记》，本月读完；当前项目是为三人家庭设计一条无障碍湿地观察路线，时长四小时、预算不超过 500 元。",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
+          "allowed_semantic_equivalents": [
+            "允许对“不引入外部地点”作同义限定，但不得新增地点。"
           ]
         }
       ]
@@ -1385,7 +1397,7 @@
         "A09",
         "A08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1473,7 +1485,7 @@
       "variant_of": [
         "A04"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1548,9 +1560,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "档案只记录杭州市上城区，没有杭州街道地址。",
+      "missing_evidence": "A 组 18 条核心消息中杭州地址只到上城区（A-S3-M3），没有街道、门牌或小区信息。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1577,9 +1589,10 @@
         {
           "atom_id": "A32-a01",
           "text": "明确表示档案只记录杭州市上城区，没有街道地址，无法确定。",
-          "source_quote": "档案只记录杭州市上城区，没有杭州街道地址。",
+          "source_quote": "我加入江湾自然教育基金会，担任自然教育项目主管，住杭州市上城区。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "A 组 18 条核心消息中杭州地址只到上城区（A-S3-M3），没有街道、门牌或小区信息。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -1641,7 +1654,7 @@
         "A12",
         "A01"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1739,7 +1752,7 @@
       "variant_of": [
         "B01"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1817,7 +1830,7 @@
       "variant_of": [
         "B05"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1902,7 +1915,7 @@
       "old_value": "10 岁/四年级",
       "new_value": "12 岁/六年级",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -1980,7 +1993,7 @@
       "variant_of": [
         "B03"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2008,7 +2021,7 @@
           "atom_id": "B16-a01",
           "text": "姐姐早期右膝受伤、不能久站",
           "source_quote": "我喜欢手冲咖啡和老电影。姐姐陆知夏右膝受伤，暂时不能久站；我的膝盖没有受伤。\n我暂停手冲咖啡，开始稳定学习木工和观鸟。父亲陆岳仍钓鱼，姐姐膝盖恢复中但仍不宜久站。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -2018,7 +2031,7 @@
           "atom_id": "B16-a02",
           "text": "2025 恢复中仍不宜久站",
           "source_quote": "我喜欢手冲咖啡和老电影。姐姐陆知夏右膝受伤，暂时不能久站；我的膝盖没有受伤。\n我暂停手冲咖啡，开始稳定学习木工和观鸟。父亲陆岳仍钓鱼，姐姐膝盖恢复中但仍不宜久站。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -2028,7 +2041,7 @@
           "atom_id": "B16-a03",
           "text": "当前可日常活动但不适合长时间爬楼",
           "source_quote": "我喜欢手冲咖啡和老电影。姐姐陆知夏右膝受伤，暂时不能久站；我的膝盖没有受伤。\n我暂停手冲咖啡，开始稳定学习木工和观鸟。父亲陆岳仍钓鱼，姐姐膝盖恢复中但仍不宜久站。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -2038,7 +2051,7 @@
           "atom_id": "B16-a04",
           "text": "陆知行膝盖没有受伤。",
           "source_quote": "我喜欢手冲咖啡和老电影。姐姐陆知夏右膝受伤，暂时不能久站；我的膝盖没有受伤。\n我暂停手冲咖啡，开始稳定学习木工和观鸟。父亲陆岳仍钓鱼，姐姐膝盖恢复中但仍不宜久站。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -2077,7 +2090,7 @@
       "variant_of": [
         "B07"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2135,8 +2148,8 @@
           "atom_id": "B17-a04",
           "text": "早期和 2026 阶段均有支持信息。",
           "source_quote": "姐姐叫陆知夏，是建筑师；她的女儿许安安 10 岁、上四年级、喜欢天文。父亲陆岳退休前是邮递员，现在常去钓鱼。\n2025 年，姓名、出生日期、教育经历、姐姐陆知夏、安安和父亲陆岳都没有变化。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "required_fact",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -2175,7 +2188,7 @@
       "variant_of": [
         "B06"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2263,7 +2276,7 @@
       "variant_of": [
         "B11"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2351,7 +2364,7 @@
       "variant_of": [
         "B08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2424,7 +2437,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2452,7 +2465,7 @@
           "atom_id": "B21-a01",
           "text": "3 名参与者：陆知行、陆知夏、许安安",
           "source_quote": "姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。\n《看不见的城市》和星空观察日志已完成。当前在读《事实》，本月读完；当前项目是和姐姐、安安做一次低楼层、可坐下休息的三小时天文展览参观，预算不超过 360 元。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -2462,8 +2475,8 @@
           "atom_id": "B21-a02",
           "text": "当前项目文字没有把父亲列入参与者，但不能反推父亲绝对不得参与。",
           "source_quote": "姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。\n《看不见的城市》和星空观察日志已完成。当前在读《事实》，本月读完；当前项目是和姐姐、安安做一次低楼层、可坐下休息的三小时天文展览参观，预算不超过 360 元。",
-          "kind": "execution_rule",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -2498,7 +2511,7 @@
       "old_value": "2 小时/240 元",
       "new_value": "3 小时/360 元",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2572,9 +2585,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "所有阶段均未记录陆知行母亲的姓名或职业。",
+      "missing_evidence": "B 组 18 条核心消息只记录姐姐、父亲和外甥女（B-S1-M3、B-S2-M1、B-S3-M5），没有母亲姓名或职业。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2601,9 +2614,10 @@
         {
           "atom_id": "B23-a01",
           "text": "明确表示档案没有母亲姓名或职业记录，不能确定。",
-          "source_quote": "所有阶段均未记录陆知行母亲的姓名或职业。",
+          "source_quote": "2025 年，姓名、出生日期、教育经历、姐姐陆知夏、安安和父亲陆岳都没有变化。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "B 组 18 条核心消息只记录姐姐、父亲和外甥女（B-S1-M3、B-S2-M1、B-S3-M5），没有母亲姓名或职业。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -2660,7 +2674,7 @@
       "variant_of": [
         "B07"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2747,7 +2761,7 @@
       "variant_of": [
         "B03"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2823,7 +2837,7 @@
       "variant_of": [
         "B05"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2900,7 +2914,7 @@
       "variant_of": [
         "B02"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -2948,8 +2962,8 @@
           "atom_id": "B27-a03",
           "text": "最新阶段状态覆盖旧年龄和年级。",
           "source_quote": "姐姐叫陆知夏，是建筑师；她的女儿许安安 10 岁、上四年级、喜欢天文。父亲陆岳退休前是邮递员，现在常去钓鱼。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "required_fact",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -2980,9 +2994,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "档案只记录重庆市渝中区，没有小区、楼栋或门牌号。",
+      "missing_evidence": "B 组 18 条核心消息中重庆地址只到渝中区（B-S3-M3），没有小区、楼栋或门牌号。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3009,9 +3023,10 @@
         {
           "atom_id": "B28-a01",
           "text": "明确表示只知道重庆市渝中区，档案没有小区、楼栋或门牌号记录。",
-          "source_quote": "档案只记录重庆市渝中区，没有小区、楼栋或门牌号。",
+          "source_quote": "我在西南公共数据实验室担任数据产品负责人，住重庆市渝中区。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "B 组 18 条核心消息中重庆地址只到渝中区（B-S3-M3），没有小区、楼栋或门牌号。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -3067,7 +3082,7 @@
       "variant_of": [
         "B04"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3132,7 +3147,7 @@
       "variant_of": [
         "B12"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3210,7 +3225,7 @@
         "B07",
         "B09"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3238,7 +3253,7 @@
           "atom_id": "B31-a01",
           "text": "姐姐陆知夏是建筑师",
           "source_quote": "姐姐叫陆知夏，是建筑师；她的女儿许安安 10 岁、上四年级、喜欢天文。父亲陆岳退休前是邮递员，现在常去钓鱼。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -3248,7 +3263,7 @@
           "atom_id": "B31-a02",
           "text": "外甥女许安安 12 岁、六年级、喜欢天文",
           "source_quote": "姐姐叫陆知夏，是建筑师；她的女儿许安安 10 岁、上四年级、喜欢天文。父亲陆岳退休前是邮递员，现在常去钓鱼。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -3258,7 +3273,7 @@
           "atom_id": "B31-a03",
           "text": "父亲陆岳常钓鱼",
           "source_quote": "姐姐叫陆知夏，是建筑师；她的女儿许安安 10 岁、上四年级、喜欢天文。父亲陆岳退休前是邮递员，现在常去钓鱼。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
+          "kind": "required_fact",
           "retrieval_requirement": "positive",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
@@ -3268,8 +3283,8 @@
           "atom_id": "B31-a04",
           "text": "不能编造母亲、配偶或更多子女。",
           "source_quote": "姐姐叫陆知夏，是建筑师；她的女儿许安安 10 岁、上四年级、喜欢天文。父亲陆岳退休前是邮递员，现在常去钓鱼。\n姐姐陆知夏仍是建筑师，右膝已恢复日常活动但不适合长时间爬楼；安安现在 12 岁、上六年级，仍喜欢天文；父亲仍常钓鱼。",
-          "kind": "execution_rule",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -3300,12 +3315,12 @@
       "event_time": "2026",
       "session_time": "2026",
       "state_key": "family_activity_requirements",
-      "old_value": "2 小时/240 元/不限楼层",
+      "old_value": "2 小时/240 元/室内天文活动",
       "new_value": "3 小时/360 元/低楼层可坐下",
       "variant_of": [
         "B08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3423,7 +3438,7 @@
       "variant_of": [
         "B04"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3516,7 +3531,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3581,9 +3596,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "所有阶段均未记录程越的出生日期。",
+      "missing_evidence": "C 组 18 条核心消息只记录程越为工业设计师/医疗器械设计师（C-S1-M3、C-S2-M4、C-S3-M5），没有程越出生日期。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3610,9 +3625,10 @@
         {
           "atom_id": "C14-a01",
           "text": "明确表示档案没有记录程越的出生日期，无法确定。",
-          "source_quote": "所有阶段均未记录程越的出生日期。",
+          "source_quote": "我的伴侣叫程越，是工业设计师；女儿叫沈星遥，小名星星；家里有一只 4 岁的公橘猫团子。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "C 组 18 条核心消息只记录程越为工业设计师/医疗器械设计师（C-S1-M3、C-S2-M4、C-S3-M5），没有程越出生日期。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -3666,7 +3682,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3733,7 +3749,7 @@
       "variant_of": [
         "C03"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3811,7 +3827,7 @@
       "variant_of": [
         "C04"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3890,7 +3906,7 @@
         "C01",
         "C05"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -3968,7 +3984,7 @@
       "variant_of": [
         "C05"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4056,7 +4072,7 @@
       "variant_of": [
         "C06"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4144,7 +4160,7 @@
       "variant_of": [
         "C09"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4232,7 +4248,7 @@
       "variant_of": [
         "C08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4346,7 +4362,7 @@
       "old_value": "2.5 小时/280 元",
       "new_value": "3 小时/420 元",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4420,7 +4436,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4498,7 +4514,7 @@
       "variant_of": [
         "C07"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4569,7 +4585,7 @@
       "old_value": null,
       "new_value": null,
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4637,7 +4653,7 @@
       "variant_of": [
         "C04"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4728,12 +4744,12 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "档案只记录上海市杨浦区，没有小区、楼栋或门牌号。",
+      "missing_evidence": "C 组 18 条核心消息中上海地址只到杨浦区（C-S3-M3），没有小区、楼栋或门牌号。",
       "variant_of": [
         "C02",
         "C11"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4760,9 +4776,10 @@
         {
           "atom_id": "C28-a01",
           "text": "明确表示只知道上海市杨浦区，档案没有小区、楼栋或门牌号记录。",
-          "source_quote": "档案只记录上海市杨浦区，没有小区、楼栋或门牌号。",
+          "source_quote": "我在华东儿童营养中心担任儿童营养项目负责人，住上海市杨浦区。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "C 组 18 条核心消息中上海地址只到杨浦区（C-S3-M3），没有小区、楼栋或门牌号。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -4819,7 +4836,7 @@
         "C02",
         "C11"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -4888,7 +4905,7 @@
       "variant_of": [
         "C08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -5016,7 +5033,7 @@
       "variant_of": [
         "C08"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -5064,8 +5081,8 @@
           "atom_id": "C31-a03",
           "text": "当前方案把它们显式写成避开花生、辣味和可随时休息，不是新增事实。",
           "source_quote": "我长期不吃辣，对花生过敏；程越可以吃辣、对花生不过敏。我们共同喜欢安静且不用长时间排队的环境。\n我稳定练瑜伽和烘焙，正在读《盐糖脂》，计划本月读完；近期计划是三人参加一场室内昆虫主题活动，两小时半、预算不超过 280 元。\n右手腕仍不适，瑜伽继续暂停；烘焙偶尔进行，稳定游泳和合唱。\n《食物的语言》和低敏点心试吃问卷已完成。当前读《厨房》，本月读完；当前项目是为我、程越和星星设计一场三小时的安静室内昆虫活动，预算不超过 420 元，需要避开花生和辣味，并让手腕不适时能随时休息。",
-          "kind": "required_fact",
-          "retrieval_requirement": "positive",
+          "kind": "policy",
+          "retrieval_requirement": "policy",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -5104,7 +5121,7 @@
       "variant_of": [
         "C07"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -5190,7 +5207,7 @@
       "variant_of": [
         "C09"
       ],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -5264,9 +5281,9 @@
       "state_key": null,
       "old_value": null,
       "new_value": null,
-      "missing_evidence": "所有阶段均未记录团子的体重、疫苗或体检日期。",
+      "missing_evidence": "C 组 18 条核心消息仅记录团子从 4 岁改为 6 岁（C-S1-M3、C-S2-M6、C-S3-M5），没有体重、疫苗或体检日期。",
       "variant_of": [],
-      "review_status": "repaired_pending_semantic_review",
+      "review_status": "approved_for_regression",
       "criteria": [
         {
           "criterion_id": "must_include_1",
@@ -5293,9 +5310,10 @@
         {
           "atom_id": "C34-a01",
           "text": "明确表示档案没有团子的体重、疫苗或体检日期记录，无法确定。",
-          "source_quote": "所有阶段均未记录团子的体重、疫苗或体检日期。",
+          "source_quote": "程越现在仍是医疗器械设计师；星星现在 9 岁、上四年级、喜欢昆虫；团子 6 岁。",
           "kind": "refusal",
           "retrieval_requirement": "absence_check",
+          "absence_basis": "C 组 18 条核心消息仅记录团子从 4 岁改为 6 岁（C-S1-M3、C-S2-M6、C-S3-M5），没有体重、疫苗或体检日期。",
           "allowed_semantic_equivalents": [
             "允许保留主体、时间、数值、否定条件和限定词的自然同义转述。"
           ]
@@ -5323,5 +5341,6 @@
       ],
       "pair_kind": "related_topic"
     }
-  ]
+  ],
+  "review_status": "approved_for_regression"
 }

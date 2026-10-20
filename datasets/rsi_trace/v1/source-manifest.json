@@ -5,10 +5,10 @@
   "source_origin": "/Users/dengchaosu/Documents/Codex/2026-10-16/ka/outputs/universal-memory-v5/paz-preview/paz-v5-preview-196d7dd3c3bb",
   "original_add_count": 91,
   "original_question_count": 11,
-  "expanded_question_count": 25,
+  "expanded_question_count": 100,
   "files_sha256": {
     "add_requests.json": "770e88117775e3f1d3c5b9d789af1366d84ef2cd97511d5246e0bf5e10858410",
-    "questions.json": "cc465b95af0b38fb05dfe9da0e6ad49d189fa4385ab377dfbd5a4f51cda0c0f5"
+    "questions.json": "bb9cb1ef9ed64c8d8961e6e67789cdf5e135187e5a8e9e26bf7e6e9840298f98"
   },
-  "changes": "The 91 source Add messages were copied without changing message text or metadata. P01-P11 preserve the original standard answers; 14 additional questions are derived from the same frozen text and existing review evidence. API keys, YAML, historical answers and runtime receipts are not included."
+  "changes": "The 91 source Add messages were copied without changing message text or metadata. P01-P11 preserve the original standard answers; 14 additional questions are derived from the same frozen text, and 75 audited expansion candidates add trace-backed coverage."
 }
