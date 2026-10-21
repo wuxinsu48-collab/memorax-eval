@@ -380,6 +380,7 @@ textarea:focus { outline: 2px solid #cbdcc0; border-color: #9fb994; }
 .profile-progress-heading .status { font-size: 9px; padding: 4px 6px; }
 .profile-progress-count { display: flex; gap: 17px; font-size: 9px; color: #8e9e7c; margin: 11px 0 7px; }
 .profile-progress-item > code { color: #a9b399; font-size: 9px; line-height: 1.6; display: block; }
+.results-section, .result-tabs { min-width: 0; max-width: 100%; }
 .result-tabs { display: flex; gap: 23px; padding: 0 21px; border-bottom: 1px solid var(--line); overflow-x: auto; }
 .result-tabs button { display: flex; gap: 6px; align-items: center; padding: 16px 0; border: 0; border-bottom: 2px solid transparent; background: none; color: #8c9c79; font-size: 11px; white-space: nowrap; flex-shrink: 0; }
 .result-tabs button[aria-selected="true"] { color: var(--teal); border-bottom-color: var(--teal); }
@@ -728,6 +729,7 @@ textarea:focus { outline: 2px solid #cbdcc0; border-color: #9fb994; }
 .blocked-detail-item > div { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .blocked-detail-item code { overflow-wrap: anywhere; font-size: 10px; }
 .blocked-detail-item p { margin: 8px 0 0; color: #67746b; font-size: 11px; line-height: 1.7; }
+.blocked-detail-actions { display: flex; justify-content: flex-end; gap: 9px; padding-top: 18px; flex-wrap: wrap; }
 
 @media (max-width: 760px) {
   .question-toolbar { padding-left: 15px; padding-right: 15px; }

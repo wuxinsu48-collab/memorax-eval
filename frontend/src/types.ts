@@ -308,6 +308,21 @@ export type QualityReport = {
   datasets?: Record<string, Pick<QualityReport, 'metrics' | 'retrieval_recall' | 'retrieval_fact_coverage' | 'answer_faithfulness' | 'search_health' | 'audit'> & { profile_ids?: string[] }>;
 };
 export type RunDetail = RunSummary & {
+  reconciliation?: {
+    at: string;
+    summary: { complete: number; empty: number; partial: number; unknown: number };
+    items: {
+      profile_id: string; add_id: string;
+      status: 'complete' | 'empty' | 'partial' | 'unknown';
+      matched: number; expected: number; bucket_count: number; reason: string;
+      missing?: string[];
+    }[];
+  };
+  replacement?: {
+    source_run_id: string; source_manifest_sha256: string; source_state_sha256: string;
+    profile_ids: string[]; blocked_case_ids: string[]; new_user_ids: Record<string, string>;
+    operation: 'isolated-blocked-replay';
+  };
   retry_options?: { cases: string[]; quality: string[]; blocked: { id: string; target: 'cases' | 'quality'; reason: string }[] };
   active_retry?: { id: string; target: 'cases' | 'quality' | 'all'; item_ids: string[]; done_ids: string[]; status: string };
   retry_batches?: { id: string; target: string; item_ids: string[]; done_ids: string[]; status: string; created_at: string; finished_at?: string }[];
