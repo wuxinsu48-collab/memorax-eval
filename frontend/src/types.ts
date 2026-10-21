@@ -16,7 +16,7 @@ export type SearchConfig = {
   top_k: number;
   k_dense: number;
   k_sparse: number;
-  max_per_type?: number;
+  max_buckets?: number;
   bucket_content_limit?: number;
   include_self_bucket?: boolean;
   include_all_buckets?: boolean;
