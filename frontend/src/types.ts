@@ -206,6 +206,57 @@ export type MiniConsistency = {
   }[];
   notes: string[];
 };
+export type MiniCapability = {
+  id: string;
+  label: string;
+  description: string;
+  failure_mode: string;
+};
+export type MiniQuestionTask = {
+  id: string;
+  kind: 'qa' | 'episode';
+  question: string;
+  dataset_id: string;
+  group_id: string;
+  group_name: string;
+  task_type: string;
+  question_family: string | null;
+  difficulty: 'easy' | 'medium' | 'hard';
+  difficulty_source: 'source' | 'derived' | 'protocol';
+  difficulty_reason: string;
+  why_hard: string;
+  evaluation_value: string;
+  capabilities: MiniCapability[];
+  risks: { id: string; label: string; description: string }[];
+  reference_answer: string | null;
+  required_points: { id: string; text: string; source_quote?: string }[];
+  evidence: {
+    id: string; kind: string; location: string; role: string | null;
+    content: string; condition?: string; violation?: string;
+  }[];
+  misleading: {
+    id: string; kind: string; label: string; location: string; content: string;
+  }[];
+  metadata: Record<string, unknown>;
+};
+export type MiniQuestionIndex = {
+  protocol: string;
+  generated_at: string;
+  summary: {
+    total_tasks: number;
+    qa_tasks: number;
+    episode_tasks: number;
+    hard_tasks: number;
+    difficulty_counts: Record<'easy' | 'medium' | 'hard', number>;
+    capability_counts: Record<string, number>;
+    risk_counts: Record<string, number>;
+    type_counts: Record<string, number>;
+    explicit_distractor_tasks: number;
+  };
+  capability_catalog: Record<string, Omit<MiniCapability, 'id'>>;
+  risk_catalog: Record<string, { label: string; description: string }>;
+  tasks: MiniQuestionTask[];
+};
 export type CaseResult = {
   error_detail?: FailureDetail | null;
   attempt_history?: RetryAttempt[];

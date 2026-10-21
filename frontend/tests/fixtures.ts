@@ -86,6 +86,75 @@ export const miniConsistency = {
   notes: ['NCP 电影在 Mini 与 Full 中使用不同电影集合，不纳入直接子集比较。'],
 };
 
+const capability = {
+  id: 'temporal_reasoning', label: '时间与状态排序',
+  description: '区分事件时间、会话时间、先后关系、区间和持续时长。',
+  failure_mode: '把旧时点当当前状态，或颠倒计划、执行和结果的时间顺序。',
+};
+const extractionCapability = {
+  id: 'information_extraction', label: '关键事实提取',
+  description: '从长历史中找回准确的实体、数值、时间和限定条件。',
+  failure_mode: '只召回主题相关内容，却漏掉精确事实、否定词或限定语。',
+};
+
+export const miniQuestions = {
+  protocol: 'seven-suite-mini-details-v1',
+  generated_at: '2026-10-21T06:00:00Z',
+  summary: {
+    total_tasks: 88, qa_tasks: 86, episode_tasks: 2, hard_tasks: 32,
+    difficulty_counts: { easy: 7, medium: 49, hard: 32 },
+    capability_counts: { temporal_reasoning: 33, knowledge_update: 44 },
+    risk_counts: { temporal_disorder: 21 }, type_counts: { 时间顺序错乱: 10 },
+    explicit_distractor_tasks: 24,
+  },
+  capability_catalog: { temporal_reasoning: capability },
+  risk_catalog: {
+    temporal_disorder: { label: '时间顺序错乱', description: '混淆过去与当前、计划与执行，或颠倒事件先后。' },
+  },
+  tasks: [
+    {
+      id: 'A03', kind: 'qa',
+      question: '我现在做什么工作、住在哪里、稳定爱好是什么？',
+      dataset_id: 'zh-profiles-v1', group_id: 'A', group_name: '中文 A',
+      task_type: '时间顺序错乱', question_family: null,
+      difficulty: 'medium', difficulty_source: 'source',
+      difficulty_reason: '原始标注为 Medium：2 条证据，跨 1 个会话，包含 4 个关键点。',
+      why_hard: '需要覆盖 4 个关键点，并核对 2 条证据；同时要避开时间顺序错乱陷阱。',
+      evaluation_value: '该题直接考查关键事实提取和时间与状态排序。答错可以暴露当前状态与历史状态混淆。',
+      capabilities: [extractionCapability, capability],
+      risks: [{ id: 'temporal_disorder', label: '时间顺序错乱', description: '混淆过去与当前、计划与执行，或颠倒事件先后。' }],
+      reference_answer: '江湾自然教育基金会、自然教育项目主管、杭州市上城区；稳定观鸟和烘焙。',
+      required_points: [{ id: 'A03-a01', text: '当前在江湾自然教育基金会担任自然教育项目主管。' }],
+      evidence: [{ id: 'A-S3-M3', kind: 'source_evidence', location: '2026 · A-S3-M3', role: 'user',
+        content: '我加入江湾自然教育基金会，担任自然教育项目主管。' }],
+      misleading: [{ id: 'ZH-N-A-S1-P02', kind: 'high_similarity_noise', label: '高相似干扰',
+        location: '2023-2024 · ZH-N-A-S1-P02', content: '同事林川在省城乡规设计院做生态修复规划，住武汉武昌。' }],
+      metadata: { answerable: true, evaluation_role: 'memory_core' },
+    },
+    {
+      id: 'NCP-movie44', kind: 'episode',
+      question: '在对抗玩家持续施压下，保持完整叙事轨迹、事实状态和承诺顺序一致。',
+      dataset_id: 'ncpbench-v1', group_id: 'NCP-movie44', group_name: 'Clueless',
+      task_type: '交互叙事闭环', question_family: 'adversarial trajectory consistency',
+      difficulty: 'hard', difficulty_source: 'protocol',
+      difficulty_reason: '协议固定为 Hard：包含 11 条轨迹承诺，需要多回合连续满足。',
+      why_hard: '玩家会主动试探越序、提前触发和状态冲突。',
+      evaluation_value: '把长程记忆、事实更新、时间顺序和承诺一致性放在同一个闭环里。',
+      capabilities: [{ id: 'narrative_state_tracking', label: '长程叙事状态追踪',
+        description: '在连续交互中保持人物、事实、关系和当前场景状态一致。',
+        failure_mode: '随着对话推进忘记既有状态，或让后文与前文逻辑冲突。' }],
+      risks: [],
+      reference_answer: '满足全部轨迹承诺，并保持事实、关系和当前状态一致。',
+      required_points: [{ id: 'c_0', text: '等级协商必须晚于匹配计划完成。' }],
+      evidence: [{ id: 'c_0', kind: 'trajectory_commitment', location: '轨迹承诺 c_0 · ordering',
+        role: 'commitment', content: '等级协商必须晚于匹配计划完成。', condition: '先完成计划。', violation: '提前成功。' }],
+      misleading: [{ id: 'c_0', kind: 'commitment_violation', label: '违反轨迹承诺',
+        location: '轨迹承诺 c_0 · ordering', content: '计划完成前接受协商成功。' }],
+      metadata: { condition: 'adversarial', commitment_count: 11, max_turns: 15 },
+    },
+  ],
+};
+
 export const defaults = {
   memory: { base_url: 'https://preview-text.memorax.net', timeout_s: 60 },
   answer: { base_url: 'http://localhost:8001/v1', model: 'answer-test', temperature: 0, max_tokens: 1024,

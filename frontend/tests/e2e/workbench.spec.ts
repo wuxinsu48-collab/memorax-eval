@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { dataset, defaults, miniConsistency, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
+import { dataset, defaults, miniConsistency, miniQuestions, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
 
 test.beforeEach(async ({ page }) => {
   if (!process.env.MEMORAX_E2E_STATIC) return;
@@ -32,6 +32,7 @@ async function mockApi(page: Page) {
       : path === '/datasets' ? { datasets: [dataset] }
       : path === '/mini' ? miniScope
       : path === '/mini/consistency' ? miniConsistency
+      : path === '/mini/questions' ? miniQuestions
       : path.startsWith('/datasets/') ? { ...dataset, data: { profiles: dataset.profiles } }
       : path === '/prompts' ? { prompts }
       : path === '/config/preview' ? { effective_yaml: defaults.common_yaml.content, sha256: 'test-sha' }
@@ -193,6 +194,24 @@ test('mini tab shows the frozen seven-group scope on desktop and mobile', async 
   await expect(page.getByText(/尚不能证明 Mini 可替代 Full/)).toBeVisible();
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('mini-scope.png'), fullPage: true });
+});
+
+test('mini question explanations expose capability, evidence and misleading information', async ({ page }, testInfo) => {
+  await mockApi(page);
+  await page.goto('/#/mini/questions');
+  await expect(page.getByRole('heading', { name: 'Mini 题库详解', exact: true })).toBeVisible();
+  await expect(page.getByRole('table', { name: 'Mini 题目列表' })).toBeVisible();
+  await page.getByRole('button', { name: '查看题目 A03' }).click();
+  const drawer = page.getByRole('dialog', { name: 'A03 题目详解' });
+  await expect(drawer.getByRole('heading', { name: '为什么有测评价值' })).toBeVisible();
+  await expect(drawer.getByRole('heading', { name: '考查的记忆能力' })).toBeVisible();
+  await expect(drawer.getByText('关键事实提取', { exact: true })).toBeVisible();
+  await expect(drawer.getByRole('heading', { name: '关键信息在哪里' })).toBeVisible();
+  await expect(drawer.getByText('A-S3-M3', { exact: true })).toBeVisible();
+  await expect(drawer.getByRole('heading', { name: '误导信息在哪里' })).toBeVisible();
+  await expect(drawer.getByText(/同事林川/)).toBeVisible();
+  await assertNoPageOverflow(page);
+  await page.screenshot({ path: testInfo.outputPath('mini-question-detail.png'), fullPage: true });
 });
 
 test('self-bucket setting and separate evidence sources fit both viewports', async ({ page }, testInfo) => {
