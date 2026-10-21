@@ -105,7 +105,7 @@ export type Progress = {
 export type RunSummary = {
   run_mode?: 'full' | 'mini' | 'smoke';
   replacement?: { source_run_id: string };
-  merged_replacements?: { run_id: string; case_ids: string[]; merged_at: string }[];
+  merged_replacements?: { run_id: string; case_ids: string[]; replacement_case_ids?: string[]; merged_at: string }[];
   replacement_runs?: {
     id: string; name: string; status: RunStatus; phase: string;
     created_at: string; updated_at: string; progress: Progress;
@@ -272,7 +272,7 @@ export type CaseResult = {
   error_detail?: FailureDetail | null;
   attempt_history?: RetryAttempt[];
   id: string; profile_id: string; profile_name: string; question: string;
-  status: 'pending' | 'searching' | 'answering' | 'judging' | 'completed' | 'error';
+  status: 'pending' | 'searching' | 'answering' | 'answered' | 'judging' | 'completed' | 'error';
   verdict: 'pass' | 'fail' | null; answer: string | null;
   evidence: { id: string; content: string; kind: string; bucket: string | null; score: number | null; source_ids: string[]; retrieval_source?: 'automatic' | 'self_bucket' }[];
   judgement: Record<string, unknown> | null;
@@ -284,8 +284,18 @@ export type CaseResult = {
   retrieval_query?: string | null;
   retrieval_query_source?: 'dataset' | 'generated' | 'original_fallback' | null;
   retrieval_query_error?: string | null;
+  search_complete?: boolean;
+  answer_complete?: boolean;
   merged_from_run_id?: string;
   merged_at?: string;
+  replacement_case_id?: string;
+  replacement_profile_id?: string;
+  replacement_question?: string;
+  replaced_original_case?: {
+    id: string; profile_id: string; profile_name: string; question: string;
+    status: string; verdict: 'pass' | 'fail' | null; error: string | null;
+    source_question_id?: string;
+  };
   kind?: string; dataset_id?: string; options?: Record<string, string> | null;
   stage?: number; visible_until_turn?: number; category?: { id: string; name: string };
   capabilities?: string[]; difficulty?: 'easy' | 'medium' | 'hard'; evidence_ids?: string[];
@@ -335,8 +345,49 @@ export type RunDetail = RunSummary & {
   };
   replacement?: {
     source_run_id: string; source_manifest_sha256: string; source_state_sha256: string;
-    profile_ids: string[]; blocked_case_ids: string[]; new_user_ids: Record<string, string>;
-    operation: 'isolated-blocked-replay';
+    profile_ids?: string[]; blocked_case_ids?: string[]; new_user_ids: Record<string, string>;
+    operation: 'isolated-blocked-replay' | 'one-shot-case-replacement';
+    case_mappings?: {
+      slot_id: string; original_case_id: string; original_profile_id: string;
+      replacement_profile_id: string; replacement_case_id: string;
+      kind: string; dataset_id: string;
+    }[];
+  };
+  finrank_rescore?: {
+    pending: number; case_ids: string[];
+    active: { id: string; case_ids: string[]; status: string; created_at: string } | null;
+    last: { id: string; case_ids: string[]; status: string; created_at: string; finished_at?: string;
+      remaining?: number; error?: string } | null;
+  };
+  replacement_options?: {
+    count: number;
+    items: {
+      slot_id: string; original_case_id: string; original_profile_id: string;
+      replacement_profile_id: string; replacement_case_id: string;
+      kind: string; dataset_id: string; replacement_name: string; replacement_question: string;
+    }[];
+    error?: string;
+  };
+  active_rescore?: { id: string; case_ids: string[]; status: string; created_at: string };
+  case_replacements?: {
+    status: 'pending' | 'merged' | 'failed';
+    child_run_id: string; created_at: string; slot_id: string; original_case_id: string;
+    original_profile_id: string; replacement_profile_id: string; replacement_case_id: string;
+    kind: string; dataset_id: string; merged_at?: string; finished_at?: string;
+  }[];
+  replacement_comparison?: {
+    baseline: {
+      captured_at: string; child_run_id: string; status: RunStatus;
+      metrics: RunSummary['metrics'];
+      dataset_metrics: NonNullable<RunSummary['dataset_metrics']>;
+      ncp_metrics: NcpMetrics | null;
+    };
+    current: {
+      status: RunStatus;
+      metrics: RunSummary['metrics'];
+      dataset_metrics: NonNullable<RunSummary['dataset_metrics']>;
+      ncp_metrics: NcpMetrics | null;
+    };
   };
   retry_options?: { cases: string[]; quality: string[]; blocked: { id: string; target: 'cases' | 'quality'; reason: string }[] };
   active_retry?: { id: string; target: 'cases' | 'quality' | 'all'; item_ids: string[]; done_ids: string[]; status: string };
