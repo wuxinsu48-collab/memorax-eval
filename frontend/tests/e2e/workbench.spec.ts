@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { dataset, defaults, prompts, run, smokeScope, smokeReport } from '../fixtures';
+import { dataset, defaults, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
 
 test.beforeEach(async ({ page }) => {
   if (!process.env.MEMORAX_E2E_STATIC) return;
@@ -30,6 +30,7 @@ async function mockApi(page: Page) {
     const response = path === '/health' ? { status: 'ok', version: '0.1.0' }
       : path === '/defaults' ? defaults
       : path === '/datasets' ? { datasets: [dataset] }
+      : path === '/mini' ? miniScope
       : path.startsWith('/datasets/') ? { ...dataset, data: { profiles: dataset.profiles } }
       : path === '/prompts' ? { prompts }
       : path === '/config/preview' ? { effective_yaml: defaults.common_yaml.content, sha256: 'test-sha' }
@@ -176,6 +177,18 @@ test('quick-check tab launches the fixed scope and separates pipeline status fro
   await expect(page.getByRole('region', { name: '自检流程结果' })).toContainText('流程跑通');
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('quick-check-results.png'), fullPage: true });
+});
+
+test('mini tab shows the frozen seven-group scope on desktop and mobile', async ({ page }, testInfo) => {
+  await mockApi(page);
+  await page.goto('/#/mini');
+  await expect(page.getByRole('heading', { name: 'Mini 评测', exact: true })).toBeVisible();
+  await expect(page.getByText(/86 题＋2 部电影 · 目标 35 分钟/)).toBeVisible();
+  await expect(page.getByText('Mini 冻结范围')).toBeVisible();
+  await expect(page.getByText('包子 / RSI', { exact: true })).toBeVisible();
+  await expect(page.getByText('FinRank v22', { exact: true })).toBeVisible();
+  await assertNoPageOverflow(page);
+  await page.screenshot({ path: testInfo.outputPath('mini-scope.png'), fullPage: true });
 });
 
 test('self-bucket setting and separate evidence sources fit both viewports', async ({ page }, testInfo) => {

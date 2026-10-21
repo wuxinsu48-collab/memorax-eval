@@ -1,10 +1,10 @@
 import type { CreateRun, Defaults } from './types';
 
 export function runPayload(d: Defaults, keys: { memory: string; answer: string; judge: string },
-  mode: 'full' | 'smoke', datasetIds?: string[]): CreateRun {
+  mode: 'full' | 'mini' | 'smoke', datasetIds?: string[]): CreateRun {
   const custom = mode === 'full' && !!datasetIds?.length;
   return {
-    name: `${mode === 'smoke' ? '快速自检' : custom ? '自定义评测' : '全量评测'} ${new Date().toLocaleString('zh-CN', { hour12: false })}`,
+    name: `${mode === 'smoke' ? '快速自检' : mode === 'mini' ? 'Mini 评测' : custom ? '自定义评测' : '全量评测'} ${new Date().toLocaleString('zh-CN', { hour12: false })}`,
     run_mode: mode, dataset_id: custom ? 'custom' : 'all',
     ...(custom ? { dataset_ids: datasetIds } : {}), profile_ids: [],
     memory: { ...d.memory, api_key: keys.memory },

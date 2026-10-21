@@ -41,7 +41,7 @@ export type NcpConfig = { max_turns: number; condition: 'natural' | 'adversarial
 export type YamlFile = { name: string; content: string };
 export type DomainConfig = { domain_yaml: YamlFile | null; answer_prompt: PromptFile | null; judge_prompt: PromptFile | null; replace_common?: boolean };
 export type CreateRun = {
-  run_mode?: 'full' | 'smoke';
+  run_mode?: 'full' | 'mini' | 'smoke';
   name: string;
   dataset_id: string;
   dataset_ids?: string[];
@@ -87,7 +87,7 @@ export type DatasetSummary = {
   profile_count: number; message_count: number; question_count: number;
   noise_pair_count: number; add_count: number;
   profiles: DatasetProfile[];
-  kind?: 'profiles' | 'choice' | 'retrieval' | 'conversation_qa' | 'novel_qa' | 'episode';
+  kind?: 'profiles' | 'choice' | 'retrieval' | 'finance_v22' | 'conversation_qa' | 'novel_qa' | 'episode';
   episode_count?: number;
   episode_sampling?: { sample_size: number; pool_episode_count: number };
   dynamic_adds?: boolean;
@@ -104,7 +104,7 @@ export type Progress = {
   answer_completed: number; answer_total: number; judge_completed: number; judge_total: number;
 };
 export type RunSummary = {
-  run_mode?: 'full' | 'smoke';
+  run_mode?: 'full' | 'mini' | 'smoke';
   smoke_report?: SmokeReport;
   id: string; name: string; dataset_id: string; dataset_name: string;
   created_at: string; updated_at: string; status: RunStatus; phase: string;
@@ -147,6 +147,15 @@ export type RunSummary = {
     adds_completed: number; adds_total: number; cases_total: number; stages_total?: number;
     candidate_id?: string; candidate_role?: string }[];
   error: string | null;
+};
+
+export type MiniScope = {
+  protocol: string;
+  target_seconds: number;
+  datasets: DatasetSummary[];
+  risk_counts: Record<string, number>;
+  question_count: number;
+  episode_count: number;
 };
 export type CaseResult = {
   error_detail?: FailureDetail | null;

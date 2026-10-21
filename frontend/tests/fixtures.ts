@@ -34,6 +34,23 @@ export const smokeReport = { protocol: 'seven-suite-smoke-v1', status: 'passed' 
     adds_completed: d.kind === 'episode' ? 2 : d.add_count, adds_total: d.kind === 'episode' ? 2 : d.add_count, cases_completed: d.episode_count || d.question_count,
     cases_total: d.episode_count || d.question_count })) };
 
+export const miniScope = {
+  protocol: 'seven-suite-mini-v1', target_seconds: 2100, question_count: 88, episode_count: 2,
+  risk_counts: {
+    actor_transfer: 18, temporal_disorder: 14, false_commitment: 17, global_memory_leak: 15,
+    fabricated_action: 21, item_state_migration: 14, identity_pollution: 17,
+  },
+  datasets: [
+    { ...dataset, id: 'zh-a', name: '中文 A', question_count: 8, add_count: 9, kind: 'profiles' as const },
+    { ...dataset, id: 'zh-b', name: '中文 B', question_count: 8, add_count: 9, kind: 'profiles' as const },
+    { ...dataset, id: 'zh-c', name: '中文 C', question_count: 8, add_count: 9, kind: 'profiles' as const },
+    { ...dataset, id: 'rsi-trace-v1', name: '包子 / RSI', question_count: 15, add_count: 6, kind: 'novel_qa' as const },
+    { ...dataset, id: 'novel-memory-v1', name: '小说四 trace', question_count: 32, add_count: 12, kind: 'novel_qa' as const },
+    { ...dataset, id: 'ncpbench-v1', name: 'NCP-Bench', question_count: 0, episode_count: 2, add_count: 0, kind: 'episode' as const },
+    { ...dataset, id: 'finrank-v1', name: 'FinRank v22', question_count: 15, add_count: 15, kind: 'finance_v22' as const },
+  ],
+};
+
 export const defaults = {
   memory: { base_url: 'https://preview-text.memorax.net', timeout_s: 60 },
   answer: { base_url: 'http://localhost:8001/v1', model: 'answer-test', temperature: 0, max_tokens: 1024,
