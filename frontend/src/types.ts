@@ -20,7 +20,6 @@ export type SearchConfig = {
   bucket_content_limit?: number;
   include_self_bucket?: boolean;
   include_all_buckets?: boolean;
-  hybrid_search?: boolean;
   bucket_types?: string[];
   extra_fields: Record<string, unknown>;
 };
@@ -270,6 +269,8 @@ export type CaseResult = {
   automatic_search_response?: unknown;
   self_bucket_response?: unknown;
   retrieval?: { policy: string; self_bucket_status: string; automatic_contains_self: boolean; self_evidence_count: number; automatic_evidence_count: number };
+  retrieval_query?: string | null;
+  retrieval_query_source?: 'dataset' | 'generated' | null;
   kind?: string; dataset_id?: string; options?: Record<string, string> | null;
   stage?: number; visible_until_turn?: number; category?: { id: string; name: string };
   capabilities?: string[]; difficulty?: 'easy' | 'medium' | 'hard'; evidence_ids?: string[];
