@@ -722,6 +722,12 @@ textarea:focus { outline: 2px solid #cbdcc0; border-color: #9fb994; }
 .question-pagination > div { display: flex; align-items: center; gap: 10px; }
 .question-pagination .button { min-height: 29px; padding: 5px 9px; font-size: 10px; }
 .question-pagination .button:last-child { flex-direction: row-reverse; }
+.blocked-detail { padding: 0 23px 24px; }
+.blocked-detail-list { border-top: 1px solid var(--line); }
+.blocked-detail-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.blocked-detail-item > div { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.blocked-detail-item code { overflow-wrap: anywhere; font-size: 10px; }
+.blocked-detail-item p { margin: 8px 0 0; color: #67746b; font-size: 11px; line-height: 1.7; }
 
 @media (max-width: 760px) {
   .question-toolbar { padding-left: 15px; padding-right: 15px; }
