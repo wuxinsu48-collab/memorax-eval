@@ -51,6 +51,41 @@ export const miniScope = {
   ],
 };
 
+export const miniConsistency = {
+  protocol: 'seven-suite-mini-calibration-v1',
+  generated_at: '2026-10-21T05:00:00Z',
+  method: 'frozen-mini-subset-vs-full-v1',
+  summary: {
+    status: 'watch' as const, full_runs_scanned: 25, full_runs_used: 7,
+    evaluated_suites: 4, total_suites: 4, max_versions: 4, mean_abs_bias: 0.0224,
+    within_run_rank_median: 1, ready_for_replacement: false,
+    minimum_versions: 3, recommended_versions: 5,
+  },
+  datasets: [
+    { dataset_id: 'zh-profiles-v1', name: '中文三组', expected: 24, version_count: 4, run_count: 4,
+      mean_delta: -0.0027, mean_abs_error: 0.0444, rank_correlation: 1,
+      within_run_rank_median: 1, status: 'aligned' as const, recommended_versions: 5 },
+    { dataset_id: 'rsi-trace-v1', name: '包子 / RSI', expected: 15, version_count: 1, run_count: 1,
+      mean_delta: -0.0267, mean_abs_error: 0.0267, rank_correlation: null,
+      within_run_rank_median: null, status: 'insufficient' as const, recommended_versions: 5 },
+    { dataset_id: 'novel-memory-v1', name: '小说四 trace', expected: 32, version_count: 3, run_count: 3,
+      mean_delta: 0.0061, mean_abs_error: 0.0172, rank_correlation: 1,
+      within_run_rank_median: 1, status: 'aligned' as const, recommended_versions: 5 },
+    { dataset_id: 'finrank-v1', name: 'FinRank v22', expected: 15, version_count: 2, run_count: 2,
+      mean_delta: -0.0114, mean_abs_error: 0.0243, rank_correlation: 1,
+      within_run_rank_median: null, status: 'insufficient' as const, recommended_versions: 5 },
+  ],
+  runs: [{
+    run_id: 'd50d95f76e3e4977', name: '定向评测 · R79 · 关键词 BM25',
+    status: 'failed', created_at: '2026-10-20T12:17:42Z', fingerprint: 'd50d95f76e3e4977',
+    answer_model: 'qwen3.7-flash', judge_model: 'glm-5.3-flash',
+    yaml_name: 'universal-memory-v5.79-r79-ask-anchor.yaml',
+    mini_judged: 63, mini_accuracy: 0.5397, full_judged: 366,
+    full_accuracy: 0.5273, delta: 0.0124, suite_count: 3,
+  }],
+  notes: ['NCP 电影在 Mini 与 Full 中使用不同电影集合，不纳入直接子集比较。'],
+};
+
 export const defaults = {
   memory: { base_url: 'https://preview-text.memorax.net', timeout_s: 60 },
   answer: { base_url: 'http://localhost:8001/v1', model: 'answer-test', temperature: 0, max_tokens: 1024,

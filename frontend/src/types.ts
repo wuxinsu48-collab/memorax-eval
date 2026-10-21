@@ -157,6 +157,55 @@ export type MiniScope = {
   question_count: number;
   episode_count: number;
 };
+export type MiniConsistencyGroup = {
+  dataset_id: string;
+  name: string;
+  expected: number;
+  version_count: number;
+  run_count: number;
+  mean_delta: number | null;
+  mean_abs_error: number | null;
+  rank_correlation: number | null;
+  within_run_rank_median: number | null;
+  status: 'aligned' | 'watch' | 'insufficient';
+  recommended_versions: number;
+};
+export type MiniConsistency = {
+  protocol: string;
+  generated_at: string;
+  method: string;
+  summary: {
+    status: 'aligned' | 'watch' | 'insufficient';
+    full_runs_scanned: number;
+    full_runs_used: number;
+    evaluated_suites: number;
+    total_suites: number;
+    max_versions: number;
+    mean_abs_bias: number | null;
+    within_run_rank_median: number | null;
+    ready_for_replacement: boolean;
+    minimum_versions: number;
+    recommended_versions: number;
+  };
+  datasets: MiniConsistencyGroup[];
+  runs: {
+    run_id: string;
+    name: string;
+    status: string;
+    created_at: string;
+    fingerprint: string;
+    answer_model: string | null;
+    judge_model: string | null;
+    yaml_name: string | null;
+    mini_judged: number;
+    mini_accuracy: number | null;
+    full_judged: number;
+    full_accuracy: number | null;
+    delta: number | null;
+    suite_count: number;
+  }[];
+  notes: string[];
+};
 export type CaseResult = {
   error_detail?: FailureDetail | null;
   attempt_history?: RetryAttempt[];

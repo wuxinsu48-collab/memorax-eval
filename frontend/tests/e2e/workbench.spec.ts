@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { dataset, defaults, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
+import { dataset, defaults, miniConsistency, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
 
 test.beforeEach(async ({ page }) => {
   if (!process.env.MEMORAX_E2E_STATIC) return;
@@ -31,6 +31,7 @@ async function mockApi(page: Page) {
       : path === '/defaults' ? defaults
       : path === '/datasets' ? { datasets: [dataset] }
       : path === '/mini' ? miniScope
+      : path === '/mini/consistency' ? miniConsistency
       : path.startsWith('/datasets/') ? { ...dataset, data: { profiles: dataset.profiles } }
       : path === '/prompts' ? { prompts }
       : path === '/config/preview' ? { effective_yaml: defaults.common_yaml.content, sha256: 'test-sha' }
@@ -187,6 +188,9 @@ test('mini tab shows the frozen seven-group scope on desktop and mobile', async 
   await expect(page.getByText('Mini 冻结范围')).toBeVisible();
   await expect(page.getByText('包子 / RSI', { exact: true })).toBeVisible();
   await expect(page.getByText('FinRank v22', { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '历史 Full 代表性回测' })).toBeVisible();
+  await expect(page.getByText('7 / 25')).toBeVisible();
+  await expect(page.getByText(/尚不能证明 Mini 可替代 Full/)).toBeVisible();
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('mini-scope.png'), fullPage: true });
 });
