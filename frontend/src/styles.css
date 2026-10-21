@@ -749,6 +749,15 @@ textarea:focus { outline: 2px solid #cbdcc0; border-color: #9fb994; }
 .failure-cause-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--line); color: var(--muted); font-size: 9px; }
 .failure-cause-footer > div { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 .failure-cause-footer .button { min-height: 27px; padding: 4px 7px; font-size: 9px; }
+.replacement-status-summary { border: 1px solid var(--line); background: #fff; margin-bottom: 24px; }
+.replacement-status-item { padding: 16px 18px; }
+.replacement-status-item + .replacement-status-item { border-top: 1px solid var(--line); }
+.replacement-status-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.replacement-status-heading > div { display: grid; gap: 5px; min-width: 0; }
+.replacement-status-heading strong { font-size: 12px; overflow-wrap: anywhere; }
+.replacement-status-heading span { color: var(--muted); font-size: 10px; }
+.replacement-operation-progress { padding: 18px 0 0; }
+.replacement-status-item .error-notice { margin: 15px 0 0; }
 
 @media (max-width: 760px) {
   .question-toolbar { padding-left: 15px; padding-right: 15px; }
@@ -764,4 +773,6 @@ textarea:focus { outline: 2px solid #cbdcc0; border-color: #9fb994; }
   .failure-cause-grid { grid-template-columns: minmax(0, 1fr); }
   .failure-cause-card + .failure-cause-card { border-left: 0; border-top: 1px solid var(--line); }
   .failure-cause-footer > div { width: 100%; justify-content: flex-start; }
+  .replacement-status-heading { align-items: flex-start; }
+  .replacement-status-item .operation-progress { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

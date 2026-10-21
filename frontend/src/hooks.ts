@@ -25,6 +25,9 @@ export function useResource<T>(path: string | null) {
 
 export const isActive = (status: RunStatus) => ['pending', 'running', 'stopping'].includes(status);
 export const canResume = (status: RunStatus) => ['stopped', 'interrupted', 'failed'].includes(status);
+const needsPolling = (run: RunDetail) => isActive(run.status)
+  || (run.replacement_runs ?? []).some((item) => isActive(item.status)
+    || (item.status === 'completed' && !item.merged_at));
 
 // One visible run owns one sequential poll loop; cleanup aborts both timer and I/O.
 export function useRun(id: string, paused = false) {
@@ -55,12 +58,12 @@ export function useRun(id: string, paused = false) {
         const next = await request<RunDetail>(`/runs/${encodeURIComponent(id)}`, { signal: controller.signal });
         if (controller.signal.aborted) return;
         replace(next);
-        if (isActive(next.status)) timer = setTimeout(poll, 1500);
+        if (needsPolling(next)) timer = setTimeout(poll, 1500);
       } catch (err) {
         if (controller.signal.aborted || isAbort(err)) return;
         setError(errorMessage(err));
         setLoading(false);
-        if (latest.current && isActive(latest.current.status)) timer = setTimeout(poll, 2000);
+        if (latest.current && needsPolling(latest.current)) timer = setTimeout(poll, 2000);
       }
     };
     void poll();

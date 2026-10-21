@@ -106,6 +106,16 @@ export type RunSummary = {
   run_mode?: 'full' | 'mini' | 'smoke';
   replacement?: { source_run_id: string };
   merged_replacements?: { run_id: string; case_ids: string[]; merged_at: string }[];
+  replacement_runs?: {
+    id: string; name: string; status: RunStatus; phase: string;
+    created_at: string; updated_at: string; progress: Progress;
+    add_health?: {
+      static_completed: number; static_total: number;
+      dynamic_completed: number; dynamic_total: number; errors: number;
+    } | null;
+    error: string | null; case_ids: string[];
+    merged_at: string | null; merged_case_ids: string[];
+  }[];
   smoke_report?: SmokeReport;
   id: string; name: string; dataset_id: string; dataset_name: string;
   created_at: string; updated_at: string; status: RunStatus; phase: string;
