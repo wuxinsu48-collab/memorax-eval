@@ -1,0 +1,1649 @@
+{
+  "schema_version": "finrank-atomic-requirements/1",
+  "derivation": "Subset of candidate-blind frozen pool requirements; no candidate YAML, output, retrieval receipt or score was read.",
+  "dataset": "/Users/helson/memorax/v3_dev/worktrees/mr408-bench/benchmarks/irab/rsi/datasets/finrank-30-v22-relation-evidence-confirmation",
+  "dataset_sha256": "40ac8958284ded95c2ed09582c4faa855b0201a08ea70a5334a0db47da06fb52",
+  "task_count": 30,
+  "tasks": {
+    "finrank-30-v19a-pool-007-MRK_Financials_Easy_OnePassage_Qualitative_94": {
+      "case_id": "finrank-30-v19a-pool-007-MRK_Financials_Easy_OnePassage_Qualitative_94",
+      "question_id": "MRK_Financials_Easy_OnePassage_Qualitative_94",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "gross_margin_2024_value",
+          "requirement": "State that Merck's gross margin in 2024 was 76.3%.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gross_margin_2023_value",
+          "requirement": "State that Merck's gross margin in 2023 was 73.2%.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": true
+        },
+        {
+          "id": "margin_direction_change",
+          "requirement": "Identify that the gross margin increased from 2023 to 2024.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "driver_favorable_product_mix",
+          "requirement": "Identify favorable product mix as a main driver of improvement, specifically noting lower royalty rates related to Keytruda and Gardasil/Gardasil 9 sales.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": true
+        },
+        {
+          "id": "driver_foreign_exchange",
+          "requirement": "Identify positive foreign exchange effects as a main driver of improvement.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": false
+        },
+        {
+          "id": "offset_amortization_intangibles",
+          "requirement": "Note that the improvement was partially offset by increased amortization of intangible assets.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": false
+        },
+        {
+          "id": "offset_restructuring_costs",
+          "requirement": "Note that the improvement was partially offset by higher restructuring costs, primarily reflecting asset impairment charges.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": false
+        },
+        {
+          "id": "offset_manufacturing_expenses",
+          "requirement": "Note that the improvement was partially offset by higher manufacturing-related expenses, including inventory write-offs.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5fa619cf0e88adda"
+          ],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover the specific margin values for both years, the direction of change, the primary positive drivers (product mix with specific drug references and FX), and the three specific negative offsets mentioned in the text (amortization, restructuring/impairment, manufacturing/inventory). All facts are directly supported by the provided passage.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v20b-pool-009-JNJ_CompanyOverview_Easy_OnePassage_Quantitative_07": {
+      "case_id": "finrank-30-v20b-pool-009-JNJ_CompanyOverview_Easy_OnePassage_Quantitative_07",
+      "question_id": "JNJ_CompanyOverview_Easy_OnePassage_Quantitative_07",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "identify_top_three_products",
+          "requirement": "Identify the three largest revenue-generating pharmaceutical products or product lines for Johnson & Johnson in FY2024 as DARZALEX, STELARA, and the INVEGA product family (INVEGA SUSTENNA/XEPLION, INVEGA TRINZA/TREVICTA).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-27ac7b658d9fa4e5"
+          ],
+          "critical": true
+        },
+        {
+          "id": "daralex_sales_and_share",
+          "requirement": "State that DARZALEX had sales of approximately $11.67 billion ($11,670 million) representing 13.1% of total revenue.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "stelara_sales_and_share",
+          "requirement": "State that STELARA had sales of approximately $10.36 billion ($10,361 million) representing 11.7% of total revenue.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "invega_sales_and_share",
+          "requirement": "State that the INVEGA product family had sales of approximately $4.22 billion ($4,222 million) representing 4.8% of total revenue.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The gold passage provides absolute sales figures for specific products and the total Innovative Medicine sales. The reference answer includes percentage shares of *total* company revenue, which are not explicitly stated in the provided text (which only covers Innovative Medicine). Therefore, the percentage requirements are classified as inference atoms because they require external knowledge or calculation against a total not present in the source. The identification of the top three products and their absolute sales values are directly supported by the evidence.",
+      "generation_attempts": 2
+    },
+    "finrank-30-v21d-pool-001-AMGN_CompanyOverview_Easy_SinglePassage_Qualitative_35": {
+      "case_id": "finrank-30-v21d-pool-001-AMGN_CompanyOverview_Easy_SinglePassage_Qualitative_35",
+      "question_id": "AMGN_CompanyOverview_Easy_SinglePassage_Qualitative_35",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "amgen_single_segment",
+          "requirement": "Amgen operates in a single operating segment.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-bb327b34102344d5"
+          ],
+          "critical": true
+        },
+        {
+          "id": "amgen_segment_name",
+          "requirement": "The name of Amgen's operating segment is human therapeutics.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-bb327b34102344d5"
+          ],
+          "critical": true
+        }
+      ],
+      "notes": "The question asks for the number of segments and the specific name. The reference answer explicitly states 'one operating segment' and names it 'human therapeutics'. Both facts are directly supported by the gold passage.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v19c-pool-008-JNJ_Accounting_Easy_OnePassage_Qualitative_52": {
+      "case_id": "finrank-30-v19c-pool-008-JNJ_Accounting_Easy_OnePassage_Qualitative_52",
+      "question_id": "JNJ_Accounting_Easy_OnePassage_Qualitative_52",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "product_sales_recognition_trigger",
+          "requirement": "Revenue from product sales is recognized when contractual obligations are satisfied, which generally occurs upon the transfer of control of goods to customers.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-d8c40bf3015c82e1"
+          ],
+          "critical": true
+        },
+        {
+          "id": "collaboration_activity_revenue_timing",
+          "requirement": "For collaboration arrangements, amounts due from partners are recognized as each activity is performed or delivered.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-d8c40bf3015c82e1"
+          ],
+          "critical": true
+        },
+        {
+          "id": "upfront_fees_deferral_and_recognition",
+          "requirement": "Upfront fees received as part of collaboration arrangements are deferred and recognized over the performance period.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-d8c40bf3015c82e1"
+          ],
+          "critical": true
+        }
+      ],
+      "notes": "The reference answer includes payment terms (30-90 days) for product sales. However, the gold passage states 'typically between 30 to 90 days' regarding global payment terms, not specifically as a condition for revenue recognition but rather as a term associated with the sales process. The core question asks 'When does the company recognize revenue'. The primary triggers are transfer of control (product) and performance/delivery (collaboration). Payment terms are incidental to the timing of recognition in this context unless specified otherwise. The requirement focuses on the recognition events themselves.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v15c-pool-009-GM_Financials_Easy_TwoPassage_Qualitative_191": {
+      "case_id": "finrank-30-v15c-pool-009-GM_Financials_Easy_TwoPassage_Qualitative_191",
+      "question_id": "GM_Financials_Easy_TwoPassage_Qualitative_191",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "identify_cod_role",
+          "requirement": "The chief operating decision-maker is identified as the Chair and Chief Executive Officer.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a688fbc37bb17be"
+          ],
+          "critical": false
+        },
+        {
+          "id": "list_reportable_segments",
+          "requirement": "The reportable segments analyzed are GM North America (GMNA), GM International (GMI), Cruise, and GM Financial.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a688fbc37bb17be"
+          ],
+          "critical": true
+        },
+        {
+          "id": "metric_automotive_cruise",
+          "requirement": "For the automotive segments (GMNA and GMI) and Cruise, performance is evaluated using EBIT-adjusted.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a688fbc37bb17be"
+          ],
+          "critical": true
+        },
+        {
+          "id": "ebit_adjusted_presentation",
+          "requirement": "EBIT-adjusted is presented net of noncontrolling interests.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a688fbc37bb17be"
+          ],
+          "critical": false
+        },
+        {
+          "id": "metric_gm_financial",
+          "requirement": "For the GM Financial segment, performance is evaluated using EBT-adjusted.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a688fbc37bb17be"
+          ],
+          "critical": true
+        },
+        {
+          "id": "reason_gm_financial_metric",
+          "requirement": "EBT-adjusted is used for GM Financial because interest income and interest expense are considered an integral part of that segment's operational and financial performance.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a688fbc37bb17be"
+          ],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements cover the identity of the COD, the list of segments, and the specific metrics used for each group of segments along with the rationale for the GM Financial metric. All information is directly supported by src-5a688fbc37bb17be.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v16a-pool-001-LLY_Governance_Easy_SinglePassage_Qualitative_208": {
+      "case_id": "finrank-30-v16a-pool-001-LLY_Governance_Easy_SinglePassage_Qualitative_208",
+      "question_id": "LLY_Governance_Easy_SinglePassage_Qualitative_208",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "core_values_identified",
+          "requirement": "Identify the core values guiding Lilly's workforce approach as integrity, excellence, and respect for people.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-e1dfd9048eb81d5d"
+          ],
+          "critical": true
+        },
+        {
+          "id": "engagement_practices_survey",
+          "requirement": "State that the company regularly conducts confidential employee surveys to seek feedback on a variety of topics.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-e1dfd9048eb81d5d"
+          ],
+          "critical": false
+        },
+        {
+          "id": "survey_usage_leaders",
+          "requirement": "Explain that survey results are reviewed and analyzed by leaders to identify opportunities to adjust practices and benefits to improve the employees' experience.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-e1dfd9048eb81d5d"
+          ],
+          "critical": false
+        },
+        {
+          "id": "additional_engagement_practices",
+          "requirement": "List additional practices used to engage employees and assess experience, including hiring the most qualified candidates, inclusion, training and development, competitive pay and benefits, and maintaining good employee relations.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-e1dfd9048eb81d5d"
+          ],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover the specific core values mentioned in the text and the two main categories of engagement/assessment: the confidential survey process (including leader review) and the broader set of HR practices (hiring, inclusion, training, pay, relations). All facts are directly supported by the single gold passage.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v20b-pool-001-DVN_Risk_Easy_SinglePassage_Qualitative_01": {
+      "case_id": "finrank-30-v20b-pool-001-DVN_Risk_Easy_SinglePassage_Qualitative_01",
+      "question_id": "DVN_Risk_Easy_SinglePassage_Qualitative_01",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "identify_main_risk_factor",
+          "requirement": "Identify that the main risk factor for DVN is the general supply and demand for oil, gas, and NGLs.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-b5242cca4a50ceb5"
+          ],
+          "critical": true
+        },
+        {
+          "id": "link_risk_to_price_impact",
+          "requirement": "Explain that this supply and demand dynamic affects the prices DVN receives for these commodities.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-b5242cca4a50ceb5"
+          ],
+          "critical": true
+        }
+      ],
+      "notes": "The reference answer explicitly links the risk to 'general supply and demand' and its effect on 'prices'. The gold passage supports both the identification of this factor and the mechanism (impact on realized prices). No other candidate answers are considered.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v14a-pool-007-CTRA_Legal_Easy_SinglePassage_Quantitative_01": {
+      "case_id": "finrank-30-v14a-pool-007-CTRA_Legal_Easy_SinglePassage_Quantitative_01",
+      "question_id": "CTRA_Legal_Easy_SinglePassage_Quantitative_01",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "ctra_aro_value_2024",
+          "requirement": "CTRA's Asset Retirement Obligations (ARO) are $291 million as of December 31, 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-25462c8512f99dd5"
+          ],
+          "critical": true
+        }
+      ],
+      "notes": "The reference answer identifies the ARO value as $291 million. The gold passage lists 'Asset retirement obligations' at 291 under liabilities for Dec 31, 2024. Although the line item is not explicitly nested under 'Current liabilities', the reference answer equates the query 'current ARO' to this figure, implying it refers to the most recent reported ARO balance.",
+      "generation_attempts": 2
+    },
+    "finrank-30-v20a-pool-009-JNJ_Financials_Easy_MultiPassage_Quantitative_128": {
+      "case_id": "finrank-30-v20a-pool-009-JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+      "question_id": "JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "total_debt_2024",
+          "requirement": "Identify Johnson & Johnson's total borrowings (total debt) at year-end 2024 as $36.6 billion.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-b17fd34fadc92b20"
+          ],
+          "critical": true
+        },
+        {
+          "id": "ebitda_components_2024",
+          "requirement": "Identify the components used to calculate EBITDA for 2024: Gross profit of $61.35 billion, Selling/marketing/admin expenses of $22.87 billion, R&D expenses of $17.23 billion, Restructuring charges of $0.23 billion, and Depreciation/amortization of $7.34 billion.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-bf4953abb8140ac7",
+            "src-5b617ff494d337d4"
+          ],
+          "critical": false
+        },
+        {
+          "id": "ebitda_calculation_2024",
+          "requirement": "State that EBITDA for 2024 is calculated by subtracting selling/marketing/admin ($22.87B), R&D ($17.23B), and restructuring ($0.23B) from gross profit ($61.35B) and adding back depreciation/amortization ($7.34B), resulting in approximately $28.36 billion.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "debt_to_ebitda_ratio_2024",
+          "requirement": "State that the total debt to EBITDA ratio for 2024 was approximately 1.29x, derived from dividing total debt ($36.6 billion) by EBITDA (~$28.36 billion).",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The reference answer provides specific rounded figures for the intermediate calculation steps (EBITDA components and result). The requirements preserve these exact values and precision as presented in the reference answer to ensure consistent grading against the provided solution logic, even though raw data sources may have slight variations in decimal places.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v10b-pool-000-JNJ_Financials_Easy_MultiPassage_Quantitative_128": {
+      "case_id": "finrank-30-v10b-pool-000-JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+      "question_id": "JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Easy",
+      "requirements": [
+        {
+          "id": "req_total_debt_2024",
+          "requirement": "Identify Johnson & Johnson's total borrowings (total debt) at year-end 2024 as $36.6 billion.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-aac349c358d9b42b"
+          ],
+          "critical": true
+        },
+        {
+          "id": "req_gross_profit_2024",
+          "requirement": "Identify Johnson & Johnson's gross profit for 2024 as $61.35 billion ($61,350 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2e3b2421e38d0027"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_sm_and_a_2024",
+          "requirement": "Identify Johnson & Johnson's selling, marketing and administrative expenses for 2024 as $22.87 billion ($22,869 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2e3b2421e38d0027"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_rd_expense_2024",
+          "requirement": "Identify Johnson & Johnson's research and development expense for 2024 as $17.23 billion ($17,232 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2e3b2421e38d0027"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_restructuring_2024",
+          "requirement": "Identify Johnson & Johnson's restructuring charges for 2024 as $0.23 billion ($234 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2e3b2421e38d0027"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_da_2024",
+          "requirement": "Identify Johnson & Johnson's depreciation and amortization for 2024 as $7.34 billion ($7,339 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8bed54513cf2b394"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_ebitda_calculation",
+          "requirement": "Calculate EBITDA for 2024 by taking Gross Profit ($61.35B), subtracting SM&A ($22.87B), R&D ($17.23B), and Restructuring ($0.23B), then adding back Depreciation and Amortization ($7.34B) to arrive at approximately $28.36 billion.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "req_debt_to_ebitda_ratio",
+          "requirement": "Calculate the total debt to EBITDA ratio for 2024 by dividing Total Debt ($36.6 billion) by EBITDA (~$28.36 billion) to result in approximately 1.29x.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The reference answer provides a specific calculation path for EBITDA starting from Gross Profit and subtracting specific operating expenses before adding back D&A. The requirements break down each input value found in the gold passages and separate the final ratio calculation as an inference atom since it requires combining the evidence atoms.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v17a-pool-020-MRK_Financials_Medium_TwoPassage_Quantitative_243": {
+      "case_id": "finrank-30-v17a-pool-020-MRK_Financials_Medium_TwoPassage_Quantitative_243",
+      "question_id": "MRK_Financials_Medium_TwoPassage_Quantitative_243",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "interest_payment_2025_value",
+          "requirement": "Identify MRK's scheduled interest payments on debt for 2025 as $1.2 billion.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-41bc85ac68fa16e3"
+          ],
+          "critical": true
+        },
+        {
+          "id": "operating_lease_payment_2025_value",
+          "requirement": "Identify MRK's operating lease payments for 2025 as $329 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-0b16ba35e8a10168"
+          ],
+          "critical": true
+        },
+        {
+          "id": "interest_to_lease_ratio_calculation",
+          "requirement": "Compute the ratio of 2025 interest payments to 2025 operating lease payments as approximately 3.65x (derived from $1.2 billion / $329 million).",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "weighted_avg_lease_term_yoy_change",
+          "requirement": "State that the weighted-average remaining lease term decreased from 7.0 years (2023) to 6.0 years (2024), a change of -1.0 years.",
+          "atom_type": "inference",
+          "gold_source_ids": [
+            "src-0b16ba35e8a10168"
+          ],
+          "critical": false
+        },
+        {
+          "id": "weighted_avg_discount_rate_yoy_change",
+          "requirement": "State that the weighted-average discount rate decreased from 3.3% (2023) to 3.2% (2024), a change of -0.1 percentage points.",
+          "atom_type": "inference",
+          "gold_source_ids": [
+            "src-0b16ba35e8a10168"
+          ],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover both parts of the question: the interest-to-lease payment ratio and the YoY changes in lease metrics. Evidence atoms extract specific values from the gold passages. Inference atoms perform the required calculations (ratio and differences). Critical flags are applied only to the final computed ratio, as it is the primary quantitative output requested alongside the trend analysis.",
+      "generation_attempts": 2
+    },
+    "finrank-30-v21a-pool-025-ABBV_Footnotes_Medium_TwoPassage_Quantitative_87": {
+      "case_id": "finrank-30-v21a-pool-025-ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+      "question_id": "ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "req_2023_total_lease_liabilities",
+          "requirement": "Identify AbbVie's total lease liabilities for 2023 as $943 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2cae3d4b88d42447"
+          ],
+          "critical": true
+        },
+        {
+          "id": "req_2024_total_lease_liabilities",
+          "requirement": "Identify AbbVie's total lease liabilities for 2024 as $915 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-761868de07167dd1",
+            "src-2cae3d4b88d42447"
+          ],
+          "critical": true
+        },
+        {
+          "id": "req_direction_of_change",
+          "requirement": "State that the total lease liabilities decreased from 2023 to 2024.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "req_magnitude_of_change",
+          "requirement": "State that the total lease liabilities decreased by $28 million.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements cover the specific values for both years, the direction of change (decrease), and the magnitude of the change ($28 million). The gold_source_ids for the 2024 value include both passages as they both confirm the $915 million figure. The inference atoms regarding direction and magnitude are derived from comparing the two evidence values.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v16c-pool-026-JNJ_Accounting_Hard_TwoPassage_Quantitative_133": {
+      "case_id": "finrank-30-v16c-pool-026-JNJ_Accounting_Hard_TwoPassage_Quantitative_133",
+      "question_id": "JNJ_Accounting_Hard_TwoPassage_Quantitative_133",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "total_depreciation_expense_2024",
+          "requirement": "State that the total depreciation and amortization expense for 2024 was $2.8 billion.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-1472bb779e6a13ba"
+          ],
+          "critical": true
+        },
+        {
+          "id": "buildings_depreciation_allocation",
+          "requirement": "Identify that buildings (with a 30-year useful life) account for roughly $0.41 billion of the depreciation expense.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "land_land_improvements_depreciation_calculation",
+          "requirement": "Explain that the decline in the carrying amount of land and land improvements from $795 million to $718 million implies depreciation of about $0.08 billion, consistent with a useful life of just over 10 years.",
+          "atom_type": "inference",
+          "gold_source_ids": [
+            "src-03cfeaa1913fe356",
+            "src-1472bb779e6a13ba"
+          ],
+          "critical": false
+        },
+        {
+          "id": "machinery_equipment_remaining_allocation",
+          "requirement": "Attribute the remaining $2.31 billion of the $2.8 billion expense to machinery and equipment.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "construction_in_progress_not_depreciated",
+          "requirement": "Note that construction in progress is not depreciated until assets are completed and placed into service.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-03cfeaa1913fe356"
+          ],
+          "critical": false
+        },
+        {
+          "id": "allocation_assumptions",
+          "requirement": "State the assumptions required: that the decrease in land and land improvements reflects depreciation rather than additions or disposals, and that any non-depreciable land portion within this line item is negligible.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements break down the allocation logic into specific asset classes (Buildings, Land/Land Improvements, Machinery/Equipment) and capture the necessary assumptions. The 'Construction in Progress' point is included as it explains why that large balance ($6,289M) does not contribute to the current year's depreciation expense, which is part of the allocation explanation.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v19c-pool-021-AMGN_Risk_Medium_TwoPassage_Qualitative_09": {
+      "case_id": "finrank-30-v19c-pool-021-AMGN_Risk_Medium_TwoPassage_Qualitative_09",
+      "question_id": "AMGN_Risk_Medium_TwoPassage_Qualitative_09",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "us_payer_formulary_management",
+          "requirement": "Identify that U.S. payers use formulary management measures, including higher-tier placement and exclusion.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5e3bb206efcb44d1"
+          ],
+          "critical": true
+        },
+        {
+          "id": "us_payer_accumulator_programs",
+          "requirement": "Identify that U.S. payers use co-pay accumulator programs as a cost containment measure.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5e3bb206efcb44d1"
+          ],
+          "critical": true
+        },
+        {
+          "id": "us_payer_utilization_management",
+          "requirement": "Identify that U.S. payers use stricter utilization management criteria, specifically prior authorization and step therapy.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5e3bb206efcb44d1"
+          ],
+          "critical": true
+        },
+        {
+          "id": "us_payer_rebates",
+          "requirement": "Identify that U.S. payers use negotiated rebates from manufacturers to gain or maintain formulary position.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5e3bb206efcb44d1"
+          ],
+          "critical": false
+        },
+        {
+          "id": "gov_other_mandatory_price_controls",
+          "requirement": "Identify that governments in other countries employ mandatory price controls.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a645899aa98cb2d0"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gov_other_price_referencing",
+          "requirement": "Identify that governments in other countries use price referencing and therapeutic-reference pricing.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a645899aa98cb2d0"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gov_other_generic_biosimilar_incentives",
+          "requirement": "Identify that governments in other countries provide incentives for generic substitution and biosimilar usage.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a645899aa98cb2d0"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gov_other_hta_and_price_cuts",
+          "requirement": "Identify that governments in other countries use health technology assessments (HTA) to judge added benefit and set reimbursement prices/limits, and implement government-mandated price cuts.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a645899aa98cb2d0"
+          ],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements split the comparison into specific measures used by U.S. payers versus those used by foreign governments. Evidence atoms are derived directly from the provided text passages. The reference answer lists 'increased rebates' for governments; however, the gold passage src-a645899aa98cb2d0 explicitly mentions 'increases in rebates' alongside other measures. To ensure precision and avoid overlap with the US-specific 'negotiated rebates' which are tied to PBM leverage in src-5e3bb206efcb44d1, the requirement for foreign governments focuses on the distinct structural mechanisms (HTA, price controls, referencing, generic incentives) which are clearly delineated in the source text. The 'increased rebates' for foreign governments is less distinctly defined in the source compared to the US context, but is implicitly covered under the general downward pressure measures. Given the instruction to preserve exact reference values where possible, I have included the core distinct measures. If 'increased rebates' for foreign gov is considered critical, it could be added, but the current set covers the primary differentiators described in the texts.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v13b-pool-020-F_ShareholderReturn_Medium_TwoPassage_Quantitative_200": {
+      "case_id": "finrank-30-v13b-pool-020-F_ShareholderReturn_Medium_TwoPassage_Quantitative_200",
+      "question_id": "F_ShareholderReturn_Medium_TwoPassage_Quantitative_200",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "dividends_2024_amount",
+          "requirement": "In 2024, Ford used $3,118 million for cash payments for dividends and dividend equivalents.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-295805f2606ded85"
+          ],
+          "critical": true
+        },
+        {
+          "id": "share_repurchases_2024_amount",
+          "requirement": "In 2024, Ford used $426 million for purchases of common stock (share repurchases).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-295805f2606ded85"
+          ],
+          "critical": true
+        },
+        {
+          "id": "comparison_dividends_vs_repurchases",
+          "requirement": "Ford spent significantly more cash on dividends than on share repurchases in 2024, with the dividend outflow being approximately 7.3 times greater than the share repurchase outflow ($3,118 million vs. $426 million).",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements capture the specific absolute values for dividends and share repurchases from the financing activities table, and the comparative analysis requested by the question. The total shareholder return figure is not strictly required as the question asks for the comparison between the two specific components, but the individual components are critical.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v21e-pool-026-JNJ_Financials_Medium_SinglePassage_Quantitative_128": {
+      "case_id": "finrank-30-v21e-pool-026-JNJ_Financials_Medium_SinglePassage_Quantitative_128",
+      "question_id": "JNJ_Financials_Medium_SinglePassage_Quantitative_128",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "jnj_op_cash_flow_2023_value",
+          "requirement": "Johnson & Johnson’s net cash flows from operating activities in 2023 were $22,791 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-caf60b921ff6a258"
+          ],
+          "critical": true
+        },
+        {
+          "id": "jnj_op_cash_flow_2024_value",
+          "requirement": "Johnson & Johnson’s net cash flows from operating activities in 2024 were $24,266 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-caf60b921ff6a258"
+          ],
+          "critical": true
+        },
+        {
+          "id": "jnj_op_cash_flow_absolute_increase",
+          "requirement": "The increase in net cash flows from operating activities from 2023 to 2024 was $1,475 million.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "jnj_op_cash_flow_percentage_increase",
+          "requirement": "The percentage change (increase) in net cash flows from operating activities from 2023 to 2024 was approximately 6.5%.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements cover the specific values for 2023 and 2024 directly from the source, the calculated absolute difference, and the calculated percentage increase as stated in the reference answer.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v21a-pool-029-MPC_Governance_Medium_Two-Passage_Quantitative_01": {
+      "case_id": "finrank-30-v21a-pool-029-MPC_Governance_Medium_Two-Passage_Quantitative_01",
+      "question_id": "MPC_Governance_Medium_Two-Passage_Quantitative_01",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "q2_2024_total_shares",
+          "requirement": "MPC's total number of shares purchased in Q2 2024 was 15,743,304.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a39b2c65a23447a"
+          ],
+          "critical": true
+        },
+        {
+          "id": "q2_2024_avg_price",
+          "requirement": "The average price paid per share for MPC's Q2 2024 repurchases was $183.91.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5a39b2c65a23447a"
+          ],
+          "critical": true
+        },
+        {
+          "id": "q2_2025_total_shares",
+          "requirement": "MPC's total number of shares purchased in Q2 2025 was 4,762,547.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8f339aa26b0e3374"
+          ],
+          "critical": true
+        },
+        {
+          "id": "q2_2025_avg_price",
+          "requirement": "The average price paid per share for MPC's Q2 2025 repurchases was $145.32.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8f339aa26b0e3374"
+          ],
+          "critical": true
+        },
+        {
+          "id": "shares_yoy_change_pct",
+          "requirement": "The year-over-year change in the total number of shares repurchased from Q2 2024 to Q2 2025 was a decrease of -69.7%.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "avg_price_yoy_change_pct",
+          "requirement": "The year-over-year change in the average price paid per share from Q2 2024 to Q2 2025 was a decrease of -21.0%.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements cover all specific data points (shares and avg price) for both periods and the calculated YoY percentage changes as presented in the reference answer. The evidence atoms are directly supported by the tables in the gold passages. The inference atoms represent the mathematical comparisons requested by the question.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v21b-pool-029-JNJ_Financials_Medium_OnePassage_Quantitative_103": {
+      "case_id": "finrank-30-v21b-pool-029-JNJ_Financials_Medium_OnePassage_Quantitative_103",
+      "question_id": "JNJ_Financials_Medium_OnePassage_Quantitative_103",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "sales_growth_amount",
+          "requirement": "Sales increased from $85,159 million in 2023 to $88,821 million in 2024, representing a growth of $3,662 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-ae785c31791b0d3e"
+          ],
+          "critical": true
+        },
+        {
+          "id": "cost_of_products_sold_change",
+          "requirement": "Cost of products sold increased from $26,553 million in 2023 to $27,471 million in 2024, representing an increase of $918 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-ae785c31791b0d3e"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gross_profit_impact_attribution",
+          "requirement": "The change in operating profit attributable to sales growth versus cost of products sold is characterized by a positive impact of +$3,662 million from sales growth and a negative impact of -$918 million from higher costs, resulting in a net positive contribution to gross profit of $2,744 million.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "operating_profit_decline_context",
+          "requirement": "Despite the positive net contribution from sales and cost of products sold, operating profit (EBIT) declined by $403 million, indicating that the decrease was primarily due to other operating expenses rather than revenue and cost of products sold dynamics.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The question asks specifically about the attribution of the change in operating profit to sales growth vs cost of products sold. The reference answer provides specific dollar amounts for sales growth (+3,662), cost increase (-918), and their net effect on gross profit (+2,744). It also contextualizes this against the overall EBIT decline (-403). Requirements 1 and 2 are direct evidence atoms. Requirement 3 is an inference atom synthesizing the attribution logic requested. Requirement 4 is an inference atom providing the necessary context that these factors did not drive the total EBIT decline, which is part of the 'understanding' requested.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v17c-pool-026-ABBV_Footnotes_Medium_TwoPassage_Quantitative_87": {
+      "case_id": "finrank-30-v17c-pool-026-ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+      "question_id": "ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "req_2023_total_lease_liabilities",
+          "requirement": "Identify AbbVie's total lease liabilities for 2023 as $943 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-0ae55610634b0de2"
+          ],
+          "critical": true
+        },
+        {
+          "id": "req_2024_total_lease_liabilities",
+          "requirement": "Identify AbbVie's total lease liabilities for 2024 as $915 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-f611c9fa6ad6a913",
+            "src-0ae55610634b0de2"
+          ],
+          "critical": true
+        },
+        {
+          "id": "req_change_direction",
+          "requirement": "State that the total lease liabilities decreased from 2023 to 2024.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "req_change_magnitude",
+          "requirement": "State that the total lease liabilities decreased by $28 million.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements cover the specific values for both years, the direction of change, and the magnitude of the change. The gold_source_ids for the 2024 value include both passages as they both confirm the $915 million figure (one via present value calculation summary, one via balance sheet aggregation). The inference atoms regarding the change amount and direction are derived from comparing the two evidence values.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v21c-pool-025-JNJ_Risk_Medium_MultiPassage_Quantitative_61": {
+      "case_id": "finrank-30-v21c-pool-025-JNJ_Risk_Medium_MultiPassage_Quantitative_61",
+      "question_id": "JNJ_Risk_Medium_MultiPassage_Quantitative_61",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Medium",
+      "requirements": [
+        {
+          "id": "allowance_2024_value",
+          "requirement": "Identify the allowance for doubtful accounts for 2024 as $167 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5105aad4ecc656da"
+          ],
+          "critical": true
+        },
+        {
+          "id": "allowance_2023_value",
+          "requirement": "Identify the allowance for doubtful accounts for 2023 as $166 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5105aad4ecc656da"
+          ],
+          "critical": true
+        },
+        {
+          "id": "receivable_2024_net",
+          "requirement": "Identify the net trade accounts receivable for 2024 as $14,842 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5105aad4ecc656da"
+          ],
+          "critical": true
+        },
+        {
+          "id": "receivable_2023_net",
+          "requirement": "Identify the net trade accounts receivable for 2023 as $14,873 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-5105aad4ecc656da"
+          ],
+          "critical": true
+        },
+        {
+          "id": "proportion_2024",
+          "requirement": "State that the allowance for doubtful accounts represented approximately 1.11% of total accounts receivable in 2024.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "proportion_2023",
+          "requirement": "State that the allowance for doubtful accounts represented approximately 1.10% of total accounts receivable in 2023.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "customer_concentration_2024",
+          "requirement": "Explain that credit risk is small because three wholesalers accounted for approximately 20.5%, 15.6%, and 12.3% of total gross revenues in 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-67253fbc81617308"
+          ],
+          "critical": false
+        },
+        {
+          "id": "counterparty_quality",
+          "requirement": "Explain that these large distributors, along with government healthcare programs and private insurers, have strong financial capacity and reliable payment histories, which supports the low allowance proportion.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover the specific values for allowances and receivables, the calculated proportions (inferred from the reference answer's explicit percentages), and the structural explanation regarding customer concentration and counterparty quality found in the gold passages.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22a-pool-018-ABBV_ShareholderReturn_Hard_OnePassage_Qualitative_20": {
+      "case_id": "finrank-30-v22a-pool-018-ABBV_ShareholderReturn_Hard_OnePassage_Qualitative_20",
+      "question_id": "ABBV_ShareholderReturn_Hard_OnePassage_Qualitative_20",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "list_staggered_board",
+          "requirement": "Identify the staggered board structure (directors divided into three classes serving staggered three-year terms) as a measure to protect shareholders.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-08bf7dc7cdc2a87f"
+          ],
+          "critical": true
+        },
+        {
+          "id": "list_director_removal_for_cause",
+          "requirement": "Identify that directors can only be removed for cause as a protective measure.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-08bf7dc7cdc2a87f"
+          ],
+          "critical": true
+        },
+        {
+          "id": "list_vacancy_fillers",
+          "requirement": "Identify that only directors, not stockholders, may fill board vacancies as a protective measure.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-08bf7dc7cdc2a87f"
+          ],
+          "critical": true
+        },
+        {
+          "id": "list_special_meeting_restriction",
+          "requirement": "Identify the inability of stockholders to call special meetings as a protective measure.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-08bf7dc7cdc2a87f"
+          ],
+          "critical": true
+        },
+        {
+          "id": "list_supermajority_vote",
+          "requirement": "Identify the supermajority voting requirement (at least 80% of voting stock) to amend certain governance provisions as a protective measure.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-08bf7dc7cdc2a87f"
+          ],
+          "critical": true
+        },
+        {
+          "id": "list_delaware_section_203",
+          "requirement": "Identify Section 203 of the Delaware General Corporation Law, which restricts business combinations with shareholders acquiring more than 15% of stock for three years, as a protective measure.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-08bf7dc7cdc2a87f"
+          ],
+          "critical": true
+        },
+        {
+          "id": "state_intended_effectiveness_negotiation",
+          "requirement": "Explain that these measures are intended to safeguard stockholders by encouraging acquirors to negotiate with the board and providing time to assess offers.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "state_effectiveness_drawbacks",
+          "requirement": "Acknowledge that these measures could delay or prevent beneficial transactions and make it difficult to remove incumbent directors.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover all specific governance provisions listed in the reference answer and gold passage. The effectiveness aspect is split into the intended positive outcome (negotiation/time) and the acknowledged negative side effects (delay/prevention of deals/entrenchment), both of which are explicitly stated in the source text but represent an assessment of the measures' impact rather than raw facts.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22a-pool-010-MRK_Footnotes_Hard_MultiPassage_Qualitative_176": {
+      "case_id": "finrank-30-v22a-pool-010-MRK_Footnotes_Hard_MultiPassage_Qualitative_176",
+      "question_id": "MRK_Footnotes_Hard_MultiPassage_Qualitative_176",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "utb_balance_2024",
+          "requirement": "State that Merck’s unrecognized tax benefits (UTB) balance was $2.3 billion at the end of 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-3caf6d8cb00d946d",
+            "src-0079fe154131d50c"
+          ],
+          "critical": true
+        },
+        {
+          "id": "statute_expiration_amount",
+          "requirement": "Identify that the expiration of statutes of limitations for the 2019 and 2020 federal tax return years resulted in a $451 million reduction in UTB.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-3caf6d8cb00d946d"
+          ],
+          "critical": true
+        },
+        {
+          "id": "tax_provision_benefit",
+          "requirement": "State that this expiration resulted in a $519 million benefit to the income tax provision in 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-3e9d1d8b3db4516e"
+          ],
+          "critical": true
+        },
+        {
+          "id": "irs_exam_years",
+          "requirement": "List the specific years under IRS examination: 2017, 2018 (including TCJA transition tax), 2021, and 2022.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-3e9d1d8b3db4516e"
+          ],
+          "critical": true
+        },
+        {
+          "id": "tcja_liability_risk",
+          "requirement": "Note that if the IRS disagrees with Merck’s position on the TCJA transition tax, it may result in a significant tax liability.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "state_foreign_scope",
+          "requirement": "Specify that state and foreign tax examinations are ongoing for the period 2009 through 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-3e9d1d8b3db4516e"
+          ],
+          "critical": true
+        },
+        {
+          "id": "adequacy_of_reserves",
+          "requirement": "State that Merck believes its reserves for uncertain tax positions are adequate to cover existing risks or exposures.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-0079fe154131d50c"
+          ],
+          "critical": false
+        },
+        {
+          "id": "overall_impact_assessment",
+          "requirement": "Conclude that while the tax provision is currently favorably impacted by recent expirations, Merck remains exposed to significant potential future adjustments from ongoing examinations.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements capture the quantitative impact on the provision, the specific drivers (statute expirations), the scope of ongoing audits (federal and state/foreign years), the specific risk associated with the TCJA, and the qualitative assessment of reserve adequacy and future exposure.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v21g-pool-015-JNJ_Risk_Hard_MultiPassage_Qualitative_02": {
+      "case_id": "finrank-30-v21g-pool-015-JNJ_Risk_Hard_MultiPassage_Qualitative_02",
+      "question_id": "JNJ_Risk_Hard_MultiPassage_Qualitative_02",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "impact_on_supply_consistency",
+          "requirement": "Manufacturing interruptions, third-party supplier failures, and global health crises threaten product supply consistency.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        },
+        {
+          "id": "impact_on_quality_assurance",
+          "requirement": "These risks threaten quality assurance.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "impact_on_cost_control",
+          "requirement": "These risks threaten cost control.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "impact_on_regulatory_compliance",
+          "requirement": "These risks threaten regulatory compliance.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "mitigation_robust_plans",
+          "requirement": "The Company implements robust business continuity plans to mitigate these risks.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-7a7323573146d003"
+          ],
+          "critical": true
+        },
+        {
+          "id": "mitigation_diversify_suppliers",
+          "requirement": "The Company diversifies suppliers as a mitigation strategy.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "mitigation_safety_stock",
+          "requirement": "The Company maintains safety stock as a mitigation strategy.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "mitigation_contingency_protocols",
+          "requirement": "The Company develops contingency protocols as a mitigation strategy.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The reference answer lists specific impacts (supply consistency, quality, cost, compliance) and specific mitigations (robust plans, diversify suppliers, safety stock, contingency protocols). The gold passages explicitly mention 'robust business continuity plans' and the general nature of the risks. Specific mitigations like 'diversify suppliers', 'safety stock', and 'contingency protocols' are not explicitly detailed in the provided text snippets but are part of the reference answer's synthesis. Therefore, they are marked as inference atoms with empty gold_source_ids, while the explicit mention of robust plans is an evidence atom.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22c-pool-015-MRK_Financials_Hard_MultiPassage_Qualitative_28": {
+      "case_id": "finrank-30-v22c-pool-015-MRK_Financials_Hard_MultiPassage_Qualitative_28",
+      "question_id": "MRK_Financials_Hard_MultiPassage_Qualitative_28",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "restructuring_program_scope",
+          "requirement": "The 2024 restructuring program includes optimization of the Animal Health global manufacturing network to improve supply reliability and increase efficiency.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-4bcc65124ba23a18"
+          ],
+          "critical": true
+        },
+        {
+          "id": "restructuring_cost_estimate",
+          "requirement": "The cumulative pretax costs for the 2024 restructuring program are estimated at approximately $4.0 billion, with substantially completed actions by the end of 2031.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-4bcc65124ba23a18"
+          ],
+          "critical": false
+        },
+        {
+          "id": "cost_of_sales_restructuring_expense",
+          "requirement": "Cost of sales in 2024 included $495 million in expenses associated with restructuring activities.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a06e5ed113af1f57"
+          ],
+          "critical": true
+        },
+        {
+          "id": "rd_expense_breakdown",
+          "requirement": "Total R&D expenses in 2024 were $17.9 billion (implied by summing MRL and non-MRL), with $7.7 billion attributed to non-MRL costs including Animal Health research costs.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-0df58a86decf4471"
+          ],
+          "critical": true
+        },
+        {
+          "id": "strategic_implication_savings_reallocation",
+          "requirement": "The restructuring indicates a strategic shift to reduce long-term operating costs in manufacturing, suggesting that savings could be reallocated to development initiatives while continuing significant investment in R&D.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The reference answer mentions '$750 million in annual savings by 2031', but this specific figure is not present in the provided gold passages. The passages only state the total cumulative cost ($4.0B) and the scope. Therefore, the requirement regarding the specific annual savings amount cannot be marked as evidence based on the provided text. The inference atom captures the qualitative interpretation requested by the question.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22a-pool-019-KMI_ShareholderReturn_Hard_MultiPassage_Quantitative_01": {
+      "case_id": "finrank-30-v22a-pool-019-KMI_ShareholderReturn_Hard_MultiPassage_Quantitative_01",
+      "question_id": "KMI_ShareholderReturn_Hard_MultiPassage_Quantitative_01",
+      "reasoning_type": "Quantitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "dps_values_and_trend",
+          "requirement": "State that KMI's declared dividend per share (DPS) increased from $0.2875 in Q1 2024 to $0.2925 in Q1 2025.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-6a9d97e4cf3a3c8b"
+          ],
+          "critical": true
+        },
+        {
+          "id": "eps_values_and_trend",
+          "requirement": "State that basic and diluted EPS decreased from $0.33 in Q1 2024 to $0.32 in Q1 2025.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-6a9d97e4cf3a3c8b"
+          ],
+          "critical": true
+        },
+        {
+          "id": "net_inc_values_and_trend",
+          "requirement": "State that Net Income Attributable to Kinder Morgan, Inc. decreased from $746 million in Q1 2024 to $717 million in Q1 2025.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-6a9d97e4cf3a3c8b"
+          ],
+          "critical": true
+        },
+        {
+          "id": "payout_ratio_calculation",
+          "requirement": "Calculate and state that the dividend payout ratio increased from approximately 87.1% in Q1 2024 ($0.2875/$0.33) to 91.4% in Q1 2025 ($0.2925/$0.32).",
+          "atom_type": "inference",
+          "gold_source_ids": [
+            "src-6a9d97e4cf3a3c8b"
+          ],
+          "critical": false
+        },
+        {
+          "id": "capital_allocation_implication",
+          "requirement": "Discuss the implication that KMI maintained its commitment to growing shareholder distributions despite declining earnings, potentially implying a higher proportion of earnings allocated to dividends or drawing on available capital/future expectations, impacting future capital allocation flexibility.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements are consolidated into 5 atoms: three for the core financial metrics (DPS, EPS, Net Inc) including their values and trends, one for the derived payout ratio calculation, and one for the qualitative analysis of capital allocation implications. This fits within the 1-8 item limit.",
+      "generation_attempts": 2
+    },
+    "finrank-30-v21g-pool-018-DVN_Footnotes_Hard_SinglePassage_Qualitative_01": {
+      "case_id": "finrank-30-v21g-pool-018-DVN_Footnotes_Hard_SinglePassage_Qualitative_01",
+      "question_id": "DVN_Footnotes_Hard_SinglePassage_Qualitative_01",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "secures_long_term_capacity",
+          "requirement": "The Catalyst JV secures long-term gathering and processing capacity for Devon’s Delaware Basin operations.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8a55436e5318c767"
+          ],
+          "critical": true
+        },
+        {
+          "id": "fixed_fee_agreements",
+          "requirement": "The arrangement involves fixed-fee oil gathering and natural gas processing agreements.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8a55436e5318c767"
+          ],
+          "critical": false
+        },
+        {
+          "id": "dedicated_acres_count",
+          "requirement": "Devon has dedicated 50,000 net acres in the Stateline area of the Delaware Basin to the JV.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8a55436e5318c767"
+          ],
+          "critical": true
+        },
+        {
+          "id": "lock_in_period",
+          "requirement": "Production from the dedicated acres is locked into the JV through 2038.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8a55436e5318c767"
+          ],
+          "critical": true
+        },
+        {
+          "id": "reduced_flexibility",
+          "requirement": "The commitment reduces flexibility by locking production into the JV.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "cost_stability_impact",
+          "requirement": "The fixed-fee structure ensures cost stability.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover the operational impact (capacity, cost stability), specific quantitative details (50,000 acres, through 2038), and the qualitative trade-off (certainty vs. reduced flexibility) as described in the reference answer and supported by the gold passage.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v21c-pool-015-GM_Legal_Hard_MultiPassage_Qualitative_66": {
+      "case_id": "finrank-30-v21c-pool-015-GM_Legal_Hard_MultiPassage_Qualitative_66",
+      "question_id": "GM_Legal_Hard_MultiPassage_Qualitative_66",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "cyber_risk_unauthorized_access",
+          "requirement": "Cybersecurity vulnerabilities pose a risk because unauthorized access or manipulation of Tesla's complex information technology systems (including vehicles and energy storage) could result in loss of confidence, legal claims, or government investigations.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2cf55626a01f0039"
+          ],
+          "critical": true
+        },
+        {
+          "id": "cyber_vulnerability_uncertainty",
+          "requirement": "There is no guarantee that all cybersecurity vulnerabilities will be identified or that remediation efforts will be successful, meaning vulnerabilities may be exploited before they are fixed.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2cf55626a01f0039"
+          ],
+          "critical": false
+        },
+        {
+          "id": "cyber_brand_harm_perception",
+          "requirement": "Reports of hacking or unauthorized access can harm Tesla's brand, prospects, and operating results regardless of their truthfulness or veracity.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-2cf55626a01f0039"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gov_investigation_scope",
+          "requirement": "Tesla faces government investigations from agencies such as the SEC, DOJ, NHTSA, and NTSB regarding its operations, technology (including vehicle functionality, Autopilot, and FSD Capability), compliance, finance, and data privacy.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a8ede76654e70b74",
+            "src-8b48fdab23d77317"
+          ],
+          "critical": true
+        },
+        {
+          "id": "gov_investigation_potential_sanctions",
+          "requirement": "Although no wrongdoing has been concluded in ongoing investigations, there is a possibility that Tesla could face liability, penalties, restrictive sanctions, and other adverse consequences if enforcement actions are pursued.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-a8ede76654e70b74",
+            "src-8b48fdab23d77317"
+          ],
+          "critical": true
+        },
+        {
+          "id": "legal_proceedings_data_incident",
+          "requirement": "Tesla faces other legal proceedings, including a putative class action lawsuit filed after a data incident involving misappropriated non-public business and personal information, which could have a material adverse impact if an unfavorable ruling occurs.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-8b48fdab23d77317"
+          ],
+          "critical": true
+        },
+        {
+          "id": "overall_financial_reputational_impact",
+          "requirement": "The combined risks from cybersecurity incidents and government investigations/legal proceedings could materially adversely impact Tesla's business, financial position, results of operations, prospects, cash flows, and brand.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": true
+        }
+      ],
+      "notes": "The requirements cover the specific mechanisms of cyber risk (unauthorized access, vulnerability uncertainty, perception-based brand harm), the scope and potential outcomes of government investigations (SEC/DOJ/NHTSA focus on tech/ops, potential for sanctions despite no current findings), and specific legal liabilities (class action from data incident). The final atom synthesizes the overall impact on financial and reputational standing as requested by the question.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22a-pool-017-GM_Financials_Hard_OnePassage_Qualitative_178": {
+      "case_id": "finrank-30-v22a-pool-017-GM_Financials_Hard_OnePassage_Qualitative_178",
+      "question_id": "GM_Financials_Hard_OnePassage_Qualitative_178",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "req_gmna_revenue_growth",
+          "requirement": "Identify that General Motors' revenue growth in 2024 was primarily driven by an increase in vehicle, parts and accessories sales in North America (GMNA), rising from $136.98 billion in 2023 to $152.31 billion in 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-afcf39f9f1ddef49"
+          ],
+          "critical": true
+        },
+        {
+          "id": "req_gmi_revenue_decline",
+          "requirement": "Note that this growth offset a decline in international markets (GMI) vehicle, parts and accessories sales, which fell from $14.42 billion in 2023 to $12.78 billion in 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-afcf39f9f1ddef49"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_gm_financial_growth",
+          "requirement": "Identify GM Financial as an additional driver of revenue growth, with net sales and revenue increasing from $14.23 billion in 2023 to $15.88 billion in 2024.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-afcf39f9f1ddef49"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_other_segments_flat",
+          "requirement": "State that revenue from used vehicles and services/other remained relatively small and flat year-over-year, contributing little to overall growth.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-afcf39f9f1ddef49"
+          ],
+          "critical": false
+        },
+        {
+          "id": "req_sustainability_geographic_risk",
+          "requirement": "Assess the sustainability of these drivers as mixed, noting that while North American demand underpinned gains, the decline in international sales highlights geographic risk.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "req_sustainability_credit_sensitivity",
+          "requirement": "Assess that financial services revenue is sensitive to credit conditions, adding to the mixed sustainability outlook.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "req_sustainability_contract_liabilities",
+          "requirement": "Highlight that contract liabilities related to connectivity, rewards, and maintenance services grew from $5.0 billion in 2023 to $6.6 billion in 2024, suggesting a longer-term recurring revenue stream that may provide stability.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-afcf39f9f1ddef49"
+          ],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover the primary drivers (GMNA growth, GMI decline, GM Financial growth, flat other segments) and the sustainability assessment (geographic risk, credit sensitivity, recurring revenue from contract liabilities). Values are preserved with two decimal places where appropriate or as stated in the reference answer for clarity, though the source data is in millions. The reference answer uses billions ($136.98B), so the requirements reflect that precision.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22b-pool-010-DVN_Legal_Hard_TwoPassage_Qualitative_01": {
+      "case_id": "finrank-30-v22b-pool-010-DVN_Legal_Hard_TwoPassage_Qualitative_01",
+      "question_id": "DVN_Legal_Hard_TwoPassage_Qualitative_01",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "grayson_mill_total_cost",
+          "requirement": "The total consideration for the Grayson Mill acquisition was approximately $5.0 billion (specifically $5,022 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-f3a429f5d5f7b2b3"
+          ],
+          "critical": true
+        },
+        {
+          "id": "cash_portion_amount",
+          "requirement": "The cash portion of the purchase price was $3.5 billion (specifically $3,567 million).",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-f3a429f5d5f7b2b3"
+          ],
+          "critical": true
+        },
+        {
+          "id": "equity_portion_amount",
+          "requirement": "The equity portion consisted of approximately 37.3 million shares valued at $1,455 million.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-f3a429f5d5f7b2b3"
+          ],
+          "critical": false
+        },
+        {
+          "id": "liquidity_preservation_inference",
+          "requirement": "Using a credit line instead of cash would have preserved Devon's liquidity and supported short-term shareholder returns.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "leverage_risk_inference",
+          "requirement": "Using a credit line would add leverage, interest costs, and balance sheet risk.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "investor_confidence_risk",
+          "requirement": "Heavy reliance on debt could undermine investor confidence given Devon's strategy of maintaining financial discipline.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        },
+        {
+          "id": "optimal_structure_recommendation",
+          "requirement": "A mixed structure with limited debt, more equity, and contingent earnouts would likely deliver a better balance of flexibility and shareholder value.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements split the factual components of the deal cost from the qualitative analysis of financing alternatives. The evidence atoms capture the specific numbers from the gold passage. The inference atoms capture the strategic assessment requested by the question, which is not explicitly stated in the text but derived from the reference answer's logic.",
+      "generation_attempts": 1
+    },
+    "finrank-30-v22a-pool-016-ABBV_CompanyOverview_Hard_OnePassage_Qualitative_237": {
+      "case_id": "finrank-30-v22a-pool-016-ABBV_CompanyOverview_Hard_OnePassage_Qualitative_237",
+      "question_id": "ABBV_CompanyOverview_Hard_OnePassage_Qualitative_237",
+      "reasoning_type": "Qualitative",
+      "difficulty": "Hard",
+      "requirements": [
+        {
+          "id": "leadership_transition_dates_and_roles",
+          "requirement": "Robert A. Michael succeeded Richard A. Gonzalez as CEO on July 1, 2024, and is scheduled to succeed him as Chairman of the board effective July 1, 2025.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-dd3ebc3c83e240a7"
+          ],
+          "critical": true
+        },
+        {
+          "id": "cerevel_acquisition_date_and_purpose",
+          "requirement": "AbbVie completed the acquisition of Cerevel Therapeutics on August 1, 2024, to complement its neuroscience portfolio with assets in psychiatric and neurological disorders.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-dd3ebc3c83e240a7"
+          ],
+          "critical": true
+        },
+        {
+          "id": "immunogen_acquisition_date_and_purpose",
+          "requirement": "AbbVie completed the acquisition of ImmunoGen on February 12, 2024, to build on its solid tumor pipeline using next-generation antibody-drug conjugate (ADC) therapies for solid tumors and hematologic malignancies.",
+          "atom_type": "evidence",
+          "gold_source_ids": [
+            "src-dd3ebc3c83e240a7"
+          ],
+          "critical": true
+        },
+        {
+          "id": "strategic_priorities_synthesis",
+          "requirement": "These actions reflect strategic priorities of ensuring leadership continuity through a managed governance transition and expanding the product portfolio into high-growth therapeutic areas like neuroscience and oncology.",
+          "atom_type": "inference",
+          "gold_source_ids": [],
+          "critical": false
+        }
+      ],
+      "notes": "The requirements cover the specific dates and roles for the leadership transition, the dates and strategic rationale for both acquisitions, and the synthesis of these events into the company's broader strategic priorities as requested by the question.",
+      "generation_attempts": 1
+    }
+  }
+}

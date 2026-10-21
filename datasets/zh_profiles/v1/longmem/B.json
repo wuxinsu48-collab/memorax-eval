@@ -1,0 +1,1406 @@
+{
+  "profile_id": "B",
+  "sessions": [
+    {
+      "id": "B-S4",
+      "period": "2026-11-03 晚间",
+      "session_time": "2026-11-03T20:10:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "B-S4-M1",
+          "role": "user",
+          "timestamp": "2026-11-03T20:10:00+08:00",
+          "text": "11 月 1 日，我把旧木工台从重庆渝中区家里搬到南岸区工作室，木工台仍归我所有；工作室每月租金是 480 元。"
+        },
+        {
+          "id": "B-S4-M2",
+          "role": "assistant",
+          "timestamp": "2026-11-03T20:11:00+08:00",
+          "text": "我记下的是：木工台归你所有，只是位置从渝中区家里变成南岸区工作室；480 元对应工作室月租，木工台没有另记售价。"
+        },
+        {
+          "id": "B-S4-M3",
+          "role": "user",
+          "timestamp": "2026-11-03T20:13:00+08:00",
+          "text": "今年 10 月 18 日我去北碚观鸟 2 小时，11 月 1 日去照母山观鸟 1.5 小时。比起人多的地方，我更愿意清晨出门，也喜欢随身带纸质记录本；商场里的展我嫌吵，站久了腰也不舒服。"
+        },
+        {
+          "id": "B-S4-M4",
+          "role": "assistant",
+          "timestamp": "2026-11-03T20:14:00+08:00",
+          "text": "观鸟记录可以统一成四栏：日期地点、天气、鸟种数量、一句现场备注。清晨观测后当天整理，纸本拍照再存一份电子备份。"
+        },
+        {
+          "id": "B-S4-M5",
+          "role": "user",
+          "timestamp": "2026-11-03T20:16:00+08:00",
+          "text": "“城市夜读地图”一期原计划核验 4 个公共阅读空间。同事陆知远在 11 月 3 日发来第一版表，列出 7 处，其中 4 处是公共阅读空间，另 3 处是连锁书店；当前确认的是这 4 处。"
+        },
+        {
+          "id": "B-S4-M6",
+          "role": "assistant",
+          "timestamp": "2026-11-03T20:17:00+08:00",
+          "text": "我会把 4 看成当前确认数，把 7 保留为陆知远的转述，不把连锁书店算作公共阅读空间。下一步可按场地清单、开放时间、无障碍入口三项逐处核验。"
+        },
+        {
+          "id": "B-S4-M7",
+          "role": "user",
+          "timestamp": "2026-11-03T20:19:00+08:00",
+          "text": "父亲那边的家庭影像整理，我准备先扫描两本相册，再挑 12 段做口述说明。两本相册合计多少张还没清点，父亲电话里先说 36 张，我还没核过。"
+        },
+        {
+          "id": "B-S4-M8",
+          "role": "assistant",
+          "timestamp": "2026-11-03T20:20:00+08:00",
+          "text": "先别采用 36 这个口述数字。可以按四步推进：一、逐页清点并去重；二、按年份命名；三、扫描两本相册；四、围绕 12 段影像做口述说明。"
+        },
+        {
+          "id": "B-S4-M9",
+          "role": "user",
+          "timestamp": "2026-11-03T20:22:00+08:00",
+          "text": "《事实》读完了，比原计划晚了 5 天；现在开始读《山乡巨变》，计划两周读完。"
+        },
+        {
+          "id": "B-S4-M10",
+          "role": "assistant",
+          "timestamp": "2026-11-03T20:23:00+08:00",
+          "text": "《事实》记为已完成但延期 5 天；《山乡巨变》从今天起是当前阅读项，计划周期两周。"
+        }
+      ]
+    },
+    {
+      "id": "B-S5",
+      "period": "2026-11-17 晚间",
+      "session_time": "2026-11-17T19:30:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "B-S5-M1",
+          "role": "user",
+          "timestamp": "2026-11-17T19:30:00+08:00",
+          "text": "群里又贴出 10 月 18 日在北碚观鸟拍的合照，照片日期仍是 10 月 18 日。11 月 8 日我去了缙云山观鸟 2.5 小时，11 月 15 日又去礼嘉观鸟 1 小时。"
+        },
+        {
+          "id": "B-S5-M2",
+          "role": "assistant",
+          "timestamp": "2026-11-17T19:31:00+08:00",
+          "text": "群里的合照对应 10 月 18 日北碚这一趟；新增记录是 11 月 8 日缙云山和 11 月 15 日礼嘉两趟。"
+        },
+        {
+          "id": "B-S5-M3",
+          "role": "user",
+          "timestamp": "2026-11-17T19:33:00+08:00",
+          "text": "夜读地图现在现场核验了 6 处，比 11 月 3 日说的 4 处多了 2 处。陆知远 11 月 17 日又发来第二版表，列出 7 处，其中 6 处是公共阅读空间，另 1 处是连锁书店。"
+        },
+        {
+          "id": "B-S5-M4",
+          "role": "assistant",
+          "timestamp": "2026-11-17T19:34:00+08:00",
+          "text": "11 月 3 日第一版表是 7 处，其中 4 处有效、3 家是连锁书店；11 月 17 日第二版表是 7 处，其中 6 处有效、1 家是连锁书店。当前有效口径是 6 处。"
+        },
+        {
+          "id": "B-S5-M5",
+          "role": "user",
+          "timestamp": "2026-11-17T19:36:00+08:00",
+          "text": "相册清点完了，两本相册共有 45 张照片，涉及 42 个不同画面；其中 3 张合影是重复件。父亲先前说的 36 张漏了一页。11 月 15 日已经扫描完两本相册。"
+        },
+        {
+          "id": "B-S5-M6",
+          "role": "assistant",
+          "timestamp": "2026-11-17T19:37:00+08:00",
+          "text": "我记成 45 张原件、42 张唯一照片，3 张合影为重复件；两本相册的扫描在 11 月 15 日完成。"
+        },
+        {
+          "id": "B-S5-M7",
+          "role": "user",
+          "timestamp": "2026-11-17T19:39:00+08:00",
+          "text": "11 月 17 日收到通知，从 12 月 1 日起我从数据产品负责人调整为数据治理负责人，月薪增加 1500 元。这个变化还没生效。"
+        },
+        {
+          "id": "B-S5-M8",
+          "role": "assistant",
+          "timestamp": "2026-11-17T19:40:00+08:00",
+          "text": "2026 年 11 月 17 日只是收到通知，生效日是 12 月 1 日；在此之前仍是数据产品负责人。"
+        },
+        {
+          "id": "B-S5-M9",
+          "role": "user",
+          "timestamp": "2026-11-17T19:42:00+08:00",
+          "text": "家庭口述项目 11 月 16 日做了四位长辈的第一轮访谈，每人 3 个问题；计划在月底前补齐 12 段影像说明。就按你上次的四步清单继续。"
+        },
+        {
+          "id": "B-S5-M10",
+          "role": "assistant",
+          "timestamp": "2026-11-17T19:43:00+08:00",
+          "text": "两本相册已扫，四位长辈共完成 12 个访谈问题；影像说明仍在计划中，月底前目标是 12 段。"
+        }
+      ]
+    },
+    {
+      "id": "B-S6",
+      "period": "2026-12-01 晚间",
+      "session_time": "2026-12-01T20:00:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "B-S6-M1",
+          "role": "user",
+          "timestamp": "2026-12-01T20:00:00+08:00",
+          "text": "今天 12 月 1 日，岗位调整已经生效，我现在是数据治理负责人；月薪从原来的基础增加 1500 元。"
+        },
+        {
+          "id": "B-S6-M2",
+          "role": "assistant",
+          "timestamp": "2026-12-01T20:01:00+08:00",
+          "text": "当前岗位记为数据治理负责人，自 2026 年 12 月 1 日生效；数据产品负责人是过去岗位。"
+        },
+        {
+          "id": "B-S6-M3",
+          "role": "user",
+          "timestamp": "2026-12-01T20:03:00+08:00",
+          "text": "夜读地图最后上线 6 处；11 月 17 日第二版表里的 7 处包含 1 家连锁书店，公开页面列出的是 6 处有效空间，较最初 4 处净增 2 处。"
+        },
+        {
+          "id": "B-S6-M4",
+          "role": "assistant",
+          "timestamp": "2026-12-01T20:04:00+08:00",
+          "text": "最终有效空间和上线页面都是 6 处；11 月 3 日第一版表中的 3 家连锁书店、11 月 17 日第二版表中的 1 家连锁书店保留在转述清单，上线集合只列 6 处公共阅读空间。"
+        },
+        {
+          "id": "B-S6-M5",
+          "role": "user",
+          "timestamp": "2026-12-01T20:06:00+08:00",
+          "text": "旧木工台还放在南岸区工作室，没有搬回渝中区家；12 月 1 日我把父亲以前送我的旧手摇钻也从家里柜子带到工作室，手摇钻仍归我。"
+        },
+        {
+          "id": "B-S6-M6",
+          "role": "assistant",
+          "timestamp": "2026-12-01T20:07:00+08:00",
+          "text": "木工台和手摇钻现在都在南岸区工作室，所有权都归陆知行；家里不再放这两件工具。"
+        },
+        {
+          "id": "B-S6-M7",
+          "role": "user",
+          "timestamp": "2026-12-01T20:09:00+08:00",
+          "text": "11 月 23 日 12 段影像说明全部写完，家庭影像项目完成；11 月 27 日周五又去礼嘉观鸟 2 小时，这天礼嘉的行程与 11 月 15 日礼嘉记录分开登记。"
+        },
+        {
+          "id": "B-S6-M8",
+          "role": "assistant",
+          "timestamp": "2026-12-01T20:10:00+08:00",
+          "text": "影像项目按计划完成 12 段说明；11 月 27 日礼嘉登记为另一次行程。"
+        },
+        {
+          "id": "B-S6-M9",
+          "role": "user",
+          "timestamp": "2026-12-01T20:12:00+08:00",
+          "text": "《山乡巨变》读完了，实际用了 15 天，比两周计划晚 1 天；现在读《城记》，计划三周。周末想找个不太吵、不用长时间站的半天活动。"
+        },
+        {
+          "id": "B-S6-M10",
+          "role": "assistant",
+          "timestamp": "2026-12-01T20:13:00+08:00",
+          "text": "可以按你一直偏好的方式安排：周日早上 8 点半去园博园做半日观鸟，路线只走平缓主园道，中途两次坐下休息；预算 120 元。带纸质记录本和折叠凳，早上人少时先走湖边段。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "B-L01",
+      "question": "截至 12 月 1 日，我一共进行过几次独立观鸟行程？累计多少小时？请列出日期和时长，重复提及不算新行程。",
+      "must_include": "5 次；共 9 小时；10 月 18 日 2 小时、11 月 1 日 1.5 小时、11 月 8 日 2.5 小时、11 月 15 日 1 小时、11 月 27 日 2 小时。",
+      "must_not": "把 10 月 18 日的重复提及算成新行程，或统计为 6 次以上。",
+      "required_facts": [
+        {
+          "text": "10 月 18 日在北碚观鸟 2 小时。",
+          "source_quote": "10 月 18 日我去北碚观鸟 2 小时"
+        },
+        {
+          "text": "11 月 1 日在照母山观鸟 1.5 小时。",
+          "source_quote": "11 月 1 日去照母山观鸟 1.5 小时"
+        },
+        {
+          "text": "11 月 8 日在缙云山观鸟 2.5 小时。",
+          "source_quote": "11 月 8 日我去了缙云山观鸟 2.5 小时"
+        },
+        {
+          "text": "11 月 15 日在礼嘉观鸟 1 小时。",
+          "source_quote": "11 月 15 日又去礼嘉观鸟 1 小时"
+        },
+        {
+          "text": "11 月 27 日在礼嘉观鸟 2 小时。",
+          "source_quote": "11 月 27 日周五又去礼嘉观鸟 2 小时"
+        },
+        {
+          "text": "群里的合照对应 10 月 18 日北碚这一趟。",
+          "source_quote": "群里的合照对应 10 月 18 日北碚这一趟"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M3",
+        "B-S5-M1",
+        "B-S5-M2",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-18 至 2026-11-27",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L02",
+      "question": "11 月 16 日、11 月 23 日和 11 月 27 日分别发生了什么？这些结果是在哪次对话里汇总的？",
+      "must_include": "11 月 16 日完成四位长辈首轮访谈；11 月 23 日写完 12 段影像说明并完成项目；11 月 27 日进行一次新的礼嘉观鸟；结果在 12 月 1 日对话中汇总。",
+      "must_not": "把 12 月 1 日说成事件发生日期，或把访谈问题数当成影像说明数。",
+      "required_facts": [
+        {
+          "text": "11 月 16 日完成四位长辈的第一轮访谈。",
+          "source_quote": "家庭口述项目 11 月 16 日做了四位长辈的第一轮访谈"
+        },
+        {
+          "text": "11 月 23 日完成 12 段影像说明。",
+          "source_quote": "11 月 23 日 12 段影像说明全部写完"
+        },
+        {
+          "text": "11 月 27 日进行另一趟礼嘉观鸟。",
+          "source_quote": "11 月 27 日礼嘉登记为另一次行程"
+        },
+        {
+          "text": "影像项目最终按计划完成。",
+          "source_quote": "影像项目按计划完成 12 段说明"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "false_commitment"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S5-M9",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-16 / 2026-11-23 / 2026-11-27",
+      "session_time": "2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L03",
+      "question": "礼嘉的观鸟一共有几次独立行程？分别在什么时候、各多久，合计多少小时？",
+      "must_include": "2 次；11 月 15 日 1 小时；11 月 27 日 2 小时；合计 3 小时。",
+      "must_not": "把两次礼嘉行程合并成一次，或把北碚、照母山、缙云山算进礼嘉合计。",
+      "required_facts": [
+        {
+          "text": "11 月 15 日礼嘉观鸟 1 小时。",
+          "source_quote": "11 月 15 日又去礼嘉观鸟 1 小时"
+        },
+        {
+          "text": "11 月 27 日礼嘉观鸟 2 小时。",
+          "source_quote": "11 月 27 日周五又去礼嘉观鸟 2 小时"
+        },
+        {
+          "text": "11 月 27 日礼嘉是一趟独立行程。",
+          "source_quote": "11 月 27 日礼嘉登记为另一次行程"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "information_extraction",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S5-M1",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-15 / 2026-11-27",
+      "session_time": "2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L04",
+      "question": "你之前建议我用哪四栏记录观鸟？纸本记录之后怎么留存？",
+      "must_include": "日期地点、天气、鸟种数量、一句现场备注；当天整理，纸本拍照后保存电子备份。",
+      "must_not": "增加没有出现过的记录栏目，或说只需要保存纸本、不需要备份。",
+      "required_facts": [
+        {
+          "text": "记录四栏为日期地点、天气、鸟种数量和一句现场备注。",
+          "source_quote": "日期地点、天气、鸟种数量、一句现场备注"
+        },
+        {
+          "text": "清晨观测后当天整理。",
+          "source_quote": "清晨观测后当天整理"
+        },
+        {
+          "text": "纸本拍照后再存电子备份。",
+          "source_quote": "纸本拍照再存一份电子备份"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M3",
+        "B-S4-M4"
+      ],
+      "session_ids": [
+        "B-S4"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03",
+      "session_time": "2026-11-03",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L05",
+      "question": "按我一贯的偏好，周日半天怎么安排？请给出时间、地点、路线、休息、预算和携带物。",
+      "must_include": "周日早上 8 点半去园博园做半日观鸟；只走平缓主园道；中途两次坐下休息；预算 120 元；带纸质记录本和折叠凳；早上人少时先走湖边段。",
+      "must_not": "安排商场、长时间站立或攀爬，或把预算写成 480 元。",
+      "required_facts": [
+        {
+          "text": "安排周日早上 8 点半去园博园做半日观鸟。",
+          "source_quote": "周日早上 8 点半去园博园做半日观鸟"
+        },
+        {
+          "text": "路线只走平缓主园道。",
+          "source_quote": "路线只走平缓主园道"
+        },
+        {
+          "text": "中途安排两次坐下休息。",
+          "source_quote": "中途两次坐下休息"
+        },
+        {
+          "text": "活动预算为 120 元。",
+          "source_quote": "预算 120 元"
+        },
+        {
+          "text": "携带纸质记录本和折叠凳。",
+          "source_quote": "带纸质记录本和折叠凳"
+        },
+        {
+          "text": "早上人少时先走湖边段。",
+          "source_quote": "早上人少时先走湖边段"
+        },
+        {
+          "text": "用户更愿意在清晨出门。",
+          "source_quote": "我更愿意清晨出门"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "assistant_memory",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "fabricated_action",
+        "item_state_migration"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M3",
+        "B-S5-M1",
+        "B-S6-M9",
+        "B-S6-M10"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-12-06 周日早上",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L06",
+      "question": "我的职位在 11 月 17 日到 12 月 1 日之间怎样变化？何时生效，前后岗位和薪资增量分别是什么？",
+      "must_include": "原岗位数据产品负责人；11 月 17 日收到通知但尚未生效；12 月 1 日起任数据治理负责人；月薪从原基础增加 1500 元。",
+      "must_not": "说 11 月 17 日已生效，或把两个岗位同时说成当前岗位。",
+      "required_facts": [
+        {
+          "text": "原有岗位为西南公共数据实验室数据产品负责人。",
+          "source_quote": "我在西南公共数据实验室担任数据产品负责人"
+        },
+        {
+          "text": "11 月 17 日收到岗位调整通知。",
+          "source_quote": "11 月 17 日收到通知"
+        },
+        {
+          "text": "调整从 12 月 1 日起生效。",
+          "source_quote": "从 12 月 1 日起我从数据产品负责人调整为数据治理负责人"
+        },
+        {
+          "text": "12 月 1 日起当前岗位为数据治理负责人。",
+          "source_quote": "我现在是数据治理负责人"
+        },
+        {
+          "text": "月薪从原基础增加 1500 元。",
+          "source_quote": "月薪从原来的基础增加 1500 元"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "temporal_disorder",
+        "false_commitment"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S3-M3",
+        "B-S5-M7",
+        "B-S5-M8",
+        "B-S6-M1",
+        "B-S6-M2"
+      ],
+      "session_ids": [
+        "B-S3",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-30 前为旧岗位，2026-12-01 起为新岗位",
+      "session_time": "2026 / 2026-11-17 / 2026-12-01",
+      "state_key": "employment_role",
+      "old_value": "数据产品负责人",
+      "new_value": "数据治理负责人",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L07",
+      "question": "“城市夜读地图”两版 7 处表分别由谁给出、组成怎样？最终有效数量和上线数量是多少？",
+      "must_include": "11 月 3 日第一版 7 处由陆知远给出，其中 4 处有效、3 家是连锁书店；11 月 17 日第二版 7 处中 6 处有效、1 家是连锁书店；最终有效数量和上线数量都是 6 处，较最初 4 处净增 2 处。",
+      "must_not": "把第一版 7 处和第二版 7 处当成同一版，或把连锁书店算作公共阅读空间。",
+      "required_facts": [
+        {
+          "text": "一期原计划核验 4 个公共阅读空间。",
+          "source_quote": "一期原计划核验 4 个公共阅读空间"
+        },
+        {
+          "text": "后来现场核验 6 处。",
+          "source_quote": "夜读地图现在现场核验了 6 处"
+        },
+        {
+          "text": "6 处较 4 处增加 2 处。",
+          "source_quote": "比 11 月 3 日说的 4 处多了 2 处"
+        },
+        {
+          "text": "最终上线 6 处。",
+          "source_quote": "夜读地图最后上线 6 处"
+        },
+        {
+          "text": "11 月 3 日第一版 7 处包含 4 处有效空间和 3 家连锁书店。",
+          "source_quote": "11 月 3 日发来第一版表，列出 7 处，其中 4 处是公共阅读空间，另 3 处是连锁书店"
+        },
+        {
+          "text": "11 月 17 日第二版 7 处包含 6 处有效空间和 1 家连锁书店。",
+          "source_quote": "11 月 17 日又发来第二版表，列出 7 处，其中 6 处是公共阅读空间，另 1 处是连锁书店"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "knowledge_update",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M5",
+        "B-S4-M6",
+        "B-S5-M3",
+        "B-S5-M4",
+        "B-S6-M3",
+        "B-S6-M4"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03 至 2026-12-01",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": "night_reading_map_verified_sites",
+      "old_value": "4",
+      "new_value": "6",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L08",
+      "question": "《事实》和《山乡巨变》的完成情况与原计划相比怎样？我现在在读什么、计划读多久？",
+      "must_include": "《事实》完成但晚 5 天；《山乡巨变》计划两周，实际 15 天，晚 1 天；现在读《城记》，计划三周。",
+      "must_not": "把《山乡巨变》说成提前完成，或把《事实》当成当前阅读项。",
+      "required_facts": [
+        {
+          "text": "《事实》完成，比原计划晚 5 天。",
+          "source_quote": "《事实》读完了，比原计划晚了 5 天"
+        },
+        {
+          "text": "《山乡巨变》原计划两周读完。",
+          "source_quote": "现在开始读《山乡巨变》，计划两周读完"
+        },
+        {
+          "text": "《山乡巨变》实际用了 15 天，比两周晚 1 天。",
+          "source_quote": "《山乡巨变》读完了，实际用了 15 天，比两周计划晚 1 天"
+        },
+        {
+          "text": "现在读《城记》，计划三周。",
+          "source_quote": "现在读《城记》，计划三周"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M9",
+        "B-S4-M10",
+        "B-S6-M7",
+        "B-S6-M9",
+        "B-S6-M10"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03 至 2026-12-01",
+      "session_time": "2026-11-03 / 2026-12-01",
+      "state_key": "reading_progress",
+      "old_value": "《山乡巨变》计划两周阅读",
+      "new_value": "《山乡巨变》实际 15 天完成，《城记》计划三周",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L09",
+      "question": "家庭相册的原始照片、重复照片和唯一照片各有多少张？父亲先说的 36 张应如何处理？",
+      "must_include": "原始照片 45 张；3 张合影是重复件，对应 1 个画面；去重后唯一照片 42 张；36 张是漏了一页的口述数字；最终完成 12 段影像说明。",
+      "must_not": "把 36 张当作最终总数，或把 3 张重复合影算成 3 个独立画面。",
+      "required_facts": [
+        {
+          "text": "父亲电话中先说 36 张。",
+          "source_quote": "父亲电话里先说 36 张"
+        },
+        {
+          "text": "两本相册原始共有 45 张照片。",
+          "source_quote": "两本相册共有 45 张照片"
+        },
+        {
+          "text": "36 张漏掉了一页。",
+          "source_quote": "父亲先前说的 36 张漏了一页"
+        },
+        {
+          "text": "其中 3 张合影是重复件，对应 1 个画面。",
+          "source_quote": "其中 3 张合影是重复件"
+        },
+        {
+          "text": "去重后唯一照片是 42 张。",
+          "source_quote": "42 张唯一照片"
+        },
+        {
+          "text": "最终完成 12 段影像说明。",
+          "source_quote": "12 段影像说明全部写完"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "numerical_aggregation",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M7",
+        "B-S5-M5",
+        "B-S5-M6",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03 至 2026-11-23",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": "unique_photo_count",
+      "old_value": "36（未经核验的口述数字）",
+      "new_value": "原始 45 张，重复 3 张，唯一 42 张",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L10",
+      "question": "家庭影像项目从原计划到完成经历了哪些关键节点？请按时间顺序说明清点、扫描、访谈和说明文案的进度。",
+      "must_include": "11 月 3 日计划扫描两本相册并做 12 段说明；11 月 15 日完成两本相册扫描；11 月 16 日访谈四位长辈、每人 3 个问题；11 月 23 日完成 12 段影像说明。",
+      "must_not": "漏掉任一节点，或把 12 个访谈问题当成 12 段影像说明已经提前完成。",
+      "required_facts": [
+        {
+          "text": "原计划扫描两本相册并挑 12 段做口述说明。",
+          "source_quote": "我准备先扫描两本相册，再挑 12 段做口述说明"
+        },
+        {
+          "text": "四步方案包含逐页清点、按年份命名、扫描相册和制作 12 段说明。",
+          "source_quote": "一、逐页清点并去重；二、按年份命名；三、扫描两本相册；四、围绕 12 段影像做口述说明"
+        },
+        {
+          "text": "11 月 15 日完成两本相册扫描。",
+          "source_quote": "11 月 15 日已经扫描完两本相册"
+        },
+        {
+          "text": "11 月 16 日完成四位长辈首轮访谈，共 12 个问题。",
+          "source_quote": "11 月 16 日做了四位长辈的第一轮访谈，每人 3 个问题"
+        },
+        {
+          "text": "11 月 23 日完成 12 段影像说明。",
+          "source_quote": "11 月 23 日 12 段影像说明全部写完"
+        },
+        {
+          "text": "家庭影像项目按计划完成。",
+          "source_quote": "影像项目按计划完成 12 段说明"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M7",
+        "B-S4-M8",
+        "B-S5-M5",
+        "B-S5-M9",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03 至 2026-11-23",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": "family_archive_project_status",
+      "old_value": "只有整理计划",
+      "new_value": "已完成 42 张照片清点、两本相册扫描、四位长辈访谈和 12 段影像说明",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L11",
+      "question": "你上次给家庭影像整理列出的四步清单是什么？",
+      "must_include": "逐页清点并去重；按年份命名；扫描两本相册；围绕 12 段影像做口述说明。",
+      "must_not": "漏掉任一步骤，或把四步顺序颠倒成先做说明再清点。",
+      "required_facts": [
+        {
+          "text": "第一步逐页清点并去重。",
+          "source_quote": "一、逐页清点并去重"
+        },
+        {
+          "text": "第二步按年份命名。",
+          "source_quote": "二、按年份命名"
+        },
+        {
+          "text": "第三步扫描两本相册。",
+          "source_quote": "三、扫描两本相册"
+        },
+        {
+          "text": "第四步围绕 12 段影像做口述说明。",
+          "source_quote": "四、围绕 12 段影像做口述说明"
+        },
+        {
+          "text": "后续执行沿用了上次的四步清单。",
+          "source_quote": "就按你上次的四步清单继续"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M8",
+        "B-S5-M9"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03",
+      "session_time": "2026-11-03 / 2026-11-17",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L12",
+      "question": "如果下雨，我安排半天外出时应当保留哪些长期偏好和安全限制？",
+      "must_include": "避开嘈杂商场和人多环境；不在外长时间站立；需要坐下休息；带纸质记录材料；控制在半天内。",
+      "must_not": "把一次具体观鸟路线当成唯一选择，或忽略久站与嘈杂环境限制。",
+      "required_facts": [
+        {
+          "text": "用户更愿意去人少的地方并在清晨出门。",
+          "source_quote": "比起人多的地方，我更愿意清晨出门"
+        },
+        {
+          "text": "用户喜欢随身带纸质记录本。",
+          "source_quote": "喜欢随身带纸质记录本"
+        },
+        {
+          "text": "商场展览太吵，久站会让腰部不舒服。",
+          "source_quote": "商场里的展我嫌吵，站久了腰也不舒服"
+        },
+        {
+          "text": "周末活动要求不太吵且不用长时间站。",
+          "source_quote": "周末想找个不太吵、不用长时间站的半天活动"
+        },
+        {
+          "text": "安排中途坐下休息。",
+          "source_quote": "中途两次坐下休息"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M3",
+        "B-S6-M9",
+        "B-S6-M10"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": null,
+      "session_time": "2026-11-03 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L13",
+      "question": "按我的历史偏好，设计一场下雨时的室内半日活动，应该优先满足哪些条件？",
+      "must_include": "安静的室内场所；避开嘈杂商场；安排可坐下休息的位置；避免长时间站立；准备纸质导览或记录材料；时长控制在半天。",
+      "must_not": "安排长时间站立、喧闹商场或只能扫码且没有纸质信息的方式。",
+      "required_facts": [
+        {
+          "text": "商场展览对用户来说太吵。",
+          "source_quote": "商场里的展我嫌吵"
+        },
+        {
+          "text": "长时间站立会让用户腰部不舒服。",
+          "source_quote": "站久了腰也不舒服"
+        },
+        {
+          "text": "用户更喜欢纸质记录材料。",
+          "source_quote": "喜欢随身带纸质记录本"
+        },
+        {
+          "text": "活动要求不太吵且不用长时间站。",
+          "source_quote": "周末想找个不太吵、不用长时间站的半天活动"
+        },
+        {
+          "text": "活动需安排中途坐下休息。",
+          "source_quote": "中途两次坐下休息"
+        }
+      ],
+      "capabilities": [
+        "personalization"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M3",
+        "B-S6-M9",
+        "B-S6-M10"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": null,
+      "session_time": "2026-11-03 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L14",
+      "question": "旧木工台和旧手摇钻现在分别在哪里、归谁所有？480 元是什么费用？",
+      "must_include": "两件工具都在南岸区工作室；所有权都归陆知行；480 元是工作室月租，不是工具价格。",
+      "must_not": "说木工台已搬回渝中区家、手摇钻归父亲，或把 480 元当成工具售价。",
+      "required_facts": [
+        {
+          "text": "木工台从渝中区家搬到南岸区工作室。",
+          "source_quote": "我把旧木工台从重庆渝中区家里搬到南岸区工作室"
+        },
+        {
+          "text": "木工台归用户所有。",
+          "source_quote": "木工台仍归我所有"
+        },
+        {
+          "text": "旧手摇钻被带到南岸区工作室。",
+          "source_quote": "旧手摇钻也从家里柜子带到工作室"
+        },
+        {
+          "text": "手摇钻仍归用户所有。",
+          "source_quote": "手摇钻仍归我"
+        },
+        {
+          "text": "480 元是工作室月租，木工台没有另记售价。",
+          "source_quote": "480 元对应工作室月租，木工台没有另记售价"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "cross_session_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M1",
+        "B-S4-M2",
+        "B-S6-M5",
+        "B-S6-M6"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-01 / 2026-12-01",
+      "session_time": "2026-11-03 / 2026-12-01",
+      "state_key": "woodworking_tool_location",
+      "old_value": "木工台在渝中区家；手摇钻在渝中区家柜子",
+      "new_value": "木工台和手摇钻都在南岸区工作室",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L15",
+      "question": "家庭影像项目里的“45 张”“3 张”“4 位”“每人 3 个”和“12 段”分别指什么？",
+      "must_include": "45 张是两本相册的原始照片；3 张是重复合影，对应 1 个画面；去重后是 42 张唯一照片；4 位是接受访谈的长辈；每人 3 个是首轮访谈问题数；12 段是最终完成的影像说明。",
+      "must_not": "把 45 张原始照片当成 45 个唯一画面，或把 12 个访谈问题等同于 12 段影像说明。",
+      "required_facts": [
+        {
+          "text": "两本相册原始共有 45 张照片，其中 3 张合影是重复件。",
+          "source_quote": "两本相册共有 45 张照片，涉及 42 个不同画面；其中 3 张合影是重复件"
+        },
+        {
+          "text": "去重后是 42 张唯一照片。",
+          "source_quote": "42 张唯一照片"
+        },
+        {
+          "text": "访谈对象是四位长辈。",
+          "source_quote": "四位长辈"
+        },
+        {
+          "text": "每位长辈访谈 3 个问题。",
+          "source_quote": "每人 3 个问题"
+        },
+        {
+          "text": "首轮访谈合计完成 12 个问题。",
+          "source_quote": "四位长辈共完成 12 个访谈问题"
+        },
+        {
+          "text": "最终完成 12 段影像说明。",
+          "source_quote": "12 段影像说明全部写完"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S5-M5",
+        "B-S5-M6",
+        "B-S5-M9",
+        "B-S5-M10",
+        "B-S6-M7"
+      ],
+      "session_ids": [
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-15 至 2026-11-23",
+      "session_time": "2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L16",
+      "question": "从 11 月 3 日提出家庭影像整理计划到 12 月 1 日，哪些动作已经实际完成，哪些当时只是计划？",
+      "must_include": "11 月 3 日只是计划扫描两本相册并做 12 段说明；11 月 15 日完成扫描；11 月 16 日完成四位长辈访谈；11 月 23 日完成 12 段说明；到 12 月 1 日项目已完成。",
+      "must_not": "把 11 月 3 日的计划说成当天完成，或把 11 月 16 日的访谈问题当成已达成的 12 段说明。",
+      "required_facts": [
+        {
+          "text": "11 月 3 日提出扫描两本相册并做 12 段说明的计划。",
+          "source_quote": "我准备先扫描两本相册，再挑 12 段做口述说明"
+        },
+        {
+          "text": "整理方法分为清点、命名、扫描和说明四步。",
+          "source_quote": "一、逐页清点并去重；二、按年份命名；三、扫描两本相册；四、围绕 12 段影像做口述说明"
+        },
+        {
+          "text": "11 月 15 日完成两本相册扫描。",
+          "source_quote": "11 月 15 日已经扫描完两本相册"
+        },
+        {
+          "text": "11 月 16 日完成四位长辈首轮访谈。",
+          "source_quote": "11 月 16 日做了四位长辈的第一轮访谈，每人 3 个问题"
+        },
+        {
+          "text": "11 月 23 日完成 12 段影像说明。",
+          "source_quote": "11 月 23 日 12 段影像说明全部写完"
+        },
+        {
+          "text": "影像项目按计划完成。",
+          "source_quote": "影像项目按计划完成 12 段说明"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M7",
+        "B-S4-M8",
+        "B-S5-M5",
+        "B-S5-M9",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03 至 2026-11-23",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": "family_archive_project_status",
+      "old_value": "仅计划扫描两本相册并完成 12 段说明",
+      "new_value": "扫描、访谈和 12 段说明均已完成",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L17",
+      "question": "你建议逐处核验夜读空间时检查哪三项？",
+      "must_include": "场地清单、开放时间、无障碍入口。",
+      "must_not": "加入连锁书店数量、租金或观鸟记录栏目作为核验项。",
+      "required_facts": [
+        {
+          "text": "核验项包括场地清单。",
+          "source_quote": "场地清单、开放时间、无障碍入口三项逐处核验"
+        },
+        {
+          "text": "核验项包括开放时间。",
+          "source_quote": "场地清单、开放时间、无障碍入口三项逐处核验"
+        },
+        {
+          "text": "核验项包括无障碍入口。",
+          "source_quote": "场地清单、开放时间、无障碍入口三项逐处核验"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M5",
+        "B-S4-M6"
+      ],
+      "session_ids": [
+        "B-S4"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03",
+      "session_time": "2026-11-03",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L18",
+      "question": "“城市夜读地图”两版 7 处表分别怎样组成？为什么第一版和第二版都不能直接等同于最终上线数量？",
+      "must_include": "11 月 3 日第一版 7 处由陆知远给出，其中 4 处有效、3 家是连锁书店；11 月 17 日第二版 7 处中 6 处有效、1 家是连锁书店；最终有效数量和上线数量都是 6 处。",
+      "must_not": "把第一版和第二版当成同一张表，或把任一张 7 处表当成最终上线数。",
+      "required_facts": [
+        {
+          "text": "11 月 3 日第一版 7 处来自陆知远。",
+          "source_quote": "11 月 3 日发来第一版表，列出 7 处"
+        },
+        {
+          "text": "第一版 7 处包含 4 处有效空间和 3 家连锁书店。",
+          "source_quote": "其中 4 处是公共阅读空间，另 3 处是连锁书店"
+        },
+        {
+          "text": "11 月 17 日第二版仍是 7 处。",
+          "source_quote": "陆知远 11 月 17 日又发来第二版表，列出 7 处"
+        },
+        {
+          "text": "第二版 7 处包含 6 处有效空间和 1 家连锁书店。",
+          "source_quote": "其中 6 处是公共阅读空间，另 1 处是连锁书店"
+        },
+        {
+          "text": "最终有效空间和上线页面都是 6 处。",
+          "source_quote": "最终有效空间和上线页面都是 6 处"
+        },
+        {
+          "text": "较最初 4 处净增 2 处。",
+          "source_quote": "较最初 4 处净增 2 处"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "global_memory_leak",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M5",
+        "B-S4-M6",
+        "B-S5-M3",
+        "B-S5-M4",
+        "B-S6-M3",
+        "B-S6-M4"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-03 至 2026-12-01",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L19",
+      "question": "只统计 2026 年 11 月内发生的观鸟行程，一共有几次、合计多少小时？10 月 18 日那次应不应该计入？",
+      "must_include": "11 月内共 4 次；合计 7 小时；11 月 1 日 1.5 小时、11 月 8 日 2.5 小时、11 月 15 日 1 小时、11 月 27 日 2 小时；10 月 18 日不计入。",
+      "must_not": "把 10 月 18 日计入 11 月，或把北碚的重复提及再计一次。",
+      "required_facts": [
+        {
+          "text": "11 月 1 日观鸟 1.5 小时。",
+          "source_quote": "11 月 1 日去照母山观鸟 1.5 小时"
+        },
+        {
+          "text": "11 月 8 日观鸟 2.5 小时。",
+          "source_quote": "11 月 8 日我去了缙云山观鸟 2.5 小时"
+        },
+        {
+          "text": "11 月 15 日观鸟 1 小时。",
+          "source_quote": "11 月 15 日又去礼嘉观鸟 1 小时"
+        },
+        {
+          "text": "11 月 27 日观鸟 2 小时且登记为另一次行程。",
+          "source_quote": "11 月 27 日礼嘉登记为另一次行程"
+        },
+        {
+          "text": "10 月 18 日发生的是 10 月行程。",
+          "source_quote": "10 月 18 日我去北碚观鸟 2 小时"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "B-S4-M3",
+        "B-S5-M1",
+        "B-S6-M7",
+        "B-S6-M8"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S5",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-01 至 2026-11-27",
+      "session_time": "2026-11-03 / 2026-11-17 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L20",
+      "question": "“480 元”和“120 元”分别是什么费用？它们是不是工具价格？",
+      "must_include": "480 元是南岸区工作室月租；120 元是周日半天观鸟活动预算；两者都不是工具价格，原文没有给出工具售价。",
+      "must_not": "把 480 元说成木工台价格，或把 120 元说成手摇钻价格。",
+      "required_facts": [
+        {
+          "text": "工作室每月租金为 480 元。",
+          "source_quote": "工作室每月租金是 480 元"
+        },
+        {
+          "text": "480 元是工作室月租，木工台没有另记售价。",
+          "source_quote": "480 元对应工作室月租，木工台没有另记售价"
+        },
+        {
+          "text": "周日半天活动预算为 120 元。",
+          "source_quote": "预算 120 元"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "global_memory_leak"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S4-M1",
+        "B-S4-M2",
+        "B-S6-M10"
+      ],
+      "session_ids": [
+        "B-S4",
+        "B-S6"
+      ],
+      "answerable": true,
+      "event_time": null,
+      "session_time": "2026-11-03 / 2026-12-01",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "B-L21",
+      "question": "长时间站立或爬楼的限制分别属于谁？不要把姐姐的伤情和我的腰部不适混在一起。",
+      "must_include": "陆知行本人站久了会腰不舒服，但膝盖没有受伤；姐姐陆知夏右膝曾受伤，目前不适合长时间爬楼。",
+      "must_not": "把右膝伤说成陆知行的，或把陆知行的腰部不适说成姐姐的限制。",
+      "required_facts": [
+        {
+          "text": "陆知行站久了会腰不舒服。",
+          "source_quote": "站久了腰也不舒服"
+        },
+        {
+          "text": "陆知行的膝盖没有受伤。",
+          "source_quote": "我的膝盖没有受伤"
+        },
+        {
+          "text": "姐姐陆知夏目前不适合长时间爬楼。",
+          "source_quote": "不适合长时间爬楼"
+        },
+        {
+          "text": "姐姐的限制来自右膝旧伤。",
+          "source_quote": "姐姐陆知夏右膝受伤"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "B-S1-M5",
+        "B-S3-M5",
+        "B-S4-M3"
+      ],
+      "session_ids": [
+        "B-S1",
+        "B-S3",
+        "B-S4"
+      ],
+      "answerable": true,
+      "event_time": "2026",
+      "session_time": "2023-2024 / 2026 / 2026-11-03",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    }
+  ]
+}

@@ -10,12 +10,18 @@ export type ModelConfig = {
   seed?: number | null;
 };
 export type SearchConfig = {
+  endpoint?: 'search' | 'semantic_2_bucket';
   mode: string;
   output_mode: string;
   top_k: number;
   k_dense: number;
   k_sparse: number;
+  max_per_type?: number;
+  bucket_content_limit?: number;
   include_self_bucket?: boolean;
+  include_all_buckets?: boolean;
+  hybrid_search?: boolean;
+  bucket_types?: string[];
   extra_fields: Record<string, unknown>;
 };
 export type EvidenceConfig = {
@@ -33,7 +39,7 @@ export type QualityConfig = { enabled: boolean; max_evidence: number };
 export type NcpConfig = { max_turns: number; condition: 'natural' | 'adversarial'; player_model: string; auditor_model: string;
   temperature: number; top_p: number; max_tokens: number; recent_turns: number };
 export type YamlFile = { name: string; content: string };
-export type DomainConfig = { domain_yaml: YamlFile | null; answer_prompt: PromptFile | null; judge_prompt: PromptFile | null };
+export type DomainConfig = { domain_yaml: YamlFile | null; answer_prompt: PromptFile | null; judge_prompt: PromptFile | null; replace_common?: boolean };
 export type CreateRun = {
   run_mode?: 'full' | 'smoke';
   name: string;
@@ -106,13 +112,27 @@ export type RunSummary = {
   metrics: { passed: number; failed: number; errors: number; judged: number; total: number; accuracy: number | null;
     qa_total?: number; episode_total?: number; episode_completed?: number;
     blocked?: number; evaluable_total?: number; evaluable_judged?: number; evaluable_passed?: number;
-    evaluable_failed?: number; evaluable_errors?: number; evaluable_accuracy?: number | null };
+    evaluable_failed?: number; evaluable_errors?: number; evaluable_accuracy?: number | null;
+    memory_core_total?: number; memory_core_judged?: number; memory_core_passed?: number;
+    memory_core_accuracy?: number | null; answer_diagnostic_total?: number;
+    answer_diagnostic_judged?: number; answer_diagnostic_passed?: number;
+    answer_diagnostic_accuracy?: number | null };
   dataset_metrics?: { dataset_id: string; kind: string; total: number; completed: number; errors: number;
     accuracy: number | null; retrieval: Record<string, number> | null; mapping_coverage: number | null;
+    v22?: { fixed_denominator: number; candidate_vs_control?: {
+      helped: number; hurt: number; both_pass: number; both_fail: number;
+    }; candidates: {
+      candidate_id: string; role: string | null; planned: number; completion: number | null;
+      hard_correct: number; hard_accuracy: number | null; soft_correct: number; soft_accuracy: number | null;
+      atomic_correct: number; atomic_total: number; atomic_correctness: number | null;
+      evidence_recalled: number; evidence_total: number; evidence_recall: number | null;
+    }[] };
     ncp?: NcpMetrics | null; categories?: NovelBreakdown[]; stages?: NovelBreakdown[];
-    capabilities?: NovelBreakdown[];
+    capabilities?: NovelBreakdown[]; risks?: NovelBreakdown[];
     answerability?: { total: number; judged: number; passed: number; abstention_total: number } }[];
   timing: { add_seconds: number; total_seconds: number };
+  scheduler?: { mode: string; max_workers: number; requested_max_workers?: number;
+    domain_workers: Record<string, number>; add_workers?: Record<string, number> };
   add_health?: {
     static_completed: number; static_total: number;
     dynamic_completed: number; dynamic_total: number; errors: number;
@@ -124,7 +144,8 @@ export type RunSummary = {
     eta_seconds: number | null;
   };
   profiles: { id: string; name: string; user_id: string; status: string; stage: number;
-    adds_completed: number; adds_total: number; cases_total: number; stages_total?: number }[];
+    adds_completed: number; adds_total: number; cases_total: number; stages_total?: number;
+    candidate_id?: string; candidate_role?: string }[];
   error: string | null;
 };
 export type CaseResult = {
@@ -144,6 +165,8 @@ export type CaseResult = {
   stage?: number; visible_until_turn?: number; category?: { id: string; name: string };
   capabilities?: string[]; difficulty?: 'easy' | 'medium' | 'hard'; evidence_ids?: string[];
   session_ids?: string[]; answerable?: boolean; pair_id?: string | null;
+  risk_tags?: string[]; evaluation_role?: 'memory_core' | 'answer_diagnostic';
+  source_protocol?: string; evidence_count?: number; session_span?: number;
   event_time?: string | null; session_time?: string | null; state_key?: string | null;
   old_value?: string | null; new_value?: string | null;
   episode_turn?: number; episode_result?: { termination: string; turns: unknown[]; [key: string]: unknown };

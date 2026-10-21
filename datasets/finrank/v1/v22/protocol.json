@@ -1,0 +1,104 @@
+{
+  "schema_version": "finrank-rsi-promotion/1",
+  "round": "v22-relation-evidence-confirmation-vs-source-relations",
+  "status": "completed_no_promotion",
+  "purpose": "Clean confirmation of the unchanged v20 relation-evidence challenger against the v19 source-relations shadow leader after v20 and v21 were invalidated by infrastructure failures.",
+  "hypothesis_origin": "The candidate and hypothesis were frozen before v20. Neither the v20 partial answers nor the v21 rejected Add outputs were used to edit the candidate, evaluator, data-selection policy, metrics, or promotion gate.",
+  "dataset": {
+    "path": "benchmarks/irab/rsi/datasets/finrank-30-v22-relation-evidence-confirmation",
+    "inputs_sha256": "40ac8958284ded95c2ed09582c4faa855b0201a08ea70a5334a0db47da06fb52",
+    "labels_sha256": "47b38e8499c5dfa554ff9f5bbcdf0704c39948d08a8edfc093df5c21c6ff0937",
+    "selection": "Candidate-blind source-sufficiency filtering over mutually exclusive audited pools after excluding 557 earlier formal or otherwise consumed question IDs; 10 per difficulty, 14 Quantitative and 16 Qualitative, 30/30 hard-eligible. No candidate YAML, retrieval output, answer output, badcase, or score was used for selection."
+  },
+  "evaluator": {
+    "atomic_requirements": "benchmarks/irab/rsi/protocols/finrank-30-v22q-atomic-requirements.json",
+    "atomic_requirements_sha256": "a455af416f801ace791f69e25252acbc0f09cb6cabe5a15abeead98d4092d176",
+    "source_sufficiency": "benchmarks/irab/rsi/protocols/finrank-30-v22q-source-sufficiency.json",
+    "source_sufficiency_sha256": "f0e90a6e2ebf665396f622f833d54ee33e40628fa8a4f238e2f7e4e5aacef2ba",
+    "hard_eligible_tasks": 30,
+    "soft_only_tasks": 0,
+    "invalid_tasks": 0,
+    "evidence_policy": "Evidence support is judged answer-blind once per case and unique retrieved context, then merged with frozen answer-correctness judgments."
+  },
+  "controlled_variables": {
+    "answer_prompt": "finrank_pilot.ANSWER_PROMPT",
+    "answer_prompt_sha256": "b2583becd067986e5636404c7acd4a51c81ec4d90d27028076f3b27dc1b0f356",
+    "formal_evidence_arm": "all_buckets",
+    "storage_policy": "One synchronous Add, one Search, and one complete Bucket census per candidate/question. Definitions cannot share state because source_evidence serialization is the independent variable.",
+    "execution_note": "Both candidates use max_parallel_adds=2 and max_parallel_work=8. IRAB_TESTBENCH_ASYNC_ADD=0 enforces synchronous Add. A synthetic, non-benchmark authenticated Add/Search/Bucket-census preflight must pass before frozen tasks are submitted."
+  },
+  "candidates": [
+    {
+      "id": "source_relations_retry6_all_buckets_control",
+      "role": "control",
+      "definition": "benchmarks/finmem/definitions/generated/financial_recommended_source_relations_retry6.yaml",
+      "definition_sha256": "8cbc55c1b0bad53cca13f94d6b3b15dc68bd89283cf64cc56600529b8e7b9271"
+    },
+    {
+      "id": "relation_evidence_retry6_all_buckets",
+      "role": "challenger",
+      "definition": "benchmarks/finmem/definitions/generated/financial_recommended_relation_evidence_retry6.yaml",
+      "definition_sha256": "481aff5beea44ec82e64cb022c8d90e04c3872e593a220c5f9df67bbb1d2adc6"
+    }
+  ],
+  "infrastructure": {
+    "engine_repo": "/Users/helson/memorax/irab-engine",
+    "engine_branch": "deploy/test-v3",
+    "engine_commit": "b74b8402",
+    "memory_database": "127.0.0.1:5432",
+    "account_database": "127.0.0.1:5433/account_tbv3",
+    "account_contract": "A real IRAB API-key verification must return HTTP 200 and active=true.",
+    "langfuse_collector": "127.0.0.1:14317",
+    "persistent_engine_log": "/private/tmp/memorax-finrank-rsi-irab-engine-18000.log",
+    "persistent_account_log": "/private/tmp/account-service-8003-rsi.log"
+  },
+  "execution": {
+    "base_url": "http://127.0.0.1:18000",
+    "planned_add_jobs": 60,
+    "planned_answer_jobs": 60,
+    "max_parallel_adds": 2,
+    "max_parallel_work": 8,
+    "fixed_task_denominator": 30
+  },
+  "metrics": {
+    "primary": ["Evidence Recall", "Hard ACC"],
+    "guardrail": "Execution Completion over all 30 tasks",
+    "secondary": ["Soft ACC", "Atomic Correctness"],
+    "pairwise_promotion_check": "Candidate-vs-control Helped/Hurt"
+  },
+  "promotion_rule": "Promote only if the challenger has strictly higher Evidence Recall and Hard ACC, Completion does not regress, and candidate-vs-control Helped is greater than Hurt. A weighted aggregate cannot hide a primary regression.",
+  "anti_overfit": "Do not edit candidates, dataset, requirements, sufficiency labels, scoring, or promotion rule after execution begins. Do not rerun these questions after outputs or labels are opened.",
+  "result": {
+    "run_dir": "benchmarks/irab/rsi/runs/finrank-30-rsi-v22-relation-evidence-confirmation-valid-sync-20260922",
+    "validity": "VALID",
+    "authoritative_evaluation": "atomic-evaluation-v2-answer-blind-evidence.json",
+    "control": {
+      "candidate_id": "source_relations_retry6_all_buckets_control",
+      "completion": "30/30 (100.00%)",
+      "evidence_recall": "97/104 (93.2692%)",
+      "hard_acc": "18/30 (60.00%)",
+      "soft_acc": "20/30 (66.6667%)",
+      "atomic_correctness": "115/149 (77.1812%)",
+      "formal_vs_semantic_helped_hurt": "9/0"
+    },
+    "challenger": {
+      "candidate_id": "relation_evidence_retry6_all_buckets",
+      "completion": "29/30 (96.6667%)",
+      "evidence_recall": "98/104 (94.2308%)",
+      "hard_acc": "18/30 (60.00%)",
+      "soft_acc": "19/30 (63.3333%)",
+      "atomic_correctness": "106/149 (71.1409%)",
+      "formal_vs_semantic_helped_hurt": "11/1",
+      "candidate_vs_control_helped_hurt": "2/2"
+    },
+    "gate": {
+      "evidence_recall": "PASS: +0.9615 percentage points",
+      "hard_acc": "FAIL: tie, not a strict improvement",
+      "completion": "FAIL: regressed by 1/30 task",
+      "candidate_vs_control_helped_hurt": "FAIL: 2/2, Helped is not greater than Hurt",
+      "secondary": "FAIL: Soft ACC and Atomic Correctness regressed",
+      "decision": "NO_PROMOTION"
+    },
+    "decision_reason": "The challenger improves Evidence Recall but does not strictly improve Hard ACC, regresses fixed-denominator Completion, and ties candidate-vs-control Helped/Hurt. The v19 source-relations YAML remains the shadow leader; production YAML is unchanged."
+  }
+}

@@ -8,7 +8,14 @@
   "expanded_question_count": 100,
   "files_sha256": {
     "add_requests.json": "770e88117775e3f1d3c5b9d789af1366d84ef2cd97511d5246e0bf5e10858410",
-    "questions.json": "bb9cb1ef9ed64c8d8961e6e67789cdf5e135187e5a8e9e26bf7e6e9840298f98"
+    "questions.json": "4394be8cf369fcf64bbe59f391de114f6a0c1320ad28656406094bb99ffd0b38",
+    "longmem/rst-longmem-sessions.json": "cdbb5474ba6ef1005bc834a98e2930bc10baa4e073d87c680e25cc68dbef52f4",
+    "longmem/rst-longmem-questions-1.json": "01258e57b5a4d3d0a634e3fa68e316615736c6d6cd7ee9c61ca6ef4c3984dfe1",
+    "longmem/rst-longmem-questions-2.json": "c3696cc658ecc97cfdee371b0afc97b5a3708dcd20cdaa269dda02ad6fbda71b",
+    "longmem/original-risk-tags.json": "a60ace2d949e3066806d40d220bb8b72d1faad4b9bde41ba4483203cd0b117c5",
+    "longmem/retrieval-queries.json": "7b1e197d5f1eb5a9c57ed1095ffa0d7fa799e70546fc8b465f6be9e580818360"
   },
-  "changes": "The 91 source Add messages were copied without changing message text or metadata. P01-P11 preserve the original standard answers; 14 additional questions are derived from the same frozen text, and 75 audited expansion candidates add trace-backed coverage."
+  "changes": "The 91 source Add messages were copied without changing message text or metadata. P01-P11 preserve the original standard answers and validated keyword retrieval queries; 14 additional questions are derived from the same frozen text, and 75 audited expansion candidates add trace-backed coverage.",
+  "synthetic_add_count": 30,
+  "longmem_protocol": "multisession-source-v2"
 }

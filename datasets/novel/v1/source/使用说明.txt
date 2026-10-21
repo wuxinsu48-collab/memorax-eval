@@ -20,6 +20,8 @@
 - `source_turns.json`：可由 evidence JSON Pointer 直接解析的原始回合。
 - `trace.json`：该 playthrough 的回合数、阶段截点、QA 数和隔离规则。
 
+根目录的 `问题集_无提示版.md` 可直接审阅全部 200 道新版问题。
+
 ## 执行注意
 
 1. 每次运行必须替换 `RUN_ID`，四个 playthrough 不得复用 user_id/session_id。

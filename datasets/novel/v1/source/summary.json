@@ -1,6 +1,6 @@
 {
-  "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261019-v1",
-  "generated_at": "2026-10-19T00:00:00+08:00",
+  "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261020-neutral-question-v1",
+  "generated_at": "2026-10-20T00:00:00+08:00",
   "organization": "每个 *_final 目录是 1 条独立 trace/playthrough，包含该 trace 的 add、search 和参考答案。",
   "files": [
     {

@@ -1,0 +1,1992 @@
+{
+  "profile_id": "RST-greeting",
+  "questions": [
+    {
+      "id": "RST-L039",
+      "question": "出发前康纳说的三项任务分别是什么？船期在当时是否已经确定？",
+      "must_include": "二十一点到闸门三号用“蓝盐”换旧账页；拿到后回安全屋用相机拍下；最后从鱼市后巷返回。船只是问了，尚未确定。",
+      "must_not": "把三项任务都说成已经完成，或声称船已经安排好。",
+      "required_facts": [
+        {
+          "text": "三项任务是到闸门三号换账页、回安全屋拍摄、从鱼市后巷返回。",
+          "source_quote": "康纳：“今晚只做三件事。二十一点到闸门三号，用‘蓝盐’换旧账页；拿到后不要在现场看，回这里用你的相机拍下来；最后从鱼市后巷回来。”"
+        },
+        {
+          "text": "船期只问过，还没有定。",
+          "source_quote": "康纳：“船的事我只问了，还没定。不要当成已经安排好。”"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T092-M1",
+        "RST-T092-M2"
+      ],
+      "session_ids": [
+        "RST-LS1"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间行动前",
+      "session_time": "第一天 18:20-20:05",
+      "state_key": "three_step_plan",
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L040",
+      "question_family": "payment_total_and_classification",
+      "question": "对本段后续行动中七笔明确的实际支付，逐笔列明用途和金额并给出合计；码头跑腿口头的“八十一”不能计入。",
+      "must_include": "闸费18元、第一次芝麻饼6元、暗房押金25元、第二次芝麻饼6元、快递押金30元、摆渡费15元、取片费12元，合计112元。",
+      "must_not": "把口头说的81元算成另一笔支付，或把两次芝麻饼购买后的回顾重复计费。",
+      "required_facts": [
+        {
+          "text": "闸费18元。",
+          "source_quote": "阿宁在本子上点了一下，收下你递过去的十八元闸费，从抽屉里取出一页发黄的旧账纸和一张复印票。"
+        },
+        {
+          "text": "第一次芝麻饼6元。",
+          "source_quote": "你买了两个芝麻饼，付了六元，纸袋口折了一道。"
+        },
+        {
+          "text": "暗房押金25元。",
+          "source_quote": "暗房的师傅收了你二十五元押金，给了你一张手写收据。"
+        },
+        {
+          "text": "第二次芝麻饼6元。",
+          "source_quote": "你又去了面包房，买了两个芝麻饼，还是六元。"
+        },
+        {
+          "text": "快递押金30元。",
+          "source_quote": "快递摊收三十元押金，给你两张编号不同的回执。"
+        },
+        {
+          "text": "摆渡费15元。",
+          "source_quote": "你从旧海关后门下到水渠边，给了摆渡人十五元，坐小木船到灰墙建筑一侧。"
+        },
+        {
+          "text": "取片费12元，七笔合计112元。",
+          "source_quote": "你把暗房里晾干的最后两卷底片取下来，付了十二元取片费。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T097-M2",
+        "RST-T100-M2",
+        "RST-T104-M2",
+        "RST-T108-M2",
+        "RST-T107-M2",
+        "RST-T114-M2",
+        "RST-T117-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS3",
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "第一天 / 第二天 / 第三天",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L041",
+      "question_family": "sesame_purchase_count_and_proof",
+      "question": "第二次买饼时，掌柜说“之前那两个也是你拿的”，这句话在时间上指向哪一次？能否把它当成第三次购买？",
+      "must_include": "这句话指向第一次购买的两个芝麻饼；说这话时正在完成第二次购买，掌柜是在回顾上一袋，不是发生第三次购买。",
+      "must_not": "把掌柜对上一袋的回顾算成新的一次购买。",
+      "required_facts": [
+        {
+          "text": "第一次独立购买两个芝麻饼，花6元。",
+          "source_quote": "你买了两个芝麻饼，付了六元，纸袋口折了一道。"
+        },
+        {
+          "text": "第二次购买仍是两个，共花6元。",
+          "source_quote": "你又去了面包房，买了两个芝麻饼，还是六元。"
+        },
+        {
+          "text": "掌柜说之前两个也是帕兹拿的，这是对第一次购买的回顾。",
+          "source_quote": "掌柜把纸袋递出来时说：“之前那两个也是你拿的。”"
+        },
+        {
+          "text": "第二次购买时掌柜只是在回顾上一袋。",
+          "source_quote": "你又去了面包房，买了两个芝麻饼，还是六元。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T100-M2",
+        "RST-T108-M1",
+        "RST-T108-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第二天下午",
+      "session_time": "第一次购买 / 第二次购买",
+      "state_key": "sesame_cake_review_scope",
+      "old_value": "第一次购买的两个",
+      "new_value": "第二次购买时的回顾，不是第三次购买",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L042",
+      "question": "三批底片最终分别交给了谁？不要把装有底片的信封数量误当成交付批次数量。",
+      "must_include": "第一批交给罗英，标B的一批交给康纳，标C的一批交给旧报社的老许，共三批。",
+      "must_not": "把B和C的收件人调换，或把第一批的两只信封算成两批独立底片。",
+      "required_facts": [
+        {
+          "text": "第一批写给罗英的旧书摊并已送出。",
+          "source_quote": "你把它装进两只牛皮纸信封，一只写罗英的旧书摊，一只留白。"
+        },
+        {
+          "text": "标B的底片交给康纳。",
+          "source_quote": "你先去康纳的办公室，把标着B的铁盒放在她桌面。"
+        },
+        {
+          "text": "标C的底片交给旧报社的老许。",
+          "source_quote": "随后你绕开鱼市，从东侧石桥去了旧报社，把标着C的铁盒交给老许。"
+        },
+        {
+          "text": "第一批在第二天下午寄出，第三天上午确认在罗英手里，最终共三批。",
+          "source_quote": "罗英那份第一批昨天下午已经寄出，今早已经确认在罗英手里。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "knowledge_update",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T107-M2",
+        "RST-T112-M2",
+        "RST-T117-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第二天下午至第三天傍晚",
+      "session_time": "第二天下午 / 第三天上午 / 第三天傍晚",
+      "state_key": "negative_batch_recipients",
+      "old_value": "三批均在帕兹控制下或冲洗中",
+      "new_value": "罗英、康纳、老许各收到一批",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L043",
+      "question": "第一批底片装成两只信封后，哪一只寄出、哪一只留下？空白信封最终封口了吗？",
+      "must_include": "写给罗英旧书摊的那只寄出；空白信封留在帕兹手里，最终仍未封口。",
+      "must_not": "说两只信封都已寄出，或把空白信封说成已经交给罗英。",
+      "required_facts": [
+        {
+          "text": "第一批装成一只写罗英地址、一只留白的两个信封。",
+          "source_quote": "你把它装进两只牛皮纸信封，一只写罗英的旧书摊，一只留白。"
+        },
+        {
+          "text": "写有地址的信封交出去，空白信封仍在手里。",
+          "source_quote": "你把写有地址的那只交出去，空白那只还在手里。"
+        },
+        {
+          "text": "空白信封后来仍未封口。",
+          "source_quote": "你把两只信封分开收好，空白那只仍然没有封口。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T107-M2",
+        "RST-T111-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS4",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第二天下午至第三天傍晚",
+      "session_time": "第二天下午 / 第三天傍晚",
+      "state_key": "first_batch_envelope_state",
+      "old_value": "有地址信封与空白信封都在帕兹手里",
+      "new_value": "有地址信封送给罗英，空白信封仍由帕兹保留且未封口",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L044",
+      "question": "相机从出发前到全文结束时，依次在哪些位置？结尾是谁把相机放回31号储物柜？",
+      "must_include": "先在31号储物柜，后在面包房铁盒和暗房木架，随后由敏特交回，最终由帕兹放回31号储物柜。",
+      "must_not": "漏掉暗房木架，或说相机最后在敏特手里、灰帽男人手里。",
+      "required_facts": [
+        {
+          "text": "相机和两卷备用底片起初放进31号储物柜。",
+          "source_quote": "你把自己的胶卷相机从黑布包里取出来，连同两卷备用底片一起放进墙边31号储物柜，转了两圈锁芯，把柜钥匙压在房牌下面。"
+        },
+        {
+          "text": "敏特把相机装进面包房面粉桶后面的铁盒。",
+          "source_quote": "敏特从面粉桶后面取出一个铁盒，把相机放进去，又把铁盒推到最里面。"
+        },
+        {
+          "text": "铁盒随后被放到灰墙建筑暗房冲洗台下面的木架。",
+          "source_quote": "随后她带你去了灰墙建筑的暗房，把铁盒放到冲洗台下面的木架上。"
+        },
+        {
+          "text": "相机干后先留在暗房木架。",
+          "source_quote": "敏特把相机留在木架上，用一块黑布盖住。"
+        },
+        {
+          "text": "敏特后来把相机交还帕兹。",
+          "source_quote": "敏特从旧市场侧门过来，把黑布包放到你手里。"
+        },
+        {
+          "text": "结尾由帕兹把相机放回31号储物柜。",
+          "source_quote": "31号储物柜里只剩下空底片袋，你把相机放进去，转了两圈锁芯。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "cross_session_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T093-M2",
+        "RST-T103-M2",
+        "RST-T105-M2",
+        "RST-T109-M2",
+        "RST-T119-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS3",
+        "RST-LS4",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "第一天 / 第二天 / 第三天",
+      "state_key": "camera_location",
+      "old_value": "31号储物柜",
+      "new_value": "暗房木架由敏特交还后，最终回到31号储物柜",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L045",
+      "question_family": "locker_key_drawer_distinction",
+      "question": "铜钥匙和31号储物柜钥匙分别开什么、由谁保管？全文结束时铜钥匙是否仍在帕兹手里？",
+      "must_include": "铜钥匙只开旧海关档案室抽屉，起初由康纳保管，后来交给帕兹并当场收回；31号储物柜钥匙压在房牌下。结尾铜钥匙已还给康纳。",
+      "must_not": "说铜钥匙能开31号储物柜，或说结尾仍由帕兹持有铜钥匙。",
+      "required_facts": [
+        {
+          "text": "铜钥匙只开旧海关档案室的抽屉，与储物柜不是一套。",
+          "source_quote": "她说钥匙只开旧海关档案室的抽屉，和这里的储物柜不是一套。"
+        },
+        {
+          "text": "31号储物柜的柜钥匙压在房牌下面。",
+          "source_quote": "把柜钥匙压在房牌下面。"
+        },
+        {
+          "text": "康纳开抽屉前把铜钥匙交给帕兹，并当面要求用完归还。",
+          "source_quote": "康纳：“开十三号，拿最下面那卷。钥匙出来就还我。”"
+        },
+        {
+          "text": "结尾铜钥匙已经还给康纳，不在帕兹手里。",
+          "source_quote": "柜门合上时，铜钥匙不在你手里。那把钥匙已经还给了康纳。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "item_state_migration"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T093-M2",
+        "RST-T094-M2",
+        "RST-T112-M2",
+        "RST-T119-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "第一天 / 第三天上午 / 第三天傍晚",
+      "state_key": "copper_key_holder",
+      "old_value": "康纳持有",
+      "new_value": "康纳短暂交给帕兹后收回，结尾仍由康纳持有",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L046",
+      "question_family": "drawer_contents_distinction",
+      "question": "十三号抽屉和三十一号档案抽屉各有什么？标着B的底片来自哪个抽屉？",
+      "must_include": "十三号抽屉里有标B的底片；三十一号档案抽屉锁芯已坏，只有发黄空信封，没有底片。",
+      "must_not": "把B卷说成来自三十一号抽屉，或把空信封说成底片。",
+      "required_facts": [
+        {
+          "text": "康纳明确要求开十三号而不是三十一号。",
+          "source_quote": "康纳：“十三号抽屉。不是三十一号。三十一号在档案室最里侧，锁芯早就坏了，里面只有空信封。”"
+        },
+        {
+          "text": "十三号抽屉里只有一卷标B的底片。",
+          "source_quote": "抽屉里只有一只薄铁盒，盒里是一卷标着B的底片。"
+        },
+        {
+          "text": "三十一号档案抽屉只有发黄空信封。",
+          "source_quote": "三十一号抽屉的锁芯是空的，拉开后只有几只发黄的空信封。"
+        },
+        {
+          "text": "B卷交给康纳，C卷来自相机。",
+          "source_quote": "暗房师傅把十三号抽屉里的B卷和你相机里的C卷一起挂起来。"
+        },
+        {
+          "text": "B卷最终交给康纳。",
+          "source_quote": "你先去康纳的办公室，把标着B的铁盒放在她桌面。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T094-M2",
+        "RST-T112-M2",
+        "RST-T113-M2",
+        "RST-T115-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间说明，第三天上午执行",
+      "session_time": "第一天 / 第三天上午",
+      "state_key": "drawer_contents",
+      "old_value": "十三号抽屉有B卷；三十一号档案抽屉只有空信封",
+      "new_value": "B卷取出，三十一号档案抽屉仍只有空信封",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L047",
+      "question_family": "route_deviation",
+      "question": "原计划从鱼市后巷返回，实际为什么没有走鱼市，改从哪条路返回？",
+      "must_include": "鱼市卷帘门已经落到底，鱼市没有走成；实际改从面包房后巷绕回。",
+      "must_not": "说鱼市路线按计划完成，或把面包房后巷说成最初计划。",
+      "required_facts": [
+        {
+          "text": "最初计划最后从鱼市后巷返回。",
+          "source_quote": "最后从鱼市后巷回来。"
+        },
+        {
+          "text": "鱼市卷帘门已落到底，实际没有往鱼市走。",
+          "source_quote": "鱼市方向的卷帘门已经落到底，两个穿围裙的人站在门边摇头。"
+        },
+        {
+          "text": "实际改从面包房后巷绕回。",
+          "source_quote": "你收起相机，没有往那边走，改从面包房后巷绕回。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T099-M1",
+        "RST-T099-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间",
+      "session_time": "第一天行动前 / 第一天 21:10-23:05",
+      "state_key": "return_route",
+      "old_value": "鱼市后巷",
+      "new_value": "面包房后巷",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L048",
+      "question_family": "boat_status_timeline",
+      "question": "关于船，康纳在行动前、第一次返回、第二天下午、第三天上午和故事结尾分别给出什么状态？能否确认船已经起航？",
+      "must_include": "起初只问了没定；首次返回仍没有消息；第二天下午仍是“还在问，没有定”；第三天上午仍没有确认；结尾没有提船，也没有实际起航记录。",
+      "must_not": "把询问、留回条或没有消息误写成船已经安排或已经起航。",
+      "required_facts": [
+        {
+          "text": "行动前康纳说船只问了，还没定。",
+          "source_quote": "康纳：“船的事我只问了，还没定。不要当成已经安排好。”"
+        },
+        {
+          "text": "第一次返回时船仍没有消息。",
+          "source_quote": "康纳：“第一件做完了，第二件也做了。鱼市没走成，但东西没丢。船还没有消息。”"
+        },
+        {
+          "text": "第二天下午回条仍是还在问，没有定。",
+          "source_quote": "康纳的回条只有一句：还在问，没有定。"
+        },
+        {
+          "text": "第三天上午船的事仍旧没有确认。",
+          "source_quote": "康纳的回条还压在下面，船的事仍旧没有确认。"
+        },
+        {
+          "text": "结尾康纳没有提船，也没有提下一步。",
+          "source_quote": "她没有提船，也没有提下一步。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "temporal_reasoning",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T101-M2",
+        "RST-T111-M2",
+        "RST-T116-M2",
+        "RST-T121-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2",
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "五天中的多次会话",
+      "state_key": "boat_status",
+      "old_value": "只问过，未确定",
+      "new_value": "始终未确认，没有起航记录",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L049",
+      "question": "灰帽男人为什么没有被允许拿走相机？相机后来由谁归还，归还后是否又被打开？",
+      "must_include": "他自称康纳派来取相机，却答不出闸门三号的口令，只说“她没交代”，因此被拒；相机后来由敏特归还，从木架取回后没有再打开，机内空白卷封条还在。",
+      "must_not": "因为他戴灰帽就认定他是康纳的人，或说灰帽男人成功拿到相机。",
+      "required_facts": [
+        {
+          "text": "灰帽男人自称康纳派来取相机。",
+          "source_quote": "灰帽男人：“康纳让我来取相机。”"
+        },
+        {
+          "text": "他答不出闸门三号口令，只说“她没交代”。",
+          "source_quote": "你问他闸门三号的口令，他答不上来，只说“她没交代”。"
+        },
+        {
+          "text": "康纳此前说过在码头外先说“蓝盐”的人不是他们的人。",
+          "source_quote": "康纳：“如果有人在码头外先说出‘蓝盐’，那不是我们的人。”"
+        },
+        {
+          "text": "相机后来由敏特从旧市场侧门归还；从木架取回后没有再打开，机内空白卷封条还在。",
+          "source_quote": "她说相机从暗房木架取回后没有再打开，机内空白卷的封条还在。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "global_memory_leak",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T095-M2",
+        "RST-T106-M1",
+        "RST-T106-M2",
+        "RST-T109-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS3",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第二天下午",
+      "session_time": "第一天 / 第二天上午 / 第二天下午",
+      "state_key": "camera_collector_identity",
+      "old_value": "灰帽男人试图冒充康纳派来取相机",
+      "new_value": "未获授权，相机仍由敏特保管并最终交还帕兹",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L050",
+      "question": "敏特是否知道“蓝盐”和抽屉号？她参与了哪段相机路线，又在进入暗房前是否查看或曝光过相机？",
+      "must_include": "敏特没有听过“蓝盐”，也不知道十三号抽屉；她参与把相机转到灰墙建筑暗房，但在进入暗房前没有查看底片，也没有按快门。",
+      "must_not": "因为敏特参与藏相机和冲洗，就推断她知道口令、抽屉号或查看过相机内容。",
+      "required_facts": [
+        {
+          "text": "康纳要求不要把暗号和十三号抽屉告诉敏特。",
+          "source_quote": "康纳：“今晚的暗号不要告诉敏特，也不要告诉罗英。闸门那边自有核对方式。十三号抽屉也是一样。”"
+        },
+        {
+          "text": "敏特在进入暗房前没有查看底片，也没有按快门。",
+          "source_quote": "她没有查看相机里的底片，也没有按快门。"
+        },
+        {
+          "text": "敏特没有听过“蓝盐”，也不知道十三号抽屉。",
+          "source_quote": "关于‘蓝盐’和十三号抽屉，我没听过，也不知道。"
+        },
+        {
+          "text": "敏特参与把相机带到灰墙建筑暗房。",
+          "source_quote": "你把它带到灰墙建筑的暗房"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "identity_pollution"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T095-M2",
+        "RST-T103-M2",
+        "RST-T104-M2",
+        "RST-T120-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS3",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "RST-LS1、RST-LS3、RST-LS6",
+      "state_key": "mint_knowledge_boundary",
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L051",
+      "question": "从第一晚到第三天傍晚，换账页、藏相机并冲洗第一卷、分装第一批、取出B卷、最终送出B和C，这五类事件的先后顺序是什么？",
+      "must_include": "先换账页；第二天清晨藏相机并冲洗第一卷；第二天下午分装第一批；第三天上午从十三号抽屉取出B卷；第三天傍晚把B交给康纳、C交给老许。",
+      "must_not": "把第三天取B卷提前到第一天，或把第一批送出排在B卷取出之后。",
+      "required_facts": [
+        {
+          "text": "第一晚到闸门三号换账页。",
+          "source_quote": "二十一点到闸门三号，用‘蓝盐’换旧账页"
+        },
+        {
+          "text": "第二天清晨敏特把相机转移到暗房。",
+          "source_quote": "随后她带你去了灰墙建筑的暗房，把铁盒放到冲洗台下面的木架上。"
+        },
+        {
+          "text": "分装第一批发生在第二天下午。",
+          "source_quote": "你把它装进两只牛皮纸信封，一只写罗英的旧书摊，一只留白。"
+        },
+        {
+          "text": "第三天上午从十三号抽屉取出B卷。",
+          "source_quote": "抽屉里只有一只薄铁盒，盒里是一卷标着B的底片。"
+        },
+        {
+          "text": "第三天傍晚先送B再送C。",
+          "source_quote": "你先去康纳的办公室，把标着B的铁盒放在她桌面。"
+        },
+        {
+          "text": "随后把C交给旧报社老许。",
+          "source_quote": "随后你绕开鱼市，从东侧石桥去了旧报社，把标着C的铁盒交给老许。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "false_commitment"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T103-M2",
+        "RST-T107-M2",
+        "RST-T112-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS3",
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "第一天 / 第二天 / 第三天",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L052",
+      "question_family": "dock_record_conflict",
+      "question": "口头“八十一”、书面“十八”和当天仅一次登记如何组合？这组记录能否证明另有一笔十八元实付？",
+      "must_include": "跑腿口头说81，便条写18并有阿宁签名，阿宁说当天只有帕兹一次登记。记录支持闸费十八和书面金额十八，但不能证明另有一笔十八元实付，也不能口头把81当成第二笔收费。",
+      "must_not": "把81元当成实际支付，把同一次登记算成两笔闸费，或把便条十八直接升级成已实付的第二笔费用。",
+      "required_facts": [
+        {
+          "text": "跑腿口头说81。",
+          "source_quote": "码头跑腿的年轻人把一张折皱的便条递给你，嘴里说：“八十一。”"
+        },
+        {
+          "text": "便条写18，并有阿宁签名。",
+          "source_quote": "你把便条展开，手写数字清楚是十八，旁边还有阿宁的签名。"
+        },
+        {
+          "text": "阿宁确认当天只有帕兹这一次登记。",
+          "source_quote": "他走后，阿宁从窗口探出头，说今天只有你这一次登记。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "fabricated_action",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T097-M2",
+        "RST-T110-M1",
+        "RST-T110-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第二天下午复核第一天夜间闸费",
+      "session_time": "第一天夜间 / 第二天下午",
+      "state_key": "gate_fee",
+      "old_value": "口头误报81元",
+      "new_value": "闸费18元有记录支持；没有证据支持第二笔18元实付",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L053",
+      "question": "拿到账纸后实际拍了几张？除账纸主体外，还补拍了什么？",
+      "must_include": "先拍账纸两张，又补拍角落的印章，共三张。",
+      "must_not": "把复印票、信封或空纸袋算进现场拍摄数量。",
+      "required_facts": [
+        {
+          "text": "账纸拍了两张，又补拍角落的印章。",
+          "source_quote": "你把账纸铺在闸门内侧的干石台上，用相机拍了两张，又补了一张角落的印章。"
+        },
+        {
+          "text": "拍摄发生在没有走鱼市、改走面包房后巷之前。",
+          "source_quote": "你收起相机，没有往那边走，改从面包房后巷绕回。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T099-M1",
+        "RST-T099-M2"
+      ],
+      "session_ids": [
+        "RST-LS2"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间",
+      "session_time": "第一天 21:10-23:05",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L054",
+      "question_family": "ferry_route_and_actor",
+      "question": "从旧海关去灰墙建筑的水路中，实际乘船的是谁？原文能否证明敏特同行？",
+      "must_include": "帕兹从旧海关后门下水渠边，付15元后独自坐上小木船到灰墙建筑一侧；T114没有写敏特同行，不能补出她也在船上。",
+      "must_not": "把15元算成暗房费用，或因为敏特后来参与相机转移，就推断她与帕兹同船。",
+      "required_facts": [
+        {
+          "text": "帕兹从旧海关后门下到水渠边，付15元后坐小木船。",
+          "source_quote": "你从旧海关后门下到水渠边，给了摆渡人十五元，坐小木船到灰墙建筑一侧。"
+        },
+        {
+          "text": "这段船程只写帕兹，没有写敏特同行。",
+          "source_quote": "船底擦过石壁，水声把岸上的脚步盖住。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T114-M1",
+        "RST-T114-M2"
+      ],
+      "session_ids": [
+        "RST-LS5"
+      ],
+      "answerable": true,
+      "event_time": "第三天上午",
+      "session_time": "第三天 09:10-11:40",
+      "state_key": "ferry_passengers",
+      "old_value": "帕兹需要从旧海关转到灰墙建筑",
+      "new_value": "只有帕兹被写作乘船者，敏特同行没有证据",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L055",
+      "question": "阿宁说昨天有人来问账纸，这个说法被哪些客观记录削弱？为什么不能把“昨天也有人来”当成一次已确认到访？",
+      "must_include": "阿宁说是替白头记者跑腿，但登记簿昨天为空、今天只有帕兹一行，阿宁自己也说可能记岔了；因此只能算不确定回忆，不能算已确认到访。",
+      "must_not": "把白头记者转述当成登记事实，或据此增加一次实际到访。",
+      "required_facts": [
+        {
+          "text": "阿宁称昨天有人替白头记者来问过。",
+          "source_quote": "阿宁：“昨天也有人来问过这页，说是替一个白头发的记者跑腿。”"
+        },
+        {
+          "text": "登记簿昨天一栏为空，今天只有帕兹一行。",
+          "source_quote": "登记簿上今天只有一行你的名字，墨迹还没干；昨天那一栏是空的。"
+        },
+        {
+          "text": "阿宁自己承认可能记岔了。",
+          "source_quote": "阿宁：“可能是我记岔了。你拿的是第七页，别弄湿。”"
+        },
+        {
+          "text": "阿宁后来再次确认当天只有帕兹一次登记。",
+          "source_quote": "说今天只有你这一次登记。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "cross_session_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T097-M2",
+        "RST-T098-M1",
+        "RST-T098-M2",
+        "RST-T110-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第二天下午",
+      "session_time": "第一天夜间 / 第二天下午",
+      "state_key": "yesterday_ledger_visitor",
+      "old_value": "阿宁口头称昨天有人来问",
+      "new_value": "登记簿无记录，不能确认该到访",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L056",
+      "question_family": "drink_preference_boundary",
+      "question": "T96的一次点单能否单独证明帕兹长期偏好黑咖啡？能确定的是哪一层偏好？",
+      "must_include": "不能证明长期偏好。T96只能确定帕兹这次要求提神且不要放糖，康纳据此给了不加糖、不加奶的黑咖啡；这是单次订单约束，不是稳定的品种偏好。",
+      "must_not": "把一次黑咖啡订单升级成长期只喝黑咖啡的偏好，或说饮品加了糖或奶。",
+      "required_facts": [
+        {
+          "text": "帕兹要求提神饮品不要放糖。",
+          "source_quote": "给我弄点提神的，别放糖。"
+        },
+        {
+          "text": "康纳给了不加糖、不加奶的黑咖啡。",
+          "source_quote": "康纳从柜里取出一只搪瓷杯，倒了黑咖啡，没有加糖，也没有加奶。"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T096-M1",
+        "RST-T096-M2"
+      ],
+      "session_ids": [
+        "RST-LS1"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间行动前",
+      "session_time": "第一天 18:20-20:05",
+      "state_key": "drink_preference",
+      "old_value": null,
+      "new_value": "单次不要糖的约束；黑咖啡是本次结果，不是长期偏好",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L057",
+      "question_family": "gate_exchange_route_plan_execution",
+      "question": "康纳在T101说“第二件也做了”时，能否据此认定第二件事完全按原计划执行？请用T092和T099说明。",
+      "must_include": "不能。第二件事的核心是拍摄账页，但原计划要求回安全屋再拍，T099显示帕兹是在闸门内侧干石台上拍摄；所以“第二件做了”只证明拍摄完成，不证明原地点和原流程执行。",
+      "must_not": "把“第二件也做了”解释成所有路线和地点都符合原计划。",
+      "required_facts": [
+        {
+          "text": "原计划要求回安全屋再拍摄。",
+          "source_quote": "拿到后不要在现场看，回这里用你的相机拍下来"
+        },
+        {
+          "text": "实际在闸门内侧干石台上拍摄，说明流程发生偏离。",
+          "source_quote": "你把账纸铺在闸门内侧的干石台上，用相机拍了两张"
+        },
+        {
+          "text": "康纳只说第二件也做了，没有确认现场地点和流程未变。",
+          "source_quote": "第一件做完了，第二件也做了。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T099-M2",
+        "RST-T101-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间",
+      "session_time": "第一天行动前 / 第一次返回后",
+      "state_key": "status_phrase_scope",
+      "old_value": "原计划包含回安全屋拍摄",
+      "new_value": "第二件的拍摄完成，但实际地点偏离计划",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L058",
+      "question_family": "film_batch_delivery_timeline",
+      "question": "第一批、B卷和C卷在第三天上午和傍晚分别处于什么状态？B与C何时从冲洗阶段转成交付阶段？",
+      "must_include": "第一批在第二天下午寄出，第三天上午已在罗英手里；B和C仍在夹子上滴水。随后两卷晾干、取回并装进相机包；第三天傍晚B交给康纳、C交给老许。",
+      "must_not": "把“在夹子上滴水”当成已经交付，或把第一批和B卷、C卷的交付顺序混淆。",
+      "required_facts": [
+        {
+          "text": "第二天下午第一批已经寄给罗英。",
+          "source_quote": "你把写有地址的那只交出去，空白那只还在手里。"
+        },
+        {
+          "text": "第三天上午B和C仍在夹子上滴水。",
+          "source_quote": "第一批已经在罗英手里；第二批和第三批还在夹子上滴水。"
+        },
+        {
+          "text": "晾干的B和C被取下并装进相机包。",
+          "source_quote": "师傅把两只圆铁盒推过台面，一只标着B，一只标着C。你把它们并排塞进相机包，拉上拉链。"
+        },
+        {
+          "text": "第三天傍晚B交给康纳。",
+          "source_quote": "你先去康纳的办公室，把标着B的铁盒放在她桌面。"
+        },
+        {
+          "text": "之后C交给老许。",
+          "source_quote": "随后你绕开鱼市，从东侧石桥去了旧报社，把标着C的铁盒交给老许。"
+        },
+        {
+          "text": "第一批在第二天下午寄出，第三天上午确认在罗英手里。",
+          "source_quote": "罗英那份第一批昨天下午已经寄出，今早已经确认在罗英手里。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "cross_session_reasoning",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "item_state_migration"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T107-M2",
+        "RST-T116-M2",
+        "RST-T117-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第二天下午至第三天傍晚",
+      "session_time": "第二天下午 / 第三天上午 / 第三天傍晚",
+      "state_key": "negative_batch_state",
+      "old_value": "第一批已交付，B和C仍在冲洗",
+      "new_value": "B和C晾干取回后分别交付康纳和老许",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L059",
+      "question_family": "bc_film_provenance_migration",
+      "question": "标着B和C的底片分别从哪里来，最终各自交给谁？",
+      "must_include": "B卷来自十三号抽屉，交给康纳；C卷来自相机，交给旧报社的老许。",
+      "must_not": "把B卷说成相机里的底片，或把C卷交给康纳。",
+      "required_facts": [
+        {
+          "text": "B卷来自十三号抽屉。",
+          "source_quote": "抽屉里只有一只薄铁盒，盒里是一卷标着B的底片。"
+        },
+        {
+          "text": "C卷来自相机。",
+          "source_quote": "暗房师傅把十三号抽屉里的B卷和你相机里的C卷一起挂起来。"
+        },
+        {
+          "text": "B卷交给康纳。",
+          "source_quote": "你先去康纳的办公室，把标着B的铁盒放在她桌面。"
+        },
+        {
+          "text": "C卷交给老许。",
+          "source_quote": "随后你绕开鱼市，从东侧石桥去了旧报社，把标着C的铁盒交给老许。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T112-M2",
+        "RST-T115-M2",
+        "RST-T117-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第三天上午至傍晚",
+      "session_time": "第三天上午 / 第三天傍晚",
+      "state_key": "b_c_negative_recipient",
+      "old_value": "B在十三号抽屉，C在相机内",
+      "new_value": "B交给康纳，C交给老许",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L060",
+      "question": "从饮品和两次芝麻饼看，帕兹的口味偏好是什么？实际购买是否落实了这个偏好？",
+      "must_include": "不要糖；黑咖啡不加糖不加奶；两次芝麻饼都要咸的，不要甜的。",
+      "must_not": "把甜味或加糖饮品当成帕兹的选择。",
+      "required_facts": [
+        {
+          "text": "帕兹明确要求提神饮品不要放糖。",
+          "source_quote": "给我弄点提神的，别放糖。"
+        },
+        {
+          "text": "康纳给了不加糖、不加奶的黑咖啡。",
+          "source_quote": "康纳从柜里取出一只搪瓷杯，倒了黑咖啡，没有加糖，也没有加奶。"
+        },
+        {
+          "text": "第一次芝麻饼明确只要咸的。",
+          "source_quote": "掌柜问要不要甜的，你说不要，只要咸的。"
+        },
+        {
+          "text": "第二次芝麻饼仍是咸的。",
+          "source_quote": "纸袋里的饼是咸的，和上一袋分开包着。"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "assistant_memory",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T096-M1",
+        "RST-T096-M2",
+        "RST-T100-M2",
+        "RST-T108-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第二天下午",
+      "session_time": "第一天 / 第二天下午",
+      "state_key": "taste_preference",
+      "old_value": null,
+      "new_value": "不加糖，偏好咸味",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L061",
+      "question_family": "sesame_purchase_details",
+      "question": "第二次买芝麻饼买了多少、价格和口味是否变化？掌柜提起了哪一次购买？",
+      "must_include": "第二次仍买两个、6元、咸味；掌柜提起“之前那两个”，指的是第一次购买。",
+      "must_not": "把第二次说成数量、价格或口味发生变化，或把掌柜的回顾算成新购买。",
+      "required_facts": [
+        {
+          "text": "第二次仍是两个芝麻饼、6元。",
+          "source_quote": "你又去了面包房，买了两个芝麻饼，还是六元。"
+        },
+        {
+          "text": "掌柜提到之前两个也是帕兹拿的。",
+          "source_quote": "掌柜把纸袋递出来时说：“之前那两个也是你拿的。”"
+        },
+        {
+          "text": "第二次仍是咸味，和上一袋分开包着。",
+          "source_quote": "纸袋里的饼是咸的，和上一袋分开包着。"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "cross_session_reasoning",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T100-M2",
+        "RST-T108-M1",
+        "RST-T108-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间与第二天下午",
+      "session_time": "第一天夜间 / 第二天下午",
+      "state_key": "sesame_cake_order",
+      "old_value": "第一次：2个，6元，咸味",
+      "new_value": "第二次：2个，6元，仍为咸味",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L062",
+      "question": "第二天下午船的回条只写了什么？刻意没有写哪些信息？",
+      "must_include": "回条只有一句“还在问，没有定”；没有写时间，也没有写码头名。",
+      "must_not": "补出具体时间、码头名或船期。",
+      "required_facts": [
+        {
+          "text": "回条只写还在问、没有定。",
+          "source_quote": "康纳的回条只有一句：还在问，没有定。"
+        },
+        {
+          "text": "回条没有写时间，也没有写码头名。",
+          "source_quote": "她把回条折得很小，压在快递回执下面，没有写时间，也没有写码头名。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "RST-T111-M1",
+        "RST-T111-M2"
+      ],
+      "session_ids": [
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第二天下午",
+      "session_time": "第二天 15:30-18:20",
+      "state_key": "boat_note",
+      "old_value": null,
+      "new_value": "还在问，没有定",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L063",
+      "question_family": "receipt_provenance_and_boat",
+      "question": "T121桌上的三张回执分别是哪三笔？能否把它们或它们的数量解释成船票、船舶订舱或起航证明？",
+      "must_include": "三张分别是闸门三号复印票、暗房押金手写收据、快递摊为罗英那份开出的回执；它们都不是船票，T121也没有提船或下一步，不能证明订船或起航。",
+      "must_not": "把三张业务回执当成船票，或从回执数量推断船舶已经订好、出发。",
+      "required_facts": [
+        {
+          "text": "闸门三号给过一张复印票。",
+          "source_quote": "从抽屉里取出一页发黄的旧账纸和一张复印票。"
+        },
+        {
+          "text": "暗房押金对应一张手写收据。",
+          "source_quote": "暗房的师傅收了你二十五元押金，给了你一张手写收据。"
+        },
+        {
+          "text": "快递摊给出两张编号不同的回执，罗英那份使用了其中一张。",
+          "source_quote": "快递摊收三十元押金，给你两张编号不同的回执。"
+        },
+        {
+          "text": "T121明确三张回执的来源，并再次说明没有提船和下一步。",
+          "source_quote": "康纳把三张回执摊在桌上：闸门三号的复印票、暗房押金的手写收据，以及快递摊为罗英那份开出的回执。她看完又收起来。她没有提船，也没有提下一步。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T097-M2",
+        "RST-T104-M2",
+        "RST-T107-M2",
+        "RST-T121-M1",
+        "RST-T121-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS3",
+        "RST-LS4",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第三天傍晚",
+      "session_time": "RST-LS2、RST-LS3、RST-LS4、RST-LS6",
+      "state_key": "receipt_provenance_and_boat",
+      "old_value": "多笔业务分别产生票证",
+      "new_value": "三张回执来源均非船票，没有起航证据",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L064",
+      "question": "第二次买芝麻饼之前，已经从帕兹手里付出的明确款项累计多少？买完第二次芝麻饼后累计多少？请按会话顺序计算。",
+      "must_include": "第二次买饼前，闸费18元、第一次芝麻饼6元、暗房押金25元、快递押金30元已经付出，共79元；第二次芝麻饼再加6元，累计85元。摆渡15元和取片12元此时尚未发生。",
+      "must_not": "漏掉发生在第二次买饼之前的30元快递押金，或提前计入之后的15元摆渡费和12元取片费。",
+      "required_facts": [
+        {
+          "text": "闸费18元。",
+          "source_quote": "收下你递过去的十八元闸费"
+        },
+        {
+          "text": "第一次芝麻饼6元。",
+          "source_quote": "你买了两个芝麻饼，付了六元"
+        },
+        {
+          "text": "暗房押金25元。",
+          "source_quote": "暗房的师傅收了你二十五元押金"
+        },
+        {
+          "text": "快递押金30元发生在第二次买饼之前。",
+          "source_quote": "快递摊收三十元押金"
+        },
+        {
+          "text": "第二次芝麻饼6元，此前累计79元，此后累计85元。",
+          "source_quote": "你又去了面包房，买了两个芝麻饼，还是六元。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T097-M2",
+        "RST-T100-M2",
+        "RST-T104-M2",
+        "RST-T107-M2",
+        "RST-T108-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS3",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第二天下午",
+      "session_time": "第一天夜间 / 第二天上午 / 第二天下午",
+      "state_key": "cumulative_payment_before_second_cake",
+      "old_value": "79元",
+      "new_value": "85元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L065",
+      "question": "谁经手过相机？请分别说明暗房取卷前、暗房取卷时和交还后三个阶段的相机状态，以及灰帽男人是否取得相机。",
+      "must_include": "帕兹起初把相机放进31号储物柜，敏特把相机放进铁盒并转移到暗房木架，后来由敏特交还。进暗房前敏特没有查看底片、没有按快门；暗房中她打开后盖取卷并装入空白卷；交还后没有再次打开，空白卷封条还在。灰帽男人没有取得相机。",
+      "must_not": "把“没有查看底片”误写成“从来没有在暗房取卷”，或说灰帽男人取走过相机。",
+      "required_facts": [
+        {
+          "text": "帕兹起初把相机放进31号储物柜。",
+          "source_quote": "连同两卷备用底片一起放进墙边31号储物柜"
+        },
+        {
+          "text": "进暗房前敏特没有查看底片，也没有按快门。",
+          "source_quote": "她没有查看相机里的底片，也没有按快门。"
+        },
+        {
+          "text": "灰帽男人索要相机时被拒，脚步随后走远。",
+          "source_quote": "你把门关上，听见灰帽男人的脚步沿巷子走远。"
+        },
+        {
+          "text": "暗房中敏特打开后盖取卷并装入空白卷。",
+          "source_quote": "敏特在红灯下打开相机后盖，取出第一卷底片挂上夹子，又装入一卷空白卷并合上后盖。"
+        },
+        {
+          "text": "交还时相机从木架取回后没有再打开，空白卷封条还在。",
+          "source_quote": "她说相机从暗房木架取回后没有再打开，机内空白卷的封条还在。"
+        },
+        {
+          "text": "交还后新换的空白卷已经装回机内。",
+          "source_quote": "你拉开一角，看见新换的空白卷已经装回机内。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "identity_pollution",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T093-M2",
+        "RST-T102-M2",
+        "RST-T103-M2",
+        "RST-T104-M2",
+        "RST-T106-M2",
+        "RST-T109-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS3",
+        "RST-LS4"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第二天下午",
+      "session_time": "第一天 / 第二天",
+      "state_key": "camera_access",
+      "old_value": "装有未查看第一卷的相机",
+      "new_value": "暗房取卷后装入空白卷，交还后未再打开",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L066",
+      "question_family": "locker_key_drawer_distinction",
+      "question": "“31号”在储物柜和档案抽屉中分别指什么？十三号抽屉又有什么作用？三者如何区分？",
+      "must_include": "31号储物柜起初装相机、结尾也装相机；三十一号档案抽屉只有空信封，锁芯已坏；十三号档案抽屉才是取B卷的位置。",
+      "must_not": "把31号储物柜与三十一号档案抽屉混为一处，或说十三号抽屉是空的。",
+      "required_facts": [
+        {
+          "text": "31号储物柜存放相机和备用底片。",
+          "source_quote": "连同两卷备用底片一起放进墙边31号储物柜"
+        },
+        {
+          "text": "三十一号档案抽屉只有空信封，锁芯已坏。",
+          "source_quote": "三十一号在档案室最里侧，锁芯早就坏了，里面只有空信封。"
+        },
+        {
+          "text": "十三号抽屉里取出标B的底片。",
+          "source_quote": "盒里是一卷标着B的底片"
+        },
+        {
+          "text": "结尾相机又放回31号储物柜。",
+          "source_quote": "31号储物柜里只剩下空底片袋，你把相机放进去，转了两圈锁芯。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "item_state_migration"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T093-M2",
+        "RST-T094-M2",
+        "RST-T112-M2",
+        "RST-T113-M2",
+        "RST-T119-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "第一天 / 第三天上午 / 第三天傍晚",
+      "state_key": "number_31_reference",
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L067",
+      "question_family": "address_handling",
+      "question": "罗英的旧书摊地址在第一次寄底片和后来冲洗B、C时分别如何处理？敏特是否看见过纸上的地址？",
+      "must_include": "第一次把罗英地址写在寄出的信封上；后来又把地址写在薄纸上，折成四折塞进相机包内层；敏特在门外，没有进来，也没有问纸上内容。",
+      "must_not": "说敏特看到了地址，或说第二次又把地址写在信封上寄出。",
+      "required_facts": [
+        {
+          "text": "第一批的一只信封写罗英的旧书摊，并把有地址的那只交出去。",
+          "source_quote": "你把写有地址的那只交出去，空白那只还在手里。"
+        },
+        {
+          "text": "后来把罗英地址写在薄纸上，折四折塞进相机包内层。",
+          "source_quote": "你把罗英的旧书摊地址写在一张薄纸上，折成四折，塞进相机包内层。"
+        },
+        {
+          "text": "敏特在门外等，没有进来，也没有问纸上的字。",
+          "source_quote": "敏特在门外等，没有进来，也没有问纸上的字。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T107-M2",
+        "RST-T115-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第二天下午至第三天傍晚",
+      "session_time": "第二天下午 / 第三天上午 / 第三天傍晚",
+      "state_key": "luo_ying_address_visibility",
+      "old_value": "地址写在第一批信封上并寄出",
+      "new_value": "地址另写在相机包内层薄纸上，敏特未看到",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L068",
+      "question": "第一次带回账纸后，三项夜间任务各自实际处于什么状态？请区分完成、未执行和未确认。",
+      "must_include": "换账页完成；拍摄完成；鱼市后巷返回未执行，改走面包房后巷；船仍未确认。",
+      "must_not": "把改道后的面包房后巷说成原计划完成，或把船说成已安排。",
+      "required_facts": [
+        {
+          "text": "账纸已从闸门三号换回。",
+          "source_quote": "从抽屉里取出一页发黄的旧账纸和一张复印票。"
+        },
+        {
+          "text": "账纸已经拍摄。",
+          "source_quote": "用相机拍了两张，又补了一张角落的印章。"
+        },
+        {
+          "text": "鱼市路线未执行，改走面包房后巷。",
+          "source_quote": "你收起相机，没有往那边走，改从面包房后巷绕回。"
+        },
+        {
+          "text": "康纳确认东西没丢，船还没有消息。",
+          "source_quote": "鱼市没走成，但东西没丢。船还没有消息。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T097-M2",
+        "RST-T099-M2",
+        "RST-T101-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间",
+      "session_time": "第一天行动前 / 第一次返回后",
+      "state_key": "three_step_plan_actual_status",
+      "old_value": "三项均待执行",
+      "new_value": "两项完成，一项改道执行，船未确认",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L069",
+      "question_family": "payment_total_and_classification",
+      "question": "七笔支付中哪些是押金，哪些不是？两类各合计多少？",
+      "must_include": "暗房25元和快递30元是押金，共55元；闸费18元、两次芝麻饼各6元、摆渡15元、取片12元不是押金，共57元。",
+      "must_not": "把摆渡费或取片费算成押金，或把芝麻饼回顾重复计费。",
+      "required_facts": [
+        {
+          "text": "暗房押金25元。",
+          "source_quote": "暗房的师傅收了你二十五元押金"
+        },
+        {
+          "text": "快递押金30元。",
+          "source_quote": "快递摊收三十元押金"
+        },
+        {
+          "text": "闸费18元。",
+          "source_quote": "收下你递过去的十八元闸费"
+        },
+        {
+          "text": "第一次芝麻饼6元。",
+          "source_quote": "你买了两个芝麻饼，付了六元"
+        },
+        {
+          "text": "第二次芝麻饼6元。",
+          "source_quote": "买了两个芝麻饼，还是六元"
+        },
+        {
+          "text": "摆渡费15元。",
+          "source_quote": "给了摆渡人十五元"
+        },
+        {
+          "text": "取片费12元。",
+          "source_quote": "付了十二元取片费"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T097-M2",
+        "RST-T100-M2",
+        "RST-T104-M2",
+        "RST-T107-M2",
+        "RST-T108-M2",
+        "RST-T114-M2",
+        "RST-T117-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS3",
+        "RST-LS4",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第三天傍晚",
+      "session_time": "第一天 / 第二天 / 第三天",
+      "state_key": "payment_deposit_split",
+      "old_value": null,
+      "new_value": "押金55元，非押金57元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L070",
+      "question_family": "locker_key_drawer_distinction",
+      "question": "31号储物柜存入、取出和再次存入相机各发生在哪一步？中间的三十一号档案抽屉检查不能怎样计数？",
+      "must_include": "相机先在31号储物柜存入，第一天夜间从柜中取出，第三天傍晚再次存入；三十一号档案抽屉只是空信封，不是储物柜的另一次开关。",
+      "must_not": "把三十一号档案抽屉的检查算成第三次相机存取，或说相机中途一直留在31号柜。",
+      "required_facts": [
+        {
+          "text": "出发前把相机和备用底片存入31号储物柜。",
+          "source_quote": "连同两卷备用底片一起放进墙边31号储物柜"
+        },
+        {
+          "text": "第一天夜间从31号柜取出相机。",
+          "source_quote": "你把31号柜里的相机取出来"
+        },
+        {
+          "text": "三十一号档案抽屉只有空信封。",
+          "source_quote": "三十一号抽屉的锁芯是空的，拉开后只有几只发黄的空信封。"
+        },
+        {
+          "text": "第三天傍晚相机再次存入31号储物柜。",
+          "source_quote": "31号储物柜里只剩下空底片袋，你把相机放进去"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "item_state_migration",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T093-M2",
+        "RST-T097-M2",
+        "RST-T113-M2",
+        "RST-T119-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2",
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "第一天 / 第三天",
+      "state_key": "locker_31_camera_access_count",
+      "old_value": "存入1次",
+      "new_value": "取出后再次存入，共2次存入",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L071",
+      "question": "哪些人已明确知道或使用过“蓝盐”？灰帽男人和敏特是否知道？",
+      "must_include": "康纳知道并要求使用“蓝盐”，帕兹对阿宁报过“蓝盐”，阿宁据此核对；灰帽男人答不上来，敏特明确没听过。",
+      "must_not": "把敏特或灰帽男人列为知道口令的人。",
+      "required_facts": [
+        {
+          "text": "康纳安排到闸门三号使用“蓝盐”。",
+          "source_quote": "二十一点到闸门三号，用‘蓝盐’换旧账页"
+        },
+        {
+          "text": "阿宁向帕兹要口令，帕兹回答“蓝盐”。",
+          "source_quote": "帕兹：“蓝盐。”"
+        },
+        {
+          "text": "灰帽男人答不出闸门三号口令。",
+          "source_quote": "你问他闸门三号的口令，他答不上来"
+        },
+        {
+          "text": "敏特明确没听过“蓝盐”。",
+          "source_quote": "关于‘蓝盐’和十三号抽屉，我没听过，也不知道。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "identity_pollution"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T097-M2",
+        "RST-T106-M2",
+        "RST-T120-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2",
+        "RST-LS3",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间至第三天傍晚",
+      "session_time": "多处会话后的口令知情范围复盘",
+      "state_key": "blue_salt_knowledge_set",
+      "old_value": null,
+      "new_value": "康纳、帕兹、阿宁知道；灰帽男人和敏特不知道",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L072",
+      "question_family": "route_deviation",
+      "question": "最后送B、C时实际走了哪条路线？是否再次经过鱼市？此前原定鱼市路线是否执行过？",
+      "must_include": "最后绕开鱼市，从东侧石桥去旧报社；此前原定鱼市后巷路线因卷帘门关闭没有执行，改走面包房后巷。",
+      "must_not": "说最后又走鱼市，或说第一次已按原计划从鱼市返回。",
+      "required_facts": [
+        {
+          "text": "最初计划从鱼市后巷返回。",
+          "source_quote": "最后从鱼市后巷回来。"
+        },
+        {
+          "text": "第一次因鱼市关闭改走面包房后巷。",
+          "source_quote": "改从面包房后巷绕回。"
+        },
+        {
+          "text": "最后绕开鱼市，从东侧石桥去旧报社。",
+          "source_quote": "随后你绕开鱼市，从东侧石桥去了旧报社"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "cross_session_reasoning",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "false_commitment"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T099-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第三天傍晚",
+      "session_time": "第一天 / 第三天傍晚",
+      "state_key": "fish_market_route",
+      "old_value": "鱼市后巷",
+      "new_value": "第一次改面包房后巷，最后一次绕开鱼市走东侧石桥",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L073",
+      "question_family": "gate_exchange_route_plan_execution",
+      "question": "账纸原计划在哪里翻看和拍摄，实际在哪里拍摄？拍摄后是否仍回到安全屋？",
+      "must_include": "原计划拿到后不在现场看，回安全屋用相机拍；实际在闸门内侧干石台上拍摄；拍摄后仍回到安全屋向康纳汇报。",
+      "must_not": "说实际严格按“回安全屋再拍”执行，或说拍摄后没有回安全屋。",
+      "required_facts": [
+        {
+          "text": "原计划拿到后不在现场看，回安全屋拍。",
+          "source_quote": "拿到后不要在现场看，回这里用你的相机拍下来"
+        },
+        {
+          "text": "实际在闸门内侧干石台上拍了账纸。",
+          "source_quote": "你把账纸铺在闸门内侧的干石台上，用相机拍了两张"
+        },
+        {
+          "text": "拍摄后仍回到安全屋向康纳汇报。",
+          "source_quote": "你回到安全屋，把账纸摊在桌上。"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "knowledge_update",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T092-M2",
+        "RST-T099-M2",
+        "RST-T101-M2"
+      ],
+      "session_ids": [
+        "RST-LS1",
+        "RST-LS2"
+      ],
+      "answerable": true,
+      "event_time": "第一天晚间",
+      "session_time": "第一天行动前 / 第一次返回后",
+      "state_key": "ledger_photo_location",
+      "old_value": "计划回安全屋拍摄",
+      "new_value": "实际在闸门内侧干石台拍摄",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L074",
+      "question_family": "bc_film_provenance_migration",
+      "question": "B卷从十三号抽屉取出后，什么时候与C卷同处何处？两卷何时分开交付？",
+      "must_include": "B卷从十三号抽屉取出，C卷来自相机，两卷在暗房一起挂起；晾干后同装进相机包，第三天傍晚先送B给康纳，再送C给老许。",
+      "must_not": "说B、C一开始就在同一处，或说两卷同时交给同一个人。",
+      "required_facts": [
+        {
+          "text": "B卷先从十三号抽屉取出。",
+          "source_quote": "盒里是一卷标着B的底片"
+        },
+        {
+          "text": "B卷和相机里的C卷在暗房一起挂起。",
+          "source_quote": "暗房师傅把十三号抽屉里的B卷和你相机里的C卷一起挂起来。"
+        },
+        {
+          "text": "晾干的B和C一起装进相机包。",
+          "source_quote": "一只标着B，一只标着C。你把它们并排塞进相机包"
+        },
+        {
+          "text": "B先交给康纳，C后交给老许。",
+          "source_quote": "你先去康纳的办公室，把标着B的铁盒放在她桌面。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "RST-T112-M2",
+        "RST-T115-M2",
+        "RST-T117-M2",
+        "RST-T118-M2"
+      ],
+      "session_ids": [
+        "RST-LS5",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第三天上午至傍晚",
+      "session_time": "第三天上午 / 第三天傍晚",
+      "state_key": "b_c_negative_location",
+      "old_value": "B在十三号抽屉，C在相机",
+      "new_value": "暗房同挂，相机包同装，随后分开交付",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "RST-L075",
+      "question_family": "sesame_purchase_count_and_proof",
+      "question": "原文明确记录了几次芝麻饼购买、共几个、花了多少？结尾带今日日期的纸袋能否单独作为第三次购买的证明？",
+      "must_include": "明确购买两次，每次两个、六元，共四个、十二元；掌柜“之前那两个”是对第一次的回顾。结尾纸袋和今日日期只能证明现场出现纸袋，不能单独证明第三次购买，仍需明确购买动作或其他交易证据。",
+      "must_not": "把纸袋、日期或掌柜回顾直接写成第三次购买，或把两次明确购买算成三次。",
+      "required_facts": [
+        {
+          "text": "第一次明确买了两个芝麻饼。",
+          "source_quote": "你买了两个芝麻饼，付了六元"
+        },
+        {
+          "text": "第二次明确又买了两个芝麻饼，并提到晚上还要走。",
+          "source_quote": "买点吃的，晚上还要走。"
+        },
+        {
+          "text": "掌柜只是回顾之前两个也是帕兹拿的。",
+          "source_quote": "掌柜把纸袋递出来时说：“之前那两个也是你拿的。”"
+        },
+        {
+          "text": "结尾只有被踩扁且印着今日日期的纸袋，没有新的购买动作。",
+          "source_quote": "后巷里只剩一只被踩扁的纸袋，表面印着今天的日期。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "fabricated_action",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "RST-T100-M2",
+        "RST-T108-M1",
+        "RST-T108-M2",
+        "RST-T121-M2"
+      ],
+      "session_ids": [
+        "RST-LS2",
+        "RST-LS4",
+        "RST-LS6"
+      ],
+      "answerable": true,
+      "event_time": "第一天夜间至第三天傍晚",
+      "session_time": "第一天夜间 / 第二天下午 / 第三天傍晚",
+      "state_key": "sesame_cake_explicit_count_and_bag",
+      "old_value": "两次明确购买，共四个、十二元",
+      "new_value": "纸袋不构成第三次购买的独立证明",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    }
+  ]
+}

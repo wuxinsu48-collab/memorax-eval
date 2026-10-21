@@ -12,7 +12,7 @@ export const dataset = {
   })),
 };
 
-export const smokeScope: { protocol: string; max_movie_turns: number; datasets: (DatasetSummary & { recipe: string })[] } = { protocol: 'six-suite-smoke-v1', max_movie_turns: 5, datasets: [
+export const smokeScope: { protocol: string; max_movie_turns: number; datasets: (DatasetSummary & { recipe: string })[] } = { protocol: 'seven-suite-smoke-v1', max_movie_turns: 5, datasets: [
   { ...dataset, id: 'zh-profiles-v1', name: '中文三组画像', profile_count: 1, question_count: 12,
     message_count: 18, noise_pair_count: 30, add_count: 6, recipe: 'A 组三阶段，每阶段 5 对普通闲聊＋5 对高相似干扰；保留 12 题' },
   { ...dataset, id: 'ncpbench-v1', name: '英文交互叙事 · NCP-Bench', kind: 'episode', question_count: 0,
@@ -25,9 +25,11 @@ export const smokeScope: { protocol: string; max_movie_turns: number; datasets: 
     add_count: 22, recipe: '诸星遗辞 A：第一阶段 22 轮正文、10 道题' },
   { ...dataset, id: 'novel-choice-v1', name: '小说多选记忆', kind: 'choice', question_count: 5,
     add_count: 8, recipe: '小说多选：trace1 完整会话、前 5 道六选一题' },
+  { ...dataset, id: 'rsi-trace-v1', name: '回应问候 · 行为记忆', kind: 'novel_qa', question_count: 5,
+    add_count: 10, recipe: '后续多会话 LS1-LS2：10 turns、5 道跨会话题' },
 ] };
 
-export const smokeReport = { protocol: 'six-suite-smoke-v1', status: 'passed' as const,
+export const smokeReport = { protocol: 'seven-suite-smoke-v1', status: 'passed' as const,
   datasets: smokeScope.datasets.map(d => ({ dataset_id: d.id, status: 'passed' as const, errors: [], diagnostic_errors: [], missing: [],
     adds_completed: d.kind === 'episode' ? 2 : d.add_count, adds_total: d.kind === 'episode' ? 2 : d.add_count, cases_completed: d.episode_count || d.question_count,
     cases_total: d.episode_count || d.question_count })) };

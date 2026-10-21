@@ -1,0 +1,48 @@
+{
+  "schema_version": "finrank-v22-local-adapter/1",
+  "source_archive": "/Users/dengchaosu/Downloads/handoff-v1-v22.zip",
+  "source_round": "v22-relation-evidence-confirmation",
+  "protocol": {
+    "dataset_id": "finrank-v1",
+    "planned_tasks": 30,
+    "candidate_question_jobs_for_two_candidates": 60,
+    "profile_workers": 8,
+    "parallel_adds": 2,
+    "fixed_denominator": 30,
+    "add_mode": "sync",
+    "formal_evidence_arm": "all_buckets",
+    "search_count_per_job": 1,
+    "bucket_census_count_per_job": 1,
+    "answer_blind_evidence": true,
+    "label_open_policy": "after all answer and context artifacts are persisted"
+  },
+  "candidates": {
+    "control": {
+      "file": "financial_recommended_source_relations_retry6.protocol.yaml",
+      "sha256": "8cbc55c1b0bad53cca13f94d6b3b15dc68bd89283cf64cc56600529b8e7b9271"
+    },
+    "challenger": {
+      "file": "financial_recommended_relation_evidence_retry6.yaml",
+      "sha256": "481aff5beea44ec82e64cb022c8d90e04c3872e593a220c5f9df67bbb1d2adc6"
+    }
+  },
+  "answer_prompt": {
+    "identifier": "finrank_pilot.ANSWER_PROMPT",
+    "sha256": "b2583becd067986e5636404c7acd4a51c81ec4d90d27028076f3b27dc1b0f356",
+    "content_available": false,
+    "note": "The handoff archive records only the prompt hash and identifier; the prompt body was not included."
+  },
+  "files_sha256": {
+    "inputs.json": "40ac8958284ded95c2ed09582c4faa855b0201a08ea70a5334a0db47da06fb52",
+    "labels/labels.json": "47b38e8499c5dfa554ff9f5bbcdf0704c39948d08a8edfc093df5c21c6ff0937",
+    "testset-manifest.json": "1ef380566d0da92fb2bf1e3131f39e659390a177b91aafb3c31b27431c63d2de",
+    "atomic-requirements.json": "a455af416f801ace791f69e25252acbc0f09cb6cabe5a15abeead98d4092d176",
+    "source-sufficiency.json": "f0e90a6e2ebf665396f622f833d54ee33e40628fa8a4f238e2f7e4e5aacef2ba",
+    "protocol.json": "c336a36e2f737a859e8f72ddfc70c7df58f3b8aa35ec349d50f41973f3ee9c94",
+    "financial_recommended_source_relations_retry6.protocol.yaml": "8cbc55c1b0bad53cca13f94d6b3b15dc68bd89283cf64cc56600529b8e7b9271",
+    "financial_recommended_source_relations_retry6.yaml": "40634b9ccadc88fb60fc640b5163cba0f825e7e7fadd09465ebbf9ad4f05295c",
+    "financial_recommended_relation_evidence_retry6.yaml": "481aff5beea44ec82e64cb022c8d90e04c3872e593a220c5f9df67bbb1d2adc6",
+    "financial_recommended.yaml": "4495daa8c743995110946243304567f410472c2b0af1156c0223292fbd61cd7a",
+    "reference-report.md": "d5a88177ef1d881510e32dcdeb40e2bc2349503c6238c79974b5fa1aa3e60af0"
+  }
+}

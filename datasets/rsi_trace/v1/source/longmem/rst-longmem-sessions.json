@@ -1,0 +1,945 @@
+{
+  "schema_version": "longmem-multisession-source-v1",
+  "profile_id": "RST-greeting",
+  "source_trace": {
+    "dataset": "回应问候",
+    "source_files": [
+      "add_requests.json",
+      "questions.json"
+    ],
+    "continues_after_turn": 91,
+    "world": "新西西里，复活日后的东侧旧水渠、暗街、四季酒店与灰墙建筑周边",
+    "synthetic": true
+  },
+  "session_span": {
+    "days": 3,
+    "first_session": "RST-LS1",
+    "last_session": "RST-LS6",
+    "turn_range": "92-121",
+    "turn_count": 30,
+    "message_count": 60
+  },
+  "sessions": [
+    {
+      "session_id": "RST-LS1",
+      "stage_id": 2,
+      "period": "T92-T96，T91结束后的第一晚",
+      "session_time": "第一天 18:20-20:05",
+      "turns": [
+        {
+          "turn": 92,
+          "messages": [
+            {
+              "role": "user",
+              "content": "先把今晚的安排说清楚。敏特还在1406，我不想让她再被卷进来。"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳带你离开那间没有窗的小房间，沿旧砖走道穿过一道隔门，进入安全屋。你从里面把门扣上。安全屋墙边有一排储物柜，桌旁立着矮柜。\n\n康纳把一张折过两次的城区图摊在桌上，指尖先压住东侧旧水渠，再移到灰墙建筑。\n\n康纳：“今晚只做三件事。二十一点到闸门三号，用‘蓝盐’换旧账页；拿到后不要在现场看，回这里用你的相机拍下来；最后从鱼市后巷回来。”\n\n她停了一下，指尖在图上没有挪开。\n\n康纳：“船的事我只问了，还没定。不要当成已经安排好。”\n\n你记住了“蓝盐”和闸门三号，视线落在她手边那只旧铜钥匙上。"
+            }
+          ]
+        },
+        {
+          "turn": 93,
+          "messages": [
+            {
+              "role": "user",
+              "content": "相机和钥匙怎么放？我不想带着它们过闸门。"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳把铜钥匙收进外套内袋。她说钥匙只开旧海关档案室的抽屉，和这里的储物柜不是一套。\n\n你把自己的胶卷相机从黑布包里取出来，连同两卷备用底片一起放进墙边31号储物柜，转了两圈锁芯，把柜钥匙压在房牌下面。"
+            }
+          ]
+        },
+        {
+          "turn": 94,
+          "messages": [
+            {
+              "role": "user",
+              "content": "抽屉是哪一个？别到时候摸错。"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳从桌上拿起一张旧登记条，指着上面手写的数字。\n\n康纳：“十三号抽屉。不是三十一号。三十一号在档案室最里侧，锁芯早就坏了，里面只有空信封。”\n\n她把登记条折回去，没有让你带走。"
+            }
+          ]
+        },
+        {
+          "turn": 95,
+          "messages": [
+            {
+              "role": "user",
+              "content": "敏特和罗英会知道这件事吗？"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳看着你，回答得很平。\n\n康纳：“今晚的暗号不要告诉敏特，也不要告诉罗英。闸门那边自有核对方式。十三号抽屉也是一样。”\n\n她把地图折起来，压在铜钥匙旁边。\n\n康纳：“如果有人在码头外先说出‘蓝盐’，那不是我们的人。”"
+            }
+          ]
+        },
+        {
+          "turn": 96,
+          "messages": [
+            {
+              "role": "user",
+              "content": "给我弄点提神的，别放糖。"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳从柜里取出一只搪瓷杯，倒了黑咖啡，没有加糖，也没有加奶。你喝了一口，把相机背面的旧照片翻过来，用铅笔在空白处写下一行很小的日期。\n\n铅笔尖在纸面上留下浅灰的痕。康纳看见了，没有问照片是谁。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS2",
+      "stage_id": 3,
+      "period": "T97-T101，第一天深夜的闸门与面包房",
+      "session_time": "第一天 21:10-23:05",
+      "turns": [
+        {
+          "turn": 97,
+          "messages": [
+            {
+              "role": "user",
+              "content": "去闸门三号，按计划拿账页。"
+            },
+            {
+              "role": "assistant",
+              "content": "你把31号柜里的相机取出来，黑布包斜背在身侧。东侧旧水渠的水声压得很低，闸门三号的铁栅上挂着一盏黄灯。登记员阿宁从窗口抬起眼。\n\n阿宁：“口令。”\n\n帕兹：“蓝盐。”\n\n阿宁在本子上点了一下，收下你递过去的十八元闸费，从抽屉里取出一页发黄的旧账纸和一张复印票。"
+            }
+          ]
+        },
+        {
+          "turn": 98,
+          "messages": [
+            {
+              "role": "user",
+              "content": "先别走，问清楚这页是哪一天的。"
+            },
+            {
+              "role": "assistant",
+              "content": "阿宁把账纸翻到背面，指着一行褪色的日期。\n\n阿宁：“昨天也有人来问过这页，说是替一个白头发的记者跑腿。”\n\n你没有接这句话。登记簿上今天只有一行你的名字，墨迹还没干；昨天那一栏是空的。阿宁自己也停了一下，视线在纸页和你脸上来回。\n\n阿宁：“可能是我记岔了。你拿的是第七页，别弄湿。”"
+            }
+          ]
+        },
+        {
+          "turn": 99,
+          "messages": [
+            {
+              "role": "user",
+              "content": "拍完就走。鱼市那边如果封了就换路。"
+            },
+            {
+              "role": "assistant",
+              "content": "你把账纸铺在闸门内侧的干石台上，用相机拍了两张，又补了一张角落的印章。鱼市方向的卷帘门已经落到底，两个穿围裙的人站在门边摇头。\n\n你收起相机，没有往那边走，改从面包房后巷绕回。"
+            }
+          ]
+        },
+        {
+          "turn": 100,
+          "messages": [
+            {
+              "role": "user",
+              "content": "在面包房停一下，买点吃的。"
+            },
+            {
+              "role": "assistant",
+              "content": "后巷里还亮着面包房的炉火。你买了两个芝麻饼，付了六元，纸袋口折了一道。掌柜问要不要甜的，你说不要，只要咸的。\n\n纸袋压在相机包外侧，你从侧门出去。"
+            }
+          ]
+        },
+        {
+          "turn": 101,
+          "messages": [
+            {
+              "role": "user",
+              "content": "回去后把进展告诉康纳。"
+            },
+            {
+              "role": "assistant",
+              "content": "你回到安全屋，把账纸摊在桌上。康纳先看印章，再看你相机里的底片计数。\n\n康纳：“第一件做完了，第二件也做了。鱼市没走成，但东西没丢。船还没有消息。”\n\n她把账纸收进抽屉，没有碰你的相机。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS3",
+      "stage_id": 4,
+      "period": "T102-T106，第二天清晨的面包房与暗房",
+      "session_time": "第二天 07:40-10:15",
+      "turns": [
+        {
+          "turn": 102,
+          "messages": [
+            {
+              "role": "user",
+              "content": "敏特说她能帮忙冲洗，但相机不能留在她房间。"
+            },
+            {
+              "role": "assistant",
+              "content": "敏特站在门内，红发压在旧围巾下面。她没有问暗号，也没有问闸门。你把黑布包递过去，她接住时手指在包带上停了一拍。\n\n敏特：“我先把它放到面包房的面粉桶后面。那里比房间安全。”\n\n她说完就出门，脚步轻，方向是后巷。"
+            }
+          ]
+        },
+        {
+          "turn": 103,
+          "messages": [
+            {
+              "role": "user",
+              "content": "跟过去，别让她一个人待太久。"
+            },
+            {
+              "role": "assistant",
+              "content": "面包房的伙计正在后门搬空筐。敏特从面粉桶后面取出一个铁盒，把相机放进去，又把铁盒推到最里面。她没有查看相机里的底片，也没有按快门。\n\n随后她带你去了灰墙建筑的暗房，把铁盒放到冲洗台下面的木架上。"
+            }
+          ]
+        },
+        {
+          "turn": 104,
+          "messages": [
+            {
+              "role": "user",
+              "content": "把第一卷冲出来，多少钱先付。"
+            },
+            {
+              "role": "assistant",
+              "content": "暗房的师傅收了你二十五元押金，给了你一张手写收据。敏特在红灯下打开相机后盖，取出第一卷底片挂上夹子，又装入一卷空白卷并合上后盖。她动作慢，但手很稳。红灯亮着，她一直没有说话。"
+            }
+          ]
+        },
+        {
+          "turn": 105,
+          "messages": [
+            {
+              "role": "user",
+              "content": "相机先别拿回去，等底片干。"
+            },
+            {
+              "role": "assistant",
+              "content": "敏特把相机留在木架上，用一块黑布盖住。那是一台已经换好空白卷的相机。她说等底片干透再取，免得路上受潮。\n\n你看见她把柜门关上，钥匙塞回自己围巾内侧。"
+            }
+          ]
+        },
+        {
+          "turn": 106,
+          "messages": [
+            {
+              "role": "user",
+              "content": "门外那个灰帽子是谁？"
+            },
+            {
+              "role": "assistant",
+              "content": "一个灰帽男人站在暗房外，手里拿着一只空信封。\n\n灰帽男人：“康纳让我来取相机。”\n\n敏特没有动，视线落在他的鞋上。你问他闸门三号的口令，他答不上来，只说“她没交代”。\n\n你把门关上，听见灰帽男人的脚步沿巷子走远。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS4",
+      "stage_id": 5,
+      "period": "T107-T111，第二天下午的快递摊与旧市场",
+      "session_time": "第二天 15:30-18:20",
+      "turns": [
+        {
+          "turn": 107,
+          "messages": [
+            {
+              "role": "user",
+              "content": "底片分两路送，先送罗英那份。"
+            },
+            {
+              "role": "assistant",
+              "content": "冲洗台送回一卷干了的第一批底片。你把它装进两只牛皮纸信封，一只写罗英的旧书摊，一只留白。\n\n快递摊收三十元押金，给你两张编号不同的回执。你把写有地址的那只交出去，空白那只还在手里。"
+            }
+          ]
+        },
+        {
+          "turn": 108,
+          "messages": [
+            {
+              "role": "user",
+              "content": "买点吃的，晚上还要走。"
+            },
+            {
+              "role": "assistant",
+              "content": "你又去了面包房，买了两个芝麻饼，还是六元。掌柜把纸袋递出来时说：“之前那两个也是你拿的。”\n\n你点头，没有解释。纸袋里的饼是咸的，和上一袋分开包着。"
+            }
+          ]
+        },
+        {
+          "turn": 109,
+          "messages": [
+            {
+              "role": "user",
+              "content": "敏特把相机送回来了吗？"
+            },
+            {
+              "role": "assistant",
+              "content": "敏特从旧市场侧门过来，把黑布包放到你手里。她说相机从暗房木架取回后没有再打开，机内空白卷的封条还在。\n\n你拉开一角，看见新换的空白卷已经装回机内。"
+            }
+          ]
+        },
+        {
+          "turn": 110,
+          "messages": [
+            {
+              "role": "user",
+              "content": "码头那边收了多少？把回执给我。"
+            },
+            {
+              "role": "assistant",
+              "content": "码头跑腿的年轻人把一张折皱的便条递给你，嘴里说：“八十一。”\n\n你把便条展开，手写数字清楚是十八，旁边还有阿宁的签名。你让他回去重新问。\n\n他走后，阿宁从窗口探出头，说今天只有你这一次登记。"
+            }
+          ]
+        },
+        {
+          "turn": 111,
+          "messages": [
+            {
+              "role": "user",
+              "content": "船今晚能走吗？"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳的回条只有一句：还在问，没有定。她把回条折得很小，压在快递回执下面，没有写时间，也没有写码头名。\n\n你把两只信封分开收好，空白那只仍然没有封口。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS5",
+      "stage_id": 6,
+      "period": "T112-T116，第三天上午的旧海关与暗房",
+      "session_time": "第三天 09:10-11:40",
+      "turns": [
+        {
+          "turn": 112,
+          "messages": [
+            {
+              "role": "user",
+              "content": "去旧海关，把十三号抽屉里的东西取出来。"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳在旧海关侧门外把铜钥匙交给你，指尖压着钥匙柄。\n\n康纳：“开十三号，拿最下面那卷。钥匙出来就还我。”\n\n你用钥匙开了档案室，抽屉里只有一只薄铁盒，盒里是一卷标着B的底片。你把底片收进内袋，把钥匙还给门外的康纳。"
+            }
+          ]
+        },
+        {
+          "turn": 113,
+          "messages": [
+            {
+              "role": "user",
+              "content": "三十一号抽屉也看一下，别漏。"
+            },
+            {
+              "role": "assistant",
+              "content": "三十一号抽屉的锁芯是空的，拉开后只有几只发黄的空信封。\n\n你把抽屉推回去，没有把里面的纸带出来。"
+            }
+          ]
+        },
+        {
+          "turn": 114,
+          "messages": [
+            {
+              "role": "user",
+              "content": "从旧海关去暗房，走水渠。"
+            },
+            {
+              "role": "assistant",
+              "content": "你从旧海关后门下到水渠边，给了摆渡人十五元，坐小木船到灰墙建筑一侧。\n\n船底擦过石壁，水声把岸上的脚步盖住。"
+            }
+          ]
+        },
+        {
+          "turn": 115,
+          "messages": [
+            {
+              "role": "user",
+              "content": "冲洗完把地址写给我，别让敏特看见。"
+            },
+            {
+              "role": "assistant",
+              "content": "暗房师傅把十三号抽屉里的B卷和你相机里的C卷一起挂起来。你把罗英的旧书摊地址写在一张薄纸上，折成四折，塞进相机包内层。\n\n敏特在门外等，没有进来，也没有问纸上的字。"
+            }
+          ]
+        },
+        {
+          "turn": 116,
+          "messages": [
+            {
+              "role": "user",
+              "content": "今晚之前能送完吗？"
+            },
+            {
+              "role": "assistant",
+              "content": "你看了一眼暗房墙上的钟。\n\n第一批已经在罗英手里；第二批和第三批还在夹子上滴水。\n\n你没有回答“能”，只把两张回执按顺序叠好。康纳的回条还压在下面，船的事仍旧没有确认。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS6",
+      "stage_id": 7,
+      "period": "T117-T121，第三天傍晚的旧报社与东侧水渠",
+      "session_time": "第三天 19:30-21:10",
+      "turns": [
+        {
+          "turn": 117,
+          "messages": [
+            {
+              "role": "user",
+              "content": "最后一趟，先把两卷底片取回来。"
+            },
+            {
+              "role": "assistant",
+              "content": "你把暗房里晾干的最后两卷底片取下来，付了十二元取片费。\n\n师傅把两只圆铁盒推过台面，一只标着B，一只标着C。你把它们并排塞进相机包，拉上拉链。"
+            }
+          ]
+        },
+        {
+          "turn": 118,
+          "messages": [
+            {
+              "role": "user",
+              "content": "按顺序送，别走鱼市。"
+            },
+            {
+              "role": "assistant",
+              "content": "你先去康纳的办公室，把标着B的铁盒放在她桌面。她没有打开，只把铁盒推到文件柜边。\n\n随后你绕开鱼市，从东侧石桥去了旧报社，把标着C的铁盒交给老许。罗英那份第一批昨天下午已经寄出，今早已经确认在罗英手里。"
+            }
+          ]
+        },
+        {
+          "turn": 119,
+          "messages": [
+            {
+              "role": "user",
+              "content": "相机最后放哪？"
+            },
+            {
+              "role": "assistant",
+              "content": "你回到安全屋，把相机从黑布包里取出来。31号储物柜里只剩下空底片袋，你把相机放进去，转了两圈锁芯。\n\n柜门合上时，铜钥匙不在你手里。那把钥匙已经还给了康纳。"
+            }
+          ]
+        },
+        {
+          "turn": 120,
+          "messages": [
+            {
+              "role": "user",
+              "content": "敏特知道“蓝盐”和抽屉号吗？"
+            },
+            {
+              "role": "assistant",
+              "content": "敏特站在走廊尽头，听见自己的名字，抬了一下眼。\n\n敏特：“关于‘蓝盐’和十三号抽屉，我没听过，也不知道。相机的事我知道你把它带到灰墙建筑的暗房；闸门三号那条线我没跟着走。”\n\n她没有看康纳，也没有看你的相机包。"
+            }
+          ]
+        },
+        {
+          "turn": 121,
+          "messages": [
+            {
+              "role": "user",
+              "content": "三天的事先到这里，明天再说。"
+            },
+            {
+              "role": "assistant",
+              "content": "康纳把三张回执摊在桌上：闸门三号的复印票、暗房押金的手写收据，以及快递摊为罗英那份开出的回执。她看完又收起来。她没有提船，也没有提下一步。\n\n你走出门，东侧水渠的水声比前两晚低。面包房的灯已经熄了，后巷里只剩一只被踩扁的纸袋，表面印着今天的日期。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenario_ledger": [
+    {
+      "session_id": "RST-LS1",
+      "stage_id": 2,
+      "key_facts": [
+        {
+          "fact_id": "LS1-F01",
+          "summary": "康纳给出的三步方案是：闸门三号用‘蓝盐’换旧账页，回安全屋用相机拍摄，再从鱼市后巷返回；船只是在询问，尚未确认。",
+          "evidence_ids": [
+            "RST-T092-M2"
+          ],
+          "capabilities": [
+            "assistant_memory",
+            "temporal_reasoning",
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS1-F02",
+          "summary": "相机和两卷备用底片被放进31号储物柜，柜钥匙压在房牌下面。",
+          "evidence_ids": [
+            "RST-T093-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS1-F03",
+          "summary": "旧海关档案室要开的是十三号抽屉；三十一号抽屉锁芯坏了，里面只有空信封，铜钥匙由康纳保管。",
+          "evidence_ids": [
+            "RST-T094-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "identity_pollution",
+            "item_state_migration"
+          ]
+        },
+        {
+          "fact_id": "LS1-F04",
+          "summary": "康纳明确要求不把‘蓝盐’和十三号抽屉告诉敏特、罗英；码头登记员只按自己的核对方式验口令，未被授权向第三方转述。",
+          "evidence_ids": [
+            "RST-T095-M2"
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "global_memory_leak",
+            "identity_pollution"
+          ]
+        },
+        {
+          "fact_id": "LS1-F05",
+          "summary": "帕兹明确要求不加糖的提神饮品；康纳给了黑咖啡，没有糖也没有奶。照片背面用铅笔写日期。",
+          "evidence_ids": [
+            "RST-T096-M1",
+            "RST-T096-M2"
+          ],
+          "capabilities": [
+            "personalization",
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "actor_transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS2",
+      "stage_id": 3,
+      "key_facts": [
+        {
+          "fact_id": "LS2-F01",
+          "summary": "闸门三号的登记员是阿宁；帕兹报口令‘蓝盐’，支付十八元闸费，拿到第七页旧账纸和一张复印票。",
+          "evidence_ids": [
+            "RST-T097-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "identity_pollution",
+            "fabricated_action"
+          ]
+        },
+        {
+          "fact_id": "LS2-F02",
+          "summary": "阿宁口头说昨天也有人来问这页，但登记簿昨天为空、今天只有帕兹一行；记录没有证实这次到访，不能当成已确认的客观事件。",
+          "evidence_ids": [
+            "RST-T098-M2"
+          ],
+          "capabilities": [
+            "temporal_reasoning",
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "temporal_disorder",
+            "identity_pollution",
+            "fabricated_action"
+          ]
+        },
+        {
+          "fact_id": "LS2-F03",
+          "summary": "账纸被相机拍了两张，另补拍角落印章；鱼市卷帘门落到底，原定的鱼市返回路线没有执行，改走面包房后巷。",
+          "evidence_ids": [
+            "RST-T099-M2"
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS2-F04",
+          "summary": "帕兹在面包房买了两个芝麻饼，支付六元，要咸的不要甜的。",
+          "evidence_ids": [
+            "RST-T100-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "personalization"
+          ],
+          "risk_tags": [
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS2-F05",
+          "summary": "康纳确认方案第一件已完成、第二件已完成，但鱼市路线未走成，船仍没有消息。",
+          "evidence_ids": [
+            "RST-T101-M2"
+          ],
+          "capabilities": [
+            "assistant_memory",
+            "knowledge_update",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "temporal_disorder"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS3",
+      "stage_id": 4,
+      "key_facts": [
+        {
+          "fact_id": "LS3-F01",
+          "summary": "敏特把相机放进面包房面粉桶后面的铁盒；在进入暗房前，她没有查看底片，也没有按快门。",
+          "evidence_ids": [
+            "RST-T102-M2",
+            "RST-T103-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS3-F02",
+          "summary": "相机随后从面粉桶转移到灰墙建筑暗房冲洗台下面的木架，敏特把柜门锁上，钥匙放在围巾内侧。",
+          "evidence_ids": [
+            "RST-T103-M2",
+            "RST-T105-M2"
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS3-F03",
+          "summary": "敏特在暗房红灯下打开相机后盖，取出第一卷底片挂上夹子，并装入空白卷；帕兹支付二十五元押金并拿到手写收据。",
+          "evidence_ids": [
+            "RST-T104-M2"
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS3-F04",
+          "summary": "暗房外的灰帽男人自称康纳派来取相机，却答不出‘蓝盐’，被拒之门外；相机仍在暗房木架上。",
+          "evidence_ids": [
+            "RST-T106-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "identity_pollution",
+            "global_memory_leak",
+            "fabricated_action"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS4",
+      "stage_id": 5,
+      "key_facts": [
+        {
+          "fact_id": "LS4-F01",
+          "summary": "第一批底片在第二天下午装成两只信封，帕兹支付三十元快递押金；有地址的一只寄往罗英的旧书摊，空白那只未寄出。",
+          "evidence_ids": [
+            "RST-T107-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS4-F02",
+          "summary": "帕兹第二次在面包房买了两个芝麻饼，支付六元；掌柜提到之前那两个也是他拿的，这是对第一次购买的回顾，不是第三次独立购买。",
+          "evidence_ids": [
+            "RST-T100-M2",
+            "RST-T108-M2"
+          ],
+          "capabilities": [
+            "cross_session_reasoning",
+            "information_extraction",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "temporal_disorder",
+            "fabricated_action"
+          ]
+        },
+        {
+          "fact_id": "LS4-F03",
+          "summary": "敏特从旧市场侧门把相机还给帕兹；相机从暗房木架取回后没有再打开，机内新换的空白卷封条仍在。",
+          "evidence_ids": [
+            "RST-T109-M2"
+          ],
+          "capabilities": [
+            "knowledge_update",
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS4-F04",
+          "summary": "码头跑腿口头说八十一，但便条和签名显示十八；阿宁确认当天只有帕兹一次登记，记录支持十八，不能确认另有一笔十八元实付。",
+          "evidence_ids": [
+            "RST-T110-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "fabricated_action",
+            "identity_pollution",
+            "temporal_disorder"
+          ]
+        },
+        {
+          "fact_id": "LS4-F05",
+          "summary": "康纳只回复船还在问、没有定；空白信封仍未封口，第二批尚未送出。",
+          "evidence_ids": [
+            "RST-T111-M2"
+          ],
+          "capabilities": [
+            "assistant_memory",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "actor_transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS5",
+      "stage_id": 6,
+      "key_facts": [
+        {
+          "fact_id": "LS5-F01",
+          "summary": "康纳在旧海关侧门把铜钥匙交给帕兹；十三号抽屉里只有标着B的底片，帕兹取出后把钥匙还给康纳。",
+          "evidence_ids": [
+            "RST-T112-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS5-F02",
+          "summary": "三十一号抽屉锁芯为空，里面只有几只发黄空信封，没有底片。",
+          "evidence_ids": [
+            "RST-T113-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "identity_pollution",
+            "item_state_migration"
+          ]
+        },
+        {
+          "fact_id": "LS5-F03",
+          "summary": "帕兹支付十五元，从旧海关后门坐小木船沿水渠到灰墙建筑一侧。",
+          "evidence_ids": [
+            "RST-T114-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS5-F04",
+          "summary": "罗英旧书摊的地址只写在薄纸上并塞进相机包内层；敏特在门外，没有看到纸上的字。",
+          "evidence_ids": [
+            "RST-T115-M2"
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "global_memory_leak",
+            "identity_pollution"
+          ]
+        },
+        {
+          "fact_id": "LS5-F05",
+          "summary": "截至第三天上午，第一批已在罗英手里，十三号抽屉里的B卷和相机里的C卷都在暗房夹子上滴水；船仍没有确认。",
+          "evidence_ids": [
+            "RST-T116-M2"
+          ],
+          "capabilities": [
+            "assistant_memory",
+            "knowledge_update",
+            "temporal_reasoning"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "temporal_disorder",
+            "actor_transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "RST-LS6",
+      "stage_id": 7,
+      "key_facts": [
+        {
+          "fact_id": "LS6-F01",
+          "summary": "帕兹支付十二元取片费，取回标着B和C的两只圆铁盒，并放进相机包。",
+          "evidence_ids": [
+            "RST-T117-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS6-F02",
+          "summary": "标着B的底片交给康纳，标着C的底片交给旧报社的老许；第一批已于第二天下午寄出，第三天上午确认在罗英手里。三批底片至此全部送出。",
+          "evidence_ids": [
+            "RST-T107-M2",
+            "RST-T118-M2"
+          ],
+          "capabilities": [
+            "cross_session_reasoning",
+            "assistant_memory",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "actor_transfer",
+            "item_state_migration",
+            "temporal_disorder"
+          ]
+        },
+        {
+          "fact_id": "LS6-F03",
+          "summary": "相机最后被放回安全屋31号储物柜；铜钥匙已归还康纳，不在帕兹手里。",
+          "evidence_ids": [
+            "RST-T119-M2"
+          ],
+          "capabilities": [
+            "information_extraction",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "item_state_migration",
+            "actor_transfer"
+          ]
+        },
+        {
+          "fact_id": "LS6-F04",
+          "summary": "敏特没有听过‘蓝盐’，也不知道十三号抽屉；她参与过相机转移，知道相机被带到灰墙建筑的暗房。",
+          "evidence_ids": [
+            "RST-T120-M2"
+          ],
+          "capabilities": [
+            "information_extraction"
+          ],
+          "risk_tags": [
+            "global_memory_leak",
+            "identity_pollution"
+          ]
+        },
+        {
+          "fact_id": "LS6-F05",
+          "summary": "故事收束时康纳没有提船，也没有提下一步；船的安排始终停留在询问阶段，没有实际航行。",
+          "evidence_ids": [
+            "RST-T092-M2",
+            "RST-T111-M2",
+            "RST-T121-M2"
+          ],
+          "capabilities": [
+            "assistant_memory",
+            "temporal_reasoning",
+            "knowledge_update"
+          ],
+          "risk_tags": [
+            "false_commitment",
+            "temporal_disorder"
+          ]
+        }
+      ]
+    }
+  ]
+}

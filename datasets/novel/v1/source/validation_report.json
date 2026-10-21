@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "validated_at": "2026-10-19T00:00:00+08:00",
+  "validated_at": "2026-10-20T00:00:00+08:00",
   "checks": {
     "four_isolated_playthrough_directories": true,
     "one_trace_per_directory": true,
@@ -11,6 +11,7 @@
     "exactly_seven_categories": true,
     "every_category_nonempty": true,
     "blind_search_excludes_gold_and_category": true,
+    "all_questions_use_neutral_rewrites_without_answer_guidance": true,
     "reference_answers_include_evidence": true,
     "source_turns_included_for_resolvable_provenance": true,
     "add_content_preserved_from_source": true,
@@ -57,7 +58,7 @@
     }
   ],
   "limitations": [
-    "本次只合并已构建并已校验的评测资产，未修改四条 playthrough 的 add、search、参考答案或原文证据。",
+    "本次仅改写四条 playthrough 的问题文本；add、参考答案、判分点、证据和原始回合未修改。",
     "本包未执行 add/search/Judge，不代表被测模型已通过验收。",
     "本次不涉及 SDK 代码或运行配置变更，因此未启动本地服务回归或真实请求压测。"
   ]

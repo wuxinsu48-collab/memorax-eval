@@ -138,8 +138,8 @@ test('failed questions show precise reasons and have independent question and au
 });
 
 test('quick-check tab launches the fixed scope and separates pipeline status from scores', async ({ page }, testInfo) => {
-  const smokeRun = { ...run, run_mode: 'smoke', name: '六套快速自检', dataset_id: 'all',
-    dataset_name: '六套快速自检', smoke_report: smokeReport, metrics: { ...run.metrics, errors: 0, accuracy: 0 } };
+  const smokeRun = { ...run, run_mode: 'smoke', name: '七套快速自检', dataset_id: 'all',
+    dataset_name: '七套快速自检', smoke_report: smokeReport, metrics: { ...run.metrics, errors: 0, accuracy: 0 } };
   await page.route('**/api/**', async route => {
     const path = new URL(route.request().url()).pathname.replace('/api', '');
     const data = path === '/health' ? { status: 'ok', version: '0.1.0' }
@@ -155,7 +155,7 @@ test('quick-check tab launches the fixed scope and separates pipeline status fro
   });
   await page.goto('/#/smoke');
   await expect(page.getByRole('heading', { name: '快速自检', exact: true })).toBeVisible();
-  await expect(page.getByText('6 套小样本 · 34 题＋1 部电影 · 非正式成绩')).toBeVisible();
+  await expect(page.getByText('7 套小样本 · 39 题＋1 部电影 · 非正式成绩')).toBeVisible();
   await expect(page.getByRole('region', { name: '自检流程结果' })).toContainText('流程跑通');
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('quick-check.png'), fullPage: true });
@@ -171,7 +171,7 @@ test('quick-check tab launches the fixed scope and separates pipeline status fro
   await page.getByRole('button', { name: '开始快速自检' }).click();
   expect((await request).postDataJSON()).toMatchObject({ run_mode: 'smoke', dataset_id: 'all', profile_ids: [],
     common_yaml: defaults.common_yaml, answer: { model: defaults.answer.model } });
-  await expect(page.getByRole('heading', { name: '六套快速自检', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '七套快速自检', exact: true })).toBeVisible();
   await expect(page.getByText('快速自检 · 小样本，非正式成绩；电影最多 5 回合。')).toBeVisible();
   await expect(page.getByRole('region', { name: '自检流程结果' })).toContainText('流程跑通');
   await assertNoPageOverflow(page);
@@ -214,10 +214,11 @@ test('NCP movies and staged novel results remain distinct on desktop and mobile'
   const metrics = { episode_count: 1, average_turns: 1, average_trajectory_progress: 1, average_commitment_satisfaction: 1,
     fact_conflict_rate: 0, commitment_conflict_rate: 0, player_input_conflict_rate: 0, conflict_count: 0, max_turns_count: 0, all_resolved_count: 1 };
   const row = { name: '行为主体转移', total: 32, judged: 1, passed: 1, errors: 0, accuracy: 1, point_coverage: 1 };
-  const result = { ...run, name: '六套叙事集成验收', ncp_metrics: metrics,
+  const result = { ...run, name: '七套叙事集成验收', ncp_metrics: metrics,
     config: { ...run.config, sampling: { 'ncpbench-v1': { seed: '42', movie_ids: ['movie01'], movie_titles: ['50 First Dates'], sample_size: 10 } } },
     dataset_metrics: [{ dataset_id: 'novel-memory-v1', kind: 'novel_qa', total: 200, completed: 1, errors: 0,
-      accuracy: 1, retrieval: null, mapping_coverage: null, categories: [row], stages: [{ ...row, name: '1' }] }],
+      accuracy: 1, retrieval: null, mapping_coverage: null, categories: [row], stages: [{ ...row, name: '1' }],
+      risks: [{ ...row, name: 'actor_transfer' }] }],
     metrics: { ...run.metrics, episode_total: 10, episode_completed: 1 },
     cases: [{ ...run.cases[0], id: 'NCP-movie01', profile_name: '50 First Dates', kind: 'episode', verdict: null,
       episode_result: { termination: 'all_resolved', turns: [{}] } },
@@ -239,6 +240,7 @@ test('NCP movies and staged novel results remain distinct on desktop and mobile'
   await expect(page.getByText('Add 部分写入（1 部）', { exact: false })).toBeVisible();
   await expect(page.getByRole('heading', { name: '小说剧情记忆', exact: true })).toBeVisible();
   await expect(page.getByText('行为主体转移', { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '七类记忆风险', exact: true })).toBeVisible();
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('ncp-novel-results.png'), fullPage: true });
   await page.getByRole('button', { name: '查看题目 NV-q001' }).click();

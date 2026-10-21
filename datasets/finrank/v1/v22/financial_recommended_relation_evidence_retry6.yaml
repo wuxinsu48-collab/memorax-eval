@@ -1,0 +1,384 @@
+# 金融场景推荐配置 —— 基于 CONTRACT-TEMPLATE.md 派生（source-evidence quote candidate）
+#
+# 与 v0.x 系列的根本区别：不再是「打补丁式措辞调优」，而是从基准模板派生。
+# 模板四块：① 契约块 ② 输入字段声明 ③ 边界靠 schema 声明 + 引擎压缩 ④ 路由 prompt 写 key 规则。
+#
+# 修订史（iRaB 压测 2026-09-15/16，共 15 轮）：
+#   v0.3  872fc1ed  HANDOFF 交付版
+#   v0.4  6f306131  补「单 key 单 update」；保留规则去掉条件措辞
+#   v0.5  fdc4a36f  key 逐字复制写进硬契约块
+#   v0.6  263cff6d  加 router 段（证明 HANDOFF §5 的 per-type 60 从未生效）
+#   v0.7  884c8f16  router.max_targets=100 + 输出预算 32768/300s → 首次 complete_mean 0.7417
+#   v0.8  ed5551d7  时点口径 / 费用明细 / 合并口径分离
+#   v0.9  e07542cb  financial_metric key 改自然短语 → 该类型桶首次可被检索
+#   v0.10 e717b3cc  保留指令改机械式（先复制再追加）
+#   v0.11 7f68b24c  打开 retry_policy.max_retries（引擎默认 0）
+#   v0.12 8da9cf57  prompt 里加条目上限 —— ⚠️ 已废弃：与引擎内置压缩机制冲突
+#   v1.0  本文件     回到基准模板
+#
+# v1.0 相对 v0.12 的改动：
+#   1. 删掉所有 prompt 内的条目上限 —— 引擎有内置压缩（_compact_content_if_needed，
+#      memory.bucket_content_max_items 默认 20），在 prompt 里另加限制是跟它打架。
+#   2. 四个桶统一使用同一段契约块，逐条复述引擎真实校验的 8 条。
+#   3. 显式声明引擎注入的输入字段（entity_inputs / new_raw_context / new_summary / recent_context）。
+#   4. 新增 router.prompt_source：key 是路由阶段生成的，key 规则必须写在路由 prompt 里。
+#   5. 补 {{target_output_language_rule}} 占位符。
+definition_version: fin-recommended-1.3-relation-evidence-retry6
+description: 金融推荐配置（关系证据候选）：保留主张关系与逐字证据，并在来源桶中稳定追加可组合、不可推断的原文关系证据。
+
+# 全局路由目标上限。默认 MAX_ROUTING_TARGETS=20（bucket_pipeline.py:47），
+# 且全局闸门在 per-type 的 max_targets_per_chunk 之前判（:1037 的 if/elif），
+# 各桶自己的 max_targets_per_chunk 只有在全局闸门之内才起作用。
+# 输出预算已提到 32768 token（实测单次最大 14558），100 是 schema 上限。
+router:
+  max_targets_per_chunk: 100
+  prompt_source: |-
+    You are the bucket routing assistant for Memorax Memory Write.
+
+    Goal:
+    Decide which finance-domain memory buckets the new input should update.
+
+    Input fields:
+    1. all_bucket_keys: existing bucket keys grouped by type. These are canonical; reuse them.
+    2. recent_context: raw context entries from the most recent complete topic.
+    3. new_raw_context: the latest original input context.
+    4. new_summary: a short summary of the latest input.
+
+    Hard constraints:
+    1. Output exactly one JSON object. No markdown, no explanation, no code fences.
+    2. Required fields: is_same_topic, targets.
+    3. Each target requires: bucket_type, bucket_key, display_key, action.
+    4. bucket_type must be one of: entity_profile, financial_metric, financial_claim, source_evidence.
+    5. bucket_key MUST be a natural phrase that appears VERBATIM in new_raw_context.
+       The engine selects buckets by literal substring match against retrieved memory text;
+       a key that never appears in the source is a bucket that can never be retrieved.
+       - entity_profile    key = the entity's full legal name as written in the source
+                             (e.g. 宁波东方电缆股份有限公司)
+       - financial_metric  key = the bare metric name as written in the source
+                             (e.g. 营业收入 / 净亏损 / 股权激励费用)
+       - financial_claim   key = the subject's name as written in the source (e.g. 知乎)
+       - source_evidence   key = the document title as written in the source
+       NEVER join parts with a separator character (| / - etc.) to form a composite key.
+       NEVER prefix the key with entity, period or statement name.
+       Do not translate or romanize: keep the source language and the source's own characters.
+    6. action must be "UPDATE" or "ADD".
+    7. Only include entities and metrics meaningfully discussed in new_raw_context.
+
+    Decision principles:
+    1. Before creating a key, scan all_bucket_keys and reuse an existing key that refers to the
+       same real thing. Prefer fewer, high-confidence targets over many speculative ones.
+    2. is_same_topic=true when new_raw_context continues recent_context.
+    3. For a company's financial report, route the metrics the report actually discloses —
+       including note-level breakdowns (e.g. share-based compensation split across expense
+       categories, depreciation, segment splits) whenever a concrete figure is given.
+       For equity-compensation questions, treat 股份支付、股权激励、share-based
+       compensation and SBC as the same retrieval family, but keep every verbatim metric
+       phrase that occurs in the source. Always route both the consolidated annual total and
+       each concrete expense-line breakdown; a plan-specific grant/expense amount is not a
+       substitute for the consolidated cash-flow or income-statement total.
+       For DuPont questions, route the profit, revenue, total-assets, equity, ROA/ROE,
+       period and NIM metrics needed to recompute a closed identity; do not rely on a rounded
+       ratio when the source provides the underlying balances.
+    4. targets may be empty when the input carries no finance-domain content.
+
+content_update_rules:
+  timeout_s: 600.0
+  # 引擎 PipelinePolicy.max_retries 默认 0：模型一旦吐出一次非法 JSON，该桶类型当场判失败。
+  # 实测坏 JSON 会出现在 692 字符这种极小输出上，纯属偶发，应靠重试吃掉而非报废整个分组。
+  retry_policy:
+    # This preregistered combination changes only generic serialization
+    # instructions plus the parser-repair budget; it uses no question-specific
+    # answer, passage, label, or badcase text.
+    max_retries: 6
+    interval_s: 1.0
+data_source:
+  type: raw
+bucket_types:
+# ===========================================================================
+# entity_profile —— 稳定画像。
+# 四个稳定维度声明 max_items: 1（这是写给模型的声明式边界，引擎不校验它；
+# 真正管住桶大小的是引擎的自动压缩）。稳定维度就地重写，条目数不变，
+# 因此不会撞保留契约；只有 [事实] 逐条追加。
+# ===========================================================================
+- name: entity_profile
+  description: 金融实体桶，key = 原文中出现的完整法定名称。承载实体画像与其在原文中的事实记录。
+  enabled: true
+  routing: llm
+  max_targets_per_chunk: 20
+  existing_keys_limit: 100
+  content_schema:
+    format: text
+    properties:
+    - name: identity
+      prefix: '[实体]'
+      max_items: 1
+    - name: aliases
+      prefix: '[别名]'
+      max_items: 1
+    - name: role
+      prefix: '[角色]'
+      max_items: 1
+    - name: industry
+      prefix: '[行业]'
+      max_items: 1
+    - name: fact
+      prefix: '[事实]'
+  prompt_source: |-
+    You are the entity_profile bucket content writer for Memorax Memory Write.
+    本桶代表一个金融实体（公司/机构），记录它在原文中披露的客观事实。
+
+    Input fields:
+    1. entity_inputs: buckets to update, each with bucket_key, display_key, action, existing_content.
+    2. new_raw_context: the latest original input context to incorporate.
+    3. new_summary: a short summary of the latest input.
+    4. recent_context: raw context entries from the most recent complete topic.
+
+    Hard constraints (engine contract — violating ANY of these discards the whole bucket type):
+    1. Output exactly one JSON object. No markdown, no explanation, no code fences.
+    2. Required field: updates. Each update requires: bucket_key, display_key, content.
+    3. Return exactly ONE update per bucket_key listed in entity_inputs. A second update for the
+       same bucket_key makes the whole response invalid.
+    4. bucket_key must be copied VERBATIM from entity_inputs — same characters, same case,
+       same separators. Never rewrite, translate or normalize it.
+    5. content must be the complete list[str] for that bucket, not a diff.
+    6. content must contain AT LEAST as many entries as existing_content. Never drop, merge,
+       condense or summarize an existing entry. The engine checks the ENTRY COUNT, not the entry
+       length — losing one entry rejects the whole bucket type. Copy every existing entry through
+       unchanged, then append new ones at the end.
+    7. Do not modify entries unrelated to the new input.
+    8. Never invent or infer facts not present in the input. Keep original numbers, units,
+       currency, signs and periods exactly as written.
+
+    Entry tags (fixed anchors, keep the tag verbatim; the body is written in the target language):
+    - "[实体]" 法定名称 — at most ONE entry; rewrite it in place when the source gives a fuller name.
+    - "[别名]" 简称/别名/证券代码 — at most ONE entry; merge new aliases into that one entry.
+    - "[角色]" 在产业链中的角色与主营业务 — at most ONE entry; rewrite in place.
+    - "[行业]" 所属行业 — at most ONE entry; rewrite in place.
+    - "[事实]" 逐条客观事实 — one entry per fact, appended at the end. Each fact entry must carry
+      the exact figure with unit and currency, the period, the basis (实际披露/预测/修订；
+      期末/期初/平均) and the source. Keep 合并口径 and 非合并(母公司)口径 as separate entries.
+
+    {{target_output_language_rule}}
+    Serialization contract: emit one compact, machine-parseable JSON object only. Use double quotes for every key and string, escape every embedded double quote and newline inside strings, and never emit trailing commas, comments, or prose outside the object.
+# ===========================================================================
+# financial_metric —— key 必须是可被检索命中的自然指标名短语。
+# 引擎选桶靠子串匹配，组合式 key（实体|期间|表|科目）实测命中率为 0。
+# ===========================================================================
+- name: financial_metric
+  description: >-
+    金融指标桶，key = 原文中出现的自然指标名短语（如 营业收入 / 净亏损 / 股权激励费用）。
+    实体、期间、报表类别、口径、数值一律写进 content 条目，不写进 key。
+    同一指标跨实体跨期间的多条取值全部累积在同一个桶里。
+  enabled: true
+  routing: llm
+  max_targets_per_chunk: 100
+  existing_keys_limit: 100
+  content_schema:
+    format: text
+    properties:
+    - name: metric
+      prefix: '[指标]'
+      max_items: 1
+    - name: period
+      prefix: '[期间]'
+    - name: basis
+      prefix: '[口径]'
+    - name: source
+      prefix: '[来源]'
+      max_items: 1
+  prompt_source: |-
+    You are the financial_metric bucket content writer for Memorax Memory Write.
+    本桶代表**一个指标名**，不是「某公司某年某表某科目」的组合。
+
+    Input fields:
+    1. entity_inputs: buckets to update, each with bucket_key, display_key, action, existing_content.
+    2. new_raw_context: the latest original input context to incorporate.
+    3. new_summary: a short summary of the latest input.
+    4. recent_context: raw context entries from the most recent complete topic.
+
+    Hard constraints (engine contract — violating ANY of these discards the whole bucket type):
+    1. Output exactly one JSON object. No markdown, no explanation, no code fences.
+    2. Required field: updates. Each update requires: bucket_key, display_key, content.
+    3. Return exactly ONE update per bucket_key listed in entity_inputs. A second update for the
+       same bucket_key makes the whole response invalid.
+    4. bucket_key must be copied VERBATIM from entity_inputs — same characters, same case,
+       same separators. Never rewrite, translate or normalize it.
+    5. content must be the complete list[str] for that bucket, not a diff.
+    6. content must contain AT LEAST as many entries as existing_content. Never drop, merge,
+       condense or summarize an existing entry. The engine checks the ENTRY COUNT, not the entry
+       length — losing one entry rejects the whole bucket type. Copy every existing entry through
+       unchanged, then append new ones at the end.
+    7. Do not modify entries unrelated to the new input.
+    8. Never invent or infer facts not present in the input. Keep original numbers, units,
+       currency, signs and periods exactly as written.
+
+    Domain rules:
+    1. Every content entry starts with its fixed tag. Entity, period, statement, basis, figure and
+       source all live INSIDE the entry, never in the key.
+       e.g. "[指标]股权激励费用 [期间]2025年度 [口径]合并口径、按费用科目分项 [来源]zhihu-2025-20f"
+    2. The same metric disclosed for different entities, periods or bases becomes SEPARATE entries
+       in the SAME bucket. Never mint a new key to tell them apart.
+    3. Balance-sheet items must state their time basis explicitly: 期末余额 / 期初余额 / 平均余额.
+       Never mix bases within one comparison. If the source gives only one, record only that one —
+       do not derive or convert.
+    4. Note-level breakdowns count as metrics: whenever the source gives a concrete figure for a
+       component (e.g. share-based compensation split across cost of revenues / selling & marketing
+       / R&D / G&A, depreciation by segment), record it in its own metric bucket. Do not omit a
+       figure because it is small or appears in a note.
+    5. Keep 合并口径 and 非合并(母公司)口径 as separate entries. Never present one as the other.
+    6. Do not convert, round or infer figures that the source does not state.
+    7. When the source contains both a consolidated annual share-based-compensation total and
+       a plan-specific amount, record them as separate entries and label the scope explicitly;
+       the consolidated annual total is the answer anchor for a question asking for total SBC.
+
+    {{target_output_language_rule}}
+    Serialization contract: emit one compact, machine-parseable JSON object only. Use double quotes for every key and string, escape every embedded double quote and newline inside strings, and never emit trailing commas, comments, or prose outside the object.
+# ===========================================================================
+# financial_claim —— key = 主体名称（原文里出现，因此可被检索命中）
+# ===========================================================================
+- name: financial_claim
+  description: 金融主张桶，key = 原文中出现的主体名称。承载该主体的事件、关系与观点主张。
+  enabled: true
+  routing: llm
+  max_targets_per_chunk: 20
+  existing_keys_limit: 100
+  content_schema:
+    format: text
+    properties:
+    - name: kind
+      prefix: '[类型]'
+      max_items: 1
+    - name: when
+      prefix: '[时间]'
+    - name: who
+      prefix: '[主体]'
+    - name: body
+      prefix: '[内容]'
+    - name: amount
+      prefix: '[金额/比例]'
+    - name: relation
+      prefix: '[关系]'
+    - name: source
+      prefix: '[来源]'
+      max_items: 1
+  prompt_source: |-
+    You are the financial_claim bucket content writer for Memorax Memory Write.
+    本桶代表**一个主体**，承载它的事件、主体间关系、观点与状态主张。
+
+    Input fields:
+    1. entity_inputs: buckets to update, each with bucket_key, display_key, action, existing_content.
+    2. new_raw_context: the latest original input context to incorporate.
+    3. new_summary: a short summary of the latest input.
+    4. recent_context: raw context entries from the most recent complete topic.
+
+    Hard constraints (engine contract — violating ANY of these discards the whole bucket type):
+    1. Output exactly one JSON object. No markdown, no explanation, no code fences.
+    2. Required field: updates. Each update requires: bucket_key, display_key, content.
+    3. Return exactly ONE update per bucket_key listed in entity_inputs. A second update for the
+       same bucket_key makes the whole response invalid.
+    4. bucket_key must be copied VERBATIM from entity_inputs — same characters, same case,
+       same separators. Never rewrite, translate or normalize it.
+    5. content must be the complete list[str] for that bucket, not a diff.
+    6. content must contain AT LEAST as many entries as existing_content. Never drop, merge,
+       condense or summarize an existing entry. The engine checks the ENTRY COUNT, not the entry
+       length — losing one entry rejects the whole bucket type. Copy every existing entry through
+       unchanged, then append new ones at the end.
+    7. Do not modify entries unrelated to the new input.
+    8. Never invent or infer facts not present in the input. Keep original numbers, units,
+       currency, signs and periods exactly as written.
+
+    Domain rules:
+    1. Every content entry starts with its fixed tag and carries: 类型（事件/关系/观点）、时间、
+       相关主体、金额或比例、原因、结果、状态与来源。
+    2. One entry per distinct claim. A new development on an already-recorded claim becomes a new
+       entry appended at the end — never overwrite or replace the earlier entry.
+    3. Preserve numbers, units, currency, signs and periods exactly. Do not infer unstated facts.
+    4. When the source explicitly states a relationship needed to compare or combine facts, append
+       one self-contained "[关系]" entry per source row or relationship. Record the exact subject,
+       predicate, object or metric, period, condition/basis, value or operands, unit/currency and
+       source. Preserve a stated formula or operation, but never calculate a new result and never
+       infer an unstated relationship.
+    5. For a multi-period or multi-entity table, keep each entity-period relationship as a separate
+       entry so a later question can join the correct operands without mixing periods or subjects.
+       Relation entries are additive structured views: do not omit, replace or shorten the ordinary
+       [内容] and [金额/比例] claim entries because a [关系] entry was added.
+
+    {{target_output_language_rule}}
+    Serialization contract: emit one compact, machine-parseable JSON object only. Use double quotes for every key and string, escape every embedded double quote and newline inside strings, and never emit trailing commas, comments, or prose outside the object.
+# ===========================================================================
+# source_evidence —— 来源索引
+# ===========================================================================
+- name: source_evidence
+  description: 来源证据桶，key = 原文中出现的文档标题。记录来源标识、覆盖范围、定位点与可核验的原文证据。
+  enabled: true
+  routing: llm
+  max_targets_per_chunk: 20
+  existing_keys_limit: 100
+  content_schema:
+    format: text
+    properties:
+    - name: source
+      prefix: '[来源]'
+      max_items: 1
+    - name: doc
+      prefix: '[文档]'
+      max_items: 1
+    - name: coverage
+      prefix: '[覆盖范围]'
+      max_items: 1
+    - name: anchors
+      prefix: '[定位点]'
+    - name: evidence
+      prefix: '[证据]'
+    - name: relation_evidence
+      prefix: '[关系证据]'
+  prompt_source: |-
+    You are the source_evidence bucket content writer for Memorax Memory Write.
+    本桶代表**一份来源材料**，记录它的身份、可回答范围、关键定位点与可核验原文证据。
+
+    Input fields:
+    1. entity_inputs: buckets to update, each with bucket_key, display_key, action, existing_content.
+    2. new_raw_context: the latest original input context to incorporate.
+    3. new_summary: a short summary of the latest input.
+    4. recent_context: raw context entries from the most recent complete topic.
+
+    Hard constraints (engine contract — violating ANY of these discards the whole bucket type):
+    1. Output exactly one JSON object. No markdown, no explanation, no code fences.
+    2. Required field: updates. Each update requires: bucket_key, display_key, content.
+    3. Return exactly ONE update per bucket_key listed in entity_inputs. A second update for the
+       same bucket_key makes the whole response invalid.
+    4. bucket_key must be copied VERBATIM from entity_inputs — same characters, same case,
+       same separators. Never rewrite, translate or normalize it.
+    5. content must be the complete list[str] for that bucket, not a diff.
+    6. content must contain AT LEAST as many entries as existing_content. Never drop, merge,
+       condense or summarize an existing entry. The engine checks the ENTRY COUNT, not the entry
+       length — losing one entry rejects the whole bucket type. Copy every existing entry through
+       unchanged, then append new ones at the end.
+    7. Do not modify entries unrelated to the new input.
+    8. Never invent or infer facts not present in the input.
+
+    Entry tags (fixed anchors, keep the tag verbatim):
+    - "[来源]"     来源标识 — at most ONE entry; rewrite in place.
+    - "[文档]"     文档标题与类型、发布日期 — at most ONE entry; rewrite in place.
+    - "[覆盖范围]" 这份材料能回答什么、覆盖边界在哪 — at most ONE entry; rewrite in place.
+    - "[定位点]"   关键章节/页码/表格位置 — append new anchors at the end.
+    - "[证据]"     原文中的独立重要事实、定义、条件、关系或表格行 — one evidence unit per entry,
+      appended at the end. Preserve the source language and quote the decisive wording or table
+      row without paraphrasing. Include enough header context to keep entity, period, metric,
+      value, sign, unit, currency and comparison basis unambiguous. Never add a conclusion that
+      the source does not state.
+    - "[关系证据]" 原文中明确表达、且后续回答需要比较、组合或计算的关系 — append one
+      self-contained source-language entry per source row or stated relationship. Copy the exact
+      subject, period, predicate or metric, object/value or stated operands, sign, unit/currency,
+      condition/basis and source locator. For multi-period or multi-entity material, emit a
+      separate relation-evidence entry for every subject-period row so operands cannot be mixed.
+      Preserve a formula only when the source states it; never calculate a result, infer a missing
+      operand, or turn correlation into causation. Relation evidence is additive: it must never
+      replace, shorten or suppress the ordinary [证据] entry.
+
+    Do not copy boilerplate or the entire document. Retain each independently material disclosed
+    fact exactly once. This source bucket is an evidence ledger, while financial_metric and
+    financial_claim remain the structured views; do not create additional routing targets.
+
+    {{target_output_language_rule}}
+    Serialization contract: emit one compact, machine-parseable JSON object only. Use double quotes for every key and string, escape every embedded double quote and newline inside strings, and never emit trailing commas, comments, or prose outside the object.

@@ -1,0 +1,1343 @@
+{
+  "profile_id": "A",
+  "sessions": [
+    {
+      "id": "A-S4",
+      "period": "2026-10-24 晚间",
+      "session_time": "2026-10-24T20:00:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "A-S4-M1",
+          "role": "user",
+          "timestamp": "2026-10-24T20:00:00+08:00",
+          "text": "10 月 24 日晚上我刚从基金会回来。10 月 10 日提交的“夜行小侦探”秋季课程预算先按 1800 元通过；如果器材测试后要加预算，我月底再报。"
+        },
+        {
+          "id": "A-S4-M2",
+          "role": "assistant",
+          "timestamp": "2026-10-24T20:02:00+08:00",
+          "text": "可以先按四步推进：第一步：10 月 28 日完成灯光和帐篷测试。第二步：11 月 1 日做一次 12 名儿童的小规模试讲。第三步：11 月 7 日交家长反馈汇总表。第四步：11 月 12 日完成正式课程手册。"
+        },
+        {
+          "id": "A-S4-M3",
+          "role": "user",
+          "timestamp": "2026-10-24T20:05:00+08:00",
+          "text": "记一下，9 月 12 日做过一次 6 个孩子的预演，10 月 18 日又做过一场 18 个孩子的试讲；11 月 1 日还有一场 12 个孩子的安排。"
+        },
+        {
+          "id": "A-S4-M4",
+          "role": "assistant",
+          "timestamp": "2026-10-24T20:07:00+08:00",
+          "text": "9 月 12 日预演和 10 月 18 日试讲是两次独立活动；11 月 1 日那场安排在 10 月 24 日之后。"
+        },
+        {
+          "id": "A-S4-M5",
+          "role": "user",
+          "timestamp": "2026-10-24T20:10:00+08:00",
+          "text": "我家那只黑色折叠望远镜 10 月 18 日带去现场，活动结束后放在基金会二号器材柜；我准备 10 月 30 日把它拿回书房。"
+        },
+        {
+          "id": "A-S4-M6",
+          "role": "assistant",
+          "timestamp": "2026-10-24T20:12:00+08:00",
+          "text": "截至 10 月 24 日，黑色折叠望远镜在基金会二号器材柜，计划 10 月 30 日取回书房。"
+        },
+        {
+          "id": "A-S4-M7",
+          "role": "user",
+          "timestamp": "2026-10-24T20:15:00+08:00",
+          "text": "周宁借走的银色录音笔已经在 10 月 20 日还给我，我随后放进客厅抽屉；她提到的“10 月 18 日那场”是儿童试讲，11 月 1 日另有一场 12 个孩子的安排。"
+        },
+        {
+          "id": "A-S4-M8",
+          "role": "assistant",
+          "timestamp": "2026-10-24T20:17:00+08:00",
+          "text": "录音笔截至 10 月 24 日在客厅抽屉；周宁说的 10 月 18 日试讲与 11 月 1 日计划场是两件事。"
+        },
+        {
+          "id": "A-S4-M9",
+          "role": "user",
+          "timestamp": "2026-10-24T20:20:00+08:00",
+          "text": "苏澜说秋分怕生。顾予川原本说 10 月 25 日想带秋分去体检，我们还没决定；实际预约的是 10 月 27 日，由苏澜去。"
+        },
+        {
+          "id": "A-S4-M10",
+          "role": "assistant",
+          "timestamp": "2026-10-24T20:22:00+08:00",
+          "text": "我把 10 月 25 日记为讨论中的日期，10 月 27 日是实际预约；川川仍上三年级。"
+        }
+      ]
+    },
+    {
+      "id": "A-S5",
+      "period": "2026-11-08 晚间",
+      "session_time": "2026-11-08T19:30:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "A-S5-M1",
+          "role": "user",
+          "timestamp": "2026-11-08T19:30:00+08:00",
+          "text": "11 月 8 日核对一下：10 月 30 日我已经把黑色折叠望远镜从基金会二号器材柜拿回书房；银色录音笔还在客厅抽屉。"
+        },
+        {
+          "id": "A-S5-M2",
+          "role": "assistant",
+          "timestamp": "2026-11-08T19:32:00+08:00",
+          "text": "截至 11 月 8 日，黑色折叠望远镜在书房，银色录音笔在客厅抽屉。"
+        },
+        {
+          "id": "A-S5-M3",
+          "role": "user",
+          "timestamp": "2026-11-08T19:35:00+08:00",
+          "text": "10 月 18 日那场 18 个孩子的活动被公众号回顾过两次，登记场次仍是一场；11 月 1 日按计划给 12 个孩子做了小规模试讲，11 月 6 日又给 15 个孩子做了一场正式试讲。9 月 12 日那次 6 个孩子的预演也要算进去。"
+        },
+        {
+          "id": "A-S5-M4",
+          "role": "assistant",
+          "timestamp": "2026-11-08T19:37:00+08:00",
+          "text": "四次独立活动合计 51 个孩子；公众号回顾不新增场次，也不新增人数。"
+        },
+        {
+          "id": "A-S5-M5",
+          "role": "user",
+          "timestamp": "2026-11-08T19:40:00+08:00",
+          "text": "预算后来变了：10 月 10 日先批 1800 元，10 月 28 日追加到 2600 元，最终到 11 月 7 日实际花了 2380 元。追加后比我最早申请多 800 元。"
+        },
+        {
+          "id": "A-S5-M6",
+          "role": "assistant",
+          "timestamp": "2026-11-08T19:42:00+08:00",
+          "text": "初始批准 1800 元，最终批准 2600 元，增加 800 元；实际支出 2380 元，结余 220 元。"
+        },
+        {
+          "id": "A-S5-M7",
+          "role": "user",
+          "timestamp": "2026-11-08T19:45:00+08:00",
+          "text": "课程名先叫“夜行小侦探”，11 月 5 日我想改成“秋夜听虫”，但正式报名一直没改；11 月 8 日对外仍用“夜行小侦探”。"
+        },
+        {
+          "id": "A-S5-M8",
+          "role": "assistant",
+          "timestamp": "2026-11-08T19:47:00+08:00",
+          "text": "正式课程名截至 11 月 8 日仍是“夜行小侦探”，“秋夜听虫”只是讨论中的备选。"
+        },
+        {
+          "id": "A-S5-M9",
+          "role": "user",
+          "timestamp": "2026-11-08T19:50:00+08:00",
+          "text": "如果以后我只说做一张自然课海报，请默认做手绘昆虫剪影，正文不超过 120 字，不要放写实照片或大段说明；我不喜欢长文。"
+        },
+        {
+          "id": "A-S5-M10",
+          "role": "assistant",
+          "timestamp": "2026-11-08T19:52:00+08:00",
+          "text": "以后你只提自然课海报，我会默认按手绘昆虫剪影、正文不超过 120 字来排，并避免写实照片。"
+        }
+      ]
+    },
+    {
+      "id": "A-S6",
+      "period": "2026-12-12 晚间",
+      "session_time": "2026-12-12T21:00:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "A-S6-M1",
+          "role": "user",
+          "timestamp": "2026-12-12T21:00:00+08:00",
+          "text": "12 月 12 日回看，我一直是自然教育项目主管；11 月 20 日起，工作里新增了课程研发负责人这项职责，此前我只负责项目执行。"
+        },
+        {
+          "id": "A-S6-M2",
+          "role": "assistant",
+          "timestamp": "2026-12-12T21:02:00+08:00",
+          "text": "11 月 20 日前，你以自然教育项目主管身份负责项目执行；11 月 20 日起，在同一身份上增加课程研发负责人。"
+        },
+        {
+          "id": "A-S6-M3",
+          "role": "user",
+          "timestamp": "2026-12-12T21:05:00+08:00",
+          "text": "苏澜 11 月 24 日从社区儿童健康项目转到儿童用药科普培训；家里仍叫她阿澜。另有一个苏岚，是周宁的表姐，在社区儿童健康项目工作。"
+        },
+        {
+          "id": "A-S6-M4",
+          "role": "assistant",
+          "timestamp": "2026-12-12T21:07:00+08:00",
+          "text": "苏澜现在做儿童用药科普培训，是你的伴侣；苏岚是周宁的表姐。"
+        },
+        {
+          "id": "A-S6-M5",
+          "role": "user",
+          "timestamp": "2026-12-12T21:10:00+08:00",
+          "text": "秋分的蓝色航空箱 12 月 6 日由川川从玄关搬到阳台，12 月 10 日我放回玄关；这几天秋分一直在客厅吃饭、睡觉。"
+        },
+        {
+          "id": "A-S6-M6",
+          "role": "assistant",
+          "timestamp": "2026-12-12T21:12:00+08:00",
+          "text": "蓝色航空箱最终放回玄关；12 月 6 日到 10 日，秋分一直在家，照常吃饭和睡觉。"
+        },
+        {
+          "id": "A-S6-M7",
+          "role": "user",
+          "timestamp": "2026-12-12T21:15:00+08:00",
+          "text": "10 月 18 日那场儿童试讲又被转发，周宁在群里问 12 月 11 日是否也办过同样的夜观。12 月 11 日的安排是一场成人分享，标题用了“秋夜听虫”，正式课程名仍是“夜行小侦探”。"
+        },
+        {
+          "id": "A-S6-M8",
+          "role": "assistant",
+          "timestamp": "2026-12-12T21:17:00+08:00",
+          "text": "12 月 11 日登记的是成人分享；10 月 18 日登记的是儿童试讲；正式课程名仍为“夜行小侦探”。"
+        },
+        {
+          "id": "A-S6-M9",
+          "role": "user",
+          "timestamp": "2026-12-12T21:20:00+08:00",
+          "text": "截至 12 月 12 日，11 月 1 日试讲和 11 月 7 日预算结算都已完成；11 月 6 日的另一场试讲也已完成。原本 11 月 12 日要交的课程手册也在 11 月 12 日交了。家长反馈汇总表延到 11 月 15 日才完成。"
+        },
+        {
+          "id": "A-S6-M10",
+          "role": "assistant",
+          "timestamp": "2026-12-12T21:22:00+08:00",
+          "text": "完成记录是：11 月 1 日试讲、11 月 6 日试讲、11 月 7 日结算、11 月 12 日课程手册；家长反馈汇总表在 11 月 15 日完成。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "A-L01",
+      "question": "10 月 24 日你给出的四步推进计划，分别把什么任务安排在什么日期？",
+      "must_include": "10 月 28 日完成灯光和帐篷测试；11 月 1 日做 12 名儿童的小规模试讲；11 月 7 日交家长反馈汇总表；11 月 12 日完成正式课程手册。",
+      "must_not": "漏掉任一步骤，或把 11 月 1 日计划说成当时已经完成。",
+      "required_facts": [
+        {
+          "text": "第一步是 10 月 28 日完成灯光和帐篷测试。",
+          "source_quote": "第一步：10 月 28 日完成灯光和帐篷测试。"
+        },
+        {
+          "text": "第二步是 11 月 1 日做一次 12 名儿童的小规模试讲。",
+          "source_quote": "第二步：11 月 1 日做一次 12 名儿童的小规模试讲。"
+        },
+        {
+          "text": "第三步是 11 月 7 日交家长反馈汇总表。",
+          "source_quote": "第三步：11 月 7 日交家长反馈汇总表。"
+        },
+        {
+          "text": "第四步是 11 月 12 日完成正式课程手册。",
+          "source_quote": "第四步：11 月 12 日完成正式课程手册。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M2"
+      ],
+      "session_ids": [
+        "A-S4"
+      ],
+      "answerable": true,
+      "event_time": "计划于 2026-10-28、2026-11-01、2026-11-07、2026-11-12 执行",
+      "session_time": "2026-10-24",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L02",
+      "question": "截至 12 月 12 日，四次儿童活动或试讲分别在什么日期、来了多少人，合计多少人？公众号回顾和 12 月 11 日分享是否计入？",
+      "must_include": "9 月 12 日 6 人；10 月 18 日 18 人；11 月 1 日 12 人；11 月 6 日 15 人；四次合计 51 人；回顾和 12 月 11 日成人分享不计入儿童活动次数或人数。",
+      "must_not": "把 10 月 18 日被回顾两次算作额外活动，或把 12 月 11 日成人分享算作儿童活动。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日预演有 6 个孩子。",
+          "source_quote": "9 月 12 日做过一次 6 个孩子的预演"
+        },
+        {
+          "text": "10 月 18 日试讲有 18 个孩子。",
+          "source_quote": "10 月 18 日又做过一场 18 个孩子的试讲"
+        },
+        {
+          "text": "11 月 1 日小规模试讲有 12 个孩子。",
+          "source_quote": "11 月 1 日按计划给 12 个孩子做了小规模试讲"
+        },
+        {
+          "text": "11 月 6 日正式试讲有 15 个孩子。",
+          "source_quote": "11 月 6 日又给 15 个孩子做了一场正式试讲"
+        },
+        {
+          "text": "四次独立活动合计 51 个孩子，公众号回顾不新增场次或人数。",
+          "source_quote": "四次独立活动合计 51 个孩子；公众号回顾不新增场次，也不新增人数。"
+        },
+        {
+          "text": "12 月 11 日是成人分享，不是儿童活动。",
+          "source_quote": "12 月 11 日的安排是一场成人分享"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "A-S4-M3",
+        "A-S5-M3",
+        "A-S5-M4",
+        "A-S6-M7"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12、2026-10-18、2026-11-01、2026-11-06",
+      "session_time": "2026-10-24 / 2026-11-08 / 2026-12-12",
+      "state_key": "children_activity_count",
+      "old_value": "10 月 18 日单场 18 人",
+      "new_value": "四次独立活动合计 51 人",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L03",
+      "question": "课程预算最早批准多少、最终批准多少、增加了多少，实际支出和结余各是多少？",
+      "must_include": "最初 1800 元；最终 2600 元；增加 800 元；实际支出 2380 元；结余 220 元。",
+      "must_not": "把 2380 元说成批准预算，或漏掉追加金额。",
+      "required_facts": [
+        {
+          "text": "10 月 10 日最初批准 1800 元。",
+          "source_quote": "10 月 10 日提交的“夜行小侦探”秋季课程预算先按 1800 元通过"
+        },
+        {
+          "text": "10 月 28 日批准预算追加到 2600 元。",
+          "source_quote": "10 月 28 日追加到 2600 元"
+        },
+        {
+          "text": "最终批准额比最早申请多 800 元。",
+          "source_quote": "追加后比我最早申请多 800 元。"
+        },
+        {
+          "text": "实际支出 2380 元，结余 220 元。",
+          "source_quote": "实际支出 2380 元，结余 220 元。"
+        },
+        {
+          "text": "11 月 7 日预算结算已经完成。",
+          "source_quote": "11 月 7 日预算结算都已完成"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "false_commitment"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "A-S4-M1",
+        "A-S5-M5",
+        "A-S5-M6",
+        "A-S6-M9"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-10 至 2026-11-07",
+      "session_time": "2026-10-24 / 2026-11-08 / 2026-12-12",
+      "state_key": "project_budget",
+      "old_value": "1800 元",
+      "new_value": "2600 元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L04",
+      "question": "课程正式名称从最初到 12 月 12 日怎样变化？“秋夜听虫”在 11 月 5 日和 12 月 11 日分别用于什么？",
+      "must_include": "正式名称始终是“夜行小侦探”；11 月 5 日“秋夜听虫”只是想改但正式报名未改；12 月 11 日只把它用作成人分享标题。",
+      "must_not": "宣称正式报名已经改成“秋夜听虫”，或把成人分享标题当作正式课程名。",
+      "required_facts": [
+        {
+          "text": "最初课程名是“夜行小侦探”。",
+          "source_quote": "课程名先叫“夜行小侦探”"
+        },
+        {
+          "text": "11 月 5 日曾想改为“秋夜听虫”，但正式报名没有改。",
+          "source_quote": "11 月 5 日我想改成“秋夜听虫”，但正式报名一直没改"
+        },
+        {
+          "text": "11 月 8 日对外仍使用“夜行小侦探”。",
+          "source_quote": "11 月 8 日对外仍用“夜行小侦探”"
+        },
+        {
+          "text": "12 月 11 日“秋夜听虫”只作为分享标题，正式课程名仍是“夜行小侦探”。",
+          "source_quote": "标题用了“秋夜听虫”，正式课程名仍是“夜行小侦探”。"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S5-M7",
+        "A-S6-M7"
+      ],
+      "session_ids": [
+        "A-S5",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-05 / 2026-11-08 / 2026-12-11",
+      "session_time": "2026-11-08 / 2026-12-12",
+      "state_key": "course_name",
+      "old_value": "夜行小侦探",
+      "new_value": "夜行小侦探（秋夜听虫仅为讨论和分享标题）",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L05",
+      "question": "黑色折叠望远镜在 10 月 24 日和 11 月 8 日分别在哪里？10 月 30 日发生了什么？",
+      "must_include": "10 月 24 日在基金会二号器材柜；10 月 30 日取回书房；11 月 8 日在书房。",
+      "must_not": "把计划取回说成 10 月 24 日已经完成，或把最终位置写成基金会器材柜。",
+      "required_facts": [
+        {
+          "text": "截至 10 月 24 日，望远镜在基金会二号器材柜，计划 10 月 30 日取回书房。",
+          "source_quote": "截至 10 月 24 日，黑色折叠望远镜在基金会二号器材柜，计划 10 月 30 日取回书房。"
+        },
+        {
+          "text": "10 月 30 日已把望远镜从基金会二号器材柜拿回书房。",
+          "source_quote": "10 月 30 日我已经把黑色折叠望远镜从基金会二号器材柜拿回书房"
+        },
+        {
+          "text": "截至 11 月 8 日，望远镜在书房。",
+          "source_quote": "截至 11 月 8 日，黑色折叠望远镜在书房"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M5",
+        "A-S4-M6",
+        "A-S5-M1",
+        "A-S5-M2"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-18 / 2026-10-30 / 2026-11-08",
+      "session_time": "2026-10-24 / 2026-11-08",
+      "state_key": "telescope_location",
+      "old_value": "基金会二号器材柜",
+      "new_value": "书房",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L06",
+      "question": "银色录音笔是谁借走的、何时归还、10 月 24 日和 11 月 8 日分别在哪里？",
+      "must_include": "周宁借走；10 月 20 日归还；10 月 24 日和 11 月 8 日都在客厅抽屉。",
+      "must_not": "把录音笔记到苏澜或苏岚名下，或把归还日期写成活动日期。",
+      "required_facts": [
+        {
+          "text": "周宁借走的银色录音笔在 10 月 20 日归还。",
+          "source_quote": "周宁借走的银色录音笔已经在 10 月 20 日还给我"
+        },
+        {
+          "text": "录音笔归还后被放进客厅抽屉。",
+          "source_quote": "我随后放进客厅抽屉"
+        },
+        {
+          "text": "截至 10 月 24 日，录音笔在客厅抽屉。",
+          "source_quote": "录音笔截至 10 月 24 日在客厅抽屉"
+        },
+        {
+          "text": "截至 11 月 8 日，录音笔在客厅抽屉。",
+          "source_quote": "截至 11 月 8 日，黑色折叠望远镜在书房，银色录音笔在客厅抽屉。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "item_state_migration"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M7",
+        "A-S4-M8",
+        "A-S5-M1",
+        "A-S5-M2"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-20 / 2026-10-24 / 2026-11-08",
+      "session_time": "2026-10-24 / 2026-11-08",
+      "state_key": "recorder_location",
+      "old_value": "周宁借用中",
+      "new_value": "客厅抽屉",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L07",
+      "question": "如果我只说“做一张自然课海报”，你在 11 月 8 日确认过哪些默认视觉形式、正文长度和禁止项？",
+      "must_include": "手绘昆虫剪影；正文不超过 120 字；避免写实照片；不放大段说明。",
+      "must_not": "改成写实照片、长篇说明，或忽略默认字数和视觉形式。",
+      "required_facts": [
+        {
+          "text": "海报默认使用手绘昆虫剪影。",
+          "source_quote": "默认做手绘昆虫剪影"
+        },
+        {
+          "text": "正文不超过 120 字。",
+          "source_quote": "正文不超过 120 字"
+        },
+        {
+          "text": "不放写实照片或大段说明。",
+          "source_quote": "不要放写实照片或大段说明"
+        },
+        {
+          "text": "助手确认会避免写实照片。",
+          "source_quote": "并避免写实照片"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "personalization"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "false_commitment"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S5-M9",
+        "A-S5-M10"
+      ],
+      "session_ids": [
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-08 确认的长期偏好",
+      "session_time": "2026-11-08",
+      "state_key": "poster_preference",
+      "old_value": null,
+      "new_value": "手绘昆虫剪影 / 正文不超过 120 字 / 无写实照片和大段说明",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L08",
+      "question": "如果我只说“给家庭自然课做一张海报”，结合已有家庭活动和后续偏好，默认必须保留哪些人员、时长、预算和海报限制？",
+      "must_include": "三人家庭；无障碍湿地观察；四小时；预算不超过 500 元；手绘昆虫剪影；正文不超过 120 字；不要写实照片或大段说明。",
+      "must_not": "漏掉“无障碍”或预算上限，或把写实照片作为默认。",
+      "required_facts": [
+        {
+          "text": "家庭活动面向三人家庭。",
+          "source_quote": "当前项目是为三人家庭设计一条无障碍湿地观察路线，时长四小时、预算不超过 500 元。"
+        },
+        {
+          "text": "家庭活动须为无障碍湿地观察路线。",
+          "source_quote": "无障碍湿地观察路线"
+        },
+        {
+          "text": "活动时长为四小时。",
+          "source_quote": "时长四小时"
+        },
+        {
+          "text": "预算不超过 500 元。",
+          "source_quote": "预算不超过 500 元"
+        },
+        {
+          "text": "海报默认手绘昆虫剪影且正文不超过 120 字。",
+          "source_quote": "请默认做手绘昆虫剪影，正文不超过 120 字"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S3-M6",
+        "A-S5-M9",
+        "A-S5-M10"
+      ],
+      "session_ids": [
+        "A-S3",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026 年家庭项目与 2026-11-08 偏好",
+      "session_time": "2026 / 2026-11-08",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L09",
+      "question": "顾澄安在 11 月 20 日前后职责怎样变化？原来的职责和新增加的职责分别是什么？",
+      "must_include": "此前已任自然教育项目主管并只负责项目执行；11 月 20 日起新增课程研发负责人职责。",
+      "must_not": "把自然教育项目主管说成 11 月 20 日才出现，或把课程研发负责人说成 11 月 20 日以前已有职责。",
+      "required_facts": [
+        {
+          "text": "此前只负责项目执行。",
+          "source_quote": "此前我只负责项目执行"
+        },
+        {
+          "text": "11 月 20 日起新增课程研发负责人职责。",
+          "source_quote": "11 月 20 日起，工作里新增了课程研发负责人这项职责"
+        },
+        {
+          "text": "顾澄安一直是自然教育项目主管。",
+          "source_quote": "我一直是自然教育项目主管"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "false_commitment"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S6-M1",
+        "A-S6-M2"
+      ],
+      "session_ids": [
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-20",
+      "session_time": "2026-12-12",
+      "state_key": "job_responsibilities",
+      "old_value": "自然教育项目主管，仅负责项目执行",
+      "new_value": "自然教育项目主管兼课程研发负责人",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L10",
+      "question": "苏澜在 11 月 24 日从什么岗位转到什么岗位？苏岚是谁、在哪里工作？两人应如何区分？",
+      "must_include": "苏澜从社区儿童健康项目转到儿童用药科普培训；苏岚是周宁的表姐、在社区儿童健康项目工作；苏岚不是顾澄安的伴侣。",
+      "must_not": "把苏岚说成苏澜或顾澄安的伴侣，或把两人的岗位互换。",
+      "required_facts": [
+        {
+          "text": "苏澜在 11 月 24 日从社区儿童健康项目转到儿童用药科普培训。",
+          "source_quote": "苏澜 11 月 24 日从社区儿童健康项目转到儿童用药科普培训"
+        },
+        {
+          "text": "苏岚是周宁的表姐。",
+          "source_quote": "苏岚，是周宁的表姐"
+        },
+        {
+          "text": "苏岚在社区儿童健康项目工作。",
+          "source_quote": "在社区儿童健康项目工作"
+        },
+        {
+          "text": "苏澜是顾澄安的伴侣，苏岚是周宁的表姐。",
+          "source_quote": "苏澜现在做儿童用药科普培训，是你的伴侣；苏岚是周宁的表姐。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "identity_pollution"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S6-M3",
+        "A-S6-M4"
+      ],
+      "session_ids": [
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-24",
+      "session_time": "2026-12-12",
+      "state_key": "su_lan_role",
+      "old_value": "社区儿童健康项目",
+      "new_value": "儿童用药科普培训",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L11",
+      "question": "秋分的蓝色航空箱在 12 月 6 日和 12 月 10 日分别在哪里？记录中是否发生过秋分走失？",
+      "must_include": "12 月 6 日从玄关搬到阳台；12 月 10 日放回玄关；最终在玄关；没有秋分走失记录。",
+      "must_not": "把搬箱子写成猫丢失，或把最终位置写成阳台。",
+      "required_facts": [
+        {
+          "text": "12 月 6 日川川把蓝色航空箱从玄关搬到阳台。",
+          "source_quote": "12 月 6 日由川川从玄关搬到阳台"
+        },
+        {
+          "text": "12 月 10 日把航空箱放回玄关。",
+          "source_quote": "12 月 10 日我放回玄关"
+        },
+        {
+          "text": "这几天秋分一直在客厅吃饭、睡觉。",
+          "source_quote": "这几天秋分一直在客厅吃饭、睡觉"
+        },
+        {
+          "text": "12 月 6 日到 10 日秋分一直在家，照常吃饭和睡觉。",
+          "source_quote": "12 月 6 日到 10 日，秋分一直在家，照常吃饭和睡觉"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S6-M5",
+        "A-S6-M6"
+      ],
+      "session_ids": [
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-12-06 / 2026-12-10",
+      "session_time": "2026-12-12",
+      "state_key": "cat_carrier_location",
+      "old_value": "玄关",
+      "new_value": "玄关（12 月 6 日曾短暂搬到阳台）",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L12",
+      "question": "10 月 18 日和 12 月 11 日各发生了什么？周宁把两件事怎样混淆了？",
+      "must_include": "10 月 18 日是 18 个孩子的儿童试讲；12 月 11 日登记为成人分享；周宁把 12 月 11 日问成同样的儿童夜观。",
+      "must_not": "把 12 月 11 日说成又办了一场儿童试讲，或把 10 月 18 日说成成人活动。",
+      "required_facts": [
+        {
+          "text": "10 月 18 日举办过儿童试讲，来了 18 个孩子。",
+          "source_quote": "10 月 18 日又做过一场 18 个孩子的试讲"
+        },
+        {
+          "text": "周宁在群里问 12 月 11 日是否也办过同样的夜观。",
+          "source_quote": "周宁在群里问 12 月 11 日是否也办过同样的夜观"
+        },
+        {
+          "text": "12 月 11 日的安排是一场成人分享。",
+          "source_quote": "12 月 11 日的安排是一场成人分享"
+        },
+        {
+          "text": "12 月 11 日使用“秋夜听虫”作标题，正式课程名仍是“夜行小侦探”。",
+          "source_quote": "标题用了“秋夜听虫”，正式课程名仍是“夜行小侦探”。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M3",
+        "A-S6-M7",
+        "A-S6-M8"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-18 / 2026-12-11",
+      "session_time": "2026-10-24 / 2026-12-12",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L13",
+      "question": "计划中的 11 月 1 日试讲、11 月 7 日家长反馈汇总表和 11 月 12 日课程手册，最终分别在什么时间完成？",
+      "must_include": "11 月 1 日试讲当天完成；家长反馈汇总表延到 11 月 15 日完成；课程手册在 11 月 12 日完成。",
+      "must_not": "说家长反馈汇总表在 11 月 7 日已完成，或漏掉家长反馈汇总表和课程手册的实际完成时间。",
+      "required_facts": [
+        {
+          "text": "计划第二步是在 11 月 1 日做小规模试讲。",
+          "source_quote": "第二步：11 月 1 日做一次 12 名儿童的小规模试讲。"
+        },
+        {
+          "text": "计划第三步原定 11 月 7 日交家长反馈汇总表。",
+          "source_quote": "第三步：11 月 7 日交家长反馈汇总表。"
+        },
+        {
+          "text": "11 月 1 日试讲和 11 月 7 日预算结算均已完成。",
+          "source_quote": "11 月 1 日试讲和 11 月 7 日预算结算都已完成"
+        },
+        {
+          "text": "家长反馈汇总表延到 11 月 15 日完成。",
+          "source_quote": "家长反馈汇总表延到 11 月 15 日才完成"
+        },
+        {
+          "text": "课程手册在 11 月 12 日交付。",
+          "source_quote": "原本 11 月 12 日要交的课程手册也在 11 月 12 日交了。"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "A-S4-M2",
+        "A-S5-M3",
+        "A-S6-M9",
+        "A-S6-M10"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-01 / 2026-11-07 / 2026-11-12 / 2026-11-15",
+      "session_time": "2026-10-24 / 2026-11-08 / 2026-12-12",
+      "state_key": "course_delivery_status",
+      "old_value": "计划：11 月 7 日交家长反馈汇总表",
+      "new_value": "实际：11 月 15 日完成家长反馈汇总表",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L14",
+      "question": "为顾澄安、苏澜和小川安排家庭自然活动并做海报时，哪些人员、活动约束、偏好和海报限制必须保留？",
+      "must_include": "三人家庭；无障碍湿地观察；四小时；不超过 500 元；稳定观鸟和烘焙；海报用手绘昆虫剪影、正文不超过 120 字。",
+      "must_not": "漏掉家庭成员、无障碍条件或预算上限，或把写实照片作为默认海报。",
+      "required_facts": [
+        {
+          "text": "顾澄安的伴侣是苏澜，儿子是顾予川，小名川川。",
+          "source_quote": "我的伴侣叫苏澜，儿子叫顾予川，小名川川"
+        },
+        {
+          "text": "顾澄安稳定坚持观鸟和烘焙。",
+          "source_quote": "我稳定坚持观鸟和烘焙"
+        },
+        {
+          "text": "当前项目面向三人家庭，是无障碍湿地观察路线，时长四小时、预算不超过 500 元。",
+          "source_quote": "当前项目是为三人家庭设计一条无障碍湿地观察路线，时长四小时、预算不超过 500 元。"
+        },
+        {
+          "text": "自然课海报默认手绘昆虫剪影，正文不超过 120 字。",
+          "source_quote": "请默认做手绘昆虫剪影，正文不超过 120 字"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "cross_session_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "A-S1-M3",
+        "A-S3-M4",
+        "A-S3-M6",
+        "A-S5-M9"
+      ],
+      "session_ids": [
+        "A-S1",
+        "A-S3",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "家庭项目持续于 2026 年，海报偏好在 2026-11-08 确认",
+      "session_time": "2023-2024 / 2026 / 2026-11-08",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L15",
+      "question": "你在 11 月 8 日对预算变化给出的核对结论是什么？",
+      "must_include": "初始批准 1800 元；最终批准 2600 元；增加 800 元；实际支出 2380 元；结余 220 元。",
+      "must_not": "把实际支出当成批准额，或把增加额算成 1000 元。",
+      "required_facts": [
+        {
+          "text": "初始批准 1800 元。",
+          "source_quote": "初始批准 1800 元"
+        },
+        {
+          "text": "最终批准 2600 元，增加 800 元。",
+          "source_quote": "最终批准 2600 元，增加 800 元"
+        },
+        {
+          "text": "实际支出 2380 元，结余 220 元。",
+          "source_quote": "实际支出 2380 元，结余 220 元。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "numerical_aggregation",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S5-M5",
+        "A-S5-M6"
+      ],
+      "session_ids": [
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-10 / 2026-10-28 / 2026-11-07",
+      "session_time": "2026-11-08",
+      "state_key": "project_budget_summary",
+      "old_value": "1800 元",
+      "new_value": "2600 元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L16",
+      "question": "你在 11 月 8 日如何总结活动次数、参与人数和公众号回顾文的关系？",
+      "must_include": "四次独立活动；合计 51 个孩子；公众号回顾不新增场次和人数；9 月 12 日预演与 10 月 18 日试讲是两次独立活动。",
+      "must_not": "把回顾文当作新增活动，或用 10 月 18 日单场 18 人代替总人数。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日预演和 10 月 18 日试讲是两次独立活动。",
+          "source_quote": "9 月 12 日预演和 10 月 18 日试讲是两次独立活动"
+        },
+        {
+          "text": "四次独立活动合计 51 个孩子。",
+          "source_quote": "四次独立活动合计 51 个孩子"
+        },
+        {
+          "text": "公众号回顾不新增场次，也不新增人数。",
+          "source_quote": "公众号回顾不新增场次，也不新增人数。"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "cross_session_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "false_commitment"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M3",
+        "A-S4-M4",
+        "A-S5-M3",
+        "A-S5-M4"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 至 2026-11-06",
+      "session_time": "2026-10-24 / 2026-11-08",
+      "state_key": "activity_summary",
+      "old_value": "两次已知独立活动",
+      "new_value": "四次独立活动，合计 51 人",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L17",
+      "question": "截至 12 月 12 日，顾澄安的职业与兼管职责、居住地、朋友称呼和稳定爱好分别是什么？",
+      "must_include": "江湾自然教育基金会自然教育项目主管兼课程研发负责人；住杭州市上城区；朋友称呼澄野；稳定观鸟和烘焙。",
+      "must_not": "把杭州说成武汉或南京，把澄野说成法定姓名，或漏掉课程研发负责人。",
+      "required_facts": [
+        {
+          "text": "顾澄安在江湾自然教育基金会担任自然教育项目主管，住杭州市上城区。",
+          "source_quote": "我加入江湾自然教育基金会，担任自然教育项目主管，住杭州市上城区。"
+        },
+        {
+          "text": "11 月 20 日起新增课程研发负责人职责。",
+          "source_quote": "11 月 20 日起，工作里新增了课程研发负责人这项职责"
+        },
+        {
+          "text": "朋友当前称呼顾澄安为澄野。",
+          "source_quote": "朋友现在对我的昵称是澄野"
+        },
+        {
+          "text": "顾澄安稳定坚持观鸟和烘焙。",
+          "source_quote": "我稳定坚持观鸟和烘焙"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S3-M2",
+        "A-S3-M3",
+        "A-S3-M4",
+        "A-S6-M1"
+      ],
+      "session_ids": [
+        "A-S3",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-20 至 2026-12-12",
+      "session_time": "2026 / 2026-12-12",
+      "state_key": "current_profile",
+      "old_value": "自然教育项目主管，仅负责项目执行",
+      "new_value": "自然教育项目主管兼课程研发负责人",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L18",
+      "question": "10 月 24 日时，11 月 1 日试讲处于什么状态？11 月 8 日这个状态发生了什么变化？",
+      "must_include": "10 月 24 日仍排在后续；11 月 8 日已按计划完成 12 名儿童的试讲。",
+      "must_not": "把 10 月 24 日说成已经完成，或把 11 月 1 日试讲和 10 月 18 日试讲合并成一场。",
+      "required_facts": [
+        {
+          "text": "10 月 24 日时，11 月 1 日试讲安排在后续。",
+          "source_quote": "11 月 1 日那场安排在 10 月 24 日之后"
+        },
+        {
+          "text": "11 月 1 日已按计划给 12 个孩子做了小规模试讲。",
+          "source_quote": "11 月 1 日按计划给 12 个孩子做了小规模试讲"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M3",
+        "A-S4-M4",
+        "A-S5-M3"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-11-01",
+      "session_time": "2026-10-24 / 2026-11-08",
+      "state_key": "november_first_trial_status",
+      "old_value": "安排在 10 月 24 日之后",
+      "new_value": "已完成 12 名儿童试讲",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L19",
+      "question": "在 10 月 24 日和 11 月 8 日两次对话中，9 月 12 日预演、10 月 18 日试讲和 11 月 1 日试讲分别处于什么时间状态？",
+      "must_include": "9 月 12 日和 10 月 18 日在 10 月 24 日之前已经发生；11 月 1 日当时尚未执行，11 月 8 日已确认完成。",
+      "must_not": "把 11 月 1 日试讲说成 10 月 24 日之前已经发生，或把 11 月 8 日对话时间当作活动时间。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日已发生 6 人预演。",
+          "source_quote": "9 月 12 日做过一次 6 个孩子的预演"
+        },
+        {
+          "text": "10 月 18 日已发生 18 人试讲。",
+          "source_quote": "10 月 18 日又做过一场 18 个孩子的试讲"
+        },
+        {
+          "text": "10 月 24 日时，11 月 1 日安排仍排在后续。",
+          "source_quote": "11 月 1 日那场安排在 10 月 24 日之后"
+        },
+        {
+          "text": "11 月 8 日已确认 11 月 1 日试讲完成。",
+          "source_quote": "11 月 1 日按计划给 12 个孩子做了小规模试讲"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M3",
+        "A-S4-M4",
+        "A-S5-M3"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 / 2026-10-18 / 2026-11-01",
+      "session_time": "2026-10-24 / 2026-11-08",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L20",
+      "question": "周宁、苏岚和苏澜三者分别是什么身份和岗位关系？",
+      "must_include": "周宁曾借录音笔；苏岚是周宁的表姐、在社区儿童健康项目工作；苏澜是顾澄安的伴侣，转到儿童用药科普培训。",
+      "must_not": "把苏岚写成顾澄安的伴侣，或把苏澜写成周宁的表姐。",
+      "required_facts": [
+        {
+          "text": "周宁借走过银色录音笔。",
+          "source_quote": "周宁借走的银色录音笔已经在 10 月 20 日还给我"
+        },
+        {
+          "text": "苏岚是周宁的表姐，并在社区儿童健康项目工作。",
+          "source_quote": "苏岚，是周宁的表姐，在社区儿童健康项目工作"
+        },
+        {
+          "text": "苏澜转到儿童用药科普培训。",
+          "source_quote": "苏澜 11 月 24 日从社区儿童健康项目转到儿童用药科普培训"
+        },
+        {
+          "text": "苏澜是顾澄安的伴侣，苏岚是周宁的表姐。",
+          "source_quote": "苏澜现在做儿童用药科普培训，是你的伴侣；苏岚是周宁的表姐。"
+        }
+      ],
+      "capabilities": [
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "actor_transfer"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "A-S4-M7",
+        "A-S6-M3",
+        "A-S6-M4"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-20 至 2026-11-24",
+      "session_time": "2026-10-24 / 2026-12-12",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L21",
+      "question": "从早期档案到 12 月 12 日，哪些核心身份和家庭关系被明确为不变？顾澄安和苏澜当前分别使用什么称呼？",
+      "must_include": "法定姓名、出生日期、教育经历和家庭成员不变；伴侣苏澜、儿子顾予川；顾澄安当前朋友称呼澄野；苏澜家里称呼阿澜。",
+      "must_not": "把澄野当作法定姓名，把阿澜归给顾澄安，或替换家庭成员。",
+      "required_facts": [
+        {
+          "text": "法定姓名、出生日期、教育经历和家庭成员仍不变。",
+          "source_quote": "法定姓名、出生日期、教育经历和家庭成员仍不变。"
+        },
+        {
+          "text": "伴侣是苏澜，儿子是顾予川，小名川川。",
+          "source_quote": "我的伴侣叫苏澜，儿子叫顾予川，小名川川"
+        },
+        {
+          "text": "顾澄安当前朋友称呼是澄野。",
+          "source_quote": "朋友现在对我的昵称是澄野"
+        },
+        {
+          "text": "苏澜家里仍叫她阿澜。",
+          "source_quote": "家里仍叫她阿澜"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "A-S1-M3",
+        "A-S3-M1",
+        "A-S3-M2",
+        "A-S6-M3"
+      ],
+      "session_ids": [
+        "A-S1",
+        "A-S3",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "2023 至 2026-12-12 的稳定身份",
+      "session_time": "2023-2024 / 2026 / 2026-12-12",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "A-L22",
+      "question": "截至 12 月 12 日，课程正式名称、四次儿童活动总人数、顾澄安职责、苏澜岗位和秋分航空箱最终位置各是什么？",
+      "must_include": "正式课程名“夜行小侦探”；四次儿童活动合计 51 人；顾澄安任自然教育项目主管兼课程研发负责人；苏澜做儿童用药科普培训；航空箱在玄关。",
+      "must_not": "把成人分享算入 51 人，把“秋夜听虫”当作正式课程名，或把航空箱最终位置写成阳台。",
+      "required_facts": [
+        {
+          "text": "四次儿童活动独立发生，合计 51 人。",
+          "source_quote": "四次独立活动合计 51 个孩子"
+        },
+        {
+          "text": "正式课程名仍是“夜行小侦探”。",
+          "source_quote": "正式课程名仍是“夜行小侦探”"
+        },
+        {
+          "text": "顾澄安从 11 月 20 日起兼任课程研发负责人。",
+          "source_quote": "11 月 20 日起，工作里新增了课程研发负责人这项职责"
+        },
+        {
+          "text": "苏澜转到儿童用药科普培训。",
+          "source_quote": "苏澜 11 月 24 日从社区儿童健康项目转到儿童用药科普培训"
+        },
+        {
+          "text": "秋分的蓝色航空箱最终在玄关。",
+          "source_quote": "蓝色航空箱最终放回玄关"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "knowledge_update",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "A-S4-M3",
+        "A-S5-M4",
+        "A-S6-M1",
+        "A-S6-M3",
+        "A-S6-M6",
+        "A-S6-M7"
+      ],
+      "session_ids": [
+        "A-S4",
+        "A-S5",
+        "A-S6"
+      ],
+      "answerable": true,
+      "event_time": "截至 2026-12-12",
+      "session_time": "2026-10-24 / 2026-11-08 / 2026-12-12",
+      "state_key": "end_of_year_snapshot",
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    }
+  ]
+}

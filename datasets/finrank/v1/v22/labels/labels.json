@@ -1,0 +1,692 @@
+[
+  {
+    "case_id": "finrank-30-v19a-pool-007-MRK_Financials_Easy_OnePassage_Qualitative_94",
+    "source_record_id": "54ae50bb-4f89-46e9-a124-5564d92f7b88",
+    "question_id": "MRK_Financials_Easy_OnePassage_Qualitative_94",
+    "reference_answer": "Merck’s gross margin increased to 76.3% in 2024 from 73.2% in 2023. The improvement was mainly driven by a more favorable product mix, which included lower royalty rates related to sales of Keytruda and Gardasil/Gardasil 9, as well as positive foreign exchange effects. These benefits were partly offset by higher amortization of intangible assets, increased restructuring costs primarily from asset impairment charges, and higher manufacturing-related expenses such as inventory write-offs. Overall, the margin expansion reflected stronger underlying product economics despite cost pressures from acquisitions and restructuring.",
+    "accepted_answers": [
+      "Merck’s gross margin increased to 76.3% in 2024 from 73.2% in 2023. The improvement was mainly driven by a more favorable product mix, which included lower royalty rates related to sales of Keytruda and Gardasil/Gardasil 9, as well as positive foreign exchange effects. These benefits were partly offset by higher amortization of intangible assets, increased restructuring costs primarily from asset impairment charges, and higher manufacturing-related expenses such as inventory write-offs. Overall, the margin expansion reflected stronger underlying product economics despite cost pressures from acquisitions and restructuring."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-5fa619cf0e88adda"
+    ],
+    "hard_negative_ids": [
+      "src-68fbc299bfcdb90c",
+      "src-fba3a6f09228a790",
+      "src-d11b52db44f7f431",
+      "src-443279aef5d9a555",
+      "src-1ea262d6aa813f08"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v20b-pool-009-JNJ_CompanyOverview_Easy_OnePassage_Quantitative_07",
+    "source_record_id": "230d8913-55a7-450a-a9e4-2fcfc1b3d4dd",
+    "question_id": "JNJ_CompanyOverview_Easy_OnePassage_Quantitative_07",
+    "reference_answer": "In FY2024, Johnson & Johnson’s three largest revenue-generating pharmaceutical products or product lines were DARZALEX, with sales of approximately $11.67 billion representing 13.1% of total revenue; STELARA, with approximately $10.36 billion or 11.7% of total revenue; and the INVEGA product family (INVEGA SUSTENNA/XEPLION, INVEGA TRINZA/TREVICTA), with approximately $4.22 billion or 4.8% of total revenue.",
+    "accepted_answers": [
+      "In FY2024, Johnson & Johnson’s three largest revenue-generating pharmaceutical products or product lines were DARZALEX, with sales of approximately $11.67 billion representing 13.1% of total revenue; STELARA, with approximately $10.36 billion or 11.7% of total revenue; and the INVEGA product family (INVEGA SUSTENNA/XEPLION, INVEGA TRINZA/TREVICTA), with approximately $4.22 billion or 4.8% of total revenue."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-27ac7b658d9fa4e5"
+    ],
+    "hard_negative_ids": [
+      "src-0c84fcd1ecf4eac2",
+      "src-39b7e72caea88601",
+      "src-fe0425de31081f89",
+      "src-a570c6cc0c3c24ec",
+      "src-5a70e03fbd23c469"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21d-pool-001-AMGN_CompanyOverview_Easy_SinglePassage_Qualitative_35",
+    "source_record_id": "22bbfdf9-58f5-4eac-893d-46159e61ff92",
+    "question_id": "AMGN_CompanyOverview_Easy_SinglePassage_Qualitative_35",
+    "reference_answer": "Amgen operates in one operating segment: human therapeutics.",
+    "accepted_answers": [
+      "Amgen operates in one operating segment: human therapeutics."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-bb327b34102344d5"
+    ],
+    "hard_negative_ids": [
+      "src-c6d2b71bd2e93e63",
+      "src-90d6fab7f2ac46f2",
+      "src-d96dd8af3445c901",
+      "src-044ec9c638e05721",
+      "src-47a27f46633d1de4"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v19c-pool-008-JNJ_Accounting_Easy_OnePassage_Qualitative_52",
+    "source_record_id": "298087b6-c2cc-4f19-8ed2-9947b2f924ce",
+    "question_id": "JNJ_Accounting_Easy_OnePassage_Qualitative_52",
+    "reference_answer": "The company recognizes revenue from product sales when its contractual obligations are satisfied, which generally occurs upon the transfer of control of goods to customers, with typical payment terms between 30 and 90 days. In addition, revenue is also generated from collaboration arrangements. For these, amounts due from partners are recognized as each activity is performed or delivered, while upfront fees are deferred and recognized over the performance period.",
+    "accepted_answers": [
+      "The company recognizes revenue from product sales when its contractual obligations are satisfied, which generally occurs upon the transfer of control of goods to customers, with typical payment terms between 30 and 90 days. In addition, revenue is also generated from collaboration arrangements. For these, amounts due from partners are recognized as each activity is performed or delivered, while upfront fees are deferred and recognized over the performance period."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-d8c40bf3015c82e1"
+    ],
+    "hard_negative_ids": [
+      "src-f2d65801f43e4538",
+      "src-1af9d3a2e4490b51",
+      "src-002d7fc533adca05",
+      "src-60d586f43d6e198d",
+      "src-854759a03a541007"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v15c-pool-009-GM_Financials_Easy_TwoPassage_Qualitative_191",
+    "source_record_id": "99345923-809e-4e36-abb4-5cc1e5419e75",
+    "question_id": "GM_Financials_Easy_TwoPassage_Qualitative_191",
+    "reference_answer": "General Motors' chief operating decision-maker analyzes the results of the business through its reportable segments: GM North America (GMNA), GM International (GMI), Cruise, and GM Financial. For the automotive segments (GMNA and GMI) and Cruise, performance is evaluated using EBIT-adjusted, which is presented net of noncontrolling interests. For the GM Financial segment, the chief operating decision-maker uses EBT-adjusted because interest income and interest expense are considered an integral part of that segment's operational and financial performance.",
+    "accepted_answers": [
+      "General Motors' chief operating decision-maker analyzes the results of the business through its reportable segments: GM North America (GMNA), GM International (GMI), Cruise, and GM Financial. For the automotive segments (GMNA and GMI) and Cruise, performance is evaluated using EBIT-adjusted, which is presented net of noncontrolling interests. For the GM Financial segment, the chief operating decision-maker uses EBT-adjusted because interest income and interest expense are considered an integral part of that segment's operational and financial performance."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-5a688fbc37bb17be",
+      "src-68b0060d3bc9d3a5"
+    ],
+    "hard_negative_ids": [
+      "src-18d7e0ae9b8cb9a5",
+      "src-fe6c0ec614e4130d",
+      "src-02d2f7e21ee9e64e",
+      "src-6374159633c27a9a",
+      "src-d4750a19ca4dcb14"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v16a-pool-001-LLY_Governance_Easy_SinglePassage_Qualitative_208",
+    "source_record_id": "8577cf6d-22a5-4c02-9b73-98bcfbb199be",
+    "question_id": "LLY_Governance_Easy_SinglePassage_Qualitative_208",
+    "reference_answer": "Lilly states that its Human Capital Management approach is shaped by the core values of integrity, excellence, and respect for people, emphasizing discovery, development, and commercialization of innovative medicines and a positive culture. To engage employees and assess their experience, the company regularly conducts confidential employee surveys reviewed by leaders to identify opportunities to improve practices and benefits, and it highlights hiring the most qualified candidates, inclusion, training and development, competitive pay and benefits, and maintaining good employee relations.",
+    "accepted_answers": [
+      "Lilly states that its Human Capital Management approach is shaped by the core values of integrity, excellence, and respect for people, emphasizing discovery, development, and commercialization of innovative medicines and a positive culture. To engage employees and assess their experience, the company regularly conducts confidential employee surveys reviewed by leaders to identify opportunities to improve practices and benefits, and it highlights hiring the most qualified candidates, inclusion, training and development, competitive pay and benefits, and maintaining good employee relations."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-e1dfd9048eb81d5d"
+    ],
+    "hard_negative_ids": [
+      "src-1f9a357e8e0ee3d2",
+      "src-e3d44b11db3a4096",
+      "src-8c96e56d24fdfc71",
+      "src-3c3adbd1cb0afa28",
+      "src-b99ace8e9119928d"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v20b-pool-001-DVN_Risk_Easy_SinglePassage_Qualitative_01",
+    "source_record_id": "74e534a9-4073-4a1c-8432-caa59eaa63e1",
+    "question_id": "DVN_Risk_Easy_SinglePassage_Qualitative_01",
+    "reference_answer": "The general supply and demand for oil, gas, and NGLs, which affects the prices DVN receives for these commodities.",
+    "accepted_answers": [
+      "The general supply and demand for oil, gas, and NGLs, which affects the prices DVN receives for these commodities."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-b5242cca4a50ceb5"
+    ],
+    "hard_negative_ids": [
+      "src-0e2bb8ae45a1af00",
+      "src-5b47d6d64b569e32",
+      "src-1929bc990d6e45e5",
+      "src-b96362e90595425a",
+      "src-23476b4130aeeced"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v14a-pool-007-CTRA_Legal_Easy_SinglePassage_Quantitative_01",
+    "source_record_id": "aa2cb7d8-cac5-4f65-bc4a-ec5a405f2fb1",
+    "question_id": "CTRA_Legal_Easy_SinglePassage_Quantitative_01",
+    "reference_answer": "CTRA current ARO are $291 million.",
+    "accepted_answers": [
+      "CTRA current ARO are $291 million."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-25462c8512f99dd5"
+    ],
+    "hard_negative_ids": [
+      "src-ba7ff9bd07d65dd6",
+      "src-c48dea9b99d1be31",
+      "src-afedd514c2609b21",
+      "src-679edd45c27c2881",
+      "src-7fac75c733c6bf38"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v20a-pool-009-JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+    "source_record_id": "1a5778de-8df2-4453-8deb-320782efb185",
+    "question_id": "JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+    "reference_answer": "In 2024, the company reported a gross profit of $61.35 billion. After subtracting selling, marketing and administrative expenses of $22.87 billion, research and development expenses of $17.23 billion, and restructuring charges of $0.23 billion, and then adding back depreciation and amortization of $7.34 billion, EBITDA amounts to approximately $28.36 billion. With total borrowings of $36.6 billion at year-end 2024, the total debt to EBITDA ratio was about 1.29x.",
+    "accepted_answers": [
+      "In 2024, the company reported a gross profit of $61.35 billion. After subtracting selling, marketing and administrative expenses of $22.87 billion, research and development expenses of $17.23 billion, and restructuring charges of $0.23 billion, and then adding back depreciation and amortization of $7.34 billion, EBITDA amounts to approximately $28.36 billion. With total borrowings of $36.6 billion at year-end 2024, the total debt to EBITDA ratio was about 1.29x."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-b17fd34fadc92b20",
+      "src-5b617ff494d337d4",
+      "src-bf4953abb8140ac7"
+    ],
+    "hard_negative_ids": [
+      "src-c1c42107cea7f113",
+      "src-b067b971314dd870",
+      "src-8596a7d5328d7f01",
+      "src-c3fb2f2dac39273b",
+      "src-5983a8786d892cad",
+      "src-55067e3a71a45741",
+      "src-575b5f1bb5f9b3b1"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v10b-pool-000-JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+    "source_record_id": "1a5778de-8df2-4453-8deb-320782efb185",
+    "question_id": "JNJ_Financials_Easy_MultiPassage_Quantitative_128",
+    "reference_answer": "In 2024, the company reported a gross profit of $61.35 billion. After subtracting selling, marketing and administrative expenses of $22.87 billion, research and development expenses of $17.23 billion, and restructuring charges of $0.23 billion, and then adding back depreciation and amortization of $7.34 billion, EBITDA amounts to approximately $28.36 billion. With total borrowings of $36.6 billion at year-end 2024, the total debt to EBITDA ratio was about 1.29x.",
+    "accepted_answers": [
+      "In 2024, the company reported a gross profit of $61.35 billion. After subtracting selling, marketing and administrative expenses of $22.87 billion, research and development expenses of $17.23 billion, and restructuring charges of $0.23 billion, and then adding back depreciation and amortization of $7.34 billion, EBITDA amounts to approximately $28.36 billion. With total borrowings of $36.6 billion at year-end 2024, the total debt to EBITDA ratio was about 1.29x."
+    ],
+    "difficulty": "Easy",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-aac349c358d9b42b",
+      "src-8bed54513cf2b394",
+      "src-2e3b2421e38d0027"
+    ],
+    "hard_negative_ids": [
+      "src-ebf4a18db0a8b76d",
+      "src-5bc5a2823f526934",
+      "src-e2b414f7fccb0ddb",
+      "src-fa5f4e8dd128b3b3",
+      "src-1f1690b3d6f45f87",
+      "src-003d01681571a59e",
+      "src-782219b244ae9825"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v17a-pool-020-MRK_Financials_Medium_TwoPassage_Quantitative_243",
+    "source_record_id": "98d53ae3-a2df-4e08-994c-699bf64aba6c",
+    "question_id": "MRK_Financials_Medium_TwoPassage_Quantitative_243",
+    "reference_answer": "(i) Interest-to-lease payment ratio (2025) ≈ $1.2 billion ÷ $329 million ≈ 3.65x. (ii) Weighted-average remaining lease term decreased from 7.0 years (2023) to 6.0 years (2024), a change of −1.0 years; weighted-average discount rate decreased from 3.3% (2023) to 3.2% (2024), a change of −0.1 percentage points.",
+    "accepted_answers": [
+      "(i) Interest-to-lease payment ratio (2025) ≈ $1.2 billion ÷ $329 million ≈ 3.65x. (ii) Weighted-average remaining lease term decreased from 7.0 years (2023) to 6.0 years (2024), a change of −1.0 years; weighted-average discount rate decreased from 3.3% (2023) to 3.2% (2024), a change of −0.1 percentage points."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-41bc85ac68fa16e3",
+      "src-0b16ba35e8a10168"
+    ],
+    "hard_negative_ids": [
+      "src-a68e338d37776605",
+      "src-f4333cfd6a68cb0f",
+      "src-b698252929e6094a",
+      "src-35a31575e4c01fdd",
+      "src-2ef2d67d1baf1a6e"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21a-pool-025-ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+    "source_record_id": "730c4175-a4a5-4bfc-98e1-10d773293711",
+    "question_id": "ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+    "reference_answer": "AbbVie's total lease liabilities decreased by $28 million, from $943 million in 2023 to $915 million in 2024.",
+    "accepted_answers": [
+      "AbbVie's total lease liabilities decreased by $28 million, from $943 million in 2023 to $915 million in 2024."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-761868de07167dd1",
+      "src-2cae3d4b88d42447"
+    ],
+    "hard_negative_ids": [
+      "src-a35477b39cd6ea27",
+      "src-e28d7ca415929fcb",
+      "src-2d3a8a4c07dc8bac",
+      "src-58e173a1302a59a4",
+      "src-979f76bbe6491f94"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v16c-pool-026-JNJ_Accounting_Hard_TwoPassage_Quantitative_133",
+    "source_record_id": "3bced212-ffc1-4c70-b6a6-9d29faabd38e",
+    "question_id": "JNJ_Accounting_Hard_TwoPassage_Quantitative_133",
+    "reference_answer": "In 2024, total depreciation and amortization expense was $2.8 billion. Buildings with a 30-year useful life account for roughly $0.41 billion. The decline in the carrying amount of land and land improvements from $795 million to $718 million implies depreciation of about $0.08 billion, consistent with a useful life of just over 10 years. Construction in progress is not depreciated until the assets are completed and placed into service. The remaining $2.31 billion of the $2.8 billion expense is therefore attributed to machinery and equipment. This approach assumes that the decrease in land and land improvements reflects depreciation rather than additions or disposals, and that any non-depreciable land portion within this line item is negligible.",
+    "accepted_answers": [
+      "In 2024, total depreciation and amortization expense was $2.8 billion. Buildings with a 30-year useful life account for roughly $0.41 billion. The decline in the carrying amount of land and land improvements from $795 million to $718 million implies depreciation of about $0.08 billion, consistent with a useful life of just over 10 years. Construction in progress is not depreciated until the assets are completed and placed into service. The remaining $2.31 billion of the $2.8 billion expense is therefore attributed to machinery and equipment. This approach assumes that the decrease in land and land improvements reflects depreciation rather than additions or disposals, and that any non-depreciable land portion within this line item is negligible."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-03cfeaa1913fe356",
+      "src-1472bb779e6a13ba"
+    ],
+    "hard_negative_ids": [
+      "src-4c592acab3bc5328",
+      "src-c451e8a3a2995010",
+      "src-85f6dba1aa3ee89a",
+      "src-5ee154abfe4522e3",
+      "src-99bd4cae7d703061"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v19c-pool-021-AMGN_Risk_Medium_TwoPassage_Qualitative_09",
+    "source_record_id": "1680c1b6-dbd0-4c0b-87d2-30ac45b0035b",
+    "question_id": "AMGN_Risk_Medium_TwoPassage_Qualitative_09",
+    "reference_answer": "U.S. payers use measures such as formulary management (including higher-tier placement and exclusion), co-pay accumulator programs, negotiated rebates, and stricter utilization management criteria like prior authorization and step therapy. Governments in other countries employ mandatory price controls, price referencing, therapeutic-reference pricing, increased rebates, incentives for generic substitution and biosimilar usage, health technology assessments, and government-mandated price cuts.",
+    "accepted_answers": [
+      "U.S. payers use measures such as formulary management (including higher-tier placement and exclusion), co-pay accumulator programs, negotiated rebates, and stricter utilization management criteria like prior authorization and step therapy. Governments in other countries employ mandatory price controls, price referencing, therapeutic-reference pricing, increased rebates, incentives for generic substitution and biosimilar usage, health technology assessments, and government-mandated price cuts."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-5e3bb206efcb44d1",
+      "src-a645899aa98cb2d0"
+    ],
+    "hard_negative_ids": [
+      "src-d681ab3500c48d50",
+      "src-0a0641fa1e2c0393",
+      "src-61cb850d65f17754",
+      "src-2b39e1464431e539",
+      "src-41ab522fe1bcb302"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v13b-pool-020-F_ShareholderReturn_Medium_TwoPassage_Quantitative_200",
+    "source_record_id": "673bc5e7-e36c-4ba0-b3ef-080c38e7d7a9",
+    "question_id": "F_ShareholderReturn_Medium_TwoPassage_Quantitative_200",
+    "reference_answer": "In 2024, Ford used a total of $3,544 million for shareholder returns through dividends and share repurchases. Ford made cash payments for dividends and dividend equivalents totaling $3,118 million in 2024. The company used $426 million for purchases of common stock in 2024. Comparing these two amounts, Ford spent significantly more cash on dividends than on share repurchases in 2024. Specifically, the cash outflow for dividends was approximately 7.3 times greater than the cash used for share repurchases ($3,118 million for dividends vs. $426 million for share repurchases). The total shareholder distributions, which include both cash dividends and anti-dilutive share repurchases, amounted to $3.5 billion in 2024.",
+    "accepted_answers": [
+      "In 2024, Ford used a total of $3,544 million for shareholder returns through dividends and share repurchases. Ford made cash payments for dividends and dividend equivalents totaling $3,118 million in 2024. The company used $426 million for purchases of common stock in 2024. Comparing these two amounts, Ford spent significantly more cash on dividends than on share repurchases in 2024. Specifically, the cash outflow for dividends was approximately 7.3 times greater than the cash used for share repurchases ($3,118 million for dividends vs. $426 million for share repurchases). The total shareholder distributions, which include both cash dividends and anti-dilutive share repurchases, amounted to $3.5 billion in 2024."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-e44fbc3d17bfb817",
+      "src-295805f2606ded85"
+    ],
+    "hard_negative_ids": [
+      "src-04389987cc9da93b",
+      "src-401128298e125ee7",
+      "src-b997b39333f1ce83",
+      "src-4421d0f3f3dfc9fe",
+      "src-0c043dd73de75f14"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21e-pool-026-JNJ_Financials_Medium_SinglePassage_Quantitative_128",
+    "source_record_id": "b2628680-6f75-4faa-8315-798aadb3d93c",
+    "question_id": "JNJ_Financials_Medium_SinglePassage_Quantitative_128",
+    "reference_answer": "Johnson & Johnson’s net cash flows from operating activities increased by $1,475 million, from $22,791 million in 2023 to $24,266 million in 2024. This represents a percentage increase of approximately 6.5%.",
+    "accepted_answers": [
+      "Johnson & Johnson’s net cash flows from operating activities increased by $1,475 million, from $22,791 million in 2023 to $24,266 million in 2024. This represents a percentage increase of approximately 6.5%."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-caf60b921ff6a258"
+    ],
+    "hard_negative_ids": [
+      "src-d15690989fcfe15d",
+      "src-006876dd24093ab1",
+      "src-45633acff5a1592a",
+      "src-56c36056ffd6dcbf",
+      "src-3fe1c37a7b5e82f1"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21a-pool-029-MPC_Governance_Medium_Two-Passage_Quantitative_01",
+    "source_record_id": "e904c818-aeb8-40ef-84c2-3fbeba1c8eb9",
+    "question_id": "MPC_Governance_Medium_Two-Passage_Quantitative_01",
+    "reference_answer": "MPC's Q2 share repurchase activity saw a significant decrease from 2024 to 2025. In Q2 2024, MPC purchased a total of 15,743,304 shares at an average price of $183.91 per share [1]. By Q2 2025, the total number of shares purchased dropped to 4,762,547, with an average price paid per share of $145.32 [2]. This represents a (4,762,547 - 15,743,304) / 15,743,304 = -69.7% decrease in the total number of shares repurchased, and a ($145.32 - $183.91) / $183.91 = -21.0% decrease in the average price paid per share.",
+    "accepted_answers": [
+      "MPC's Q2 share repurchase activity saw a significant decrease from 2024 to 2025. In Q2 2024, MPC purchased a total of 15,743,304 shares at an average price of $183.91 per share [1]. By Q2 2025, the total number of shares purchased dropped to 4,762,547, with an average price paid per share of $145.32 [2]. This represents a (4,762,547 - 15,743,304) / 15,743,304 = -69.7% decrease in the total number of shares repurchased, and a ($145.32 - $183.91) / $183.91 = -21.0% decrease in the average price paid per share."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-5a39b2c65a23447a",
+      "src-8f339aa26b0e3374"
+    ],
+    "hard_negative_ids": [
+      "src-ce8e29e2b931ebf5",
+      "src-24e0d705223ebfb4",
+      "src-5344ea2335c50afb",
+      "src-71455ba149e32216",
+      "src-b699128729d93094"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21b-pool-029-JNJ_Financials_Medium_OnePassage_Quantitative_103",
+    "source_record_id": "8da30463-bbef-4afd-b350-47bf32880d8d",
+    "question_id": "JNJ_Financials_Medium_OnePassage_Quantitative_103",
+    "reference_answer": "Operating profit (EBIT) decreased from $21,207 million in 2023 to $20,804 million in 2024, a decline of $403 million. To understand the contribution of sales and cost of products sold, gross profit is considered. Sales increased from $85,159 million in 2023 to $88,821 million in 2024, an improvement of $3,662 million. Over the same period, cost of products sold rose from $26,553 million to $27,471 million, an increase of $918 million. The net effect was a rise in gross profit of $2,744 million.\n    This means that sales growth had a positive impact of +$3,662 million, while higher costs reduced gross profit by -$918 million, resulting in a net increase in gross profit of $2,744 million. However, despite this positive contribution from sales after costs, operating profit overall declined by $403 million, indicating that the decrease in EBIT was primarily due to increases in other operating expenses rather than revenue and cost of products sold.",
+    "accepted_answers": [
+      "Operating profit (EBIT) decreased from $21,207 million in 2023 to $20,804 million in 2024, a decline of $403 million. To understand the contribution of sales and cost of products sold, gross profit is considered. Sales increased from $85,159 million in 2023 to $88,821 million in 2024, an improvement of $3,662 million. Over the same period, cost of products sold rose from $26,553 million to $27,471 million, an increase of $918 million. The net effect was a rise in gross profit of $2,744 million.\n    This means that sales growth had a positive impact of +$3,662 million, while higher costs reduced gross profit by -$918 million, resulting in a net increase in gross profit of $2,744 million. However, despite this positive contribution from sales after costs, operating profit overall declined by $403 million, indicating that the decrease in EBIT was primarily due to increases in other operating expenses rather than revenue and cost of products sold."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-ae785c31791b0d3e"
+    ],
+    "hard_negative_ids": [
+      "src-bb02eaba57897f45",
+      "src-0b81696ab6650805",
+      "src-3d9c6d4543e9c3e0",
+      "src-f7ea684f197166b9",
+      "src-a8b1c5e3eeeedbd5"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v17c-pool-026-ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+    "source_record_id": "730c4175-a4a5-4bfc-98e1-10d773293711",
+    "question_id": "ABBV_Footnotes_Medium_TwoPassage_Quantitative_87",
+    "reference_answer": "AbbVie's total lease liabilities decreased by $28 million, from $943 million in 2023 to $915 million in 2024.",
+    "accepted_answers": [
+      "AbbVie's total lease liabilities decreased by $28 million, from $943 million in 2023 to $915 million in 2024."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-f611c9fa6ad6a913",
+      "src-0ae55610634b0de2"
+    ],
+    "hard_negative_ids": [
+      "src-103363232da5d396",
+      "src-026758b4699e74e8",
+      "src-e2f74160e1eeb739",
+      "src-b799776b12872118",
+      "src-b3f332953768e783"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21c-pool-025-JNJ_Risk_Medium_MultiPassage_Quantitative_61",
+    "source_record_id": "54c17b50-4051-46c1-aa8b-40426664597d",
+    "question_id": "JNJ_Risk_Medium_MultiPassage_Quantitative_61",
+    "reference_answer": "As of December 29, 2024, Johnson & Johnson reported trade accounts receivable of $14,842 million, net of allowances of $167 million (2023: $14,873 million net of $166 million). This corresponds to an allowance for doubtful accounts equal to approximately 1.11% of total accounts receivable in 2024 (1.10% in 2023).\n    The low share of allowances indicates limited credit risk. A key reason is the nature of the company’s customer base: in 2024, three wholesalers accounted for approximately 20.5%, 15.6%, and 12.3% of total gross revenues, respectively. These large distributors, together with government healthcare programs and private insurers that reimburse sales, generally have strong financial capacity and reliable payment histories. This concentration among financially solid counterparties helps explain why the allowance for doubtful accounts remains a very small proportion of total receivables.",
+    "accepted_answers": [
+      "As of December 29, 2024, Johnson & Johnson reported trade accounts receivable of $14,842 million, net of allowances of $167 million (2023: $14,873 million net of $166 million). This corresponds to an allowance for doubtful accounts equal to approximately 1.11% of total accounts receivable in 2024 (1.10% in 2023).\n    The low share of allowances indicates limited credit risk. A key reason is the nature of the company’s customer base: in 2024, three wholesalers accounted for approximately 20.5%, 15.6%, and 12.3% of total gross revenues, respectively. These large distributors, together with government healthcare programs and private insurers that reimburse sales, generally have strong financial capacity and reliable payment histories. This concentration among financially solid counterparties helps explain why the allowance for doubtful accounts remains a very small proportion of total receivables."
+    ],
+    "difficulty": "Medium",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-5105aad4ecc656da",
+      "src-67253fbc81617308",
+      "src-0698c09cb4ac99a0"
+    ],
+    "hard_negative_ids": [
+      "src-1351a2a55f18b165",
+      "src-c26af5e3d64a4f26",
+      "src-4656d87ace8ab8d3",
+      "src-9037284cec907b3c",
+      "src-9a01474f462aca64"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22a-pool-018-ABBV_ShareholderReturn_Hard_OnePassage_Qualitative_20",
+    "source_record_id": "585f305b-d014-47bc-a78d-4addb8d75471",
+    "question_id": "ABBV_ShareholderReturn_Hard_OnePassage_Qualitative_20",
+    "reference_answer": "AbbVie describes a series of governance and legal provisions that are designed to deter hostile takeovers and coercive bids. The company uses a staggered board structure, with directors divided into three classes serving staggered three-year terms, which is a well-known structural defense that makes it difficult for an acquirer to gain full board control in a single election. In addition, directors can only be removed for cause, which serves as a board entrenchment defense. While this is not a contractual arrangement like a golden parachute, it has a comparable effect in that it makes it significantly harder to displace existing leadership during a takeover attempt. AbbVie further entrenches board control by stipulating that only directors, and not stockholders, may fill vacancies. Shareholder influence is also restricted by the inability of stockholders to call special meetings, limiting the capacity of investors to initiate governance changes in the context of a hostile bid. Another layer of defense is a supermajority voting requirement, which mandates that at least 80 percent of AbbVie’s voting stock must approve amendments to certain governance provisions, creating a high threshold for potential acquirors who might otherwise seek to alter board structure or shareholder rights. Finally, AbbVie is protected by Section 203 of the Delaware General Corporation Law, which restricts any shareholder acquiring more than 15 percent of the company’s stock from engaging in business combinations with AbbVie for three years, effectively preventing a rapid follow-on merger or “toe-hold” strategy. According to AbbVie, these measures are intended to safeguard stockholders from coercive or unfair takeover tactics by ensuring negotiations with the board and allowing more time to evaluate offers. At the same time, the company acknowledges that these provisions could delay or prevent transactions that some shareholders might view as beneficial and may also make it more difficult to remove incumbent directors.",
+    "accepted_answers": [
+      "AbbVie describes a series of governance and legal provisions that are designed to deter hostile takeovers and coercive bids. The company uses a staggered board structure, with directors divided into three classes serving staggered three-year terms, which is a well-known structural defense that makes it difficult for an acquirer to gain full board control in a single election. In addition, directors can only be removed for cause, which serves as a board entrenchment defense. While this is not a contractual arrangement like a golden parachute, it has a comparable effect in that it makes it significantly harder to displace existing leadership during a takeover attempt. AbbVie further entrenches board control by stipulating that only directors, and not stockholders, may fill vacancies. Shareholder influence is also restricted by the inability of stockholders to call special meetings, limiting the capacity of investors to initiate governance changes in the context of a hostile bid. Another layer of defense is a supermajority voting requirement, which mandates that at least 80 percent of AbbVie’s voting stock must approve amendments to certain governance provisions, creating a high threshold for potential acquirors who might otherwise seek to alter board structure or shareholder rights. Finally, AbbVie is protected by Section 203 of the Delaware General Corporation Law, which restricts any shareholder acquiring more than 15 percent of the company’s stock from engaging in business combinations with AbbVie for three years, effectively preventing a rapid follow-on merger or “toe-hold” strategy. According to AbbVie, these measures are intended to safeguard stockholders from coercive or unfair takeover tactics by ensuring negotiations with the board and allowing more time to evaluate offers. At the same time, the company acknowledges that these provisions could delay or prevent transactions that some shareholders might view as beneficial and may also make it more difficult to remove incumbent directors."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-08bf7dc7cdc2a87f"
+    ],
+    "hard_negative_ids": [
+      "src-5a66906d022fcc31",
+      "src-8c0990ccf148005e",
+      "src-508a79218d898f5c",
+      "src-36c4872a2d48b8fb",
+      "src-cef5b193c9e34576"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22a-pool-010-MRK_Footnotes_Hard_MultiPassage_Qualitative_176",
+    "source_record_id": "0c949d32-754f-4b1d-8357-db7e30797efb",
+    "question_id": "MRK_Footnotes_Hard_MultiPassage_Qualitative_176",
+    "reference_answer": "Merck’s unrecognized tax benefits decreased to $2.3 billion in 2024, primarily due to a $451 million reduction from the expiration of statutes of limitations for 2019 and 2020, resulting in a $519 million benefit to the income tax provision. The IRS is still examining Merck’s 2017 and 2018 returns, including the TCJA transition tax, and also reviewing 2021 and 2022 returns, which may create future liabilities if positions are challenged. In addition, state and foreign examinations covering 2009–2024 remain ongoing. While reserves are considered adequate, these factors together indicate that Merck’s tax provision is currently favorably impacted but remains exposed to significant potential future adjustments.",
+    "accepted_answers": [
+      "Merck’s unrecognized tax benefits decreased to $2.3 billion in 2024, primarily due to a $451 million reduction from the expiration of statutes of limitations for 2019 and 2020, resulting in a $519 million benefit to the income tax provision. The IRS is still examining Merck’s 2017 and 2018 returns, including the TCJA transition tax, and also reviewing 2021 and 2022 returns, which may create future liabilities if positions are challenged. In addition, state and foreign examinations covering 2009–2024 remain ongoing. While reserves are considered adequate, these factors together indicate that Merck’s tax provision is currently favorably impacted but remains exposed to significant potential future adjustments."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-3caf6d8cb00d946d",
+      "src-3e9d1d8b3db4516e",
+      "src-0079fe154131d50c"
+    ],
+    "hard_negative_ids": [
+      "src-eb92f58ef0eaac1e",
+      "src-4741a170e3a8b248",
+      "src-eb5ab19bacb0ed9c",
+      "src-3486b4187fb6857f",
+      "src-a16f170e5237bcbb"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21g-pool-015-JNJ_Risk_Hard_MultiPassage_Qualitative_02",
+    "source_record_id": "ff6a842d-4304-4e5f-a90d-7956c13ec273",
+    "question_id": "JNJ_Risk_Hard_MultiPassage_Qualitative_02",
+    "reference_answer": "Manufacturing interruptions, third-party supplier failures, and global health crises collectively threaten product supply consistency, quality assurance, cost control, and regulatory compliance, leading the Company to implement robust business continuity plans, diversify suppliers, maintain safety stock, and develop contingency protocols to mitigate operational, financial, reputational, and regulatory risks.",
+    "accepted_answers": [
+      "Manufacturing interruptions, third-party supplier failures, and global health crises collectively threaten product supply consistency, quality assurance, cost control, and regulatory compliance, leading the Company to implement robust business continuity plans, diversify suppliers, maintain safety stock, and develop contingency protocols to mitigate operational, financial, reputational, and regulatory risks."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-7a7323573146d003",
+      "src-a09401616a00fe03",
+      "src-6980aa65a8c16da1"
+    ],
+    "hard_negative_ids": [
+      "src-56263daa30e1097e",
+      "src-adfcc34cbda1ba63",
+      "src-4fddd52d244866a2",
+      "src-d9b54c1c4fb72170",
+      "src-820415298f2cdc3b"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22c-pool-015-MRK_Financials_Hard_MultiPassage_Qualitative_28",
+    "source_record_id": "4a8a20c3-ee93-4f38-8eb6-cc4217a78e1d",
+    "question_id": "MRK_Financials_Hard_MultiPassage_Qualitative_28",
+    "reference_answer": "The 2024 restructuring program aims to optimize the Animal Health manufacturing network to improve supply reliability and efficiency, with expected $750 million in annual savings by 2031. Cost of sales in 2024 included $495 million in restructuring-related expenses, and total R&D expenses for Animal Health are embedded within $17.9 billion total R&D, with $7.7 billion attributed to non-MRL costs including Animal Health. These actions indicate a strategic shift to reduce long-term operating costs in manufacturing while continuing significant investment in R&D, suggesting that savings from manufacturing could be reallocated to development initiatives.",
+    "accepted_answers": [
+      "The 2024 restructuring program aims to optimize the Animal Health manufacturing network to improve supply reliability and efficiency, with expected $750 million in annual savings by 2031. Cost of sales in 2024 included $495 million in restructuring-related expenses, and total R&D expenses for Animal Health are embedded within $17.9 billion total R&D, with $7.7 billion attributed to non-MRL costs including Animal Health. These actions indicate a strategic shift to reduce long-term operating costs in manufacturing while continuing significant investment in R&D, suggesting that savings from manufacturing could be reallocated to development initiatives."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-4bcc65124ba23a18",
+      "src-0df58a86decf4471",
+      "src-a06e5ed113af1f57"
+    ],
+    "hard_negative_ids": [
+      "src-fb4fec61d54ec78a",
+      "src-87faf0a9355950c3",
+      "src-99aa03a733c3a8a6",
+      "src-48640a6913d637d1",
+      "src-438ad9d741292fab"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22a-pool-019-KMI_ShareholderReturn_Hard_MultiPassage_Quantitative_01",
+    "source_record_id": "bb12cd1f-97c7-4927-b939-1d6b8683bc51",
+    "question_id": "KMI_ShareholderReturn_Hard_MultiPassage_Quantitative_01",
+    "reference_answer": "For Q1 2025, KMI declared a dividend of $0.2925 per share, an increase from $0.2875 per share in Q1 2024 [1]. Concurrently, basic and diluted EPS decreased from $0.33 in Q1 2024 to $0.32 in Q1 2025 [1]. Net Inc. Attributable to KMI also saw a decrease from $746 million in Q1 2024 to $717 million in Q1 2025 [1]. The dividend payout ratio increased from approximately 87.1% in Q1 2024 ($0.2875/$0.33) to 91.4% in Q1 2025 ($0.2925/$0.32) [1]. This trend, where DPS grew while EPS and Net Inc. declined, suggests KMI maintained its commitment to growing shareholder distributions even amidst a slight decline in quarterly earnings, potentially implying a higher proportion of earnings is being allocated to dividends, or a strategy to maintain a stable/growing dividend despite earnings volatility, drawing more heavily on available capital or future earnings expectations, impacting future capital allocation flexibility [1-3].",
+    "accepted_answers": [
+      "For Q1 2025, KMI declared a dividend of $0.2925 per share, an increase from $0.2875 per share in Q1 2024 [1]. Concurrently, basic and diluted EPS decreased from $0.33 in Q1 2024 to $0.32 in Q1 2025 [1]. Net Inc. Attributable to KMI also saw a decrease from $746 million in Q1 2024 to $717 million in Q1 2025 [1]. The dividend payout ratio increased from approximately 87.1% in Q1 2024 ($0.2875/$0.33) to 91.4% in Q1 2025 ($0.2925/$0.32) [1]. This trend, where DPS grew while EPS and Net Inc. declined, suggests KMI maintained its commitment to growing shareholder distributions even amidst a slight decline in quarterly earnings, potentially implying a higher proportion of earnings is being allocated to dividends, or a strategy to maintain a stable/growing dividend despite earnings volatility, drawing more heavily on available capital or future earnings expectations, impacting future capital allocation flexibility [1-3]."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Quantitative",
+    "gold_passage_ids": [
+      "src-b512dac675655573",
+      "src-6a9d97e4cf3a3c8b",
+      "src-db482f2e0179f2de"
+    ],
+    "hard_negative_ids": [
+      "src-652f194634d50d88",
+      "src-b18be0a95c907074",
+      "src-8bf65b2c6740151d",
+      "src-381c367b2c8f2dbc",
+      "src-b24f52f139a0de1c",
+      "src-6b67f98f98c24a18"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21g-pool-018-DVN_Footnotes_Hard_SinglePassage_Qualitative_01",
+    "source_record_id": "aed443e4-2fc2-4f21-9c1f-d5c65f46d343",
+    "question_id": "DVN_Footnotes_Hard_SinglePassage_Qualitative_01",
+    "reference_answer": "The Catalyst JV secures long-term gathering and processing capacity for Devon’s Delaware Basin operations, ensuring cost stability through fixed-fee agreements. It strengthens development certainty on 50,000 dedicated acres but reduces flexibility by locking production into the JV through 2038. Overall, the venture provides reliable infrastructure and predictable midstream economics, while tying Devon’s operations more closely to Catalyst.",
+    "accepted_answers": [
+      "The Catalyst JV secures long-term gathering and processing capacity for Devon’s Delaware Basin operations, ensuring cost stability through fixed-fee agreements. It strengthens development certainty on 50,000 dedicated acres but reduces flexibility by locking production into the JV through 2038. Overall, the venture provides reliable infrastructure and predictable midstream economics, while tying Devon’s operations more closely to Catalyst."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-8a55436e5318c767"
+    ],
+    "hard_negative_ids": [
+      "src-8c975678fe232460",
+      "src-f73e225d88a0c6f1",
+      "src-c8baca8cf9cb5f4a",
+      "src-e6756fb119d0daa0",
+      "src-653bbfc64b87daec"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v21c-pool-015-GM_Legal_Hard_MultiPassage_Qualitative_66",
+    "source_record_id": "fc2ed0a4-74b6-485a-ba2b-4fea6368834c",
+    "question_id": "GM_Legal_Hard_MultiPassage_Qualitative_66",
+    "reference_answer": "Tesla faces risks from cybersecurity vulnerabilities and government investigations that could negatively impact its financial position, brand reputation, and future prospects. Unauthorized access to the complex information technology systems within the Tesla's products, such as its vehicles and energy storage systems, could lead to legal claims, government investigations, and a loss of public confidence. While Tesla has security measures in place and encourages reporting of vulnerabilities, there is no guarantee that all vulnerabilities will be identified or that remediation efforts will be successful. Furthermore, any reports of hacking, regardless of their truthfulness, can harm the Tesla's brand and operating results. In addition to cybersecurity risks, Tesla is also subject to various government investigations from agencies like the SEC and the DOJ regarding its operations, technology (including vehicle functionality, Autopilot, and FSD Capability), and business practices. Although no wrongdoing has been concluded in any ongoing investigation, there is a possibility that the company could face liability, penalties, and other sanctions, which could have a material adverse impact on its business, financial position, and brand. Tesla also faces other legal proceedings and claims that arise from its business activities, such as a class action lawsuit filed after a data incident was reported by a foreign news outlet, which could also have a material adverse impact if an unfavorable ruling occurs.",
+    "accepted_answers": [
+      "Tesla faces risks from cybersecurity vulnerabilities and government investigations that could negatively impact its financial position, brand reputation, and future prospects. Unauthorized access to the complex information technology systems within the Tesla's products, such as its vehicles and energy storage systems, could lead to legal claims, government investigations, and a loss of public confidence. While Tesla has security measures in place and encourages reporting of vulnerabilities, there is no guarantee that all vulnerabilities will be identified or that remediation efforts will be successful. Furthermore, any reports of hacking, regardless of their truthfulness, can harm the Tesla's brand and operating results. In addition to cybersecurity risks, Tesla is also subject to various government investigations from agencies like the SEC and the DOJ regarding its operations, technology (including vehicle functionality, Autopilot, and FSD Capability), and business practices. Although no wrongdoing has been concluded in any ongoing investigation, there is a possibility that the company could face liability, penalties, and other sanctions, which could have a material adverse impact on its business, financial position, and brand. Tesla also faces other legal proceedings and claims that arise from its business activities, such as a class action lawsuit filed after a data incident was reported by a foreign news outlet, which could also have a material adverse impact if an unfavorable ruling occurs."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-a8ede76654e70b74",
+      "src-2cf55626a01f0039",
+      "src-8b48fdab23d77317"
+    ],
+    "hard_negative_ids": [
+      "src-73fd01618872cdcf",
+      "src-1066b3f72f59efb7",
+      "src-eba3f941959cc1af",
+      "src-f4a3be4ccf9bed72",
+      "src-1e38f2c183aa20c6"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22a-pool-017-GM_Financials_Hard_OnePassage_Qualitative_178",
+    "source_record_id": "f302dc0f-39b0-4dd5-a887-d441f0bd3459",
+    "question_id": "GM_Financials_Hard_OnePassage_Qualitative_178",
+    "reference_answer": "Based on the revenue disclosure, General Motors’ revenue growth in 2024 was primarily driven by an increase in vehicle, parts and accessories sales in North America, which rose from $136.98 billion in 2023 to $152.31 billion in 2024. This offset a decline in international markets (GMI), where revenue fell from $14.42 billion to $12.78 billion. Additional support came from GM Financial, whose net sales and revenue grew from $14.23 billion in 2023 to $15.88 billion in 2024. Revenue from used vehicles and services/other remained relatively small and flat year-over-year, contributing little to overall growth. Sustainability of these drivers appears mixed: while North American demand underpinned gains in 2024, the decline in international sales highlights geographic risk, and financial services revenue is sensitive to credit conditions. Meanwhile, contract liabilities related to connectivity, rewards, and maintenance services grew from $5.0 billion in 2023 to $6.6 billion in 2024, suggesting a longer-term recurring revenue stream that may provide stability going forward.",
+    "accepted_answers": [
+      "Based on the revenue disclosure, General Motors’ revenue growth in 2024 was primarily driven by an increase in vehicle, parts and accessories sales in North America, which rose from $136.98 billion in 2023 to $152.31 billion in 2024. This offset a decline in international markets (GMI), where revenue fell from $14.42 billion to $12.78 billion. Additional support came from GM Financial, whose net sales and revenue grew from $14.23 billion in 2023 to $15.88 billion in 2024. Revenue from used vehicles and services/other remained relatively small and flat year-over-year, contributing little to overall growth. Sustainability of these drivers appears mixed: while North American demand underpinned gains in 2024, the decline in international sales highlights geographic risk, and financial services revenue is sensitive to credit conditions. Meanwhile, contract liabilities related to connectivity, rewards, and maintenance services grew from $5.0 billion in 2023 to $6.6 billion in 2024, suggesting a longer-term recurring revenue stream that may provide stability going forward."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-afcf39f9f1ddef49"
+    ],
+    "hard_negative_ids": [
+      "src-db46d7e73fb9febd",
+      "src-6a4adad455da3551",
+      "src-628a70e765c82360",
+      "src-ece5472645f1a6c2",
+      "src-444ae2f0cc2992b5"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22b-pool-010-DVN_Legal_Hard_TwoPassage_Qualitative_01",
+    "source_record_id": "8833c214-e956-4bbd-8b40-4542532b922f",
+    "question_id": "DVN_Legal_Hard_TwoPassage_Qualitative_01",
+    "reference_answer": "Using the credit line instead of cash would have preserved DVNs liquidity and supported shareholder returns in the short term, but it would also add leverage, interest costs, and balance sheet risk. Given DVNs strategy of maintaining financial discipline, heavy reliance on debt could undermine investor confidence. A mixed structure, limited debt, more equity, and contingent earnouts, would likely have delivered a better balance of flexibility and shareholder value.",
+    "accepted_answers": [
+      "Using the credit line instead of cash would have preserved DVNs liquidity and supported shareholder returns in the short term, but it would also add leverage, interest costs, and balance sheet risk. Given DVNs strategy of maintaining financial discipline, heavy reliance on debt could undermine investor confidence. A mixed structure, limited debt, more equity, and contingent earnouts, would likely have delivered a better balance of flexibility and shareholder value."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-f3a429f5d5f7b2b3",
+      "src-80341858855230e9"
+    ],
+    "hard_negative_ids": [
+      "src-cc9cdd814c0c92f3",
+      "src-b6200d09f7341223",
+      "src-719ab7428a057b5a",
+      "src-f1514de70ba61e01",
+      "src-74f7590dc8c4a279"
+    ],
+    "scorable": true
+  },
+  {
+    "case_id": "finrank-30-v22a-pool-016-ABBV_CompanyOverview_Hard_OnePassage_Qualitative_237",
+    "source_record_id": "1c15068b-f764-4267-accb-bf9af1bcd1fa",
+    "question_id": "ABBV_CompanyOverview_Hard_OnePassage_Qualitative_237",
+    "reference_answer": "AbbVie demonstrates a dual focus on leadership stability and portfolio expansion. The succession of Robert Michael as CEO in July 2024, followed by his planned appointment as Chairman in 2025, underscores a carefully managed governance transition aimed at continuity in strategic execution. On the portfolio side, the 2024 acquisitions of Cerevel Therapeutics and ImmunoGen extend AbbVie’s reach into therapeutic areas with substantial unmet need. Cerevel enhances AbbVie’s neuroscience capabilities with assets in psychiatric and neurological disorders, while ImmunoGen strengthens its oncology pipeline through next-generation antibody-drug conjugates for solid tumors and hematologic malignancies. Taken together, these moves show AbbVie’s intent to secure leadership stability while investing in high-growth, innovative therapies, positioning the company for sustainable success beyond its current product base.",
+    "accepted_answers": [
+      "AbbVie demonstrates a dual focus on leadership stability and portfolio expansion. The succession of Robert Michael as CEO in July 2024, followed by his planned appointment as Chairman in 2025, underscores a carefully managed governance transition aimed at continuity in strategic execution. On the portfolio side, the 2024 acquisitions of Cerevel Therapeutics and ImmunoGen extend AbbVie’s reach into therapeutic areas with substantial unmet need. Cerevel enhances AbbVie’s neuroscience capabilities with assets in psychiatric and neurological disorders, while ImmunoGen strengthens its oncology pipeline through next-generation antibody-drug conjugates for solid tumors and hematologic malignancies. Taken together, these moves show AbbVie’s intent to secure leadership stability while investing in high-growth, innovative therapies, positioning the company for sustainable success beyond its current product base."
+    ],
+    "difficulty": "Hard",
+    "reasoning_type": "Qualitative",
+    "gold_passage_ids": [
+      "src-dd3ebc3c83e240a7"
+    ],
+    "hard_negative_ids": [
+      "src-03d68511957ace15",
+      "src-e7984f46741086a4",
+      "src-cf4f300b67d58f74",
+      "src-0c363451ea7b024c",
+      "src-00de02bd1c497ce4"
+    ],
+    "scorable": true
+  }
+]

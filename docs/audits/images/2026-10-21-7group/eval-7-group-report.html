@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>MemoraX 7组专项评测</title>
+<style>
+  :root {
+    --ink: #17202a;
+    --muted: #617080;
+    --line: #d7dee6;
+    --surface: #fbfcfd;
+    --panel: #f2f5f8;
+    --teal: #0f766e;
+    --blue: #2563eb;
+    --orange: #d97706;
+    --violet: #7c3aed;
+    --red: #c2413b;
+    --green: #16825d;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #cbd5e1; }
+  body { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; color: var(--ink); }
+  .page {
+    position: relative; width: 1600px; height: 1000px; padding: 54px 72px 48px;
+    background: var(--surface); overflow: hidden;
+  }
+  .page-accent { position: absolute; left: 0; top: 0; width: 12px; height: 100%; background: var(--teal); }
+  .page-head { display: flex; justify-content: space-between; align-items: flex-start; min-height: 144px; }
+  .kicker { font-size: 14px; letter-spacing: 2.4px; color: var(--teal); font-weight: 600; margin-bottom: 12px; }
+  h1 { margin: 0; font-size: 46px; line-height: 1.16; letter-spacing: 0; font-weight: 600; }
+  .page-head p { margin: 12px 0 0; color: var(--muted); font-size: 18px; line-height: 1.5; }
+  .brand { text-align: right; color: var(--ink); font-size: 18px; line-height: 1.2; font-weight: 700; letter-spacing: 1.5px; }
+  .brand span { color: var(--muted); font-size: 11px; letter-spacing: 2px; }
+  main { height: 748px; }
+  footer { position: absolute; left: 72px; right: 72px; bottom: 22px; border-top: 1px solid var(--line); padding-top: 12px; display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
+  .overview-top, .fin-overview, .ncp-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 22px; }
+  .ncp-metrics { grid-template-columns: repeat(6, 1fr); }
+  .fin-overview { grid-template-columns: repeat(5, 1fr); margin-bottom: 16px; }
+  .fin-overview .metric { min-height: 104px; padding: 14px 20px; }
+  .fin-overview .metric-value { font-size: 30px; margin-top: 7px; }
+  .metric { min-height: 124px; padding: 20px 22px; background: var(--panel); border-radius: 8px; border-left: 4px solid var(--teal); }
+  .metric-label { font-size: 13px; color: var(--muted); }
+  .metric-value { font-size: 34px; line-height: 1.1; font-weight: 600; margin-top: 10px; }
+  .metric-note { font-size: 12px; color: var(--muted); margin-top: 8px; min-height: 18px; }
+  .metric.success { border-color: var(--green); }
+  .metric.accent { border-color: var(--orange); }
+  .metric.poor { border-color: var(--red); }
+  .metric.watch { border-color: var(--orange); }
+  .metric.good { border-color: var(--teal); }
+  .group-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .group-card { min-height: 180px; padding: 20px; border-radius: 8px; background: var(--panel); border-top: 4px solid var(--teal); }
+  .group-card.blue { border-color: var(--blue); }
+  .group-card.orange { border-color: var(--orange); }
+  .group-card.violet { border-color: var(--violet); }
+  .group-card.red { border-color: var(--red); }
+  .group-title { font-size: 18px; font-weight: 600; }
+  .group-desc { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .group-score { font-size: 38px; font-weight: 600; margin-top: 18px; }
+  .group-count { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .group-note { font-size: 12px; color: var(--muted); margin-top: 14px; }
+  .insight-grid { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .insight-grid div, .boundary-grid div, .fin-notes div { padding: 18px 20px; background: var(--panel); border-radius: 8px; }
+  .insight-grid b, .boundary-grid b, .fin-notes b { display: block; font-size: 14px; margin-bottom: 8px; }
+  .insight-grid span, .boundary-grid span, .fin-notes span { font-size: 13px; line-height: 1.55; color: var(--muted); }
+  .profile-hero { display: grid; grid-template-columns: 360px 1fr; gap: 18px; min-height: 190px; margin-bottom: 20px; }
+  .score-block, .hero-note { background: var(--panel); border-radius: 8px; padding: 22px 26px; }
+  .score-block { border-left: 5px solid var(--teal); }
+  .score-number { font-size: 58px; line-height: 1; font-weight: 600; color: var(--teal); }
+  .score-count { font-size: 16px; color: var(--muted); margin-top: 10px; }
+  .score-tags { display: flex; gap: 8px; margin-top: 20px; }
+  .score-tags span { background: #e5ecef; color: var(--ink); padding: 6px 10px; border-radius: 4px; font-size: 12px; }
+  .eyebrow { color: var(--teal); text-transform: uppercase; font-size: 12px; letter-spacing: 1.7px; font-weight: 600; }
+  .hero-copy { font-size: 22px; line-height: 1.5; margin-top: 18px; }
+  .hero-mini { display: flex; gap: 24px; margin-top: 24px; color: var(--muted); font-size: 13px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .panel { background: var(--panel); border-radius: 8px; padding: 20px 22px; }
+  .panel.full { height: 424px; }
+  .panel.compact { height: 270px; }
+  .fin-table-panel { height: 342px; }
+  .panel-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }
+  .panel-head h2 { margin: 0; font-size: 18px; font-weight: 600; }
+  .panel-head span { color: var(--muted); font-size: 12px; }
+  .bar-list { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row { display: grid; grid-template-columns: 142px 1fr 98px; align-items: center; gap: 12px; min-height: 26px; }
+  .bar-label { font-size: 13px; line-height: 1.25; }
+  .bar-label span { display: block; color: var(--muted); font-size: 10px; margin-top: 2px; }
+  .bar-track, .mini-track { height: 8px; background: #dfe5eb; border-radius: 4px; overflow: hidden; }
+  .bar-fill, .mini-track span { display: block; height: 100%; border-radius: 4px; background: var(--teal); }
+  .bar-fill.watch { background: var(--orange); }
+  .bar-fill.poor { background: var(--red); }
+  .bar-value { font-size: 12px; text-align: right; color: var(--muted); white-space: nowrap; }
+  .bar-value b { display: block; color: var(--ink); font-size: 13px; margin-top: 2px; }
+  .rsi-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 16px; margin-bottom: 18px; }
+  .rsi-score, .stage-card { min-height: 158px; padding: 20px 22px; background: var(--panel); border-radius: 8px; }
+  .rsi-score { border-left: 5px solid var(--blue); }
+  .rsi-score .score-number { color: var(--blue); }
+  .stage-rate { font-size: 34px; font-weight: 600; margin-top: 12px; }
+  .stage-count { font-size: 13px; color: var(--muted); }
+  .mini-track { margin-top: 16px; }
+  .stage-foot { font-size: 11px; color: var(--muted); margin-top: 8px; }
+  .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 34px; }
+  .category-row { display: grid; grid-template-columns: 156px 1fr 92px 60px; align-items: center; gap: 10px; font-size: 12px; }
+  .category-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .category-bar { height: 8px; background: #dfe5eb; border-radius: 4px; overflow: hidden; }
+  .category-bar span { display: block; height: 100%; background: var(--teal); border-radius: 4px; }
+  .category-bar span.watch { background: var(--orange); }
+  .category-bar span.poor { background: var(--red); }
+  .category-value { text-align: right; color: var(--muted); }
+  .category-value b { color: var(--ink); }
+  .category-cover { text-align: right; color: var(--muted); }
+  .panel-note { margin-top: 18px; font-size: 12px; line-height: 1.6; color: var(--muted); }
+  .panel-note b { color: var(--ink); }
+  .novel-top { display: grid; grid-template-columns: 1fr 70px 1fr 1fr; gap: 16px; align-items: center; margin-bottom: 14px; }
+  .novel-top .metric { min-height: 104px; padding: 14px 20px; }
+  .novel-top .metric-value { font-size: 30px; margin-top: 7px; }
+  .arrow-block { text-align: center; font-size: 28px; color: var(--muted); }
+  .novel-middle { height: 300px; margin-bottom: 14px; }
+  .dual-row { display: grid; grid-template-columns: 70px 1fr 128px; align-items: center; gap: 12px; margin-bottom: 17px; }
+  .dual-label { font-size: 12px; }
+  .dual-bars { position: relative; height: 26px; }
+  .dual-bars span { position: absolute; left: 0; height: 9px; border-radius: 4px; }
+  .dual-bars .old { top: 1px; background: #aab6c1; }
+  .dual-bars .new { top: 15px; background: var(--orange); }
+  .dual-value { text-align: right; font-size: 11px; color: var(--muted); white-space: nowrap; }
+  .dual-value b { display: block; color: var(--ink); font-size: 13px; margin-top: 2px; }
+  .retrieval-panel { border-left: 4px solid var(--orange); }
+  .retrieval-compare { display: flex; flex-direction: column; gap: 18px; }
+  .retrieval-compare div { border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+  .retrieval-compare span { display: block; color: var(--muted); font-size: 12px; }
+  .retrieval-compare strong { display: inline-block; font-size: 26px; margin-top: 5px; }
+  .retrieval-compare small { color: var(--muted); margin-left: 12px; }
+  .risk-delta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 38px; }
+  .delta-row { display: grid; grid-template-columns: 1fr 160px 82px; align-items: center; font-size: 11px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  .delta-row > div:first-child span { color: var(--muted); margin-left: 8px; }
+  .delta-values { text-align: right; }
+  .delta-values b { margin-left: 6px; }
+  .delta { text-align: right; font-weight: 600; }
+  .delta.up { color: var(--green); }
+  .delta.down { color: var(--red); }
+  .ncp-bottom { height: 492px; }
+  .callout-panel { border-left: 4px solid var(--red); }
+  .big-callout { font-size: 35px; line-height: 1.35; font-weight: 600; margin-top: 38px; }
+  .callout-panel p { font-size: 15px; line-height: 1.7; color: var(--muted); margin-top: 24px; }
+  .data-table, .method-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .data-table th, .method-table th { text-align: left; color: var(--muted); font-weight: 500; border-bottom: 1px solid #cbd3dc; padding: 12px 10px; }
+  .data-table td { border-bottom: 1px solid var(--line); padding: 9px 10px; }
+  .data-table td span { display: block; font-size: 20px; font-weight: 600; }
+  .data-table td span.watch { color: var(--orange); }
+  .data-table td span.poor { color: var(--red); }
+  .data-table td span.good { color: var(--green); }
+  .data-table td small { color: var(--muted); font-size: 11px; }
+  .fin-notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 14px; }
+  .fin-notes div { padding: 14px 16px; }
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 480px; }
+  .method-panel { height: 480px; }
+  .method-table tr { border-bottom: 1px solid var(--line); }
+  .method-table td { padding: 15px 8px; font-size: 13px; }
+  .method-table td:nth-child(2) { width: 100px; font-weight: 600; }
+  .method-table td:nth-child(3) { color: var(--muted); }
+  .strategy-list { display: flex; flex-direction: column; gap: 12px; }
+  .strategy-list div { border-left: 3px solid var(--teal); padding: 10px 14px; background: var(--surface); }
+  .strategy-list b, .strategy-list span, .strategy-list em { display: block; }
+  .strategy-list b { font-size: 14px; }
+  .strategy-list span { font-size: 12px; margin-top: 3px; }
+  .strategy-list em { font-style: normal; font-size: 11px; color: var(--muted); margin-top: 5px; }
+  .boundary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+  .run-ids { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .run-ids span { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; background: #e7edf2; padding: 7px 10px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<section class="page" id="page-1">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">EXECUTIVE OVERVIEW</div>
+        <h1>记忆系统评测 · 7组专项结果</h1>
+        <p>R79 通用 YAML + FinRank 金融专用 YAML · 2026-10-21</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="overview-top">
+    <div class="metric "><div class="metric-label">测试组</div><div class="metric-value">7</div><div class="metric-note">中文 A/B/C、包子、小说、NCP、金融</div></div>
+    <div class="metric "><div class="metric-label">评测任务</div><div class="metric-value">440</div><div class="metric-note">430 道问答 + 10 部 NCP 电影</div></div>
+    <div class="metric "><div class="metric-label">YAML 文件</div><div class="metric-value">2</div><div class="metric-note">通用 R79 + 金融 source-relations</div></div>
+    <div class="metric "><div class="metric-label">未解决执行异常</div><div class="metric-value">0</div><div class="metric-note">金融 2 题由替补题计入30题</div></div>
+  </div>
+  <div class="group-grid">
+
+      <div class="group-card teal">
+        <div class="group-title">中文 A</div>
+        <div class="group-desc">顾澄安</div>
+        <div class="group-score">64.7%</div>
+        <div class="group-count">22 / 34</div>
+        <div class="group-note">34题 · 0执行错误</div>
+      </div>
+      <div class="group-card teal">
+        <div class="group-title">中文 B</div>
+        <div class="group-desc">陆知行</div>
+        <div class="group-score">66.7%</div>
+        <div class="group-count">22 / 33</div>
+        <div class="group-note">33题 · 0执行错误</div>
+      </div>
+      <div class="group-card teal">
+        <div class="group-title">中文 C</div>
+        <div class="group-desc">沈予宁</div>
+        <div class="group-score">66.7%</div>
+        <div class="group-count">22 / 33</div>
+        <div class="group-note">33题 · 0执行错误</div>
+      </div>
+      <div class="group-card blue">
+        <div class="group-title">包子 / RSI</div>
+        <div class="group-desc">跨会话行为记忆</div>
+        <div class="group-score">56.0%</div>
+        <div class="group-count">56 / 100</div>
+        <div class="group-note">100题 · 0执行错误</div>
+      </div>
+      <div class="group-card orange">
+        <div class="group-title">小说四 trace</div>
+        <div class="group-desc">四部剧情 · 五阶段</div>
+        <div class="group-score">60.0%</div>
+        <div class="group-count">120 / 200</div>
+        <div class="group-note">关键词选桶 · 复测</div>
+      </div>
+      <div class="group-card violet">
+        <div class="group-title">NCP-Bench</div>
+        <div class="group-desc">电影闭环记忆</div>
+        <div class="group-score">完成</div>
+        <div class="group-count">10 / 10</div>
+        <div class="group-note">平均 8 turns / 部</div>
+      </div>
+      <div class="group-card red">
+        <div class="group-title">FinRank v22</div>
+        <div class="group-desc">金融专用 YAML</div>
+        <div class="group-score">60.0%</div>
+        <div class="group-count">18 / 30</div>
+        <div class="group-note">30道有效样本</div>
+      </div>
+  </div>
+  <div class="insight-grid">
+    <div><b>提升最大</b><span>小说切关键词选桶后，准确率 46.5% → 60.0%。</span></div>
+    <div><b>主要短板</b><span>行为主体、时间顺序、物品迁移仍是跨组共性风险。</span></div>
+    <div><b>稳定性</b><span>全量后端测试 260 passed；本轮无遗留执行错误。</span></div>
+  </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>总览</span>
+      <span>01 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-2">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">CHINESE PROFILE / A</div>
+        <h1>中文 A · 顾澄安</h1>
+        <p>34 道题 · 12 道 LongMemEval 基础题 + 22 道高风险扩充题</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="profile-hero">
+      <div class="score-block">
+        <div class="score-number">64.7%</div>
+        <div class="score-count">22 / 34 通过</div>
+        <div class="score-tags"><span>0 执行错误</span><span>R79 通用 YAML</span></div>
+      </div>
+      <div class="hero-note">
+        <div class="eyebrow">一句话判断</div>
+        <div class="hero-copy">个性化和证据追踪最弱；物品迁移与虚构行为控制较好。</div>
+        <div class="hero-mini">
+          <span>最弱能力：个性化 20.0%</span>
+          <span>最弱风险：人物身份污染 55.6%</span>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <section class="panel">
+        <div class="panel-head"><h2>LongMemEval 能力类型</h2><span>多标签 · 一题可计入多类</span></div>
+        <div class="bar-list"><div class="bar-row">
+    <div class="bar-label">助手历史记忆</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:75%"></div></div>
+    <div class="bar-value">3/4<b>75.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">冲突解决</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">1/1<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">跨会话推理</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">6/9<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">证据追踪</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:33.3%"></div></div>
+    <div class="bar-value">1/3<b>33.3%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">信息提取</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:64.7%"></div></div>
+    <div class="bar-value">11/17<b>64.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">知识更新</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:80%"></div></div>
+    <div class="bar-value">8/10<b>80.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">数值聚合</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:50%"></div></div>
+    <div class="bar-value">2/4<b>50.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">个性化</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:20%"></div></div>
+    <div class="bar-value">1/5<b>20.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">时间推理</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:68.8%"></div></div>
+    <div class="bar-value">11/16<b>68.8%</b></div>
+  </div></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>七类风险</h2><span>与小说测试统一口径</span></div>
+        <div class="bar-list"><div class="bar-row">
+    <div class="bar-label">行为主体转移</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">4/6<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">虚构行为写入记忆</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">6/6<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">虚假承诺与核验</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">8/12<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">全局记忆泄漏</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">6/9<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">人物身份污染</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:55.6%"></div></div>
+    <div class="bar-value">5/9<b>55.6%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">物品所有权与位置迁移</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">3/3<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">时间顺序错乱</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:60%"></div></div>
+    <div class="bar-value">9/15<b>60.0%</b></div>
+  </div></div>
+      </section>
+    </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>中文 A</span>
+      <span>02 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-3">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">CHINESE PROFILE / B</div>
+        <h1>中文 B · 陆知行</h1>
+        <p>33 道题 · 12 道 LongMemEval 基础题 + 21 道高风险扩充题</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="profile-hero">
+      <div class="score-block">
+        <div class="score-number">66.7%</div>
+        <div class="score-count">22 / 33 通过</div>
+        <div class="score-tags"><span>0 执行错误</span><span>R79 通用 YAML</span></div>
+      </div>
+      <div class="hero-note">
+        <div class="eyebrow">一句话判断</div>
+        <div class="hero-copy">助手历史记忆、行为主体和全局边界是主要失分来源。</div>
+        <div class="hero-mini">
+          <span>最弱能力：助手历史记忆 25.0%</span>
+          <span>最弱风险：行为主体转移 50.0%</span>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <section class="panel">
+        <div class="panel-head"><h2>LongMemEval 能力类型</h2><span>多标签 · 一题可计入多类</span></div>
+        <div class="bar-list"><div class="bar-row">
+    <div class="bar-label">信息不足拒答</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">2/2<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">助手历史记忆</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:25%"></div></div>
+    <div class="bar-value">1/4<b>25.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">冲突解决</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">2/2<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">跨会话推理</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:53.8%"></div></div>
+    <div class="bar-value">7/13<b>53.8%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">证据追踪</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:75%"></div></div>
+    <div class="bar-value">3/4<b>75.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">信息提取</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:56.3%"></div></div>
+    <div class="bar-value">9/16<b>56.3%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">知识更新</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:77.8%"></div></div>
+    <div class="bar-value">7/9<b>77.8%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">数值聚合</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:80%"></div></div>
+    <div class="bar-value">4/5<b>80.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">个性化</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:75%"></div></div>
+    <div class="bar-value">3/4<b>75.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">时间推理</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:75%"></div></div>
+    <div class="bar-value">9/12<b>75.0%</b></div>
+  </div></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>七类风险</h2><span>与小说测试统一口径</span></div>
+        <div class="bar-list"><div class="bar-row">
+    <div class="bar-label">行为主体转移</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:50%"></div></div>
+    <div class="bar-value">4/8<b>50.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">虚构行为写入记忆</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:52.9%"></div></div>
+    <div class="bar-value">9/17<b>52.9%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">虚假承诺与核验</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:60%"></div></div>
+    <div class="bar-value">6/10<b>60.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">全局记忆泄漏</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:50%"></div></div>
+    <div class="bar-value">5/10<b>50.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">人物身份污染</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:85.7%"></div></div>
+    <div class="bar-value">6/7<b>85.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">物品所有权与位置迁移</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">2/2<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">时间顺序错乱</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:73.3%"></div></div>
+    <div class="bar-value">11/15<b>73.3%</b></div>
+  </div></div>
+      </section>
+    </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>中文 B</span>
+      <span>03 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-4">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">CHINESE PROFILE / C</div>
+        <h1>中文 C · 沈予宁</h1>
+        <p>33 道题 · 12 道 LongMemEval 基础题 + 21 道高风险扩充题</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="profile-hero">
+      <div class="score-block">
+        <div class="score-number">66.7%</div>
+        <div class="score-count">22 / 33 通过</div>
+        <div class="score-tags"><span>0 执行错误</span><span>R79 通用 YAML</span></div>
+      </div>
+      <div class="hero-note">
+        <div class="eyebrow">一句话判断</div>
+        <div class="hero-copy">行为主体转移最弱，其次是全局泄漏和虚构行为。</div>
+        <div class="hero-mini">
+          <span>最弱能力：助手历史记忆 25.0%</span>
+          <span>最弱风险：行为主体转移 42.9%</span>
+        </div>
+      </div>
+    </div>
+    <div class="two-col">
+      <section class="panel">
+        <div class="panel-head"><h2>LongMemEval 能力类型</h2><span>多标签 · 一题可计入多类</span></div>
+        <div class="bar-list"><div class="bar-row">
+    <div class="bar-label">信息不足拒答</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:100%"></div></div>
+    <div class="bar-value">2/2<b>100.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">助手历史记忆</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:25%"></div></div>
+    <div class="bar-value">1/4<b>25.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">冲突解决</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">2/3<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">跨会话推理</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:63.6%"></div></div>
+    <div class="bar-value">7/11<b>63.6%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">证据追踪</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:50%"></div></div>
+    <div class="bar-value">4/8<b>50.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">信息提取</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">10/15<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">知识更新</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:75%"></div></div>
+    <div class="bar-value">9/12<b>75.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">数值聚合</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:83.3%"></div></div>
+    <div class="bar-value">5/6<b>83.3%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">个性化</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:40%"></div></div>
+    <div class="bar-value">2/5<b>40.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">时间推理</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:77.8%"></div></div>
+    <div class="bar-value">7/9<b>77.8%</b></div>
+  </div></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>七类风险</h2><span>与小说测试统一口径</span></div>
+        <div class="bar-list"><div class="bar-row">
+    <div class="bar-label">行为主体转移</div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:42.9%"></div></div>
+    <div class="bar-value">3/7<b>42.9%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">虚构行为写入记忆</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:62.5%"></div></div>
+    <div class="bar-value">10/16<b>62.5%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">虚假承诺与核验</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:77.8%"></div></div>
+    <div class="bar-value">7/9<b>77.8%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">全局记忆泄漏</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:57.1%"></div></div>
+    <div class="bar-value">4/7<b>57.1%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">人物身份污染</div>
+    <div class="bar-track"><div class="bar-fill watch" style="width:66.7%"></div></div>
+    <div class="bar-value">2/3<b>66.7%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">物品所有权与位置迁移</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:75%"></div></div>
+    <div class="bar-value">3/4<b>75.0%</b></div>
+  </div><div class="bar-row">
+    <div class="bar-label">时间顺序错乱</div>
+    <div class="bar-track"><div class="bar-fill good" style="width:76.9%"></div></div>
+    <div class="bar-value">10/13<b>76.9%</b></div>
+  </div></div>
+      </section>
+    </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>中文 C</span>
+      <span>04 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-5">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">RSI / CROSS-SESSION BEHAVIOR</div>
+        <h1>包子 / RSI · 跨会话行为记忆</h1>
+        <p>100 道场景与多会话题 · 121 turns / 241 messages · 七类风险多标签</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="rsi-top">
+    <div class="rsi-score">
+      <div class="score-number">56.0%</div>
+      <div class="score-count">56 / 100 通过 · 0 执行错误</div>
+    </div>
+
+      <div class="stage-card">
+        <div class="eyebrow">Stage 1 · 基础场景</div>
+        <div class="stage-rate">68.0%</div>
+        <div class="stage-count">17 / 25 通过</div>
+        <div class="mini-track"><span style="width:68%"></span></div>
+        <div class="stage-foot">必答点覆盖 74.5%</div>
+      </div>
+      <div class="stage-card">
+        <div class="eyebrow">Stage 7 · 跨会话扩充</div>
+        <div class="stage-rate">52.0%</div>
+        <div class="stage-count">39 / 75 通过</div>
+        <div class="mini-track"><span style="width:52%"></span></div>
+        <div class="stage-foot">必答点覆盖 81.2%</div>
+      </div>
+  </div>
+  <section class="panel full fin-table-panel">
+    <div class="panel-head"><h2>题目主类型</h2><span>通过率 · 必答点覆盖率</span></div>
+    <div class="category-grid">
+
+        <div class="category-row">
+          <div class="category-name">时间顺序错乱</div>
+          <div class="category-bar"><span class="poor" style="width:25%"></span></div>
+          <div class="category-value">2/8 <b>25.0%</b></div>
+          <div class="category-cover">54.3%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">行为主体转移</div>
+          <div class="category-bar"><span class="poor" style="width:30%"></span></div>
+          <div class="category-value">3/10 <b>30.0%</b></div>
+          <div class="category-cover">76.3%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">数值聚合</div>
+          <div class="category-bar"><span class="poor" style="width:33.3%"></span></div>
+          <div class="category-value">4/12 <b>33.3%</b></div>
+          <div class="category-cover">—</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">全局记忆泄漏</div>
+          <div class="category-bar"><span class="poor" style="width:40%"></span></div>
+          <div class="category-value">2/5 <b>40.0%</b></div>
+          <div class="category-cover">88.9%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">人物身份污染</div>
+          <div class="category-bar"><span class="watch" style="width:60%"></span></div>
+          <div class="category-value">6/10 <b>60.0%</b></div>
+          <div class="category-cover">84.8%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">物品所有权与位置迁移</div>
+          <div class="category-bar"><span class="watch" style="width:55.6%"></span></div>
+          <div class="category-value">10/18 <b>55.6%</b></div>
+          <div class="category-cover">86.5%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">虚假承诺与核验</div>
+          <div class="category-bar"><span class="watch" style="width:62.5%"></span></div>
+          <div class="category-value">10/16 <b>62.5%</b></div>
+          <div class="category-cover">87.1%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">虚构行为写入记忆</div>
+          <div class="category-bar"><span class="good" style="width:75%"></span></div>
+          <div class="category-value">6/8 <b>75.0%</b></div>
+          <div class="category-cover">84.0%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">消费与行为</div>
+          <div class="category-bar"><span class="watch" style="width:66.7%"></span></div>
+          <div class="category-value">8/12 <b>66.7%</b></div>
+          <div class="category-cover">66.7%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">地点与路径</div>
+          <div class="category-bar"><span class="good" style="width:80%"></span></div>
+          <div class="category-value">4/5 <b>80.0%</b></div>
+          <div class="category-cover">88.9%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">时序与条件</div>
+          <div class="category-bar"><span class="poor" style="width:0%"></span></div>
+          <div class="category-value">0/2 <b>0.0%</b></div>
+          <div class="category-cover">0.0%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">证据边界</div>
+          <div class="category-bar"><span class="watch" style="width:66.7%"></span></div>
+          <div class="category-value">2/3 <b>66.7%</b></div>
+          <div class="category-cover">100.0%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">因果与力量</div>
+          <div class="category-bar"><span class="good" style="width:100%"></span></div>
+          <div class="category-value">1/1 <b>100.0%</b></div>
+          <div class="category-cover">100.0%</div>
+        </div>
+        <div class="category-row">
+          <div class="category-name">记忆与主体 / 主体与台词</div>
+          <div class="category-bar"><span class="good" style="width:100%"></span></div>
+          <div class="category-value">2/2 <b>100.0%</b></div>
+          <div class="category-cover">100.0%</div>
+        </div>
+    </div>
+    <div class="panel-note"><b>报告重点：</b>时间顺序 25.0%、行为主体 30.0%、数值聚合 33.3%。Stage 7 从 68.0% 降到 52.0%，说明历史变长后关系保持明显衰减。</div>
+  </section></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>包子 / RSI</span>
+      <span>05 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-6">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">NOVEL / SEARCH INTERVENTION</div>
+        <h1>小说四 trace · 关键词选桶复测</h1>
+        <p>同一 R79 YAML、同一 200 题；仅把普通 Search 改为 search_semantic_2_bucket + 冻结关键词</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="novel-top">
+    <div class="metric neutral"><div class="metric-label">旧 Search</div><div class="metric-value">46.5%</div><div class="metric-note">93 / 200</div></div>
+    <div class="arrow-block">→</div>
+    <div class="metric accent"><div class="metric-label">关键词选桶</div><div class="metric-value">60.0%</div><div class="metric-note">120 / 200</div></div>
+    <div class="metric success"><div class="metric-label">提升</div><div class="metric-value">+13.5pp</div><div class="metric-note">通过数 +27</div></div>
+  </div>
+  <div class="two-col novel-middle">
+    <section class="panel">
+      <div class="panel-head"><h2>分阶段准确率</h2><span>旧 vs 新</span></div>
+
+        <div class="dual-row">
+          <div class="dual-label">Stage 1</div>
+          <div class="dual-bars">
+            <span class="old" style="width:47.5%"></span>
+            <span class="new" style="width:62.5%"></span>
+          </div>
+          <div class="dual-value">47.5% → <b>62.5%</b></div>
+        </div>
+        <div class="dual-row">
+          <div class="dual-label">Stage 2</div>
+          <div class="dual-bars">
+            <span class="old" style="width:42.5%"></span>
+            <span class="new" style="width:57.5%"></span>
+          </div>
+          <div class="dual-value">42.5% → <b>57.5%</b></div>
+        </div>
+        <div class="dual-row">
+          <div class="dual-label">Stage 3</div>
+          <div class="dual-bars">
+            <span class="old" style="width:60%"></span>
+            <span class="new" style="width:60%"></span>
+          </div>
+          <div class="dual-value">60.0% → <b>60.0%</b></div>
+        </div>
+        <div class="dual-row">
+          <div class="dual-label">Stage 4</div>
+          <div class="dual-bars">
+            <span class="old" style="width:30%"></span>
+            <span class="new" style="width:57.5%"></span>
+          </div>
+          <div class="dual-value">30.0% → <b>57.5%</b></div>
+        </div>
+        <div class="dual-row">
+          <div class="dual-label">Stage 5</div>
+          <div class="dual-bars">
+            <span class="old" style="width:52.5%"></span>
+            <span class="new" style="width:62.5%"></span>
+          </div>
+          <div class="dual-value">52.5% → <b>62.5%</b></div>
+        </div>
+    </section>
+    <section class="panel retrieval-panel">
+      <div class="panel-head"><h2>检索健康</h2><span>200 题响应统计</span></div>
+      <div class="retrieval-compare">
+        <div><span>零桶题</span><strong>194 → 12</strong><small>下降 182 题</small></div>
+        <div><span>平均桶数</span><strong>0.47 → 9.97</strong><small>中位数 8</small></div>
+        <div><span>问题根因</span><strong>普通 Search 基本不选桶</strong><small>并非题干无法命中</small></div>
+      </div>
+    </section>
+  </div>
+  <section class="panel full compact">
+    <div class="panel-head"><h2>七类风险变化</h2><span>按题目数加权</span></div>
+    <div class="risk-delta-grid">
+      <div class="delta-row">
+          <div>时间顺序错乱<span>29题</span></div>
+          <div class="delta-values">48.3% → <b>69.0%</b></div>
+          <div class="delta up">+20.7pp</div>
+        </div><div class="delta-row">
+          <div>物品所有权与位置迁移<span>40题</span></div>
+          <div class="delta-values">32.5% → <b>47.5%</b></div>
+          <div class="delta up">+15.0pp</div>
+        </div><div class="delta-row">
+          <div>虚假承诺与核验<span>31题</span></div>
+          <div class="delta-values">48.4% → <b>71.0%</b></div>
+          <div class="delta up">+22.6pp</div>
+        </div><div class="delta-row">
+          <div>全局记忆泄漏<span>21题</span></div>
+          <div class="delta-values">42.9% → <b>52.4%</b></div>
+          <div class="delta up">+9.5pp</div>
+        </div><div class="delta-row">
+          <div>人物身份污染<span>19题</span></div>
+          <div class="delta-values">52.6% → <b>68.4%</b></div>
+          <div class="delta up">+15.8pp</div>
+        </div><div class="delta-row">
+          <div>虚构行为写入记忆<span>28题</span></div>
+          <div class="delta-values">50.0% → <b>42.9%</b></div>
+          <div class="delta down">-7.1pp</div>
+        </div><div class="delta-row">
+          <div>行为主体转移<span>32题</span></div>
+          <div class="delta-values">56.3% → <b>71.9%</b></div>
+          <div class="delta up">+15.6pp</div>
+        </div>
+    </div>
+    <div class="panel-note"><b>仍未解决：</b>虚构行为写入记忆回退 7.1pp；物品迁移 47.5%、全局泄漏 52.4%，说明选桶改善不能替代主体和事件边界治理。</div>
+  </section></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>小说四 trace</span>
+      <span>06 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-7">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">NCP-BENCH / MULTI-TURN CLOSURE</div>
+        <h1>NCP-Bench · 电影闭环记忆</h1>
+        <p>10 部电影独立闭环 · Add / Search 均使用 R79 通用 YAML · 平均 8 turns</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="ncp-metrics">
+    <div class="metric success"><div class="metric-label">完成电影</div><div class="metric-value">10 / 10</div><div class="metric-note">0 执行错误</div></div>
+    <div class="metric poor"><div class="metric-label">平均 Trajectory</div><div class="metric-value">16.2%</div><div class="metric-note">剧情推进覆盖率</div></div>
+    <div class="metric poor"><div class="metric-label">Commitment</div><div class="metric-value">9.1%</div><div class="metric-note">承诺满足率</div></div>
+    <div class="metric poor"><div class="metric-label">Fact Conflict</div><div class="metric-value">80.0%</div><div class="metric-note">越低越好</div></div>
+    <div class="metric watch"><div class="metric-label">冲突数量</div><div class="metric-value">10</div><div class="metric-note">10/10 以冲突结束</div></div>
+    <div class="metric poor"><div class="metric-label">完全解决</div><div class="metric-value">0 / 10</div><div class="metric-note">没有一部完整消解冲突</div></div>
+  </div>
+  <div class="two-col ncp-bottom">
+    <section class="panel">
+      <div class="panel-head"><h2>冲突结构</h2><span>按 NCP 指标</span></div>
+      <div class="bar-row">
+    <div class="bar-label">事实冲突<span>Fact conflict rate</span></div>
+    <div class="bar-track"><div class="bar-fill good" style="width:80%"></div></div>
+    <div class="bar-value">8/10<b>80.0%</b></div>
+  </div>
+      <div class="bar-row">
+    <div class="bar-label">玩家输入冲突<span>Player input conflict rate</span></div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:20%"></div></div>
+    <div class="bar-value">2/10<b>20.0%</b></div>
+  </div>
+      <div class="bar-row">
+    <div class="bar-label">承诺冲突<span>Commitment conflict rate</span></div>
+    <div class="bar-track"><div class="bar-fill poor" style="width:0%"></div></div>
+    <div class="bar-value">0/10<b>0.0%</b></div>
+  </div>
+      <div class="panel-note">事实冲突是主要问题；承诺冲突为零，但承诺满足率只有 9.1%，多数承诺没有被真正执行。</div>
+    </section>
+    <section class="panel callout-panel">
+      <div class="eyebrow">解释</div>
+      <div class="big-callout">不是“跑不稳”，<br>而是“闭环推进弱”。</div>
+      <p>10 部电影均在 8 turns 左右触发冲突终止，没有一部达到最大 turn。说明模型会较快暴露矛盾，但无法在后续轮次修复并继续完成剧情目标。</p>
+    </section>
+  </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>NCP-Bench</span>
+      <span>07 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-8">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">FINRANK / FINANCE-SPECIFIC YAML</div>
+        <h1>FinRank v22 · 金融证据评测</h1>
+        <p>30 道有效样本 · 金融专用 source-relations YAML · 固定 30 题展示口径</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="fin-overview">
+    <div class="metric success"><div class="metric-label">Completion</div><div class="metric-value">30 / 30</div><div class="metric-note">含2道替补</div></div>
+    <div class="metric watch"><div class="metric-label">Hard ACC</div><div class="metric-value">60.0%</div><div class="metric-note">18 / 30</div></div>
+    <div class="metric watch"><div class="metric-label">Soft ACC</div><div class="metric-value">66.7%</div><div class="metric-note">20 / 30</div></div>
+    <div class="metric good"><div class="metric-label">Atomic</div><div class="metric-value">73.3%</div><div class="metric-note">107 / 146</div></div>
+    <div class="metric success"><div class="metric-label">Evidence</div><div class="metric-value">83.2%</div><div class="metric-note">84 / 101</div></div>
+  </div>
+  <section class="panel full">
+    <div class="panel-head"><h2>按题目类型拆分</h2><span>Hard / Soft / Atomic / Evidence</span></div>
+    <table class="data-table">
+      <thead><tr><th>类型</th><th>完成</th><th>Hard ACC</th><th>Soft ACC</th><th>Atomic</th><th>Evidence</th></tr></thead>
+      <tbody>
+
+        <tr>
+          <td><b>Easy</b></td>
+          <td>10/10</td>
+          <td><span class="watch">60.0%</span><small>6/10</small></td>
+          <td><span class="watch">60.0%</span><small>6/10</small></td>
+          <td><span class="watch">59.5%</span><small>25/42</small></td>
+          <td><span class="good">82.4%</span><small>28/34</small></td>
+        </tr>
+        <tr>
+          <td><b>Medium</b></td>
+          <td>10/10</td>
+          <td><span class="good">70.0%</span><small>7/10</small></td>
+          <td><span class="good">80.0%</span><small>8/10</small></td>
+          <td><span class="good">88.6%</span><small>39/44</small></td>
+          <td><span class="good">92.6%</span><small>25/27</small></td>
+        </tr>
+        <tr>
+          <td><b>Hard</b></td>
+          <td>10/10</td>
+          <td><span class="poor">50.0%</span><small>5/10</small></td>
+          <td><span class="watch">60.0%</span><small>6/10</small></td>
+          <td><span class="good">71.7%</span><small>43/60</small></td>
+          <td><span class="good">77.5%</span><small>31/40</small></td>
+        </tr>
+        <tr>
+          <td><b>Qualitative</b></td>
+          <td>16/16</td>
+          <td><span class="watch">56.3%</span><small>9/16</small></td>
+          <td><span class="watch">62.5%</span><small>10/16</small></td>
+          <td><span class="good">75.0%</span><small>66/88</small></td>
+          <td><span class="good">82.6%</span><small>57/69</small></td>
+        </tr>
+        <tr>
+          <td><b>Quantitative</b></td>
+          <td>14/14</td>
+          <td><span class="watch">64.3%</span><small>9/14</small></td>
+          <td><span class="good">71.4%</span><small>10/14</small></td>
+          <td><span class="good">82.0%</span><small>41/50</small></td>
+          <td><span class="good">96.4%</span><small>27/28</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <div class="fin-notes">
+    <div><b>正式口径</b><span>原计划 30 道；2 道 Add 504 使用替补题 CTRL-12/19 填充，展示与计算均为 30 道有效样本。</span></div>
+    <div><b>审计保留</b><span>失败原题、替补映射和运行 ID 保留在审计记录中，不删除原始失败证据。</span></div>
+    <div><b>关键短板</b><span>Hard 题最低（50%），Quantitative 和 Medium 相对改善；回答正确但证据来源未对齐仍会判 Hard fail。</span></div>
+  </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>FinRank v22</span>
+      <span>08 / 09</span>
+    </footer>
+  </section>
+<section class="page" id="page-9">
+    <div class="page-accent"></div>
+    <header class="page-head">
+      <div>
+        <div class="kicker">METHODOLOGY / TRACEABILITY</div>
+        <h1>评测范围与口径</h1>
+        <p>本轮 7 组测试的数据来源、YAML 映射和结果解释边界</p>
+      </div>
+      <div class="brand">MEMORAX<br><span>EVAL / 2026</span></div>
+    </header>
+    <main><div class="method-grid">
+    <section class="panel method-panel">
+      <div class="panel-head"><h2>数据集与规模</h2><span>本轮实际执行</span></div>
+      <table class="method-table">
+        <tr><td>中文 A/B/C</td><td>100 题</td><td>12 基础 + 22/21/21 高风险扩充</td></tr>
+        <tr><td>包子 / RSI</td><td>100 题</td><td>121 turns / 241 messages</td></tr>
+        <tr><td>小说四 trace</td><td>200 题</td><td>4 traces / 400 turns / 499 必答点</td></tr>
+        <tr><td>NCP-Bench</td><td>10 部</td><td>平均 8 turns / 部，共 80 turns</td></tr>
+        <tr><td>FinRank v22</td><td>30 题</td><td>28 原题 + 2 替补；固定 30 有效样本</td></tr>
+      </table>
+    </section>
+    <section class="panel method-panel">
+      <div class="panel-head"><h2>YAML 与 Search 策略</h2><span>两份 YAML，三类策略</span></div>
+      <div class="strategy-list">
+        <div><b>通用关键词选桶</b><span>中文三组 + 包子</span><em>semantic_2_bucket · 原题+关键词 · k=14/6</em></div>
+        <div><b>通用语义选桶</b><span>小说四 trace</span><em>semantic_2_bucket · 冻结关键词 · k=14/6</em></div>
+        <div><b>通用普通搜索</b><span>NCP-Bench</span><em>search · top_k=10 · R79 YAML</em></div>
+        <div><b>金融专用搜索</b><span>FinRank v22</span><em>source-relations YAML · 完整 Bucket census</em></div>
+      </div>
+    </section>
+  </div>
+  <div class="boundary-grid">
+    <div><b>多标签口径</b><span>能力类型和七类风险均可一题计入多类，因此分类合计可超过题量。</span></div>
+    <div><b>不同测试不可直接混算</b><span>NCP 没有通过/失败准确率；FinRank 使用固定 30 题和原子评分。</span></div>
+    <div><b>结论边界</b><span>图片数据来自对应运行冻结文件；小说结果已包含 2 道 Judge 失败的安全重试。</span></div>
+  </div>
+  <div class="run-ids">
+    <span>主运行 d50d95f76e3e4977</span>
+    <span>A/金融补跑 b81c8bbebbb74737</span>
+    <span>小说复测 e036285024284547</span>
+    <span>NCP 7edc2c40dcff4bba</span>
+  </div></main>
+    <footer>
+      <span>7组专项评测 · 2026-10-21</span>
+      <span>方法与审计</span>
+      <span>09 / 09</span>
+    </footer>
+  </section>
+</body>
+</html>

@@ -25,15 +25,23 @@
     "profiles/C_沈予宁/stage_3.json": "75ecce293954cbf1ca0e3d5d820188c785c8beb331652d10d14fa2d7e1a4f465"
   },
   "noise_revision": {
-    "dataset_version": "1.3.1",
+    "dataset_version": "2.0.0",
     "bank": "noise-balanced-v1.json",
     "bank_sha256": "ebf81d57e7629aef2b4a98c27e1cc56a473682b4ea67e117dde60fecf57a1cca",
-    "base_material_sha256": "c570b4aa308a1a01dd7e7b5228220b2ca2a82ba01bdf7cce269da528ea3ad6d1",
-    "dataset_sha256": "9a40a63d10f9e48686c66fc057495ea53250b193629fc772b42a52d15d600f3d",
+    "base_material_sha256": "2efe3a72443223d4febc1d269c55eec0da6ff8ae4bd21a2c7d9dae690250408b",
+    "dataset_sha256": "28759ebb207c646c40f9a3341ca068a99f137e646377a772316624390e1d74db",
     "ordinary_pairs": 225,
     "high_similarity_pairs": 225,
     "boundaries": "Third-party, quoted, hypothetical or generic contexts only; no new settled facts about the tested person. Audit labels are offline only."
   },
-  "expanded_dataset_sha256": "9a40a63d10f9e48686c66fc057495ea53250b193629fc772b42a52d15d600f3d",
-  "expanded_dataset_version": "1.3.1"
+  "expanded_dataset_sha256": "28759ebb207c646c40f9a3341ca068a99f137e646377a772316624390e1d74db",
+  "expanded_dataset_version": "2.0.0",
+  "longmem_sources": {
+    "datasets/zh_profiles/v1/longmem/A.json": "37929a66fa508035a04bc64e37d340df9caace0f7664138d615fa814193a33f0",
+    "datasets/zh_profiles/v1/longmem/B.json": "64e3a7d0bc98c8eceaa87633e4fabc4e9021f4becf4aeaeeeee846da6f52ba79",
+    "datasets/zh_profiles/v1/longmem/C.json": "43ab7852f086144c985f41ddfa835fb49204d013275b209608d0d4cd02d25406",
+    "datasets/zh_profiles/v1/longmem/original-risk-tags.json": "4bac88f01dd2df2102373b28a28a4ae1650af9f654b1fbaca865ba57c1b2def6",
+    "datasets/zh_profiles/v1/longmem/retrieval-queries.json": "a5df708ea7dc617718df608f19e1c498f9d63a1a27d7baffc68e0197a8881e92"
+  },
+  "longmem_protocol": "multisession-source-v2"
 }

@@ -1,0 +1,1460 @@
+{
+  "profile_id": "C",
+  "sessions": [
+    {
+      "id": "C-S4",
+      "period": "2026-09-12 晚间",
+      "session_time": "2026-09-12T20:00:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "C-S4-M1",
+          "role": "user",
+          "timestamp": "2026-09-12T20:00:00+08:00",
+          "text": "8 月 22 日我们一家去上海自然博物馆的昆虫展，实际待了 90 分钟；那天是暑假，人很多。"
+        },
+        {
+          "id": "C-S4-M2",
+          "role": "assistant",
+          "timestamp": "2026-09-12T20:00:08+08:00",
+          "text": "我记下了：活动发生在 8 月 22 日，时长 90 分钟；这次是上海自然博物馆的昆虫展。"
+        },
+        {
+          "id": "C-S4-M3",
+          "role": "user",
+          "timestamp": "2026-09-12T20:01:20+08:00",
+          "text": "10 月 3 日的家庭出行还没定，我想先按四个环节准备：上午去上海昆虫博物馆看甲虫展，下午回杨浦做 20 分钟叶脉拓印，晚餐选安静、不辣且不含花生的餐厅，最后给星星留 15 分钟自己记录。"
+        },
+        {
+          "id": "C-S4-M4",
+          "role": "assistant",
+          "timestamp": "2026-09-12T20:01:31+08:00",
+          "text": "可以把这套安排当成 10 月 3 日家庭活动的草案：上海昆虫博物馆甲虫展、下午 20 分钟叶脉拓印、安静且不辣不含花生的晚餐、最后 15 分钟让星星自己记录。"
+        },
+        {
+          "id": "C-S4-M5",
+          "role": "user",
+          "timestamp": "2026-09-12T20:03:05+08:00",
+          "text": "做活动清单我习惯先打印成纸质版逐项勾选，再录入电脑；只给我电子表我会漏项。"
+        },
+        {
+          "id": "C-S4-M6",
+          "role": "assistant",
+          "timestamp": "2026-09-12T20:03:14+08:00",
+          "text": "以后做清单会先给纸质勾选版，再整理电子版。"
+        },
+        {
+          "id": "C-S4-M7",
+          "role": "user",
+          "timestamp": "2026-09-12T20:05:40+08:00",
+          "text": "昆虫观察角最初预算上限是 800 元。9 月 15 日我计划去买 260 元的观察灯，尺寸合适的话，9 月 18 日再安装。"
+        },
+        {
+          "id": "C-S4-M8",
+          "role": "assistant",
+          "timestamp": "2026-09-12T20:05:51+08:00",
+          "text": "当前是计划：9 月 15 日购买 260 元观察灯，9 月 18 日视尺寸安装；等实际买回并装好后再更新完成状态。"
+        },
+        {
+          "id": "C-S4-M9",
+          "role": "user",
+          "timestamp": "2026-09-12T20:08:10+08:00",
+          "text": "供应商联系人登记名也是沈予宁，她发来架子和防潮柜套餐报价 620 元，我还没下单。同事沈雨宁问我黄色昆虫观察盒能否借用，我还在考虑。"
+        },
+        {
+          "id": "C-S4-M10",
+          "role": "assistant",
+          "timestamp": "2026-09-12T20:08:24+08:00",
+          "text": "供应商沈予宁的 620 元套餐先记在报价清单；同事沈雨宁的观察盒请求记在待回复事项。"
+        }
+      ]
+    },
+    {
+      "id": "C-S5",
+      "period": "2026-09-26 晚间",
+      "session_time": "2026-09-26T21:00:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "C-S5-M1",
+          "role": "user",
+          "timestamp": "2026-09-26T21:00:00+08:00",
+          "text": "9 月 15 日观察灯实际买到了，付款 260 元，但当天没有安装。"
+        },
+        {
+          "id": "C-S5-M2",
+          "role": "assistant",
+          "timestamp": "2026-09-26T21:00:08+08:00",
+          "text": "观察灯已经购买，安装还在安排中。"
+        },
+        {
+          "id": "C-S5-M3",
+          "role": "user",
+          "timestamp": "2026-09-26T21:01:25+08:00",
+          "text": "9 月 20 日我把星星的黄色昆虫观察盒借给同事沈雨宁，她女儿拿去幼儿园做展示；盒子仍在我们家的物品清单里。"
+        },
+        {
+          "id": "C-S5-M4",
+          "role": "assistant",
+          "timestamp": "2026-09-26T21:01:36+08:00",
+          "text": "黄色昆虫观察盒借出期间仍归沈予宁家所有，借用记录写在同事沈雨宁名下。"
+        },
+        {
+          "id": "C-S5-M5",
+          "role": "user",
+          "timestamp": "2026-09-26T21:03:18+08:00",
+          "text": "观察角预算上限从 800 元调到 1100 元。9 月 24 日又买了 300 元的小防潮柜，观察灯仍是 260 元。"
+        },
+        {
+          "id": "C-S5-M6",
+          "role": "assistant",
+          "timestamp": "2026-09-26T21:03:27+08:00",
+          "text": "记录为预算上限 800 元调整为 1100 元；已支出观察灯 260 元和小防潮柜 300 元。"
+        },
+        {
+          "id": "C-S5-M7",
+          "role": "user",
+          "timestamp": "2026-09-26T21:05:04+08:00",
+          "text": "9 月 22 日全家去了共青森林公园夜观，实际 150 分钟。这次的时间、地点和时长都有单独记录，与 8 月 22 日的 90 分钟是两段活动。"
+        },
+        {
+          "id": "C-S5-M8",
+          "role": "assistant",
+          "timestamp": "2026-09-26T21:05:14+08:00",
+          "text": "9 月 22 日共青森林公园夜观记录为 150 分钟的独立活动；8 月 22 日自然博物馆昆虫展保留为另一条活动记录。"
+        },
+        {
+          "id": "C-S5-M9",
+          "role": "user",
+          "timestamp": "2026-09-26T21:07:40+08:00",
+          "text": "10 月 3 日那套四环节安排先保留，叶脉拓印暂定 20 分钟；我组织家庭活动时希望每个环节之间至少留 15 分钟缓冲，不然星星容易累。"
+        },
+        {
+          "id": "C-S5-M10",
+          "role": "assistant",
+          "timestamp": "2026-09-26T21:07:51+08:00",
+          "text": "10 月 3 日草案继续保留，并记下你希望每个环节之间至少留 15 分钟缓冲。"
+        }
+      ]
+    },
+    {
+      "id": "C-S6",
+      "period": "2026-10-10 晚间",
+      "session_time": "2026-10-10T18:30:00+08:00",
+      "synthetic": true,
+      "messages": [
+        {
+          "id": "C-S6-M1",
+          "role": "user",
+          "timestamp": "2026-10-10T18:30:00+08:00",
+          "text": "10 月 3 日家庭活动完成了：上海昆虫博物馆参观 60 分钟，下午叶脉拓印 60 分钟；晚餐按不辣、不含花生和安静环境选的。"
+        },
+        {
+          "id": "C-S6-M2",
+          "role": "assistant",
+          "timestamp": "2026-10-10T18:30:11+08:00",
+          "text": "10 月 3 日的家庭活动已经完成，博物馆 60 分钟、叶脉拓印 60 分钟，晚餐满足不辣、不含花生和安静要求。"
+        },
+        {
+          "id": "C-S6-M3",
+          "role": "user",
+          "timestamp": "2026-10-10T18:32:02+08:00",
+          "text": "10 月 5 日程越从同事沈雨宁那里取回黄色昆虫观察盒，先放到星星书桌边；10 月 7 日我把它放回阳台柜。从 9 月 20 日到 10 月 5 日按日期差计算是 15 天。"
+        },
+        {
+          "id": "C-S6-M4",
+          "role": "assistant",
+          "timestamp": "2026-10-10T18:32:13+08:00",
+          "text": "程越在 10 月 5 日取回观察盒，你随后放到星星书桌边；10 月 7 日已经由你放回阳台柜。"
+        },
+        {
+          "id": "C-S6-M5",
+          "role": "user",
+          "timestamp": "2026-10-10T18:34:20+08:00",
+          "text": "观察角 10 月 6 日完工。预算上限最后核准为 1250 元；实际支出 1180 元，其中观察灯 260 元、防潮柜 300 元、架子 450 元、植物 170 元。"
+        },
+        {
+          "id": "C-S6-M6",
+          "role": "assistant",
+          "timestamp": "2026-10-10T18:34:31+08:00",
+          "text": "观察角已经完工；最终预算上限 1250 元，实际支出 1180 元。"
+        },
+        {
+          "id": "C-S6-M7",
+          "role": "user",
+          "timestamp": "2026-10-10T18:36:08+08:00",
+          "text": "这次安排我先用纸质清单勾选，再录入电脑；清单上把计划、已购买和已完成分开写，每个环节之间留至少 15 分钟。"
+        },
+        {
+          "id": "C-S6-M8",
+          "role": "assistant",
+          "timestamp": "2026-10-10T18:36:18+08:00",
+          "text": "记录写成三栏：计划、已购买和已完成；纸质清单先勾选，再录入电子版，环节之间至少留 15 分钟。"
+        },
+        {
+          "id": "C-S6-M9",
+          "role": "user",
+          "timestamp": "2026-10-10T18:38:44+08:00",
+          "text": "供应商沈予宁后来只发来 620 元套餐的第二版说明；我最后没有采用她的套餐，程越按 450 元买了架子。"
+        },
+        {
+          "id": "C-S6-M10",
+          "role": "assistant",
+          "timestamp": "2026-10-10T18:38:55+08:00",
+          "text": "供应商沈予宁的 620 元套餐保留在报价清单；实际架子是程越按 450 元购买的。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "C-L01",
+      "question": "8 月 22 日、9 月 22 日和 10 月 3 日三次家庭昆虫活动合计多少分钟，折合多少小时？",
+      "must_include": "90 + 150 + 120 = 360 分钟，即 6 小时。",
+      "must_not": "把 8 月 22 日的 90 分钟重复计算，或把 9 月 22 日当成 8 月活动的再次提及。",
+      "required_facts": [
+        {
+          "text": "8 月 22 日上海自然博物馆昆虫展实际 90 分钟。",
+          "source_quote": "8 月 22 日我们一家去上海自然博物馆的昆虫展，实际待了 90 分钟"
+        },
+        {
+          "text": "9 月 22 日共青森林公园夜观实际 150 分钟。",
+          "source_quote": "9 月 22 日全家去了共青森林公园夜观，实际 150 分钟"
+        },
+        {
+          "text": "9 月 22 日活动是独立的一次。",
+          "source_quote": "这次的时间、地点和时长都有单独记录，与 8 月 22 日的 90 分钟是两段活动"
+        },
+        {
+          "text": "10 月 3 日上海昆虫博物馆参观 60 分钟。",
+          "source_quote": "上海昆虫博物馆参观 60 分钟"
+        },
+        {
+          "text": "10 月 3 日叶脉拓印 60 分钟。",
+          "source_quote": "下午叶脉拓印 60 分钟"
+        },
+        {
+          "text": "10 月 3 日家庭活动完成，并记录了博物馆和叶脉拓印两段时长。",
+          "source_quote": "10 月 3 日家庭活动完成了"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "numerical_aggregation",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M1",
+        "C-S4-M2",
+        "C-S5-M7",
+        "C-S5-M8",
+        "C-S6-M1",
+        "C-S6-M2"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-08-22 至 2026-10-03",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L02",
+      "question": "画像中记录了哪三次独立的家庭昆虫活动？为什么 9 月 22 日不能算成 8 月 22 日的重复提及？",
+      "must_include": "8 月 22 日上海自然博物馆 90 分钟；9 月 22 日共青森林公园夜观 150 分钟；10 月 3 日昆虫博物馆参观 60 分钟和叶脉拓印 60 分钟。9 月 22 日是日期、地点和时长都不同的独立活动。",
+      "must_not": "把 9 月 22 日与 8 月 22 日合并成一次，或漏掉 10 月 3 日的活动。",
+      "required_facts": [
+        {
+          "text": "8 月 22 日在上海自然博物馆，时长 90 分钟。",
+          "source_quote": "8 月 22 日我们一家去上海自然博物馆的昆虫展，实际待了 90 分钟"
+        },
+        {
+          "text": "9 月 22 日在共青森林公园夜观，时长 150 分钟。",
+          "source_quote": "9 月 22 日全家去了共青森林公园夜观，实际 150 分钟"
+        },
+        {
+          "text": "9 月 22 日不是对 8 月 22 日的重复回顾。",
+          "source_quote": "这次的时间、地点和时长都有单独记录，与 8 月 22 日的 90 分钟是两段活动"
+        },
+        {
+          "text": "10 月 3 日家庭活动完成，博物馆 60 分钟。",
+          "source_quote": "10 月 3 日家庭活动完成了：上海昆虫博物馆参观 60 分钟"
+        },
+        {
+          "text": "10 月 3 日叶脉拓印 60 分钟。",
+          "source_quote": "下午叶脉拓印 60 分钟"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "numerical_aggregation",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "fabricated_action",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M1",
+        "C-S4-M2",
+        "C-S5-M7",
+        "C-S5-M8",
+        "C-S6-M1",
+        "C-S6-M2"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-08-22 / 2026-09-22 / 2026-10-03",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L03",
+      "question": "8 月 22 日的昆虫展是在哪次会话中被提到的？活动日期、实际时长和地点分别是什么？",
+      "must_include": "在 2026 年 9 月 12 日的 C-S4 会话提到；活动发生于 8 月 22 日，实际 90 分钟，地点是上海自然博物馆。",
+      "must_not": "把会话时间 9 月 12 日当成活动发生日期，或把 90 分钟记成 150 分钟。",
+      "required_facts": [
+        {
+          "text": "活动日期为 8 月 22 日。",
+          "source_quote": "8 月 22 日我们一家去上海自然博物馆的昆虫展"
+        },
+        {
+          "text": "活动时长为 90 分钟。",
+          "source_quote": "实际待了 90 分钟"
+        },
+        {
+          "text": "地点是上海自然博物馆。",
+          "source_quote": "这次是上海自然博物馆的昆虫展"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "temporal_disorder"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "C-S4-M1",
+        "C-S4-M2"
+      ],
+      "session_ids": [
+        "C-S4"
+      ],
+      "answerable": true,
+      "event_time": "2026-08-22",
+      "session_time": "2026-09-12",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L04",
+      "question": "请按发生时间从早到晚排列这些事件：观察灯购买、观察盒归还、家庭活动完成、观察盒借出、共青森林公园夜观、观察角完工、自然博物馆昆虫展。",
+      "must_include": "8 月 22 日自然博物馆昆虫展；9 月 15 日购买观察灯；9 月 20 日借出观察盒；9 月 22 日共青森林公园夜观；10 月 3 日家庭活动完成；10 月 5 日归还观察盒；10 月 6 日观察角完工。",
+      "must_not": "把归还排到借出之前，把观察角完工排到购买观察灯之前，或把夜观排到 8 月昆虫展之前。",
+      "required_facts": [
+        {
+          "text": "自然博物馆昆虫展发生在 8 月 22 日。",
+          "source_quote": "8 月 22 日我们一家去上海自然博物馆的昆虫展"
+        },
+        {
+          "text": "观察灯在 9 月 15 日购买。",
+          "source_quote": "9 月 15 日观察灯实际买到了，付款 260 元"
+        },
+        {
+          "text": "观察盒在 9 月 20 日借出。",
+          "source_quote": "9 月 20 日我把星星的黄色昆虫观察盒借给同事沈雨宁"
+        },
+        {
+          "text": "共青森林公园夜观发生在 9 月 22 日。",
+          "source_quote": "9 月 22 日全家去了共青森林公园夜观"
+        },
+        {
+          "text": "家庭活动在 10 月 3 日完成。",
+          "source_quote": "10 月 3 日家庭活动完成了"
+        },
+        {
+          "text": "观察盒在 10 月 5 日归还。",
+          "source_quote": "10 月 5 日程越从同事沈雨宁那里取回黄色昆虫观察盒"
+        },
+        {
+          "text": "观察角在 10 月 6 日完工。",
+          "source_quote": "观察角 10 月 6 日完工"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "item_state_migration"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M1",
+        "C-S5-M1",
+        "C-S5-M3",
+        "C-S5-M7",
+        "C-S6-M1",
+        "C-S6-M3",
+        "C-S6-M5"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-08-22 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L05",
+      "question": "助手在 9 月 12 日把 10 月 3 日家庭活动草案归纳成了哪四个环节？",
+      "must_include": "上海昆虫博物馆甲虫展；下午 20 分钟叶脉拓印；安静且不辣不含花生的晚餐；最后 15 分钟让星星自己记录。",
+      "must_not": "把草案说成已经执行，加入草案之外的景点，或漏掉叶脉拓印或星星记录的时长。",
+      "required_facts": [
+        {
+          "text": "第一环节是上海昆虫博物馆甲虫展。",
+          "source_quote": "上海昆虫博物馆甲虫展"
+        },
+        {
+          "text": "第二环节是下午 20 分钟叶脉拓印。",
+          "source_quote": "下午 20 分钟叶脉拓印"
+        },
+        {
+          "text": "第三环节是安静、不辣、不含花生的晚餐。",
+          "source_quote": "安静且不辣不含花生的晚餐"
+        },
+        {
+          "text": "第四环节是最后 15 分钟让星星自己记录。",
+          "source_quote": "最后 15 分钟让星星自己记录"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "fabricated_action",
+        "false_commitment"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "C-S4-M3",
+        "C-S4-M4"
+      ],
+      "session_ids": [
+        "C-S4"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-03 计划",
+      "session_time": "2026-09-12",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L06",
+      "question": "助手听到纸质清单偏好后承诺怎样处理？10 月 10 日记录中，这次活动实际采用的清单和环节节奏是什么？",
+      "must_include": "助手承诺先给纸质勾选版，再整理电子版；10 月 10 日记录显示她先用纸质清单勾完再录入电脑，环节之间至少留 15 分钟。",
+      "must_not": "说助手只提供电子表，或说这次实际先录电脑再打印纸质清单。",
+      "required_facts": [
+        {
+          "text": "用户需要先打印纸质版逐项勾选，再录入电脑。",
+          "source_quote": "做活动清单我习惯先打印成纸质版逐项勾选，再录入电脑"
+        },
+        {
+          "text": "助手承诺先给纸质勾选版，再整理电子版。",
+          "source_quote": "以后做清单会先给纸质勾选版，再整理电子版"
+        },
+        {
+          "text": "实际执行先用纸质清单勾完再录入电脑。",
+          "source_quote": "这次安排我先用纸质清单勾选，再录入电脑"
+        },
+        {
+          "text": "实际执行时环节之间至少留 15 分钟。",
+          "source_quote": "每个环节之间留至少 15 分钟"
+        }
+      ],
+      "capabilities": [
+        "assistant_memory",
+        "personalization"
+      ],
+      "risk_tags": [
+        "fabricated_action"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "C-S4-M5",
+        "C-S4-M6",
+        "C-S6-M7",
+        "C-S6-M8"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 / 2026-10-03",
+      "session_time": "2026-09-12 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L07",
+      "question": "不指定具体地点，给沈予宁一家一套周末亲子活动通用模板；哪些长期偏好和硬限制必须体现在模板里？",
+      "must_include": "沈予宁长期不吃辣且对花生过敏，程越可以吃辣且不过敏；选择安静、不用长时间排队的环境；右手腕不适时可随时休息；先打印纸质清单勾选再录入电脑；每个环节之间至少留 15 分钟缓冲。",
+      "must_not": "把花生过敏或不吃辣转给程越，忽略手腕限制，或建议先做电子表、活动之间不留缓冲。",
+      "required_facts": [
+        {
+          "text": "沈予宁不吃辣且对花生过敏，程越可以吃辣且不过敏。",
+          "source_quote": "我长期不吃辣，对花生过敏；程越可以吃辣、对花生不过敏"
+        },
+        {
+          "text": "共同偏好安静且不用长时间排队的环境。",
+          "source_quote": "我们共同喜欢安静且不用长时间排队的环境"
+        },
+        {
+          "text": "右手腕不适时需要能随时休息。",
+          "source_quote": "需要避开花生和辣味，并让手腕不适时能随时休息"
+        },
+        {
+          "text": "清单应先打印纸质版逐项勾选，再录入电脑。",
+          "source_quote": "做活动清单我习惯先打印成纸质版逐项勾选，再录入电脑"
+        },
+        {
+          "text": "每个家庭活动环节之间至少留 15 分钟缓冲。",
+          "source_quote": "每个环节之间至少留 15 分钟缓冲"
+        },
+        {
+          "text": "10 月 3 日实际按纸质清单优先和至少 15 分钟缓冲执行。",
+          "source_quote": "这次安排我先用纸质清单勾选，再录入电脑；清单上把计划、已购买和已完成分开写，每个环节之间留至少 15 分钟"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "actor_transfer"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S1-M5",
+        "C-S3-M6",
+        "C-S4-M5",
+        "C-S5-M9",
+        "C-S6-M7"
+      ],
+      "session_ids": [
+        "C-S1",
+        "C-S3",
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "长期偏好至 2026-10-03",
+      "session_time": "2023-2024 / 2026 / 2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L08",
+      "question": "10 月 3 日的晚餐要同时满足谁的哪些饮食要求？程越是否也需要避开辣味和花生？",
+      "must_include": "沈予宁长期不吃辣并对花生过敏，因此晚餐需要不辣、不含花生；程越可以吃辣且对花生不过敏，不应把沈予宁的限制转给他；晚餐环境还需安静。",
+      "must_not": "说程越也不能吃辣或也对花生过敏，或只说“低敏”而不落实不辣、不含花生。",
+      "required_facts": [
+        {
+          "text": "沈予宁长期不吃辣且对花生过敏。",
+          "source_quote": "我长期不吃辣，对花生过敏"
+        },
+        {
+          "text": "程越可以吃辣且对花生不过敏。",
+          "source_quote": "程越可以吃辣、对花生不过敏"
+        },
+        {
+          "text": "10 月 3 日计划选择安静、不辣且不含花生的餐厅。",
+          "source_quote": "晚餐选安静、不辣且不含花生的餐厅"
+        },
+        {
+          "text": "活动完成后确认晚餐按不辣、不含花生和安静环境选择。",
+          "source_quote": "晚餐按不辣、不含花生和安静环境选的"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S1-M5",
+        "C-S4-M3",
+        "C-S4-M4",
+        "C-S6-M1",
+        "C-S6-M2"
+      ],
+      "session_ids": [
+        "C-S1",
+        "C-S4",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "长期 / 2026-10-03",
+      "session_time": "2023-2024 / 2026-09-12 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L09",
+      "question": "昆虫观察角的预算上限经历了哪些变化？最终实际支出是多少，比最初上限和 9 月 26 日前的修订上限分别增加多少？",
+      "must_include": "预算上限从 800 元调整到 1100 元，最后核准为 1250 元；实际支出 1180 元。实际支出比最初上限增加 380 元，比 1100 元上限增加 80 元；最终核准上限比最初上限增加 450 元，比 1100 元增加 150 元。",
+      "must_not": "把 1180 元实际支出说成 1250 元，把三次预算值混成一个，或把增加量算成相加。",
+      "required_facts": [
+        {
+          "text": "最初预算上限是 800 元。",
+          "source_quote": "昆虫观察角最初预算上限是 800 元"
+        },
+        {
+          "text": "预算上限后来从 800 元调整为 1100 元。",
+          "source_quote": "观察角预算上限从 800 元调到 1100 元"
+        },
+        {
+          "text": "已支出观察灯 260 元和小防潮柜 300 元。",
+          "source_quote": "已支出观察灯 260 元和小防潮柜 300 元"
+        },
+        {
+          "text": "最终核准预算上限为 1250 元。",
+          "source_quote": "预算上限最后核准为 1250 元"
+        },
+        {
+          "text": "最终实际支出为 1180 元。",
+          "source_quote": "实际支出 1180 元"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "cross_session_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M7",
+        "C-S4-M8",
+        "C-S5-M5",
+        "C-S5-M6",
+        "C-S6-M5",
+        "C-S6-M6"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "insect_corner_budget_cap",
+      "old_value": "800 元",
+      "new_value": "1250 元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L10",
+      "question": "以 9 月 26 日时已修订的 1100 元上限看，最终 1180 元实际支出是否超支？超多少？最终 1250 元上限又让实际支出留下多少余量？",
+      "must_include": "相对 1100 元修订上限，1180 元超支 80 元；相对最终 1250 元核准上限，实际支出少 70 元。",
+      "must_not": "说 1180 元没有超过 1100 元，或把 1250 元当成实际支出。",
+      "required_facts": [
+        {
+          "text": "最初上限为 800 元。",
+          "source_quote": "昆虫观察角最初预算上限是 800 元"
+        },
+        {
+          "text": "修订后的上限为 1100 元。",
+          "source_quote": "观察角预算上限从 800 元调到 1100 元"
+        },
+        {
+          "text": "最终上限为 1250 元，实际支出为 1180 元。",
+          "source_quote": "预算上限最后核准为 1250 元；实际支出 1180 元"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "cross_session_reasoning",
+        "numerical_aggregation"
+      ],
+      "risk_tags": [
+        "temporal_disorder",
+        "false_commitment"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M7",
+        "C-S5-M5",
+        "C-S5-M6",
+        "C-S6-M5",
+        "C-S6-M6"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-24 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "insect_corner_budget_compare",
+      "old_value": "1100 元",
+      "new_value": "1250 元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L11",
+      "question": "截至 9 月 26 日，观察灯购买和安装分别处于什么状态？观察角何时完工？",
+      "must_include": "9 月 12 日计划 9 月 15 日购买 260 元观察灯并在 9 月 18 日视尺寸安装；9 月 15 日实际购买但当天没有安装；9 月 26 日安装还在安排中；观察角在 10 月 6 日完工。",
+      "must_not": "把 9 月 12 日的计划说成已购买，或把 9 月 15 日说成已安装。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日计划购买 260 元观察灯并在 9 月 18 日安装。",
+          "source_quote": "9 月 15 日我计划去买 260 元的观察灯，尺寸合适的话，9 月 18 日再安装"
+        },
+        {
+          "text": "9 月 12 日记录的是购买和安装计划。",
+          "source_quote": "当前是计划"
+        },
+        {
+          "text": "观察灯在 9 月 15 日实际购买，花费 260 元，但当天没有安装。",
+          "source_quote": "9 月 15 日观察灯实际买到了，付款 260 元，但当天没有安装"
+        },
+        {
+          "text": "9 月 26 日观察灯已购买，安装还在安排中。",
+          "source_quote": "观察灯已经购买，安装还在安排中"
+        },
+        {
+          "text": "观察角最终在 10 月 6 日完工。",
+          "source_quote": "观察角 10 月 6 日完工"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M7",
+        "C-S4-M8",
+        "C-S5-M1",
+        "C-S5-M2",
+        "C-S6-M5",
+        "C-S6-M6"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "insect_corner_status",
+      "old_value": "计划购买和安装",
+      "new_value": "2026-10-06 完工",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L12",
+      "question": "观察灯、防潮柜和架子分别由谁购买？供应商沈予宁的套餐是否下单？助手在 9 月 12 日如何处理供应商报价和借用请求？",
+      "must_include": "沈予宁本人购买 260 元观察灯和 300 元防潮柜；程越按 450 元购买架子；供应商沈予宁的 620 元套餐没有下单；助手把套餐记在报价清单，把观察盒请求记在待回复事项。",
+      "must_not": "把采购归给助手，说供应商套餐已下单，或把程越购买的架子算成供应商套餐的一部分。",
+      "required_facts": [
+        {
+          "text": "助手把供应商套餐记在报价清单。",
+          "source_quote": "供应商沈予宁的 620 元套餐先记在报价清单"
+        },
+        {
+          "text": "助手把观察盒请求记在待回复事项。",
+          "source_quote": "同事沈雨宁的观察盒请求记在待回复事项"
+        },
+        {
+          "text": "用户在 9 月 15 日实际买到观察灯并付款 260 元。",
+          "source_quote": "9 月 15 日观察灯实际买到了，付款 260 元"
+        },
+        {
+          "text": "用户在 9 月 24 日买了 300 元小防潮柜。",
+          "source_quote": "9 月 24 日又买了 300 元的小防潮柜"
+        },
+        {
+          "text": "供应商沈予宁的 620 元套餐没有被采用。",
+          "source_quote": "我最后没有采用她的套餐"
+        },
+        {
+          "text": "架子由程越按 450 元购买。",
+          "source_quote": "程越按 450 元买了架子"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M7",
+        "C-S4-M8",
+        "C-S4-M10",
+        "C-S5-M1",
+        "C-S5-M2",
+        "C-S5-M5",
+        "C-S6-M5",
+        "C-S6-M9",
+        "C-S6-M10"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-15 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L13",
+      "question": "供应商沈予宁的 620 元架子和防潮柜套餐是什么状态？她与画像本人是什么关系？实际购买架子的人是谁？",
+      "must_include": "供应商沈予宁不是画像本人，而是第三方供应商；620 元套餐登记在报价清单，前后都没有采用；实际架子是程越按 450 元购买。",
+      "must_not": "把供应商沈予宁与画像本人合并，把 620 元记成实际支出，或说助手购买了套餐。",
+      "required_facts": [
+        {
+          "text": "供应商联系人登记名也是沈予宁，报价为 620 元。",
+          "source_quote": "供应商联系人登记名也是沈予宁，她发来架子和防潮柜套餐报价 620 元"
+        },
+        {
+          "text": "该报价记录后，用户没有下单。",
+          "source_quote": "我还没下单"
+        },
+        {
+          "text": "助手把供应商沈予宁的报价记在报价清单。",
+          "source_quote": "供应商沈予宁的 620 元套餐先记在报价清单"
+        },
+        {
+          "text": "供应商套餐后来仍保留在报价清单。",
+          "source_quote": "供应商沈予宁的 620 元套餐保留在报价清单"
+        },
+        {
+          "text": "实际架子由程越按 450 元购买。",
+          "source_quote": "实际架子是程越按 450 元购买的"
+        }
+      ],
+      "capabilities": [
+        "information_extraction",
+        "conflict_resolution",
+        "assistant_memory"
+      ],
+      "risk_tags": [
+        "identity_pollution",
+        "global_memory_leak"
+      ],
+      "difficulty": "medium",
+      "evidence_ids": [
+        "C-S4-M9",
+        "C-S4-M10",
+        "C-S6-M9",
+        "C-S6-M10"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 至 2026-10-10",
+      "session_time": "2026-09-12 / 2026-10-10",
+      "state_key": "supplier_package_status",
+      "old_value": "620 元待选报价",
+      "new_value": "报价清单保留，未采用",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L14",
+      "question": "黄色昆虫观察盒的产权属于谁？同事沈雨宁何时借走、用途是什么、何时由谁归还？按日期差计算的借出天数是多少？",
+      "must_include": "产权属于沈予宁家；9 月 20 日借给同事沈雨宁，给她女儿去幼儿园做展示；10 月 5 日由程越取回；按日期差计算为 15 天。",
+      "must_not": "说产权转给同事，把 9 月 12 日的请求当成已经借出，或把归还者写成供应商沈予宁。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日同事沈雨宁询问能否借用，沈予宁还在考虑。",
+          "source_quote": "同事沈雨宁问我黄色昆虫观察盒能否借用，我还在考虑"
+        },
+        {
+          "text": "9 月 20 日实际借出观察盒。",
+          "source_quote": "9 月 20 日我把星星的黄色昆虫观察盒借给同事沈雨宁"
+        },
+        {
+          "text": "借用用途是给她女儿拿去幼儿园做展示。",
+          "source_quote": "她女儿拿去幼儿园做展示"
+        },
+        {
+          "text": "盒子仍登记在沈予宁家的物品清单里。",
+          "source_quote": "盒子仍在我们家的物品清单里"
+        },
+        {
+          "text": "10 月 5 日程越取回观察盒。",
+          "source_quote": "10 月 5 日程越从同事沈雨宁那里取回黄色昆虫观察盒"
+        },
+        {
+          "text": "9 月 20 日是观察盒的实际借出日期。",
+          "source_quote": "9 月 20 日我把星星的黄色昆虫观察盒借给同事沈雨宁"
+        },
+        {
+          "text": "按日期差计算，借出持续 15 天。",
+          "source_quote": "从 9 月 20 日到 10 月 5 日按日期差计算是 15 天"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "temporal_reasoning",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer",
+        "false_commitment"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M9",
+        "C-S4-M10",
+        "C-S5-M3",
+        "C-S5-M4",
+        "C-S6-M3",
+        "C-S6-M4"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-20 至 2026-10-05",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "yellow_insect_box_custody",
+      "old_value": "沈予宁家保管",
+      "new_value": "2026-10-05 已归还沈予宁家",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L15",
+      "question": "黄色昆虫观察盒归还后先放到哪里，最后又移到哪里？截至 10 月 10 日它在哪里？",
+      "must_include": "10 月 5 日先放在星星书桌边；10 月 7 日被放回阳台柜；截至 10 月 10 日在阳台柜。",
+      "must_not": "说它还在同事那里，或把最后位置说成星星书桌边。",
+      "required_facts": [
+        {
+          "text": "观察盒取回后先放到星星书桌边。",
+          "source_quote": "先放到星星书桌边"
+        },
+        {
+          "text": "10 月 7 日把它放回阳台柜。",
+          "source_quote": "10 月 7 日我把它放回阳台柜"
+        },
+        {
+          "text": "截至 10 月 10 日已经由用户放回阳台柜。",
+          "source_quote": "10 月 7 日已经由你放回阳台柜"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "information_extraction"
+      ],
+      "risk_tags": [
+        "item_state_migration",
+        "actor_transfer"
+      ],
+      "difficulty": "easy",
+      "evidence_ids": [
+        "C-S6-M3",
+        "C-S6-M4"
+      ],
+      "session_ids": [
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-10-05 / 2026-10-07",
+      "session_time": "2026-10-10",
+      "state_key": "yellow_insect_box_location",
+      "old_value": "星星书桌边",
+      "new_value": "阳台柜",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L16",
+      "question": "围绕黄色昆虫观察盒，9 月 12 日的请求、9 月 20 日的实际借出和 10 月 5 日的归还分别由谁完成什么动作？",
+      "must_include": "9 月 12 日同事沈雨宁提出借用请求，沈予宁还在考虑；9 月 20 日沈予宁把盒子借给同事沈雨宁；10 月 5 日程越从同事沈雨宁处取回盒子。",
+      "must_not": "把 9 月 12 日写成已经借出，把借出者写成程越，或把归还者写成供应商沈予宁。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日同事沈雨宁提出借用请求，沈予宁还在考虑。",
+          "source_quote": "同事沈雨宁问我黄色昆虫观察盒能否借用，我还在考虑"
+        },
+        {
+          "text": "9 月 12 日观察盒请求记在待回复事项。",
+          "source_quote": "同事沈雨宁的观察盒请求记在待回复事项"
+        },
+        {
+          "text": "9 月 20 日沈予宁把盒子借给同事沈雨宁。",
+          "source_quote": "9 月 20 日我把星星的黄色昆虫观察盒借给同事沈雨宁"
+        },
+        {
+          "text": "10 月 5 日程越从同事沈雨宁处取回盒子。",
+          "source_quote": "10 月 5 日程越从同事沈雨宁那里取回黄色昆虫观察盒"
+        }
+      ],
+      "capabilities": [
+        "cross_session_reasoning",
+        "information_extraction",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "actor_transfer",
+        "item_state_migration"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M9",
+        "C-S4-M10",
+        "C-S5-M3",
+        "C-S5-M4",
+        "C-S6-M3",
+        "C-S6-M4"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 / 2026-09-20 / 2026-10-05",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "yellow_insect_box_custody",
+      "old_value": "借用请求",
+      "new_value": "已借出并归还",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L17",
+      "question": "助手最初起草的 10 月 3 日安排中，叶脉拓印是多少分钟？完成记录中的实际时长是多少？晚餐要求有没有改变？",
+      "must_include": "最初草案和工作稿都写叶脉拓印 20 分钟；10 月 3 日实际完成记录为 60 分钟；晚餐仍是不辣、不含花生、安静环境。",
+      "must_not": "把草案中的 20 分钟说成实际时长，或把晚餐改成含花生或需要长时间排队。",
+      "required_facts": [
+        {
+          "text": "最初草案安排下午 20 分钟叶脉拓印。",
+          "source_quote": "下午 20 分钟叶脉拓印"
+        },
+        {
+          "text": "9 月 26 日仍暂定叶脉拓印 20 分钟。",
+          "source_quote": "叶脉拓印暂定 20 分钟"
+        },
+        {
+          "text": "10 月 3 日实际叶脉拓印 60 分钟。",
+          "source_quote": "下午叶脉拓印 60 分钟"
+        },
+        {
+          "text": "晚餐按不辣、不含花生和安静环境选择。",
+          "source_quote": "晚餐按不辣、不含花生和安静环境选的"
+        }
+      ],
+      "capabilities": [
+        "temporal_reasoning",
+        "knowledge_update",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M3",
+        "C-S4-M4",
+        "C-S5-M9",
+        "C-S5-M10",
+        "C-S6-M1",
+        "C-S6-M2"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "计划 20 分钟 / 实际 2026-10-03 60 分钟",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "leaf_rubbing_duration",
+      "old_value": "20 分钟",
+      "new_value": "60 分钟",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L18",
+      "question": "观察角购买的四类组件分别是什么、价格各多少？四项合计是多少？供应商的 620 元套餐是否应计入？",
+      "must_include": "观察灯 260 元、防潮柜 300 元、架子 450 元、植物 170 元；合计 1180 元；供应商沈予宁的 620 元套餐未采用，不能计入。",
+      "must_not": "把 620 元套餐加入合计，漏掉植物，或把四项相加成 1250 元。",
+      "required_facts": [
+        {
+          "text": "最初预算上限为 800 元。",
+          "source_quote": "昆虫观察角最初预算上限是 800 元"
+        },
+        {
+          "text": "9 月 24 日前已买观察灯 260 元和防潮柜 300 元。",
+          "source_quote": "已支出观察灯 260 元和小防潮柜 300 元"
+        },
+        {
+          "text": "最终四类组件分别为观察灯 260 元、防潮柜 300 元、架子 450 元、植物 170 元。",
+          "source_quote": "实际支出 1180 元，其中观察灯 260 元、防潮柜 300 元、架子 450 元、植物 170 元"
+        },
+        {
+          "text": "供应商的 620 元套餐没有采购。",
+          "source_quote": "我最后没有采用她的套餐"
+        }
+      ],
+      "capabilities": [
+        "numerical_aggregation",
+        "information_extraction",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "fabricated_action",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M7",
+        "C-S4-M9",
+        "C-S5-M5",
+        "C-S5-M6",
+        "C-S6-M5",
+        "C-S6-M9",
+        "C-S6-M10"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-15 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L19",
+      "question": "分别截至 9 月 12 日、9 月 26 日和 10 月 10 日，观察灯、观察盒借用、10 月 3 日家庭活动和观察角分别进展到什么状态？",
+      "must_include": "9 月 12 日只有观察灯购买/安装计划、观察盒借用请求和 10 月 3 日草案，尚未采购或借出；9 月 26 日观察灯已买 260 元但安装未完成，观察盒已于 9 月 20 日借出，10 月 3 日安排仍待执行；10 月 10 日家庭活动已完成，观察盒已归还，观察角已完工。",
+      "must_not": "把 9 月 12 日的计划写成已完成，把 9 月 26 日的 10 月 3 日活动写成已完成，或漏掉安装未完成状态。",
+      "required_facts": [
+        {
+          "text": "9 月 12 日观察灯购买和安装只是计划。",
+          "source_quote": "当前是计划"
+        },
+        {
+          "text": "9 月 12 日观察盒请求记在待回复事项。",
+          "source_quote": "同事沈雨宁的观察盒请求记在待回复事项"
+        },
+        {
+          "text": "9 月 26 日观察灯已购买，安装还在安排中。",
+          "source_quote": "观察灯已经购买，安装还在安排中"
+        },
+        {
+          "text": "9 月 20 日观察盒已借出。",
+          "source_quote": "9 月 20 日我把星星的黄色昆虫观察盒借给同事沈雨宁"
+        },
+        {
+          "text": "9 月 26 日 10 月 3 日四环节安排继续保留。",
+          "source_quote": "10 月 3 日那套四环节安排先保留"
+        },
+        {
+          "text": "10 月 3 日家庭活动已完成。",
+          "source_quote": "10 月 3 日的家庭活动已经完成"
+        },
+        {
+          "text": "10 月 5 日观察盒已取回。",
+          "source_quote": "10 月 5 日程越从同事沈雨宁那里取回黄色昆虫观察盒"
+        },
+        {
+          "text": "10 月 6 日观察角已经完工。",
+          "source_quote": "观察角已经完工"
+        }
+      ],
+      "capabilities": [
+        "knowledge_update",
+        "temporal_reasoning",
+        "cross_session_reasoning"
+      ],
+      "risk_tags": [
+        "false_commitment",
+        "fabricated_action",
+        "temporal_disorder"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M7",
+        "C-S4-M8",
+        "C-S4-M9",
+        "C-S4-M10",
+        "C-S5-M1",
+        "C-S5-M2",
+        "C-S5-M3",
+        "C-S5-M9",
+        "C-S6-M1",
+        "C-S6-M2",
+        "C-S6-M3",
+        "C-S6-M4",
+        "C-S6-M5",
+        "C-S6-M6"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L20",
+      "question": "观察角最终 1180 元由哪些实际支出构成？与 1250 元最终上限相比余量多少？为什么 620 元报价不能算作其中一项？",
+      "must_include": "260 元观察灯、300 元防潮柜、450 元架子、170 元植物，合计 1180 元；相对 1250 元上限少 70 元；620 元保留在供应商报价清单，未采用。",
+      "must_not": "把 620 元作为实际支出，把 1180 元算成 620 元加其他费用，或忽略 70 元余量。",
+      "required_facts": [
+        {
+          "text": "供应商沈予宁发来 620 元套餐报价后，用户没有下单。",
+          "source_quote": "她发来架子和防潮柜套餐报价 620 元，我还没下单"
+        },
+        {
+          "text": "9 月 26 日已支出观察灯 260 元、防潮柜 300 元。",
+          "source_quote": "已支出观察灯 260 元和小防潮柜 300 元"
+        },
+        {
+          "text": "最终实际支出 1180 元，包含四类组件。",
+          "source_quote": "实际支出 1180 元，其中观察灯 260 元、防潮柜 300 元、架子 450 元、植物 170 元"
+        },
+        {
+          "text": "最终预算上限为 1250 元。",
+          "source_quote": "预算上限最后核准为 1250 元"
+        },
+        {
+          "text": "供应商套餐后来保留在报价清单。",
+          "source_quote": "供应商沈予宁的 620 元套餐保留在报价清单"
+        }
+      ],
+      "capabilities": [
+        "numerical_aggregation",
+        "evidence_tracking",
+        "knowledge_update"
+      ],
+      "risk_tags": [
+        "fabricated_action",
+        "global_memory_leak"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S4-M9",
+        "C-S4-M10",
+        "C-S5-M5",
+        "C-S5-M6",
+        "C-S6-M5",
+        "C-S6-M6",
+        "C-S6-M9",
+        "C-S6-M10"
+      ],
+      "session_ids": [
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "2026-09-12 至 2026-10-06",
+      "session_time": "2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": "insect_corner_actual_spend",
+      "old_value": null,
+      "new_value": "1180 元",
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    },
+    {
+      "id": "C-L21",
+      "question": "复述沈予宁记录家庭活动时已有的流程，并说明供应商报价和实际采购如何分开。",
+      "must_include": "先用纸质清单勾选，再录入电子版；清单上把计划、已购买和已完成分开写；每个环节之间至少留 15 分钟；供应商沈予宁的 620 元套餐保留在报价清单；实际架子由程越按 450 元购买。",
+      "must_not": "先做电子表、把计划写成已完成、把同名供应商并入本人、把 620 元报价当成实际支出，或把采购执行归给助手。",
+      "required_facts": [
+        {
+          "text": "实际执行时先用纸质清单勾选，再录入电脑。",
+          "source_quote": "这次安排我先用纸质清单勾选，再录入电脑"
+        },
+        {
+          "text": "清单上把计划、已购买和已完成分开写。",
+          "source_quote": "清单上把计划、已购买和已完成分开写"
+        },
+        {
+          "text": "每个环节之间至少留 15 分钟缓冲。",
+          "source_quote": "每个环节之间至少留 15 分钟缓冲"
+        },
+        {
+          "text": "纸质清单先勾选，电子版后录入。",
+          "source_quote": "纸质清单先勾选，再录入电子版"
+        },
+        {
+          "text": "供应商沈予宁的 620 元套餐保留在报价清单。",
+          "source_quote": "供应商沈予宁的 620 元套餐保留在报价清单"
+        },
+        {
+          "text": "架子由程越实际按 450 元购买。",
+          "source_quote": "实际架子是程越按 450 元购买的"
+        },
+        {
+          "text": "计划、已购买和已完成在清单上分开记录。",
+          "source_quote": "清单上把计划、已购买和已完成分开写"
+        }
+      ],
+      "capabilities": [
+        "personalization",
+        "assistant_memory",
+        "evidence_tracking"
+      ],
+      "risk_tags": [
+        "global_memory_leak",
+        "actor_transfer",
+        "fabricated_action"
+      ],
+      "difficulty": "hard",
+      "evidence_ids": [
+        "C-S1-M5",
+        "C-S4-M5",
+        "C-S4-M6",
+        "C-S4-M8",
+        "C-S4-M10",
+        "C-S5-M9",
+        "C-S5-M10",
+        "C-S6-M7",
+        "C-S6-M8",
+        "C-S6-M10"
+      ],
+      "session_ids": [
+        "C-S1",
+        "C-S4",
+        "C-S5",
+        "C-S6"
+      ],
+      "answerable": true,
+      "event_time": "长期流程",
+      "session_time": "2023-2024 / 2026-09-12 / 2026-09-26 / 2026-10-10",
+      "state_key": null,
+      "old_value": null,
+      "new_value": null,
+      "pair_id": null,
+      "pair_kind": null,
+      "review_status": "approved_for_regression"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+d2a0e3732930b64a70da1e532dc104d8fe9b1fc593325eaa111ca0f3732acf19  docs/audits/images/2026-10-21-7group/00-all-pages-grid-standard.png
+0bb6470d400c1929258b9645cf4b0ee3f4c3190186349d2c1464fc4f3159b631  docs/audits/images/2026-10-21-7group/00-all-pages-grid.png
+43849d8e908920520f304740184a2d6389319d4e79be3780ee88f110e7e692c1  docs/audits/images/2026-10-21-7group/00-all-pages-merged.png
