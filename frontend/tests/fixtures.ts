@@ -155,6 +155,18 @@ export const miniQuestions = {
   ],
 };
 
+export const fullQuestions = {
+  ...miniQuestions,
+  protocol: 'seven-suite-full-details-v1',
+  summary: {
+    ...miniQuestions.summary,
+    total_tasks: 709,
+    qa_tasks: 609,
+    episode_tasks: 100,
+    hard_tasks: 245,
+  },
+};
+
 export const defaults = {
   memory: { base_url: 'https://preview-text.memorax.net', timeout_s: 60 },
   answer: { base_url: 'http://localhost:8001/v1', model: 'answer-test', temperature: 0, max_tokens: 1024,

@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { dataset, defaults, miniConsistency, miniQuestions, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
+import { dataset, defaults, fullQuestions, miniConsistency, miniQuestions, miniScope, prompts, run, smokeScope, smokeReport } from '../fixtures';
 
 test.beforeEach(async ({ page }) => {
   if (!process.env.MEMORAX_E2E_STATIC) return;
@@ -33,6 +33,7 @@ async function mockApi(page: Page) {
       : path === '/mini' ? miniScope
       : path === '/mini/consistency' ? miniConsistency
       : path === '/mini/questions' ? miniQuestions
+      : path === '/questions' ? fullQuestions
       : path.startsWith('/datasets/') ? { ...dataset, data: { profiles: dataset.profiles } }
       : path === '/prompts' ? { prompts }
       : path === '/config/preview' ? { effective_yaml: defaults.common_yaml.content, sha256: 'test-sha' }
@@ -212,6 +213,20 @@ test('mini question explanations expose capability, evidence and misleading info
   await expect(drawer.getByText(/同事林川/)).toBeVisible();
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('mini-question-detail.png'), fullPage: true });
+});
+
+test('full question library reuses the same detail experience', async ({ page }, testInfo) => {
+  await mockApi(page);
+  await page.goto('/#/questions');
+  await expect(page.getByRole('heading', { name: '全量题库详解', exact: true })).toBeVisible();
+  await expect(page.getByText('709', { exact: true })).toBeVisible();
+  await expect(page.getByRole('table', { name: '全量 题目列表' })).toBeVisible();
+  await page.getByRole('button', { name: '查看题目 A03' }).click();
+  const drawer = page.getByRole('dialog', { name: 'A03 题目详解' });
+  await expect(drawer.getByRole('heading', { name: '考查的记忆能力' })).toBeVisible();
+  await expect(drawer.getByRole('heading', { name: '关键信息在哪里' })).toBeVisible();
+  await assertNoPageOverflow(page);
+  await page.screenshot({ path: testInfo.outputPath('full-question-detail.png'), fullPage: true });
 });
 
 test('self-bucket setting and separate evidence sources fit both viewports', async ({ page }, testInfo) => {
