@@ -104,6 +104,8 @@ export type Progress = {
 };
 export type RunSummary = {
   run_mode?: 'full' | 'mini' | 'smoke';
+  replacement?: { source_run_id: string };
+  merged_replacements?: { run_id: string; case_ids: string[]; merged_at: string }[];
   smoke_report?: SmokeReport;
   id: string; name: string; dataset_id: string; dataset_name: string;
   created_at: string; updated_at: string; status: RunStatus; phase: string;
@@ -270,7 +272,10 @@ export type CaseResult = {
   self_bucket_response?: unknown;
   retrieval?: { policy: string; self_bucket_status: string; automatic_contains_self: boolean; self_evidence_count: number; automatic_evidence_count: number };
   retrieval_query?: string | null;
-  retrieval_query_source?: 'dataset' | 'generated' | null;
+  retrieval_query_source?: 'dataset' | 'generated' | 'original_fallback' | null;
+  retrieval_query_error?: string | null;
+  merged_from_run_id?: string;
+  merged_at?: string;
   kind?: string; dataset_id?: string; options?: Record<string, string> | null;
   stage?: number; visible_until_turn?: number; category?: { id: string; name: string };
   capabilities?: string[]; difficulty?: 'easy' | 'medium' | 'hard'; evidence_ids?: string[];
