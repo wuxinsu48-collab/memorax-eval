@@ -12,6 +12,13 @@
       "result_kind": "严格单 hash 全量",
       "yaml_file": "configs/universal-memory-v5.81-r79-generic-v4.yaml",
       "yaml_sha256": "eba48ed8b895e9b30caa38ac0a0e29a09e5df239f90b795d519ada8b2c92d9d3",
+      "downloads": [
+        {
+          "label": "下载 YAML",
+          "file": "leaderboard-yamls/universal-memory-v5.81-r79-generic-v4.yaml",
+          "sha256": "eba48ed8b895e9b30caa38ac0a0e29a09e5df239f90b795d519ada8b2c92d9d3"
+        }
+      ],
       "run_ids": [
         "25d8640bdc18490c"
       ],
@@ -90,6 +97,18 @@
       "result_kind": "全量 + 无效样本 transport-repair",
       "yaml_file": "configs/universal-memory-v5.79-r79-generic-v2.yaml",
       "yaml_sha256": "3cf35c13633919d4ab4ea06dc684e90720314fb1e0f0d6f47647a2e6f8d9b6a9",
+      "downloads": [
+        {
+          "label": "下载主 YAML",
+          "file": "leaderboard-yamls/universal-memory-v5.79-r79-generic-v2.yaml",
+          "sha256": "3cf35c13633919d4ab4ea06dc684e90720314fb1e0f0d6f47647a2e6f8d9b6a9"
+        },
+        {
+          "label": "下载 transport-repair",
+          "file": "leaderboard-yamls/universal-memory-v5.79-r79-generic-v2-transport-repair.yaml",
+          "sha256": "3275a21e6874d9eeed9d1f11a2e1099a2df4972353414e2eea66c39f50c475dc"
+        }
+      ],
       "run_ids": [
         "ccf24889b8fb4709",
         "6061a760f5df49c1",
@@ -168,6 +187,13 @@
       "result_kind": "严格单 hash 全量",
       "yaml_file": "configs/universal-memory-v5.80-r79-generic-v3.yaml",
       "yaml_sha256": "cb7ac333688416b3086a6673a069e5a710349d796ceac5f323f5382ee1bb562e",
+      "downloads": [
+        {
+          "label": "下载 YAML",
+          "file": "leaderboard-yamls/universal-memory-v5.80-r79-generic-v3.yaml",
+          "sha256": "cb7ac333688416b3086a6673a069e5a710349d796ceac5f323f5382ee1bb562e"
+        }
+      ],
       "run_ids": [
         "d2ffb448c7624271"
       ],
