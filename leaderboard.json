@@ -1,0 +1,240 @@
+{
+  "updated_at": "2026-10-26",
+  "ranking_basis": "六组 QA 通过数；NCP 不并入主榜",
+  "entries": [
+    {
+      "id": "generic-v4-strict-20261026",
+      "rank": 1,
+      "name": "Generic v4",
+      "version": "5.81-r79-generic-v4",
+      "badge": "当前默认",
+      "evaluated_at": "2026-10-26",
+      "result_kind": "严格单 hash 全量",
+      "yaml_file": "configs/universal-memory-v5.81-r79-generic-v4.yaml",
+      "yaml_sha256": "eba48ed8b895e9b30caa38ac0a0e29a09e5df239f90b795d519ada8b2c92d9d3",
+      "run_ids": [
+        "25d8640bdc18490c"
+      ],
+      "score": {
+        "passed": 465,
+        "total": 609
+      },
+      "delta_from_previous": {
+        "passed": 5,
+        "percentage_points": 0.8210
+      },
+      "datasets": [
+        {
+          "id": "zh-profiles-v1",
+          "name": "中文三组",
+          "passed": 74,
+          "total": 100
+        },
+        {
+          "id": "rsi-trace-v1",
+          "name": "RSI",
+          "passed": 51,
+          "total": 100
+        },
+        {
+          "id": "finrank-v1",
+          "name": "FinRank",
+          "passed": 48,
+          "total": 60
+        },
+        {
+          "id": "multi-scene-memory-v1",
+          "name": "多场景",
+          "passed": 21,
+          "total": 22
+        },
+        {
+          "id": "novel-memory-v1",
+          "name": "小说",
+          "passed": 146,
+          "total": 200
+        },
+        {
+          "id": "novel-choice-v1",
+          "name": "小说多选",
+          "passed": 125,
+          "total": 127
+        }
+      ],
+      "evidence": {
+        "average_items": 71.69,
+        "point_recall": 0.92436,
+        "question_coverage": 0.81737,
+        "covered_failures": 32
+      },
+      "ncp": {
+        "completed": 10,
+        "total": 10,
+        "average_progress": 0.10908,
+        "fact_conflict_rate": 0.9,
+        "average_turns": 7.8
+      },
+      "models": {
+        "answer": "qwen3.7-flash",
+        "judge": "glm-5.3-flash"
+      },
+      "notes": "619 个 case 全部使用同一最终 YAML hash；替代运行与同 user 写入修复已回写主记录。"
+    },
+    {
+      "id": "generic-v2-20261024",
+      "rank": 2,
+      "name": "Generic v2",
+      "version": "5.79-r79-generic-v2",
+      "badge": "历史基线",
+      "evaluated_at": "2026-10-24",
+      "result_kind": "全量 + 无效样本 transport-repair",
+      "yaml_file": "configs/universal-memory-v5.79-r79-generic-v2.yaml",
+      "yaml_sha256": "3cf35c13633919d4ab4ea06dc684e90720314fb1e0f0d6f47647a2e6f8d9b6a9",
+      "run_ids": [
+        "ccf24889b8fb4709",
+        "6061a760f5df49c1",
+        "dfa11588467a414e",
+        "b1cfa4b8a10f402f"
+      ],
+      "score": {
+        "passed": 460,
+        "total": 609
+      },
+      "delta_from_previous": null,
+      "datasets": [
+        {
+          "id": "zh-profiles-v1",
+          "name": "中文三组",
+          "passed": 79,
+          "total": 100
+        },
+        {
+          "id": "rsi-trace-v1",
+          "name": "RSI",
+          "passed": 48,
+          "total": 100
+        },
+        {
+          "id": "finrank-v1",
+          "name": "FinRank",
+          "passed": 46,
+          "total": 60
+        },
+        {
+          "id": "multi-scene-memory-v1",
+          "name": "多场景",
+          "passed": 20,
+          "total": 22
+        },
+        {
+          "id": "novel-memory-v1",
+          "name": "小说",
+          "passed": 150,
+          "total": 200
+        },
+        {
+          "id": "novel-choice-v1",
+          "name": "小说多选",
+          "passed": 117,
+          "total": 127
+        }
+      ],
+      "evidence": {
+        "average_items": 66.79,
+        "point_recall": 0.91408,
+        "question_coverage": 0.81646,
+        "covered_failures": null
+      },
+      "ncp": {
+        "completed": 10,
+        "total": 10,
+        "average_progress": 0.211,
+        "fact_conflict_rate": 0.7,
+        "average_turns": 12.0
+      },
+      "models": {
+        "answer": "qwen3.7-flash",
+        "judge": "glm-5.3-flash"
+      },
+      "notes": "原运行存在协议与传输异常；最终分数使用 transport-repair 修复无效样本后统计。"
+    },
+    {
+      "id": "generic-v3-20261024",
+      "rank": 2,
+      "name": "Generic v3",
+      "version": "5.80-r79-generic-v3",
+      "badge": "稳定基线",
+      "evaluated_at": "2026-10-24",
+      "result_kind": "严格单 hash 全量",
+      "yaml_file": "configs/universal-memory-v5.80-r79-generic-v3.yaml",
+      "yaml_sha256": "cb7ac333688416b3086a6673a069e5a710349d796ceac5f323f5382ee1bb562e",
+      "run_ids": [
+        "d2ffb448c7624271"
+      ],
+      "score": {
+        "passed": 460,
+        "total": 609
+      },
+      "delta_from_previous": {
+        "passed": 0,
+        "percentage_points": 0.0
+      },
+      "datasets": [
+        {
+          "id": "zh-profiles-v1",
+          "name": "中文三组",
+          "passed": 77,
+          "total": 100
+        },
+        {
+          "id": "rsi-trace-v1",
+          "name": "RSI",
+          "passed": 53,
+          "total": 100
+        },
+        {
+          "id": "finrank-v1",
+          "name": "FinRank",
+          "passed": 45,
+          "total": 60
+        },
+        {
+          "id": "multi-scene-memory-v1",
+          "name": "多场景",
+          "passed": 20,
+          "total": 22
+        },
+        {
+          "id": "novel-memory-v1",
+          "name": "小说",
+          "passed": 144,
+          "total": 200
+        },
+        {
+          "id": "novel-choice-v1",
+          "name": "小说多选",
+          "passed": 121,
+          "total": 127
+        }
+      ],
+      "evidence": {
+        "average_items": 88.69,
+        "point_recall": 0.91705,
+        "question_coverage": 0.81818,
+        "covered_failures": 39
+      },
+      "ncp": {
+        "completed": 10,
+        "total": 10,
+        "average_progress": 0.159,
+        "fact_conflict_rate": 0.4,
+        "average_turns": 27.5
+      },
+      "models": {
+        "answer": "qwen3.7-flash",
+        "judge": "glm-5.3-flash"
+      },
+      "notes": "与 v2 总分相同，但可靠性显著提高；主要代价是证据条数增加和回答侧稀释。"
+    }
+  ]
+}
