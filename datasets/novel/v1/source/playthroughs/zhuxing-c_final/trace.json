@@ -1,13 +1,24 @@
 {
   "file": "zhuxing-c_final",
   "trace_count": 1,
-  "trace_id": "7ddd9800-adc4-4220-9f47-a3ff405f57e6",
+  "trace_id": "professional-author-zhuxing-c-20261102",
   "playthrough_id": "zhuxing-c",
-  "script_name": "诸星遗辞",
+  "script_name": "诸星遗辞 · 专业作者修订题集",
   "turns": 110,
   "qa": 50,
   "content_mode": "narrative_only",
-  "run_id_policy": "Before execution, replace RUN_ID in user_id/session_id with a fresh identifier. Never reuse an identifier across playthroughs or runs.",
+  "stage_adjustment": {
+    "policy": "authored_stage_must_contain_all_cited_evidence",
+    "moved_question_count": 1,
+    "moved_questions": [
+      {
+        "source_question_id": "zhuxing-c-q017",
+        "previous_stage": 2,
+        "effective_stage": 3,
+        "max_evidence_turn": 62
+      }
+    ]
+  },
   "stage_protocol": [
     {
       "stage": 1,
@@ -16,7 +27,7 @@
         "end": 22
       },
       "visible_until_turn": 22,
-      "qa_count": 10
+      "qa_count": 8
     },
     {
       "stage": 2,
@@ -25,7 +36,7 @@
         "end": 44
       },
       "visible_until_turn": 44,
-      "qa_count": 10
+      "qa_count": 6
     },
     {
       "stage": 3,
@@ -34,7 +45,7 @@
         "end": 66
       },
       "visible_until_turn": 66,
-      "qa_count": 10
+      "qa_count": 7
     },
     {
       "stage": 4,
@@ -43,7 +54,7 @@
         "end": 88
       },
       "visible_until_turn": 88,
-      "qa_count": 10
+      "qa_count": 11
     },
     {
       "stage": 5,
@@ -52,17 +63,17 @@
         "end": 110
       },
       "visible_until_turn": 110,
-      "qa_count": 10
+      "qa_count": 18
     }
   ],
   "category_counts": {
-    "actor_transfer": 7,
     "item_state_migration": 9,
-    "identity_pollution": 6,
-    "global_memory_leak": 7,
-    "false_commitment": 6,
-    "temporal_disorder": 5,
-    "fabricated_action": 10
+    "identity_pollution": 7,
+    "fabricated_action": 11,
+    "actor_transfer": 8,
+    "temporal_disorder": 8,
+    "false_commitment": 4,
+    "global_memory_leak": 3
   },
   "files": {
     "add": "add_requests.jsonl",

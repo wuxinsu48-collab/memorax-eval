@@ -1,0 +1,87 @@
+{
+  "schema_version": "sanqi-source-manifest-v1",
+  "dataset_id": "sanqi-clancy-v1",
+  "snapshot_date": "2026-11-03",
+  "source_date": "2026-10-21",
+  "handoff": {
+    "path": "/Users/dengchaosu/Documents/Codex/2026-11-03/ni/outputs/dataset-handoff-20261103/handoff.json",
+    "sha256": "f67f1e887f3ed239c2403dfda2846588f67237c5f3d6cd6b8dc4f4a075339d57"
+  },
+  "original_files": {
+    "add-requests.json": {
+      "handoff_relative_path": "sanqi/add-requests.json",
+      "handoff_path": "/Users/dengchaosu/Documents/Codex/2026-11-03/ni/outputs/dataset-handoff-20261103/sanqi/add-requests.json",
+      "original_path": "/Users/dengchaosu/Documents/Codex/2026-10-23/kan/work/sanqi/sanqi-qa-code-gt-20261021/source_data/clancy-add-requests-20261021.json",
+      "sha256": "c68b2dfa32cae42468ad3a7896d85f8afd0d510c1658aa07ac6b496ee92dd366",
+      "bytes": 13706921,
+      "snapshot_path": "source/add-requests.json",
+      "transform": "request-only projection; original request and messages unchanged; no historical response"
+    },
+    "search-requests.json": {
+      "handoff_relative_path": "sanqi/search-requests.json",
+      "handoff_path": "/Users/dengchaosu/Documents/Codex/2026-11-03/ni/outputs/dataset-handoff-20261103/sanqi/search-requests.json",
+      "original_path": "/Users/dengchaosu/Documents/Codex/2026-10-23/kan/work/sanqi/sanqi-qa-code-gt-20261021/source_data/clancy-search-requests-20261021.json",
+      "sha256": "c249263f401cdbf16817ad651779810ba977427cfd94216b03fca5ad57a29140",
+      "bytes": 26971805,
+      "snapshot_path": "source/search-requests.json",
+      "transform": "query/id/index/user provenance only; historical results and controls removed"
+    },
+    "gt.strict.json": {
+      "handoff_relative_path": "sanqi/gt.strict.json",
+      "handoff_path": "/Users/dengchaosu/Documents/Codex/2026-11-03/ni/outputs/dataset-handoff-20261103/sanqi/gt.strict.json",
+      "original_path": "/Users/dengchaosu/Documents/Codex/2026-10-23/kan/work/sanqi/sanqi-qa-code-gt-20261021/gt_for_complete_corpus/gt.strict.json",
+      "sha256": "665c96c7c1ab65fcf575cbc67e6fa5be26f663558ee59397dad6e3eb6bdec63c",
+      "bytes": 200958,
+      "snapshot_path": "source/gt.strict.json",
+      "transform": "byte-for-byte copy"
+    },
+    "gt.relaxed.json": {
+      "handoff_relative_path": "sanqi/gt.relaxed.json",
+      "handoff_path": "/Users/dengchaosu/Documents/Codex/2026-11-03/ni/outputs/dataset-handoff-20261103/sanqi/gt.relaxed.json",
+      "original_path": "/Users/dengchaosu/Documents/Codex/2026-10-23/kan/work/sanqi/sanqi-qa-code-gt-20261021/gt_for_complete_corpus/gt.relaxed.json",
+      "sha256": "dde9a8413306981ff83c15e2e35b5d31fb276e57fa5197b0bd3d201c31a64ee4",
+      "bytes": 206400,
+      "snapshot_path": "source/gt.relaxed.json",
+      "transform": "byte-for-byte copy"
+    },
+    "judge-prompts.json": {
+      "handoff_relative_path": "sanqi/judge-prompts.json",
+      "handoff_path": "/Users/dengchaosu/Documents/Codex/2026-11-03/ni/outputs/dataset-handoff-20261103/sanqi/judge-prompts.json",
+      "original_path": "/Users/dengchaosu/Documents/Codex/2026-10-23/kan/work/sanqi/sanqi-qa-code-gt-20261021/output/rerun-six-groups-strict-relaxed-32-20261021/judge-prompts.json",
+      "sha256": "9a21f6f0602a1a5be0f870872668612f09dc52b51da5f35c07ae907803e9629b",
+      "bytes": 2293,
+      "snapshot_path": "source/judge-prompts.json",
+      "transform": "byte-for-byte copy"
+    }
+  },
+  "files_sha256": {
+    "README.md": "96d174cb5a26f5aae573dc0d02f7bdfddf1c70babf28dbdeed9457ddb8a45ce4",
+    "source/add-requests.json": "4b120202f1e6e25a13684c7d3e69dc15d581014334c1b4466eb18963549a3600",
+    "source/answer-prompt.txt": "164edf6d284ea4d90a378db613fe3031d7c529ef1000272d0aa201b131bead94",
+    "source/gt.relaxed.json": "dde9a8413306981ff83c15e2e35b5d31fb276e57fa5197b0bd3d201c31a64ee4",
+    "source/gt.strict.json": "665c96c7c1ab65fcf575cbc67e6fa5be26f663558ee59397dad6e3eb6bdec63c",
+    "source/judge-prompts.json": "9a21f6f0602a1a5be0f870872668612f09dc52b51da5f35c07ae907803e9629b",
+    "source/search-requests.json": "9621803ff206ecce10fd670a34a0fda5120b37ce9645ee6d2678fd7d8ebff600"
+  },
+  "counts": {
+    "add_requests": 1038,
+    "messages": 10528,
+    "add_user_scopes": 49,
+    "search_user_scopes": 49,
+    "profile_union": 51,
+    "unique_original_user_sessions": 1037,
+    "qa_requests": 327,
+    "unique_query_texts": 139,
+    "primary": 316,
+    "diagnostic": 10,
+    "excluded": 1
+  },
+  "gold_scope": "static_complete_corpus",
+  "index_63_scope": "current Berlin / January 2023 Paris",
+  "source_less_question_indices": [
+    1,
+    7
+  ],
+  "historical_search_results_imported": false,
+  "network_or_model_calls": 0
+}

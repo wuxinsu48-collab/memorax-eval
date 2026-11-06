@@ -1,5 +1,11 @@
 import type { DatasetSummary } from '../src/types';
 
+export const answerPointEvidence = {
+  question_coverage: { value: 1, passed: 1, failed: 0, judged: 1, review: 0, not_applicable: 0, total: 1 },
+  point_recall: { value: 1, passed: 1, failed: 0, judged: 1, review: 0, not_applicable: 0, total: 1 },
+  question_status_counts: { covered: 1, partial: 0, missed: 0, needs_review: 0, not_applicable: 0 },
+};
+
 export const dataset = {
   id: 'zh_profiles_v1', name: '中文画像 A / B / C', version: '1.0',
   description: '测试夹具：三个画像、三个阶段。', profile_count: 3,
@@ -35,7 +41,7 @@ export const smokeReport = { protocol: 'seven-suite-smoke-v1', status: 'passed' 
     cases_total: d.episode_count || d.question_count })) };
 
 export const miniScope = {
-  protocol: 'seven-suite-mini-v1', target_seconds: 2100, question_count: 88, episode_count: 2,
+  protocol: 'five-qa-suite-mini-v1', target_seconds: 2100, question_count: 71, episode_count: 0,
   risk_counts: {
     actor_transfer: 18, temporal_disorder: 14, false_commitment: 17, global_memory_leak: 15,
     fabricated_action: 21, item_state_migration: 14, identity_pollution: 17,
@@ -46,18 +52,16 @@ export const miniScope = {
     { ...dataset, id: 'zh-c', name: '中文 C', question_count: 8, add_count: 9, kind: 'profiles' as const },
     { ...dataset, id: 'rsi-trace-v1', name: '包子 / RSI', question_count: 15, add_count: 6, kind: 'novel_qa' as const },
     { ...dataset, id: 'novel-memory-v1', name: '小说四 trace', question_count: 32, add_count: 12, kind: 'novel_qa' as const },
-    { ...dataset, id: 'ncpbench-v1', name: 'NCP-Bench', question_count: 0, episode_count: 2, add_count: 0, kind: 'episode' as const },
-    { ...dataset, id: 'finrank-v1', name: 'FinRank v22', question_count: 15, add_count: 15, kind: 'finance_v22' as const },
   ],
 };
 
 export const miniConsistency = {
-  protocol: 'seven-suite-mini-calibration-v1',
+  protocol: 'five-qa-suite-mini-calibration-v1',
   generated_at: '2026-10-21T05:00:00Z',
   method: 'frozen-mini-subset-vs-full-v1',
   summary: {
     status: 'watch' as const, full_runs_scanned: 25, full_runs_used: 7,
-    evaluated_suites: 4, total_suites: 4, max_versions: 4, mean_abs_bias: 0.0224,
+    evaluated_suites: 3, total_suites: 3, max_versions: 4, mean_abs_bias: 0.0224,
     within_run_rank_median: 1, ready_for_replacement: false,
     minimum_versions: 3, recommended_versions: 5,
   },
@@ -71,9 +75,6 @@ export const miniConsistency = {
     { dataset_id: 'novel-memory-v1', name: '小说四 trace', expected: 32, version_count: 3, run_count: 3,
       mean_delta: 0.0061, mean_abs_error: 0.0172, rank_correlation: 1,
       within_run_rank_median: 1, status: 'aligned' as const, recommended_versions: 5 },
-    { dataset_id: 'finrank-v1', name: 'FinRank v22', expected: 15, version_count: 2, run_count: 2,
-      mean_delta: -0.0114, mean_abs_error: 0.0243, rank_correlation: 1,
-      within_run_rank_median: null, status: 'insufficient' as const, recommended_versions: 5 },
   ],
   runs: [{
     run_id: 'd50d95f76e3e4977', name: '定向评测 · R79 · 关键词 BM25',
@@ -83,7 +84,7 @@ export const miniConsistency = {
     mini_judged: 63, mini_accuracy: 0.5397, full_judged: 366,
     full_accuracy: 0.5273, delta: 0.0124, suite_count: 3,
   }],
-  notes: ['NCP 电影在 Mini 与 Full 中使用不同电影集合，不纳入直接子集比较。'],
+  notes: ['Mini 只比较中文三组、包子 / RSI 与小说四 trace 的冻结题号。'],
 };
 
 const capability = {
@@ -98,14 +99,14 @@ const extractionCapability = {
 };
 
 export const miniQuestions = {
-  protocol: 'seven-suite-mini-details-v1',
+  protocol: 'five-qa-suite-mini-details-v1',
   generated_at: '2026-10-21T06:00:00Z',
   summary: {
-    total_tasks: 88, qa_tasks: 86, episode_tasks: 2, hard_tasks: 32,
-    difficulty_counts: { easy: 7, medium: 49, hard: 32 },
+    total_tasks: 71, qa_tasks: 71, episode_tasks: 0, hard_tasks: 25,
+    difficulty_counts: { easy: 2, medium: 44, hard: 25 },
     capability_counts: { temporal_reasoning: 33, knowledge_update: 44 },
     risk_counts: { temporal_disorder: 21 }, type_counts: { 时间顺序错乱: 10 },
-    explicit_distractor_tasks: 24,
+    explicit_distractor_tasks: 7,
   },
   capability_catalog: { temporal_reasoning: capability },
   risk_catalog: {
@@ -132,25 +133,23 @@ export const miniQuestions = {
       metadata: { answerable: true, evaluation_role: 'memory_core' },
     },
     {
-      id: 'NCP-movie44', kind: 'episode',
-      question: '在对抗玩家持续施压下，保持完整叙事轨迹、事实状态和承诺顺序一致。',
-      dataset_id: 'ncpbench-v1', group_id: 'NCP-movie44', group_name: 'Clueless',
-      task_type: '交互叙事闭环', question_family: 'adversarial trajectory consistency',
-      difficulty: 'hard', difficulty_source: 'protocol',
-      difficulty_reason: '协议固定为 Hard：包含 11 条轨迹承诺，需要多回合连续满足。',
-      why_hard: '玩家会主动试探越序、提前触发和状态冲突。',
-      evaluation_value: '把长程记忆、事实更新、时间顺序和承诺一致性放在同一个闭环里。',
-      capabilities: [{ id: 'narrative_state_tracking', label: '长程叙事状态追踪',
-        description: '在连续交互中保持人物、事实、关系和当前场景状态一致。',
-        failure_mode: '随着对话推进忘记既有状态，或让后文与前文逻辑冲突。' }],
-      risks: [],
-      reference_answer: '满足全部轨迹承诺，并保持事实、关系和当前状态一致。',
-      required_points: [{ id: 'c_0', text: '等级协商必须晚于匹配计划完成。' }],
-      evidence: [{ id: 'c_0', kind: 'trajectory_commitment', location: '轨迹承诺 c_0 · ordering',
-        role: 'commitment', content: '等级协商必须晚于匹配计划完成。', condition: '先完成计划。', violation: '提前成功。' }],
-      misleading: [{ id: 'c_0', kind: 'commitment_violation', label: '违反轨迹承诺',
-        location: '轨迹承诺 c_0 · ordering', content: '计划完成前接受协商成功。' }],
-      metadata: { condition: 'adversarial', commitment_count: 11, max_turns: 15 },
+      id: 'NV-zhuxing-a-q046', kind: 'qa',
+      question: '谁在旧城门前确认了物资清单，之后又改变了交付对象？',
+      dataset_id: 'novel-memory-v1', group_id: 'NV-zhuxing-a', group_name: '诸星遗辞 A',
+      task_type: '行为主体转移', question_family: null,
+      difficulty: 'hard', difficulty_source: 'derived',
+      difficulty_reason: '冻结证据跨越 2 个窗口，包含 3 个关键点，需要同时核验主体与后续变化。',
+      why_hard: '答案依赖跨窗口动作链，不能只命中同名人物或单一物资记录。',
+      evaluation_value: '检查模型能否把动作、主体和后续状态变化连成同一条可核验事实链。',
+      capabilities: [extractionCapability, capability],
+      risks: [{ id: 'actor_transfer', label: '行为主体转移', description: '把一个人的动作或经历错误归给另一个人。' }],
+      reference_answer: '先由同行者确认清单，随后交付对象发生改变；答案须按原文主体作答。',
+      required_points: [{ id: 'NV-zhuxing-a-q046-a01', text: '确认清单与改变交付对象属于同一连续事实链。' }],
+      evidence: [{ id: 'NV-zhuxing-a-e046', kind: 'source_evidence', location: 'T5 · 旧城门',
+        role: 'assistant', content: '同行者在旧城门前逐项确认物资清单，随后将交付对象改记为另一名角色。' }],
+      misleading: [{ id: 'NV-zhuxing-a-n046', kind: 'actor_noise', label: '同名主体干扰',
+        location: 'T7 · 回述', content: '另一名角色只在转述中提及清单，并未执行确认动作。' }],
+      metadata: { answerable: true, evaluation_role: 'memory_core' },
     },
   ],
 };
@@ -173,7 +172,7 @@ export const defaults = {
     top_p: null, frequency_penalty: null, presence_penalty: null, seed: null },
   judge: { base_url: 'http://localhost:8002/v1', model: 'judge-test', temperature: 0, max_tokens: 1024,
     top_p: null, frequency_penalty: null, presence_penalty: null, seed: null },
-  search: { endpoint: 'semantic_2_bucket' as const, mode: 'fast', output_mode: 'summary',
+  search: { endpoint: 'search' as const, mode: 'fast', output_mode: 'raw',
     top_k: 20, k_dense: 14, k_sparse: 6, max_buckets: 12, bucket_content_limit: 12, extra_fields: {} },
   evidence: { parser_mode: 'legacy', content_paths: [], include_builtin_formats: true,
     include_matched_facts: true, include_buckets: true, include_attributes: true,
@@ -210,6 +209,7 @@ export const run = {
     adds_completed: 12, adds_total: 12, cases_total: 12,
   })),
   error: null, config: { answer: { model: 'answer-test' }, judge: { model: 'judge-test' } },
+  evidence_coverage: answerPointEvidence,
   cases: [
     { id: 'A-01', profile_id: 'A', profile_name: '画像 A', question: '当前偏好是什么？',
       status: 'completed', verdict: 'pass', answer: '最新偏好是步行。',
@@ -217,7 +217,18 @@ export const run = {
         score: 0.92, source_ids: ['message-1'] }],
       judgement: { pass: true, reason: '覆盖当前偏好' },
       gold: { must_include: '步行', must_not: '过去偏好' }, error: null,
-      search_response: { items: [{ text: '用户现在偏好步行' }] } },
+      search_response: { items: [{ text: '用户现在偏好步行' }] },
+      evidence_coverage: {
+        version: 'answer-point-evidence-coverage-v1',
+        judge_valid: true,
+        question_status: 'covered',
+        points: [{
+          id: 'A-01-a01',
+          verdict: 'hit',
+          evidence_refs: [{ index: 0, quote: '用户现在偏好步行' }],
+          reason: '召回明确包含当前偏好。',
+        }],
+      } },
     { id: 'A-02', profile_id: 'A', profile_name: '画像 A', question: '失败题的偏好？',
       status: 'completed', verdict: 'fail', answer: '旧偏好。',
       evidence: [], judgement: { pass: false, reason: '使用过时事实' },

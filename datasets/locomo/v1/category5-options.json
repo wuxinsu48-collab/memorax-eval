@@ -1,0 +1,4470 @@
+{
+  "seed": "locomo-original-v1-cat5-options-20261103",
+  "algorithm": "SHA256(seed + NUL + stable question ID), high-bit-zero puts refusal at A",
+  "cases": {
+    "LC-conv-26-Q153": {
+      "options": {
+        "A": "self-care is important",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q154": {
+      "options": {
+        "A": "researching adoption agencies",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q155": {
+      "options": {
+        "A": "LGBTQ+ individuals",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q156": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "because of their inclusivity and support for LGBTQ+ individuals"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q157": {
+      "options": {
+        "A": "creating a family for kids who need one",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q158": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "love, faith, and strength"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q159": {
+      "options": {
+        "A": "Sweden",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q160": {
+      "options": {
+        "A": "necklace",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q161": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "necklace"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q162": {
+      "options": {
+        "A": "art and self-expression",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q163": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "explored nature, roasted marshmallows, and went on a hike"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q164": {
+      "options": {
+        "A": "working with trans people, helping them accept themselves and supporting their mental health",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q165": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "LGBTQ+ counseling workshop"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q166": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "her own journey and the support she received, and how counseling improved her life"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q167": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a safe and inviting place for people to grow"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q168": {
+      "options": {
+        "A": "No",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "answer"
+    },
+    "LC-conv-26-Q169": {
+      "options": {
+        "A": "Running",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q170": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "To de-stress and clear her mind"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q171": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Her mental health"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q172": {
+      "options": {
+        "A": "many people wanting to create loving homes for children in need",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q173": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "visiting an LGBTQ center and wanting to capture unity and strength"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q174": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "visiting an LGBTQ center and wanting to capture unity and strength"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q175": {
+      "options": {
+        "A": "once or twice a year",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q176": {
+      "options": {
+        "A": "Perseid meteor shower",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q177": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "in awe of the universe"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q178": {
+      "options": {
+        "A": "She wanted to catch the eye and make people smile.",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q179": {
+      "options": {
+        "A": "No",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "answer"
+    },
+    "LC-conv-26-Q180": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "In Melanie's slipper"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q181": {
+      "options": {
+        "A": "Horseback riding",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q182": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a stained glass window"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q183": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a rainbow sidewalk"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q184": {
+      "options": {
+        "A": "Brave by Sara Bareilles",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q185": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "clarinet and violin"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q186": {
+      "options": {
+        "A": "Bach and Mozart",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q187": {
+      "options": {
+        "A": "Ed Sheeran",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q188": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "A sign stating that someone is not being able to leave"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q189": {
+      "options": {
+        "A": "She got hurt and had to take a break from pottery.",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q190": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Read a book and paint."
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q191": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "It was a transgender poetry reading where transgender people shared their stories."
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q192": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "He got into an accident"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q193": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "He was scared but reassured by his family"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q194": {
+      "options": {
+        "A": "They are important and mean the world to her",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q195": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "They were scared but resilient"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q196": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Grateful and thankful for her family"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q197": {
+      "options": {
+        "A": "She was happy and thankful",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q198": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Went on a nature walk or hike"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-26-Q199": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Being present and bonding with her family"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q80": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Not mentioned"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q83": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Contemporary"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q84": {
+      "options": {
+        "A": "Winning first place at a regionals dance competition",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q85": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "\"Finding Freedom\""
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q86": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Glad"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q87": {
+      "options": {
+        "A": "Marley flooring",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q88": {
+      "options": {
+        "A": "The perfect spot for her store",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q89": {
+      "options": {
+        "A": "the space, furniture, and decor",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q90": {
+      "options": {
+        "A": "cozy and comfortable",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q91": {
+      "options": {
+        "A": "personal style and customer comfort",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q92": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "The store is doing great."
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q93": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Freedom and expressing himself through dance"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q94": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "for her business"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q95": {
+      "options": {
+        "A": "he is passionate about dance and fashion",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q96": {
+      "options": {
+        "A": "a trophy",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q97": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "fashion internship"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q98": {
+      "options": {
+        "A": "fashion department of an international company",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q99": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "fashion department of an international company"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q100": {
+      "options": {
+        "A": "The Lean Startup",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q101": {
+      "options": {
+        "A": "To set goals, track achievements, and find areas for improvement",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q102": {
+      "options": {
+        "A": "To clear his mind",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q103": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Hoodies"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q104": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Not mentioned"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-30-Q105": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Sprucing up her business plan, tweaking her pitch to investors, and working on an online platform."
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q153": {
+      "options": {
+        "A": "Improving education and infrastructure",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q154": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "old car"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q155": {
+      "options": {
+        "A": "His aunt",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q156": {
+      "options": {
+        "A": "saw the impact she could make in the community through politics",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q157": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "beginner's yoga class"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q158": {
+      "options": {
+        "A": "Kyle",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q159": {
+      "options": {
+        "A": "A few times a week",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q160": {
+      "options": {
+        "A": "painting of a castle on a hill",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q161": {
+      "options": {
+        "A": "England",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q162": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "completion of a university degree"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q163": {
+      "options": {
+        "A": "education and infrastructure",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q164": {
+      "options": {
+        "A": "raise awareness and start conversations to create positive change",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q165": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "education reform and infrastructure development"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q166": {
+      "options": {
+        "A": "Three times a week",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q167": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "More energy, gains in strength and endurance"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q168": {
+      "options": {
+        "A": "Salads, sandwiches, homemade desserts",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q169": {
+      "options": {
+        "A": "joined a nearby church",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q170": {
+      "options": {
+        "A": "to feel closer to a community and her faith",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q171": {
+      "options": {
+        "A": "10 years",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q172": {
+      "options": {
+        "A": "By considering adopting a rescue dog",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q173": {
+      "options": {
+        "A": "Responsibility and compassion",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q174": {
+      "options": {
+        "A": "Like being in a fairy tale",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q175": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Free and light"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q176": {
+      "options": {
+        "A": "assistant manager",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q177": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "self-doubt"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q178": {
+      "options": {
+        "A": "His cousin had to leave and find a new place in a hurry.",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q179": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "marching event"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q180": {
+      "options": {
+        "A": "Lots of homes were ruined.",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q181": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "the resilience of the veterans and their inspiring stories"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q182": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "appreciation for giving back"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q183": {
+      "options": {
+        "A": "seeing the resilience of the veterans",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q184": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "awestruck and humbled"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q185": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "To remember and appreciate those who served"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q186": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "John lost his job at the mechanical engineering company."
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q187": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "veterans and their families"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q188": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a local organization"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q189": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a medal for volunteering"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q190": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Coco"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q191": {
+      "options": {
+        "A": "Peaceful and awesome",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q192": {
+      "options": {
+        "A": "Shadow",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-41-Q193": {
+      "options": {
+        "A": "doing great - learning commands and house training",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q200": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "purple"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q201": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Lord of the Rings"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q202": {
+      "options": {
+        "A": "dragons",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q203": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "red and purple lighting"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q204": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Street Fighter"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q205": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "loss, identity, and connection"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q206": {
+      "options": {
+        "A": "action and sci-fi",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q207": {
+      "options": {
+        "A": "drama and romance",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q208": {
+      "options": {
+        "A": "submit it to film festivals and get producers and directors to check it out",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q209": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "3 years"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q210": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Super good, rich and creamy"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q211": {
+      "options": {
+        "A": "chocolate and vanilla swirl",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q212": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "writing gig"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q213": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Bright and bold - like her"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q214": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Coconut milk, vanilla extract, sugar, salt"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q215": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "\"Finding Home\""
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q216": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "watching fantasy and sci-fi movies"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q217": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "strawberry"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q218": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Tournament friends, old friends, teammates"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q219": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Custom controller decorations"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q220": {
+      "options": {
+        "A": "Spider-Man",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q221": {
+      "options": {
+        "A": "Iron Man",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q222": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "vegan ice cream"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q223": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "7"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q224": {
+      "options": {
+        "A": "Woodhaven",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q225": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "cool old book collection"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q226": {
+      "options": {
+        "A": "loss, redemption, and forgiveness",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q227": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Touched"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q228": {
+      "options": {
+        "A": "share her stories and hopefully have an impact",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q229": {
+      "options": {
+        "A": "her book",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q230": {
+      "options": {
+        "A": "making a delicious treat",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q231": {
+      "options": {
+        "A": "Taking time off to chill with pets",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q232": {
+      "options": {
+        "A": "dairy-free margarine or coconut oil",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q233": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a cooking show"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q234": {
+      "options": {
+        "A": "Coconut milk ice cream",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q235": {
+      "options": {
+        "A": "chocolate raspberry tart",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q236": {
+      "options": {
+        "A": "blueberries and coconut milk",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q237": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Little Women"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q238": {
+      "options": {
+        "A": "a bookmark",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q239": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Cyberpunk 2077"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q240": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "gripping with great actors"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q241": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "couch for multiple people, fluffy blanket, lights that can be dimmed"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q242": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "stuffed animal dog named Tilly"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q243": {
+      "options": {
+        "A": "have a stuffed animal dog named Tilly with him",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q244": {
+      "options": {
+        "A": "keep grinding and moving ahead",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q245": {
+      "options": {
+        "A": "her turtles",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q246": {
+      "options": {
+        "A": "stuffed animal dog Tilly",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q247": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "visuals to help bring the characters alive in her head so she can write better"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q248": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "combination of vegetables, fruits, and insects"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q249": {
+      "options": {
+        "A": "early writings",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q250": {
+      "options": {
+        "A": "\"Xenoblade Chronicles\"",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q251": {
+      "options": {
+        "A": "a handwritten letter",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q252": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "fantasy RPG"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q253": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "A suspenseful thriller set in a small Midwestern town"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q254": {
+      "options": {
+        "A": "gaming content",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q255": {
+      "options": {
+        "A": "Love of gaming and connecting with others who enjoy it too",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q256": {
+      "options": {
+        "A": "Gaming videos",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q257": {
+      "options": {
+        "A": "Sunset",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q258": {
+      "options": {
+        "A": "She saw another one at a pet store and wanted to get it",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q259": {
+      "options": {
+        "A": "turtles",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-42-Q260": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "They make her feel calm and don't require much looking after"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q179": {
+      "options": {
+        "A": "The Minnesota Wolves",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q180": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "shooting guard"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q181": {
+      "options": {
+        "A": "fitting into the new team's style of play",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q182": {
+      "options": {
+        "A": "fantasy literature forum",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q183": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "40 points"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q184": {
+      "options": {
+        "A": "a tough win",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q185": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "basketball shoe and gear deal with Nike, potential sponsorship deal with Gatorade"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q186": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "super exciting and free-feeling"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q187": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "different fantasy novels, characters, themes, and book recommendations"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q188": {
+      "options": {
+        "A": "Harry Potter and Game of Thrones",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q189": {
+      "options": {
+        "A": "an intense Harry Potter trivia contest",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q190": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Dad signed him up for a local league"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q191": {
+      "options": {
+        "A": "Winning a championship",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q192": {
+      "options": {
+        "A": "A local organization helping disadvantaged kids with sports and school",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q193": {
+      "options": {
+        "A": "a basketball with autographs on it",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q194": {
+      "options": {
+        "A": "to show their friendship and appreciation",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q195": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "to learn more about literature and create a stronger bond to it"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q196": {
+      "options": {
+        "A": "play the piano",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q197": {
+      "options": {
+        "A": "Watching it with his family",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q198": {
+      "options": {
+        "A": "\"Home Alone\"",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q199": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Prepping the feast and talking about what they're thankful for"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q200": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Four years"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q201": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Amazing"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q202": {
+      "options": {
+        "A": "sage",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q203": {
+      "options": {
+        "A": "The Harry Potter stuff",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q204": {
+      "options": {
+        "A": "a new city",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q205": {
+      "options": {
+        "A": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q206": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Greenhouse"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q207": {
+      "options": {
+        "A": "passion for fantasy stuff",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q208": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "by backing each other up and not quitting"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q209": {
+      "options": {
+        "A": "Smoky Mountains",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q210": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Seeing their growth, improvement, and confidence"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q211": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "reach their goals"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q212": {
+      "options": {
+        "A": "Fantasy",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q213": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "J.K. Rowling"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q214": {
+      "options": {
+        "A": "motivational quotes and strategies",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q215": {
+      "options": {
+        "A": "Cooking",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q216": {
+      "options": {
+        "A": "honey garlic chicken with roasted veg",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q217": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "write it down and mail it"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q218": {
+      "options": {
+        "A": "\"That\"",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q219": {
+      "options": {
+        "A": "Story based on experiences in the UK didn't go as planned",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q220": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "stayed focused on recovery and worked hard to strengthen his body"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q221": {
+      "options": {
+        "A": "Love for writing and reading",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q222": {
+      "options": {
+        "A": "Worked hard to get better and focused on growth",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q223": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "yoga"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q224": {
+      "options": {
+        "A": "an instrument",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q225": {
+      "options": {
+        "A": "violin",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q226": {
+      "options": {
+        "A": "about four months",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q227": {
+      "options": {
+        "A": "\"A Dance with Dragons\"",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q228": {
+      "options": {
+        "A": "basketball",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q229": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "practicing basketball outside for hours"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q230": {
+      "options": {
+        "A": "In a gorgeous forest",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q231": {
+      "options": {
+        "A": "Communication and bonding",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q232": {
+      "options": {
+        "A": "Sports and marketing seminars",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q233": {
+      "options": {
+        "A": "youth sports and fair chances in sports",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q234": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "\"The Wheel of Time\""
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q235": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "German"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q236": {
+      "options": {
+        "A": "Aragorn",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q237": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "brave, selfless, down-to-earth attitude"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q238": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a painting of Aragorn"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q239": {
+      "options": {
+        "A": "be a leader",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q240": {
+      "options": {
+        "A": "Galway",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q241": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "benefit basketball game"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-43-Q242": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "crazy feeling, sense of accomplishment"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q124": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Eagles"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q125": {
+      "options": {
+        "A": "sunflowers",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q126": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "smaller dog"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q127": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Strengthen the bond with her pets"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q128": {
+      "options": {
+        "A": "Saw a workshop flyer at the local pet store",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q129": {
+      "options": {
+        "A": "Positive reinforcement training",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q130": {
+      "options": {
+        "A": "Friendly and playful",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q131": {
+      "options": {
+        "A": "Finding a pet-friendly spot in the city",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q132": {
+      "options": {
+        "A": "kayaking and bungee jumping",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q133": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a doggy play area with agility stuff and toys"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q134": {
+      "options": {
+        "A": "volunteered at a pet shelter",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q135": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Max"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q136": {
+      "options": {
+        "A": "Long walks in the neighborhood, exploring new paths, sharing worries and hopes",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q137": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "oldest is relaxed, second is playful, third can be naughty but loves cuddles, youngest is full of life"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q138": {
+      "options": {
+        "A": "Agility classes",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q139": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Daily brushing, regular baths, nail trims, and lots of love"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q140": {
+      "options": {
+        "A": "a doggy playdate",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q141": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Got new beds for them"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q142": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Super cozy and comfy"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q143": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Petted, hugged, spoke calmly and slowly walked the dog"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q144": {
+      "options": {
+        "A": "Multiple times a day",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q145": {
+      "options": {
+        "A": "Peruvian Lilies",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q146": {
+      "options": {
+        "A": "about animals, plants, and ecosystems and how they work together",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q147": {
+      "options": {
+        "A": "Knee injury",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q148": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Jewelry made from recycled objects"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q149": {
+      "options": {
+        "A": "To show love for creativity and sustainability",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q150": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Fetch and Frisbee"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q151": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Goodies"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q152": {
+      "options": {
+        "A": "Confused",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q153": {
+      "options": {
+        "A": "They definitely prefer nice, sunny days in the grass.",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q154": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Exploring the great outdoors"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q155": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Walking"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q156": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "sushi"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q157": {
+      "options": {
+        "A": "California or salmon roll",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-44-Q158": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Once a week"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q151": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a pup"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q152": {
+      "options": {
+        "A": "Ned",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q153": {
+      "options": {
+        "A": "Appearance of a woman he saw during a walk",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q154": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Italy"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q155": {
+      "options": {
+        "A": "Coding assignment",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q156": {
+      "options": {
+        "A": "Bought groceries and cooked food for the homeless",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q157": {
+      "options": {
+        "A": "Raise money for a dog shelter",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q158": {
+      "options": {
+        "A": "tracking inventory, resources, and donations",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q159": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "computer application on smartphones"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q160": {
+      "options": {
+        "A": "Liverpool",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q161": {
+      "options": {
+        "A": "catching frisbees in mid-air",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q162": {
+      "options": {
+        "A": "No",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q163": {
+      "options": {
+        "A": "Reading",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q164": {
+      "options": {
+        "A": "Extreme sports",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q165": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "July 20"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q166": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "to focus on things that align with his values and passions"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q167": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Fortnite competitions"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q168": {
+      "options": {
+        "A": "routine examination and vaccination",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q169": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "shaping the world with choices"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q170": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "call her"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q171": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "coding"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q172": {
+      "options": {
+        "A": "$10",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q173": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Dough"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q174": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "He wanted to learn something new"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q175": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Omelette"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q176": {
+      "options": {
+        "A": "Dungeons of the Dragon",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q177": {
+      "options": {
+        "A": "books, movies, dreams",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q178": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "drums"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q179": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "watch tutorials and keep up with developer forums"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q180": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "programming mentor for game developers"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q181": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "excited and inspired"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q182": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Witcher 3"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q183": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Fortnite, Overwatch, Apex Legends"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q184": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "To raise money for a children's hospital"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q185": {
+      "options": {
+        "A": "To move in together",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q186": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "In an apartment not far from McGee's bar"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q187": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "They love spending time together at the bar"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q188": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "FIFA 23"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q189": {
+      "options": {
+        "A": "An online board game",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-47-Q190": {
+      "options": {
+        "A": "Luna",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q192": {
+      "options": {
+        "A": "Susie, Seraphim",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q193": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Sapiens, Avalanche by Neal Stephenson"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q194": {
+      "options": {
+        "A": "Luna is from the shelter and Max is her mother's cat",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q195": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Max is 8 years old and Luna is 5 years old"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q196": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "when she was 10"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q197": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "A year ago"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q198": {
+      "options": {
+        "A": "yoga in the park",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q199": {
+      "options": {
+        "A": "\"Sapiens\"",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q200": {
+      "options": {
+        "A": "Came up with neat solutions for her engineering project",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q201": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "As guest speakers for workshops"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q202": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Roses and dahlias"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q203": {
+      "options": {
+        "A": "to find comfort after losing a friend",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q204": {
+      "options": {
+        "A": "In an engineering class in college",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q205": {
+      "options": {
+        "A": "spending time with loved ones",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q206": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "The Eisenhower Matrix"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q207": {
+      "options": {
+        "A": "gathering information, watching videos, getting a beginners' guide",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q208": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Nils Frahm and Olafur Arnalds"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q209": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "an art show"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q210": {
+      "options": {
+        "A": "It makes her feel like she's still experiencing it with her mom",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q211": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Valuable and relaxing"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q212": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "one year"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q213": {
+      "options": {
+        "A": "comforted",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q214": {
+      "options": {
+        "A": "helping and pushing each other during runs",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q215": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "fascinated by reptiles and it felt like the perfect pet"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q216": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "She adopted her two years ago when feeling lonely."
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q217": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Notebooks"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q218": {
+      "options": {
+        "A": "bullet journal",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q219": {
+      "options": {
+        "A": "Animal Crossing: New Horizons",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q220": {
+      "options": {
+        "A": "Zelda BOTW",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q221": {
+      "options": {
+        "A": "It holds special memories of conversations with her mom",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q222": {
+      "options": {
+        "A": "dreams and life",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q223": {
+      "options": {
+        "A": "thrilled and rewarded",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q224": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "virtual conference"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q225": {
+      "options": {
+        "A": "Helping others",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q226": {
+      "options": {
+        "A": "Sustainable initiatives and developing innovative solutions for environmental issues",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q227": {
+      "options": {
+        "A": "From the shelter",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q228": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Yoga classes"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q229": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "As a reminder to nurture herself and embrace fresh starts"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q230": {
+      "options": {
+        "A": "attended classes with her",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q231": {
+      "options": {
+        "A": "nintendo game console",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q232": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Monster Hunter: World"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q233": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Phuket"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q234": {
+      "options": {
+        "A": "reminisced and looked through photos",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q235": {
+      "options": {
+        "A": "on the beach",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q236": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Free gardening class"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q237": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Pineapple cakes"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q238": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Chocolate chip cookies"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-48-Q239": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Dancing and bopping around"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q157": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "new Prius"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q158": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "friend's advice"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q159": {
+      "options": {
+        "A": "watercolor painting",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q160": {
+      "options": {
+        "A": "Jasper",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q161": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "fresh air, peacefulness, cozy cabin surrounded by mountains and forests"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q162": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "consuming soda and candy"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q163": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "broken self-checkout machines"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q164": {
+      "options": {
+        "A": "The Great Gatsby",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q165": {
+      "options": {
+        "A": "tracks progress and serves as a constant reminder to keep going",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q166": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "motivates him to keep going through tough times"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q167": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "his keys"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q168": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "cooking class"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q169": {
+      "options": {
+        "A": "grilled dish with salmon and vegetables",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q170": {
+      "options": {
+        "A": "bowl of spinach, avocado, and strawberries",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q171": {
+      "options": {
+        "A": "forest scene",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q172": {
+      "options": {
+        "A": "observing nature and painting what is seen",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q173": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "sunsets over the ocean"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q174": {
+      "options": {
+        "A": "Swimming",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q175": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Watercolor painting"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q176": {
+      "options": {
+        "A": "creative writing",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q177": {
+      "options": {
+        "A": "malfunctioning navigation app on the new phone",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q178": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "lifting weights"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q179": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Lake Tahoe"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q180": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Gastritis"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q181": {
+      "options": {
+        "A": "Changed his diet and started walking regularly",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q182": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "1968 Kustom K-200A vintage guitar"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q183": {
+      "options": {
+        "A": "A happy place",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q184": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "He relied on it for his active lifestyle and road trips"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q185": {
+      "options": {
+        "A": "big family reunion",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q186": {
+      "options": {
+        "A": "'Bring it on Home'",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q187": {
+      "options": {
+        "A": "a close friend",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q188": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a sense of joy and freedom"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q189": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "embracing the creative process without restraint"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q190": {
+      "options": {
+        "A": "their marriage",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q191": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "just two ginger snaps a day"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q192": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Snowshoeing"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q193": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "swimming, yoga, walking"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q194": {
+      "options": {
+        "A": "The Godfather",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q195": {
+      "options": {
+        "A": "Yoga",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-49-Q196": {
+      "options": {
+        "A": "a kayak",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q159": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Aerosmith"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q160": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "to stay true to himself and sound unique"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q161": {
+      "options": {
+        "A": "Car maintenance shop",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q162": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "all kinds of cars, from regular maintenance to full restorations of classic cars"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q163": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a gold necklace with a diamond pendant"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q164": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "why he keeps hustling as a musician"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q165": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a car shop"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q166": {
+      "options": {
+        "A": "Fixing up things",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q167": {
+      "options": {
+        "A": "Skiing",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q168": {
+      "options": {
+        "A": "gives them a fresh vibe",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q169": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Ferrari"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q170": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Car mod workshop"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q171": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "engine swaps, suspension modifications, and body modifications"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q172": {
+      "options": {
+        "A": "classic muscle car",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q173": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "a podcast discussing the rap industry"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q174": {
+      "options": {
+        "A": "Miami",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q175": {
+      "options": {
+        "A": "octopus",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q176": {
+      "options": {
+        "A": "unique look",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q177": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "purple"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q178": {
+      "options": {
+        "A": "San Francisco",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q179": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Proud"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q180": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Boston"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q181": {
+      "options": {
+        "A": "Ratatouille",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q182": {
+      "options": {
+        "A": "\"California Love\"",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q183": {
+      "options": {
+        "A": "Ford Mustang",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q184": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Transforming something old and beat-up into something beautiful"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q185": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Therapy and a way to get away from everyday stress"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q186": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Take something broken and make it into something awesome"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q187": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Ferrari"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q188": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "The Fireworks"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q189": {
+      "options": {
+        "A": "Shibuya Crossing",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q190": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Shinjuku"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q191": {
+      "options": {
+        "A": "Last year",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q192": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "at an early age"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q193": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "how much music means to him, it's like his passion and purpose"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q194": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Threw a small party for his new album"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q195": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Car mods"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q196": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Music videos, concerts, documentaries about artists and their creative process"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q197": {
+      "options": {
+        "A": "Not mentioned in the conversation",
+        "B": "Classic rock"
+      },
+      "expected": [
+        "A"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q198": {
+      "options": {
+        "A": "How he made his car look like a beast",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q199": {
+      "options": {
+        "A": "It inspires others to start their DIY projects",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q200": {
+      "options": {
+        "A": "his old high school buddy",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q201": {
+      "options": {
+        "A": "A vintage camera",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q202": {
+      "options": {
+        "A": "Nature - sunsets, beaches, waves",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q203": {
+      "options": {
+        "A": "Music and art",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    },
+    "LC-conv-50-Q204": {
+      "options": {
+        "A": "Nearby park",
+        "B": "Not mentioned in the conversation"
+      },
+      "expected": [
+        "B"
+      ],
+      "decoy_source_field": "adversarial_answer"
+    }
+  },
+  "legacy_refusal_substring_decoy_collisions": [
+    "LC-conv-30-Q80",
+    "LC-conv-30-Q104"
+  ]
+}

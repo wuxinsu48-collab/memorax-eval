@@ -1,0 +1,52 @@
+{
+  "id": "locomo-original-v1",
+  "version": "1",
+  "source_url": "https://github.com/snap-research/locomo",
+  "license": "CC BY-NC 4.0",
+  "handoff_sha256": "f67f1e887f3ed239c2403dfda2846588f67237c5f3d6cd6b8dc4f4a075339d57",
+  "source_release": "original locomo10; not refined",
+  "counts": {
+    "samples": 10,
+    "sessions": 272,
+    "messages": 5882,
+    "questions": 1986,
+    "categories": {
+      "1": 282,
+      "2": 321,
+      "3": 96,
+      "4": 841,
+      "5": 446
+    }
+  },
+  "files_sha256": {
+    "source/data/locomo10.json": "79fa87e90f04081343b8c8debecb80a9a6842b76a7aa537dc9fdf651ea698ff4",
+    "source/task_eval/evaluation.py": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+    "source/task_eval/gpt_utils.py": "5fc977375878199735acd28fba5ae6f4d657fa0e000c0d2918a90c07b6035793",
+    "source/task_eval/evaluate_qa.py": "dde7c1c6b5501486f96ce31398d6e49de76abbfa656e980b137e54fc69e9f6ee",
+    "source/task_eval/evaluation_stats.py": "d36bf596de05ea6f1c355e433167a8cd704bea3a3745277c650ac0c464bba139",
+    "source/README.MD": "9f8e6fd00a3400aa687109f40ed53715f0a2c028ee3f8c465bdfa96475640e8a",
+    "source/LICENSE.txt": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+    "category5-options.json": "42fbf58b6cc95f58f8529224dff5c5dde6710b87cb9c95a2e293cd4435c63210",
+    "answer-prompt.txt": "90ab4df83f28231998d1aa1408312129ee11da069a940ee58f948aad484c784a"
+  },
+  "category5": {
+    "seed": "locomo-original-v1-cat5-options-20261103",
+    "frozen_mapping_file": "category5-options.json",
+    "decoy_policy": "answer if present, else adversarial_answer; neither is Gold",
+    "reference_answer": "Not mentioned in the conversation",
+    "legacy_substring_decoy_collisions": [
+      "LC-conv-30-Q80",
+      "LC-conv-30-Q104"
+    ],
+    "guard": "wrong declared choice always scores zero; preserve official_text_score"
+  },
+  "scheduler_recommendation": {
+    "profile_workers": 3,
+    "parallel_adds": 3
+  },
+  "dependencies": {
+    "nltk": "PorterStemmer() default mode; no nltk corpus needed",
+    "regex": "nltk dependency, official normalization boundaries"
+  },
+  "provenance": "Seven source files byte-for-byte from locally supplied SHA-verified handoff; no model output or upstream summaries added to memory."
+}

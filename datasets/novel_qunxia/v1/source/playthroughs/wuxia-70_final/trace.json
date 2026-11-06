@@ -1,0 +1,76 @@
+{
+  "file": "wuxia-70_final",
+  "trace_count": 1,
+  "trace_id": "professional-author-qunxia-wuxia-70-20261102",
+  "playthrough_id": "wuxia-70",
+  "script_name": "群侠恩仇录 · 专业作者修订题集",
+  "turns": 70,
+  "qa": 50,
+  "content_mode": "narrative_only",
+  "stage_adjustment": {
+    "policy": "authored_stage_must_contain_all_cited_evidence",
+    "moved_question_count": 0,
+    "moved_questions": []
+  },
+  "stage_protocol": [
+    {
+      "stage": 1,
+      "add_turn_range": {
+        "start": 1,
+        "end": 14
+      },
+      "visible_until_turn": 14,
+      "qa_count": 9
+    },
+    {
+      "stage": 2,
+      "add_turn_range": {
+        "start": 15,
+        "end": 28
+      },
+      "visible_until_turn": 28,
+      "qa_count": 10
+    },
+    {
+      "stage": 3,
+      "add_turn_range": {
+        "start": 29,
+        "end": 42
+      },
+      "visible_until_turn": 42,
+      "qa_count": 11
+    },
+    {
+      "stage": 4,
+      "add_turn_range": {
+        "start": 43,
+        "end": 56
+      },
+      "visible_until_turn": 56,
+      "qa_count": 10
+    },
+    {
+      "stage": 5,
+      "add_turn_range": {
+        "start": 57,
+        "end": 70
+      },
+      "visible_until_turn": 70,
+      "qa_count": 10
+    }
+  ],
+  "category_counts": {
+    "actor_transfer": 16,
+    "identity_pollution": 4,
+    "item_state_migration": 20,
+    "temporal_disorder": 5,
+    "false_commitment": 3,
+    "fabricated_action": 2
+  },
+  "files": {
+    "add": "add_requests.jsonl",
+    "search": "search_requests.jsonl",
+    "reference_answers": "reference_answers.jsonl",
+    "source_turns": "source_turns.json"
+  }
+}

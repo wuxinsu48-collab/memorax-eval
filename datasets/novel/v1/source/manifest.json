@@ -1,6 +1,6 @@
 {
-  "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261020-neutral-question-v1",
-  "generated_at": "2026-10-20T00:00:00+08:00",
+  "dataset_id": "novel-memory-7risk-4trace-400turn-200qa-zhuxing-c-author-20261102",
+  "generated_at": "2026-11-03T03:30:03.880745+00:00",
   "source_packages": [
     {
       "playthrough_id": "zhuxing-a",
@@ -14,8 +14,36 @@
     },
     {
       "playthrough_id": "zhuxing-c",
-      "copied_from": "artifacts/小说记忆评测集_七类记忆错误_3playthrough_330turn_150QA_20261020/playthroughs/zhuxing-c_final",
-      "copied_without_content_changes": true
+      "copied_from": "诸星遗辞C_修订评测集_20261102.zip/playthrough/zhuxing-c_final",
+      "copied_without_content_changes": true,
+      "source_archive_sha256": "2a848132adb76347157a5cad85c894e8e1d3a97de961cf0768d519d7dbdfcd8c",
+      "author_manifest": {
+        "dataset_variant": "professional-author-zhuxing-c-revision-20261102",
+        "generated_at": "2026-11-02T12:18:14.619337+00:00",
+        "source_text_sha256": "dd330d4dae6eca8f34d23eab4457e4d78b9bd5bd3b9ae7a90836982c853545aa",
+        "source_workbook_sha256": "ed50322e9af74d2b0353ba554c162bfe730fd7191d6c6bc8e5d5bd90cc136db9",
+        "stage_adjustment": {
+          "policy": "authored_stage_must_contain_all_cited_evidence",
+          "moved_question_count": 1,
+          "moved_questions": [
+            {
+              "source_question_id": "zhuxing-c-q017",
+              "previous_stage": 2,
+              "effective_stage": 3,
+              "max_evidence_turn": 62
+            }
+          ]
+        },
+        "files_sha256": {
+          "playthrough/zhuxing-c_final/trace.json": "56e480fd507247fd87b916aa839f77c4aee829d28d49292d45b72ed8e7a38b99",
+          "playthrough/zhuxing-c_final/source_turns.json": "6beedd9ab73b1b054ad222affd1d8b078eb10eda3d8eb659b2c7f6fc43302c6c",
+          "playthrough/zhuxing-c_final/add_requests.jsonl": "4ffe5d39f1957d8e0cd777d64f58cc3f2b6c19ecde1e30072bb534ad2cf25e67",
+          "playthrough/zhuxing-c_final/search_requests.jsonl": "4fb8a756925b1c350517be19082bdf12faa4c8efa243e14f3f26b87ecb9f09b9",
+          "playthrough/zhuxing-c_final/reference_answers.jsonl": "f5714a550902028d5a06b7cc5508493cea50cb60278ec8e2c89e00ab4e6a1260",
+          "题目与答案_诸星C_修订版.xlsx": "ed50322e9af74d2b0353ba554c162bfe730fd7191d6c6bc8e5d5bd90cc136db9",
+          "剧本原文.txt": "dd330d4dae6eca8f34d23eab4457e4d78b9bd5bd3b9ae7a90836982c853545aa"
+        }
+      }
     },
     {
       "playthrough_id": "wuxia-70",
@@ -25,7 +53,7 @@
   ],
   "execution_status": "not_run",
   "protocol": [
-    "所有 search 问题均使用简洁、中性、无排除提示的 2026-10-20 改写版本。",
+    "诸星A、B和江湖逃亡沿用2026-10-20版；诸星C使用2026-11-02作者修订50题及对应110回合正文，按该trace声明的阶段题数执行。",
     "四个 playthrough 必须分别使用独立的 user_id/session_id，并将 RUN_ID 替换为本次新运行标识。",
     "每个 playthrough 严格按各自 trace.json 的 stage_protocol 分阶段 add 和 search。",
     "search_requests.jsonl 是盲测输入，不含 category、reference_answer、required_points 或 evidence。",
@@ -33,8 +61,8 @@
     "问题只能使用当前 playthrough 且不超过 visible_until_turn 的记忆，禁止跨 playthrough 和未来回合泄漏。"
   ],
   "summary": {
-    "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261020-neutral-question-v1",
-    "generated_at": "2026-10-20T00:00:00+08:00",
+    "dataset_id": "novel-memory-7risk-4trace-400turn-200qa-zhuxing-c-author-20261102",
+    "generated_at": "2026-11-03T03:30:03.880745+00:00",
     "organization": "每个 *_final 目录是 1 条独立 trace/playthrough，包含该 trace 的 add、search 和参考答案。",
     "files": [
       {
@@ -68,13 +96,13 @@
       "qa": 200
     },
     "category_counts": {
-      "actor_transfer": 32,
+      "temporal_disorder": 32,
       "item_state_migration": 40,
-      "identity_pollution": 19,
-      "global_memory_leak": 21,
-      "false_commitment": 31,
-      "temporal_disorder": 29,
-      "fabricated_action": 28
+      "false_commitment": 29,
+      "global_memory_leak": 17,
+      "identity_pollution": 20,
+      "fabricated_action": 29,
+      "actor_transfer": 33
     },
     "execution_status": "not_run"
   }

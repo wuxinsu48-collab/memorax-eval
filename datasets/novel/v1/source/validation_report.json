@@ -1,35 +1,37 @@
 {
   "status": "passed",
-  "validated_at": "2026-10-20T00:00:00+08:00",
+  "validated_at": "2026-11-03T03:30:03.880745+00:00",
+  "dataset_revision": "2026.11.03-zhuxing-c-revision",
   "checks": {
     "four_isolated_playthrough_directories": true,
-    "one_trace_per_directory": true,
-    "zhuxing_playthroughs_copied_without_content_changes": true,
-    "wuxia_playthrough_copied_without_content_changes": true,
     "every_playthrough_has_50_search_and_reference_items": true,
     "total_400_turns_200_qa": true,
     "exactly_seven_categories": true,
-    "every_category_nonempty": true,
     "blind_search_excludes_gold_and_category": true,
-    "all_questions_use_neutral_rewrites_without_answer_guidance": true,
-    "reference_answers_include_evidence": true,
     "source_turns_included_for_resolvable_provenance": true,
+    "all_evidence_quotes_and_roles_resolve": true,
+    "no_evidence_after_stage_boundary": true,
+    "declared_stage_question_counts_match_actual": true,
     "add_content_preserved_from_source": true,
+    "other_three_playthroughs_byte_identical": true,
+    "author_revision_archive_manifest_all_seven_hashes_valid": true,
     "execution_results_not_fabricated": true
   },
   "totals": {
     "trace": 4,
     "turns": 400,
-    "qa": 200
+    "qa": 200,
+    "required_points": 472,
+    "evidence_quotes_verified": 537
   },
   "category_counts": {
-    "actor_transfer": 32,
+    "temporal_disorder": 32,
     "item_state_migration": 40,
-    "identity_pollution": 19,
-    "global_memory_leak": 21,
-    "false_commitment": 31,
-    "temporal_disorder": 29,
-    "fabricated_action": 28
+    "false_commitment": 29,
+    "global_memory_leak": 17,
+    "identity_pollution": 20,
+    "fabricated_action": 29,
+    "actor_transfer": 33
   },
   "per_playthrough": [
     {
@@ -46,7 +48,7 @@
     },
     {
       "file": "zhuxing-c_final",
-      "script_name": "诸星遗辞",
+      "script_name": "诸星遗辞 · 专业作者修订题集",
       "turns": 110,
       "qa": 50
     },
@@ -58,8 +60,7 @@
     }
   ],
   "limitations": [
-    "本次仅改写四条 playthrough 的问题文本；add、参考答案、判分点、证据和原始回合未修改。",
-    "本包未执行 add/search/Judge，不代表被测模型已通过验收。",
-    "本次不涉及 SDK 代码或运行配置变更，因此未启动本地服务回归或真实请求压测。"
+    "这里只验证来源、回合、阶段、题目/答案对应及证据原文，不代表已运行或模型通过。",
+    "C的35回合正文和50道题已变更，不能把旧C的Add/Search及成绩当作新版结果。"
   ]
 }

@@ -1,0 +1,328 @@
+{
+  "dataset_version": "2026.11.02-qunxia-professional-author-revision",
+  "author_manifest": {
+    "dataset_variant": "professional-author-qunxia-wuxia-70-revision-20261102",
+    "generated_at": "2026-11-02T14:17:54.330761+00:00",
+    "input_workbook_sha256": "dbede31e5f97af0380cb58a288e24ce90fde903c2d1f9cf20a6e153ec1cae915",
+    "input_text_sha256": "3a3cc247bc677adb710b74111be414062c3a6614b68327450bf8117f54add2ad",
+    "changes": [
+      {
+        "id": "wuxia-70-q001",
+        "category_before": "行为主体转移",
+        "category_after": "行为主体转移",
+        "fields": [
+          "answer",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q003",
+        "category_before": "行为主体转移",
+        "category_after": "行为主体转移",
+        "fields": [
+          "answer",
+          "evidence",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q004",
+        "category_before": "人物身份污染",
+        "category_after": "行为主体转移",
+        "fields": [
+          "answer",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q006",
+        "category_before": "物品所有权与位置迁移",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q031",
+        "category_before": "人物身份污染",
+        "category_after": "行为主体转移",
+        "fields": []
+      },
+      {
+        "id": "wuxia-70-q032",
+        "category_before": "行为主体转移",
+        "category_after": "行为主体转移",
+        "fields": [
+          "evidence",
+          "note"
+        ]
+      },
+      {
+        "id": "wuxia-70-q033",
+        "category_before": "行为主体转移",
+        "category_after": "时间顺序错乱",
+        "fields": [
+          "answer",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q009",
+        "category_before": "行为主体转移",
+        "category_after": "行为主体转移",
+        "fields": [
+          "answer",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q035",
+        "category_before": "行为主体转移",
+        "category_after": "时间顺序错乱",
+        "fields": [
+          "note",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q037",
+        "category_before": "虚假承诺与核验",
+        "category_after": "行为主体转移",
+        "fields": []
+      },
+      {
+        "id": "wuxia-70-q038",
+        "category_before": "虚构行为写入记忆",
+        "category_after": "虚构行为写入记忆",
+        "fields": [
+          "answer",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q013",
+        "category_before": "人物身份污染",
+        "category_after": "行为主体转移",
+        "fields": []
+      },
+      {
+        "id": "wuxia-70-q014",
+        "category_before": "行为主体转移",
+        "category_after": "行为主体转移",
+        "fields": [
+          "note",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q015",
+        "category_before": "人物身份污染",
+        "category_after": "行为主体转移",
+        "fields": []
+      },
+      {
+        "id": "wuxia-70-q017",
+        "category_before": "行为主体转移",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q018",
+        "category_before": "行为主体转移",
+        "category_after": "行为主体转移",
+        "fields": [
+          "answer",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q040",
+        "category_before": "行为主体转移",
+        "category_after": "人物身份污染",
+        "fields": [
+          "answer",
+          "evidence",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q042",
+        "category_before": "时间顺序错乱",
+        "category_after": "时间顺序错乱",
+        "fields": [
+          "answer",
+          "note"
+        ]
+      },
+      {
+        "id": "wuxia-70-q019",
+        "category_before": "人物身份污染",
+        "category_after": "行为主体转移",
+        "fields": [
+          "answer",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q020",
+        "category_before": "物品所有权与位置迁移",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "evidence",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q021",
+        "category_before": "人物身份污染",
+        "category_after": "行为主体转移",
+        "fields": []
+      },
+      {
+        "id": "wuxia-70-q023",
+        "category_before": "行为主体转移",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q024",
+        "category_before": "虚假承诺与核验",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "evidence",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q045",
+        "category_before": "行为主体转移",
+        "category_after": "虚构行为写入记忆",
+        "fields": [
+          "answer",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q026",
+        "category_before": "行为主体转移",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q029",
+        "category_before": "物品所有权与位置迁移",
+        "category_after": "时间顺序错乱",
+        "fields": []
+      },
+      {
+        "id": "wuxia-70-q030",
+        "category_before": "时间顺序错乱",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "evidence",
+          "note",
+          "points"
+        ]
+      },
+      {
+        "id": "wuxia-70-q049",
+        "category_before": "全局记忆泄漏",
+        "category_after": "人物身份污染",
+        "fields": [
+          "answer",
+          "note",
+          "points",
+          "question"
+        ]
+      },
+      {
+        "id": "wuxia-70-q050",
+        "category_before": "虚假承诺与核验",
+        "category_after": "物品所有权与位置迁移",
+        "fields": [
+          "answer",
+          "note",
+          "points",
+          "question"
+        ]
+      }
+    ],
+    "stats": {
+      "turns": 70,
+      "questions": 50,
+      "required_points": 110,
+      "evidence": 103,
+      "evidence_roles": {
+        "assistant": 103
+      },
+      "stage_counts": {
+        "1": 9,
+        "2": 10,
+        "3": 11,
+        "4": 10,
+        "5": 10
+      },
+      "category_counts": {
+        "actor_transfer": 16,
+        "identity_pollution": 4,
+        "item_state_migration": 20,
+        "temporal_disorder": 5,
+        "false_commitment": 3,
+        "fabricated_action": 2
+      },
+      "source_turns_sha256": "2f1b324e986c28462455a55a4456995c60d3c94687d481d06aa2f4e26593114a"
+    },
+    "files_sha256": {
+      "题目与答案_群侠恩仇录_修订版.xlsx": "835bbbe83227162f5846645bcd421c9abc01735b151c78c9caaeb27c608b56e6",
+      "剧本原文.txt": "3a3cc247bc677adb710b74111be414062c3a6614b68327450bf8117f54add2ad",
+      "playthrough/wuxia-70_final/trace.json": "1a936828d671bebd1d5ea23f6d05398281482ff458525a90254036d43eec36d2",
+      "playthrough/wuxia-70_final/source_turns.json": "2f1b324e986c28462455a55a4456995c60d3c94687d481d06aa2f4e26593114a",
+      "playthrough/wuxia-70_final/add_requests.jsonl": "ea31394d3b0df380cceb4abd734463722dc74a3b6f32cf6579eef9f8bdb40bcc",
+      "playthrough/wuxia-70_final/search_requests.jsonl": "49222d1be30fe78f1e9c060a0aa0a4a0c95fb3203d355446187823d2694714be",
+      "playthrough/wuxia-70_final/reference_answers.jsonl": "69f51dd7cba959d84633902e61212bff9eb3053defb0e081bafb7769c6998fd6"
+    }
+  },
+  "changes": "New standalone one-trace evaluation set. It is not a replacement for novel-memory-v1 and does not change its 200-question denominator.",
+  "files_sha256": {
+    "playthroughs/wuxia-70_final/add_requests.jsonl": "ea31394d3b0df380cceb4abd734463722dc74a3b6f32cf6579eef9f8bdb40bcc",
+    "playthroughs/wuxia-70_final/reference_answers.jsonl": "69f51dd7cba959d84633902e61212bff9eb3053defb0e081bafb7769c6998fd6",
+    "playthroughs/wuxia-70_final/search_requests.jsonl": "49222d1be30fe78f1e9c060a0aa0a4a0c95fb3203d355446187823d2694714be",
+    "playthroughs/wuxia-70_final/source_turns.json": "2f1b324e986c28462455a55a4456995c60d3c94687d481d06aa2f4e26593114a",
+    "playthroughs/wuxia-70_final/trace.json": "1a936828d671bebd1d5ea23f6d05398281482ff458525a90254036d43eec36d2",
+    "taxonomy.json": "48a95d7dbea53ccee0a36d276b767e262dbc51fa6fe91de7990c198190d0cafa",
+    "剧本原文.txt": "3a3cc247bc677adb710b74111be414062c3a6614b68327450bf8117f54add2ad",
+    "题目与答案_群侠恩仇录_修订版.xlsx": "835bbbe83227162f5846645bcd421c9abc01735b151c78c9caaeb27c608b56e6"
+  }
+}

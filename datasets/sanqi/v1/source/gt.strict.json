@@ -1,0 +1,2947 @@
+{
+  "records": [
+    {
+      "source_request_id": "d9bbabfe-6cc3-4e38-bbb2-96af8bc23bf4",
+      "index": 1,
+      "user_id": "zhanyan_contract_fd9435cc1e9d",
+      "query": "What is the validation probe value?",
+      "gta": "提供的原文没有该用户的 validation probe 值，无法确定。",
+      "eval_hint": "正确：明确说明所给原文缺少 probe 值、无法确定。错误：编造具体值，或借用其他 user_id 的项目代码。此项只验证给定导出的证据范围，不宣称该值在其他数据中不存在。",
+      "answer_status": "insufficient_source"
+    },
+    {
+      "source_request_id": "38aeb614-179a-494d-893c-e89e015cc2e8",
+      "index": 2,
+      "user_id": "zhanyan_contract_5a9929240dd5",
+      "query": "What is my project code and preferred report format?",
+      "gta": "项目代码是 Maple-763；偏好的报告格式是简洁的表格。",
+      "eval_hint": "必须同时答出 Maple-763 和简洁表格（concise table）。只答其中一项不算全对；Harbor-927 等其他用户的代码算错。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c686b6e2-9e22-4505-834d-3d995eb38b3b",
+      "index": 3,
+      "user_id": "zhanyan_contract_5a9929240dd5",
+      "query": "What is my project code and preferred report format?",
+      "gta": "项目代码是 Maple-763；偏好的报告格式是简洁的表格。",
+      "eval_hint": "必须同时答出 Maple-763 和简洁表格（concise table）。只答其中一项不算全对；Harbor-927 等其他用户的代码算错。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4f9c29ed-43f5-4dc0-8c56-8e7d0d2ec42c",
+      "index": 4,
+      "user_id": "text_budget_smoke_20261015_1536__smoke_user_a__smoke_pref_01__memoraxText",
+      "query": "我最喜欢吃什么？",
+      "gta": "草莓冰淇淋。",
+      "eval_hint": "必须指出草莓冰淇淋；只说草莓不完整，香蕉或其他口味算错。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "16f6c1f3-f181-4a32-9305-6c917d901af8",
+      "index": 5,
+      "user_id": "text_budget_smoke_20261015_1536__smoke_user_a__smoke_fact_02__memoraxText",
+      "query": "我周末住在哪里附近？",
+      "gta": "上海静安寺附近。",
+      "eval_hint": "必须指出静安寺附近；上海可省略，但只答上海过于笼统。不能替换成其他地标或城市。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "26d73286-db96-418b-b790-18bc0a91c6d5",
+      "index": 6,
+      "user_id": "text_budget_smoke_20261015_1536__smoke_user_b__smoke_update_03__memoraxText",
+      "query": "我现在在哪个城市工作？",
+      "gta": "现在在深圳工作。",
+      "eval_hint": "必须答深圳。杭州是已被更正的旧工作城市，作为当前答案算错；说明从杭州更新为深圳也正确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "94445de1-c8c7-42c4-895f-3d7d10b7e269",
+      "index": 7,
+      "user_id": "isolation_check_20261015_2e375c83",
+      "query": "What is my Maple-763 project code and report format?",
+      "gta": "这个 query 提到了 Maple-763，但所给原文没有该用户的项目代码或报告格式记录，无法确认完整答案。",
+      "eval_hint": "正确：说明该用户的原文证据缺失，尤其无法确定报告格式；可指出 Maple-763 只是 query 中出现的代码。错误：把另一个 user_id 的“简洁表格”偏好移植给此用户，或把 query 中的预设当作已核实的个人事实。",
+      "answer_status": "insufficient_source"
+    },
+    {
+      "source_request_id": "f207d695-91ac-4e43-b273-bdb501181a17",
+      "index": 8,
+      "user_id": "text_budget_v2_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "Meditation can also be a powerful tool for spiritual growth. Here's how:\n\n1. Deepening self-awareness: Through meditation, we can develop a deeper understanding of our ow",
+      "gta": "这是一段被截断的冥想说明，不是完整问题，无法确定唯一标准答案。",
+      "eval_hint": "应标为无效或不完整 query，并请求补全。它在“our ow”处截断，没有明确提问目标；不应凭空补出题目、强行判一个知识性答案。建议排除在可回答事实题准确率之外。",
+      "answer_status": "invalid_query"
+    },
+    {
+      "source_request_id": "53609647-ec9e-4d40-a1bf-bab7ea6288fc",
+      "index": 9,
+      "user_id": "concurrency_2a455d7c500c__memoraxText__serial__0",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-7c500c-0。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-7c500c-0；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c1b5c528-45c0-445f-be2b-3b4554353c17",
+      "index": 10,
+      "user_id": "concurrency_2a455d7c500c__memoraxText__serial__1",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-7c500c-1。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-7c500c-1；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d74b3a66-7817-401d-aabc-4646b2f7afef",
+      "index": 11,
+      "user_id": "concurrency_2a455d7c500c__memoraxText__serial__2",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-7c500c-2。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-7c500c-2；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4310ce89-f6f8-4d2d-9f59-b99d8e100ac4",
+      "index": 12,
+      "user_id": "concurrency_2a455d7c500c__memoraxText__parallel__1",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-7c500c-1。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-7c500c-1；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "57751429-6ca9-4c36-8d32-9de6c8f18285",
+      "index": 13,
+      "user_id": "concurrency_2a455d7c500c__memoraxText__parallel__0",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-7c500c-0。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-7c500c-0；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c9af24f2-1863-43d5-96d4-94b214413481",
+      "index": 14,
+      "user_id": "concurrency_2a455d7c500c__memoraxText__parallel__2",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-7c500c-2。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-7c500c-2；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a7713957-42f5-4bc2-9232-ba0c2f8b20c8",
+      "index": 15,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__2",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-2。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-2；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c3c83161-d761-4504-abad-dd91bafc0273",
+      "index": 16,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__9",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-9。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-9；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "763f6e95-f072-4291-90e3-cc3a8b853811",
+      "index": 17,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__1",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-1。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-1；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "3f53f301-54c6-465f-a079-67fb8394b1bd",
+      "index": 18,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__7",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-7。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-7；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ee26e9ae-e0d7-4083-a6f2-fd4f98614f03",
+      "index": 19,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__0",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-0。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-0；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "84a941c9-e9ff-4179-b1d9-35392ac477dd",
+      "index": 20,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__4",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-4。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-4；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "60f207db-4427-414d-9dc3-146d697d3786",
+      "index": 21,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__8",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-8。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-8；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "25e0355b-f2cb-4fb1-ab8a-2e4321026967",
+      "index": 22,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__6",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-6。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-6；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8ecfb8d6-5405-4d78-86bc-f5c3d24173ab",
+      "index": 23,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__3",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-3。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-3；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ea1bdd0a-6e52-4a7c-a542-8d19b4d4f157",
+      "index": 24,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__5",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-5。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-5；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "3ffe5bd1-7379-48b6-a2eb-3e02d6af582b",
+      "index": 25,
+      "user_id": "sameuser_43e3c2996b__memoraxText",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "118c9653-b0f1-4e87-94c5-4aa51769474e",
+      "index": 26,
+      "user_id": "sameuser_43e3c2996b__memoraxText",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8a9583a7-6a67-4804-9794-33655582f0bc",
+      "index": 27,
+      "user_id": "serialcontrol_496c61817b",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b5bbae18-60f1-4d2a-90c7-4322128808fb",
+      "index": 28,
+      "user_id": "serialcontrol_496c61817b",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "92902493-74f1-4e74-842c-7e954099c851",
+      "index": 29,
+      "user_id": "text_budget_v3_async_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+      "gta": "按对话中的报价估计，坐机场巴士约省 40–50 美元：出租车约 60 美元，助手给的巴士估价约 10–20 美元。",
+      "eval_hint": "按对话估计答约40–50美元，或清楚写出60−(10–20)美元，正确；说明“实际精确节省额尚未确认，但按原文估价约省40–50美元”也正确。只给40或50且没有条件说明不算全对；明确巴士20美元时省40、10美元时省50正确。不能声称原文完全没有巴士价格：Add同一会话的assistant消息明确给出10–20美元。不能把另一会话的10美元火车票代作巴士价；也不能将助手的通用估价说成已购买票价或已证实的实际节省额。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "8f752e5a-0579-44f3-8352-dffaf578e4a3",
+      "index": 30,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much total money did I spend on attending workshops in the last four months?",
+      "gta": "完整总额无法确定；已披露费用小计 720 美元（写作 200、数字营销 500、正念 20，摄影免费），创业工作坊费用未提供。",
+      "eval_hint": "全对需同时说明已知小计720美元，以及完整总额因创业工作坊费用缺失而不能确定。只答“总共720美元”不能判为全对；只答不知道而漏掉可算出的720美元也不完整。同一工作坊的重复提及只计一次；不得把未知创业费用默认为0或编造金额。四个月窗口的相对日期还存在原文不一致，因此720只能称已披露费用小计，不能称严格时间窗口内经核实的完整账单。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "3db38f6a-3a62-4832-a03c-a6d6d06bc838",
+      "index": 31,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "How many months passed between the completion of my undergraduate degree and the submission of my master's thesis?",
+      "gta": "约 6 个月：2022 年 11 月的会话说刚完成本科，2023 年 5 月的会话说当天提交硕士论文。",
+      "eval_hint": "约6个月、接近6个月正确。2022-11-17与2023-05-15是对应会话日期，两者相差5个月28天；若给出这个精细差值，应说明是按会话日期估算，因为“刚完成本科”未明确毕业日。只说5个月而不说明是完整月数，或把3月仍在写论文当作提交时间，不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "9d010ac5-c3c6-48ad-aeb9-03b23585336b",
+      "index": 32,
+      "user_id": "sameuser_43e3c2996b__memoraxText",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "9bbc9059-6589-4e71-bdf6-0bb1fc3030a2",
+      "index": 33,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much total money did I spend on attending workshops in the last four months?",
+      "gta": "完整总额无法确定；已披露费用小计 720 美元（写作 200、数字营销 500、正念 20，摄影免费），创业工作坊费用未提供。",
+      "eval_hint": "全对需同时说明已知小计720美元，以及完整总额因创业工作坊费用缺失而不能确定。只答“总共720美元”不能判为全对；只答不知道而漏掉可算出的720美元也不完整。同一工作坊的重复提及只计一次；不得把未知创业费用默认为0或编造金额。四个月窗口的相对日期还存在原文不一致，因此720只能称已披露费用小计，不能称严格时间窗口内经核实的完整账单。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "21034e53-05fc-4f6e-b1ea-4b4297a75301",
+      "index": 34,
+      "user_id": "text_budget_v3_async_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+      "gta": "按对话中的报价估计，坐机场巴士约省 40–50 美元：出租车约 60 美元，助手给的巴士估价约 10–20 美元。",
+      "eval_hint": "按对话估计答约40–50美元，或清楚写出60−(10–20)美元，正确；说明“实际精确节省额尚未确认，但按原文估价约省40–50美元”也正确。只给40或50且没有条件说明不算全对；明确巴士20美元时省40、10美元时省50正确。不能声称原文完全没有巴士价格：Add同一会话的assistant消息明确给出10–20美元。不能把另一会话的10美元火车票代作巴士价；也不能将助手的通用估价说成已购买票价或已证实的实际节省额。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "5f46fff7-45f0-4e62-b87c-3e7ad21e7b79",
+      "index": 35,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "Which event did I participate in first, the charity gala or the charity bake sale?",
+      "gta": "先参加慈善义卖（charity bake sale），后参加慈善晚宴（charity gala）。",
+      "eval_hint": "必须选择bake sale先于gala。义卖对应2023-03-15，晚宴对应2023-03-28当晚；不要把更早的charity walk或Run for Hunger偷换成题目中的两项活动。日期可不写，但不能颠倒先后。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f371b834-d7d5-45cd-b5d6-4219fe7e82fb",
+      "index": 36,
+      "user_id": "text_budget_v3_async_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "gta": "可先检查耗电应用、降低屏幕亮度并限制不必要的后台耗电；外出时也可用此前提到的移动电源补电。原文没有手机型号或具体耗电原因。",
+      "eval_hint": "这是一道开放式建议题，没有唯一措辞。给出至少一条具体、合理的续航排查或节电建议，或结合原文提到的移动电源提供补电建议，均可算合理回答；不强制逐项复述gta。不应虚构用户手机型号、断言某个故障原因，或把LG OLED C9电视当成手机。只说缺少信息而完全不给建议不算完整。建议与事实回忆题分开计分。",
+      "answer_status": "open_ended"
+    },
+    {
+      "source_request_id": "c502dbfd-1dcc-43a7-80ad-585d6953ab78",
+      "index": 37,
+      "user_id": "text_budget_v3_async_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+      "gta": "改为每汤匙咖啡配更少的水：从 6 液体盎司降为 5 液体盎司。",
+      "eval_hint": "必须答less water/更少的水，方向不能反。若给出数值，必须为每1汤匙咖啡由6 oz水变为5 oz水；只说咖啡更浓也可接受，但应明确对应水量减少。不要把后来的5 oz偏好覆盖进早期定日期的问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8fb92390-9762-487b-957a-3ce7e0603f2d",
+      "index": 38,
+      "user_id": "text_budget_v3_async_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+      "gta": "目前存有 20 打鸡蛋（240 个）。",
+      "eval_hint": "必须以较晚2023-03-15的库存更新回答20打；240个是等价表达。30打/360个是2023-01-11的旧库存，作为当前答案算错。数量单位不能把20打写成20个。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0c1f76b3-1d88-497c-8433-dc1b14e9a8f9",
+      "index": 39,
+      "user_id": "text_budget_v3_async_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is my ethnicity?",
+      "gta": "爱尔兰裔与意大利裔的混合族裔背景（Irish and Italian）。",
+      "eval_hint": "必须同时包含Irish/爱尔兰裔和Italian/意大利裔；只答其中一个不完整。不要把申请哪国护照、国籍或居住国替代为族裔。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b4619813-cd59-4f64-a640-eb035f96f80e",
+      "index": 40,
+      "user_id": "text_budget_v3_async_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bd85faa8-f020-438b-895d-daf993919dc2",
+      "index": 41,
+      "user_id": "text_budget_v3_async_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "9b46c4fa-939a-40ab-9a58-75d793ca495c",
+      "index": 42,
+      "user_id": "text_budget_v3_async_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+      "gta": "原文未提供第二首歌副歌的和弦进行；给出的旋律音符是 C D E F G A B A G F E D C。",
+      "eval_hint": "题目问和弦进行，核心正确答案是“原文没有提供，不能由这段单音旋律唯一确定和弦”。准确指出这一缺失即可判对，不强制复述音符。若补充旋律，须为第二首副歌C D E F G A B A G F E D C，13个音符的顺序和重复不可丢，标点不限。仅列音符而不说明它不是已给出的和弦进行，视为部分正确；把音符称为确定的和弦进行、编造Am-F-C-G等和弦，或提供第一首的G G G G A G F，均不能判为全对。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "9736c1da-8e1c-4259-a6f9-899fe16d0826",
+      "index": 43,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much total money did I spend on attending workshops in the last four months?",
+      "gta": "完整总额无法确定；已披露费用小计 720 美元（写作 200、数字营销 500、正念 20，摄影免费），创业工作坊费用未提供。",
+      "eval_hint": "全对需同时说明已知小计720美元，以及完整总额因创业工作坊费用缺失而不能确定。只答“总共720美元”不能判为全对；只答不知道而漏掉可算出的720美元也不完整。同一工作坊的重复提及只计一次；不得把未知创业费用默认为0或编造金额。四个月窗口的相对日期还存在原文不一致，因此720只能称已披露费用小计，不能称严格时间窗口内经核实的完整账单。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "fd986bde-de4b-43f9-aff9-b1d165b99304",
+      "index": 44,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much total money did I spend on attending workshops in the last four months?",
+      "gta": "完整总额无法确定；已披露费用小计 720 美元（写作 200、数字营销 500、正念 20，摄影免费），创业工作坊费用未提供。",
+      "eval_hint": "全对需同时说明已知小计720美元，以及完整总额因创业工作坊费用缺失而不能确定。只答“总共720美元”不能判为全对；只答不知道而漏掉可算出的720美元也不完整。同一工作坊的重复提及只计一次；不得把未知创业费用默认为0或编造金额。四个月窗口的相对日期还存在原文不一致，因此720只能称已披露费用小计，不能称严格时间窗口内经核实的完整账单。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "7f86dbd1-1cda-4a61-8792-ef76d1ced705",
+      "index": 45,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "How many months passed between the completion of my undergraduate degree and the submission of my master's thesis?",
+      "gta": "约 6 个月：2022 年 11 月的会话说刚完成本科，2023 年 5 月的会话说当天提交硕士论文。",
+      "eval_hint": "约6个月、接近6个月正确。2022-11-17与2023-05-15是对应会话日期，两者相差5个月28天；若给出这个精细差值，应说明是按会话日期估算，因为“刚完成本科”未明确毕业日。只说5个月而不说明是完整月数，或把3月仍在写论文当作提交时间，不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b2387927-2048-461e-ac87-d7ee1a2eb880",
+      "index": 46,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "How many months passed between the completion of my undergraduate degree and the submission of my master's thesis?",
+      "gta": "约 6 个月：2022 年 11 月的会话说刚完成本科，2023 年 5 月的会话说当天提交硕士论文。",
+      "eval_hint": "约6个月、接近6个月正确。2022-11-17与2023-05-15是对应会话日期，两者相差5个月28天；若给出这个精细差值，应说明是按会话日期估算，因为“刚完成本科”未明确毕业日。只说5个月而不说明是完整月数，或把3月仍在写论文当作提交时间，不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d705de37-8f62-405d-bf35-3cd7f9ee8d6b",
+      "index": 47,
+      "user_id": "text_budget_v3_async_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+      "gta": "按对话中的报价估计，坐机场巴士约省 40–50 美元：出租车约 60 美元，助手给的巴士估价约 10–20 美元。",
+      "eval_hint": "按对话估计答约40–50美元，或清楚写出60−(10–20)美元，正确；说明“实际精确节省额尚未确认，但按原文估价约省40–50美元”也正确。只给40或50且没有条件说明不算全对；明确巴士20美元时省40、10美元时省50正确。不能声称原文完全没有巴士价格：Add同一会话的assistant消息明确给出10–20美元。不能把另一会话的10美元火车票代作巴士价；也不能将助手的通用估价说成已购买票价或已证实的实际节省额。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "356dbcf4-82bf-4188-a2a0-83371a1cbb15",
+      "index": 48,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "Which event did I participate in first, the charity gala or the charity bake sale?",
+      "gta": "先参加慈善义卖（charity bake sale），后参加慈善晚宴（charity gala）。",
+      "eval_hint": "必须选择bake sale先于gala。义卖对应2023-03-15，晚宴对应2023-03-28当晚；不要把更早的charity walk或Run for Hunger偷换成题目中的两项活动。日期可不写，但不能颠倒先后。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e57c49e1-587c-45c7-8cc3-d9661a14bd8b",
+      "index": 49,
+      "user_id": "text_budget_v3_async_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "Which event did I participate in first, the charity gala or the charity bake sale?",
+      "gta": "先参加慈善义卖（charity bake sale），后参加慈善晚宴（charity gala）。",
+      "eval_hint": "必须选择bake sale先于gala。义卖对应2023-03-15，晚宴对应2023-03-28当晚；不要把更早的charity walk或Run for Hunger偷换成题目中的两项活动。日期可不写，但不能颠倒先后。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5aa05564-c629-4af5-b31d-83be9ff2dd0f",
+      "index": 50,
+      "user_id": "text_budget_v3_async_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+      "gta": "按对话中的报价估计，坐机场巴士约省 40–50 美元：出租车约 60 美元，助手给的巴士估价约 10–20 美元。",
+      "eval_hint": "按对话估计答约40–50美元，或清楚写出60−(10–20)美元，正确；说明“实际精确节省额尚未确认，但按原文估价约省40–50美元”也正确。只给40或50且没有条件说明不算全对；明确巴士20美元时省40、10美元时省50正确。不能声称原文完全没有巴士价格：Add同一会话的assistant消息明确给出10–20美元。不能把另一会话的10美元火车票代作巴士价；也不能将助手的通用估价说成已购买票价或已证实的实际节省额。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "8e923357-06a3-403d-a6c6-a2170d5b4ebb",
+      "index": 51,
+      "user_id": "text_budget_v3_async_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+      "gta": "目前存有 20 打鸡蛋（240 个）。",
+      "eval_hint": "必须以较晚2023-03-15的库存更新回答20打；240个是等价表达。30打/360个是2023-01-11的旧库存，作为当前答案算错。数量单位不能把20打写成20个。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f0ea66b1-b2f1-4121-be67-583ca63600af",
+      "index": 52,
+      "user_id": "text_budget_v3_async_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+      "gta": "原文未提供第二首歌副歌的和弦进行；给出的旋律音符是 C D E F G A B A G F E D C。",
+      "eval_hint": "题目问和弦进行，核心正确答案是“原文没有提供，不能由这段单音旋律唯一确定和弦”。准确指出这一缺失即可判对，不强制复述音符。若补充旋律，须为第二首副歌C D E F G A B A G F E D C，13个音符的顺序和重复不可丢，标点不限。仅列音符而不说明它不是已给出的和弦进行，视为部分正确；把音符称为确定的和弦进行、编造Am-F-C-G等和弦，或提供第一首的G G G G A G F，均不能判为全对。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "b6ce03a6-d1da-425f-81e7-441405a69244",
+      "index": 53,
+      "user_id": "text_budget_v3_async_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+      "gta": "原文未提供第二首歌副歌的和弦进行；给出的旋律音符是 C D E F G A B A G F E D C。",
+      "eval_hint": "题目问和弦进行，核心正确答案是“原文没有提供，不能由这段单音旋律唯一确定和弦”。准确指出这一缺失即可判对，不强制复述音符。若补充旋律，须为第二首副歌C D E F G A B A G F E D C，13个音符的顺序和重复不可丢，标点不限。仅列音符而不说明它不是已给出的和弦进行，视为部分正确；把音符称为确定的和弦进行、编造Am-F-C-G等和弦，或提供第一首的G G G G A G F，均不能判为全对。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "76c55ca3-f0d2-41f8-85bb-20090fee1e18",
+      "index": 54,
+      "user_id": "text_budget_v3_async_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+      "gta": "目前存有 20 打鸡蛋（240 个）。",
+      "eval_hint": "必须以较晚2023-03-15的库存更新回答20打；240个是等价表达。30打/360个是2023-01-11的旧库存，作为当前答案算错。数量单位不能把20打写成20个。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "20d9ef94-2193-4935-9178-2c816aacc48e",
+      "index": 55,
+      "user_id": "text_budget_v3_async_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+      "gta": "改为每汤匙咖啡配更少的水：从 6 液体盎司降为 5 液体盎司。",
+      "eval_hint": "必须答less water/更少的水，方向不能反。若给出数值，必须为每1汤匙咖啡由6 oz水变为5 oz水；只说咖啡更浓也可接受，但应明确对应水量减少。不要把后来的5 oz偏好覆盖进早期定日期的问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "729678cc-e370-4fc9-ab89-f39c171ffebd",
+      "index": 56,
+      "user_id": "text_budget_v3_async_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+      "gta": "改为每汤匙咖啡配更少的水：从 6 液体盎司降为 5 液体盎司。",
+      "eval_hint": "必须答less water/更少的水，方向不能反。若给出数值，必须为每1汤匙咖啡由6 oz水变为5 oz水；只说咖啡更浓也可接受，但应明确对应水量减少。不要把后来的5 oz偏好覆盖进早期定日期的问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0725ad5b-90ab-448e-a750-e8c7018b22bf",
+      "index": 57,
+      "user_id": "text_budget_v3_async_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "gta": "可先检查耗电应用、降低屏幕亮度并限制不必要的后台耗电；外出时也可用此前提到的移动电源补电。原文没有手机型号或具体耗电原因。",
+      "eval_hint": "这是一道开放式建议题，没有唯一措辞。给出至少一条具体、合理的续航排查或节电建议，或结合原文提到的移动电源提供补电建议，均可算合理回答；不强制逐项复述gta。不应虚构用户手机型号、断言某个故障原因，或把LG OLED C9电视当成手机。只说缺少信息而完全不给建议不算完整。建议与事实回忆题分开计分。",
+      "answer_status": "open_ended"
+    },
+    {
+      "source_request_id": "2237e360-2a74-4aa4-9952-02edb7d30eda",
+      "index": 58,
+      "user_id": "text_budget_v3_async_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "gta": "可先检查耗电应用、降低屏幕亮度并限制不必要的后台耗电；外出时也可用此前提到的移动电源补电。原文没有手机型号或具体耗电原因。",
+      "eval_hint": "这是一道开放式建议题，没有唯一措辞。给出至少一条具体、合理的续航排查或节电建议，或结合原文提到的移动电源提供补电建议，均可算合理回答；不强制逐项复述gta。不应虚构用户手机型号、断言某个故障原因，或把LG OLED C9电视当成手机。只说缺少信息而完全不给建议不算完整。建议与事实回忆题分开计分。",
+      "answer_status": "open_ended"
+    },
+    {
+      "source_request_id": "01f6b318-c6e5-4623-910a-49ed9d212f7d",
+      "index": 59,
+      "user_id": "text_budget_v3_async_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "024c048a-498a-4f50-93c5-76e773b72cf8",
+      "index": 60,
+      "user_id": "text_budget_v3_async_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is my ethnicity?",
+      "gta": "爱尔兰裔与意大利裔的混合族裔背景（Irish and Italian）。",
+      "eval_hint": "必须同时包含Irish/爱尔兰裔和Italian/意大利裔；只答其中一个不完整。不要把申请哪国护照、国籍或居住国替代为族裔。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f20826d9-c6b9-42f5-9861-dd5adc6a7883",
+      "index": 61,
+      "user_id": "text_budget_v3_async_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a52abee6-2d76-4e70-8890-8b2710739006",
+      "index": 62,
+      "user_id": "text_budget_v3_async_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is my ethnicity?",
+      "gta": "爱尔兰裔与意大利裔的混合族裔背景（Irish and Italian）。",
+      "eval_hint": "必须同时包含Irish/爱尔兰裔和Italian/意大利裔；只答其中一个不完整。不要把申请哪国护照、国籍或居住国替代为族裔。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "facb3da1-a0aa-4dfc-a708-1ff61681b16a",
+      "index": 63,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "Where do I currently live, where did I live in January 2023, and what breed is my dog Orion?",
+      "gta": "当前住Berlin（柏林）；2023年1月住Paris（巴黎）；Orion是金毛寻回犬。",
+      "eval_hint": "静态全量语料口径须同时答Berlin、1月Paris和Golden Retriever；主记录的Paris答案是按Search时点可见原文得出的，二者不能在未注明口径时混用。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8efac0bb-3638-407f-86e2-0d95271a0014",
+      "index": 64,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "Where do I currently live, where did I live in January 2023, and what breed is my dog Orion?",
+      "gta": "当前住Berlin（柏林）；2023年1月住Paris（巴黎），2月从Paris搬到Berlin（柏林）；Orion是金毛寻回犬。",
+      "eval_hint": "须同时答当前城市Berlin（柏林）、1月住Paris的历史和Golden Retriever品种。居住历史应按原文事件日期说明。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0b763091-e3fe-4d48-b97a-fb07d722a1f7",
+      "index": 65,
+      "user_id": "yaml_v13_sync_21be847b4a32",
+      "query": "Where do I live, what breed is Orion, and what is my profession?",
+      "gta": "住在Paris（巴黎）；Orion是金毛寻回犬；职业是土木工程师。",
+      "eval_hint": "住处Paris、狗品种Golden Retriever、职业civil engineer三项缺一不可；该user_id只有1月原文，不能借用其他user_id的Berlin更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "94d9b35a-275b-40bf-86c0-0d2782b61fce",
+      "index": 66,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What breed is my dog Orion?",
+      "gta": "Orion 是金毛寻回犬（Golden Retriever）。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；Orion只是狗名，不是品种。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "62c73a5a-a826-4ae3-bf9c-d202e8b4686f",
+      "index": 67,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What is my current residence and my residence history?",
+      "gta": "当前住Berlin（柏林）；2023年1月住Paris（巴黎），2月从Paris搬到Berlin（柏林）。",
+      "eval_hint": "须答当前城市Berlin（柏林）及原文支持的居住历史；不能混入Rome，也不能凭空补充搬家日期。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a3df8f03-a894-49ea-85fd-d30333a8d40a",
+      "index": 68,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What is my profession?",
+      "gta": "土木工程师（civil engineer）。",
+      "eval_hint": "须答土木工程师；只说工程师过于笼统，不能改成其他工程专业。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "44786d33-9961-441f-b7c0-3738086da645",
+      "index": 69,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What is my current residence, residence history and dog breed?",
+      "gta": "当前住Berlin（柏林）；2023年1月住Paris（巴黎），2月从Paris搬到Berlin（柏林）；Orion是金毛寻回犬。",
+      "eval_hint": "须同时答当前城市Berlin（柏林）、1月住Paris的历史和Golden Retriever品种。居住历史应按原文事件日期说明。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "80fd2358-8903-4c6d-a78c-31e580f66741",
+      "index": 70,
+      "user_id": "text_budget_v3_async_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2c33d0dd-a168-40a8-b3ed-bd6e2db4557a",
+      "index": 71,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What is my current residence, residence history, and dog breed?",
+      "gta": "当前住Berlin（柏林）；2023年1月住Paris（巴黎），2月从Paris搬到Berlin（柏林）；Orion是金毛寻回犬。",
+      "eval_hint": "须同时答当前城市Berlin（柏林）、1月住Paris的历史和Golden Retriever品种。居住历史应按原文事件日期说明。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "262c09c0-20dd-4987-9f18-2d141940584b",
+      "index": 72,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What is my current residence, residence history, and dog breed?",
+      "gta": "当前住Berlin（柏林）；2023年1月住Paris（巴黎），2月从Paris搬到Berlin（柏林）；Orion是金毛寻回犬。",
+      "eval_hint": "须同时答当前城市Berlin（柏林）、1月住Paris的历史和Golden Retriever品种。居住历史应按原文事件日期说明。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "47199250-b773-4f41-a4c7-e073deae6fdc",
+      "index": 73,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__0",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-0。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-0；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "fa577c7a-7670-4e6a-b220-a1c2e85433f0",
+      "index": 74,
+      "user_id": "concurrency_beb23d68b599__memoraxText__parallel__0",
+      "query": "What is the release label for my Lighthouse project?",
+      "gta": "Lighthouse 项目的发布标签是 saffron-68b599-0。",
+      "eval_hint": "必须完整答出当前user_id原文中的标签 saffron-68b599-0；中间字符串和末尾数字均不能错。只答Lighthouse或Singapore不正确，也不能混用其他用户的同名项目标签。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d3f699bf-7e3f-4249-80a4-2ffcdcf3a066",
+      "index": 75,
+      "user_id": "yaml_v13_probe_baa98ddb5048",
+      "query": "What breed is my dog Orion?",
+      "gta": "Orion 是金毛寻回犬（Golden Retriever）。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；Orion只是狗名，不是品种。第二条原文只更新住所，未改变狗的品种或职业；不能因后文未重述品种而说不知道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d7d5e3e8-56e7-48bf-9bba-95dda6246faa",
+      "index": 76,
+      "user_id": "yaml_v13_sync_21be847b4a32",
+      "query": "What breed is my dog Orion?",
+      "gta": "Orion 是金毛寻回犬（Golden Retriever）。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；Orion只是狗名，不是品种。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b3d6256f-8e2e-4e68-ade1-648a23668f0e",
+      "index": 77,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is my ethnicity?",
+      "gta": "爱尔兰裔与意大利裔的混合族裔背景（Irish and Italian）。",
+      "eval_hint": "必须同时包含Irish/爱尔兰裔和Italian/意大利裔；只答其中一个不完整。不要把申请哪国护照、国籍或居住国替代为族裔。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "01a9e7fe-aca6-4f65-8f05-a1c153bd6c19",
+      "index": 78,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+      "gta": "原文未提供第二首歌副歌的和弦进行；给出的旋律音符是 C D E F G A B A G F E D C。",
+      "eval_hint": "题目问和弦进行，核心正确答案是“原文没有提供，不能由这段单音旋律唯一确定和弦”。准确指出这一缺失即可判对，不强制复述音符。若补充旋律，须为第二首副歌C D E F G A B A G F E D C，13个音符的顺序和重复不可丢，标点不限。仅列音符而不说明它不是已给出的和弦进行，视为部分正确；把音符称为确定的和弦进行、编造Am-F-C-G等和弦，或提供第一首的G G G G A G F，均不能判为全对。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "0671fb72-5df8-4f98-970a-4d0085dd264c",
+      "index": 79,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "gta": "可先检查耗电应用、降低屏幕亮度并限制不必要的后台耗电；外出时也可用此前提到的移动电源补电。原文没有手机型号或具体耗电原因。",
+      "eval_hint": "这是一道开放式建议题，没有唯一措辞。给出至少一条具体、合理的续航排查或节电建议，或结合原文提到的移动电源提供补电建议，均可算合理回答；不强制逐项复述gta。不应虚构用户手机型号、断言某个故障原因，或把LG OLED C9电视当成手机。只说缺少信息而完全不给建议不算完整。建议与事实回忆题分开计分。",
+      "answer_status": "open_ended"
+    },
+    {
+      "source_request_id": "d95206bb-81c9-41c3-b51b-cff5b87142dd",
+      "index": 80,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "364fb403-f624-40d9-9088-233b512f1a72",
+      "index": 81,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c9321aca-1813-421c-a832-823feb2a8d09",
+      "index": 82,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "75017144-de0a-4ddc-82f7-e7561c9a52f3",
+      "index": 83,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a347ffb5-76cb-4966-8433-c2ada201447a",
+      "index": 84,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "Which city did I live in during February 2023?",
+      "gta": "2023 年 2 月住在 Rome（罗马）。",
+      "eval_hint": "必须答Rome/罗马；Paris是1月住所，Berlin是3月起住所。不能按Add到达顺序覆盖事件日期。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "af0fb654-3d05-4055-9b77-7f4b1a266d76",
+      "index": 85,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "Which city did I live in during February 2023?",
+      "gta": "2023 年 2 月住在 Rome（罗马）。",
+      "eval_hint": "必须答Rome/罗马；Paris是1月住所，Berlin是3月起住所。不能按Add到达顺序覆盖事件日期。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "cead0985-c982-4f6d-a011-bd99f7afeb9d",
+      "index": 86,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "What breed is my dog Orion, which instrument do I play, and what is my profession?",
+      "gta": "Orion 是金毛寻回犬；会拉大提琴（cello）；职业是土木工程师。",
+      "eval_hint": "必须同时答Golden Retriever、cello和civil engineer；不能因较晚原文没重述早期事实而漏答。大提琴不能写成小提琴。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5f3ec8fa-8beb-4947-80c4-1e77111ca635",
+      "index": 87,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "What breed is my dog Orion, which instrument do I play, and what is my profession?",
+      "gta": "Orion 是金毛寻回犬；会拉大提琴（cello）；职业是土木工程师。",
+      "eval_hint": "必须同时答Golden Retriever、cello和civil engineer；不能因较晚原文没重述早期事实而漏答。大提琴不能写成小提琴。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "3965d752-e2cc-4731-82b6-0315629889c1",
+      "index": 88,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c9636be5-70e6-4eba-98e2-8d20386af5c5",
+      "index": 89,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "As of April 1, 2023, which city do I currently live in?",
+      "gta": "截至 2023 年 4 月 1 日，住在 Berlin（柏林）。",
+      "eval_hint": "必须答Berlin/柏林。原文事件顺序是1月Paris→2月Rome→3月Berlin；并行提交时较晚到达的旧日期原文不能覆盖3月的更新。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "6b21277e-05d2-4a36-96dd-7f3880efb32d",
+      "index": 90,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "6864a7ab-5b49-48a2-9f21-167607985a28",
+      "index": 91,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "356deff0-ec7a-4c85-9ea5-fa3c807b185a",
+      "index": 92,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "837afb8b-80b1-4319-ad2b-637b77651715",
+      "index": 93,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4603a7d3-b8fb-4e31-81bb-dea652169a49",
+      "index": 94,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8d1f5dec-10b4-40a9-ae57-6208b6f0abd0",
+      "index": 95,
+      "user_id": "yamlorder_76a5e21c88f2__serial",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "346ce210-5fd2-4246-8124-6dcbe705c798",
+      "index": 96,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "9f3d48a4-4918-40de-8a95-407ae2a4c3ef",
+      "index": 97,
+      "user_id": "yamlorder_76a5e21c88f2__parallel3",
+      "query": "Which city did I live in during January 2023?",
+      "gta": "2023 年 1 月住在 Paris（巴黎）。",
+      "eval_hint": "必须答Paris/巴黎；不能用当前住所Berlin或2月的Rome替代历史住所。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "3cd742de-2725-469e-b29e-b8253f646614",
+      "index": 98,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+      "gta": "按对话中的报价估计，坐机场巴士约省 40–50 美元：出租车约 60 美元，助手给的巴士估价约 10–20 美元。",
+      "eval_hint": "按对话估计答约40–50美元，或清楚写出60−(10–20)美元，正确；说明“实际精确节省额尚未确认，但按原文估价约省40–50美元”也正确。只给40或50且没有条件说明不算全对；明确巴士20美元时省40、10美元时省50正确。不能声称原文完全没有巴士价格：Add同一会话的assistant消息明确给出10–20美元。不能把另一会话的10美元火车票代作巴士价；也不能将助手的通用估价说成已购买票价或已证实的实际节省额。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "19613475-692b-4ffc-8d21-c8b849bf137a",
+      "index": 99,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much total money did I spend on attending workshops in the last four months?",
+      "gta": "完整总额无法确定；已披露费用小计 720 美元（写作 200、数字营销 500、正念 20，摄影免费），创业工作坊费用未提供。",
+      "eval_hint": "全对需同时说明已知小计720美元，以及完整总额因创业工作坊费用缺失而不能确定。只答“总共720美元”不能判为全对；只答不知道而漏掉可算出的720美元也不完整。同一工作坊的重复提及只计一次；不得把未知创业费用默认为0或编造金额。四个月窗口的相对日期还存在原文不一致，因此720只能称已披露费用小计，不能称严格时间窗口内经核实的完整账单。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "dead756c-5211-4455-8749-5285232d7af4",
+      "index": 100,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "How many months passed between the completion of my undergraduate degree and the submission of my master's thesis?",
+      "gta": "约 6 个月：2022 年 11 月的会话说刚完成本科，2023 年 5 月的会话说当天提交硕士论文。",
+      "eval_hint": "约6个月、接近6个月正确。2022-11-17与2023-05-15是对应会话日期，两者相差5个月28天；若给出这个精细差值，应说明是按会话日期估算，因为“刚完成本科”未明确毕业日。只说5个月而不说明是完整月数，或把3月仍在写论文当作提交时间，不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d5b6e3e9-d355-4aa8-89fe-cf03d4ecf086",
+      "index": 101,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "Which event did I participate in first, the charity gala or the charity bake sale?",
+      "gta": "先参加慈善义卖（charity bake sale），后参加慈善晚宴（charity gala）。",
+      "eval_hint": "必须选择bake sale先于gala。义卖对应2023-03-15，晚宴对应2023-03-28当晚；不要把更早的charity walk或Run for Hunger偷换成题目中的两项活动。日期可不写，但不能颠倒先后。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d99c29da-367c-42d8-abc1-765cf165a5ca",
+      "index": 102,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+      "gta": "目前存有 20 打鸡蛋（240 个）。",
+      "eval_hint": "必须以较晚2023-03-15的库存更新回答20打；240个是等价表达。30打/360个是2023-01-11的旧库存，作为当前答案算错。数量单位不能把20打写成20个。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "54e9856c-42c1-4688-8733-493bec24ff8a",
+      "index": 103,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+      "gta": "原文未提供第二首歌副歌的和弦进行；给出的旋律音符是 C D E F G A B A G F E D C。",
+      "eval_hint": "题目问和弦进行，核心正确答案是“原文没有提供，不能由这段单音旋律唯一确定和弦”。准确指出这一缺失即可判对，不强制复述音符。若补充旋律，须为第二首副歌C D E F G A B A G F E D C，13个音符的顺序和重复不可丢，标点不限。仅列音符而不说明它不是已给出的和弦进行，视为部分正确；把音符称为确定的和弦进行、编造Am-F-C-G等和弦，或提供第一首的G G G G A G F，均不能判为全对。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "56ed19d8-8e82-4827-b057-02cbcb6c169f",
+      "index": 104,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+      "gta": "改为每汤匙咖啡配更少的水：从 6 液体盎司降为 5 液体盎司。",
+      "eval_hint": "必须答less water/更少的水，方向不能反。若给出数值，必须为每1汤匙咖啡由6 oz水变为5 oz水；只说咖啡更浓也可接受，但应明确对应水量减少。不要把后来的5 oz偏好覆盖进早期定日期的问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1441b9f9-a192-4a76-8cc6-cc207a250307",
+      "index": 105,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "gta": "可先检查耗电应用、降低屏幕亮度并限制不必要的后台耗电；外出时也可用此前提到的移动电源补电。原文没有手机型号或具体耗电原因。",
+      "eval_hint": "这是一道开放式建议题，没有唯一措辞。给出至少一条具体、合理的续航排查或节电建议，或结合原文提到的移动电源提供补电建议，均可算合理回答；不强制逐项复述gta。不应虚构用户手机型号、断言某个故障原因，或把LG OLED C9电视当成手机。只说缺少信息而完全不给建议不算完整。建议与事实回忆题分开计分。",
+      "answer_status": "open_ended"
+    },
+    {
+      "source_request_id": "4b6c49da-f898-416a-8d62-08b87ade2fd6",
+      "index": 106,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ff8b68dc-b803-409a-8b02-132b9dec85c0",
+      "index": 107,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is my ethnicity?",
+      "gta": "爱尔兰裔与意大利裔的混合族裔背景（Irish and Italian）。",
+      "eval_hint": "必须同时包含Irish/爱尔兰裔和Italian/意大利裔；只答其中一个不完整。不要把申请哪国护照、国籍或居住国替代为族裔。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b9b730ec-de1a-4f8e-8b78-f5f446b6c858",
+      "index": 108,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "How many months passed between the completion of my undergraduate degree and the submission of my master's thesis?",
+      "gta": "约 6 个月：2022 年 11 月的会话说刚完成本科，2023 年 5 月的会话说当天提交硕士论文。",
+      "eval_hint": "约6个月、接近6个月正确。2022-11-17与2023-05-15是对应会话日期，两者相差5个月28天；若给出这个精细差值，应说明是按会话日期估算，因为“刚完成本科”未明确毕业日。只说5个月而不说明是完整月数，或把3月仍在写论文当作提交时间，不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2e33017a-738e-47c6-b67c-19e28bfc62d1",
+      "index": 109,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How much will I save by taking the bus from the airport to my hotel instead of a taxi?",
+      "gta": "按对话中的报价估计，坐机场巴士约省 40–50 美元：出租车约 60 美元，助手给的巴士估价约 10–20 美元。",
+      "eval_hint": "按对话估计答约40–50美元，或清楚写出60−(10–20)美元，正确；说明“实际精确节省额尚未确认，但按原文估价约省40–50美元”也正确。只给40或50且没有条件说明不算全对；明确巴士20美元时省40、10美元时省50正确。不能声称原文完全没有巴士价格：Add同一会话的assistant消息明确给出10–20美元。不能把另一会话的10美元火车票代作巴士价；也不能将助手的通用估价说成已购买票价或已证实的实际节省额。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "bb2ae391-5fc2-40e6-9791-765ec4f09fcc",
+      "index": 110,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much total money did I spend on attending workshops in the last four months?",
+      "gta": "完整总额无法确定；已披露费用小计 720 美元（写作 200、数字营销 500、正念 20，摄影免费），创业工作坊费用未提供。",
+      "eval_hint": "全对需同时说明已知小计720美元，以及完整总额因创业工作坊费用缺失而不能确定。只答“总共720美元”不能判为全对；只答不知道而漏掉可算出的720美元也不完整。同一工作坊的重复提及只计一次；不得把未知创业费用默认为0或编造金额。四个月窗口的相对日期还存在原文不一致，因此720只能称已披露费用小计，不能称严格时间窗口内经核实的完整账单。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "9b9a4197-3763-4411-8af0-783c1198cf66",
+      "index": 111,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "Which event did I participate in first, the charity gala or the charity bake sale?",
+      "gta": "先参加慈善义卖（charity bake sale），后参加慈善晚宴（charity gala）。",
+      "eval_hint": "必须选择bake sale先于gala。义卖对应2023-03-15，晚宴对应2023-03-28当晚；不要把更早的charity walk或Run for Hunger偷换成题目中的两项活动。日期可不写，但不能颠倒先后。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f83701a3-4960-429b-896a-5fc6fc5800f1",
+      "index": 112,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+      "gta": "目前存有 20 打鸡蛋（240 个）。",
+      "eval_hint": "必须以较晚2023-03-15的库存更新回答20打；240个是等价表达。30打/360个是2023-01-11的旧库存，作为当前答案算错。数量单位不能把20打写成20个。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "6d531d9e-1510-4131-b866-3b84a686479d",
+      "index": 113,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "I'm looking back at our previous conversation where you created two sad songs for me. Can you remind me what was the chord progression for the chorus in the second song?",
+      "gta": "原文未提供第二首歌副歌的和弦进行；给出的旋律音符是 C D E F G A B A G F E D C。",
+      "eval_hint": "题目问和弦进行，核心正确答案是“原文没有提供，不能由这段单音旋律唯一确定和弦”。准确指出这一缺失即可判对，不强制复述音符。若补充旋律，须为第二首副歌C D E F G A B A G F E D C，13个音符的顺序和重复不可丢，标点不限。仅列音符而不说明它不是已给出的和弦进行，视为部分正确；把音符称为确定的和弦进行、编造Am-F-C-G等和弦，或提供第一首的G G G G A G F，均不能判为全对。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "9973b134-eee1-4a8e-b34b-6136253ef4d7",
+      "index": 114,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+      "gta": "改为每汤匙咖啡配更少的水：从 6 液体盎司降为 5 液体盎司。",
+      "eval_hint": "必须答less water/更少的水，方向不能反。若给出数值，必须为每1汤匙咖啡由6 oz水变为5 oz水；只说咖啡更浓也可接受，但应明确对应水量减少。不要把后来的5 oz偏好覆盖进早期定日期的问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4a270e84-dec4-4ef7-abdf-d1bfa3e2d114",
+      "index": 115,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "gta": "可先检查耗电应用、降低屏幕亮度并限制不必要的后台耗电；外出时也可用此前提到的移动电源补电。原文没有手机型号或具体耗电原因。",
+      "eval_hint": "这是一道开放式建议题，没有唯一措辞。给出至少一条具体、合理的续航排查或节电建议，或结合原文提到的移动电源提供补电建议，均可算合理回答；不强制逐项复述gta。不应虚构用户手机型号、断言某个故障原因，或把LG OLED C9电视当成手机。只说缺少信息而完全不给建议不算完整。建议与事实回忆题分开计分。",
+      "answer_status": "open_ended"
+    },
+    {
+      "source_request_id": "196afe90-6c28-425e-963c-b4e5e443548c",
+      "index": 116,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What breed is my dog?",
+      "gta": "金毛寻回犬（Golden Retriever）；狗叫 Max。",
+      "eval_hint": "必须答Golden Retriever/金毛寻回犬；名字Max不是品种，只答Max不正确。狗名不是必答项；答出品种且无矛盾即可。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2daf2556-5c7e-45f6-93b1-6836a993e3d8",
+      "index": 117,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is my ethnicity?",
+      "gta": "爱尔兰裔与意大利裔的混合族裔背景（Irish and Italian）。",
+      "eval_hint": "必须同时包含Irish/爱尔兰裔和Italian/意大利裔；只答其中一个不完整。不要把申请哪国护照、国籍或居住国替代为族裔。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0202c319-ac35-4812-bb4b-d4b4ebd82116",
+      "index": 118,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What subject was my undergraduate degree in when I asked about beginner deep-learning courses?",
+      "gta": "计算机科学（Computer Science）。",
+      "eval_hint": "必须答计算机科学/CS；不要把之后研究主题、所推荐课程或机器学习方向当成本科专业。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5385623c-b901-43e5-acc7-81e6af70189c",
+      "index": 119,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How much did the one-day photography workshop I attended on February 22 at a local studio cost?",
+      "gta": "免费，费用为 0 美元；需要提前在线报名。",
+      "eval_hint": "免费或0美元即正确；提前报名不是收费。不能与写作200美元、正念20美元或数字营销500美元的工作坊混淆。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4dd3e124-1a62-4263-becb-d97c6b8de3d7",
+      "index": 120,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "How many participants were selected for the three-day entrepreneurship workshop I attended in January?",
+      "gta": "共选中 20 名参与者。",
+      "eval_hint": "必须答20名参与者；三天是活动时长，不是人数。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "865665e5-22a2-4bb5-a84e-6af1dcfb5c53",
+      "index": 121,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What approximate taxi fare did I say I had been quoted from the airport to my hotel in Tokyo?",
+      "gta": "约 60 美元。",
+      "eval_hint": "必须答约60美元；不能用助手先前给出的其他机场出租车区间替换用户亲口说的报价。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f1712306-27d4-438c-96c1-87c183252bcd",
+      "index": 122,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "In our conversation about savory snacks for my office charity bake sale, which cause did the charity walk I mentioned support?",
+      "gta": "支持癌症研究（cancer research）。",
+      "eval_hint": "必须答癌症研究；当地食物银行对应另一场Run for Hunger活动，不能混用。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "703be427-b744-40d1-b76f-ee21326624eb",
+      "index": 123,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "When I asked for a quick egg-salad lunch recipe, how many dozen eggs did I say were in the refrigerator at that point, before later stock updates?",
+      "gta": "当时有 30 打鸡蛋（360 个）。",
+      "eval_hint": "必须回答做快速蛋沙拉午餐这次会话中的30打，或等价的360个；后来的20打是更新后的库存，不是本题时间点。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "20488185-30fa-4004-a6fe-8f8fd0ae97d8",
+      "index": 124,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What note sequence repeated in the chorus of the FIRST sad song you wrote for me, before I requested a more romantic version?",
+      "gta": "G G G G A G F。",
+      "eval_hint": "必须按顺序保留7个音符，尤其开头四个G；标点可不同。第二首的C D E F G A B A G F E D C不正确；不能将旋律音符改写成自创和弦。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "821185af-b303-4de8-8a83-b982f3cfdfe1",
+      "index": 125,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "When discussing coffee with citrus notes for my French press, which coffee origin did I say I would try first?",
+      "gta": "先试肯尼亚咖啡（Kenyan coffee）。",
+      "eval_hint": "必须答肯尼亚/Kenyan；不是其他产地，也不是随后选择的Earl Grey茶。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "47061ea7-6941-45cc-8376-c3946c29d704",
+      "index": 126,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "Which LG OLED TV series did I ask about when discussing picture quality, viewing angles and HDR support?",
+      "gta": "LG OLED C9 系列。",
+      "eval_hint": "必须包含LG OLED C9或能唯一指向C9系列的表达；只答LG或OLED太笼统，C1/C2/C3等其他系列错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "15d4e5a3-e674-442b-8682-06d24431a801",
+      "index": 127,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "Which side of my heritage did I want to explore through traditional music and dance resources?",
+      "gta": "爱尔兰一侧的文化传承（Irish heritage），尤其传统音乐和舞蹈。",
+      "eval_hint": "必须答Irish/爱尔兰一侧；只说混合族裔而不选择一侧不完整，意大利一侧错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0a236da0-27f6-41c4-848f-2b885fd8d021",
+      "index": 128,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What vintage watch did the user recently acquire, and for how much? (Refer to our conversation on 2023/02/26 (Sun) 02:49.)",
+      "gta": "一只 20 世纪 60 年代的古董 Omega Seamaster 手表，拍卖价 1,200 美元。",
+      "eval_hint": "必须答Omega Seamaster和1200美元两项；若提年代须为1960年代。只有品牌Omega、缺系列或缺价格不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "83313c53-0a91-41c7-bfb8-325959d2a0a2",
+      "index": 129,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What platforms has the user been active on recently? (Refer to our conversation on 2023/02/26 (Sun) 02:31.)",
+      "gta": "Facebook、Twitter、Instagram、YouTube、LinkedIn、Reddit、徒步与户外爱好者论坛，以及极简主义和简单生活博客。",
+      "eval_hint": "需覆盖原文全部8项平台/渠道；论坛和博客可用描述，不要求编造站名。缺项不算全对；WhatsApp等该会话未列出的平台不能用来替代。可改变顺序，Twitter称X也接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4ba8d2ee-5df5-4986-99e6-91242fa07ae8",
+      "index": 130,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What rare coin from the user's grandpa's collection was mentioned? (Refer to our conversation on 2023/02/26 (Sun) 02:49.)",
+      "gta": "一枚 1913 年 Liberty Head nickel（自由女神头像五美分镍币）。",
+      "eval_hint": "必须同时识别1913年与Liberty Head nickel；Indian Head penny是用户另一枚硬币，不是本题爷爷收藏中的稀有币。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4e144c1c-ca57-4e3a-a466-2687c8631719",
+      "index": 131,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What vintage guitar does the user own? (Refer to our conversation on 2023/02/26 (Sun) 02:49.)",
+      "gta": "1957 年 Gibson Les Paul Goldtop 吉他。",
+      "eval_hint": "须包含1957、Gibson Les Paul和Goldtop；只说Gibson或Les Paul不够完整。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d5e94b01-ca63-4267-8542-46cf431c03f3",
+      "index": 132,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What album has the user been inspired by recently, and what is their favorite track? (Refer to our conversation on 2023/02/26 (Sun) 07:00.)",
+      "gta": "Miles Davis 的《Kind of Blue》；最喜欢的曲目是《So What》。",
+      "eval_hint": "必须同时答专辑Kind of Blue和曲目So What；Miles Davis可省略但不能写成别人。Hotel California是正在学的吉他歌曲，不是本题最喜欢的专辑曲目。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b8505e71-1358-4cda-b70d-6891595994e4",
+      "index": 133,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What song is the user currently learning on guitar? (Refer to our conversation on 2023/02/26 (Sun) 07:00.)",
+      "gta": "Eagles（老鹰乐队）的《Hotel California》。",
+      "eval_hint": "必须识别Hotel California/加州旅馆；乐队名可省略但若提供不能写错。So What不是本题学弹的歌。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "9a4f6fdd-b21f-437f-9554-acfd369f79f2",
+      "index": 134,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What photography workshop did the user attend on February 22? (Refer to our conversation on 2023/02/26 (Sun) 11:52.)",
+      "gta": "2 月 22 日在当地摄影棚参加的一日摄影工作坊，活动免费，但需提前在线报名。",
+      "eval_hint": "必答活动类型为一日摄影工作坊、地点为当地摄影棚；题目已给日期不强制重复。可补充免费及提前报名。不能编造正式活动名、摄影师名，也不能混成数字营销或3月22日另一场工作坊。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c3152f97-181c-40d4-aa85-115f4d1248d2",
+      "index": 135,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What entrepreneurship workshop did the user attend in January, and where was it held? (Refer to our conversation on 2023/02/26 (Sun) 11:52.)",
+      "gta": "1 月参加的三天创业工作坊，地点在市中心的联合办公空间，由创业加速器项目组织。",
+      "eval_hint": "必须答三天创业工作坊和市中心联合办公空间两项；组织方可省略。不能答城市会展中心，那是数字营销工作坊地点。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e2907c5a-a030-4f8d-9227-ea7b812f251b",
+      "index": 136,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What mindfulness workshop did the user attend on December 12, and how much did it cost? (Refer to our conversation on 2023/02/26 (Sun) 11:52.)",
+      "gta": "12 月 12 日在家附近瑜伽馆参加的半天正念工作坊，费用为 20 美元。",
+      "eval_hint": "必须答半天正念工作坊与20美元；地点可省略，若给出须为家附近瑜伽馆。200或500美元对应其他活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0b4d1851-0af9-4974-a2d1-5ba3038143cc",
+      "index": 137,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What tool has the user been using for data visualization, and where are they based? (Refer to our conversation on 2023/02/26 (Sun) 10:02.)",
+      "gta": "一直在用 Tableau；所在地是旧金山 SoMa 区。",
+      "eval_hint": "必须同时答Tableau和旧金山SoMa；只说旧金山但漏SoMa算地点不够完整。Power BI和Looker只是考虑或探索的工具，不能替代已经使用的Tableau。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c4c1432a-38ba-4532-a522-3ab17d18375e",
+      "index": 138,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What type of bitters did you mention wanting to try in your Old Fashioned recipe? (Refer to our conversation on 2022/10/18 (Tue) 12:33.)",
+      "gta": "小豆蔻苦精（cardamom bitters）。",
+      "eval_hint": "必须答cardamom bitters/小豆蔻苦精；只答苦精太笼统，橙味苦精等其他种类错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "083531fc-ebfe-4f5d-9588-a96a3029b7e0",
+      "index": 139,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What specific cocktail recipe did you express interest in trying that includes saffron? (Refer to our conversation on 2022/10/18 (Tue) 12:33.)",
+      "gta": "Saffron Gin Fizz（藏红花金酒菲兹）。",
+      "eval_hint": "必须唯一识别Saffron Gin Fizz；只答金酒鸡尾酒或Old Fashioned错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e00a4913-eb9d-49d5-98a7-d3c9d0db7374",
+      "index": 140,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "Where did you mention seeing saffron threads available for purchase? (Refer to our conversation on 2022/10/18 (Tue) 12:33.)",
+      "gta": "Whole Foods。",
+      "eval_hint": "必须答Whole Foods；这是用户说见过藏红花的商店，不是助手列出的其他购买渠道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "cee2c559-fc60-4b06-8d85-fcad2ededc78",
+      "index": 141,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What TV show did you decide to watch to help with your Spanish language learning? (Refer to our conversation on 2022/10/22 (Sat) 02:18.)",
+      "gta": "《La Casa de Papel》（Money Heist／《纸钞屋》）。",
+      "eval_hint": "这几个正式剧名均接受。Ozark是此前另一观看选择，不是为学西班牙语选择的剧。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "305e35ce-5ea4-4128-87f9-6978d582ab96",
+      "index": 142,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What language did you plan to watch La Casa de Papel in to improve your skills? (Refer to our conversation on 2022/10/22 (Sat) 02:18.)",
+      "gta": "西班牙语原声，配英文字幕。",
+      "eval_hint": "核心必答西班牙语；字幕可省略，但若描述字幕须为英文。不能将英文字幕误答为英文配音。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "3882846f-7de3-4e0d-b045-049407bda6f3",
+      "index": 143,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What specific Adidas shoe models were you considering trying on for comfort? (Refer to our conversation on 2022/11/06 (Sun) 07:15.)",
+      "gta": "Adidas Ultraboost 21 和 Ultraboost 22。",
+      "eval_hint": "两个型号都要有；只说Ultraboost或只列一个不完整。Terra是另已购买的鞋，不是本题待试穿的两款Adidas。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "19597473-2134-4a63-8d17-ea1665daed66",
+      "index": 144,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What type of sneakers did you recently purchase and praise for their grip and comfort? (Refer to our conversation on 2022/11/06 (Sun) 07:15.)",
+      "gta": "Terra 运动鞋（Terra sneakers）。",
+      "eval_hint": "须答Terra；无需臆造具体型号。Ultraboost 21/22只是考虑试穿的鞋款。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b87d19af-978b-418f-b972-7d0b57a83a8f",
+      "index": 145,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What museum exhibit did you visit with your colleague Rachel on a Saturday? (Refer to our conversation on 2022/11/13 (Sun) 23:23.)",
+      "gta": "City Art Museum 的“Impressionist Masters”展览。",
+      "eval_hint": "必须识别Impressionist Masters/印象派大师展；场馆可省略。不能答尚计划参观的古文明展、恐龙展或历史博物馆幕后游览。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "98eb949a-1665-4c13-92d5-18c55ca5e49c",
+      "index": 146,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What specific painting series by Monet impressed you at the City Art Museum? (Refer to our conversation on 2022/11/13 (Sun) 23:23.)",
+      "gta": "莫奈的《Water Lilies》（《睡莲》）系列。",
+      "eval_hint": "必须答睡莲/Water Lilies；只说莫奈的画不够，其他莫奈系列错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "3899ca33-e113-4cba-91ab-83f23c85e2b6",
+      "index": 147,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What event did you recently volunteer for, assisting at the painting station for kids? (Refer to our conversation on 2022/11/13 (Sun) 23:23.)",
+      "gta": "Children’s Museum（儿童博物馆）的“Art Day”活动。",
+      "eval_hint": "须识别儿童博物馆的Art Day/艺术日；可中文转述活动名。不能混成City Art Museum的展览或History Museum导览。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1679827d-b4b1-4025-9b24-d0aa6b74e37b",
+      "index": 148,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What was the price of the new litter box you bought for Lola? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "20 美元，促销价。",
+      "eval_hint": "必须答20美元；30–40美元是三个月驱虫药预算，不是猫砂盆价格。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "924be9aa-83b6-4379-8604-e057a94ae97f",
+      "index": 149,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "Where did you purchase Lola's new litter box? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "Petco。",
+      "eval_hint": "必须答Petco；PetSmart等其他店名不正确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "846a24c4-9932-4018-9f14-66f3c625ab6c",
+      "index": 150,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is Lola's weight as mentioned in the conversation? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "约 10 磅（约 4.5 千克）。",
+      "eval_hint": "必须保留约10磅或正确换算值；10千克、3岁等其他数值错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "7fc425e1-8ae4-483e-8328-095497fa971b",
+      "index": 151,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is Lola's breed as mentioned in the conversation? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "家养短毛猫（domestic shorthair）。",
+      "eval_hint": "domestic shorthair/家猫短毛种正确；不能擅自写成American Shorthair（美国短毛猫）等特定纯种。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "67887acc-755e-4060-b074-9fd53f21e08f",
+      "index": 152,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is the name of the comedian you met at an open mic night recently? (Refer to our conversation on 2023/05/23 (Tue) 01:22.)",
+      "gta": "Rachel。",
+      "eval_hint": "必须答Rachel；不能编造姓氏，或答成用户看过专场的Hasan Minhaj。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d5f9b00d-df25-4854-91fa-1c3f58e60bda",
+      "index": 153,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What was the topic of the joke Rachel told at the open mic night? (Refer to our conversation on 2023/05/23 (Tue) 01:22.)",
+      "gta": "约会软件（dating apps）；笑话把它比作点外卖：看起来不错，到手却一团糟。",
+      "eval_hint": "回答dating apps/约会软件这个主题即可正确，类比外卖可补充。只答外卖但未说明约会软件不完整；用户自己写的在线学习平台笑话不是Rachel的这段。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "010a66c6-253b-4bb9-b800-ed8e30e40532",
+      "index": 154,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is the name of your dog whose bed you are considering replacing? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "Max。",
+      "eval_hint": "必须答Max；Lola是猫，Rocky出现在另一会话，均不能替换。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f21884ec-6322-4854-852e-8e08ee534fd4",
+      "index": 155,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is the name of the mountain where you recently hiked to the base camp? (Refer to our conversation on 2023/05/21 (Sun) 22:24.)",
+      "gta": "Mount Everest（珠穆朗玛峰）。",
+      "eval_hint": "须答Everest/珠穆朗玛峰；本题只是问山名，不应把徒步大本营夸大成登顶。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "dedad16d-41df-463c-85de-8271086511e5",
+      "index": 156,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How many likes did your Facebook post about your hike to Mount Everest Base Camp receive within a day? (Refer to our conversation on 2023/05/21 (Sun) 22:24.)",
+      "gta": "约 20 个赞。",
+      "eval_hint": "必须答约20个赞；5是评论数，30是另一条Instagram动态的回复数。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5a8d0d85-7d9f-4c52-9c3c-2ff4bd467a01",
+      "index": 157,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "On what date did you set up Whiskers' new cat tree? (Refer to our conversation on 2023/05/22 (Mon) 22:41.)",
+      "gta": "2023 年 4 月 15 日。",
+      "eval_hint": "以2023-05-22这次会话为锚，“上个月15日”是2023-04-15；4月15日也接受。不能以API提交日期2026年10月换算，或答5月15日。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4bae3284-a1fb-4e88-856a-357ff43f799f",
+      "index": 158,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What date did you visit Magic Kingdom with Emma and Ryan and dress up as zombies? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "2022 年 10 月 15 日。",
+      "eval_hint": "10月15日即可；如提供年份，应依据2023-02-19会话的“去年”为2022年。10月8日是另一场环球影城活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "56b0636d-3ee2-4a64-a417-98a3883a1101",
+      "index": 159,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What was the name of the Halloween-themed event you attended at Magic Kingdom last year? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "用户说活动名是 Screamfest。",
+      "eval_hint": "须按原文用户纠正后的名称答Screamfest，即使现实活动命名可能不同。Boo Bash是助手先前被否定的名称；不能拿现实资料覆盖该对话。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "52f43266-ccf5-4246-ab2a-26519388f14b",
+      "index": 160,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What ride did you go on multiple times during your visit to Magic Kingdom on October 15th? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "Haunted Mansion（幽灵公馆）游乐项目。",
+      "eval_hint": "必须识别Haunted Mansion；不能答巡游名称、其他游乐项目或整个园区。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "181996ef-1d7b-4f2e-8aa9-b47e47b2e18f",
+      "index": 161,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What event did you attend at Universal Studios Hollywood on October 8th last year? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "“Taste of Universal”美食节。",
+      "eval_hint": "必须答Taste of Universal；Halloween Horror Nights只是谈到的活动，用户明确说参加的是美食节。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "7aeb002f-fef3-4d06-a721-3532af958016",
+      "index": 162,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What coffee shop near the train station have you been visiting recently? (Refer to our conversation on 2023/03/16 (Thu) 21:03.)",
+      "gta": "Cafe Demitasse。",
+      "eval_hint": "Cafe/Café Demitasse均接受；不能只说车站附近的咖啡馆。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4e0e8d1a-6cfd-438c-852e-33aee11797f1",
+      "index": 163,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What time is the train you have been taking for the past three months? (Refer to our conversation on 2023/03/16 (Thu) 21:03.)",
+      "gta": "早上 7:15 的火车。",
+      "eval_hint": "必须答7:15 am/早7点15分；每天晚点10分钟不代表列车原定时间改成7:25。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d13008ed-196a-4a02-99f1-4a410b61ba47",
+      "index": 164,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What grade did you receive in Psychology during the fall semester? (Refer to our conversation on 2023/03/28 (Tue) 14:06.)",
+      "gta": "心理学得了 A。",
+      "eval_hint": "必须答A；B+是统计学成绩，不能互换。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8ee8e430-ff0d-4d9c-ad82-605bea489f36",
+      "index": 165,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What grade did you receive in Statistics during the fall semester? (Refer to our conversation on 2023/03/28 (Tue) 14:06.)",
+      "gta": "统计学得了 B+。",
+      "eval_hint": "必须答B+；B或A不等价。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d426dddf-75f2-473e-94c7-25c0d271aed3",
+      "index": 166,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What charity event did you participate in a few weeks ago to raise money for a local food bank? (Refer to our conversation on 2023/03/28 (Tue) 16:44.)",
+      "gta": "“Run for Hunger”慈善活动，为当地食物银行筹款。",
+      "eval_hint": "须答Run for Hunger；只答慈善跑太笼统，charity gala、bake sale或癌症研究慈善步行均不是该活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c0aae0e1-5c5d-4ae1-8f71-bedf3fad0ce0",
+      "index": 167,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "How much money did you raise during the \"Run for Hunger\" event? (Refer to our conversation on 2023/03/28 (Tue) 16:44.)",
+      "gta": "250 美元。",
+      "eval_hint": "必须答250美元；这是已筹到的捐款，不是未来想超越的另一目标。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bb64a0c3-9a42-4bd8-a63b-c78cd75ccec6",
+      "index": 168,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs did the user mention having stocked up in their fridge? (Refer to our conversation on 2023/01/11 (Wed) 23:15.)",
+      "gta": "当次会话提到有 30 打鸡蛋（360 个）。",
+      "eval_hint": "必须按2023-01-11指定会话答30打/360个；后续20打不能覆盖这个历史问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e3cd2e0e-8018-44a5-93a4-9ddba420d44c",
+      "index": 169,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What type of cheese did the user decide to make first with their goat milk? (Refer to our conversation on 2023/01/11 (Wed) 23:15.)",
+      "gta": "最初表示先做 fresh chèvre；同一会话后面又表示先做 ricotta，原文有两次不同选择。",
+      "eval_hint": "原文第7条消息说先做fresh chèvre，第11条又说先做ricotta。完整还原这两次选择及先后最准确。query中的first可理解为最初选择，也可理解为打算先做哪种：按最初选择答chèvre有据，按最后表态答ricotta也有据，不得将任一种设为唯一可接受标签。若必须二元评分，未限定时点而只答其中一种可视为命中一种成立读法；若明确说“最初是ricotta”或“最后仍是chèvre”则顺序错误。不能声称已经实际制作了某种奶酪。此题标为原文/问法歧义，建议单列，不纳入严格单答案事实准确率。",
+      "answer_status": "ambiguous_source"
+    },
+    {
+      "source_request_id": "3a9ade1c-dda6-4c70-b741-29320711a1d1",
+      "index": 170,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What type of food has the user been really into lately? (Refer to our conversation on 2023/01/13 (Fri) 10:43.)",
+      "gta": "意大利菜（Italian food）。",
+      "eval_hint": "须答意大利菜；泛答西餐、面食或其他国家菜系不够准确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1bb6bfad-ead5-48ef-a04a-f8cfd9561fc6",
+      "index": 171,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What type of dish did the user learn to make in a cooking class on a Saturday morning? (Refer to our conversation on 2023/01/13 (Fri) 10:43.)",
+      "gta": "一道配奶油酱的意大利面。",
+      "eval_hint": "须识别奶油酱意大利面；不要求具体菜名，因为用户没有为课堂上学的菜明确命名。可描述黄油、奶油、帕尔马干酪酱，但不能把随后考虑的蘑菇宽面或青酱千层面断言成课堂菜名。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c7c5b141-5758-4842-8a5a-751752b4bac9",
+      "index": 172,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is the name of the user's cat? (Refer to our conversation on 2023/01/14 (Sat) 07:33.)",
+      "gta": "Luna。",
+      "eval_hint": "须答Luna；不要混用其他用户的Lola或Whiskers。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8beab8c1-1ef7-4f97-9bc3-a0255907a1f6",
+      "index": 173,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is one of the user's cat's favorite toys? (Refer to our conversation on 2023/01/14 (Sat) 07:33.)",
+      "gta": "激光逗猫玩具（laser pointer toy）。",
+      "eval_hint": "激光逗猫玩具是明确偏爱项，答这一项即可；高大的剑麻绳猫抓柱也被原文称为最喜欢的猫抓柱之一，若明确指出这一物件同样接受。不能用助手建议但用户未确认喜爱的玩具替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bd14f11c-f98c-4d87-af80-cc8006e6eba1",
+      "index": 174,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is the user preparing for on September 18th? (Refer to our conversation on 2023/01/20 (Fri) 14:35.)",
+      "gta": "准备 9 月 18 日的 Harvest Market（丰收集市），核算蜡烛和香皂库存。",
+      "eval_hint": "须识别Harvest Market/丰收集市；库存事项可省略。不能答日常周二周四的市中心摊位。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e8bfef3b-2add-42b3-ac58-2c2f466faecf",
+      "index": 175,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What new display materials did the user debut at the market last week? (Refer to our conversation on 2023/01/20 (Fri) 14:35.)",
+      "gta": "新遮阳棚和桌布（canopy and tablecloths）。",
+      "eval_hint": "两项都要答出；只说新展示材料过于笼统，不能用蜡烛或香皂商品替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f9610503-0e02-4f3a-b0d6-d6e65c33e787",
+      "index": 176,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many times has the user made Garlic Butter Shrimp in the past month? (Refer to our conversation on 2023/01/29 (Sun) 21:52.)",
+      "gta": "至少 4 次。",
+      "eval_hint": "必须保留at least/至少，原文只给下限。单答4次可视为大致数字命中，但严格全对需说明至少4次；断言恰好4次或少于4次错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c7b512bd-d496-49be-9295-86a376f25bf8",
+      "index": 177,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is the user's daily step goal with their Fitbit Charge 3? (Refer to our conversation on 2023/01/31 (Tue) 00:15.)",
+      "gta": "每天 12,000 步。",
+      "eval_hint": "必须答12000步/日；8000–10000是实际平均步数，不是目标。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a2d26814-16cb-4e87-8568-a519635de507",
+      "index": 178,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What was the name of the event where you completed a 25-mile bike ride to raise awareness and funds for cancer research? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "“Cycle for a Cause”。",
+      "eval_hint": "须识别Cycle for a Cause；Run for Hunger是另一数据组的活动，不能混入。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ba624d8a-3295-44d6-97bc-f83814c249ce",
+      "index": 179,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What highway are you taking for your road trip from San Francisco to Lake Tahoe? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "I-80 E，即 80 号州际公路东行。",
+      "eval_hint": "I-80 East/东行正确；只答I-80可接受核心路线，但若写方向必须为东，不是西或其他公路。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "53e91524-f5e5-4f26-9d5c-65070fecb041",
+      "index": 180,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Which coffee shop did you decide to stop by for a healthy bite and coffee during your road trip? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "Auburn 的 The Pour Choice。",
+      "eval_hint": "必须答The Pour Choice；地点Auburn可省略。不能将助手其他推荐店当成用户最后选择。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "59f054a1-eaeb-4444-99ba-3e7a0c88f92f",
+      "index": 181,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Which bike trail did you plan to explore during your stay in Lake Tahoe? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "Tahoe City to Squaw Valley Bike Trail。",
+      "eval_hint": "须识别从Tahoe City到Squaw Valley的自行车道；可用等价中文路线名，不能泛答太浩湖环湖道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5378475a-5126-4364-aa6b-3f1d7f8ccac9",
+      "index": 182,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Which magazine have you been regularly reading for the past three months? (Refer to our conversation on 2023/05/20 (Sat) 19:35.)",
+      "gta": "《The New Yorker》（《纽约客》）。",
+      "eval_hint": "必须答纽约客；CNN、Huffington Post、Vanity Fair或Us Weekly均不能替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "6c421c85-1756-452c-95bd-f2aeab2b3348",
+      "index": 183,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What sport have you been playing on Sundays for the past two months? (Refer to our conversation on 2023/05/20 (Sat) 20:30.)",
+      "gta": "排球（volleyball）。",
+      "eval_hint": "必须答排球；网球是另在教练指导下练习的运动，不是本题周日持续两个月的活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b7ac8774-250b-49e3-8c19-1289a30c1149",
+      "index": 184,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Who is your tennis coach at the local community center? (Refer to our conversation on 2023/05/20 (Sat) 20:30.)",
+      "gta": "Coach Thompson（Thompson 教练）。",
+      "eval_hint": "必须识别Thompson；不要求未知的名字或额外身份，不能编造。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c230407a-8c8c-47a1-8c90-5ad1b8fa7250",
+      "index": 185,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What did you have for lunch on Monday, Tuesday, and Thursday last week? (Refer to our conversation on 2023/05/23 (Tue) 07:44.)",
+      "gta": "上周一、周二、周四的午餐都是藜麦沙拉（quinoa salad）。",
+      "eval_hint": "须答藜麦沙拉，且覆盖这三天；只说藜麦基本识别食材但不足以完整复述菜品，扁豆汤是之后计划的餐食。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "6853fcb4-1a7d-4447-a505-0cc2d7f95572",
+      "index": 186,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What lens did you use to take photos during your trip to Yellowstone National Park last weekend? (Refer to our conversation on 2023/05/23 (Tue) 18:14.)",
+      "gta": "Canon EF 70-200mm f/2.8L IS III USM 镜头。",
+      "eval_hint": "完整正确需唯一识别Canon EF 70-200mm f/2.8L IS III USM；大小写、连字符、USM有无不影响，只要明确III代f/2.8L IS镜头。不能答相机EOS 5D Mark IV、三脚架或其他镜头版本。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2b262878-4197-45c2-bbe1-084a5fb9fd5b",
+      "index": 187,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What is the model of your current tripod that is getting old and creaky? (Refer to our conversation on 2023/05/23 (Tue) 18:14.)",
+      "gta": "Manfrotto BeFree 三脚架。",
+      "eval_hint": "须答Manfrotto BeFree；Gitzo GT3543LS或GT2531L只是考虑的新三脚架，不能替代现有旧款。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "166882bd-48f3-438c-96da-19a48e096e87",
+      "index": 188,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What cookbook did you choose for your niece who is interested in cooking and baking? (Refer to our conversation on 2023/02/06 (Mon) 22:36.)",
+      "gta": "America’s Test Kitchen 的《The Complete Cookbook for Young Chefs》。",
+      "eval_hint": "必须唯一识别The Complete Cookbook for Young Chefs；作者/机构可省略但不能写错。MasterChef Junior等其他推荐书并非最终选择。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "928d5d5a-1b7b-495e-9d75-af3546feed23",
+      "index": 189,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What feature of the cookbook you selected for your niece do you think she will find most helpful? (Refer to our conversation on 2023/02/06 (Mon) 22:36.)",
+      "gta": "逐步示范的照片和说明（step-by-step photos and instructions）。",
+      "eval_hint": "需覆盖逐步照片和操作说明；只说食谱多或烹饪技巧多不是用户明确强调的帮助。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "48584817-89ab-4f5d-a02c-711d737501b5",
+      "index": 190,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What coffee-to-water ratio do you prefer for your French press? (Refer to our conversation on 2023/02/11 (Sat) 11:41.)",
+      "gta": "当次会话偏好每 1 汤匙咖啡配 6 液体盎司水。",
+      "eval_hint": "必须保留1 tablespoon coffee : 6 oz water的方向、数量和单位。后来的5 oz偏好不能覆盖2023-02-11历史题；不能把体积比偷换成咖啡与水的重量比1:6。等价换算6美制液体盎司约177毫升可接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "7ee2e7e3-c00e-4cbc-92aa-a01c80163017",
+      "index": 191,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "Which type of coffee beans did you decide to try first for pairing with citrus notes? (Refer to our conversation on 2023/02/11 (Sat) 11:41.)",
+      "gta": "肯尼亚咖啡豆（Kenyan coffee）。",
+      "eval_hint": "须答肯尼亚产地；不是Earl Grey茶或其他咖啡产地。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c0b1daf8-9f36-4541-adb5-4f2139fef8e7",
+      "index": 192,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What brewing method are you planning to use for the beans from your first coffee subscription shipment? (Refer to our conversation on 2023/02/11 (Sat) 11:41.)",
+      "gta": "法压壶（French press）。",
+      "eval_hint": "必须答法压壶；不要把订阅服务品牌或其他冲煮方法作为答案。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "fb73fc9f-599d-4955-a249-be638c21a644",
+      "index": 193,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What type of milk have you been experimenting with and enjoying for its creamy texture and neutral flavor? (Refer to our conversation on 2023/02/17 (Fri) 09:58.)",
+      "gta": "燕麦奶（oat milk）。",
+      "eval_hint": "必须答燕麦奶；杏仁奶虽也提到，豆奶用于自制酸奶，都不是本题“质地浓滑、味道中性”的对象。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "634b5c8a-14cb-4c37-90f0-38c8e4a3e282",
+      "index": 194,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What specific uses have you found for oat milk in your plant-based diet? (Refer to our conversation on 2023/02/17 (Fri) 09:58.)",
+      "gta": "用于做果昔，以及搭配早餐谷物（smoothies and cereal）。",
+      "eval_hint": "两种用途都要答出；原文自制酸奶用的是豆奶，不能写成燕麦奶酸奶。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1932bfb4-f9f4-4032-8b4e-b0bc1e234ec0",
+      "index": 195,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What level have you reached in Overwatch, and what spray did you unlock? (Refer to our conversation on 2023/04/13 (Thu) 12:45.)",
+      "gta": "《Overwatch》达到 50 级，解锁“Hero of Numbani”喷漆。",
+      "eval_hint": "必须同时答50级和Hero of Numbani喷漆；只答其中之一不完整。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "35580752-c667-4e61-baba-dd81d968645c",
+      "index": 196,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "Which two heroes have you been focusing on while playing Overwatch with your friends? (Refer to our conversation on 2023/04/13 (Thu) 12:45.)",
+      "gta": "Reaper（死神）和 Widowmaker（黑百合）。",
+      "eval_hint": "两个英雄都要答出；中文或英文正式名均接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "fe178cd7-ae74-4192-bdf1-94725fb00568",
+      "index": 197,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What milestone have you reached in Pokémon Sword, and how many Pokémon have you caught so far? (Refer to our conversation on 2023/04/13 (Thu) 12:45.)",
+      "gta": "《Pokémon Sword》进度到第三个道馆，已捕获约 50 只宝可梦。",
+      "eval_hint": "必须同时答到第三道馆及约50只。原文“gotten up to the third gym”未明确说已击败第三道馆，因此不能把打通第三馆、已进入第四馆或通关当成已证实事实。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a6bd33bc-8221-44fd-83af-1060e4331a8e",
+      "index": 198,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "How many neon tetras did you have before introducing new ones to your 20-gallon community tank? (Refer to our conversation on 2023/05/20 (Sat) 13:20.)",
+      "gta": "原来有 9 条霓虹灯鱼。",
+      "eval_hint": "必须答9条；20是鱼缸加仑容量，不能当成鱼数。不能自行加上未给数量的新鱼算总数。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "91e5f476-5f0b-4580-8369-ac7574864d39",
+      "index": 199,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What type of plant are you planning to use as a carpeting plant in the foreground of your tank? (Refer to our conversation on 2023/05/20 (Sat) 13:20.)",
+      "gta": "Dwarf Hairgrass（矮发草／矮牛毛毡）。",
+      "eval_hint": "必须识别Dwarf Hairgrass；泛称水草或其他前景草不够准确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8a33e993-62fe-44c5-9171-fd7efa8f65b3",
+      "index": 200,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "On what date did you receive your acceptance letter for university in Edinburgh? (Refer to our conversation on 2023/05/22 (Mon) 07:08.)",
+      "gta": "2 月 10 日。",
+      "eval_hint": "须答2月10日；不强制补年份，因为原文只明说月日。8月15日是中转日，8月20日是派对提议日期。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "155a9cf5-5251-46d8-bd23-284f7769c0bb",
+      "index": 201,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What area in Edinburgh have you booked a flat viewing in? (Refer to our conversation on 2023/05/22 (Mon) 07:08.)",
+      "gta": "Edinburgh 的 Marchmont 区。",
+      "eval_hint": "必须答Marchmont；只说Edinburgh太笼统，不能自行替换成其他街区。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1d0b9d48-c841-47ce-96be-07032c9c10b4",
+      "index": 202,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "Which weekend did Rachel suggest for the flat-warming party in Edinburgh? (Refer to our conversation on 2023/05/22 (Mon) 07:08.)",
+      "gta": "8 月 20 日所在的那个周末。",
+      "eval_hint": "须答the weekend of August 20th/8月20日那个周末；不必从不一致的日历信息推导额外精确范围。8月15日是伦敦中转日，不能混用。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ec3c05d2-0193-40b5-a0cd-d029033aad9f",
+      "index": 203,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What type of cooking class did you start at a local culinary school? (Refer to our conversation on 2023/05/21 (Sun) 02:11.)",
+      "gta": "纯素烹饪课（vegan cooking class）。",
+      "eval_hint": "须答vegan/纯素烹饪；泛称素食可算接近但完整答案应明确不含动物性食材。不能写成奶酪制作课或其他菜系课。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c63b3534-9798-44ac-8e44-cf4e96f6f3b2",
+      "index": 204,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What ingredient have you been experimenting with to add a cheesy flavor to your dishes? (Refer to our conversation on 2023/05/21 (Sun) 02:11.)",
+      "gta": "营养酵母（nutritional yeast）。",
+      "eval_hint": "必须答营养酵母；不能用普通烘焙酵母、随后想尝试的味噌或腰果奶酪粉替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e00072ba-b9f3-4862-8aa8-f0f69acac761",
+      "index": 205,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What type of exercise have you been doing a lot of lately? (Refer to our conversation on 2023/05/21 (Sun) 01:29.)",
+      "gta": "慢跑和骑自行车（jogging and cycling）。",
+      "eval_hint": "两项都要答出；瑜伽只是之后想探索的活动，不能用来替换已经常做的两项。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e9018731-d6e0-44b0-870d-2567f6386db8",
+      "index": 206,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What was the duration of your recent beach vacation? (Refer to our conversation on 2023/05/21 (Sun) 01:29.)",
+      "gta": "一周。",
+      "eval_hint": "一周/7天正确；不是一个周末或两周。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bbec9ad1-b7b0-4ea8-ad31-b0656a552640",
+      "index": 207,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What is your weekly grocery budget goal? (Refer to our conversation on 2023/05/21 (Sun) 08:46.)",
+      "gta": "每周 80 美元。",
+      "eval_hint": "必须答每周80美元这个目标；100美元是实际平均支出，不能当成预算目标。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "842d7bb7-843e-4c4b-8b59-07f6daa804ac",
+      "index": 208,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What methods have you used to control aphids and whiteflies in your garden? (Refer to our conversation on 2023/05/20 (Sat) 01:22.)",
+      "gta": "已用印楝油和肥皂水（neem oil and soap solution）。",
+      "eval_hint": "两项已使用的方法都要有。瓢虫、草蛉、益虫线虫等只是探讨或建议中的方法，不能当成用户已经做过的措施。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4f2072f5-f616-41da-9ca0-a53c9f206ad1",
+      "index": 209,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What flowers are you considering planting to attract beneficial insects to your garden? (Refer to our conversation on 2023/05/20 (Sat) 01:22.)",
+      "gta": "万寿菊（marigold）、百日菊（zinnia）和向日葵（sunflowers）。",
+      "eval_hint": "全对需覆盖marigold、zinnia和sunflowers三种花，顺序不限。前一句明确考虑前两种，后一句又考虑向日葵并询问能否吸引益虫；题目没有限定只看前一句，因此向日葵也属于应答集合。只答前两种算部分正确。罗勒、薄荷、欧芹是另行讨论的香草，不能替代三种花；不要把“正在考虑”说成已经种植完成。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "59ff635c-20d4-43f5-9525-04858a7b8d4a",
+      "index": 210,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What English TV show did you decide to start with to improve your listening skills? (Refer to our conversation on 2023/05/20 (Sat) 04:08.)",
+      "gta": "《Friends》（《老友记》）。",
+      "eval_hint": "必须答Friends/老友记；不能用助手其他推荐剧替代用户选择。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "34700838-0100-4a02-a623-665cc065857a",
+      "index": 211,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What activity are you planning to do on Memorial Day to show respect and appreciation? (Refer to our conversation on 2023/05/20 (Sat) 04:08.)",
+      "gta": "参加当地的 Memorial Day 纪念仪式，表达敬意和感谢。",
+      "eval_hint": "核心须答参加当地纪念仪式；可补充也在考虑到退伍军人组织志愿服务。只答志愿服务而遗漏明确计划的纪念仪式不完整；不能说已完成活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "18b4a8a6-f524-4902-9d5d-469c7bd4183f",
+      "index": 212,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What skincare brand did you recently purchase from Sephora? (Refer to our conversation on 2023/05/20 (Sat) 09:51.)",
+      "gta": "Drunk Elephant（醉象）。",
+      "eval_hint": "须答Drunk Elephant；Nars是同一对话里的粉底品牌，不是本题护肤套装品牌。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "81fc6d1c-bdc2-4059-9bfb-76b031563949",
+      "index": 213,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What bike model did you purchase on April 15th? (Refer to our conversation on 2023/05/23 (Tue) 13:13.)",
+      "gta": "Cannondale Synapse 公路自行车。",
+      "eval_hint": "必须识别Cannondale Synapse；只给Cannondale品牌不完整，不能答车架品牌Thule或Saris。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d9148446-5c7e-4dd1-9fb6-e67ea7b00b39",
+      "index": 214,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "How many miles have you clocked on your Cannondale Synapse since purchasing it? (Refer to our conversation on 2023/05/23 (Tue) 13:13.)",
+      "gta": "超过 500 英里。",
+      "eval_hint": "必须保留over/超过这个下限；不能断言恰好500英里，也不能把500英里写成500公里。约800公里以上的正确换算可接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "624d330d-9552-449d-a10d-a34f04686b5f",
+      "index": 215,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What flight route did you take on January 20th? (Refer to our conversation on 2023/05/24 (Wed) 20:05.)",
+      "gta": "从 Dallas（达拉斯）飞往 Chicago（芝加哥）。",
+      "eval_hint": "两端和方向都要正确；不能反向，或用后来考虑的Denver/Las Vegas/London航线替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bda5c1fd-8b79-4deb-9f4d-6f68464c42eb",
+      "index": 216,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What airline issued the $200 voucher you received as a birthday gift? (Refer to our conversation on 2023/05/24 (Wed) 20:05.)",
+      "gta": "Southwest Airlines（西南航空）。",
+      "eval_hint": "必须答西南航空；British Airways、United或根据Admirals Club推测的航空公司均错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "03b2d6bb-8477-4fa9-b278-5a2baf015aa9",
+      "index": 217,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What time have you been waking up recently to enjoy quiet morning hours? (Refer to our conversation on 2023/05/22 (Mon) 19:33.)",
+      "gta": "早上约 6:30。",
+      "eval_hint": "须答6:30 am/早上六点半；允许约数措辞，不是晚上6:30。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "84fb5c71-767e-44d3-8455-a164e6a2c911",
+      "index": 218,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the title of the book you recently finished as an audiobook during your daily commute? (Refer to our conversation on 2023/05/20 (Sat) 15:15.)",
+      "gta": "《The Hitchhiker’s Guide to the Galaxy》（《银河系漫游指南》）。",
+      "eval_hint": "须识别这本书；The Song of Achilles是准备读的纸质书，Good Omens是后续想读的推荐书。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0049107e-d3c3-4dfa-bac3-886ec59a2268",
+      "index": 219,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the name of the book you own in paperback and plan to start reading soon? (Refer to our conversation on 2023/05/20 (Sat) 15:15.)",
+      "gta": "《The Song of Achilles》（《阿喀琉斯之歌》）。",
+      "eval_hint": "须识别The Song of Achilles；The Alice Network、The Historian或Good Omens不能替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "74b24e9a-dd0a-4bce-a36e-7d0780af1a84",
+      "index": 220,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the name of your cat featured in your Instagram post that received around 50 likes? (Refer to our conversation on 2023/05/21 (Sun) 07:52.)",
+      "gta": "Luna。",
+      "eval_hint": "须答Luna；不同用户的猫名Lola/Whiskers不能混用。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b5d99599-2538-4e63-8394-af645ad3800f",
+      "index": 221,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What was the occasion for your recent family trip to Disneyland? (Refer to our conversation on 2023/05/21 (Sun) 08:39.)",
+      "gta": "庆祝侄女／外甥女的 7 岁生日。",
+      "eval_hint": "必须体现niece和7岁生日；中文侄女或外甥女均接受，因为niece未区分。只说家人生日太笼统，不能写成女儿生日。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "66b290c8-b3f3-479e-a251-25d83dc434b6",
+      "index": 222,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the name of the restaurant where you had a great time during your recent Disneyland trip? (Refer to our conversation on 2023/05/21 (Sun) 08:39.)",
+      "gta": "Paradise Garden Grill。",
+      "eval_hint": "须唯一识别Paradise Garden Grill；不能回答整个Disneyland园区或另一个餐馆。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ea373f34-2880-49b3-8764-5f417aa92214",
+      "index": 223,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the size of the bookshelf your brother assembled for your living room? (Refer to our conversation on 2023/05/22 (Mon) 04:41.)",
+      "gta": "书架约高 5 英尺、宽 3 英尺。",
+      "eval_hint": "高度和宽度都要正确，不能互换；正确换算约高1.52米、宽0.91米接受。4×2英尺是咖啡桌，12×15英尺是客厅。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "490d095f-39d7-416c-87e3-f49d60cf0c78",
+      "index": 224,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the size of your living room where you are planning a new furniture layout? (Refer to our conversation on 2023/05/22 (Mon) 04:41.)",
+      "gta": "客厅约 12 × 15 英尺，长方形。",
+      "eval_hint": "两边尺寸12和15英尺须正确；面积约180平方英尺或16.7平方米的明确等价表达也接受。书架或咖啡桌尺寸不能代替。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "510b2154-a09f-4cd2-9738-7966eca2f8fa",
+      "index": 225,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the default temperature you adjusted on your smart thermostat after setting it up? (Refer to our conversation on 2023/05/22 (Mon) 05:25.)",
+      "gta": "调到了 72 度；原文没有明确标注温标。",
+      "eval_hint": "答调后的72度即可全对，不要求提供温标。原文没有写°F或°C，不能把任何一种温标设为必须命中的已知事实；若补充72°F或换算约22.2°C，须说明是按华氏理解的推断/条件换算。无依据地断言原文明确为72°F或72°C，不能判为严格有据的完整答案。不能声称知道调整前的具体默认温度，原文只说它偏高。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "2e974521-6cd4-447d-82d0-2f11a3052f03",
+      "index": 226,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What are the three main ingredients in the granola batch you recently made at home? (Refer to our conversation on 2023/05/23 (Tue) 05:25.)",
+      "gta": "压片燕麦、杏仁和蜂蜜（rolled oats, almonds, honey）。",
+      "eval_hint": "三种都要有；顺序不限。香草精和杏仁奶是另一个自制奶精配方，不能混入。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f542e1e8-fa11-4347-b365-8dec8e93876c",
+      "index": 227,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What are the three main ingredients you use to make your homemade flavored creamer? (Refer to our conversation on 2023/05/23 (Tue) 05:25.)",
+      "gta": "杏仁奶、香草精和蜂蜜（almond milk, vanilla extract, honey）。",
+      "eval_hint": "三种都要有；顺序不限。杏仁奶不能简化成杏仁果仁，燕麦属于另一份granola配方。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "027fc9c2-77ac-4e7c-ac26-87a0b979a87d",
+      "index": 228,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What rare coin from the user's grandpa's collection was mentioned? (Refer to our conversation on 2023/02/26 (Sun) 02:49.)",
+      "gta": "一枚 1913 年 Liberty Head nickel（自由女神头像五美分镍币）。",
+      "eval_hint": "必须同时识别1913年与Liberty Head nickel；Indian Head penny是用户另一枚硬币，不是本题爷爷收藏中的稀有币。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e54b1b9f-a4ab-4c1a-ab5e-b16f0300e756",
+      "index": 229,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What platforms has the user been active on recently? (Refer to our conversation on 2023/02/26 (Sun) 02:31.)",
+      "gta": "Facebook、Twitter、Instagram、YouTube、LinkedIn、Reddit、徒步与户外爱好者论坛，以及极简主义和简单生活博客。",
+      "eval_hint": "需覆盖原文全部8项平台/渠道；论坛和博客可用描述，不要求编造站名。缺项不算全对；WhatsApp等该会话未列出的平台不能用来替代。可改变顺序，Twitter称X也接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1ff877c4-d34c-4ef6-8922-b91146099901",
+      "index": 230,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What vintage guitar does the user own? (Refer to our conversation on 2023/02/26 (Sun) 02:49.)",
+      "gta": "1957 年 Gibson Les Paul Goldtop 吉他。",
+      "eval_hint": "须包含1957、Gibson Les Paul和Goldtop；只说Gibson或Les Paul不够完整。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ac2774bc-5b23-4456-b49a-60f83fd6faa4",
+      "index": 231,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What photography workshop did the user attend on February 22? (Refer to our conversation on 2023/02/26 (Sun) 11:52.)",
+      "gta": "2 月 22 日在当地摄影棚参加的一日摄影工作坊，活动免费，但需提前在线报名。",
+      "eval_hint": "必答活动类型为一日摄影工作坊、地点为当地摄影棚；题目已给日期不强制重复。可补充免费及提前报名。不能编造正式活动名、摄影师名，也不能混成数字营销或3月22日另一场工作坊。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2e715c46-4231-4d63-b3f5-b8e04420c5d5",
+      "index": 232,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What album has the user been inspired by recently, and what is their favorite track? (Refer to our conversation on 2023/02/26 (Sun) 07:00.)",
+      "gta": "Miles Davis 的《Kind of Blue》；最喜欢的曲目是《So What》。",
+      "eval_hint": "必须同时答专辑Kind of Blue和曲目So What；Miles Davis可省略但不能写成别人。Hotel California是正在学的吉他歌曲，不是本题最喜欢的专辑曲目。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a8f1a56e-efb4-4ffb-8216-8d2098611d98",
+      "index": 233,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What vintage watch did the user recently acquire, and for how much? (Refer to our conversation on 2023/02/26 (Sun) 02:49.)",
+      "gta": "一只 20 世纪 60 年代的古董 Omega Seamaster 手表，拍卖价 1,200 美元。",
+      "eval_hint": "必须答Omega Seamaster和1200美元两项；若提年代须为1960年代。只有品牌Omega、缺系列或缺价格不算全对。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "61a2535d-bcbd-47e8-830b-a78b667eb72c",
+      "index": 234,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What entrepreneurship workshop did the user attend in January, and where was it held? (Refer to our conversation on 2023/02/26 (Sun) 11:52.)",
+      "gta": "1 月参加的三天创业工作坊，地点在市中心的联合办公空间，由创业加速器项目组织。",
+      "eval_hint": "必须答三天创业工作坊和市中心联合办公空间两项；组织方可省略。不能答城市会展中心，那是数字营销工作坊地点。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bff77108-9c12-4589-a809-7081609eabb0",
+      "index": 235,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What song is the user currently learning on guitar? (Refer to our conversation on 2023/02/26 (Sun) 07:00.)",
+      "gta": "Eagles（老鹰乐队）的《Hotel California》。",
+      "eval_hint": "必须识别Hotel California/加州旅馆；乐队名可省略但若提供不能写错。So What不是本题学弹的歌。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ab06ff58-54fa-4de2-b99f-6f646783525b",
+      "index": 236,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What mindfulness workshop did the user attend on December 12, and how much did it cost? (Refer to our conversation on 2023/02/26 (Sun) 11:52.)",
+      "gta": "12 月 12 日在家附近瑜伽馆参加的半天正念工作坊，费用为 20 美元。",
+      "eval_hint": "必须答半天正念工作坊与20美元；地点可省略，若给出须为家附近瑜伽馆。200或500美元对应其他活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "53094b3c-e4b3-4ff9-9797-d24729660ed7",
+      "index": 237,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_731e37d7__gpt4_731e37d7__memoraxText",
+      "query": "What tool has the user been using for data visualization, and where are they based? (Refer to our conversation on 2023/02/26 (Sun) 10:02.)",
+      "gta": "一直在用 Tableau；所在地是旧金山 SoMa 区。",
+      "eval_hint": "必须同时答Tableau和旧金山SoMa；只说旧金山但漏SoMa算地点不够完整。Power BI和Looker只是考虑或探索的工具，不能替代已经使用的Tableau。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "612dd5e3-8ab6-4d56-9bac-349de8eabfd7",
+      "index": 238,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What type of bitters did you mention wanting to try in your Old Fashioned recipe? (Refer to our conversation on 2022/10/18 (Tue) 12:33.)",
+      "gta": "小豆蔻苦精（cardamom bitters）。",
+      "eval_hint": "必须答cardamom bitters/小豆蔻苦精；只答苦精太笼统，橙味苦精等其他种类错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "46a82f83-c801-45c0-89b5-a8402d4ff14e",
+      "index": 239,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What specific cocktail recipe did you express interest in trying that includes saffron? (Refer to our conversation on 2022/10/18 (Tue) 12:33.)",
+      "gta": "Saffron Gin Fizz（藏红花金酒菲兹）。",
+      "eval_hint": "必须唯一识别Saffron Gin Fizz；只答金酒鸡尾酒或Old Fashioned错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2bee70db-e0cc-461d-87c9-19a43a801975",
+      "index": 240,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "Where did you mention seeing saffron threads available for purchase? (Refer to our conversation on 2022/10/18 (Tue) 12:33.)",
+      "gta": "Whole Foods。",
+      "eval_hint": "必须答Whole Foods；这是用户说见过藏红花的商店，不是助手列出的其他购买渠道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "af56e363-b65c-4943-b1ed-541532947fa7",
+      "index": 241,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What TV show did you decide to watch to help with your Spanish language learning? (Refer to our conversation on 2022/10/22 (Sat) 02:18.)",
+      "gta": "《La Casa de Papel》（Money Heist／《纸钞屋》）。",
+      "eval_hint": "这几个正式剧名均接受。Ozark是此前另一观看选择，不是为学西班牙语选择的剧。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "fb3a9261-5e5c-449b-a43a-acfeba3d31d6",
+      "index": 242,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What language did you plan to watch La Casa de Papel in to improve your skills? (Refer to our conversation on 2022/10/22 (Sat) 02:18.)",
+      "gta": "西班牙语原声，配英文字幕。",
+      "eval_hint": "核心必答西班牙语；字幕可省略，但若描述字幕须为英文。不能将英文字幕误答为英文配音。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "53044103-dac2-4d84-9a0e-3da9171e64b6",
+      "index": 243,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What specific Adidas shoe models were you considering trying on for comfort? (Refer to our conversation on 2022/11/06 (Sun) 07:15.)",
+      "gta": "Adidas Ultraboost 21 和 Ultraboost 22。",
+      "eval_hint": "两个型号都要有；只说Ultraboost或只列一个不完整。Terra是另已购买的鞋，不是本题待试穿的两款Adidas。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "68a94f63-2a2a-4e69-899a-6ce395347da9",
+      "index": 244,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What type of sneakers did you recently purchase and praise for their grip and comfort? (Refer to our conversation on 2022/11/06 (Sun) 07:15.)",
+      "gta": "Terra 运动鞋（Terra sneakers）。",
+      "eval_hint": "须答Terra；无需臆造具体型号。Ultraboost 21/22只是考虑试穿的鞋款。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f29ae378-0392-438a-95d3-7d9f934b458d",
+      "index": 245,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What museum exhibit did you visit with your colleague Rachel on a Saturday? (Refer to our conversation on 2022/11/13 (Sun) 23:23.)",
+      "gta": "City Art Museum 的“Impressionist Masters”展览。",
+      "eval_hint": "必须识别Impressionist Masters/印象派大师展；场馆可省略。不能答尚计划参观的古文明展、恐龙展或历史博物馆幕后游览。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "cee70783-3b4f-456f-a476-70c79e0f1c44",
+      "index": 246,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What specific painting series by Monet impressed you at the City Art Museum? (Refer to our conversation on 2022/11/13 (Sun) 23:23.)",
+      "gta": "莫奈的《Water Lilies》（《睡莲》）系列。",
+      "eval_hint": "必须答睡莲/Water Lilies；只说莫奈的画不够，其他莫奈系列错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "735e9cfe-0537-48a7-9a1c-776a5a631b26",
+      "index": 247,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_21adecb5__gpt4_21adecb5__memoraxText",
+      "query": "What event did you recently volunteer for, assisting at the painting station for kids? (Refer to our conversation on 2022/11/13 (Sun) 23:23.)",
+      "gta": "Children’s Museum（儿童博物馆）的“Art Day”活动。",
+      "eval_hint": "须识别儿童博物馆的Art Day/艺术日；可中文转述活动名。不能混成City Art Museum的展览或History Museum导览。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f931a2ff-1296-4d0f-a12a-6eb8ed236b06",
+      "index": 248,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What was the price of the new litter box you bought for Lola? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "20 美元，促销价。",
+      "eval_hint": "必须答20美元；30–40美元是三个月驱虫药预算，不是猫砂盆价格。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d29cb39b-6aa4-40e2-9e60-e0968753cfe3",
+      "index": 249,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "Where did you purchase Lola's new litter box? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "Petco。",
+      "eval_hint": "必须答Petco；PetSmart等其他店名不正确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c179dae9-6dfb-4c68-87d8-28d03c48656a",
+      "index": 250,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is Lola's weight as mentioned in the conversation? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "约 10 磅（约 4.5 千克）。",
+      "eval_hint": "必须保留约10磅或正确换算值；10千克、3岁等其他数值错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ec0e0782-3b7e-4634-a422-ad74b4279a27",
+      "index": 251,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is Lola's breed as mentioned in the conversation? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "家养短毛猫（domestic shorthair）。",
+      "eval_hint": "domestic shorthair/家猫短毛种正确；不能擅自写成American Shorthair（美国短毛猫）等特定纯种。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bf9a0ba0-5e0c-4f34-a409-4e0f52cdc0ac",
+      "index": 252,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is the name of the comedian you met at an open mic night recently? (Refer to our conversation on 2023/05/23 (Tue) 01:22.)",
+      "gta": "Rachel。",
+      "eval_hint": "必须答Rachel；不能编造姓氏，或答成用户看过专场的Hasan Minhaj。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "888568dd-ec66-49ff-b3ba-c74f52120d0c",
+      "index": 253,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What was the topic of the joke Rachel told at the open mic night? (Refer to our conversation on 2023/05/23 (Tue) 01:22.)",
+      "gta": "约会软件（dating apps）；笑话把它比作点外卖：看起来不错，到手却一团糟。",
+      "eval_hint": "回答dating apps/约会软件这个主题即可正确，类比外卖可补充。只答外卖但未说明约会软件不完整；用户自己写的在线学习平台笑话不是Rachel的这段。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "aeaeb8c4-80b3-4e0c-8614-bb1cf82149ff",
+      "index": 254,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is the name of your dog whose bed you are considering replacing? (Refer to our conversation on 2023/05/20 (Sat) 06:24.)",
+      "gta": "Max。",
+      "eval_hint": "必须答Max；Lola是猫，Rocky出现在另一会话，均不能替换。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "97d14cc6-1861-4f4e-95b9-628730779afc",
+      "index": 255,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "What is the name of the mountain where you recently hiked to the base camp? (Refer to our conversation on 2023/05/21 (Sun) 22:24.)",
+      "gta": "Mount Everest（珠穆朗玛峰）。",
+      "eval_hint": "须答Everest/珠穆朗玛峰；本题只是问山名，不应把徒步大本营夸大成登顶。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c9b7d292-550b-462c-a126-c3c71103a7ed",
+      "index": 256,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "How many likes did your Facebook post about your hike to Mount Everest Base Camp receive within a day? (Refer to our conversation on 2023/05/21 (Sun) 22:24.)",
+      "gta": "约 20 个赞。",
+      "eval_hint": "必须答约20个赞；5是评论数，30是另一条Instagram动态的回复数。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "11e3a164-4cef-4da5-9b0e-94db6c60c911",
+      "index": 257,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09ba9854_abs__09ba9854_abs__memoraxText",
+      "query": "On what date did you set up Whiskers' new cat tree? (Refer to our conversation on 2023/05/22 (Mon) 22:41.)",
+      "gta": "2023 年 4 月 15 日。",
+      "eval_hint": "以2023-05-22这次会话为锚，“上个月15日”是2023-04-15；4月15日也接受。不能以API提交日期2026年10月换算，或答5月15日。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f94b43b2-2100-46b2-b02c-1872dac94e38",
+      "index": 258,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What date did you visit Magic Kingdom with Emma and Ryan and dress up as zombies? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "2022 年 10 月 15 日。",
+      "eval_hint": "10月15日即可；如提供年份，应依据2023-02-19会话的“去年”为2022年。10月8日是另一场环球影城活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f6cc9222-cad3-41a7-b23e-75aea20efae2",
+      "index": 259,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What was the name of the Halloween-themed event you attended at Magic Kingdom last year? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "用户说活动名是 Screamfest。",
+      "eval_hint": "须按原文用户纠正后的名称答Screamfest，即使现实活动命名可能不同。Boo Bash是助手先前被否定的名称；不能拿现实资料覆盖该对话。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "69e06151-4816-4dd8-bb0c-f5f205b0e2d4",
+      "index": 260,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What ride did you go on multiple times during your visit to Magic Kingdom on October 15th? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "Haunted Mansion（幽灵公馆）游乐项目。",
+      "eval_hint": "必须识别Haunted Mansion；不能答巡游名称、其他游乐项目或整个园区。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c7a73a00-2bf1-4036-964d-928dfe8d8548",
+      "index": 261,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What event did you attend at Universal Studios Hollywood on October 8th last year? (Refer to our conversation on 2023/02/19 (Sun) 22:11.)",
+      "gta": "“Taste of Universal”美食节。",
+      "eval_hint": "必须答Taste of Universal；Halloween Horror Nights只是谈到的活动，用户明确说参加的是美食节。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8f7040c9-3b4c-4ec6-8a70-1b505031c86a",
+      "index": 262,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What coffee shop near the train station have you been visiting recently? (Refer to our conversation on 2023/03/16 (Thu) 21:03.)",
+      "gta": "Cafe Demitasse。",
+      "eval_hint": "Cafe/Café Demitasse均接受；不能只说车站附近的咖啡馆。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ccd35dc6-0fa5-4647-8b9f-87edfbfda8a8",
+      "index": 263,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What time is the train you have been taking for the past three months? (Refer to our conversation on 2023/03/16 (Thu) 21:03.)",
+      "gta": "早上 7:15 的火车。",
+      "eval_hint": "必须答7:15 am/早7点15分；每天晚点10分钟不代表列车原定时间改成7:25。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ad72ac7d-d8e8-4f03-a70e-f1b53ad0da9b",
+      "index": 264,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What grade did you receive in Psychology during the fall semester? (Refer to our conversation on 2023/03/28 (Tue) 14:06.)",
+      "gta": "心理学得了 A。",
+      "eval_hint": "必须答A；B+是统计学成绩，不能互换。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "eee3f7e3-be98-47b2-8f91-2221fde0dc56",
+      "index": 265,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What grade did you receive in Statistics during the fall semester? (Refer to our conversation on 2023/03/28 (Tue) 14:06.)",
+      "gta": "统计学得了 B+。",
+      "eval_hint": "必须答B+；B或A不等价。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "fe3df3fa-7bca-4a89-83c9-f744f033acb4",
+      "index": 266,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "What charity event did you participate in a few weeks ago to raise money for a local food bank? (Refer to our conversation on 2023/03/28 (Tue) 16:44.)",
+      "gta": "“Run for Hunger”慈善活动，为当地食物银行筹款。",
+      "eval_hint": "须答Run for Hunger；只答慈善跑太笼统，charity gala、bake sale或癌症研究慈善步行均不是该活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e36dc6d9-cea6-4079-a310-d33b021a2a33",
+      "index": 267,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_gpt4_98f46fc6__gpt4_98f46fc6__memoraxText",
+      "query": "How much money did you raise during the \"Run for Hunger\" event? (Refer to our conversation on 2023/03/28 (Tue) 16:44.)",
+      "gta": "250 美元。",
+      "eval_hint": "必须答250美元；这是已筹到的捐款，不是未来想超越的另一目标。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "93cf9d95-07a1-4698-a697-564e0ecb5f99",
+      "index": 268,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many dozen eggs did the user mention having stocked up in their fridge? (Refer to our conversation on 2023/01/11 (Wed) 23:15.)",
+      "gta": "当次会话提到有 30 打鸡蛋（360 个）。",
+      "eval_hint": "必须按2023-01-11指定会话答30打/360个；后续20打不能覆盖这个历史问题。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5cb70b92-a8cf-4fe3-b87a-ba28ec2f8c81",
+      "index": 269,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What type of cheese did the user decide to make first with their goat milk? (Refer to our conversation on 2023/01/11 (Wed) 23:15.)",
+      "gta": "最初表示先做 fresh chèvre；同一会话后面又表示先做 ricotta，原文有两次不同选择。",
+      "eval_hint": "原文第7条消息说先做fresh chèvre，第11条又说先做ricotta。完整还原这两次选择及先后最准确。query中的first可理解为最初选择，也可理解为打算先做哪种：按最初选择答chèvre有据，按最后表态答ricotta也有据，不得将任一种设为唯一可接受标签。若必须二元评分，未限定时点而只答其中一种可视为命中一种成立读法；若明确说“最初是ricotta”或“最后仍是chèvre”则顺序错误。不能声称已经实际制作了某种奶酪。此题标为原文/问法歧义，建议单列，不纳入严格单答案事实准确率。",
+      "answer_status": "ambiguous_source"
+    },
+    {
+      "source_request_id": "f7e4e8dc-a736-46f0-babf-21db4f185443",
+      "index": 270,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What type of food has the user been really into lately? (Refer to our conversation on 2023/01/13 (Fri) 10:43.)",
+      "gta": "意大利菜（Italian food）。",
+      "eval_hint": "须答意大利菜；泛答西餐、面食或其他国家菜系不够准确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b8b6dfbc-6fc2-4310-aacb-998ddf0422c7",
+      "index": 271,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What type of dish did the user learn to make in a cooking class on a Saturday morning? (Refer to our conversation on 2023/01/13 (Fri) 10:43.)",
+      "gta": "一道配奶油酱的意大利面。",
+      "eval_hint": "须识别奶油酱意大利面；不要求具体菜名，因为用户没有为课堂上学的菜明确命名。可描述黄油、奶油、帕尔马干酪酱，但不能把随后考虑的蘑菇宽面或青酱千层面断言成课堂菜名。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "63153114-1eac-49b5-8feb-020c0c03d09b",
+      "index": 272,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is the name of the user's cat? (Refer to our conversation on 2023/01/14 (Sat) 07:33.)",
+      "gta": "Luna。",
+      "eval_hint": "须答Luna；不要混用其他用户的Lola或Whiskers。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "6d70e735-f5bf-4af8-91fe-c00de5ecf121",
+      "index": 273,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is one of the user's cat's favorite toys? (Refer to our conversation on 2023/01/14 (Sat) 07:33.)",
+      "gta": "激光逗猫玩具（laser pointer toy）。",
+      "eval_hint": "激光逗猫玩具是明确偏爱项，答这一项即可；高大的剑麻绳猫抓柱也被原文称为最喜欢的猫抓柱之一，若明确指出这一物件同样接受。不能用助手建议但用户未确认喜爱的玩具替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d26fd3c3-7835-4456-a6c8-0703b0ab43b3",
+      "index": 274,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is the user preparing for on September 18th? (Refer to our conversation on 2023/01/20 (Fri) 14:35.)",
+      "gta": "准备 9 月 18 日的 Harvest Market（丰收集市），核算蜡烛和香皂库存。",
+      "eval_hint": "须识别Harvest Market/丰收集市；库存事项可省略。不能答日常周二周四的市中心摊位。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f5d489e1-988c-41da-b08c-7835d7a546b7",
+      "index": 275,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What new display materials did the user debut at the market last week? (Refer to our conversation on 2023/01/20 (Fri) 14:35.)",
+      "gta": "新遮阳棚和桌布（canopy and tablecloths）。",
+      "eval_hint": "两项都要答出；只说新展示材料过于笼统，不能用蜡烛或香皂商品替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c28c1b98-9770-4ec2-b855-3a978af44637",
+      "index": 276,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "How many times has the user made Garlic Butter Shrimp in the past month? (Refer to our conversation on 2023/01/29 (Sun) 21:52.)",
+      "gta": "至少 4 次。",
+      "eval_hint": "必须保留at least/至少，原文只给下限。单答4次可视为大致数字命中，但严格全对需说明至少4次；断言恰好4次或少于4次错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "10fd70e6-faec-4f9e-b05c-365d1c1fd9b1",
+      "index": 277,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_ed4ddc30__ed4ddc30__memoraxText",
+      "query": "What is the user's daily step goal with their Fitbit Charge 3? (Refer to our conversation on 2023/01/31 (Tue) 00:15.)",
+      "gta": "每天 12,000 步。",
+      "eval_hint": "必须答12000步/日；8000–10000是实际平均步数，不是目标。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8d1503ec-4bd2-4b1d-9e0d-0a5b4ecd25a9",
+      "index": 278,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What was the name of the event where you completed a 25-mile bike ride to raise awareness and funds for cancer research? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "“Cycle for a Cause”。",
+      "eval_hint": "须识别Cycle for a Cause；Run for Hunger是另一数据组的活动，不能混入。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d7de6bdd-3045-4803-a202-de40347f76b6",
+      "index": 279,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What highway are you taking for your road trip from San Francisco to Lake Tahoe? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "I-80 E，即 80 号州际公路东行。",
+      "eval_hint": "I-80 East/东行正确；只答I-80可接受核心路线，但若写方向必须为东，不是西或其他公路。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "7d273f4a-f23d-4e82-8ffa-9a00c28e9a08",
+      "index": 280,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Which coffee shop did you decide to stop by for a healthy bite and coffee during your road trip? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "Auburn 的 The Pour Choice。",
+      "eval_hint": "必须答The Pour Choice；地点Auburn可省略。不能将助手其他推荐店当成用户最后选择。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "0e2d5d03-6caa-440b-8964-677735260577",
+      "index": 281,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Which bike trail did you plan to explore during your stay in Lake Tahoe? (Refer to our conversation on 2023/05/20 (Sat) 08:02.)",
+      "gta": "Tahoe City to Squaw Valley Bike Trail。",
+      "eval_hint": "须识别从Tahoe City到Squaw Valley的自行车道；可用等价中文路线名，不能泛答太浩湖环湖道。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "bb19dc69-c6f0-4de0-a15d-449398698a67",
+      "index": 282,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Which magazine have you been regularly reading for the past three months? (Refer to our conversation on 2023/05/20 (Sat) 19:35.)",
+      "gta": "《The New Yorker》（《纽约客》）。",
+      "eval_hint": "必须答纽约客；CNN、Huffington Post、Vanity Fair或Us Weekly均不能替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "af0d1e90-dda7-4202-884a-90d8bfcc072b",
+      "index": 283,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What sport have you been playing on Sundays for the past two months? (Refer to our conversation on 2023/05/20 (Sat) 20:30.)",
+      "gta": "排球（volleyball）。",
+      "eval_hint": "必须答排球；网球是另在教练指导下练习的运动，不是本题周日持续两个月的活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a63fbd24-090e-4f24-96c2-9fb20b6e3cec",
+      "index": 284,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "Who is your tennis coach at the local community center? (Refer to our conversation on 2023/05/20 (Sat) 20:30.)",
+      "gta": "Coach Thompson（Thompson 教练）。",
+      "eval_hint": "必须识别Thompson；不要求未知的名字或额外身份，不能编造。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ec0ad204-b3c7-48d4-8a4f-0c022a1bc0ca",
+      "index": 285,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What did you have for lunch on Monday, Tuesday, and Thursday last week? (Refer to our conversation on 2023/05/23 (Tue) 07:44.)",
+      "gta": "上周一、周二、周四的午餐都是藜麦沙拉（quinoa salad）。",
+      "eval_hint": "须答藜麦沙拉，且覆盖这三天；只说藜麦基本识别食材但不足以完整复述菜品，扁豆汤是之后计划的餐食。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4030c6cb-6cc8-4ee8-a745-ba49a3149f98",
+      "index": 286,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What lens did you use to take photos during your trip to Yellowstone National Park last weekend? (Refer to our conversation on 2023/05/23 (Tue) 18:14.)",
+      "gta": "Canon EF 70-200mm f/2.8L IS III USM 镜头。",
+      "eval_hint": "完整正确需唯一识别Canon EF 70-200mm f/2.8L IS III USM；大小写、连字符、USM有无不影响，只要明确III代f/2.8L IS镜头。不能答相机EOS 5D Mark IV、三脚架或其他镜头版本。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8c099a79-b439-4116-b8e5-53085a4c61e2",
+      "index": 287,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_eaca4986__eaca4986__memoraxText",
+      "query": "What is the model of your current tripod that is getting old and creaky? (Refer to our conversation on 2023/05/23 (Tue) 18:14.)",
+      "gta": "Manfrotto BeFree 三脚架。",
+      "eval_hint": "须答Manfrotto BeFree；Gitzo GT3543LS或GT2531L只是考虑的新三脚架，不能替代现有旧款。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "732bdc84-d54e-4b11-8e66-30b7ac263a0d",
+      "index": 288,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What cookbook did you choose for your niece who is interested in cooking and baking? (Refer to our conversation on 2023/02/06 (Mon) 22:36.)",
+      "gta": "America’s Test Kitchen 的《The Complete Cookbook for Young Chefs》。",
+      "eval_hint": "必须唯一识别The Complete Cookbook for Young Chefs；作者/机构可省略但不能写错。MasterChef Junior等其他推荐书并非最终选择。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d3ecb342-abf2-411e-a9f2-61b78aebb5a8",
+      "index": 289,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What feature of the cookbook you selected for your niece do you think she will find most helpful? (Refer to our conversation on 2023/02/06 (Mon) 22:36.)",
+      "gta": "逐步示范的照片和说明（step-by-step photos and instructions）。",
+      "eval_hint": "需覆盖逐步照片和操作说明；只说食谱多或烹饪技巧多不是用户明确强调的帮助。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "03e622e9-a985-444a-a45c-1e088bf8d980",
+      "index": 290,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What coffee-to-water ratio do you prefer for your French press? (Refer to our conversation on 2023/02/11 (Sat) 11:41.)",
+      "gta": "当次会话偏好每 1 汤匙咖啡配 6 液体盎司水。",
+      "eval_hint": "必须保留1 tablespoon coffee : 6 oz water的方向、数量和单位。后来的5 oz偏好不能覆盖2023-02-11历史题；不能把体积比偷换成咖啡与水的重量比1:6。等价换算6美制液体盎司约177毫升可接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "35c9c1c0-e431-4680-8d4e-a2ddcd45e1cc",
+      "index": 291,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "Which type of coffee beans did you decide to try first for pairing with citrus notes? (Refer to our conversation on 2023/02/11 (Sat) 11:41.)",
+      "gta": "肯尼亚咖啡豆（Kenyan coffee）。",
+      "eval_hint": "须答肯尼亚产地；不是Earl Grey茶或其他咖啡产地。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "77c1cf07-af0b-4b2c-aeb0-dcfa4569c26c",
+      "index": 292,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What brewing method are you planning to use for the beans from your first coffee subscription shipment? (Refer to our conversation on 2023/02/11 (Sat) 11:41.)",
+      "gta": "法压壶（French press）。",
+      "eval_hint": "必须答法压壶；不要把订阅服务品牌或其他冲煮方法作为答案。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "2ca4db8c-badb-4030-8b79-b970d606058a",
+      "index": 293,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What specific uses have you found for oat milk in your plant-based diet? (Refer to our conversation on 2023/02/17 (Fri) 09:58.)",
+      "gta": "用于做果昔，以及搭配早餐谷物（smoothies and cereal）。",
+      "eval_hint": "两种用途都要答出；原文自制酸奶用的是豆奶，不能写成燕麦奶酸奶。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "16a78f40-e016-45ac-b9e5-895f8a8b8632",
+      "index": 294,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What type of milk have you been experimenting with and enjoying for its creamy texture and neutral flavor? (Refer to our conversation on 2023/02/17 (Fri) 09:58.)",
+      "gta": "燕麦奶（oat milk）。",
+      "eval_hint": "必须答燕麦奶；杏仁奶虽也提到，豆奶用于自制酸奶，都不是本题“质地浓滑、味道中性”的对象。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d1465c79-f442-41f7-9edd-83097643f3bd",
+      "index": 295,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What level have you reached in Overwatch, and what spray did you unlock? (Refer to our conversation on 2023/04/13 (Thu) 12:45.)",
+      "gta": "《Overwatch》达到 50 级，解锁“Hero of Numbani”喷漆。",
+      "eval_hint": "必须同时答50级和Hero of Numbani喷漆；只答其中之一不完整。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8e7f676b-1334-47cd-a70d-c7c3cbc831d8",
+      "index": 296,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "Which two heroes have you been focusing on while playing Overwatch with your friends? (Refer to our conversation on 2023/04/13 (Thu) 12:45.)",
+      "gta": "Reaper（死神）和 Widowmaker（黑百合）。",
+      "eval_hint": "两个英雄都要答出；中文或英文正式名均接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e40643f1-bd09-42fa-8ab2-220a50fb9d18",
+      "index": 297,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_6071bd76__6071bd76__memoraxText",
+      "query": "What milestone have you reached in Pokémon Sword, and how many Pokémon have you caught so far? (Refer to our conversation on 2023/04/13 (Thu) 12:45.)",
+      "gta": "《Pokémon Sword》进度到第三个道馆，已捕获约 50 只宝可梦。",
+      "eval_hint": "必须同时答到第三道馆及约50只。原文“gotten up to the third gym”未明确说已击败第三道馆，因此不能把打通第三馆、已进入第四馆或通关当成已证实事实。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "9f3ec6d6-b585-43de-82aa-54588fa70c22",
+      "index": 298,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "How many neon tetras did you have before introducing new ones to your 20-gallon community tank? (Refer to our conversation on 2023/05/20 (Sat) 13:20.)",
+      "gta": "原来有 9 条霓虹灯鱼。",
+      "eval_hint": "必须答9条；20是鱼缸加仑容量，不能当成鱼数。不能自行加上未给数量的新鱼算总数。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "4a09521d-3e90-413f-8948-fc3d526a1bfd",
+      "index": 299,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What type of plant are you planning to use as a carpeting plant in the foreground of your tank? (Refer to our conversation on 2023/05/20 (Sat) 13:20.)",
+      "gta": "Dwarf Hairgrass（矮发草／矮牛毛毡）。",
+      "eval_hint": "必须识别Dwarf Hairgrass；泛称水草或其他前景草不够准确。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d5f0245f-54e2-4cff-8641-82733190db43",
+      "index": 300,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "On what date did you receive your acceptance letter for university in Edinburgh? (Refer to our conversation on 2023/05/22 (Mon) 07:08.)",
+      "gta": "2 月 10 日。",
+      "eval_hint": "须答2月10日；不强制补年份，因为原文只明说月日。8月15日是中转日，8月20日是派对提议日期。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1ae6aa38-f940-45f3-b086-2a3c97c6a286",
+      "index": 301,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What area in Edinburgh have you booked a flat viewing in? (Refer to our conversation on 2023/05/22 (Mon) 07:08.)",
+      "gta": "Edinburgh 的 Marchmont 区。",
+      "eval_hint": "必须答Marchmont；只说Edinburgh太笼统，不能自行替换成其他街区。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c6425190-b6ac-4e21-baab-93d27bee5a47",
+      "index": 302,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "Which weekend did Rachel suggest for the flat-warming party in Edinburgh? (Refer to our conversation on 2023/05/22 (Mon) 07:08.)",
+      "gta": "8 月 20 日所在的那个周末。",
+      "eval_hint": "须答the weekend of August 20th/8月20日那个周末；不必从不一致的日历信息推导额外精确范围。8月15日是伦敦中转日，不能混用。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "78ed1ab9-15f1-4f05-b548-04f27ca46a44",
+      "index": 303,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What type of cooking class did you start at a local culinary school? (Refer to our conversation on 2023/05/21 (Sun) 02:11.)",
+      "gta": "纯素烹饪课（vegan cooking class）。",
+      "eval_hint": "须答vegan/纯素烹饪；泛称素食可算接近但完整答案应明确不含动物性食材。不能写成奶酪制作课或其他菜系课。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "20353673-8cad-4a5b-ab22-07d065d0e35a",
+      "index": 304,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What ingredient have you been experimenting with to add a cheesy flavor to your dishes? (Refer to our conversation on 2023/05/21 (Sun) 02:11.)",
+      "gta": "营养酵母（nutritional yeast）。",
+      "eval_hint": "必须答营养酵母；不能用普通烘焙酵母、随后想尝试的味噌或腰果奶酪粉替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c678cec9-5fe3-4acf-8d4c-06daa26a6f40",
+      "index": 305,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What type of exercise have you been doing a lot of lately? (Refer to our conversation on 2023/05/21 (Sun) 01:29.)",
+      "gta": "慢跑和骑自行车（jogging and cycling）。",
+      "eval_hint": "两项都要答出；瑜伽只是之后想探索的活动，不能用来替换已经常做的两项。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "119c5ed6-0fd2-4d2b-8969-264e5d1e4206",
+      "index": 306,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What was the duration of your recent beach vacation? (Refer to our conversation on 2023/05/21 (Sun) 01:29.)",
+      "gta": "一周。",
+      "eval_hint": "一周/7天正确；不是一个周末或两周。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "e8a8dd28-f76a-4f42-a32b-3abe1ed1ee91",
+      "index": 307,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_09d032c9__09d032c9__memoraxText",
+      "query": "What is your weekly grocery budget goal? (Refer to our conversation on 2023/05/21 (Sun) 08:46.)",
+      "gta": "每周 80 美元。",
+      "eval_hint": "必须答每周80美元这个目标；100美元是实际平均支出，不能当成预算目标。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "b10bf71a-f03d-4920-957d-7a1c8e2e0461",
+      "index": 308,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What methods have you used to control aphids and whiteflies in your garden? (Refer to our conversation on 2023/05/20 (Sat) 01:22.)",
+      "gta": "已用印楝油和肥皂水（neem oil and soap solution）。",
+      "eval_hint": "两项已使用的方法都要有。瓢虫、草蛉、益虫线虫等只是探讨或建议中的方法，不能当成用户已经做过的措施。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c820beff-36ce-4bdc-8859-d87990b80023",
+      "index": 309,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What flowers are you considering planting to attract beneficial insects to your garden? (Refer to our conversation on 2023/05/20 (Sat) 01:22.)",
+      "gta": "万寿菊（marigold）、百日菊（zinnia）和向日葵（sunflowers）。",
+      "eval_hint": "全对需覆盖marigold、zinnia和sunflowers三种花，顺序不限。前一句明确考虑前两种，后一句又考虑向日葵并询问能否吸引益虫；题目没有限定只看前一句，因此向日葵也属于应答集合。只答前两种算部分正确。罗勒、薄荷、欧芹是另行讨论的香草，不能替代三种花；不要把“正在考虑”说成已经种植完成。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "1d886d09-ca6d-4dd3-bb2d-308bfaf66a37",
+      "index": 310,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What English TV show did you decide to start with to improve your listening skills? (Refer to our conversation on 2023/05/20 (Sat) 04:08.)",
+      "gta": "《Friends》（《老友记》）。",
+      "eval_hint": "必须答Friends/老友记；不能用助手其他推荐剧替代用户选择。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ca6ad028-5a3e-4854-8550-5dbce3e71817",
+      "index": 311,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What activity are you planning to do on Memorial Day to show respect and appreciation? (Refer to our conversation on 2023/05/20 (Sat) 04:08.)",
+      "gta": "参加当地的 Memorial Day 纪念仪式，表达敬意和感谢。",
+      "eval_hint": "核心须答参加当地纪念仪式；可补充也在考虑到退伍军人组织志愿服务。只答志愿服务而遗漏明确计划的纪念仪式不完整；不能说已完成活动。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f978663d-bc44-4b88-adc1-639252502e7d",
+      "index": 312,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What skincare brand did you recently purchase from Sephora? (Refer to our conversation on 2023/05/20 (Sat) 09:51.)",
+      "gta": "Drunk Elephant（醉象）。",
+      "eval_hint": "须答Drunk Elephant；Nars是同一对话里的粉底品牌，不是本题护肤套装品牌。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "f2382409-d007-4524-b2c9-6200fe32311e",
+      "index": 313,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What bike model did you purchase on April 15th? (Refer to our conversation on 2023/05/23 (Tue) 13:13.)",
+      "gta": "Cannondale Synapse 公路自行车。",
+      "eval_hint": "必须识别Cannondale Synapse；只给Cannondale品牌不完整，不能答车架品牌Thule或Saris。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "ea824d6e-947c-4a78-80fb-16a44563f17e",
+      "index": 314,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "How many miles have you clocked on your Cannondale Synapse since purchasing it? (Refer to our conversation on 2023/05/23 (Tue) 13:13.)",
+      "gta": "超过 500 英里。",
+      "eval_hint": "必须保留over/超过这个下限；不能断言恰好500英里，也不能把500英里写成500公里。约800公里以上的正确换算可接受。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "91ae3da1-2787-408c-abbf-c9da4c78f025",
+      "index": 315,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What flight route did you take on January 20th? (Refer to our conversation on 2023/05/24 (Wed) 20:05.)",
+      "gta": "从 Dallas（达拉斯）飞往 Chicago（芝加哥）。",
+      "eval_hint": "两端和方向都要正确；不能反向，或用后来考虑的Denver/Las Vegas/London航线替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d6de54de-ea5a-4863-8e1f-ac8ff7b42ea6",
+      "index": 316,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What airline issued the $200 voucher you received as a birthday gift? (Refer to our conversation on 2023/05/24 (Wed) 20:05.)",
+      "gta": "Southwest Airlines（西南航空）。",
+      "eval_hint": "必须答西南航空；British Airways、United或根据Admirals Club推测的航空公司均错误。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8d363277-7056-4d61-98a3-cb49c53cef8c",
+      "index": 317,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_75499fd8__75499fd8__memoraxText",
+      "query": "What time have you been waking up recently to enjoy quiet morning hours? (Refer to our conversation on 2023/05/22 (Mon) 19:33.)",
+      "gta": "早上约 6:30。",
+      "eval_hint": "须答6:30 am/早上六点半；允许约数措辞，不是晚上6:30。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "58728ffe-eba8-4083-8318-3701b26c608d",
+      "index": 318,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the title of the book you recently finished as an audiobook during your daily commute? (Refer to our conversation on 2023/05/20 (Sat) 15:15.)",
+      "gta": "《The Hitchhiker’s Guide to the Galaxy》（《银河系漫游指南》）。",
+      "eval_hint": "须识别这本书；The Song of Achilles是准备读的纸质书，Good Omens是后续想读的推荐书。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "a8e9de0d-eaf0-4763-81c2-76c1e56fe11f",
+      "index": 319,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the name of the book you own in paperback and plan to start reading soon? (Refer to our conversation on 2023/05/20 (Sat) 15:15.)",
+      "gta": "《The Song of Achilles》（《阿喀琉斯之歌》）。",
+      "eval_hint": "须识别The Song of Achilles；The Alice Network、The Historian或Good Omens不能替代。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8a1ca1ce-6688-45d5-a020-b80eea32f179",
+      "index": 320,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the name of your cat featured in your Instagram post that received around 50 likes? (Refer to our conversation on 2023/05/21 (Sun) 07:52.)",
+      "gta": "Luna。",
+      "eval_hint": "须答Luna；不同用户的猫名Lola/Whiskers不能混用。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "41d9b062-ab69-4916-a9fd-93768b33ccda",
+      "index": 321,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What was the occasion for your recent family trip to Disneyland? (Refer to our conversation on 2023/05/21 (Sun) 08:39.)",
+      "gta": "庆祝侄女／外甥女的 7 岁生日。",
+      "eval_hint": "必须体现niece和7岁生日；中文侄女或外甥女均接受，因为niece未区分。只说家人生日太笼统，不能写成女儿生日。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "c7da852f-ff4a-4e24-a19f-9d287a8bb56d",
+      "index": 322,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the name of the restaurant where you had a great time during your recent Disneyland trip? (Refer to our conversation on 2023/05/21 (Sun) 08:39.)",
+      "gta": "Paradise Garden Grill。",
+      "eval_hint": "须唯一识别Paradise Garden Grill；不能回答整个Disneyland园区或另一个餐馆。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d8e24e33-79dc-400c-a3d3-f8f128e09c60",
+      "index": 323,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the size of the bookshelf your brother assembled for your living room? (Refer to our conversation on 2023/05/22 (Mon) 04:41.)",
+      "gta": "书架约高 5 英尺、宽 3 英尺。",
+      "eval_hint": "高度和宽度都要正确，不能互换；正确换算约高1.52米、宽0.91米接受。4×2英尺是咖啡桌，12×15英尺是客厅。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "5de8c113-4d98-4ba1-8f55-2cec7ee2e354",
+      "index": 324,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the size of your living room where you are planning a new furniture layout? (Refer to our conversation on 2023/05/22 (Mon) 04:41.)",
+      "gta": "客厅约 12 × 15 英尺，长方形。",
+      "eval_hint": "两边尺寸12和15英尺须正确；面积约180平方英尺或16.7平方米的明确等价表达也接受。书架或咖啡桌尺寸不能代替。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "d160f042-fd79-4450-bfc0-844b60ca3357",
+      "index": 325,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What is the default temperature you adjusted on your smart thermostat after setting it up? (Refer to our conversation on 2023/05/22 (Mon) 05:25.)",
+      "gta": "调到了 72 度；原文没有明确标注温标。",
+      "eval_hint": "答调后的72度即可全对，不要求提供温标。原文没有写°F或°C，不能把任何一种温标设为必须命中的已知事实；若补充72°F或换算约22.2°C，须说明是按华氏理解的推断/条件换算。无依据地断言原文明确为72°F或72°C，不能判为严格有据的完整答案。不能声称知道调整前的具体默认温度，原文只说它偏高。",
+      "answer_status": "answerable_with_caveat"
+    },
+    {
+      "source_request_id": "fc53fe83-f8da-4d64-a9ce-6e6c28d0c165",
+      "index": 326,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What are the three main ingredients you use to make your homemade flavored creamer? (Refer to our conversation on 2023/05/23 (Tue) 05:25.)",
+      "gta": "杏仁奶、香草精和蜂蜜（almond milk, vanilla extract, honey）。",
+      "eval_hint": "三种都要有；顺序不限。杏仁奶不能简化成杏仁果仁，燕麦属于另一份granola配方。",
+      "answer_status": "answerable"
+    },
+    {
+      "source_request_id": "8301a075-57ca-46a2-bd93-031499da2ddf",
+      "index": 327,
+      "user_id": "text_budget_v4_yaml13_20261015__lme_4100d0a0__4100d0a0__memoraxText",
+      "query": "What are the three main ingredients in the granola batch you recently made at home? (Refer to our conversation on 2023/05/23 (Tue) 05:25.)",
+      "gta": "压片燕麦、杏仁和蜂蜜（rolled oats, almonds, honey）。",
+      "eval_hint": "三种都要有；顺序不限。香草精和杏仁奶是另一个自制奶精配方，不能混入。",
+      "answer_status": "answerable"
+    }
+  ]
+}

@@ -59,7 +59,7 @@ export default function QuestionLibrary({ scope }: { scope: 'mini' | 'full' }) {
   };
   return <>
     <div className="page-heading">
-      <div><div className="eyebrow">{mini ? 'Mini 基准' : '全量基准'}</div><h1>{mini ? 'Mini 题库详解' : '全量题库详解'}</h1>
+      <div><div className="eyebrow">{mini ? 'Mini 基准' : '全量基准'}</div><h1>{mini ? 'Mini 题库详解' : '测试集题库详解'}</h1>
         <p>逐题说明记忆能力、难度来源、关键证据和误导路径。</p></div>
       <IconButton icon={RefreshCw} label={`刷新${mini ? ' Mini ' : '全量'}题库详解`} onClick={questions.reload} />
     </div>

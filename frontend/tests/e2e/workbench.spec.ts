@@ -30,6 +30,7 @@ async function mockApi(page: Page) {
     const response = path === '/health' ? { status: 'ok', version: '0.1.0' }
       : path === '/defaults' ? defaults
       : path === '/datasets' ? { datasets: [dataset] }
+      : path === '/required' ? { datasets: [dataset] }
       : path === '/mini' ? miniScope
       : path === '/mini/consistency' ? miniConsistency
       : path === '/mini/questions' ? miniQuestions
@@ -53,7 +54,7 @@ async function assertNoPageOverflow(page: Page) {
 test('submit a configured run and inspect per-case evidence', async ({ page }, testInfo) => {
   await mockApi(page);
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: '全量评测', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '必测评测集', exact: true })).toBeVisible();
   await assertNoPageOverflow(page);
   await page.screenshot({ path: testInfo.outputPath('overview.png'), fullPage: true });
   await openNewRun(page);
@@ -168,7 +169,7 @@ test('quick-check tab launches the fixed scope and separates pipeline status fro
   await page.getByLabel('回答 API Key', { exact: true }).fill('answer-test-key');
   await page.getByLabel('评审 API Key', { exact: true }).fill('judge-test-key');
   await page.getByRole('button', { name: '保存配置', exact: true }).click();
-  await expect(page.getByRole('heading', { name: '全量评测', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '必测评测集', exact: true })).toBeVisible();
   if (testInfo.project.name === 'mobile') await page.getByRole('button', { name: '打开导航' }).click();
   await page.getByRole('button', { name: '快速自检', exact: true }).click();
   const request = page.waitForRequest(r => new URL(r.url()).pathname === '/api/runs' && r.method() === 'POST');
@@ -182,14 +183,15 @@ test('quick-check tab launches the fixed scope and separates pipeline status fro
   await page.screenshot({ path: testInfo.outputPath('quick-check-results.png'), fullPage: true });
 });
 
-test('mini tab shows the frozen seven-group scope on desktop and mobile', async ({ page }, testInfo) => {
+test('mini tab shows the frozen five-group QA scope on desktop and mobile', async ({ page }, testInfo) => {
   await mockApi(page);
   await page.goto('/#/mini');
-  await expect(page.getByRole('heading', { name: 'Mini 评测', exact: true })).toBeVisible();
-  await expect(page.getByText(/86 题＋2 部电影 · 目标 35 分钟/)).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'MiniBench', exact: true })).toBeVisible();
+  await expect(page.getByText(/5 套评测集 · 71 题 · 目标 35 分钟/)).toBeVisible();
   await expect(page.getByText('Mini 冻结范围')).toBeVisible();
   await expect(page.getByText('包子 / RSI', { exact: true })).toBeVisible();
-  await expect(page.getByText('FinRank v22', { exact: true })).toBeVisible();
+  await expect(page.getByText('FinRank v22', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('NCP-Bench', { exact: true })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: '历史 Full 代表性回测' })).toBeVisible();
   await expect(page.getByText('7 / 25')).toBeVisible();
   await expect(page.getByText(/尚不能证明 Mini 可替代 Full/)).toBeVisible();
@@ -218,7 +220,7 @@ test('mini question explanations expose capability, evidence and misleading info
 test('full question library reuses the same detail experience', async ({ page }, testInfo) => {
   await mockApi(page);
   await page.goto('/#/questions');
-  await expect(page.getByRole('heading', { name: '全量题库详解', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '测试集题库详解', exact: true })).toBeVisible();
   await expect(page.getByText('709', { exact: true })).toBeVisible();
   await expect(page.getByRole('table', { name: '全量 题目列表' })).toBeVisible();
   await page.getByRole('button', { name: '查看题目 A03' }).click();

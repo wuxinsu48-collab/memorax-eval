@@ -1,0 +1,21 @@
+{
+  "dataset_id": "clbench-v1",
+  "data_sha256": "d5fc88d4b2eea75c61dd40862021b6ae2fba26bd21b58e8c5e18377a763943be",
+  "source_url": "https://huggingface.co/datasets/tencent/CL-bench",
+  "frozen_at": "2026-11-03",
+  "tasks": 1899,
+  "contexts": 500,
+  "system_policy": "reader_system_exact_not_memory",
+  "files_sha256": {
+    "source/CL-bench.jsonl": "d5fc88d4b2eea75c61dd40862021b6ae2fba26bd21b58e8c5e18377a763943be",
+    "source/structure-audit.json": "e0f29887fab61c6bca01a65214169527f12a9179dad56a98725dee8421ee310d",
+    "source/judge-prompt.txt": "303fc17cba6b97105bc4456daa2a49d6c35939e75830625b417a3a3239b42db5",
+    "official/eval.py": "04a0cff6addc40b4bc95813e56d910ba2bd4dcdc0fd5ec3bb8c509d9fe433a37",
+    "official/infer.py": "782581e49c1a158a763193504c626c91ffc971914161d7f22e3844733962c9ce",
+    "official/README.md": "4b4fc8de977f88c3fc27d68713b249dc90e958c1e0a1e78c1a8e201064f460a7",
+    "official/LICENSE": "0dc558e03bf58b1f8af067d276d8be3954b11441b2bc381c75b0239044ef1039",
+    "decompositions/candidates.json": "cb2153ff73efea801116bb61eace8e2fb590dba1bbe21c7475e501e1a61fc1c4",
+    "decompositions/reviewed-splits.json": "882b8c3277e159934f07e28a4f3223d0046654e9972a4aecee23b223a9397704",
+    "selection/algorithm.json": "4eefb1d066b5f746de3652a2de172a9925a80cfb3b7f9b3627198e561933140c"
+  }
+}

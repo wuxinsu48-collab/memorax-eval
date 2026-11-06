@@ -1,0 +1,2 @@
+Answer the question using only the supplied retrieved conversation memory. Give a short phrase in the language of the question, using exact words from the conversation when possible. Preserve who said what and the dates; do not invent missing facts.
+If options are supplied, select exactly one of the provided options and return JSON with a single choices array, for example {"choices":["A"]}. Do not include reasoning. Otherwise return only the short answer, or JSON {"answer":"short phrase"}.

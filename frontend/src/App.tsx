@@ -1,5 +1,5 @@
 import { Component, useEffect, useRef, useState, type ReactNode } from 'react';
-import { ArrowUpRight, BookOpenCheck, BrainCircuit, ChevronRight, Database, FlaskConical, Gauge, History as HistoryIcon, LayoutDashboard, ListChecks, Menu, Radio, Settings2, X } from 'lucide-react';
+import { ArrowUpRight, BookOpenCheck, BrainCircuit, ChevronRight, Database, FlaskConical, Gauge, History as HistoryIcon, LayoutDashboard, ListChecks, Menu, Radio, Settings2, Trophy, X } from 'lucide-react';
 import { useHashRoute, useResource } from './hooks';
 import { IconButton } from './ui';
 import Overview, { History } from './pages/Overview';
@@ -10,6 +10,7 @@ import RunView from './pages/RunView';
 import Smoke from './pages/Smoke';
 import CustomRun from './pages/CustomRun';
 import QuestionLibrary from './pages/QuestionLibrary';
+import Leaderboard from './pages/Leaderboard';
 
 class PageBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
   state = { failed: false };
@@ -24,13 +25,14 @@ class PageBoundary extends Component<{ children: ReactNode }, { failed: boolean 
 
 export default function App() {
   const { route, navigate } = useHashRoute();
+  const standaloneLeaderboard = import.meta.env.VITE_STANDALONE_LEADERBOARD === 'true';
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobile, setMobile] = useState(() => window.matchMedia?.('(max-width: 760px)').matches ?? false);
-  const health = useResource<{ status: string; version: string }>('/health');
+  const health = useResource<{ status: string; version: string }>(standaloneLeaderboard ? null : '/health');
   const menuButton = useRef<HTMLButtonElement>(null);
   const menuPanel = useRef<HTMLElement>(null);
-  const section = route.startsWith('/runs/') ? 'detail' : route === '/custom' ? 'custom' : route === '/mini/questions' ? 'miniQuestions' : route === '/questions' ? 'questions' : route === '/mini' ? 'mini' : route === '/smoke' ? 'smoke' : route === '/new' ? 'new' : route === '/settings' ? 'settings' : route === '/history' ? 'history' : route === '/datasets' ? 'datasets' : 'overview';
-  const label = section === 'custom' ? '自定义评测' : section === 'miniQuestions' ? 'Mini 题库' : section === 'questions' ? '全量题库' : section === 'mini' ? 'Mini 评测' : section === 'smoke' ? '快速自检' : section === 'settings' ? '评测设置' : section === 'history' ? '运行记录' : section === 'new' ? '新建评测' : section === 'datasets' ? '数据集' : section === 'detail' ? '运行详情' : '全量评测';
+  const section = standaloneLeaderboard ? 'leaderboard' : route.startsWith('/runs/') ? 'detail' : route === '/custom' ? 'custom' : route === '/mini/questions' ? 'miniQuestions' : route === '/questions' ? 'questions' : route === '/mini' ? 'mini' : route === '/smoke' ? 'smoke' : route === '/new' ? 'new' : route === '/settings' ? 'settings' : route === '/history' ? 'history' : route === '/datasets' ? 'datasets' : route === '/leaderboard' ? 'leaderboard' : 'overview';
+  const label = section === 'custom' ? '自定义评测' : section === 'miniQuestions' ? 'Mini 题库' : section === 'questions' ? '测试集题库' : section === 'mini' ? 'MiniBench' : section === 'smoke' ? '快速自检' : section === 'settings' ? '评测设置' : section === 'history' ? '运行记录' : section === 'new' ? '新建评测' : section === 'datasets' ? '数据集' : section === 'leaderboard' ? 'YAML 榜单' : section === 'detail' ? '运行详情' : '必测评测集';
   const go = (path: string) => {
     if (mobile && document.activeElement instanceof HTMLElement) document.activeElement.blur();
     navigate(path); setMenuOpen(false);
@@ -70,11 +72,14 @@ export default function App() {
       </div>
       <div className="nav-label">工作区</div>
       <nav>
-        {([
-          { key: 'overview', path: '/', name: '全量评测', icon: LayoutDashboard },
-          { key: 'mini', path: '/mini', name: 'Mini 评测', icon: Gauge },
+        {(standaloneLeaderboard ? [
+          { key: 'leaderboard', path: '/leaderboard', name: 'YAML 榜单', icon: Trophy },
+        ] : [
+          { key: 'overview', path: '/', name: '必测评测集', icon: LayoutDashboard },
+          { key: 'leaderboard', path: '/leaderboard', name: 'YAML 榜单', icon: Trophy },
+          { key: 'mini', path: '/mini', name: 'MiniBench', icon: Gauge },
           { key: 'miniQuestions', path: '/mini/questions', name: 'Mini 题库', icon: BookOpenCheck },
-          { key: 'questions', path: '/questions', name: '全量题库', icon: BookOpenCheck },
+          { key: 'questions', path: '/questions', name: '测试集题库', icon: BookOpenCheck },
           { key: 'custom', path: '/custom', name: '自定义评测', icon: ListChecks },
           { key: 'smoke', path: '/smoke', name: '快速自检', icon: FlaskConical },
           { key: 'settings', path: '/settings', name: '评测设置', icon: Settings2 },
@@ -95,14 +100,15 @@ export default function App() {
         <button ref={menuButton} className="icon-button mobile-menu" title="打开导航" aria-label="打开导航"
           aria-expanded={menuOpen} onClick={() => setMenuOpen((v) => !v)}><Menu size={20} aria-hidden /></button>
         <div className="breadcrumb"><span>工作区</span><ChevronRight size={14} aria-hidden /><span>{label}</span></div>
-        <div className={`service-state ${health.data?.status === 'ok' ? 'connected' : ''}`} role="status">
+        {!standaloneLeaderboard && <div className={`service-state ${health.data?.status === 'ok' ? 'connected' : ''}`} role="status">
           <Radio size={14} aria-hidden /><span>{health.loading ? '正在连接' : health.data?.status === 'ok' ? '本地服务已连接' : '服务未连接'}</span>
           {health.data?.version && <span className="version">v{health.data.version}</span>}
-        </div>
+        </div>}
       </header>
       <main className="page" id="main-content">
         <PageBoundary key={route}>
-          {section === 'new' ? <NewRun onCreated={(id) => go(`/runs/${encodeURIComponent(id)}`)} />
+          {standaloneLeaderboard ? <Leaderboard navigate={go} standalone />
+            : section === 'new' ? <NewRun onCreated={(id) => go(`/runs/${encodeURIComponent(id)}`)} />
             : section === 'custom' ? <CustomRun navigate={go} />
             : section === 'settings' ? <NewRun settingsOnly onCreated={(id) => go(`/runs/${id}`)} onSaved={() => go('/')} />
             : section === 'miniQuestions' ? <QuestionLibrary scope="mini" />
@@ -111,6 +117,7 @@ export default function App() {
             : section === 'smoke' ? <Smoke navigate={go} />
             : section === 'history' ? <History navigate={go} />
             : section === 'datasets' ? <DatasetInspector />
+            : section === 'leaderboard' ? <Leaderboard navigate={go} />
             : section === 'detail' ? <RunView key={route} id={decodeURIComponent(route.slice('/runs/'.length))}
               onBack={() => go('/')} onOpenRun={(runId) => go(`/runs/${encodeURIComponent(runId)}`)} />
             : <Overview navigate={go} mode="full" />}

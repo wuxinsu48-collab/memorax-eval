@@ -2,15 +2,20 @@ export type ModelConfig = {
   base_url: string;
   api_key: string;
   model: string;
+  timeout_s?: number;
   temperature?: number;
   max_tokens?: number;
+  reasoning_effort?: string | null;
+  enable_thinking?: boolean | null;
+  chat_template_kwargs?: Record<string, unknown> | null;
+  thinking?: Record<string, unknown> | null;
   top_p?: number | null;
   frequency_penalty?: number | null;
   presence_penalty?: number | null;
   seed?: number | null;
 };
 export type SearchConfig = {
-  endpoint?: 'search' | 'semantic_2_bucket';
+  endpoint?: 'search';
   mode: string;
   output_mode: string;
   top_k: number;
@@ -37,6 +42,16 @@ export type PromptFile = { name: string; content: string };
 export type QualityConfig = { enabled: boolean; max_evidence: number };
 export type NcpConfig = { max_turns: number; condition: 'natural' | 'adversarial'; player_model: string; auditor_model: string;
   temperature: number; top_p: number; max_tokens: number; recent_turns: number };
+export type LoCoMoConfig = { sample_size: number; seed: number | null };
+export type ClbenchConfig = {
+  mode: 'direct' | 'memory' | 'both'; seed: number; context_ids: string[];
+  pricing?: Partial<Record<'answer' | 'judge', { input_per_million: number; output_per_million: number; currency: string }>>;
+};
+export type ClbenchPreview = {
+  ready: boolean;
+  selection: { seed: number; context_ids: string[]; task_ids: string[] };
+  unsupported_task_ids: string[];
+};
 export type YamlFile = { name: string; content: string };
 export type DomainConfig = { domain_yaml: YamlFile | null; answer_prompt: PromptFile | null; judge_prompt: PromptFile | null; replace_common?: boolean };
 export type CreateRun = {
@@ -52,6 +67,8 @@ export type CreateRun = {
   evidence: EvidenceConfig;
   quality?: QualityConfig;
   ncp?: NcpConfig;
+  locomo?: LoCoMoConfig;
+  clbench?: ClbenchConfig;
   common_yaml: YamlFile | null;
   domain_yaml: YamlFile | null;
   answer_prompt: PromptFile | null;
@@ -66,6 +83,8 @@ export type Defaults = {
   evidence: EvidenceConfig;
   quality?: QualityConfig;
   ncp?: NcpConfig;
+  locomo?: LoCoMoConfig;
+  clbench?: ClbenchConfig;
   common_yaml: YamlFile | null;
   domain_yaml: YamlFile | null;
   answer_prompt?: PromptFile | null;
@@ -78,31 +97,77 @@ export type DatasetProfile = {
   id: string;
   name: string;
   question_count: number;
+  add_count?: number;
   stages: { id: number; period: string; message_count: number; noise_pair_count: number }[];
 };
 export type DatasetSummary = {
+  default_included?: boolean;
   recipe?: string;
   id: string; name: string; version: string; description: string;
   profile_count: number; message_count: number; question_count: number;
   noise_pair_count: number; add_count: number;
   profiles: DatasetProfile[];
-  kind?: 'profiles' | 'choice' | 'retrieval' | 'finance_v22' | 'conversation_qa' | 'novel_qa' | 'episode';
+  kind?: 'profiles' | 'choice' | 'retrieval' | 'finance_v22' | 'conversation_qa' | 'novel_qa' | 'episode' | 'sanqi_qa' | 'locomo_qa' | 'clbench_qa';
   episode_count?: number;
   episode_sampling?: { sample_size: number; pool_episode_count: number };
   dynamic_adds?: boolean;
+  context_count?: number;
+  memory_review?: { reviewed_tasks: number; pending_tasks: number; fully_reviewed_context_ids: string[] };
   scoring?: string;
   source_url?: string | null;
   license?: string | null;
   sampling?: { sample_size: number; pool_question_count: number; pool_record_count: number; protocol: string };
   noise_mix?: { ordinary: number; high_similarity: number };
+  scheduler?: { profile_workers: number; parallel_adds: number; case_workers: number };
 };
 export type DatasetDetail = DatasetSummary & { data: Record<string, unknown> };
 export type RunStatus = 'pending' | 'running' | 'stopping' | 'stopped' | 'completed' | 'failed' | 'interrupted';
+export type SanqiScoreGroup = {
+  planned: number; completed: number; graded: number; fullcorrect: number;
+  partial: number; incorrect: number; ungradable: number; missing: number; errors: number; excluded: number;
+  mean_score: number | null; full_correct_rate: number | null; completion_rate: number | null;
+};
+export type SanqiMetrics = {
+  type: 'sanqi_qa';
+  expected_full_dataset_counts: { primary: number; diagnostic: number; excluded: number };
+  strict: Record<'primary' | 'diagnostic' | 'excluded', SanqiScoreGroup>;
+  relaxed: Record<'primary' | 'diagnostic' | 'excluded', SanqiScoreGroup>;
+};
+export type LocomoScoreGroup = {
+  planned: number; completed: number; scored: number; mean_score: number | null;
+  full_match_count: number; errors: number; missing: number; official_text_mean_score: number | null;
+};
+export type LocomoMetrics = {
+  metric: 'official_qa_score'; protocol: string;
+  overall: LocomoScoreGroup;
+  categories: (LocomoScoreGroup & { id: number; name: string; order: number })[];
+  category5_refusal: { planned: number; scored: number; refusal_count: number; rate: number | null; denominator: string };
+};
+export type ClbenchPhase = {
+  calls: number; elapsed_ms: number; wall_elapsed_ms?: number | null;
+  usage_complete: boolean; prompt_tokens: number | null; completion_tokens: number | null;
+  total_tokens: number | null; cost: number | null; currency: string | null;
+};
+export type ClbenchMetrics = {
+  modes: Record<string, {
+    planned: number; graded: number; errors: number; missing: number; contexts: number;
+    task_pass_rate: number | null; rubric_pass_rate: number | null; completion_rate: number | null;
+    context_macro_pass_rate: number | null; complete_contexts: number;
+    categories?: Record<string, { planned: number; graded: number; task_pass_rate: number | null }>;
+    telemetry?: Record<string, ClbenchPhase>;
+  }>;
+  progress: { contexts_total: number; contexts_completed: number; tasks_total: number; tasks_completed: number };
+  comparison: { paired_tasks: number; memory_helped: number; memory_hurt: number; both_pass: number; both_fail: number };
+};
 export type Progress = {
   add_completed: number; add_total: number; search_completed: number; search_total: number;
   answer_completed: number; answer_total: number; judge_completed: number; judge_total: number;
 };
 export type RunSummary = {
+  archived?: boolean;
+  archived_at?: string;
+  archive_source?: 'legacy';
+  archive_metrics_unavailable?: boolean;
   run_mode?: 'full' | 'mini' | 'smoke';
   replacement?: { source_run_id: string };
   merged_replacements?: { run_id: string; case_ids: string[]; merged_at: string }[];
@@ -121,6 +186,7 @@ export type RunSummary = {
   created_at: string; updated_at: string; status: RunStatus; phase: string;
   progress: Progress;
   metrics: { passed: number; failed: number; errors: number; judged: number; total: number; accuracy: number | null;
+    scoring_protocols_separate?: boolean;
     qa_total?: number; episode_total?: number; episode_completed?: number;
     blocked?: number; evaluable_total?: number; evaluable_judged?: number; evaluable_passed?: number;
     evaluable_failed?: number; evaluable_errors?: number; evaluable_accuracy?: number | null;
@@ -130,6 +196,10 @@ export type RunSummary = {
     answer_diagnostic_accuracy?: number | null };
   dataset_metrics?: { dataset_id: string; kind: string; total: number; completed: number; errors: number;
     accuracy: number | null; retrieval: Record<string, number> | null; mapping_coverage: number | null;
+    evidence_coverage?: EvidenceCoverageSummary | null;
+    sanqi?: SanqiMetrics | null;
+    locomo?: LocomoMetrics | null;
+    clbench?: ClbenchMetrics | null;
     v22?: { fixed_denominator: number; candidate_vs_control?: {
       helped: number; hurt: number; both_pass: number; both_fail: number;
     }; candidates: {
@@ -141,9 +211,11 @@ export type RunSummary = {
     ncp?: NcpMetrics | null; categories?: NovelBreakdown[]; stages?: NovelBreakdown[];
     capabilities?: NovelBreakdown[]; risks?: NovelBreakdown[];
     answerability?: { total: number; judged: number; passed: number; abstention_total: number } }[];
+  evidence_coverage?: EvidenceCoverageSummary | null;
   timing: { add_seconds: number; total_seconds: number };
   scheduler?: { mode: string; max_workers: number; requested_max_workers?: number;
-    domain_workers: Record<string, number>; add_workers?: Record<string, number> };
+    domain_workers: Record<string, number>; add_workers?: Record<string, number>;
+    case_workers?: Record<string, number>; case_workers_total?: number; requested_case_workers?: number };
   add_health?: {
     static_completed: number; static_total: number;
     dynamic_completed: number; dynamic_total: number; errors: number;
@@ -269,6 +341,7 @@ export type MiniQuestionIndex = {
   tasks: MiniQuestionTask[];
 };
 export type CaseResult = {
+  excluded?: boolean;
   error_detail?: FailureDetail | null;
   attempt_history?: RetryAttempt[];
   id: string; profile_id: string; profile_name: string; question: string;
@@ -289,16 +362,34 @@ export type CaseResult = {
   merged_from_run_id?: string;
   merged_at?: string;
   kind?: string; dataset_id?: string; options?: Record<string, string> | null;
-  stage?: number; visible_until_turn?: number; category?: { id: string; name: string };
+  benchmark_mode?: 'direct' | 'memory'; context_id?: string; source_task_id?: string;
+  structure_class?: string; rubric_ids?: string[];
+  input_warnings?: string[];
+  stage?: number; visible_until_turn?: number; category?: { id: string | number; name: string };
   capabilities?: string[]; difficulty?: 'easy' | 'medium' | 'hard'; evidence_ids?: string[];
   session_ids?: string[]; answerable?: boolean; pair_id?: string | null;
-  risk_tags?: string[]; evaluation_role?: 'memory_core' | 'answer_diagnostic';
+  risk_tags?: string[]; evaluation_role?: 'memory_core' | 'answer_diagnostic' | 'excluded';
   source_protocol?: string; evidence_count?: number; session_span?: number;
   event_time?: string | null; session_time?: string | null; state_key?: string | null;
   old_value?: string | null; new_value?: string | null;
   episode_turn?: number; episode_result?: { termination: string; turns: unknown[]; [key: string]: unknown };
   quality_audit?: QualityAudit;
   reader_output?: { answer: string; evidence: { quote: string; source?: string }[]; conflicts: string[]; missing: string[] };
+  evidence_coverage?: CaseEvidenceCoverage | null;
+};
+export type EvidenceVerdict = 'hit' | 'miss' | 'needs_review' | 'not_applicable';
+export type QuestionCoverageStatus = 'covered' | 'partial' | 'missed' | 'needs_review' | 'not_applicable';
+export type EvidenceCoveragePoint = {
+  id: string;
+  verdict: EvidenceVerdict;
+  evidence_refs: { index: number; quote: string }[];
+  reason: string;
+};
+export type CaseEvidenceCoverage = {
+  version: string;
+  judge_valid: boolean;
+  points: EvidenceCoveragePoint[];
+  question_status: QuestionCoverageStatus;
 };
 export type QualityCheck = {
   metric: string; target_id: string; verdict: 'pass' | 'fail' | 'needs_review' | 'not_applicable';
@@ -312,12 +403,21 @@ export type QualityAudit = {
 };
 export type QualityRate = { value: number | null; passed: number; failed: number; judged: number;
   review: number; not_applicable: number; total: number };
+export type EvidenceCoverageSummary = {
+  question_coverage: QualityRate;
+  point_recall: QualityRate;
+  question_status_counts: Record<QuestionCoverageStatus, number>;
+};
+export type AnswerPointEvidence = EvidenceCoverageSummary & {
+  datasets?: Record<string, EvidenceCoverageSummary>;
+};
 export type QualityReport = {
   metrics: (QualityRate & { key: string; layer: string; name: string; lower_is_better: boolean; status: string })[];
   latency: Record<string, { count: number; mean_ms: number | null; p95_ms: number | null; max_ms: number | null;
     attempts?: number; errors?: number }>;
   retrieval_recall?: QualityRate;
   retrieval_fact_coverage: QualityRate; answer_faithfulness: QualityRate;
+  answer_point_evidence?: AnswerPointEvidence;
   retrieval_ranking: ({ dataset_id: string; mapping_coverage: number | null } & Record<string, number | string | null>)[];
   search_health: { completed: number; empty: number; with_bucket: number; automatic_empty?: number; automatic_with_bucket?: number; self_supplemented?: number };
   audit: { enabled: boolean; write_samples: number; case_samples: number; errors: number };
@@ -369,7 +469,7 @@ export type RunDetail = RunSummary & {
   quality_audits?: QualityAudit[];
   config: Record<string, unknown>; cases: CaseResult[];
   events: { at: string; level: 'info' | 'warning' | 'error'; message: string }[];
-  adds: { id: string; profile_id: string; stage: number; kind: 'profile' | 'noise' | 'source' | 'conversation' | 'novel' | 'ncp_committed';
+  adds: { id: string; profile_id: string; stage: number; kind: 'profile' | 'noise' | 'source' | 'conversation' | 'novel' | 'ncp_committed' | 'sanqi_qa' | 'locomo_qa' | 'clbench_qa';
     message_count: number; pair_count: number; status: string; task_id: string | null; error: string | null; error_detail?: FailureDetail | null }[];
 };
 export type FailureDetail = { category: string; operation?: string | null; message: string; exception_type?: string | null;

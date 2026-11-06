@@ -1,6 +1,6 @@
 {
-  "dataset_id": "novel-memory-7risk-zhuxing3-wuxia1-4playthrough-400turn-200qa-20261020-neutral-question-v1",
-  "generated_at": "2026-10-20T00:00:00+08:00",
+  "dataset_id": "novel-memory-7risk-4trace-400turn-200qa-zhuxing-c-author-20261102",
+  "generated_at": "2026-11-03T03:30:03.880745+00:00",
   "organization": "每个 *_final 目录是 1 条独立 trace/playthrough，包含该 trace 的 add、search 和参考答案。",
   "files": [
     {
@@ -34,13 +34,13 @@
     "qa": 200
   },
   "category_counts": {
-    "actor_transfer": 32,
+    "temporal_disorder": 32,
     "item_state_migration": 40,
-    "identity_pollution": 19,
-    "global_memory_leak": 21,
-    "false_commitment": 31,
-    "temporal_disorder": 29,
-    "fabricated_action": 28
+    "false_commitment": 29,
+    "global_memory_leak": 17,
+    "identity_pollution": 20,
+    "fabricated_action": 29,
+    "actor_transfer": 33
   },
   "execution_status": "not_run"
 }

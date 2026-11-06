@@ -1,0 +1,23 @@
+{
+  "id": "clbench-context-stratified-random-v1",
+  "seed_default": 20261103,
+  "strata_order": [
+    "conversation_prefix",
+    "shared_system_distinct_cases",
+    "singleton"
+  ],
+  "counts": [
+    70,
+    26,
+    4
+  ],
+  "pool": [
+    351,
+    127,
+    22
+  ],
+  "rng": "Python random.Random(seed)",
+  "sampling": "Sort context IDs lexicographically per stratum; sequential rng.sample without replacement; retain every task",
+  "canonical_order": "stratum,context_id,exact message prefix/task_id",
+  "reuse": "Frozen explicit context_ids; no resampling on resume"
+}
